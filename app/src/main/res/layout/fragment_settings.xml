@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/settings_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/emergency_setting"
+            style="@style/TextAppearance.App.Headline4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/deactivationMethodCard"
+            style="@style/SettingsCardStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:cardElevation="2dp"
+            app:layout_constraintTop_toBottomOf="@id/settings_title">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:text="@string/deactivation_method"
+                    style="@style/TextAppearance.App.TitleMedium"/>
+
+                <RadioGroup
+                    android:id="@+id/radioDeactivationMethod"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/radioVolumeButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="12dp"
+                        android:text="@string/volume_button_pattern"
+                        android:textAppearance="@style/TextAppearance.App.BodyLarge" />
+
+                    <RadioButton
+                        android:id="@+id/radioShake"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="12dp"
+                        android:text="@string/shake_device"
+                        android:textAppearance="@style/TextAppearance.App.BodyLarge" />
+                </RadioGroup>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/timeoutSettingsCard"
+            style="@style/SettingsCardStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardElevation="2dp"
+            app:layout_constraintTop_toBottomOf="@id/deactivationMethodCard">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/timeout_settings"
+                    style="@style/TextAppearance.App.TitleMedium"/>
+
+                <!-- Freeze Duration -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/freezeDurationTextInput"
+                    style="@style/SettingsInputStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/freeze_duration_ms">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/freezeDurationEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:textAppearance="@style/TextAppearance.App.BodyLarge"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.slider.Slider
+                    android:id="@+id/freezeDurationSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="12dp"/>
+
+                <!-- Required Presses -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/requiredPressesTextInput"
+                    style="@style/SettingsInputStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/required_presses">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/requiredPressesEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:textAppearance="@style/TextAppearance.App.BodyLarge"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.slider.Slider
+                    android:id="@+id/requiredPressesSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="12dp"/>
+
+                <!-- Sequence Timeout -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/sequenceTimeoutTextInput"
+                    style="@style/SettingsInputStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/sequence_timeout_ms">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/sequenceTimeoutEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:textAppearance="@style/TextAppearance.App.BodyLarge"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.slider.Slider
+                    android:id="@+id/sequenceTimeoutSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="12dp"/>
+
+                <!-- Confirmation Timeout -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/confirmationTimeoutTextInput"
+                    style="@style/SettingsInputStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/confirmation_timeout_ms">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/confirmationTimeoutEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:textAppearance="@style/TextAppearance.App.BodyLarge"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.slider.Slider
+                    android:id="@+id/confirmationTimeoutSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="12dp"/>
+
+                <!-- Input Timeout -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputTimeoutTextInput"
+                    style="@style/SettingsInputStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/input_timeout_ms">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputTimeoutEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:textAppearance="@style/TextAppearance.App.BodyLarge"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.slider.Slider
+                    android:id="@+id/inputTimeoutSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="12dp"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/saveSettingsButton"
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/save_settings"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/timeoutSettingsCard" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
