@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme -->
+    <style name="Theme.NaariShakti" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+        <item name="colorPrimaryContainer">@color/primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/on_primary_container</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorOnSecondary">@color/on_secondary</item>
+        <item name="android:statusBarColor">@color/primary</item>
+        <item name="android:navigationBarColor">@color/surface_color</item>
+        <item name="android:windowLightStatusBar">true</item> <!-- For light status bar text on light background -->
+    </style>
+
+    <!-- Updated Card Style -->
+    <style name="HomeCardStyle" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">6dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="cardBackgroundColor">@color/surface</item>
+        <item name="strokeColor">@color/outline</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <style name="BottomNavActive" parent="TextAppearance.Material3.LabelMedium">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <!-- Updated Input Style -->
+    <style name="SettingsInputStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/secondary</item>
+        <item name="hintTextColor">@color/secondary</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxCornerRadiusBottomEnd">8dp</item>
+        <item name="boxCornerRadiusBottomStart">8dp</item>
+        <item name="boxCornerRadiusTopEnd">8dp</item>
+        <item name="boxCornerRadiusTopStart">8dp</item>
+    </style>
+
+    <!-- Typography (Using Material3 styles as a base) -->
+    <style name="TextAppearance.App.Headline1" parent="TextAppearance.Material3.HeadlineLarge">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">96sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="TextAppearance.App.Headline2" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">60sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="TextAppearance.App.Headline3" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">48sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="TextAppearance.App.Headline4" parent="TextAppearance.Material3.DisplayLarge">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">34sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="TextAppearance.App.Headline5" parent="TextAppearance.Material3.DisplayMedium">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="TextAppearance.App.Headline6" parent="TextAppearance.Material3.DisplaySmall">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="TextAppearance.App.Subtitle1" parent="TextAppearance.Material3.TitleLarge">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="TextAppearance.App.Subtitle2" parent="TextAppearance.Material3.TitleMedium">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="TextAppearance.App.Body1" parent="TextAppearance.Material3.BodyLarge">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="TextAppearance.App.Body2" parent="TextAppearance.Material3.BodyMedium">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="TextAppearance.App.Button" parent="TextAppearance.Material3.LabelLarge">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="TextAppearance.App.Caption" parent="TextAppearance.Material3.BodySmall">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <style name="TextAppearance.App.Overline" parent="TextAppearance.Material3.LabelSmall">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemIconTint">@drawable/bottom_nav_colors</item>
+        <item name="itemTextColor">@drawable/bottom_nav_colors</item>
+        <item name="itemBackground">@color/surface</item>
+        <item name="itemTextAppearanceActive">@style/BottomNavActive</item>
+        <item name="itemTextAppearanceInactive">@style/BottomNavActive</item>
+    </style>
+
+    <style name="TextAppearance.App.TitleMedium" parent="TextAppearance.Material3.TitleMedium">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="TextAppearance.App.BodyLarge" parent="TextAppearance.Material3.BodyLarge">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="SettingsCardStyle" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+
+    <!-- Updated Button Style -->
+    <style name="ButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/primary</item>
+        <item name="android:textColor">@color/on_primary</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:paddingVertical">14dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <!-- Updated FAB Style -->
+    <style name="FABStyle" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.FloatingActionButton</item>
+        <item name="backgroundTint">@color/primary</item>
+        <item name="tint">@color/on_primary</item>
+        <item name="elevation">6dp</item>
+        <item name="hoveredFocusedTranslationZ">12dp</item>
+        <item name="pressedTranslationZ">12dp</item>
+    </style>
+
+    <style name="ThemeOverlay.App.FloatingActionButton" parent="">
+        <item name="colorSecondary">@color/primary</item>
+        <item name="colorOnSecondary">@color/on_primary</item>
+    </style>
+
+    <style name="TextAppearance.App.ToolbarTitle" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="android:textColor">@color/onPrimary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="Widget.AppTheme.OutlinedCardView" parent="Widget.Material3.CardView.Outlined">
+        <item name="android:elevation">2dp</item>
+        <item name="cardCornerRadius">8dp</item>
+        <item name="strokeColor">@color/md_theme_light_outline</item>
+    </style>
+</resources>

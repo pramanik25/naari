@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_gray">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/bright_red">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/emergency_police_sos"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/cancel_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:background="@null"
+            android:src="@drawable/ic_close"
+            android:contentDescription="@string/cancel" />
+
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/help_is_coming_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/help_is_on_its_way"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/call_police_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/round_red_button"
+            android:contentDescription="@string/call_police"
+            android:src="@drawable/baseline_add_ic_call_24" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/safety_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:padding="16dp"
+        android:text="@string/stay_calm_and_clearly_tell_the_operator_your_location_and_the_nature_of_the_emergency_tips_will_rotate_here"
+        android:textColor="@color/light_gray"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

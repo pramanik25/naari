@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="64"
+    android:viewportHeight="64">
+
+    <!-- Desk -->
+    <path
+        android:fillColor="#A0522D"
+    android:pathData="M8,50h48v8H8z" />
+    <path
+        android:fillColor="#8B4513"
+    android:pathData="M10,18h44v32H10z" />
+
+    <!-- Computer Screen -->
+    <path
+        android:fillColor="#E0E0E0"
+    android:pathData="M18,25h28v18H18z" />
+    <path
+        android:fillColor="#333"
+    android:pathData="M16,23h32v22H16z" />
+
+    <!-- Computer Base -->
+    <path
+        android:fillColor="#757575"
+    android:pathData="M28,43h12v4H28z" />
+
+    <!-- Man's Head -->
+    <path
+        android:fillColor="#FFCC80"
+    android:pathData="M32,14c4.41,0,8,3.59,8,8s-3.59,8-8,8s-8-3.59-8-8S27.59,14,32,14z" />
+    <path
+        android:fillColor="#424242"
+    android:pathData="M26,14c0,-2.21,1.79,-4,4,-4h4c2.21,0,4,1.79,4,4v2h-12z" />
+
+    <!-- Man's Body -->
+    <path
+        android:fillColor="#1E88E5"
+    android:pathData="M32,30c-3,0-5,2-5,5v10h10V35C37,32,35,30,32,30z" />
+
+    <!-- Man's Arms -->
+    <path
+        android:fillColor="#FFCC80"
+    android:pathData="M27,35v5h-4v-2c0,-1,1,-2,2,-2h4z" />
+    <path
+        android:fillColor="#FFCC80"
+    android:pathData="M37,35v5h4v-2c0,-1,-1,-2,-2,-2h-4z" />
+
+    <!-- Man's Hands (Simplified) -->
+    <path
+        android:fillColor="#FFCC80"
+    android:pathData="M23,38h2v2h-2z" />
+    <path
+        android:fillColor="#FFCC80"
+    android:pathData="M41,38h2v2h-2z" />
+
+    <!-- Optional: Keyboard -->
+    <path
+        android:fillColor="#616161"
+    android:pathData="M20,46h24v2H20z" />
+
+</vector>

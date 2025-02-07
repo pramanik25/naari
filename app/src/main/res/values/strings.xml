@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Naari Shakti</string>
+    <string name="trigger_word_description" translatable="false">Opens the trigger word settings.</string>
+    <string name="emergency_settings_description" translatable="false">Opens emergency contact settings.</string>
+    <string name="call_police_description" translatable="false">Initiates a call to the police.</string>
+    <string name="women_helpline_description" translatable="false">Opens a list of women\'s helplines.</string>
+    <string name="geofence_description" translatable="false">Opens geofence settings.</string>
+    <string name="live_location_description" translatable="false">Shares your live location with contacts.</string>
+    <string name="deactivation_method" translatable="false">Deactivation Method</string>
+    <string name="volume_button_pattern" translatable="false">Volume Button Pattern</string>
+    <string name="shake_device" translatable="false">Shake Device</string>
+    <string name="timeout_settings" translatable="false">Timeout Settings</string>
+    <string name="freeze_duration_ms" translatable="false">Freeze Duration (ms)</string>
+    <string name="required_presses" translatable="false">Required Presses</string>
+    <string name="sequence_timeout_ms" translatable="false">Sequence Timeout (ms)</string>
+    <string name="confirmation_timeout_ms" translatable="false">Confirmation Timeout (ms)</string>
+    <string name="input_timeout_ms" translatable="false">Input Timeout (ms)</string>
+    <string name="save_settings" translatable="false">Save Settings</string>
+    <string name="map_preview" translatable="false">Map preview</string>
+    <string name="trigger_word" translatable="false">Trigger Word</string>
+    <string name="call_police" translatable="false">Call Police</string>
+    <string name="emergency_setting" translatable="false">Emergency Settings</string>
+    <string name="women_helpline" translatable="false">Women Helpline</string>
+    <string name="geofence" translatable="false">Geofence</string>
+    <string name="live_location" translatable="false">Live Location</string>
+    <string name="say_the_trigger_word" translatable="false">Say the Trigger Word</string>
+    <string name="press_record" translatable="false">Press Record</string>
+    <string name="record" translatable="false">Record</string>
+    <string name="playback" translatable="false">Playback</string>
+    <string name="last_recording_text" translatable="false">Last Recording Text:</string>
+    <string name="play_last_recording" translatable="false">Play Last Recording</string>
+    <string name="set_active_time_window" translatable="false">Set Active Time Window</string>
+    <string name="start_time" translatable="false">Start Time:</string>
+    <string name="_00_00" translatable="false">00:00</string>
+    <string name="set_start_time" translatable="false">Set Start Time</string>
+    <string name="end_time" translatable="false">End Time:</string>
+    <string name="_23_59" translatable="false">23:59</string>
+    <string name="set_end_time" translatable="false">Set End Time</string>
+    <string name="save_time_settings" translatable="false">Save Time Settings</string>
+    <string name="naari_shakti" translatable="false">Naari Shakti</string>
+    <string name="your_safety_is_our_priority" translatable="false">Your Safety is Our Priority</string>
+    <string name="emergency_message" translatable="false">Emergency Message</string>
+    <string name="enter_emergency_message" translatable="false">Enter emergency message</string>
+    <string name="email_settings" translatable="false">Email Settings</string>
+    <string name="sender_email" translatable="false">Sender Email</string>
+    <string name="sender_password" translatable="false">Sender Password</string>
+    <string name="recipient_email" translatable="false">Recipient Email</string>
+    <string name="telegram_settings" translatable="false">Telegram Settings</string>
+    <string name="telegram_number" translatable="false">Telegram Number</string>
+    <string name="emergency_contacts" translatable="false">Emergency Contacts</string>
+    <string name="tip_the_first_contact_will_be_called_and_all_contacts_will_receive_the_message_with_location" translatable="false">Tip: The first contact will be called, and all contacts will receive the message with location.</string>
+    <string name="note_during_an_emergency_panic_button_photos_will_be_sent_to_the_recipient_email_address_and_telegram_number_provided" translatable="false">Note: During an emergency, panic button photos will be sent to the Recipient email address and Telegram number provided.</string>
+    <string name="add_contact" translatable="false">Add Contact</string>
+    <string name="import_contacts" translatable="false">Import Contacts</string>
+    <string name="save" translatable="false">Save</string>
+    <string name="name" translatable="false">Name</string>
+    <string name="father_s_name" translatable="false">Father\'s Name</string>
+    <string name="full_address" translatable="false">Full Address</string>
+    <string name="pincode" translatable="false">Pincode</string>
+    <string name="mobile_number" translatable="false">Mobile Number</string>
+    <string name="father_s_mobile_number" translatable="false">Father\'s Mobile Number</string>
+    <string name="occupation" translatable="false">Occupation</string>
+    <string name="student" translatable="false">Student</string>
+    <string name="college_student" translatable="false">College Student</string>
+    <string name="working" translatable="false">Working</string>
+    <string name="school_name" translatable="false">School Name</string>
+    <string name="college_name" translatable="false">College Name</string>
+    <string name="degree" translatable="false">Degree</string>
+    <string name="company_name" translatable="false">Company Name</string>
+    <string name="department" translatable="false">Department</string>
+    <string name="office_name" translatable="false">Office Name</string>
+    <string name="save_profile" translatable="false">Save Profile</string>
+    <string name="geofence_settings" translatable="false">Geofence Settings</string>
+    <string name="latitude" translatable="false">Latitude :</string>
+    <string name="longitude" translatable="false">Longitude :</string>
+    <string name="radius" translatable="false">Radius :</string>
+    <string name="custom_notification_transition_alert_text" translatable="false">Custom Notification Transition Alert Text :</string>
+    <string name="transition_notification_text" translatable="false">Transition Notification text</string>
+    <string name="add_geofence" translatable="false">Add Geofence</string>
+    <string name="remove_geofence" translatable="false">Remove Geofence</string>
+    <string name="profile_data" translatable="false">Profile Data</string>
+    <string name="emergency_images" translatable="false">Emergency Images</string>
+    <string name="emergency_police_sos" translatable="false">EMERGENCY POLICE SOS</string>
+    <string name="cancel" translatable="false">Cancel</string>
+    <string name="help_is_on_its_way" translatable="false">Help is on its way...</string>
+    <string name="stay_calm_and_clearly_tell_the_operator_your_location_and_the_nature_of_the_emergency_tips_will_rotate_here" translatable="false">Stay calm and clearly tell the operator your location and the nature of the emergency. (Tips will rotate here)</string>
+    <string name="your_class">Your Class</string>
+</resources>

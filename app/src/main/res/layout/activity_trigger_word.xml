@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@color/settings_background">
+
+    <TextView
+        android:id="@+id/recordedWordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/primary_text"
+        android:textSize="24sp"
+        android:text="@string/say_the_trigger_word" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/recordingAnimation"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="24dp"
+        app:lottie_rawRes="@raw/recording_animation"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="true"/>
+
+    <TextView
+        android:id="@+id/recordingStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="@string/press_record"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/input_text" />
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/recordButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:singleSelection="true"
+        app:selectionRequired="false"
+        android:layout_marginBottom="24dp">
+
+        <Button
+            android:id="@+id/recordButton"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/record"
+            android:textColor="@color/record_button"
+            />
+
+        <Button
+            android:id="@+id/playbackButton"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/playback"
+            android:enabled="false"
+            android:textColor="@color/button_secondary" />
+
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <TextView
+        android:id="@+id/lastRecordingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/primary_text"
+        android:textSize="16sp"
+        android:text="@string/last_recording_text"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/playLastRecordingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/play_last_recording"
+        android:backgroundTint="@color/common_google_signin_btn_text_dark_default"
+        android:enabled="false"
+        android:textColor="@color/button_secondary"
+        style="?attr/materialButtonOutlinedStyle"/>
+
+</LinearLayout>

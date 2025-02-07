@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="bright_red">#FFFF1744</color>
+    <color name="dark_gray">#FF424242</color>
+    <color name="light_gray">#FFBDBDBD</color>
+    <color name="background_color">#FFF5F5F5</color>
+    <color name="heading_text">#FF212121</color>
+    <color name="primary_text">#DD000000</color>
+    <color name="input_text">#8A000000</color>
+    <color name="primary_color">#4CAF50</color>
+
+    <!-- Updated Brand Colors -->
+    <color name="primary">#4CAF50</color>  <!-- A vibrant, accessible green -->
+    <color name="on_primary">#FFFFFF</color>
+    <color name="primary_container">#C8E6C9</color> <!-- Light green variant -->
+    <color name="on_primary_container">#005005</color>
+
+    <color name="secondary">#7986CB</color> <!-- A calming blue-grey -->
+    <color name="on_secondary">#FFFFFF</color>
+    <color name="secondary_container">#E8EAF6</color> <!-- Light blue-grey variant -->
+    <color name="on_secondary_container">#1A237E</color>
+
+    <color name="tertiary">#FFB74D</color>  <!-- A warm orange for accents -->
+    <color name="on_tertiary">#000000</color>
+    <color name="tertiary_container">#FFECB3</color> <!-- Light orange variant -->
+    <color name="on_tertiary_container">#5E3C00</color>
+
+
+    <!-- Updated Emergency Colors -->
+    <color name="emergency_primary">#F44336</color>  <!-- A more standard red -->
+    <color name="emergency_secondary">#E57373</color>
+    <color name="emergency_tertiary">#FFCDD2</color>
+
+    <!-- Updated Trust Colors -->
+    <color name="trust_primary">#2196F3</color>
+    <color name="trust_secondary">#64B5F6</color>
+    <color name="trust_tertiary">#BBDEFB</color>
+
+    <!-- Updated Safety Colors -->
+    <color name="safety_primary">#4CAF50</color>
+    <color name="safety_secondary">#81C784</color>
+
+    <!-- Neutral Colors -->
+    <color name="surface_primary">#FFFFFF</color>
+    <color name="surface_secondary">#F0F0F0</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+
+    <!-- State Colors -->
+    <color name="focus_indicator">#1A000000</color>
+    <color name="hover_overlay">#0A000000</color>
+
+
+    <color name="surface_color">#FFFBFE</color>
+    <color name="on_surface">#1C1B1F</color>
+    <color name="error_color">#D32F2F</color>  <!-- Stronger red -->
+    <color name="success_green">#43A047</color>  <!-- Brighter green -->
+    <color name="warning_yellow">#FFEB3B</color> <!-- More noticeable yellow -->
+    <color name="on_error">#FFFFFF</color>
+    <color name="errorContainer">#F44336</color>
+    <color name="onErrorContainer">#B71C1C</color>
+
+    <color name="text_tertiary">#61000000</color>
+    <color name="text_disabled">#38000000</color>
+
+    <!-- Primary App Theme Colors -->
+    <color name="onPrimary">#FFFFFF</color>
+    <color name="primaryContainer">#E8F5E9</color>
+    <color name="onPrimaryContainer">#1B5E20</color>
+
+    <!-- Secondary App Theme Colors -->
+    <color name="onSecondary">#FFFFFF</color>
+    <color name="secondaryContainer">#E3F2FD</color>
+    <color name="onSecondaryContainer">#1A237E</color>
+
+    <!-- Background App Theme Colors -->
+    <color name="background">#F5F5F5</color>
+    <color name="onBackground">#212121</color>
+
+    <!-- Surface App Theme Colors -->
+    <color name="surface">#FFFFFF</color>
+    <color name="onSurface">#212121</color>
+    <color name="surfaceVariant">#ECEFF1</color>
+    <color name="onSurfaceVariant">#424242</color>
+    <color name="outline">#757575</color>
+
+    <!-- Custom Colors (You can define more if needed) -->
+    <color name="success">#388E3C</color>
+    <color name="warning">#FBC02D</color>
+    <color name="info">#29B6F6</color>
+
+
+    <color name="toolbar_color">#1976D2</color>
+
+    <color name="secondary_text">#8A000000</color>
+    <color name="divider_color">#1F000000</color>
+    <color name="colorBackground">@color/background_color</color>
+    <color name="colorPrimaryText">@color/primary_text</color>
+    <color name="colorPrimary">@color/primary_color</color>
+    <color name="settings_background">@color/background_color</color>
+    <color name="record_button">@color/bright_red</color>
+    <color name="button_secondary">#FF018786</color>
+
+    <color name="md_theme_light_primary">#6750A4</color>
+    <color name="md_theme_light_onPrimary">#FFFFFF</color>
+    <color name="md_theme_light_primaryContainer">#EADDFF</color>
+    <color name="md_theme_light_onPrimaryContainer">#21005E</color>
+    <color name="md_theme_light_secondary">#625B71</color>
+    <color name="md_theme_light_onSecondary">#FFFFFF</color>
+    <color name="md_theme_light_secondaryContainer">#E8DEF8</color>
+    <color name="md_theme_light_onSecondaryContainer">#1D192B</color>
+    <color name="md_theme_light_tertiary">#79536D</color>
+    <color name="md_theme_light_onTertiary">#FFFFFF</color>
+    <color name="md_theme_light_tertiaryContainer">#FFD8E4</color>
+    <color name="md_theme_light_onTertiaryContainer">#311128</color>
+    <color name="md_theme_light_error">#BA1A1A</color>
+    <color name="md_theme_light_errorContainer">#FFDAD6</color>
+    <color name="md_theme_light_onError">#FFFFFF</color>
+    <color name="md_theme_light_onErrorContainer">#410002</color>
+    <color name="md_theme_light_background">#FFFBFE</color>
+    <color name="md_theme_light_onBackground">#1C1B1F</color>
+    <color name="md_theme_light_surface">#FFFBFE</color>
+    <color name="md_theme_light_onSurface">#1C1B1F</color>
+    <color name="md_theme_light_surfaceVariant">#E7E0EC</color>
+    <color name="md_theme_light_onSurfaceVariant">#49454F</color>
+    <color name="md_theme_light_outline">#79747E</color>
+    <color name="md_theme_light_inverseOnSurface">#F4EFF4</color>
+    <color name="md_theme_light_inverseSurface">#313033</color>
+    <color name="md_theme_light_inversePrimary">#D0BCFF</color>
+    <color name="md_theme_light_shadow">#000000</color>
+    <color name="md_theme_light_surfaceTint">#6750A4</color>
+    <color name="md_theme_light_surfaceTintColor">#6750A4</color>
+    <color name="md_theme_dark_primary">#D0BCFF</color>
+    <color name="md_theme_dark_onPrimary">#381E72</color>
+    <color name="md_theme_dark_primaryContainer">#4F378B</color>
+    <color name="md_theme_dark_onPrimaryContainer">#EADDFF</color>
+    <color name="md_theme_dark_secondary">#CBC2DB</color>
+    <color name="md_theme_dark_onSecondary">#332D41</color>
+    <color name="md_theme_dark_secondaryContainer">#4A4458</color>
+    <color name="md_theme_dark_onSecondaryContainer">#E8DEF8</color>
+    <color name="md_theme_dark_tertiary">#E5BAD7</color>
+    <color name="md_theme_dark_onTertiary">#472740</color>
+    <color name="md_theme_dark_tertiaryContainer">#5F3D56</color>
+    <color name="md_theme_dark_onTertiaryContainer">#FFD8E4</color>
+    <color name="md_theme_dark_error">#FFB4AB</color>
+    <color name="md_theme_dark_errorContainer">#93000A</color>
+    <color name="md_theme_dark_onError">#690005</color>
+    <color name="md_theme_dark_onErrorContainer">#FFDAD6</color>
+    <color name="md_theme_dark_background">#1C1B1F</color>
+    <color name="md_theme_dark_onBackground">#E6E1E5</color>
+    <color name="md_theme_dark_surface">#1C1B1F</color>
+    <color name="md_theme_dark_onSurface">#E6E1E5</color>
+    <color name="md_theme_dark_surfaceVariant">#49454F</color>
+    <color name="md_theme_dark_onSurfaceVariant">#CAC4D0</color>
+    <color name="md_theme_dark_outline">#938F99</color>
+    <color name="md_theme_dark_inverseOnSurface">#1C1B1F</color>
+    <color name="md_theme_dark_inverseSurface">#E6E1E5</color>
+    <color name="md_theme_dark_inversePrimary">#6750A4</color>
+    <color name="md_theme_dark_shadow">#000000</color>
+    <color name="md_theme_dark_surfaceTint">#D0BCFF</color>
+    <color name="md_theme_dark_surfaceTintColor">#D0BCFF</color>
+
+    <color name="bottom_nav_active">#2196F3</color> <!-- Example: Blue -->
+    <color name="bottom_nav_inactive">#757575</color>
+</resources>
