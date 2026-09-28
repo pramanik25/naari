@@ -1,223 +1,432 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:clipToPadding="false"
     android:fillViewport="true"
-    android:background="@color/background">
+    tools:context=".SettingsFragment">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp">
+        android:orientation="vertical"
+        android:paddingStart="@dimen/ns_gutter"
+        android:paddingTop="16dp"
+        android:paddingEnd="@dimen/ns_gutter"
+        android:paddingBottom="32dp">
+
+        <!-- ============ Header ============ -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_overline"
+            android:textAppearance="@style/Ns.Text.Overline" />
 
         <TextView
-            android:id="@+id/settings_title"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:text="@string/emergency_setting"
-            style="@style/TextAppearance.App.Headline4"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_marginTop="4dp"
+            android:text="@string/settings_title"
+            android:textAppearance="@style/Ns.Text.Headline" />
 
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/deactivationMethodCard"
-            style="@style/SettingsCardStyle"
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            app:cardElevation="2dp"
-            app:layout_constraintTop_toBottomOf="@id/settings_title">
+            android:layout_marginTop="6dp"
+            android:text="@string/settings_body"
+            android:textAppearance="@style/Ns.Text.Body" />
+
+        <!-- ============ SOS behaviour ============ -->
+        <TextView
+            style="@style/Ns.SectionLabel"
+            android:text="@string/settings_section_sos" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="16dp">
+                android:paddingStart="@dimen/ns_card_padding"
+                android:paddingTop="@dimen/ns_card_padding"
+                android:paddingEnd="@dimen/ns_card_padding"
+                android:paddingBottom="8dp">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="12dp"
-                    android:text="@string/deactivation_method"
-                    style="@style/TextAppearance.App.TitleMedium"/>
-
-                <RadioGroup
-                    android:id="@+id/radioDeactivationMethod"
+                    android:id="@+id/countdownLabel"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textAppearance="@style/Ns.Text.Subtitle"
+                    tools:text="SOS countdown: 5 s" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/settings_countdown_caption"
+                    android:textAppearance="@style/Ns.Text.Caption" />
+
+                <com.google.android.material.slider.Slider
+                    android:id="@+id/countdownSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-12dp"
+                    android:layout_marginEnd="-12dp"
+                    android:stepSize="1"
+                    android:valueFrom="0"
+                    android:valueTo="15"
+                    app:labelBehavior="gone" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- ============ Triggers ============ -->
+        <TextView
+            style="@style/Ns.SectionLabel"
+            android:text="@string/settings_section_triggers" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/shakeRow"
+                    layout="@layout/ua_item_switch_row" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="80dp"
+                    android:background="@color/ns_stroke" />
+
+                <include
+                    android:id="@+id/powerRow"
+                    layout="@layout/ua_item_switch_row" />
+
+                <LinearLayout
+                    android:id="@+id/powerOptions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="@dimen/ns_card_padding"
+                    android:paddingEnd="@dimen/ns_card_padding"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/pressesLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/Ns.Text.Subtitle"
+                        tools:text="Power presses: 3" />
+
+                    <com.google.android.material.slider.Slider
+                        android:id="@+id/pressesSlider"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="-12dp"
+                        android:layout_marginEnd="-12dp"
+                        android:stepSize="1"
+                        android:valueFrom="2"
+                        android:valueTo="5"
+                        app:labelBehavior="gone" />
+
+                    <TextView
+                        android:id="@+id/windowLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:textAppearance="@style/Ns.Text.Subtitle"
+                        tools:text="Press window: 2.0 s" />
+
+                    <com.google.android.material.slider.Slider
+                        android:id="@+id/windowSlider"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="-12dp"
+                        android:layout_marginEnd="-12dp"
+                        android:stepSize="0.5"
+                        android:valueFrom="1"
+                        android:valueTo="5"
+                        app:labelBehavior="gone" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- ============ Stopping an alarm ============ -->
+        <TextView
+            style="@style/Ns.SectionLabel"
+            android:text="@string/settings_section_stop" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/ns_card_padding"
+                android:paddingTop="@dimen/ns_card_padding"
+                android:paddingEnd="@dimen/ns_card_padding"
+                android:paddingBottom="12dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_stop_title"
+                    android:textAppearance="@style/Ns.Text.Subtitle" />
+
+                <com.google.android.material.button.MaterialButtonToggleGroup
+                    android:id="@+id/deactivationGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    app:selectionRequired="true"
+                    app:singleSelection="true">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/deactVolume"
+                        style="@style/Ns.Button.Outlined"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:minHeight="48dp"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:text="@string/settings_stop_volume"
+                        android:textColor="@color/ns_chip_text"
+                        app:backgroundTint="@color/ns_chip_bg"
+                        app:icon="@drawable/ua_ic_volume"
+                        app:iconGravity="textStart"
+                        app:iconSize="18dp"
+                        app:iconTint="@color/ns_chip_text" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/deactShake"
+                        style="@style/Ns.Button.Outlined"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:minHeight="48dp"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:text="@string/settings_stop_shake"
+                        android:textColor="@color/ns_chip_text"
+                        app:backgroundTint="@color/ns_chip_bg"
+                        app:icon="@drawable/ua_ic_vibration"
+                        app:iconGravity="textStart"
+                        app:iconSize="18dp"
+                        app:iconTint="@color/ns_chip_text" />
+                </com.google.android.material.button.MaterialButtonToggleGroup>
+
+                <TextView
+                    android:id="@+id/deactivationCaption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:textAppearance="@style/Ns.Text.Caption"
+                    tools:text="@string/settings_stop_volume_caption" />
+
+                <LinearLayout
+                    android:id="@+id/inputTimeoutBlock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
                     android:orientation="vertical">
 
-                    <RadioButton
-                        android:id="@+id/radioVolumeButton"
+                    <TextView
+                        android:id="@+id/inputTimeoutLabel"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:paddingVertical="12dp"
-                        android:text="@string/volume_button_pattern"
-                        android:textAppearance="@style/TextAppearance.App.BodyLarge" />
+                        android:textAppearance="@style/Ns.Text.Subtitle"
+                        tools:text="Gap between key presses: 3.0 s" />
 
-                    <RadioButton
-                        android:id="@+id/radioShake"
+                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:paddingVertical="12dp"
-                        android:text="@string/shake_device"
-                        android:textAppearance="@style/TextAppearance.App.BodyLarge" />
-                </RadioGroup>
+                        android:layout_marginTop="2dp"
+                        android:text="@string/settings_input_caption"
+                        android:textAppearance="@style/Ns.Text.Caption" />
+
+                    <com.google.android.material.slider.Slider
+                        android:id="@+id/inputTimeoutSlider"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="-12dp"
+                        android:layout_marginEnd="-12dp"
+                        android:stepSize="0.5"
+                        android:valueFrom="1"
+                        android:valueTo="10"
+                        app:labelBehavior="gone" />
+                </LinearLayout>
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/timeoutSettingsCard"
-            style="@style/SettingsCardStyle"
+        <!-- ============ Permissions ============ -->
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            app:cardElevation="2dp"
-            app:layout_constraintTop_toBottomOf="@id/deactivationMethodCard">
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/settings_section_permissions"
+                android:textAppearance="@style/Ns.Text.Overline" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ns_pill"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="10dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="4dp">
+
+                <View
+                    android:id="@+id/permissionSummaryDot"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:background="@drawable/ns_dot" />
+
+                <TextView
+                    android:id="@+id/permissionSummary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:textAppearance="@style/Ns.Text.Label"
+                    android:textColor="@color/ns_text_muted"
+                    android:textSize="12sp"
+                    tools:text="7 of 10 ready" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/permissionList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- ============ More ============ -->
+        <TextView
+            style="@style/Ns.SectionLabel"
+            android:text="@string/settings_section_more" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="16dp">
+                android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="16dp"
-                    android:text="@string/timeout_settings"
-                    style="@style/TextAppearance.App.TitleMedium"/>
+                <include
+                    android:id="@+id/rowProfile"
+                    layout="@layout/ua_item_row" />
 
-                <!-- Freeze Duration -->
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/freezeDurationTextInput"
-                    style="@style/SettingsInputStyle"
+                <View
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/freeze_duration_ms">
+                    android:layout_height="1dp"
+                    android:layout_marginStart="80dp"
+                    android:background="@color/ns_stroke" />
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/freezeDurationEditText"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="number"
-                        android:textAppearance="@style/TextAppearance.App.BodyLarge"/>
-                </com.google.android.material.textfield.TextInputLayout>
+                <include
+                    android:id="@+id/rowSchedule"
+                    layout="@layout/ua_item_row" />
 
-                <com.google.android.material.slider.Slider
-                    android:id="@+id/freezeDurationSlider"
+                <View
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="12dp"/>
+                    android:layout_height="1dp"
+                    android:layout_marginStart="80dp"
+                    android:background="@color/ns_stroke" />
 
-                <!-- Required Presses -->
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/requiredPressesTextInput"
-                    style="@style/SettingsInputStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/required_presses">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/requiredPressesEditText"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="number"
-                        android:textAppearance="@style/TextAppearance.App.BodyLarge"/>
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <com.google.android.material.slider.Slider
-                    android:id="@+id/requiredPressesSlider"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="12dp"/>
-
-                <!-- Sequence Timeout -->
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/sequenceTimeoutTextInput"
-                    style="@style/SettingsInputStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/sequence_timeout_ms">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/sequenceTimeoutEditText"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="number"
-                        android:textAppearance="@style/TextAppearance.App.BodyLarge"/>
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <com.google.android.material.slider.Slider
-                    android:id="@+id/sequenceTimeoutSlider"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="12dp"/>
-
-                <!-- Confirmation Timeout -->
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/confirmationTimeoutTextInput"
-                    style="@style/SettingsInputStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/confirmation_timeout_ms">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/confirmationTimeoutEditText"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="number"
-                        android:textAppearance="@style/TextAppearance.App.BodyLarge"/>
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <com.google.android.material.slider.Slider
-                    android:id="@+id/confirmationTimeoutSlider"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="12dp"/>
-
-                <!-- Input Timeout -->
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/inputTimeoutTextInput"
-                    style="@style/SettingsInputStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/input_timeout_ms">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/inputTimeoutEditText"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="number"
-                        android:textAppearance="@style/TextAppearance.App.BodyLarge"/>
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <com.google.android.material.slider.Slider
-                    android:id="@+id/inputTimeoutSlider"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="12dp"/>
+                <include
+                    android:id="@+id/rowVault"
+                    layout="@layout/ua_item_row" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/saveSettingsButton"
-            style="@style/ButtonStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:layout_marginBottom="16dp"
-            android:text="@string/save_settings"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/timeoutSettingsCard" />
+        <!-- ============ About ============ -->
+        <TextView
+            style="@style/Ns.SectionLabel"
+            android:text="@string/settings_section_about" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</ScrollView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/ns_card_padding">
+
+                <FrameLayout
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/ns_sos_core">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/ua_ic_shield"
+                        app:tint="@color/white" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_name"
+                        android:textAppearance="@style/Ns.Text.Title" />
+
+                    <TextView
+                        android:id="@+id/versionText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:textAppearance="@style/Ns.Text.Label"
+                        android:textColor="@color/ns_gold"
+                        tools:text="Version 1.0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/settings_about_body"
+                        android:textAppearance="@style/Ns.Text.Caption" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

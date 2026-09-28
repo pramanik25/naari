@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Strings owned by the emergency engine (services, receivers, PanicActivity).
+     SMS texts are kept to plain GSM characters so each part fits 160 chars. -->
+<resources>
+
+    <!-- Notification channels -->
+    <string name="eng_channel_protection">Protection status</string>
+    <string name="eng_channel_protection_desc">Shows while Naari Shakti is listening for your trigger word, shakes and power-button presses.</string>
+    <string name="eng_channel_sos">SOS alerts</string>
+    <string name="eng_channel_sos_desc">Full-screen alert while an SOS is counting down or active.</string>
+    <string name="eng_channel_alerts">Safety alerts</string>
+    <string name="eng_channel_alerts_desc">Reminders that need your attention, such as resuming protection after a restart.</string>
+    <string name="eng_channel_live">Live location sharing</string>
+    <string name="eng_channel_live_desc">Shows while your live location is being shared with your contacts.</string>
+    <string name="eng_channel_geofence">Saved places</string>
+    <string name="eng_channel_geofence_desc">Alerts when you arrive at or leave a saved place.</string>
+
+    <!-- Protection notification -->
+    <string name="eng_protect_title">Naari Shakti is protecting you</string>
+    <string name="eng_protect_text">Listening for “%1$s” · Press power ×%2$d for SOS</string>
+    <string name="eng_protect_text_no_voice">Shake or press power ×%1$d for SOS</string>
+    <string name="eng_action_sos_now">SOS now</string>
+    <string name="eng_action_turn_off">Turn off</string>
+
+    <!-- Resume notification -->
+    <string name="eng_resume_title">Tap to resume protection</string>
+    <string name="eng_resume_text">Android paused Naari Shakti after a restart. Open the app to switch protection back on.</string>
+
+    <!-- SOS notification -->
+    <string name="eng_sos_countdown_title">Sending SOS…</string>
+    <string name="eng_sos_countdown_text">Your contacts will be alerted. Tap Cancel if this was a mistake.</string>
+    <string name="eng_sos_active_title">SOS active</string>
+    <string name="eng_sos_active_text">Alerting your contacts and sharing your live location.</string>
+    <string name="eng_action_cancel">Cancel</string>
+    <string name="eng_action_stop_sos">Stop SOS</string>
+    <string name="eng_action_call_contact">Call %1$s</string>
+
+    <!-- SMS bodies (plain GSM characters only) -->
+    <string name="eng_sms_location_line">My location: %1$s</string>
+    <string name="eng_sms_location_pending">Location not available yet, I will send it shortly.</string>
+    <string name="eng_sms_location_followup">My current location: %1$s</string>
+    <string name="eng_sms_location_update">Live location update (%1$s): %2$s</string>
+    <string name="eng_sms_safe">I am safe now. Please ignore my earlier SOS alert. - sent by Naari Shakti</string>
+    <string name="eng_sms_live_start_named">%1$s is sharing live location with you for %2$d min: %3$s</string>
+    <string name="eng_sms_live_start">I am sharing my live location with you for %1$d min: %2$s</string>
+    <string name="eng_sms_live_start_no_fix">I am sharing my live location with you for %1$d min. First location will follow shortly.</string>
+    <string name="eng_sms_live_start_named_no_fix">%1$s is sharing live location with you for %2$d min. First location will follow shortly.</string>
+    <string name="eng_sms_live_update">Live location (%1$s): %2$s</string>
+    <string name="eng_sms_live_ended">Live location sharing ended.</string>
+
+    <!-- Telegram / email -->
+    <string name="eng_telegram_sos">SOS from Naari Shakti\n%1$s</string>
+    <string name="eng_telegram_safe">Update: I am safe now.</string>
+    <string name="eng_email_subject">Emergency evidence photo (%1$s camera)</string>
+    <string name="eng_email_body">An SOS was triggered in Naari Shakti. This photo was captured automatically by the %1$s camera at %2$s.</string>
+    <string name="eng_camera_front">front</string>
+    <string name="eng_camera_back">back</string>
+
+    <!-- Live share notification -->
+    <string name="eng_live_title">Sharing your live location</string>
+    <string name="eng_live_text">With %1$d contacts · ends at %2$s</string>
+    <string name="eng_action_stop">Stop</string>
+
+    <!-- Geofence -->
+    <string name="eng_geofence_entered">Entered %1$s</string>
+    <string name="eng_geofence_left">Left %1$s</string>
+    <string name="eng_geofence_default_place">a saved place</string>
+    <string name="eng_geofence_text">Saved place alert from Naari Shakti</string>
+
+    <!-- PanicActivity: countdown -->
+    <string name="eng_panic_overline">Emergency SOS</string>
+    <string name="eng_panic_countdown_title">Sending SOS</string>
+    <plurals name="eng_panic_countdown_caption">
+        <item quantity="one">Alerting %d contact with your location</item>
+        <item quantity="other">Alerting %d contacts with your location</item>
+    </plurals>
+    <string name="eng_panic_countdown_no_contacts">No emergency contacts saved yet. The siren and evidence capture will still start.</string>
+    <string name="eng_panic_cancel">Cancel</string>
+    <string name="eng_panic_cancel_hint">Tap Cancel if this was a mistake</string>
+
+    <!-- PanicActivity: active -->
+    <string name="eng_panic_active_overline">SOS active</string>
+    <string name="eng_panic_active_title">Help is on the way</string>
+    <string name="eng_panic_active_subtitle">Keep your phone with you. Your contacts are being alerted.</string>
+    <string name="eng_panic_status_label">Live status</string>
+    <string name="eng_panic_hold_to_stop">Hold to stop — I’m safe</string>
+    <string name="eng_panic_hold_hint">Press and hold for 2 seconds. You may be asked to unlock.</string>
+
+    <string name="eng_status_sms_pending">Alerting your contacts…</string>
+    <plurals name="eng_status_sms_done">
+        <item quantity="one">Alert sent to %d contact</item>
+        <item quantity="other">Alert sent to %d contacts</item>
+    </plurals>
+    <string name="eng_status_sms_detail_location">With a link to your location</string>
+    <string name="eng_status_sms_detail_no_location">Location will follow as soon as it’s found</string>
+    <string name="eng_status_sms_failed">Couldn’t send SMS alert</string>
+    <string name="eng_status_sms_failed_detail">Check SMS permission and signal</string>
+    <string name="eng_status_sms_none">No emergency contacts</string>
+    <string name="eng_status_sms_none_detail">Add contacts in Emergency settings</string>
+
+    <string name="eng_status_call_pending">Calling %1$s…</string>
+    <string name="eng_status_call_done">Calling %1$s</string>
+    <string name="eng_status_call_detail">Emergency call placed</string>
+    <string name="eng_status_call_failed">Couldn’t call %1$s</string>
+    <string name="eng_status_call_failed_detail">Allow phone permission or call from the notification</string>
+    <string name="eng_status_call_none">No contact to call</string>
+
+    <string name="eng_status_location_pending">Finding your location…</string>
+    <string name="eng_status_location_done">Sharing live location</string>
+    <string name="eng_status_location_detail">Updates every 2 min or 100 m</string>
+    <string name="eng_status_location_failed">Location unavailable</string>
+    <string name="eng_status_location_failed_detail">Turn on location and allow access</string>
+
+    <string name="eng_status_siren_on">Siren on</string>
+    <string name="eng_status_siren_detail">Playing at full volume</string>
+    <string name="eng_status_siren_off">Siren unavailable</string>
+
+    <plurals name="eng_status_camera_title">
+        <item quantity="one">Capturing evidence (%d photo)</item>
+        <item quantity="other">Capturing evidence (%d photos)</item>
+    </plurals>
+    <string name="eng_status_camera_detail">Front and back camera every 15 s</string>
+    <string name="eng_status_camera_failed">Camera unavailable</string>
+    <string name="eng_status_camera_failed_detail">Allow camera access to capture evidence</string>
+</resources>

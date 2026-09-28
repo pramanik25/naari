@@ -1,252 +1,572 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/screenRoot"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
-    android:background="@color/background">
+    android:background="@drawable/ns_bg_gradient"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="Home_Activity.SettingsEmergencyActivity">
 
-    <LinearLayout
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:fillViewport="true">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/emergency_setting"
-            android:textAppearance="@style/TextAppearance.App.Headline5"
-            android:textColor="@color/text_primary"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="16dp" />
-
-        <!-- Emergency Message Section -->
-        <com.google.android.material.card.MaterialCardView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            app:cardElevation="4dp"
-            app:cardCornerRadius="12dp"
-            style="@style/Widget.AppTheme.OutlinedCardView">
+            android:orientation="vertical"
+            android:paddingStart="@dimen/ns_gutter"
+            android:paddingTop="12dp"
+            android:paddingEnd="@dimen/ns_gutter"
+            android:paddingBottom="24dp">
 
-            <LinearLayout
+            <!-- ============ Header ============ -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/backButton"
+                style="@style/Ns.Button.Icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="@string/ub_back"
+                app:icon="@drawable/ub_ic_arrow_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/ub_emg_eyebrow"
+                android:textAppearance="@style/Ns.Text.Overline" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/ub_emg_title"
+                android:textAppearance="@style/Ns.Text.Headline" />
+
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="16dp">
+                android:layout_marginTop="6dp"
+                android:text="@string/ub_emg_desc"
+                android:textAppearance="@style/Ns.Text.Body" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/emergency_message"
-                    android:textAppearance="@style/TextAppearance.App.TitleMedium"
-                    android:textColor="@color/text_primary"
-                    android:layout_marginBottom="8dp" />
+            <!-- ============ Emergency message ============ -->
+            <TextView
+                style="@style/Ns.SectionLabel"
+                android:text="@string/ub_emg_section_message" />
 
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/enter_emergency_message"
-                    style="@style/SettingsInputStyle">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/emergencyMessageEditText"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="textMultiLine"
-                        android:minLines="3"
-                        android:textColor="@color/input_text" />
-                </com.google.android.material.textfield.TextInputLayout>
-            </LinearLayout>
-        </com.google.android.material.card.MaterialCardView>
-
-        <!-- Email Settings Section -->
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            app:cardElevation="4dp"
-            app:cardCornerRadius="12dp"
-            style="@style/Widget.AppTheme.OutlinedCardView">
-
-            <LinearLayout
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Ns.Card"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="16dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/email_settings"
-                    android:textAppearance="@style/TextAppearance.App.TitleMedium"
-                    android:textColor="@color/text_primary"
-                    android:layout_marginBottom="8dp" />
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/sender_email"
-                    style="@style/SettingsInputStyle"
-                    android:layout_marginBottom="8dp">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/senderEmailEditText"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="textEmailAddress"
-                        android:textColor="@color/input_text" />
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/sender_password"
-                    style="@style/SettingsInputStyle"
-                    app:passwordToggleEnabled="true">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/senderPasswordEditText"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="textPassword"
-                        android:textColor="@color/input_text" />
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/recipient_email"
-                    style="@style/SettingsInputStyle">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/emailAddressEditText"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="textEmailAddress"
-                        android:textColor="@color/input_text" />
-                </com.google.android.material.textfield.TextInputLayout>
-            </LinearLayout>
-        </com.google.android.material.card.MaterialCardView>
-
-        <!-- Telegram Settings Section -->
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            app:cardElevation="4dp"
-            app:cardCornerRadius="12dp"
-            style="@style/Widget.AppTheme.OutlinedCardView">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="16dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/telegram_settings"
-                    android:textAppearance="@style/TextAppearance.App.TitleMedium"
-                    android:textColor="@color/text_primary"
-                    android:layout_marginBottom="8dp" />
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/telegram_number"
-                    style="@style/SettingsInputStyle">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/telegramNumberEditText"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="phone"
-                        android:textColor="@color/input_text" />
-                </com.google.android.material.textfield.TextInputLayout>
-            </LinearLayout>
-        </com.google.android.material.card.MaterialCardView>
-
-        <!-- Emergency Contacts Section -->
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardElevation="4dp"
-            app:cardCornerRadius="12dp"
-            style="@style/Widget.AppTheme.OutlinedCardView">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="16dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/emergency_contacts"
-                    android:textAppearance="@style/TextAppearance.App.TitleMedium"
-                    android:textColor="@color/text_primary"
-                    android:layout_marginBottom="8dp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/tip_the_first_contact_will_be_called_and_all_contacts_will_receive_the_message_with_location"
-                    android:textAppearance="@style/TextAppearance.App.Caption"
-                    android:textColor="@color/text_secondary"
-                    android:layout_marginBottom="8dp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/note_during_an_emergency_panic_button_photos_will_be_sent_to_the_recipient_email_address_and_telegram_number_provided"
-                    android:textAppearance="@style/TextAppearance.App.Caption"
-                    android:textColor="@color/text_secondary"
-                    android:layout_marginBottom="8dp" />
+                android:layout_height="wrap_content">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center_vertical"
-                    android:layout_marginBottom="8dp">
+                    android:orientation="vertical"
+                    android:padding="@dimen/ns_card_padding">
 
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/addContactButton"
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/add_contact"
-                        android:layout_marginEnd="8dp"
-                        style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
 
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/importContactsButton"
-                        android:layout_width="wrap_content"
+                        <ImageView
+                            style="@style/Ns.IconBadge"
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:backgroundTint="@color/ns_rose_container"
+                            android:importantForAccessibility="no"
+                            android:src="@drawable/ub_ic_sms"
+                            app:tint="@color/ns_rose" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/ub_emg_message_title"
+                                android:textAppearance="@style/Ns.Text.Subtitle" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="@string/ub_emg_message_caption"
+                                android:textAppearance="@style/Ns.Text.Caption" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/messageLayout"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/import_contacts"
-                        style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+                        android:layout_marginTop="16dp"
+                        android:hint="@string/ub_emg_message_hint"
+                        app:counterEnabled="true"
+                        app:counterMaxLength="300">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/messageInput"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="top|start"
+                            android:importantForAutofill="no"
+                            android:inputType="textMultiLine|textCapSentences"
+                            android:maxLength="300"
+                            android:minLines="3" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:importantForAccessibility="no"
+                            android:src="@drawable/ub_ic_location"
+                            app:tint="@color/ns_safe" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_weight="1"
+                            android:text="@string/ub_emg_message_preview"
+                            android:textAppearance="@style/Ns.Text.Caption"
+                            android:textColor="@color/ns_text_muted" />
+                    </LinearLayout>
                 </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
 
-                <ListView
-                    android:id="@+id/emergencyContactsListView"
+            <!-- ============ Contacts ============ -->
+            <TextView
+                style="@style/Ns.SectionLabel"
+                android:text="@string/ub_emg_section_contacts" />
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Ns.Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:minHeight="150dp"
-                    android:divider="@color/divider_color"
-                    android:dividerHeight="1dp" />
-            </LinearLayout>
-        </com.google.android.material.card.MaterialCardView>
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/ns_card_padding"
+                    android:paddingBottom="@dimen/ns_card_padding">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingStart="@dimen/ns_card_padding"
+                        android:paddingEnd="@dimen/ns_card_padding">
+
+                        <ImageView
+                            style="@style/Ns.IconBadge"
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:backgroundTint="@color/ns_violet_container"
+                            android:importantForAccessibility="no"
+                            android:src="@drawable/ub_ic_group"
+                            app:tint="@color/ns_violet" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/ub_emg_contacts_title"
+                                android:textAppearance="@style/Ns.Text.Subtitle" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="@string/ub_emg_contacts_caption"
+                                android:textAppearance="@style/Ns.Text.Caption" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/contactsCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ns_pill"
+                            android:paddingStart="10dp"
+                            android:paddingTop="4dp"
+                            android:paddingEnd="10dp"
+                            android:paddingBottom="4dp"
+                            android:textAppearance="@style/Ns.Text.Label"
+                            android:textColor="@color/ns_text_muted"
+                            tools:text="2 / 5" />
+                    </LinearLayout>
+
+                    <!-- Rows are added here -->
+                    <LinearLayout
+                        android:id="@+id/contactsList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:animateLayoutChanges="true"
+                        android:orientation="vertical" />
+
+                    <!-- Empty state -->
+                    <LinearLayout
+                        android:id="@+id/contactsEmpty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingStart="@dimen/ns_card_padding"
+                        android:paddingTop="16dp"
+                        android:paddingEnd="@dimen/ns_card_padding"
+                        android:paddingBottom="8dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            style="@style/Ns.IconBadge"
+                            android:layout_width="56dp"
+                            android:layout_height="56dp"
+                            android:padding="15dp"
+                            android:backgroundTint="@color/ns_surface_highest"
+                            android:importantForAccessibility="no"
+                            android:src="@drawable/ub_ic_person_add"
+                            app:tint="@color/ns_text_muted" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:text="@string/ub_emg_contacts_empty_title"
+                            android:textAppearance="@style/Ns.Text.Subtitle" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="@string/ub_emg_contacts_empty_body"
+                            android:textAppearance="@style/Ns.Text.Caption" />
+                    </LinearLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/addFromContactsButton"
+                        style="@style/Ns.Button.Tonal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/ns_card_padding"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="@dimen/ns_card_padding"
+                        android:text="@string/ub_emg_add_from_contacts"
+                        app:icon="@drawable/ub_ic_person_add" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/addManuallyButton"
+                        style="@style/Ns.Button.Text"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="@dimen/ns_card_padding"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="@dimen/ns_card_padding"
+                        android:text="@string/ub_emg_add_manually"
+                        app:icon="@drawable/ub_ic_add" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- ============ Telegram ============ -->
+            <TextView
+                style="@style/Ns.SectionLabel"
+                android:text="@string/ub_emg_section_telegram" />
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Ns.Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/ns_card_padding">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/Ns.IconBadge"
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:backgroundTint="@color/ns_info_container"
+                            android:importantForAccessibility="no"
+                            android:src="@drawable/ub_ic_send"
+                            app:tint="@color/ns_info" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/ub_emg_telegram_title"
+                                android:textAppearance="@style/Ns.Text.Subtitle" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:id="@+id/telegramStatusDot"
+                                    android:layout_width="8dp"
+                                    android:layout_height="8dp"
+                                    android:background="@drawable/ns_dot" />
+
+                                <TextView
+                                    android:id="@+id/telegramStatus"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:accessibilityLiveRegion="polite"
+                                    android:textAppearance="@style/Ns.Text.Caption"
+                                    tools:text="Linked: 2 chats" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/telegramExplain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/ub_emg_telegram_explain"
+                        android:textAppearance="@style/Ns.Text.Body" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/openBotButton"
+                            style="@style/Ns.Button.Outlined"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="12dp"
+                            android:paddingEnd="12dp"
+                            android:text="@string/ub_emg_open_bot"
+                            app:icon="@drawable/ub_ic_open_in_new" />
+
+                        <Space
+                            android:layout_width="12dp"
+                            android:layout_height="0dp" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/syncButton"
+                            style="@style/Ns.Button.Tonal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="12dp"
+                            android:paddingEnd="12dp"
+                            android:text="@string/ub_emg_sync"
+                            app:icon="@drawable/ub_ic_sync" />
+                    </LinearLayout>
+
+                    <com.google.android.material.progressindicator.LinearProgressIndicator
+                        android:id="@+id/syncProgress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:indeterminate="true"
+                        android:visibility="gone"
+                        app:indicatorColor="@color/ns_info"
+                        app:trackColor="@color/ns_surface_highest"
+                        app:trackCornerRadius="2dp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- ============ Email ============ -->
+            <TextView
+                style="@style/Ns.SectionLabel"
+                android:text="@string/ub_emg_section_email" />
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Ns.Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/ns_card_padding">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/Ns.IconBadge"
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:backgroundTint="@color/ns_gold_container"
+                            android:importantForAccessibility="no"
+                            android:src="@drawable/ub_ic_mail"
+                            app:tint="@color/ns_gold" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/ub_emg_email_title"
+                                android:textAppearance="@style/Ns.Text.Subtitle" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="@string/ub_emg_email_caption"
+                                android:textAppearance="@style/Ns.Text.Caption" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/recipientLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:hint="@string/ub_emg_recipient_hint"
+                        app:startIconDrawable="@drawable/ub_ic_mail">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/recipientInput"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:autofillHints="emailAddress"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/senderLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:hint="@string/ub_emg_sender_hint"
+                        app:helperText="@string/ub_emg_sender_helper"
+                        app:helperTextEnabled="true"
+                        app:startIconDrawable="@drawable/ub_ic_send">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/senderInput"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:importantForAutofill="no"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/passwordLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:hint="@string/ub_emg_password_hint"
+                        app:endIconMode="password_toggle"
+                        app:helperText="@string/ub_emg_password_helper"
+                        app:helperTextEnabled="true"
+                        app:startIconDrawable="@drawable/ub_ic_lock">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/passwordInput"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:importantForAutofill="no"
+                            android:inputType="textPassword"
+                            android:maxLines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/appPasswordLink"
+                        style="@style/Ns.Button.Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/ub_emg_password_link"
+                        app:icon="@drawable/ub_ic_open_in_new"
+                        app:iconGravity="end"
+                        app:iconSize="16dp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- ============ Pinned save ============ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ns_bg"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/ns_divider" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/saveEmergencySettingsButton"
-            android:layout_width="wrap_content"
+            android:id="@+id/saveButton"
+            style="@style/Ns.Button"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/save"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="16dp"
-            style="@style/ButtonStyle" /> <!-- Using custom button style -->
+            android:layout_marginStart="@dimen/ns_gutter"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="@dimen/ns_gutter"
+            android:layout_marginBottom="16dp"
+            android:text="@string/ub_emg_save"
+            app:icon="@drawable/ub_ic_check" />
     </LinearLayout>
-</ScrollView>
+</LinearLayout>

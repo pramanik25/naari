@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Full-screen SOS screen. Two states toggled from PanicActivity: countdown and active. -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ns_bg"
+    android:keepScreenOn="true">
+
+    <!-- ===================== Countdown ===================== -->
+    <LinearLayout
+        android:id="@+id/countdownGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ns_bg_gradient"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:fitsSystemWindows="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/ns_gutter"
+        android:paddingEnd="@dimen/ns_gutter">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/eng_panic_overline"
+            android:textAppearance="@style/Ns.Text.Overline"
+            android:textColor="@color/ns_rose" />
+
+        <FrameLayout
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:layout_marginTop="@dimen/ns_space_6"
+            android:clipChildren="false">
+
+            <View
+                android:id="@+id/countdownRingOuter"
+                android:layout_width="260dp"
+                android:layout_height="260dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ns_sos_ring" />
+
+            <View
+                android:id="@+id/countdownRingMiddle"
+                android:layout_width="228dp"
+                android:layout_height="228dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ns_sos_ring" />
+
+            <View
+                android:id="@+id/countdownRingInner"
+                android:layout_width="204dp"
+                android:layout_height="204dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ns_sos_ring" />
+
+            <FrameLayout
+                android:layout_width="@dimen/ns_sos_size"
+                android:layout_height="@dimen/ns_sos_size"
+                android:layout_gravity="center"
+                android:background="@drawable/ns_sos_core">
+
+                <TextView
+                    android:id="@+id/countdownNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:includeFontPadding="false"
+                    android:textAppearance="@style/Ns.Text.Display"
+                    android:textColor="@color/ns_on_rose"
+                    android:textSize="96sp"
+                    android:accessibilityLiveRegion="assertive" />
+            </FrameLayout>
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ns_space_8"
+            android:text="@string/eng_panic_countdown_title"
+            android:textAppearance="@style/Ns.Text.Headline" />
+
+        <TextView
+            android:id="@+id/countdownCaption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ns_space_2"
+            android:gravity="center"
+            android:textAppearance="@style/Ns.Text.Body" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cancelButton"
+            style="@style/Ns.Button.Tonal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/eng_panic_cancel"
+            app:icon="@drawable/eng_ic_close"
+            app:iconGravity="textStart" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ns_space_3"
+            android:layout_marginBottom="@dimen/ns_space_6"
+            android:text="@string/eng_panic_cancel_hint"
+            android:textAppearance="@style/Ns.Text.Caption" />
+    </LinearLayout>
+
+    <!-- ===================== Active ===================== -->
+    <LinearLayout
+        android:id="@+id/activeGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/eng_panic_header"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:fitsSystemWindows="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/ns_gutter"
+            android:paddingTop="@dimen/ns_space_8"
+            android:paddingEnd="@dimen/ns_gutter"
+            android:paddingBottom="@dimen/ns_space_8">
+
+            <FrameLayout
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:clipChildren="false">
+
+                <View
+                    android:id="@+id/activeRingOuter"
+                    android:layout_width="136dp"
+                    android:layout_height="136dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ns_sos_ring" />
+
+                <View
+                    android:id="@+id/activeRingInner"
+                    android:layout_width="112dp"
+                    android:layout_height="112dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ns_sos_ring" />
+
+                <FrameLayout
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ns_sos_core">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/eng_ic_siren"
+                        app:tint="@color/ns_on_rose" />
+                </FrameLayout>
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ns_space_5"
+                android:text="@string/eng_panic_active_overline"
+                android:textAppearance="@style/Ns.Text.Overline"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ns_space_1"
+                android:gravity="center"
+                android:text="@string/eng_panic_active_title"
+                android:textAppearance="@style/Ns.Text.Headline" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ns_space_2"
+                android:gravity="center"
+                android:text="@string/eng_panic_active_subtitle"
+                android:textAppearance="@style/Ns.Text.Body"
+                android:textColor="@color/ns_text" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/ns_gutter"
+                android:paddingEnd="@dimen/ns_gutter"
+                android:paddingBottom="@dimen/ns_space_4">
+
+                <TextView
+                    style="@style/Ns.SectionLabel"
+                    android:layout_marginTop="@dimen/ns_space_2"
+                    android:text="@string/eng_panic_status_label" />
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/Ns.Card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/ns_space_2"
+                        android:paddingBottom="@dimen/ns_space_2">
+
+                        <!-- SMS -->
+                        <LinearLayout
+                            android:id="@+id/rowSms"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:minHeight="68dp"
+                            android:orientation="horizontal"
+                            android:paddingStart="@dimen/ns_space_4"
+                            android:paddingEnd="@dimen/ns_space_4">
+
+                            <ImageView
+                                android:id="@+id/iconSms"
+                                style="@style/Ns.IconBadge"
+                                android:backgroundTint="@color/ns_rose_container"
+                                android:importantForAccessibility="no"
+                                android:src="@drawable/eng_ic_sms"
+                                app:tint="@color/ns_rose" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/ns_space_3"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/titleSms"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="@style/Ns.Text.Subtitle" />
+
+                                <TextView
+                                    android:id="@+id/detailSms"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="@style/Ns.Text.Caption" />
+                            </LinearLayout>
+
+                            <FrameLayout
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_marginStart="@dimen/ns_space_2">
+
+                                <com.google.android.material.progressindicator.CircularProgressIndicator
+                                    android:id="@+id/progressSms"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:indeterminate="true"
+                                    app:indicatorColor="@color/ns_rose"
+                                    app:indicatorSize="20dp"
+                                    app:trackThickness="2dp" />
+
+                                <ImageView
+                                    android:id="@+id/stateSms"
+                                    android:layout_width="22dp"
+                                    android:layout_height="22dp"
+                                    android:layout_gravity="center"
+                                    android:importantForAccessibility="no"
+                                    android:visibility="gone" />
+                            </FrameLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="76dp"
+                            android:background="@color/ns_stroke" />
+
+                        <!-- Call -->
+                        <LinearLayout
+                            android:id="@+id/rowCall"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:minHeight="68dp"
+                            android:orientation="horizontal"
+                            android:paddingStart="@dimen/ns_space_4"
+                            android:paddingEnd="@dimen/ns_space_4">
+
+                            <ImageView
+                                android:id="@+id/iconCall"
+                                style="@style/Ns.IconBadge"
+                                android:backgroundTint="@color/ns_safe_container"
+                                android:importantForAccessibility="no"
+                                android:src="@drawable/eng_ic_call"
+                                app:tint="@color/ns_safe" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/ns_space_3"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/titleCall"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="@style/Ns.Text.Subtitle" />
+
+                                <TextView
+                                    android:id="@+id/detailCall"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="@style/Ns.Text.Caption" />
+                            </LinearLayout>
+
+                            <FrameLayout
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_marginStart="@dimen/ns_space_2">
+
+                                <com.google.android.material.progressindicator.CircularProgressIndicator
+                                    android:id="@+id/progressCall"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:indeterminate="true"
+                                    app:indicatorColor="@color/ns_safe"
+                                    app:indicatorSize="20dp"
+                                    app:trackThickness="2dp" />
+
+                                <ImageView
+                                    android:id="@+id/stateCall"
+                                    android:layout_width="22dp"
+                                    android:layout_height="22dp"
+                                    android:layout_gravity="center"
+                                    android:importantForAccessibility="no"
+                                    android:visibility="gone" />
+                            </FrameLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="76dp"
+                            android:background="@color/ns_stroke" />
+
+                        <!-- Location -->
+                        <LinearLayout
+                            android:id="@+id/rowLocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:minHeight="68dp"
+                            android:orientation="horizontal"
+                            android:paddingStart="@dimen/ns_space_4"
+                            android:paddingEnd="@dimen/ns_space_4">
+
+                            <ImageView
+                                android:id="@+id/iconLocation"
+                                style="@style/Ns.IconBadge"
+                                android:backgroundTint="@color/ns_violet_container"
+                                android:importantForAccessibility="no"
+                                android:src="@drawable/eng_ic_location"
+                                app:tint="@color/ns_violet" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/ns_space_3"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/titleLocation"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="@style/Ns.Text.Subtitle" />
+
+                                <TextView
+                                    android:id="@+id/detailLocation"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="@style/Ns.Text.Caption" />
+                            </LinearLayout>
+
+                            <FrameLayout
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_marginStart="@dimen/ns_space_2">
+
+                                <com.google.android.material.progressindicator.CircularProgressIndicator
+                                    android:id="@+id/progressLocation"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:indeterminate="true"
+                                    app:indicatorColor="@color/ns_violet"
+                                    app:indicatorSize="20dp"
+                                    app:trackThickness="2dp" />
+
+                                <ImageView
+                                    android:id="@+id/stateLocation"
+                                    android:layout_width="22dp"
+                                    android:layout_height="22dp"
+                                    android:layout_gravity="center"
+                                    android:importantForAccessibility="no"
+                                    android:visibility="gone" />
+                            </FrameLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="76dp"
+                            android:background="@color/ns_stroke" />
+
+                        <!-- Siren -->
+                        <LinearLayout
+                            android:id="@+id/rowSiren"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:minHeight="68dp"
+                            android:orientation="horizontal"
+                            android:paddingStart="@dimen/ns_space_4"
+                            android:paddingEnd="@dimen/ns_space_4">
+
+                            <ImageView
+                                android:id="@+id/iconSiren"
+                                style="@style/Ns.IconBadge"
+                                android:backgroundTint="@color/ns_warn_container"
+                                android:importantForAccessibility="no"
+                                android:src="@drawable/eng_ic_siren"
+                                app:tint="@color/ns_warn" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/ns_space_3"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/titleSiren"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="@style/Ns.Text.Subtitle" />
+
+                                <TextView
+                                    android:id="@+id/detailSiren"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="@style/Ns.Text.Caption" />
+                            </LinearLayout>
+
+                            <FrameLayout
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_marginStart="@dimen/ns_space_2">
+
+                                <com.google.android.material.progressindicator.CircularProgressIndicator
+                                    android:id="@+id/progressSiren"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:indeterminate="true"
+                                    app:indicatorColor="@color/ns_warn"
+                                    app:indicatorSize="20dp"
+                                    app:trackThickness="2dp" />
+
+                                <ImageView
+                                    android:id="@+id/stateSiren"
+                                    android:layout_width="22dp"
+                                    android:layout_height="22dp"
+                                    android:layout_gravity="center"
+                                    android:importantForAccessibility="no"
+                                    android:visibility="gone" />
+                            </FrameLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="76dp"
+                            android:background="@color/ns_stroke" />
+
+                        <!-- Evidence -->
+                        <LinearLayout
+                            android:id="@+id/rowCamera"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:minHeight="68dp"
+                            android:orientation="horizontal"
+                            android:paddingStart="@dimen/ns_space_4"
+                            android:paddingEnd="@dimen/ns_space_4">
+
+                            <ImageView
+                                android:id="@+id/iconCamera"
+                                style="@style/Ns.IconBadge"
+                                android:backgroundTint="@color/ns_gold_container"
+                                android:importantForAccessibility="no"
+                                android:src="@drawable/eng_ic_camera"
+                                app:tint="@color/ns_gold" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/ns_space_3"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/titleCamera"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="@style/Ns.Text.Subtitle" />
+
+                                <TextView
+                                    android:id="@+id/detailCamera"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="@style/Ns.Text.Caption" />
+                            </LinearLayout>
+
+                            <FrameLayout
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_marginStart="@dimen/ns_space_2">
+
+                                <com.google.android.material.progressindicator.CircularProgressIndicator
+                                    android:id="@+id/progressCamera"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:indeterminate="true"
+                                    app:indicatorColor="@color/ns_gold"
+                                    app:indicatorSize="20dp"
+                                    app:trackThickness="2dp" />
+
+                                <ImageView
+                                    android:id="@+id/stateCamera"
+                                    android:layout_width="22dp"
+                                    android:layout_height="22dp"
+                                    android:layout_gravity="center"
+                                    android:importantForAccessibility="no"
+                                    android:visibility="gone" />
+                            </FrameLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/ns_gutter"
+            android:paddingTop="@dimen/ns_space_3"
+            android:paddingEnd="@dimen/ns_gutter"
+            android:paddingBottom="@dimen/ns_space_6">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/holdToStopButton"
+                    style="@style/Ns.Button.Safe"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:text="@string/eng_panic_hold_to_stop"
+                    app:icon="@drawable/eng_ic_check"
+                    app:iconGravity="textStart" />
+
+                <!-- Progress sweep drawn over the button while it is held. -->
+                <View
+                    android:id="@+id/holdFill"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:alpha="0.35"
+                    android:background="@drawable/eng_hold_fill"
+                    android:clickable="false"
+                    android:elevation="12dp"
+                    android:focusable="false"
+                    android:importantForAccessibility="no" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ns_space_2"
+                android:gravity="center"
+                android:text="@string/eng_panic_hold_hint"
+                android:textAppearance="@style/Ns.Text.Caption" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

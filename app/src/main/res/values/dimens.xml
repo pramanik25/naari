@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="settings_card_elevation">4dp</dimen>
-    <dimen name="settings_card_corner_radius">12dp</dimen>
+    <!-- Spacing scale (4dp grid) -->
+    <dimen name="ns_space_1">4dp</dimen>
+    <dimen name="ns_space_2">8dp</dimen>
+    <dimen name="ns_space_3">12dp</dimen>
+    <dimen name="ns_space_4">16dp</dimen>
+    <dimen name="ns_space_5">20dp</dimen>
+    <dimen name="ns_space_6">24dp</dimen>
+    <dimen name="ns_space_8">32dp</dimen>
+    <dimen name="ns_space_10">40dp</dimen>
+    <!-- Screen horizontal gutter -->
+    <dimen name="ns_gutter">20dp</dimen>
+    <!-- Card inner padding -->
+    <dimen name="ns_card_padding">20dp</dimen>
+    <!-- SOS hero core diameter (rings extend beyond it) -->
+    <dimen name="ns_sos_size">184dp</dimen>
+
+    <!-- Legacy -->
+    <dimen name="settings_card_elevation">0dp</dimen>
+    <dimen name="settings_card_corner_radius">20dp</dimen>
     <dimen name="settings_card_margin">8dp</dimen>
     <dimen name="settings_input_margin">16dp</dimen>
 </resources>

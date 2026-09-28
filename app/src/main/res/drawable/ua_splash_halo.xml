@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Soft rose bloom behind the splash logo mark. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+    <gradient
+        android:type="radial"
+        android:gradientRadius="50%p"
+        android:startColor="#40FF4D7E"
+        android:centerColor="#14FF4D7E"
+        android:endColor="#00FF4D7E" />
+</shape>

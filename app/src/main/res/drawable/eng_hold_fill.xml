@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Press-and-hold progress sweep laid over the "I'm safe" button; animate the level 0..10000. -->
+<clip xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clipOrientation="horizontal"
+    android:gravity="start|fill_vertical">
+    <shape android:shape="rectangle">
+        <corners android:radius="999dp" />
+        <solid android:color="@color/ns_text" />
+    </shape>
+</clip>

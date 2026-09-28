@@ -86,4 +86,262 @@
     <string name="help_is_on_its_way" translatable="false">Help is on its way...</string>
     <string name="stay_calm_and_clearly_tell_the_operator_your_location_and_the_nature_of_the_emergency_tips_will_rotate_here" translatable="false">Stay calm and clearly tell the operator your location and the nature of the emergency. (Tips will rotate here)</string>
     <string name="your_class">Your Class</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="set_alarm_settings">Alarm Settings</string>
+    <string name="alarm_status">Alarm Status:</string>
+    <string name="select_day">Select Day:</string>
+    <string name="select_date">Select Date</string>
+    <string name="day_today">Today</string>
+    <string name="day_tomorrow">Tomorrow</string>
+    <string name="day_specific_date">Specific Date</string>
+    <string name="day_daily">Daily</string>
+
+    <string-array name="alarm_repeat_options">
+        <item>Once</item>
+        <item>Daily</item>
+        <item>Tomorrow</item>
+        <item>Specific Date</item>
+        <item>Custom</item>
+    </string-array>
+
+    <!-- ===================== Shared ===================== -->
+    <string name="cd_back">Back</string>
+    <string name="cd_close">Close</string>
+    <string name="action_open_settings">Open settings</string>
+    <string name="action_not_now">Not now</string>
+    <string name="action_grant">Grant</string>
+    <string name="action_fix">Fix</string>
+    <string name="action_allow">Allow</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_review">Review</string>
+    <string name="action_turn_on">Turn on</string>
+    <string name="status_allowed">Allowed</string>
+    <string name="status_not_allowed">Not allowed</string>
+    <string name="status_limited">Approximate only</string>
+
+    <!-- ===================== Navigation ===================== -->
+    <string name="nav_home">Home</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- ===================== Splash ===================== -->
+    <string name="splash_tagline">Your safety, always on</string>
+    <string name="splash_footer">Made for her, with care</string>
+
+    <!-- ===================== Onboarding ===================== -->
+    <string name="onb_overline">Before we begin</string>
+    <string name="onb_title">Let\'s set up your safety net</string>
+    <string name="onb_body">Naari Shakti needs a few permissions to protect you. You stay in control and can change them anytime in Settings.</string>
+    <string name="onb_allow">Allow access</string>
+    <string name="onb_done">You\'re all set. Turn on protection whenever you\'re ready.</string>
+    <string name="onb_partial">Some permissions were skipped. You can grant them in Settings.</string>
+    <string name="perm_mic_title">Microphone</string>
+    <string name="perm_mic_why">Hear your trigger word, even when the screen is off</string>
+    <string name="perm_sms_title">SMS</string>
+    <string name="perm_sms_why">Text your live location to your contacts</string>
+    <string name="perm_phone_title">Phone</string>
+    <string name="perm_phone_why">Call your first contact automatically</string>
+    <string name="perm_location_title">Location</string>
+    <string name="perm_location_why">Share exactly where you are during an SOS</string>
+    <string name="perm_camera_title">Camera</string>
+    <string name="perm_camera_why">Quietly capture evidence during an SOS</string>
+    <string name="perm_contacts_title">Contacts</string>
+    <string name="perm_contacts_why">Pick emergency contacts from your phone</string>
+    <string name="perm_notifications_title">Notifications</string>
+    <string name="perm_notifications_why">Show that protection is running</string>
+    <string name="perm_battery_title">Battery optimization</string>
+    <string name="perm_battery_why">Keep protection alive in the background</string>
+    <string name="perm_fullscreen_title">Full-screen alerts</string>
+    <string name="perm_fullscreen_why">Show the SOS screen over the lock screen</string>
+    <string name="perm_exact_alarm_title">Exact alarms</string>
+    <string name="perm_exact_alarm_why">Start scheduled protection exactly on time</string>
+    <string name="perm_overlay_title">Display over other apps</string>
+    <string name="perm_overlay_why">Show the SOS lock screen above other apps</string>
+    <string name="perm_denied_title">Permission needed</string>
+    <string name="perm_denied_body">%1$s access was turned off. You can allow it from the app settings page.</string>
+    <string name="perm_summary">%1$d of %2$d ready</string>
+
+    <!-- ===================== Home ===================== -->
+    <string name="greeting_morning">Good morning</string>
+    <string name="greeting_afternoon">Good afternoon</string>
+    <string name="greeting_evening">Good evening</string>
+    <string name="greeting_night">Good night</string>
+    <string name="home_default_name">Stay safe</string>
+    <string name="cd_open_profile">Open profile</string>
+    <string name="cd_protection_switch">Protection</string>
+    <string name="home_status_protected">Protected</string>
+    <string name="home_status_starting">Starting…</string>
+    <string name="home_status_paused">Paused</string>
+    <string name="home_status_off">Off</string>
+    <string name="home_protection_on">Protection is on</string>
+    <string name="home_protection_starting">Protection is starting</string>
+    <string name="home_protection_paused">Protection isn\'t running</string>
+    <string name="home_protection_off">Protection is off</string>
+    <string name="home_protection_off_sub">Turn on to listen for your trigger word</string>
+    <string name="home_protection_starting_sub">Getting the microphone ready…</string>
+    <string name="home_protection_paused_sub">It stopped unexpectedly. Tap to restart.</string>
+    <string name="home_listening_for">Listening for “%1$s”</string>
+    <string name="home_trigger_shake">Shake</string>
+    <string name="home_trigger_power">Power ×%1$d</string>
+    <string name="home_mic_needed_title">Allow the microphone</string>
+    <string name="home_mic_needed_body">Protection listens for your trigger word in the background. Nothing is recorded or uploaded until an SOS starts.</string>
+    <string name="home_mic_denied">Microphone access is needed to turn on protection.</string>
+    <string name="sos_label">SOS</string>
+    <string name="sos_hint">Hold for 3 seconds</string>
+    <string name="sos_hint_holding">Keep holding · %1$d</string>
+    <string name="sos_hint_active">Active</string>
+    <string name="sos_caption">Alerts your contacts with live location, calls your first contact and starts the siren.</string>
+    <string name="sos_caption_active">SOS is active. Your contacts are being alerted.</string>
+    <string name="sos_cd">SOS button. Press and hold for 3 seconds to send an emergency alert.</string>
+    <string name="sos_a11y_action">Send SOS</string>
+    <string name="sos_confirm_title">Send SOS now?</string>
+    <string name="sos_confirm_body">Your emergency contacts will be alerted with your location and your first contact will be called.</string>
+    <string name="sos_sent">SOS sent. Alerting your contacts…</string>
+    <string name="sos_sent_no_contacts">SOS started, but you have no emergency contacts yet.</string>
+    <string name="sos_stop">I\'m safe, stop SOS</string>
+    <string name="home_quick_actions">Quick actions</string>
+    <string name="home_your_safety_kit">Your safety kit</string>
+    <string name="qa_trigger_title">Trigger word</string>
+    <string name="qa_trigger_caption">Your secret phrase</string>
+    <string name="qa_contacts_title">Contacts</string>
+    <string name="qa_contacts_caption">Who we alert</string>
+    <string name="qa_police_title">Call police</string>
+    <string name="qa_police_caption">Dial 112 fast</string>
+    <string name="qa_helplines_title">Helplines</string>
+    <string name="qa_helplines_caption">Women\'s support</string>
+    <string name="qa_live_location_title">Live location</string>
+    <string name="qa_live_location_caption">Share where you are</string>
+    <string name="qa_safe_zones_title">Safe zones</string>
+    <string name="qa_safe_zones_caption">Alerts for places</string>
+    <string name="nudge_contacts_title">Add emergency contacts</string>
+    <string name="nudge_contacts_sub">SOS can\'t alert anyone yet</string>
+    <string name="nudge_trigger_title">Record your trigger word</string>
+    <string name="nudge_trigger_sub">Until then we listen for “%1$s”</string>
+    <string name="row_schedule_title">Protection schedule</string>
+    <string name="row_vault_title">Evidence vault</string>
+    <string name="row_vault_empty">Photos captured during an SOS</string>
+    <plurals name="row_vault_count">
+        <item quantity="one">%1$d photo captured</item>
+        <item quantity="other">%1$d photos captured</item>
+    </plurals>
+
+    <!-- ===================== Settings ===================== -->
+    <string name="settings_overline">Preferences</string>
+    <string name="settings_title">Settings</string>
+    <string name="settings_body">Changes save automatically and apply right away.</string>
+    <string name="settings_section_sos">SOS behaviour</string>
+    <string name="settings_section_triggers">Triggers</string>
+    <string name="settings_section_stop">Stopping an alarm</string>
+    <string name="settings_section_permissions">Permissions</string>
+    <string name="settings_section_more">More</string>
+    <string name="settings_section_about">About</string>
+    <string name="settings_countdown_label">SOS countdown: %1$d s</string>
+    <string name="settings_countdown_off">SOS countdown: Off</string>
+    <string name="settings_countdown_caption">Time you get to cancel a false alarm before alerts go out.</string>
+    <string name="settings_freeze_label">Screen lock after SOS: %1$s</string>
+    <string name="settings_freeze_caption">How long the SOS lock screen stays up after an alarm.</string>
+    <string name="settings_shake_title">Shake to SOS</string>
+    <string name="settings_shake_sub">Shake your phone firmly to raise an alarm</string>
+    <string name="settings_power_title">Power button ×%1$d</string>
+    <string name="settings_power_sub">Press the power button quickly to raise an alarm</string>
+    <string name="settings_presses_label">Power presses: %1$d</string>
+    <string name="settings_window_label">Press window: %1$s s</string>
+    <string name="settings_stop_title">How to switch off an active alarm</string>
+    <string name="settings_stop_volume">Volume pattern</string>
+    <string name="settings_stop_shake">Shake</string>
+    <string name="settings_stop_volume_caption">Press the volume keys in your pattern to switch off the siren and lock screen.</string>
+    <string name="settings_stop_shake_caption">Shake the phone firmly to switch off the siren and lock screen.</string>
+    <string name="settings_input_label">Gap between key presses: %1$s s</string>
+    <string name="settings_input_caption">Longest pause allowed between volume presses.</string>
+    <string name="settings_profile_sub">Name, photo and contact details</string>
+    <string name="settings_vault_sub">Photos captured during an SOS</string>
+    <string name="settings_version">Version %1$s</string>
+    <string name="settings_about_body">Your data stays on this device.</string>
+    <string name="duration_seconds">%1$d s</string>
+    <string name="duration_minutes">%1$d min</string>
+    <string name="duration_minutes_seconds">%1$d min %2$d s</string>
+
+    <!-- ===================== Schedule ===================== -->
+    <string name="schedule_overline">Schedule</string>
+    <string name="schedule_title">Protection schedule</string>
+    <string name="schedule_body">Turn protection on and off automatically, for your commute or late nights.</string>
+    <string name="schedule_master_title">Scheduled protection</string>
+    <string name="schedule_master_on">Runs automatically in the window below</string>
+    <string name="schedule_master_off">Off. Protection only runs when you turn it on</string>
+    <string name="schedule_window">Time window</string>
+    <string name="schedule_turns_on">Turns on</string>
+    <string name="schedule_turns_off">Turns off</string>
+    <string name="schedule_tap_to_change">Tap to change</string>
+    <string name="schedule_repeat">Repeat</string>
+    <string name="schedule_every_day">Every day</string>
+    <string name="schedule_today">Today</string>
+    <string name="schedule_tomorrow">Tomorrow</string>
+    <string name="schedule_pick_date">Pick a date</string>
+    <string name="schedule_pick_start">Protection turns on at</string>
+    <string name="schedule_pick_end">Protection turns off at</string>
+    <string name="schedule_pick_date_title">Choose a day</string>
+    <string name="schedule_save">Save schedule</string>
+    <string name="schedule_saved">Schedule saved</string>
+    <string name="schedule_not_scheduled">Not scheduled</string>
+    <string name="schedule_off_summary">Scheduled protection is off.</string>
+    <string name="schedule_summary">Protection turns on at %1$s and off at %2$s%3$s, %4$s.</string>
+    <string name="schedule_next_day"> the next day</string>
+    <string name="schedule_when_daily">every day</string>
+    <string name="schedule_when_today">today only</string>
+    <string name="schedule_when_tomorrow">tomorrow only</string>
+    <string name="schedule_when_date">on %1$s</string>
+    <string name="schedule_short">%1$s – %2$s · %3$s</string>
+    <string name="schedule_error_same">Start and end times can\'t be the same.</string>
+    <string name="schedule_error_date">Pick a date first.</string>
+    <string name="schedule_error_passed">That window has already ended today. Choose Tomorrow or a date.</string>
+    <string name="schedule_exact_title">Allow exact alarms</string>
+    <string name="schedule_exact_body">Android needs your permission to start protection exactly on time.</string>
+
+    <!-- ===================== Profile ===================== -->
+    <string name="profile_overline">Your profile</string>
+    <string name="profile_title">About you</string>
+    <string name="profile_body">Helps your contacts and responders recognise you. Stored only on this device.</string>
+    <string name="profile_add_photo">Tap to add a photo</string>
+    <string name="profile_change_photo">Tap to change photo</string>
+    <string name="cd_profile_photo">Profile photo. Double tap to change.</string>
+    <string name="profile_section_personal">Personal</string>
+    <string name="profile_section_contact">Contact</string>
+    <string name="profile_section_occupation">Occupation</string>
+    <string name="profile_full_name">Full name</string>
+    <string name="profile_guardian_name">Father\'s or guardian\'s name</string>
+    <string name="profile_address">Home address</string>
+    <string name="profile_mobile">Your mobile number</string>
+    <string name="profile_guardian_mobile">Guardian\'s mobile number</string>
+    <string name="profile_mobile_helper">10 digits, +91 optional</string>
+    <string name="profile_college">College</string>
+    <string name="profile_degree">Degree or course</string>
+    <string name="profile_office">Office location</string>
+    <string name="profile_update">Update profile</string>
+    <string name="profile_saved">Profile saved</string>
+    <string name="profile_save_error">Couldn\'t save your profile. Please try again.</string>
+    <string name="profile_photo_error">Couldn\'t load that photo.</string>
+    <string name="profile_error_required">Required</string>
+    <string name="profile_error_mobile">Enter a valid 10-digit mobile number</string>
+    <string name="profile_error_pincode">Enter a valid 6-digit pincode</string>
+
+    <!-- ===================== Evidence vault ===================== -->
+    <string name="vault_overline">Evidence</string>
+    <string name="vault_title">Evidence vault</string>
+    <string name="vault_body">Photos captured automatically during an SOS, newest first.</string>
+    <string name="vault_empty_title">No evidence captured yet</string>
+    <string name="vault_empty_body">When an SOS is triggered, Naari Shakti quietly takes photos with the front and back cameras. They\'ll appear here.</string>
+    <string name="vault_front">Front camera</string>
+    <string name="vault_back">Back camera</string>
+    <string name="vault_photo">Photo</string>
+    <string name="vault_unknown_time">Unknown time</string>
+    <string name="vault_delete_title">Delete this photo?</string>
+    <string name="vault_delete_body">It will be permanently removed from this device. This can\'t be undone.</string>
+    <string name="vault_deleted">Photo deleted</string>
+    <string name="vault_load_error">Couldn\'t open the evidence vault.</string>
+    <string name="cd_delete_photo">Delete photo</string>
+    <plurals name="vault_count">
+        <item quantity="one">%1$d photo</item>
+        <item quantity="other">%1$d photos</item>
+    </plurals>
 </resources>

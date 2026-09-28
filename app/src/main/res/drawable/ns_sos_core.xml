@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SOS hero button core: glossy rose sphere with a hairline rim. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:centerX="0.35"
+                android:centerY="0.3"
+                android:gradientRadius="75%p"
+                android:startColor="#FFFF7A9E"
+                android:centerColor="@color/ns_rose"
+                android:endColor="@color/ns_rose_dark" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <stroke android:width="1.5dp" android:color="#40FFFFFF" />
+        </shape>
+    </item>
+</layer-list>

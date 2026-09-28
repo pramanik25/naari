@@ -1,80 +1,404 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/screenRoot"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/dark_gray">
+    android:background="@drawable/ns_bg_gradient"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="Home_Activity.CallPoliceActivity">
 
-    <RelativeLayout
-        android:id="@+id/top_bar"
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="@color/bright_red">
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:fillViewport="true">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="@string/emergency_police_sos"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:orientation="vertical"
+            android:paddingStart="@dimen/ns_gutter"
+            android:paddingTop="12dp"
+            android:paddingEnd="@dimen/ns_gutter"
+            android:paddingBottom="40dp">
 
-        <ImageButton
-            android:id="@+id/cancel_button"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:layout_marginEnd="16dp"
-            android:background="@null"
-            android:src="@drawable/ic_close"
-            android:contentDescription="@string/cancel" />
+            <!-- ============ Header ============ -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/backButton"
+                style="@style/Ns.Button.Icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="@string/ub_back"
+                app:icon="@drawable/ub_ic_arrow_back" />
 
-    </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/ub_police_eyebrow"
+                android:textAppearance="@style/Ns.Text.Overline" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/ub_police_title"
+                android:textAppearance="@style/Ns.Text.Headline" />
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/ub_police_desc"
+                android:textAppearance="@style/Ns.Text.Body" />
 
-    <TextView
-        android:id="@+id/help_is_coming_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/top_bar"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:text="@string/help_is_on_its_way"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        android:visibility="gone" />
+            <!-- ============ Call orb ============ -->
+            <FrameLayout
+                android:id="@+id/orbStage"
+                android:layout_width="264dp"
+                android:layout_height="264dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp">
 
+                <View
+                    android:id="@+id/ringOuter"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0"
+                    android:background="@drawable/ns_sos_ring" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:gravity="center"
-        android:orientation="vertical">
+                <View
+                    android:id="@+id/ringInner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0"
+                    android:background="@drawable/ns_sos_ring" />
 
-        <ImageButton
-            android:id="@+id/call_police_button"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:background="@drawable/round_red_button"
-            android:contentDescription="@string/call_police"
-            android:src="@drawable/baseline_add_ic_call_24" />
+                <com.google.android.material.progressindicator.CircularProgressIndicator
+                    android:id="@+id/countdownRing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:importantForAccessibility="no"
+                    android:max="1000"
+                    android:visibility="invisible"
+                    app:indicatorColor="@color/ns_rose"
+                    app:indicatorSize="208dp"
+                    app:trackColor="@color/ns_surface_highest"
+                    app:trackThickness="4dp" />
 
+                <LinearLayout
+                    android:id="@+id/callOrb"
+                    android:layout_width="184dp"
+                    android:layout_height="184dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ns_sos_core"
+                    android:clickable="true"
+                    android:contentDescription="@string/ub_police_orb_cd"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:gravity="center"
+                    android:orientation="vertical">
 
-    </LinearLayout>
+                    <ImageView
+                        android:id="@+id/orbIcon"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/ub_ic_phone"
+                        app:tint="@color/ns_on_rose" />
 
-    <TextView
-        android:id="@+id/safety_tip"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="60dp"
-        android:padding="16dp"
-        android:text="@string/stay_calm_and_clearly_tell_the_operator_your_location_and_the_nature_of_the_emergency_tips_will_rotate_here"
-        android:textColor="@color/light_gray"
-        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/orbNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/ub_num_112"
+                        android:textAppearance="@style/Ns.Text.Display"
+                        android:textColor="@color/ns_on_rose"
+                        android:textSize="44sp" />
 
+                    <TextView
+                        android:id="@+id/orbCaption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.9"
+                        android:text="@string/ub_police_tap_to_call"
+                        android:textAppearance="@style/Ns.Text.Label"
+                        android:textColor="@color/ns_on_rose" />
+                </LinearLayout>
+            </FrameLayout>
 
-</RelativeLayout>
+            <TextView
+                android:id="@+id/orbLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:accessibilityLiveRegion="polite"
+                android:gravity="center"
+                android:text="@string/ub_police_orb_label"
+                android:textAppearance="@style/Ns.Text.Title" />
+
+            <TextView
+                android:id="@+id/orbSubLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="@string/ub_police_orb_sublabel"
+                android:textAppearance="@style/Ns.Text.Caption" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/cancelCallButton"
+                style="@style/Ns.Button.Outlined"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:minWidth="160dp"
+                android:text="@string/ub_police_cancel_call"
+                android:visibility="gone"
+                app:icon="@drawable/ub_ic_close"
+                tools:visibility="visible" />
+
+            <!-- ============ Other numbers ============ -->
+            <TextView
+                style="@style/Ns.SectionLabel"
+                android:text="@string/ub_police_section_other" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/police100Card"
+                    style="@style/Ns.Card.Tile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/ub_police_100_cd">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            style="@style/Ns.IconBadge"
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:backgroundTint="@color/ns_violet_container"
+                            android:importantForAccessibility="no"
+                            android:src="@drawable/ub_ic_shield"
+                            app:tint="@color/ns_violet" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14dp"
+                            android:text="@string/ub_num_100"
+                            android:textAppearance="@style/Ns.Text.Headline" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="@string/ub_police_100_name"
+                            android:textAppearance="@style/Ns.Text.Caption" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <Space
+                    android:layout_width="12dp"
+                    android:layout_height="0dp" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/women1091Card"
+                    style="@style/Ns.Card.Tile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/ub_police_1091_cd">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            style="@style/Ns.IconBadge"
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:backgroundTint="@color/ns_rose_container"
+                            android:importantForAccessibility="no"
+                            android:src="@drawable/ub_ic_woman"
+                            app:tint="@color/ns_rose" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14dp"
+                            android:text="@string/ub_num_1091"
+                            android:textAppearance="@style/Ns.Text.Headline" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="@string/ub_police_1091_name"
+                            android:textAppearance="@style/Ns.Text.Caption" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <!-- ============ Share location ============ -->
+            <TextView
+                style="@style/Ns.SectionLabel"
+                android:text="@string/ub_police_section_share" />
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Ns.Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/ns_card_padding">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/Ns.IconBadge"
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:backgroundTint="@color/ns_safe_container"
+                            android:importantForAccessibility="no"
+                            android:src="@drawable/ub_ic_location"
+                            app:tint="@color/ns_safe" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/ub_police_share_title"
+                                android:textAppearance="@style/Ns.Text.Subtitle" />
+
+                            <TextView
+                                android:id="@+id/shareCaption"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:textAppearance="@style/Ns.Text.Caption"
+                                tools:text="Texts a Google Maps link to your 3 emergency contacts" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/textContactsButton"
+                            style="@style/Ns.Button.Tonal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="12dp"
+                            android:paddingEnd="12dp"
+                            android:text="@string/ub_text_contacts"
+                            app:icon="@drawable/ub_ic_sms" />
+
+                        <Space
+                            android:layout_width="12dp"
+                            android:layout_height="0dp" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/shareSheetButton"
+                            style="@style/Ns.Button.Outlined"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="12dp"
+                            android:paddingEnd="12dp"
+                            android:text="@string/ub_share"
+                            app:icon="@drawable/ub_ic_share" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- ============ Rotating tip ============ -->
+            <TextView
+                style="@style/Ns.SectionLabel"
+                android:text="@string/ub_police_section_tip" />
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Ns.Card.Raised"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/ns_card_padding">
+
+                    <ImageView
+                        style="@style/Ns.IconBadge"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:backgroundTint="@color/ns_gold_container"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/ub_ic_lightbulb"
+                        app:tint="@color/ns_gold" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tipText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minLines="3"
+                            android:textAppearance="@style/Ns.Text.Body"
+                            android:textColor="@color/ns_text"
+                            tools:text="Stay on the line. Tell the operator where you are first, then what is happening." />
+
+                        <TextView
+                            android:id="@+id/tipCounter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:textAppearance="@style/Ns.Text.Caption"
+                            tools:text="Tip 1 of 6" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

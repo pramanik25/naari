@@ -1,83 +1,392 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/ns_bg_gradient"
+    android:fitsSystemWindows="true"
     android:orientation="vertical"
-    android:padding="16dp">
+    tools:context="Home_Activity.TimeSettingsActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/set_active_time_window"
-        android:textSize="20sp"
-        android:layout_gravity="center"
-        android:layout_marginBottom="24dp"/>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false">
 
-    <LinearLayout
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/ns_gutter"
+            android:paddingTop="8dp"
+            android:paddingEnd="@dimen/ns_gutter"
+            android:paddingBottom="24dp">
+
+            <!-- ============ Header ============ -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/backButton"
+                style="@style/Ns.Button.Icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="@string/cd_back"
+                app:icon="@drawable/ua_ic_arrow_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/schedule_overline"
+                android:textAppearance="@style/Ns.Text.Overline" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/schedule_title"
+                android:textAppearance="@style/Ns.Text.Headline" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/schedule_body"
+                android:textAppearance="@style/Ns.Text.Body" />
+
+            <!-- ============ Exact alarm prompt (API 31+) ============ -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/exactAlarmCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"
+                app:cardBackgroundColor="@color/ns_warn_container"
+                app:strokeWidth="0dp"
+                tools:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/exactAlarmIcon"
+                        style="@style/Ns.IconBadge"
+                        android:backgroundTint="@color/ns_warn_container"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/ua_ic_alarm"
+                        app:tint="@color/ns_warn" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/schedule_exact_title"
+                            android:textAppearance="@style/Ns.Text.Subtitle" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="@string/schedule_exact_body"
+                            android:textAppearance="@style/Ns.Text.Caption"
+                            android:textColor="@color/ns_text_muted" />
+                    </LinearLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/exactAlarmButton"
+                        style="@style/Ns.Button.Tonal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="0dp"
+                        android:minHeight="40dp"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:text="@string/action_allow" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- ============ Master switch ============ -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <include
+                    android:id="@+id/masterRow"
+                    layout="@layout/ua_item_switch_row" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:id="@+id/scheduleSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- ============ Time tiles ============ -->
+                <TextView
+                    style="@style/Ns.SectionLabel"
+                    android:text="@string/schedule_window" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/startTile"
+                        style="@style/Ns.Card.Tile"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="6dp"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/ns_card_padding">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:layout_width="8dp"
+                                    android:layout_height="8dp"
+                                    android:background="@drawable/ns_dot"
+                                    android:backgroundTint="@color/ns_safe" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:text="@string/schedule_turns_on"
+                                    android:textAppearance="@style/Ns.Text.Overline"
+                                    android:textColor="@color/ns_text_muted" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:baselineAligned="true"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/startTime"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="@style/Ns.Text.Display"
+                                    android:textSize="32sp"
+                                    tools:text="22:00" />
+
+                                <TextView
+                                    android:id="@+id/startAmPm"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="4dp"
+                                    android:textAppearance="@style/Ns.Text.Label"
+                                    android:textColor="@color/ns_text_muted"
+                                    android:visibility="gone"
+                                    tools:text="PM" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:text="@string/schedule_tap_to_change"
+                                android:textAppearance="@style/Ns.Text.Caption" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/endTile"
+                        style="@style/Ns.Card.Tile"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/ns_card_padding">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:layout_width="8dp"
+                                    android:layout_height="8dp"
+                                    android:background="@drawable/ns_dot"
+                                    android:backgroundTint="@color/ns_text_faint" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:text="@string/schedule_turns_off"
+                                    android:textAppearance="@style/Ns.Text.Overline"
+                                    android:textColor="@color/ns_text_muted" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:baselineAligned="true"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/endTime"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="@style/Ns.Text.Display"
+                                    android:textSize="32sp"
+                                    tools:text="06:00" />
+
+                                <TextView
+                                    android:id="@+id/endAmPm"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="4dp"
+                                    android:textAppearance="@style/Ns.Text.Label"
+                                    android:textColor="@color/ns_text_muted"
+                                    android:visibility="gone"
+                                    tools:text="AM" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:text="@string/schedule_tap_to_change"
+                                android:textAppearance="@style/Ns.Text.Caption" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
+
+                <!-- ============ Repeat ============ -->
+                <TextView
+                    style="@style/Ns.SectionLabel"
+                    android:text="@string/schedule_repeat" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/repeatGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:chipSpacingHorizontal="8dp"
+                    app:selectionRequired="true"
+                    app:singleSelection="true">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipDaily"
+                        style="@style/Ns.Chip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/schedule_every_day" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipToday"
+                        style="@style/Ns.Chip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/schedule_today" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipTomorrow"
+                        style="@style/Ns.Chip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/schedule_tomorrow" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipDate"
+                        style="@style/Ns.Chip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/schedule_pick_date"
+                        app:chipIcon="@drawable/ua_ic_event"
+                        app:chipIconSize="18dp"
+                        app:chipIconTint="@color/ns_text_muted"
+                        app:chipIconVisible="true" />
+                </com.google.android.material.chip.ChipGroup>
+
+                <!-- ============ Summary ============ -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    app:cardBackgroundColor="@color/ns_surface_high">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/ns_card_padding">
+
+                        <ImageView
+                            android:id="@+id/summaryIcon"
+                            style="@style/Ns.IconBadge"
+                            android:importantForAccessibility="no"
+                            android:src="@drawable/ua_ic_info" />
+
+                        <TextView
+                            android:id="@+id/summaryText"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_weight="1"
+                            android:accessibilityLiveRegion="polite"
+                            android:textAppearance="@style/Ns.Text.Body"
+                            android:textColor="@color/ns_text"
+                            tools:text="Protection turns on at 22:00 and off at 06:00 the next day, every day." />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- ============ Sticky save ============ -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/ns_stroke" />
+
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:layout_marginBottom="16dp">
+        android:background="@color/ns_bg"
+        android:paddingStart="@dimen/ns_gutter"
+        android:paddingTop="12dp"
+        android:paddingEnd="@dimen/ns_gutter"
+        android:paddingBottom="16dp">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/saveButton"
+            style="@style/Ns.Button"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/start_time"
-            android:textSize="18sp"
-            android:layout_marginEnd="8dp"/>
-
-        <TextView
-            android:id="@+id/start_time_text_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:text="@string/_00_00"
-            android:layout_marginEnd="8dp"/>
-
-        <Button
-            android:id="@+id/set_start_time_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/set_start_time"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:layout_marginBottom="16dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/end_time"
-            android:textSize="18sp"
-            android:layout_marginEnd="8dp"/>
-
-        <TextView
-            android:id="@+id/end_time_text_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:text="@string/_23_59"
-            android:layout_marginEnd="8dp"/>
-
-        <Button
-            android:id="@+id/set_end_time_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/set_end_time"/>
-
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/save_time_settings_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/save_time_settings"
-        android:layout_gravity="center"/>
-
+            android:text="@string/schedule_save" />
+    </FrameLayout>
 </LinearLayout>

@@ -2,86 +2,477 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/screenRoot"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/ns_bg_gradient"
+    android:fitsSystemWindows="true"
     android:orientation="vertical"
-    android:gravity="center"
-    android:padding="24dp"
-    android:background="@color/settings_background">
+    tools:context="Home_Activity.TriggerWordActivity">
 
-    <TextView
-        android:id="@+id/recordedWordTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:textColor="@color/primary_text"
-        android:textSize="24sp"
-        android:text="@string/say_the_trigger_word" />
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:fillViewport="true">
 
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/recordingAnimation"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginBottom="24dp"
-        app:lottie_rawRes="@raw/recording_animation"
-        app:lottie_autoPlay="false"
-        app:lottie_loop="true"/>
-
-    <TextView
-        android:id="@+id/recordingStatus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:text="@string/press_record"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@color/input_text" />
-
-    <com.google.android.material.button.MaterialButtonToggleGroup
-        android:id="@+id/recordButtons"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:singleSelection="true"
-        app:selectionRequired="false"
-        android:layout_marginBottom="24dp">
-
-        <Button
-            android:id="@+id/recordButton"
-            style="?attr/materialButtonOutlinedStyle"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/record"
-            android:textColor="@color/record_button"
-            />
+            android:orientation="vertical"
+            android:paddingStart="@dimen/ns_gutter"
+            android:paddingTop="12dp"
+            android:paddingEnd="@dimen/ns_gutter"
+            android:paddingBottom="40dp">
 
-        <Button
-            android:id="@+id/playbackButton"
-            style="?attr/materialButtonOutlinedStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/playback"
-            android:enabled="false"
-            android:textColor="@color/button_secondary" />
+            <!-- ============ Header ============ -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/backButton"
+                style="@style/Ns.Button.Icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="@string/ub_back"
+                app:icon="@drawable/ub_ic_arrow_back" />
 
-    </com.google.android.material.button.MaterialButtonToggleGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/ub_trigger_eyebrow"
+                android:textAppearance="@style/Ns.Text.Overline" />
 
-    <TextView
-        android:id="@+id/lastRecordingText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:textColor="@color/primary_text"
-        android:textSize="16sp"
-        android:text="@string/last_recording_text"
-        android:gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:accessibilityHeading="true"
+                android:text="@string/ub_trigger_title"
+                android:textAppearance="@style/Ns.Text.Headline"
+                tools:targetApi="p" />
 
-    <Button
-        android:id="@+id/playLastRecordingButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/play_last_recording"
-        android:backgroundTint="@color/common_google_signin_btn_text_dark_default"
-        android:enabled="false"
-        android:textColor="@color/button_secondary"
-        style="?attr/materialButtonOutlinedStyle"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/ub_trigger_desc"
+                android:textAppearance="@style/Ns.Text.Body" />
 
+            <!-- ============ Hero: current phrase ============ -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/heroCard"
+                style="@style/Ns.Card.Raised"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                app:shapeAppearance="@style/Ns.Shape.Large">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha="0.22"
+                        android:background="@drawable/ns_hero_gradient" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="24dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ub_trigger_current_label"
+                            android:textAppearance="@style/Ns.Text.Overline" />
+
+                        <TextView
+                            android:id="@+id/currentPhraseText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:textAppearance="@style/Ns.Text.Display"
+                            tools:text="“help me”" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:background="@drawable/ns_pill"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingStart="12dp"
+                            android:paddingTop="6dp"
+                            android:paddingEnd="12dp"
+                            android:paddingBottom="6dp">
+
+                            <View
+                                android:id="@+id/phraseStatusDot"
+                                android:layout_width="8dp"
+                                android:layout_height="8dp"
+                                android:background="@drawable/ns_dot" />
+
+                            <TextView
+                                android:id="@+id/phraseStatusText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:text="@string/ub_trigger_status_active"
+                                android:textAppearance="@style/Ns.Text.Caption"
+                                android:textColor="@color/ns_text_muted" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- ============ Record ============ -->
+            <TextView
+                style="@style/Ns.SectionLabel"
+                android:text="@string/ub_trigger_section_record" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/recordCard"
+                style="@style/Ns.Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="@dimen/ns_card_padding">
+
+                    <FrameLayout
+                        android:id="@+id/micStage"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp">
+
+                        <View
+                            android:id="@+id/ringOuter"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:alpha="0"
+                            android:background="@drawable/ns_sos_ring" />
+
+                        <View
+                            android:id="@+id/ringInner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:alpha="0"
+                            android:background="@drawable/ns_sos_ring" />
+
+                        <FrameLayout
+                            android:id="@+id/micButton"
+                            android:layout_width="112dp"
+                            android:layout_height="112dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/ns_sos_core"
+                            android:clickable="true"
+                            android:contentDescription="@string/ub_trigger_record_cd"
+                            android:focusable="true"
+                            android:foreground="?attr/selectableItemBackgroundBorderless">
+
+                            <ImageView
+                                android:id="@+id/micIcon"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:importantForAccessibility="no"
+                                android:src="@drawable/ub_ic_mic"
+                                app:tint="@color/ns_on_rose" />
+                        </FrameLayout>
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/recordStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:accessibilityLiveRegion="polite"
+                        android:gravity="center"
+                        android:text="@string/ub_trigger_tap_to_record"
+                        android:textAppearance="@style/Ns.Text.Subtitle" />
+
+                    <TextView
+                        android:id="@+id/liveTranscript"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:textAppearance="@style/Ns.Text.Title"
+                        android:textColor="@color/ns_gold"
+                        android:visibility="gone"
+                        tools:text="“help me…”"
+                        tools:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/recordHint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:gravity="center"
+                        android:text="@string/ub_trigger_record_hint"
+                        android:textAppearance="@style/Ns.Text.Caption" />
+
+                    <!-- Confirm step -->
+                    <LinearLayout
+                        android:id="@+id/confirmGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        tools:visibility="visible">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@drawable/ns_divider" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/ub_trigger_we_heard"
+                            android:textAppearance="@style/Ns.Text.Overline" />
+
+                        <TextView
+                            android:id="@+id/heardText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:textAppearance="@style/Ns.Text.Headline"
+                            tools:text="“purple mango”" />
+
+                        <TextView
+                            android:id="@+id/heardWarning"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:textAppearance="@style/Ns.Text.Caption"
+                            android:textColor="@color/ns_warn"
+                            android:visibility="gone"
+                            tools:text="Common words can cause false alarms."
+                            tools:visibility="visible" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/tryAgainButton"
+                                style="@style/Ns.Button.Outlined"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:paddingStart="12dp"
+                                android:paddingEnd="12dp"
+                                android:text="@string/ub_trigger_try_again"
+                                app:icon="@drawable/ub_ic_refresh" />
+
+                            <Space
+                                android:layout_width="12dp"
+                                android:layout_height="0dp" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/usePhraseButton"
+                                style="@style/Ns.Button"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:paddingStart="12dp"
+                                android:paddingEnd="12dp"
+                                android:text="@string/ub_trigger_use"
+                                app:icon="@drawable/ub_ic_check" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- ============ Type instead ============ -->
+            <TextView
+                style="@style/Ns.SectionLabel"
+                android:text="@string/ub_trigger_section_type" />
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Ns.Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/ns_card_padding">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/phraseInputLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/ub_trigger_input_hint"
+                        app:counterEnabled="true"
+                        app:counterMaxLength="40"
+                        app:helperText="@string/ub_trigger_input_helper"
+                        app:helperTextEnabled="true"
+                        app:startIconDrawable="@drawable/ub_ic_keyboard">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/phraseInput"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:imeOptions="actionDone"
+                            android:importantForAutofill="no"
+                            android:inputType="text|textNoSuggestions"
+                            android:maxLength="40"
+                            android:maxLines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/saveTypedButton"
+                        style="@style/Ns.Button.Tonal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/ub_trigger_save_typed"
+                        app:icon="@drawable/ub_ic_check" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- ============ Tips ============ -->
+            <TextView
+                style="@style/Ns.SectionLabel"
+                android:text="@string/ub_trigger_section_tips" />
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Ns.Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/ns_card_padding">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/Ns.IconBadge"
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:backgroundTint="@color/ns_violet_container"
+                            android:importantForAccessibility="no"
+                            android:src="@drawable/ub_ic_voice"
+                            app:tint="@color/ns_violet" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/ub_trigger_tip1_title"
+                                android:textAppearance="@style/Ns.Text.Subtitle" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="@string/ub_trigger_tip1_body"
+                                android:textAppearance="@style/Ns.Text.Caption" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/Ns.IconBadge"
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:backgroundTint="@color/ns_info_container"
+                            android:importantForAccessibility="no"
+                            android:src="@drawable/ub_ic_cloud_off"
+                            app:tint="@color/ns_info" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/ub_trigger_tip2_title"
+                                android:textAppearance="@style/Ns.Text.Subtitle" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="@string/ub_trigger_tip2_body"
+                                android:textAppearance="@style/Ns.Text.Caption" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/Ns.IconBadge"
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:backgroundTint="@color/ns_safe_container"
+                            android:importantForAccessibility="no"
+                            android:src="@drawable/ub_ic_shield"
+                            app:tint="@color/ns_safe" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/ub_trigger_tip3_title"
+                                android:textAppearance="@style/Ns.Text.Subtitle" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="@string/ub_trigger_tip3_body"
+                                android:textAppearance="@style/Ns.Text.Caption" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 </LinearLayout>

@@ -1,33 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme -->
-    <style name="Theme.SafetyApp" parent="Theme.Material3.DayNight.NoActionBar">
-        <item name="colorPrimary">@color/emergency_primary</item>
-        <item name="colorOnPrimary">@color/surface_primary</item>
-        <item name="colorPrimaryContainer">@color/emergency_tertiary</item>
-        <item name="colorOnPrimaryContainer">@color/text_primary</item>
-        <item name="colorSecondary">@color/trust_primary</item>
-        <item name="colorOnSecondary">@color/surface_primary</item>
-        <item name="android:statusBarColor">@color/emergency_primary</item>
-        <item name="android:navigationBarColor">@color/surface_primary</item>
-        <item name="materialButtonStyle">@style/Widget.SafetyApp.Button</item>
-        <item name="textAppearanceTitleMedium">@style/TextAppearance.SafetyApp.TitleMedium</item>
+
+    <!-- Naari Shakti is dark-first: one theme for every screen, regardless of system mode. -->
+    <style name="Theme.NaariShakti" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/ns_rose</item>
+        <item name="colorOnPrimary">@color/ns_on_rose</item>
+        <item name="colorPrimaryContainer">@color/ns_rose_container</item>
+        <item name="colorOnPrimaryContainer">@color/ns_text</item>
+        <item name="colorPrimaryVariant">@color/ns_rose_deep</item>
+
+        <item name="colorSecondary">@color/ns_violet</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSecondaryContainer">@color/ns_violet_container</item>
+        <item name="colorOnSecondaryContainer">@color/ns_text</item>
+
+        <item name="colorTertiary">@color/ns_gold</item>
+        <item name="colorOnTertiary">@color/black</item>
+
+        <item name="android:colorBackground">@color/ns_bg</item>
+        <item name="colorSurface">@color/ns_surface</item>
+        <item name="colorOnSurface">@color/ns_text</item>
+        <item name="colorSurfaceVariant">@color/ns_surface_high</item>
+        <item name="colorOnSurfaceVariant">@color/ns_text_muted</item>
+        <item name="colorSurfaceContainer">@color/ns_surface</item>
+        <item name="colorSurfaceContainerHigh">@color/ns_surface_high</item>
+        <item name="colorSurfaceContainerHighest">@color/ns_surface_highest</item>
+        <item name="colorOutline">@color/ns_stroke</item>
+        <item name="colorOutlineVariant">@color/ns_stroke</item>
+
+        <item name="colorError">@color/ns_danger</item>
+        <item name="colorOnError">@color/white</item>
+
+        <item name="android:textColorPrimary">@color/ns_text</item>
+        <item name="android:textColorSecondary">@color/ns_text_muted</item>
+        <item name="android:textColorHint">@color/ns_text_faint</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="fontFamily">@font/roboto</item>
+
+        <item name="android:windowBackground">@color/ns_bg</item>
+        <item name="android:statusBarColor">@color/ns_bg</item>
+        <item name="android:navigationBarColor">@color/ns_bg</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <!-- Component defaults -->
+        <item name="materialButtonStyle">@style/Ns.Button</item>
+        <item name="materialButtonOutlinedStyle">@style/Ns.Button.Outlined</item>
+        <item name="borderlessButtonStyle">@style/Ns.Button.Text</item>
+        <item name="materialCardViewStyle">@style/Ns.Card</item>
+        <item name="textInputStyle">@style/Ns.TextInput</item>
+        <item name="materialSwitchStyle">@style/Ns.Switch</item>
+        <item name="chipStyle">@style/Ns.Chip</item>
+        <item name="toolbarStyle">@style/Ns.Toolbar</item>
+        <item name="bottomNavigationStyle">@style/Ns.BottomNav</item>
+        <item name="sliderStyle">@style/Ns.Slider</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.Ns.Dialog</item>
+        <item name="shapeAppearanceSmallComponent">@style/Ns.Shape.Small</item>
+        <item name="shapeAppearanceMediumComponent">@style/Ns.Shape.Medium</item>
+        <item name="shapeAppearanceLargeComponent">@style/Ns.Shape.Large</item>
     </style>
 
-    <style name="Widget.SafetyApp.Button" parent="Widget.Material3.Button">
-        <item name="android:insetTop">0dp</item>
-        <item name="android:insetBottom">0dp</item>
-        <item name="shapeAppearance">@style/ShapeAppearance.SafetyApp.MediumComponent</item>
-        <item name="android:textColor">@color/surface_primary</item>
+    <!-- Splash: edge-to-edge gradient, no chrome. -->
+    <style name="Theme.NaariShakti.Splash" parent="Theme.NaariShakti">
+        <item name="android:windowBackground">@drawable/ns_bg_gradient</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
     </style>
 
-    <style name="TextAppearance.SafetyApp.TitleMedium" parent="TextAppearance.Material3.TitleMedium">
-        <item name="android:letterSpacing">0.02</item>
-        <item name="android:lineHeight">32sp</item>
-        <item name="android:textStyle">bold</item>
+    <!-- Full-screen panic overlay activity/window. -->
+    <style name="Theme.NaariShakti.Panic" parent="Theme.NaariShakti">
+        <item name="android:windowBackground">@color/ns_bg</item>
+        <item name="android:statusBarColor">@color/ns_rose_dark</item>
+        <item name="android:navigationBarColor">@color/ns_bg</item>
     </style>
 
-    <style name="ShapeAppearance.SafetyApp.MediumComponent" parent="ShapeAppearance.Material3.MediumComponent">
-        <item name="cornerFamily">rounded</item>
-        <item name="cornerSize">16dp</item>
+    <style name="ThemeOverlay.Ns.Dialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="colorSurface">@color/ns_surface_high</item>
+        <item name="colorPrimary">@color/ns_rose</item>
+        <item name="shapeAppearanceOverlay">@style/Ns.Shape.Large</item>
+        <item name="materialAlertDialogTitleTextStyle">@style/Ns.DialogTitle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Ns.Button.Text</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Ns.Button.Text.Muted</item>
+    </style>
+
+    <style name="Ns.DialogTitle" parent="MaterialAlertDialog.Material3.Title.Text">
+        <item name="android:textAppearance">@style/Ns.Text.Title</item>
     </style>
 </resources>

@@ -1,70 +1,103 @@
 package com.example.naarishakti;
 
-import android.animation.Animator;
-import android.animation.AnimatorListenerAdapter;
-import android.app.ActivityManager;
-import android.content.*;
-import android.content.pm.PackageManager;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.os.*;
-import android.util.Log;
 import android.Manifest;
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
+import android.content.res.ColorStateList;
+import android.os.Build;
+import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.TextView;
+import android.widget.LinearLayout;
+
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.annotation.ColorRes;
+import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
+import androidx.annotation.StringRes;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+import androidx.core.view.ViewCompat;
+import androidx.core.widget.ImageViewCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.localbroadcastmanager.content.LocalBroadcastManager;
+
+import com.example.naarishakti.core.Prefs;
+import com.example.naarishakti.core.ProtectionController;
 import com.example.naarishakti.databinding.ActivityMainBinding;
-import com.google.android.material.button.MaterialButton;
-import com.google.android.material.card.MaterialCardView;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.navigation.NavigationBarView;
+import com.example.naarishakti.databinding.UaItemRowBinding;
+import com.example.naarishakti.databinding.UaSheetOnboardingBinding;
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
+import com.google.android.material.bottomsheet.BottomSheetDialog;
+import com.google.android.material.snackbar.Snackbar;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 
-import Home_Activity.DatabaseViewActivity;
-import Home_Activity.ProfileActivity;
-import Home_Activity.TimeSettingsActivity;
-import SQLite_Database.ProfileDbHelper;
-
+/**
+ * App shell: hosts Home and Settings (hide/show, restored correctly after rotation) and runs the
+ * one-time permission onboarding. Protection is controlled from HomeFragment via
+ * {@link ProtectionController}; this activity no longer touches services or receivers.
+ */
 public class MainActivity extends AppCompatActivity {
 
-    private static final String TAG = "MainActivity";
-    private static final int PERMISSIONS_REQUEST_CODE = 100;
+    /** Extra used by notifications/receivers to bring the Home tab to front. */
+    public static final String EXTRA_OPEN_HOME = "loadHomeFragment";
 
-    private static final String[] REQUIRED_PERMISSIONS = {
-            Manifest.permission.RECORD_AUDIO,
-            Manifest.permission.CALL_PHONE,
-            Manifest.permission.SEND_SMS,
-            Manifest.permission.ACCESS_FINE_LOCATION,
-            Manifest.permission.ACCESS_COARSE_LOCATION,
-            Manifest.permission.WRITE_EXTERNAL_STORAGE,
-            Manifest.permission.READ_CONTACTS,
-            Manifest.permission.CAMERA,
-            Manifest.permission.POST_NOTIFICATIONS
-    };
-
+    private static final String TAG_HOME = "tab_home";
+    private static final String TAG_SETTINGS = "tab_settings";
 
     private ActivityMainBinding binding;
-    private PowerButtonReceiver powerButtonReceiver;
-    private ServiceStateReceiver serviceStateReceiver;
-    private boolean isServiceRunning = false;
-    private boolean isInitializationInProgress = false;
-    private boolean isDestructionInProgress = false;
+    private BottomSheetDialog onboardingSheet;
+    private ActivityResultLauncher<String[]> onboardingLauncher;
 
-    private ProfileDbHelper dbHelper;
-    private SQLiteDatabase db;
-    private Vibrator vibrator;
+    // ------------------------------------------------------------------ permissions (shared)
+
+    /** Runtime permissions the core safety features need, built for the running OS version. */
+    @NonNull
+    public static String[] corePermissions() {
+        List<String> list = new ArrayList<>(Arrays.asList(
+                Manifest.permission.RECORD_AUDIO,
+                Manifest.permission.SEND_SMS,
+                Manifest.permission.CALL_PHONE,
+                Manifest.permission.ACCESS_FINE_LOCATION,
+                Manifest.permission.ACCESS_COARSE_LOCATION,
+                Manifest.permission.CAMERA,
+                Manifest.permission.READ_CONTACTS));
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            list.add(Manifest.permission.POST_NOTIFICATIONS);
+        }
+        return list.toArray(new String[0]);
+    }
+
+    public static boolean hasPermission(@NonNull Context context, @NonNull String permission) {
+        return ContextCompat.checkSelfPermission(context, permission) == PackageManager.PERMISSION_GRANTED;
+    }
+
+    @NonNull
+    public static List<String> missingPermissions(@NonNull Context context) {
+        List<String> missing = new ArrayList<>();
+        for (String p : corePermissions()) {
+            if (!hasPermission(context, p)) missing.add(p);
+        }
+        return missing;
+    }
+
+    /** Tints a Ns.IconBadge: badge background uses the container colour, glyph uses the solid colour. */
+    public static void tintBadge(@NonNull ImageView badge, @ColorRes int solid, @ColorRes int container) {
+        Context c = badge.getContext();
+        ViewCompat.setBackgroundTintList(badge, ColorStateList.valueOf(ContextCompat.getColor(c, container)));
+        ImageViewCompat.setImageTintList(badge, ColorStateList.valueOf(ContextCompat.getColor(c, solid)));
+    }
+
+    // ------------------------------------------------------------------ lifecycle
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,306 +105,176 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        initializeComponents();
-        updateServiceStatus();
-        setupClickListeners();
-        checkFirstRun();
-        initializePowerButtonReceiver();
-
-        if (getIntent().getBooleanExtra("loadHomeFragment", false)) {
-            handleNavigation(R.id.menu_home);
-        }
-    }
-
-    private void initializeComponents() {
-        vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
-        dbHelper = new ProfileDbHelper(this);
-        db = dbHelper.getReadableDatabase();
-    }
-
-    private void setupClickListeners() {
-        binding.profileIcon.setOnClickListener(v -> navigateToProfile());
-        binding.alarmBtn.setOnClickListener(v -> startActivity(new Intent(this, TimeSettingsActivity.class)));
-        binding.viewDatabaseButton.setOnClickListener(v -> startActivity(new Intent(this, DatabaseViewActivity.class)));
+        onboardingLauncher = registerForActivityResult(
+                new ActivityResultContracts.RequestMultiplePermissions(), this::onOnboardingResult);
 
         binding.bottomNavigation.setOnItemSelectedListener(item -> {
-            handleNavigation(item.getItemId());
+            showTab(item.getItemId());
             return true;
         });
+        binding.bottomNavigation.setOnItemReselectedListener(item -> { /* already showing */ });
 
-        binding.startServiceButton.setOnClickListener(v -> toggleServices()); // Add the service button click listener
-    }
-
-    private void navigateToProfile() {
-        triggerHapticFeedback();
-        startActivity(new Intent(this, ProfileActivity.class));
-    }
-
-    private boolean handleNavigation(int itemId) {
-        FragmentManager fm = getSupportFragmentManager();
-        FragmentTransaction ft = fm.beginTransaction()
-                .setCustomAnimations(R.anim.slide_in, R.anim.slide_out); // Keep animations
-
-        Fragment homeFragment = fm.findFragmentByTag("HomeFragment");
-        Fragment settingsFragment = fm.findFragmentByTag("SettingsFragment");
-        Fragment fragmentToShow = null; // Track which fragment we want to show
-
-        if (itemId == R.id.menu_home) {
-            if (homeFragment == null) {
-                homeFragment = new HomeFragment();
-                ft.add(R.id.fragment_container, homeFragment, "HomeFragment"); // Add, not replace, the first time
-            }
-            fragmentToShow = homeFragment;
-        } else if (itemId == R.id.menu_settings) {
-            if (settingsFragment == null) {
-                settingsFragment = new SettingsFragment();
-                ft.add(R.id.fragment_container, settingsFragment, "SettingsFragment");
-            }
-            fragmentToShow = settingsFragment;
-        } else {
-            return false; // Indicate that the item was not handled
+        if (savedInstanceState == null) {
+            // Fresh start: Home is the default tab. After rotation the FragmentManager restores the
+            // existing fragments (with their hidden state) and the nav view restores its selection.
+            binding.bottomNavigation.getMenu().findItem(R.id.menu_home).setChecked(true);
+            showTab(R.id.menu_home);
         }
 
-        // Hide all fragments first
-        for (Fragment fragment : fm.getFragments()) {
-            if (fragment != null && fragment.isVisible()) { // Check if visible to avoid unnecessary calls
-                ft.hide(fragment);
-            }
-        }
-
-        // Show the fragment we want to display
-        if (fragmentToShow != null) {
-            ft.show(fragmentToShow);
-        }
-
-        ft.commit();
-        return true;
-    }
-
-    private void checkFirstRun() {
-        SharedPreferences prefs = getSharedPreferences("com.example.naarishakti", MODE_PRIVATE);
-        if (prefs.getBoolean("first_run", true)) {
-            showWelcomeAnimation();
-            prefs.edit().putBoolean("first_run", false).apply();
-        }
-    }
-
-    private void showWelcomeAnimation() {
-        binding.statusCard.animate()
-                .scaleY(1.2f)
-                .scaleX(1.2f)
-                .setDuration(500)
-                .withEndAction(() -> binding.statusCard.animate()
-                        .scaleX(1f)
-                        .scaleY(1f)
-                        .setDuration(300))
-                .start();
-    }
-
-
-
-    @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        if (requestCode == PERMISSIONS_REQUEST_CODE) {
-            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                toggleServices();
-            } else {
-                showPermissionWarning();
-            }
-        }
-    }
-
-    private void showPermissionWarning() {
-        binding.statusTextView.setText("Permissions Required!");
-        binding.statusCard.setCardBackgroundColor(ContextCompat.getColor(this, R.color.error_color));
-        binding.statusCard.animate()
-                .scaleY(1.1f)
-                .scaleX(1.1f)
-                .setDuration(300)
-                .withEndAction(() -> binding.statusCard.animate()
-                        .scaleX(1f)
-                        .scaleY(1f)
-                        .setDuration(200));
-    }
-
-    public void toggleServices() {
-        if (isServiceRunning) {
-            stopServices();
-        } else {
-            startServices();
-        }
-        animateFAB();
-        updateServiceStatus();
-    }
-
-    private void animateFAB() {
-        binding.startServiceButton.animate()
-                .scaleX(0.8f)
-                .scaleY(0.8f)
-                .setDuration(150)
-                .withEndAction(() -> binding.startServiceButton.animate()
-                        .scaleX(1f)
-                        .scaleY(1f)
-                        .setDuration(150))
-                .start();
-    }
-
-    private void startServices() {
-        if (isInitializationInProgress) return;
-        isInitializationInProgress = true;
-
-        // Start Voice Recognition Service
-        Intent voiceService = new Intent(this, VoiceRecognitionService.class);
-        ContextCompat.startForegroundService(this, voiceService);
-
-        // Start Vosk Service
-        Intent voskService = new Intent(this, VoskService.class);
-        voskService.putExtra("start_service", true);
-        ContextCompat.startForegroundService(this, voskService);
-
-        new Handler(Looper.getMainLooper()).postDelayed(() -> {
-            isServiceRunning = true;
-            isInitializationInProgress = false;
-            updateServiceStatus();
-            sendServiceStateBroadcast();
-        }, 2000);
-    }
-
-    private void stopServices() {
-        if (isDestructionInProgress) return;
-        isDestructionInProgress = true;
-
-        stopService(new Intent(this, VoskService.class));
-        stopService(new Intent(this, VoiceRecognitionService.class));
-
-        new Handler(Looper.getMainLooper()).postDelayed(() -> {
-            isServiceRunning = false;
-            isDestructionInProgress = false;
-            updateServiceStatus();
-            sendServiceStateBroadcast();
-        }, 2000);
-    }
-
-    private void updateServiceStatus() {
-        runOnUiThread(() -> {
-            if (isServiceRunning(VoskService.class)) {
-                binding.statusTextView.setText("Protection Active");
-                binding.statusCard.setCardBackgroundColor(ContextCompat.getColor(this, R.color.success_green));
-            } else {
-                binding.statusTextView.setText("Service Stopped");
-                binding.statusCard.setCardBackgroundColor(ContextCompat.getColor(this, R.color.error_color));
-            }
-
-            // Update FAB state
-            binding.startServiceButton.setEnabled(!isInitializationInProgress && !isDestructionInProgress);
-        });
+        maybeShowOnboarding();
     }
 
     @Override
-    protected void onResume() {
-        super.onResume();
-        loadProfileImage();
-        registerReceivers();
-
-        if (getIntent().getBooleanExtra("loadHomeFragment", false)) {
-            handleNavigation(R.id.menu_home);
-        }
-        CheckPermission();
-    }
-
-    private void CheckPermission(){
-        List<String> permissionsToRequest = new ArrayList<>();
-        for (String permission : REQUIRED_PERMISSIONS) {
-            if (ContextCompat.checkSelfPermission(this, permission) != PackageManager.PERMISSION_GRANTED) {
-                permissionsToRequest.add(permission);
-            }
-        }
-
-        if (!permissionsToRequest.isEmpty()) {
-            ActivityCompat.requestPermissions(this, permissionsToRequest.toArray(new String[0]), PERMISSIONS_REQUEST_CODE);
-        }
-    }
-
-    private void registerReceivers() {
-        serviceStateReceiver = new ServiceStateReceiver();
-        LocalBroadcastManager.getInstance(this)
-                .registerReceiver(serviceStateReceiver,
-                        new IntentFilter("com.example.naarishakti.ACTION_SERVICE_STATE_CHANGED"));
-    }
-
-    private void loadProfileImage() {
-        try (Cursor cursor = db.query(ProfileDbHelper.TABLE_NAME,
-                new String[]{ProfileDbHelper.COLUMN_PROFILE_IMAGE},
-                null, null, null, null, null)) {
-
-            if (cursor != null && cursor.moveToFirst()) {
-                byte[] imageBytes = cursor.getBlob(cursor.getColumnIndexOrThrow(ProfileDbHelper.COLUMN_PROFILE_IMAGE));
-                if (imageBytes != null) {
-                    Bitmap bitmap = BitmapFactory.decodeByteArray(imageBytes, 0, imageBytes.length);
-                    binding.profileIcon.setImageBitmap(bitmap);
-                    return;
-                }
-            }
-            binding.profileIcon.setImageResource(R.drawable.ic_profile);
-        } catch (Exception e) {
-            Log.e(TAG, "Profile image load error: ", e);
-            binding.profileIcon.setImageResource(R.drawable.ic_profile);
-        }
-    }
-
-    private void triggerHapticFeedback() {
-        if (vibrator != null && vibrator.hasVibrator()) {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-                vibrator.vibrate(VibrationEffect.createPredefined(VibrationEffect.EFFECT_TICK));
-            } else {
-                vibrator.vibrate(15);
-            }
-        }
-    }
-
-    private class ServiceStateReceiver extends BroadcastReceiver {
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            updateServiceStatus();
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        setIntent(intent);
+        if (intent != null && intent.getBooleanExtra(EXTRA_OPEN_HOME, false)) {
+            binding.bottomNavigation.setSelectedItemId(R.id.menu_home);
         }
     }
 
     @Override
     protected void onDestroy() {
+        if (onboardingSheet != null && onboardingSheet.isShowing()) onboardingSheet.dismiss();
+        onboardingSheet = null;
         super.onDestroy();
-        // Cleanup resources
-        if (db != null) db.close();
-        if (dbHelper != null) dbHelper.close();
-        if (serviceStateReceiver != null) {
-            LocalBroadcastManager.getInstance(this).unregisterReceiver(serviceStateReceiver);
-        }
-        if (powerButtonReceiver != null) {
-            unregisterReceiver(powerButtonReceiver);
-        }
     }
 
-    // Existing utility methods
-    public boolean isServiceRunning(Class<?> serviceClass) {
-        ActivityManager manager = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
-        for (ActivityManager.RunningServiceInfo service : manager.getRunningServices(Integer.MAX_VALUE)) {
-            if (serviceClass.getName().equals(service.service.getClassName())) {
-                return true;
+    /** Lets child fragments switch tabs (e.g. "Review permissions"). */
+    public void selectTab(int menuItemId) {
+        binding.bottomNavigation.setSelectedItemId(menuItemId);
+    }
+
+    // ------------------------------------------------------------------ tabs
+
+    private void showTab(int itemId) {
+        FragmentManager fm = getSupportFragmentManager();
+        if (fm.isStateSaved()) return;
+
+        String tag = itemId == R.id.menu_settings ? TAG_SETTINGS : TAG_HOME;
+        Fragment target = fm.findFragmentByTag(tag);
+
+        FragmentTransaction ft = fm.beginTransaction()
+                .setReorderingAllowed(true)
+                .setCustomAnimations(R.anim.ua_fade_in, R.anim.ua_fade_out);
+
+        for (String other : new String[]{TAG_HOME, TAG_SETTINGS}) {
+            if (other.equals(tag)) continue;
+            Fragment f = fm.findFragmentByTag(other);
+            if (f != null && !f.isHidden()) ft.hide(f);
+        }
+
+        if (target == null) {
+            target = TAG_SETTINGS.equals(tag) ? new SettingsFragment() : new HomeFragment();
+            ft.add(R.id.fragment_container, target, tag);
+        } else if (target.isHidden()) {
+            ft.show(target);
+        }
+        ft.commit();
+    }
+
+    // ------------------------------------------------------------------ onboarding
+
+    private void maybeShowOnboarding() {
+        SharedPreferences prefs = Prefs.get(this);
+        if (prefs.getBoolean(Prefs.ONBOARDING_DONE, false)) return;
+        if (missingPermissions(this).isEmpty()) {
+            markOnboardingDone();
+            return;
+        }
+        binding.getRoot().post(this::showOnboardingSheet);
+    }
+
+    private void markOnboardingDone() {
+        Prefs.get(this).edit().putBoolean(Prefs.ONBOARDING_DONE, true).apply();
+    }
+
+    private void showOnboardingSheet() {
+        if (isFinishing() || (onboardingSheet != null && onboardingSheet.isShowing())) return;
+
+        UaSheetOnboardingBinding sheet = UaSheetOnboardingBinding.inflate(getLayoutInflater());
+        LinearLayout list = sheet.onbList;
+        addOnboardingRow(list, R.drawable.ua_ic_mic, R.color.ns_violet, R.color.ns_violet_container,
+                R.string.perm_mic_title, R.string.perm_mic_why);
+        addOnboardingRow(list, R.drawable.ua_ic_location, R.color.ns_safe, R.color.ns_safe_container,
+                R.string.perm_location_title, R.string.perm_location_why);
+        addOnboardingRow(list, R.drawable.ua_ic_sms, R.color.ns_rose, R.color.ns_rose_container,
+                R.string.perm_sms_title, R.string.perm_sms_why);
+        addOnboardingRow(list, R.drawable.ua_ic_phone, R.color.ns_info, R.color.ns_info_container,
+                R.string.perm_phone_title, R.string.perm_phone_why);
+        addOnboardingRow(list, R.drawable.ua_ic_camera, R.color.ns_gold, R.color.ns_gold_container,
+                R.string.perm_camera_title, R.string.perm_camera_why);
+        addOnboardingRow(list, R.drawable.ua_ic_group, R.color.ns_violet, R.color.ns_violet_container,
+                R.string.perm_contacts_title, R.string.perm_contacts_why);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            addOnboardingRow(list, R.drawable.ua_ic_notifications, R.color.ns_gold, R.color.ns_gold_container,
+                    R.string.perm_notifications_title, R.string.perm_notifications_why);
+        }
+
+        final BottomSheetDialog dialog = new BottomSheetDialog(this);
+        dialog.setContentView(sheet.getRoot());
+        dialog.setOnShowListener(d -> {
+            View bottomSheet = dialog.findViewById(com.google.android.material.R.id.design_bottom_sheet);
+            if (bottomSheet != null) {
+                ViewCompat.setBackgroundTintList(bottomSheet,
+                        ColorStateList.valueOf(ContextCompat.getColor(this, R.color.ns_surface)));
             }
+            dialog.getBehavior().setSkipCollapsed(true);
+            dialog.getBehavior().setState(BottomSheetBehavior.STATE_EXPANDED);
+        });
+        // Swiping the sheet away counts as "Not now"; a dismiss caused by rotation does not.
+        dialog.setOnCancelListener(d -> markOnboardingDone());
+
+        sheet.onbAllow.setOnClickListener(v -> {
+            v.performHapticFeedback(android.view.HapticFeedbackConstants.VIRTUAL_KEY);
+            markOnboardingDone();
+            dialog.dismiss();
+            List<String> missing = missingPermissions(this);
+            if (!missing.isEmpty()) onboardingLauncher.launch(missing.toArray(new String[0]));
+        });
+        sheet.onbLater.setOnClickListener(v -> {
+            markOnboardingDone();
+            dialog.dismiss();
+        });
+
+        onboardingSheet = dialog;
+        dialog.show();
+    }
+
+    private void addOnboardingRow(LinearLayout parent, @DrawableRes int icon, @ColorRes int solid,
+                                  @ColorRes int container, @StringRes int title, @StringRes int why) {
+        UaItemRowBinding row = UaItemRowBinding.inflate(LayoutInflater.from(this), parent, false);
+        row.getRoot().setBackground(null);
+        row.getRoot().setClickable(false);
+        row.getRoot().setFocusable(false);
+        row.getRoot().setMinimumHeight(0);
+        row.getRoot().setPadding(0, dp(10), 0, dp(10));
+        row.icon.setImageResource(icon);
+        tintBadge(row.icon, solid, container);
+        row.title.setText(title);
+        row.subtitle.setText(why);
+        row.chevron.setVisibility(View.GONE);
+        parent.addView(row.getRoot());
+    }
+
+    private void onOnboardingResult(Map<String, Boolean> result) {
+        List<String> missing = missingPermissions(this);
+        Snackbar bar;
+        if (missing.isEmpty()) {
+            bar = Snackbar.make(binding.getRoot(), R.string.onb_done, Snackbar.LENGTH_LONG);
+            if (!ProtectionController.isProtectionWanted(this)) {
+                bar.setAction(R.string.action_turn_on, v -> ProtectionController.start(this));
+            }
+        } else {
+            bar = Snackbar.make(binding.getRoot(), R.string.onb_partial, Snackbar.LENGTH_LONG)
+                    .setAction(R.string.action_review, v -> selectTab(R.id.menu_settings));
         }
-        return false;
+        bar.setAnchorView(binding.bottomNavigation)
+                .setActionTextColor(ContextCompat.getColor(this, R.color.ns_rose))
+                .show();
     }
 
-    private void sendServiceStateBroadcast() {
-        LocalBroadcastManager.getInstance(this)
-                .sendBroadcast(new Intent("com.example.naarishakti.ACTION_SERVICE_STATE_CHANGED"));
-    }
-
-    private void initializePowerButtonReceiver() {
-        powerButtonReceiver = new PowerButtonReceiver();
-        IntentFilter filter = new IntentFilter();
-        filter.addAction(Intent.ACTION_SCREEN_OFF);
-        filter.addAction(Intent.ACTION_SCREEN_ON);
-        registerReceiver(powerButtonReceiver, filter);
+    private int dp(int value) {
+        return Math.round(value * getResources().getDisplayMetrics().density);
     }
 }

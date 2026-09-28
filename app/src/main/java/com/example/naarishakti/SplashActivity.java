@@ -1,107 +1,86 @@
 package com.example.naarishakti;
 
-import android.Manifest;
+import android.animation.ObjectAnimator;
+import android.animation.PropertyValuesHolder;
+import android.animation.ValueAnimator;
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.content.pm.PackageManager;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
-import android.widget.Toast;
+import android.os.Looper;
+import android.view.View;
+import android.view.animation.DecelerateInterpolator;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.example.naarishakti.databinding.ActivitySplashBinding;
 
-@RequiresApi(api = Build.VERSION_CODES.TIRAMISU)
+/**
+ * Brand splash: a short fade/scale-in of the logo mark and wordmark, then straight to Home.
+ * Permissions are NOT requested here; MainActivity runs a friendly one-time onboarding instead.
+ */
 public class SplashActivity extends AppCompatActivity {
 
-    private static final int SPLASH_DURATION = 2000;
-    private static final int PERMISSIONS_REQUEST_CODE = 100;
-    private static final String[] REQUIRED_PERMISSIONS = {
-            Manifest.permission.RECORD_AUDIO,
-            Manifest.permission.CALL_PHONE,
-            Manifest.permission.SEND_SMS,
-            Manifest.permission.ACCESS_FINE_LOCATION,
-            Manifest.permission.ACCESS_COARSE_LOCATION,
-            Manifest.permission.WRITE_EXTERNAL_STORAGE,
-            Manifest.permission.READ_CONTACTS,
-            Manifest.permission.CAMERA,
-            Manifest.permission.POST_NOTIFICATIONS
-    };
-    private static final String PREF_PERMISSIONS_GRANTED = "permissions_granted";
+    private static final long SPLASH_DURATION_MS = 1200L;
+
+    private final Handler handler = new Handler(Looper.getMainLooper());
+    private final Runnable goHome = this::openMain;
+    private ActivitySplashBinding binding;
+    private ObjectAnimator ringPulse;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setTheme(R.style.Theme_NaariShakti_Splash);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash);
+        binding = ActivitySplashBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
-        if (areAllPermissionsGranted()) {
-            navigateToMainActivity();
-        } else {
-            requestPermissions();
-        }
+        animateIn();
+        handler.postDelayed(goHome, SPLASH_DURATION_MS);
     }
 
-    private boolean areAllPermissionsGranted() {
-        SharedPreferences prefs = getSharedPreferences("AppPrefs", MODE_PRIVATE);
-        return prefs.getBoolean(PREF_PERMISSIONS_GRANTED, false);
+    private void animateIn() {
+        DecelerateInterpolator ease = new DecelerateInterpolator(2f);
+        float rise = getResources().getDisplayMetrics().density * 12f;
+
+        View logo = binding.logoMark;
+        logo.setAlpha(0f);
+        logo.setScaleX(0.86f);
+        logo.setScaleY(0.86f);
+        logo.animate().alpha(1f).scaleX(1f).scaleY(1f)
+                .setDuration(520).setInterpolator(ease).start();
+
+        View[] texts = {binding.wordmark, binding.tagline, binding.footer};
+        for (int i = 0; i < texts.length; i++) {
+            View v = texts[i];
+            v.setAlpha(0f);
+            v.setTranslationY(rise);
+            v.animate().alpha(1f).translationY(0f)
+                    .setStartDelay(160 + i * 90L)
+                    .setDuration(420).setInterpolator(ease).start();
+        }
+
+        ringPulse = ObjectAnimator.ofPropertyValuesHolder(binding.logoRing,
+                PropertyValuesHolder.ofFloat(View.SCALE_X, 1f, 1.45f),
+                PropertyValuesHolder.ofFloat(View.SCALE_Y, 1f, 1.45f),
+                PropertyValuesHolder.ofFloat(View.ALPHA, 0.7f, 0f));
+        ringPulse.setDuration(1100);
+        ringPulse.setStartDelay(200);
+        ringPulse.setRepeatCount(ValueAnimator.INFINITE);
+        ringPulse.setInterpolator(ease);
+        ringPulse.start();
     }
 
-    private void requestPermissions() {
-        List<String> permissionsToRequest = new ArrayList<>();
-        for (String permission : REQUIRED_PERMISSIONS) {
-            if (ContextCompat.checkSelfPermission(this, permission) != PackageManager.PERMISSION_GRANTED) {
-                permissionsToRequest.add(permission);
-            }
-        }
-
-        if (!permissionsToRequest.isEmpty()) {
-            ActivityCompat.requestPermissions(this, permissionsToRequest.toArray(new String[0]), PERMISSIONS_REQUEST_CODE);
-        } else {
-            navigateToMainActivity();
-        }
+    private void openMain() {
+        if (isFinishing()) return;
+        startActivity(new Intent(this, MainActivity.class));
+        overridePendingTransition(R.anim.ua_fade_in, R.anim.ua_fade_out);
+        finish();
     }
 
     @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        if (requestCode == PERMISSIONS_REQUEST_CODE) {
-            boolean allGranted = true;
-            for (int grantResult : grantResults) {
-                if (grantResult != PackageManager.PERMISSION_GRANTED) {
-                    allGranted = false;
-                    break;
-                }
-            }
-            if (allGranted) {
-                savePermissionsGrantedStatus(true);
-                navigateToMainActivity();
-            } else {
-                Toast.makeText(this, "All permissions are required to run this application.", Toast.LENGTH_LONG).show();
-                savePermissionsGrantedStatus(false);
-                // Optionally, you can add a delay here before finishing the activity
-                new Handler().postDelayed(this::finish, SPLASH_DURATION);
-            }
-        }
-    }
-
-    private void savePermissionsGrantedStatus(boolean granted) {
-        SharedPreferences prefs = getSharedPreferences("AppPrefs", MODE_PRIVATE);
-        prefs.edit().putBoolean(PREF_PERMISSIONS_GRANTED, granted).apply();
-    }
-
-    private void navigateToMainActivity() {
-        new Handler().postDelayed(() -> {
-            Intent intent = new Intent(SplashActivity.this, MainActivity.class);
-            intent.putExtra("loadHomeFragment", true);
-            startActivity(intent);
-            finish();
-        }, SPLASH_DURATION);
+    protected void onDestroy() {
+        handler.removeCallbacks(goHome);
+        if (ringPulse != null) ringPulse.cancel();
+        super.onDestroy();
     }
 }

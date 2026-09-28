@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Strings for the feature screens: trigger phrase, emergency contacts, call police,
+     helplines, live location and safe zones. All names are prefixed ub_. -->
+<resources>
+
+    <!-- ===================== Shared ===================== -->
+    <string name="ub_back">Back</string>
+    <string name="ub_add">Add</string>
+    <string name="ub_cancel">Cancel</string>
+    <string name="ub_continue">Continue</string>
+    <string name="ub_not_now">Not now</string>
+    <string name="ub_delete">Delete</string>
+    <string name="ub_discard">Discard</string>
+    <string name="ub_undo">Undo</string>
+    <string name="ub_send">Send</string>
+    <string name="ub_share">Share</string>
+    <string name="ub_copy">Copy</string>
+    <string name="ub_copied">Location copied</string>
+    <string name="ub_open_in_maps">Open in Maps</string>
+    <string name="ub_open_settings">Settings</string>
+    <string name="ub_allow_location">Allow location</string>
+    <string name="ub_add_contacts">Add contacts</string>
+    <string name="ub_text_contacts">Text contacts</string>
+    <string name="ub_locating">Locating…</string>
+    <string name="ub_ellipsis">…</string>
+    <string name="ub_quoted">“%1$s”</string>
+    <string name="ub_quoted_partial">“%1$s…”</string>
+    <string name="ub_recenter_cd">Centre on my location</string>
+    <string name="ub_share_subject">My location</string>
+    <string name="ub_share_chooser">Share your location</string>
+    <string name="ub_no_contacts">Add emergency contacts first</string>
+    <string name="ub_location_denied">Location permission is needed to find where you are.</string>
+    <string name="ub_location_unavailable">Couldn’t get your location. Turn on location and try again.</string>
+    <string name="ub_sms_denied_fallback">SMS permission wasn’t granted, so we’ll open the share sheet instead.</string>
+    <string name="ub_sms_failed">Couldn’t send the text messages.</string>
+    <string name="ub_share_caption_none">Add emergency contacts to text them your location</string>
+    <string name="ub_share_confirm_body">They’ll get an SMS with a Google Maps link to where you are right now.</string>
+    <string name="ub_location_message_help">I may need help. My current location: %1$s</string>
+    <string name="ub_location_message_share">Here’s my current location: %1$s</string>
+    <string name="ub_location_message_address">I’m near %1$s. My current location: %2$s</string>
+
+    <plurals name="ub_share_caption">
+        <item quantity="one">Texts a Google Maps link to your %d emergency contact</item>
+        <item quantity="other">Texts a Google Maps link to your %d emergency contacts</item>
+    </plurals>
+    <plurals name="ub_share_confirm_title">
+        <item quantity="one">Send your location to %d contact?</item>
+        <item quantity="other">Send your location to %d contacts?</item>
+    </plurals>
+    <plurals name="ub_sms_sent">
+        <item quantity="one">Location sent to %d contact</item>
+        <item quantity="other">Location sent to %d contacts</item>
+    </plurals>
+
+    <!-- ===================== Trigger phrase ===================== -->
+    <string name="ub_trigger_eyebrow">Voice trigger</string>
+    <string name="ub_trigger_title">Trigger phrase</string>
+    <string name="ub_trigger_desc">Say this phrase while protection is on and Naari Shakti sends your SOS.</string>
+    <string name="ub_trigger_current_label">Your trigger phrase</string>
+    <string name="ub_trigger_status_active">Listening now · works offline</string>
+    <string name="ub_trigger_status_inactive">Heard only while protection is on</string>
+    <string name="ub_trigger_section_record">Record your phrase</string>
+    <string name="ub_trigger_section_type">Or type it</string>
+    <string name="ub_trigger_section_tips">Tips</string>
+    <string name="ub_trigger_record_cd">Record phrase</string>
+    <string name="ub_trigger_stop_cd">Stop recording</string>
+    <string name="ub_trigger_tap_to_record">Tap the mic and say your phrase</string>
+    <string name="ub_trigger_record_hint">Two or three unusual words work best, like “purple mango”.</string>
+    <string name="ub_trigger_starting">Getting ready…</string>
+    <string name="ub_trigger_listening">Listening… say your phrase</string>
+    <string name="ub_trigger_processing">Got it, checking…</string>
+    <string name="ub_trigger_confirm_prompt">Did we hear you right?</string>
+    <string name="ub_trigger_we_heard">We heard</string>
+    <string name="ub_trigger_try_again">Try again</string>
+    <string name="ub_trigger_use">Use this</string>
+    <string name="ub_trigger_input_hint">Trigger phrase</string>
+    <string name="ub_trigger_input_helper">1–4 words, letters only.</string>
+    <string name="ub_trigger_save_typed">Save phrase</string>
+    <string name="ub_trigger_saved">Trigger phrase set to “%1$s”</string>
+    <string name="ub_trigger_err_empty">Enter a phrase</string>
+    <string name="ub_trigger_err_short">That’s too short to detect reliably</string>
+    <string name="ub_trigger_err_words">Keep it to 4 words or fewer</string>
+    <string name="ub_trigger_err_letters">Use letters and spaces only</string>
+    <string name="ub_trigger_err_no_match">Didn’t catch that. Tap the mic to try again.</string>
+    <string name="ub_trigger_err_busy">The microphone is busy. If protection is listening, pause it or type your phrase below.</string>
+    <string name="ub_trigger_err_network">Speech recognition needs a connection right now. Type your phrase below instead.</string>
+    <string name="ub_trigger_err_generic">Recording didn’t work. Try again or type your phrase below.</string>
+    <string name="ub_trigger_mic_denied">Microphone access is needed to record. You can type your phrase instead.</string>
+    <string name="ub_trigger_mic_rationale_title">Allow the microphone</string>
+    <string name="ub_trigger_mic_rationale_body">Naari Shakti uses the microphone only to hear your phrase once so it can be written down. No audio is saved.</string>
+    <string name="ub_trigger_unavailable_title">Voice recording isn’t available</string>
+    <string name="ub_trigger_unavailable_body">This phone has no speech recognition service. Type your phrase below instead.</string>
+    <string name="ub_trigger_warn_title">Use a less common phrase?</string>
+    <string name="ub_trigger_warn_common">“%1$s” comes up often in everyday talk and could set off false alarms. Two or three unusual words work best.</string>
+    <string name="ub_trigger_warn_single">A single word is easy to say by accident. Two or three unusual words work best.</string>
+    <string name="ub_trigger_save_anyway">Save anyway</string>
+    <string name="ub_trigger_change">Change it</string>
+    <string name="ub_trigger_tip1_title">Speak clearly</string>
+    <string name="ub_trigger_tip1_body">Say it the way you would in an emergency, at a normal volume.</string>
+    <string name="ub_trigger_tip2_title">Works offline</string>
+    <string name="ub_trigger_tip2_body">Detection runs on your phone. No audio leaves the device.</string>
+    <string name="ub_trigger_tip3_title">Protection must be on</string>
+    <string name="ub_trigger_tip3_body">Your phrase is only listened for while protection is switched on from Home.</string>
+
+    <!-- ===================== Emergency contacts & alerts ===================== -->
+    <string name="ub_emg_eyebrow">Emergency setup</string>
+    <string name="ub_emg_title">Contacts &amp; alerts</string>
+    <string name="ub_emg_desc">Who hears from you in an SOS, and what they receive.</string>
+    <string name="ub_emg_section_message">Emergency message</string>
+    <string name="ub_emg_section_contacts">Emergency contacts</string>
+    <string name="ub_emg_section_telegram">Telegram photo alerts</string>
+    <string name="ub_emg_section_email">Email photo alerts</string>
+    <string name="ub_emg_message_title">SOS text</string>
+    <string name="ub_emg_message_caption">Sent by SMS to every contact</string>
+    <string name="ub_emg_message_hint">I need help! This is an emergency.</string>
+    <string name="ub_emg_message_preview">+ your live location link is added automatically</string>
+    <string name="ub_emg_contacts_title">Trusted people</string>
+    <string name="ub_emg_contacts_caption">Texted in an SOS · the first is called</string>
+    <string name="ub_emg_count">%1$d / %2$d</string>
+    <string name="ub_emg_contacts_empty_title">No contacts yet</string>
+    <string name="ub_emg_contacts_empty_body">Add up to 5 people who’ll get your SOS text and call.</string>
+    <string name="ub_emg_add_from_contacts">Add from contacts</string>
+    <string name="ub_emg_add_manually">Add number manually</string>
+    <string name="ub_emg_limit_reached">5 of 5 contacts added</string>
+    <string name="ub_emg_limit_reached_long">You can add up to 5 contacts. Remove one to add another.</string>
+    <string name="ub_emg_primary_pill">Primary · called first</string>
+    <string name="ub_emg_unnamed">Unnamed contact</string>
+    <string name="ub_emg_options_cd">Options for %1$s</string>
+    <string name="ub_emg_make_primary">Make primary</string>
+    <string name="ub_emg_remove">Remove</string>
+    <string name="ub_emg_now_primary">%1$s will be called first</string>
+    <string name="ub_emg_remove_title">Remove %1$s?</string>
+    <string name="ub_emg_remove_body">They’ll no longer get your SOS messages or calls.</string>
+    <string name="ub_emg_removed">%1$s removed</string>
+    <string name="ub_emg_added">%1$s added</string>
+    <string name="ub_emg_dialog_title">Add a contact</string>
+    <string name="ub_emg_dialog_name_hint">Name</string>
+    <string name="ub_emg_dialog_number_hint">Phone number</string>
+    <string name="ub_emg_dialog_number_helper">Include the country code if outside India, e.g. +44</string>
+    <string name="ub_emg_err_number">Enter a valid phone number</string>
+    <string name="ub_emg_err_picked_number">That contact doesn’t have a valid phone number.</string>
+    <string name="ub_emg_err_duplicate">This number is already in your list</string>
+    <string name="ub_emg_err_read_contact">Couldn’t read that contact. Try adding the number manually.</string>
+    <string name="ub_emg_contacts_denied">Contacts access was denied.</string>
+    <string name="ub_emg_no_contacts_app">No contacts app found.</string>
+    <string name="ub_emg_telegram_title">Telegram</string>
+    <string name="ub_emg_telegram_not_linked">Not linked yet</string>
+    <string name="ub_emg_telegram_not_configured">Bot not configured</string>
+    <string name="ub_emg_telegram_not_configured_body">Telegram alerts aren’t set up in this build of the app. SMS and email alerts still work.</string>
+    <string name="ub_emg_telegram_explain">Each contact who should get photos opens the bot and taps Start, then tap Sync.</string>
+    <string name="ub_emg_open_bot">Open bot</string>
+    <string name="ub_emg_open_bot_failed">Couldn’t open Telegram.</string>
+    <string name="ub_emg_sync">Sync</string>
+    <string name="ub_emg_syncing">Syncing…</string>
+    <string name="ub_emg_sync_failed">Sync failed: %1$s</string>
+    <string name="ub_emg_sync_none">No chats yet. Ask each contact to open the bot and tap Start.</string>
+    <string name="ub_emg_email_title">Email</string>
+    <string name="ub_emg_email_caption">Photos taken during an SOS are emailed</string>
+    <string name="ub_emg_recipient_hint">Send alerts to</string>
+    <string name="ub_emg_sender_hint">Sender Gmail</string>
+    <string name="ub_emg_sender_helper">The Gmail account that sends the alert</string>
+    <string name="ub_emg_password_hint">Sender App Password</string>
+    <string name="ub_emg_password_helper">Use a Gmail App Password, not your account password</string>
+    <string name="ub_emg_password_link">Create an App Password</string>
+    <string name="ub_emg_err_email">Enter a valid email address</string>
+    <string name="ub_emg_err_sender_needed">Add the Gmail that sends the alert</string>
+    <string name="ub_emg_err_recipient_needed">Add where alerts should go</string>
+    <string name="ub_emg_err_password_needed">Enter the App Password for this Gmail</string>
+    <string name="ub_emg_save">Save changes</string>
+    <string name="ub_emg_saved">Saved</string>
+    <string name="ub_emg_saved_no_contacts">Saved. Add at least one contact so your SOS reaches someone.</string>
+    <string name="ub_emg_unsaved_title">Save your changes?</string>
+    <string name="ub_emg_unsaved_body">Your message or email settings have changes that aren’t saved yet.</string>
+
+    <plurals name="ub_emg_telegram_linked">
+        <item quantity="one">Linked: %d chat</item>
+        <item quantity="other">Linked: %d chats</item>
+    </plurals>
+    <plurals name="ub_emg_sync_new">
+        <item quantity="one">Linked %d new chat</item>
+        <item quantity="other">Linked %d new chats</item>
+    </plurals>
+    <plurals name="ub_emg_sync_up_to_date">
+        <item quantity="one">Up to date · %d chat linked</item>
+        <item quantity="other">Up to date · %d chats linked</item>
+    </plurals>
+
+    <!-- ===================== Call police ===================== -->
+    <string name="ub_police_eyebrow">Emergency</string>
+    <string name="ub_police_title">Call for help</string>
+    <string name="ub_police_desc">One tap connects you to India’s emergency services.</string>
+    <string name="ub_num_112" translatable="false">112</string>
+    <string name="ub_num_100" translatable="false">100</string>
+    <string name="ub_num_1091" translatable="false">1091</string>
+    <string name="ub_police_orb_label">Emergency · 112</string>
+    <string name="ub_police_orb_sublabel">Police, fire and ambulance · 24×7</string>
+    <string name="ub_police_orb_cd">Call 112, emergency services</string>
+    <string name="ub_police_tap_to_call">Tap to call</string>
+    <string name="ub_police_tap_to_cancel">Tap the button again to cancel</string>
+    <string name="ub_police_calling_in">Calling in %1$d</string>
+    <string name="ub_police_calling_label">Calling %1$s</string>
+    <string name="ub_police_cancel_call">Cancel call</string>
+    <string name="ub_police_cancel_cd">Cancel the call to %1$s</string>
+    <string name="ub_police_countdown_announce">Calling %1$s in 3 seconds. Tap to cancel.</string>
+    <string name="ub_police_call_cancelled">Call cancelled</string>
+    <string name="ub_police_section_other">Other numbers</string>
+    <string name="ub_police_100_name">Police</string>
+    <string name="ub_police_1091_name">Women helpline (police)</string>
+    <string name="ub_police_label_100">Police · 100</string>
+    <string name="ub_police_label_1091">Women helpline · 1091</string>
+    <string name="ub_police_100_cd">Call 100, police</string>
+    <string name="ub_police_1091_cd">Call 1091, women helpline, police</string>
+    <string name="ub_police_section_share">Let someone know</string>
+    <string name="ub_police_share_title">Share my location</string>
+    <string name="ub_police_section_tip">Safety tip</string>
+    <string name="ub_police_tip_counter">Tip %1$d of %2$d</string>
+
+    <string-array name="ub_police_tips">
+        <item>Stay on the line. Tell the operator where you are first, then what is happening.</item>
+        <item>If you can’t talk, keep the line open. Operators can still listen and trace the call.</item>
+        <item>Move towards a well-lit, busy place such as a shop, ATM or petrol pump.</item>
+        <item>Note landmarks around you: shop names, bus stops and vehicle numbers.</item>
+        <item>Keep your phone charged and location on when travelling at night.</item>
+        <item>Share your live location with someone you trust before a late ride.</item>
+    </string-array>
+
+    <!-- ===================== Helplines ===================== -->
+    <string name="ub_help_eyebrow">Helplines</string>
+    <string name="ub_help_title">Helpline directory</string>
+    <string name="ub_help_desc">National numbers for emergencies, women’s safety, health and cyber crime.</string>
+    <string name="ub_help_note">Numbers valid across India. Calls to 112 work even without a SIM on most phones.</string>
+    <string name="ub_help_search_hint">Search by name or number</string>
+    <string name="ub_help_cat_all">All</string>
+    <string name="ub_help_cat_emergency">Emergency</string>
+    <string name="ub_help_cat_women">Women</string>
+    <string name="ub_help_cat_health">Health</string>
+    <string name="ub_help_cat_cyber">Cyber</string>
+    <string name="ub_help_empty_title">No helplines match</string>
+    <string name="ub_help_empty_body">Try another name or number, or choose All.</string>
+    <string name="ub_help_112_name">National Emergency (ERSS)</string>
+    <string name="ub_help_112_desc">Police, fire and ambulance through one number, 24×7.</string>
+    <string name="ub_help_181_name">Women Helpline</string>
+    <string name="ub_help_181_desc">Mission Shakti · One Stop Centre support, counselling and referrals.</string>
+    <string name="ub_help_1091_name">Women Helpline – Police</string>
+    <string name="ub_help_1091_desc">Police helpline for women facing harassment or violence.</string>
+    <string name="ub_help_100_name">Police</string>
+    <string name="ub_help_100_desc">Your local police control room.</string>
+    <string name="ub_help_108_name">Ambulance</string>
+    <string name="ub_help_108_desc">Emergency medical help and ambulance.</string>
+    <string name="ub_help_1098_name">Childline</string>
+    <string name="ub_help_1098_desc">Help for children in distress or danger.</string>
+    <string name="ub_help_1930_name">Cyber Crime Helpline</string>
+    <string name="ub_help_1930_desc">Report online fraud, stalking or harassment. Also at cybercrime.gov.in.</string>
+    <string name="ub_help_ncw_name">National Commission for Women (NCW)</string>
+    <string name="ub_help_ncw_desc">WhatsApp helpline for complaints and support.</string>
+    <string name="ub_help_call_cd">Call %1$s on %2$s</string>
+    <string name="ub_help_card_cd">%1$s, %2$s. %3$s</string>
+    <string name="ub_help_whatsapp_cd">Message %1$s on WhatsApp</string>
+    <string name="ub_help_web_cd">Open cybercrime.gov.in</string>
+    <string name="ub_help_whatsapp_failed">Couldn’t open WhatsApp.</string>
+    <string name="ub_help_web_failed">Couldn’t open the website.</string>
+    <string name="ub_help_dial_failed">Couldn’t open the dialer. Dial %1$s manually.</string>
+
+    <!-- ===================== Live location ===================== -->
+    <string name="ub_live_eyebrow">Live location</string>
+    <string name="ub_live_title">Where I am</string>
+    <string name="ub_live_desc">See your position and share it with the people you trust.</string>
+    <string name="ub_live_map_cd">Map showing your current location</string>
+    <string name="ub_live_status_idle">Your location</string>
+    <string name="ub_live_status_live">Live · sharing</string>
+    <string name="ub_live_perm_title">Location is off for Naari Shakti</string>
+    <string name="ub_live_perm_body">Allow location to see where you are and share it.</string>
+    <string name="ub_live_you_are_here">You are here</string>
+    <string name="ub_live_finding">Finding your location…</string>
+    <string name="ub_live_coords_accuracy">%1$s · ±%2$d m</string>
+    <string name="ub_live_still_locating">Still finding your location…</string>
+    <string name="ub_live_section_once">Share once</string>
+    <string name="ub_live_once_title">Send current location</string>
+    <string name="ub_live_once_caption">A one-time Google Maps link</string>
+    <string name="ub_live_section_live">Live sharing</string>
+    <string name="ub_live_live_title">Share while I travel</string>
+    <string name="ub_live_live_caption">Your contacts get updated links until the timer ends</string>
+    <string name="ub_live_share_for">Share for</string>
+    <string name="ub_live_15">15 min</string>
+    <string name="ub_live_30">30 min</string>
+    <string name="ub_live_60">1 hr</string>
+    <string name="ub_live_120">2 hr</string>
+    <string name="ub_live_no_contacts">Add emergency contacts to start live sharing</string>
+    <string name="ub_live_start">Start live sharing</string>
+    <string name="ub_live_stop">Stop sharing</string>
+    <string name="ub_live_started">Sharing your location for %1$s</string>
+    <string name="ub_live_stopped">Live sharing stopped</string>
+    <string name="ub_live_sms_needed">Location and SMS permissions are needed for live sharing.</string>
+
+    <plurals name="ub_live_sharing_status">
+        <item quantity="one">Sharing with %1$d contact · %2$s left</item>
+        <item quantity="other">Sharing with %1$d contacts · %2$s left</item>
+    </plurals>
+
+    <!-- ===================== Safe zones ===================== -->
+    <string name="ub_zone_eyebrow">Geofencing</string>
+    <string name="ub_zone_title">Safe zones</string>
+    <string name="ub_zone_desc">Get notified when you arrive at or leave places like home or college.</string>
+    <string name="ub_zone_map_cd">Map. Tap to place a safe-zone pin.</string>
+    <string name="ub_zone_map_hint">Tap the map to place a pin</string>
+    <string name="ub_zone_use_my_location">Use my location</string>
+    <string name="ub_zone_new">New safe zone</string>
+    <string name="ub_zone_no_pin">No pin yet</string>
+    <string name="ub_zone_no_pin_caption">Tap the map or use your location</string>
+    <string name="ub_zone_pin_placed">Pin placed</string>
+    <string name="ub_zone_pin_mine">Your current location</string>
+    <string name="ub_zone_name_hint">Name, e.g. Home, College</string>
+    <string name="ub_zone_radius">Radius</string>
+    <string name="ub_zone_radius_value">%1$d m</string>
+    <string name="ub_zone_radius_hint">Larger zones alert more reliably; 300 m or more is recommended.</string>
+    <string name="ub_zone_add">Add safe zone</string>
+    <string name="ub_zone_need_pin">Tap the map to place a pin first</string>
+    <string name="ub_zone_need_name">Give this place a name</string>
+    <string name="ub_zone_limit">You’ve reached the maximum number of safe zones.</string>
+    <string name="ub_zone_added">“%1$s” added</string>
+    <string name="ub_zone_added_needs_bg">“%1$s” saved. Allow location all the time for alerts.</string>
+    <string name="ub_zone_section_saved">Your safe zones</string>
+    <string name="ub_zone_meta">%1$d m radius · %2$s</string>
+    <string name="ub_zone_item_cd">%1$s, %2$d metre radius. Tap to show on map.</string>
+    <string name="ub_zone_delete_cd">Delete %1$s</string>
+    <string name="ub_zone_delete_title">Delete “%1$s”?</string>
+    <string name="ub_zone_delete_body">You’ll stop getting alerts for this place.</string>
+    <string name="ub_zone_deleted">“%1$s” deleted</string>
+    <string name="ub_zone_default_name">Safe zone</string>
+    <string name="ub_zone_empty_title">No safe zones yet</string>
+    <string name="ub_zone_empty_body">Drop a pin on a place you visit often, like home or college.</string>
+    <string name="ub_zone_perm_title">Precise location needed</string>
+    <string name="ub_zone_perm_body">Allow precise location to place pins and watch your safe zones.</string>
+    <string name="ub_zone_bg_title">Alerts only work with “Allow all the time”</string>
+    <string name="ub_zone_bg_body">Android needs background location to watch your safe zones while Naari Shakti is closed.</string>
+    <string name="ub_zone_bg_fix">Allow</string>
+    <string name="ub_zone_bg_dialog_title">Allow location all the time</string>
+    <string name="ub_zone_bg_dialog_body">Choose “Allow all the time” so safe-zone alerts work while Naari Shakti is closed. Your location is only checked on this phone.</string>
+    <string name="ub_zone_bg_dialog_body_settings">On the next screen, choose “Allow all the time” so safe-zone alerts work while Naari Shakti is closed. Your location is only checked on this phone.</string>
+    <string name="ub_zone_bg_granted">Safe zones will now alert you in the background</string>
+    <string name="ub_zone_bg_denied">Background location is off. Turn on “Allow all the time” in Settings → Permissions → Location.</string>
+
+    <plurals name="ub_zone_count">
+        <item quantity="one">%d zone</item>
+        <item quantity="other">%d zones</item>
+    </plurals>
+</resources>

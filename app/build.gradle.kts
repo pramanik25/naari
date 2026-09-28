@@ -1,8 +1,16 @@
-import com.android.build.api.dsl.Packaging
+import java.util.Properties
 
 plugins {
     id("com.android.application")
 }
+
+// Secrets live in local.properties (gitignored), never in source.
+val localProps = Properties().apply {
+    val f = rootProject.file("local.properties")
+    if (f.exists()) f.inputStream().use { load(it) }
+}
+val telegramBotToken: String = localProps.getProperty("TELEGRAM_BOT_TOKEN", "")
+val telegramBotUsername: String = localProps.getProperty("TELEGRAM_BOT_USERNAME", "NaarishakiBot")
 
 android {
     namespace = "com.example.naarishakti"
@@ -16,9 +24,13 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField("String", "TELEGRAM_BOT_TOKEN", "\"$telegramBotToken\"")
+        buildConfigField("String", "TELEGRAM_BOT_USERNAME", "\"$telegramBotUsername\"")
     }
     buildFeatures {
         viewBinding = true
+        buildConfig = true
     }
 
     packagingOptions { exclude("META-INF/NOTICE.md")
@@ -31,6 +43,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            signingConfig = signingConfigs.getByName("debug")
         }
     }
     compileOptions {
@@ -65,9 +78,11 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
 
     implementation ("com.google.code.gson:gson:2.10.1")
-    runtimeOnly("com.google.android.material:material:1.13.0-alpha09")
 
     implementation("com.airbnb.android:lottie:6.1.0")
+
+    implementation ("com.google.android.gms:play-services-auth:20.7.0")
+
 
 
 
@@ -89,4 +104,6 @@ dependencies {
     implementation ("com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava")
 
     implementation ("com.google.android.flexbox:flexbox:3.0.0")
+
+
 }

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Small rose disc with a background-coloured rim, used as the "edit photo" badge. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+    <solid android:color="@color/ns_rose" />
+    <stroke android:width="3dp" android:color="@color/ns_bg" />
+</shape>

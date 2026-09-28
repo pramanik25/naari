@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Top-down dark scrim behind the photo viewer's toolbar. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <gradient
+        android:angle="270"
+        android:startColor="#B30A0A12"
+        android:endColor="#000A0A12" />
+</shape>

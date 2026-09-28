@@ -2,256 +2,407 @@
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
     android:clipToPadding="false"
-    android:padding="16dp">
+    android:fillViewport="true"
+    tools:context=".HomeFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:clipChildren="false"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/ns_gutter"
+        android:paddingTop="16dp"
+        android:paddingEnd="@dimen/ns_gutter"
+        android:paddingBottom="32dp">
 
-        <!-- Grid of First Four Cards -->
+        <!-- ============ Header: greeting + avatar ============ -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="2">
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
-            <!-- First Column of Grid -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
-                <!-- Trigger Word Card -->
-                <com.google.android.material.card.MaterialCardView
-                    android:id="@+id/triggerWordCard"
-                    style="@style/HomeCardStyle"
+                <TextView
+                    android:id="@+id/greeting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/Ns.Text.Overline"
+                    tools:text="Good evening" />
+
+                <TextView
+                    android:id="@+id/userName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    app:cardCornerRadius="12dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:padding="16dp">
-
-                        <com.airbnb.lottie.LottieAnimationView
-                            android:id="@+id/triggerWordAnimation"
-                            android:layout_width="72dp"
-                            android:layout_height="72dp"
-                            android:contentDescription="@string/trigger_word_description"
-                            app:lottie_autoPlay="true"
-                            app:lottie_loop="true"
-                            app:lottie_rawRes="@raw/voice_animation" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="12dp"
-                            android:fontFamily="@font/roboto_medium"
-                            android:text="@string/trigger_word"
-                            android:textColor="@color/onSurface"
-                            android:textSize="18sp" />
-                    </LinearLayout>
-                </com.google.android.material.card.MaterialCardView>
-
-                <!-- Call Police Card -->
-                <com.google.android.material.card.MaterialCardView
-                    android:id="@+id/callPoliceCard"
-                    style="@style/HomeCardStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    app:cardCornerRadius="12dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:padding="16dp">
-
-                        <com.airbnb.lottie.LottieAnimationView
-                            android:id="@+id/callPoliceAnimation"
-                            android:layout_width="72dp"
-                            android:layout_height="72dp"
-                            android:contentDescription="@string/call_police_description"
-                            app:lottie_autoPlay="true"
-                            app:lottie_loop="true"
-                            app:lottie_rawRes="@raw/police_animation" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="12dp"
-                            android:fontFamily="@font/roboto_medium"
-                            android:text="@string/call_police"
-                            android:textColor="@color/onSurface"
-                            android:textSize="18sp" />
-                    </LinearLayout>
-                </com.google.android.material.card.MaterialCardView>
+                    android:layout_marginTop="4dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textAppearance="@style/Ns.Text.Headline"
+                    tools:text="Priya" />
             </LinearLayout>
 
-            <!-- Second Column of Grid -->
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical">
+            <FrameLayout
+                android:id="@+id/avatarButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="12dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:contentDescription="@string/cd_open_profile"
+                android:focusable="true">
 
-                <!-- Emergency Settings Card -->
-                <com.google.android.material.card.MaterialCardView
-                    android:id="@+id/emergencySettingsCard"
-                    style="@style/HomeCardStyle"
-                    android:layout_width="match_parent"
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/avatarImage"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ua_avatar_bg"
+                    android:importantForAccessibility="no"
+                    android:scaleType="centerCrop"
+                    app:shapeAppearanceOverlay="@style/Ns.Shape.Pill" />
+
+                <TextView
+                    android:id="@+id/avatarInitials"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    app:cardCornerRadius="12dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:padding="16dp">
-
-                        <com.airbnb.lottie.LottieAnimationView
-                            android:id="@+id/emergencySettingsAnimation"
-                            android:layout_width="72dp"
-                            android:layout_height="72dp"
-                            android:contentDescription="@string/emergency_settings_description"
-                            app:lottie_autoPlay="true"
-                            app:lottie_loop="true"
-                            app:lottie_rawRes="@raw/settings_animation" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="12dp"
-                            android:fontFamily="@font/roboto_medium"
-                            android:text="@string/emergency_setting"
-                            android:textColor="@color/onSurface"
-                            android:textSize="18sp" />
-                    </LinearLayout>
-                </com.google.android.material.card.MaterialCardView>
-
-                <!-- Women Helpline Card -->
-                <com.google.android.material.card.MaterialCardView
-                    android:id="@+id/womenHelplineCard"
-                    style="@style/HomeCardStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    app:cardCornerRadius="12dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:padding="16dp">
-
-                        <com.airbnb.lottie.LottieAnimationView
-                            android:id="@+id/womenHelplineAnimation"
-                            android:layout_width="72dp"
-                            android:layout_height="72dp"
-                            android:contentDescription="@string/women_helpline_description"
-                            app:lottie_autoPlay="true"
-                            app:lottie_loop="true"
-                            app:lottie_rawRes="@raw/helpline_animation" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="12dp"
-                            android:fontFamily="@font/roboto_medium"
-                            android:text="@string/women_helpline"
-                            android:textColor="@color/onSurface"
-                            android:textSize="18sp" />
-                    </LinearLayout>
-                </com.google.android.material.card.MaterialCardView>
-            </LinearLayout>
+                    android:layout_gravity="center"
+                    android:importantForAccessibility="no"
+                    android:textAppearance="@style/Ns.Text.Subtitle"
+                    android:visibility="gone"
+                    tools:text="PS"
+                    tools:visibility="visible" />
+            </FrameLayout>
         </LinearLayout>
 
-        <!-- Geofence Card (Full Width) -->
+        <!-- ============ Protection status ============ -->
         <com.google.android.material.card.MaterialCardView
-            android:id="@+id/geofenceSettingsCard"
-            style="@style/HomeCardStyle"
+            android:id="@+id/protectionCard"
+            style="@style/Ns.Card.Tile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            app:cardCornerRadius="12dp">
+            android:layout_marginTop="24dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
+                android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="16dp">
+                android:padding="@dimen/ns_card_padding">
 
-                <com.airbnb.lottie.LottieAnimationView
-                    android:id="@+id/geofenceAnimation"
-                    android:layout_width="72dp"
-                    android:layout_height="72dp"
-                    android:contentDescription="@string/geofence_description"
-                    app:lottie_autoPlay="true"
-                    app:lottie_loop="true"
-                    app:lottie_rawRes="@raw/geofence_animation" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/statusPill"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ns_pill"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingStart="12dp"
+                        android:paddingTop="6dp"
+                        android:paddingEnd="14dp"
+                        android:paddingBottom="6dp">
+
+                        <View
+                            android:id="@+id/statusDot"
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:background="@drawable/ns_dot" />
+
+                        <TextView
+                            android:id="@+id/statusPillText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:textAppearance="@style/Ns.Text.Label"
+                            android:textSize="12sp"
+                            tools:text="Protected" />
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <com.google.android.material.materialswitch.MaterialSwitch
+                        android:id="@+id/protectionSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/cd_protection_switch"
+                        android:minHeight="48dp"
+                        android:saveEnabled="false" />
+                </LinearLayout>
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:id="@+id/protectionTitle"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="12dp"
-                    android:fontFamily="@font/roboto_medium"
-                    android:text="@string/geofence"
-                    android:textColor="@color/onSurface"
-                    android:textSize="18sp" />
+                    android:layout_marginTop="14dp"
+                    android:textAppearance="@style/Ns.Text.Title"
+                    tools:text="Protection is on" />
+
+                <TextView
+                    android:id="@+id/protectionSubtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textAppearance="@style/Ns.Text.Body"
+                    tools:text="Listening for “help” · Shake · Power ×3" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
-        <!-- Live Location Card (Full Width) -->
+        <!-- ============ Setup nudges ============ -->
         <com.google.android.material.card.MaterialCardView
-            android:id="@+id/liveLocationCard"
-            style="@style/HomeCardStyle"
+            android:id="@+id/contactsNudge"
+            style="@style/Ns.Card.Tile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            app:cardCornerRadius="12dp">
+            android:layout_marginTop="12dp"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/ns_warn_container"
+            app:strokeWidth="0dp"
+            tools:visibility="visible">
+
+            <include
+                android:id="@+id/contactsNudgeRow"
+                layout="@layout/ua_item_row" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/triggerNudge"
+            style="@style/Ns.Card.Tile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <include
+                android:id="@+id/triggerNudgeRow"
+                layout="@layout/ua_item_row" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- ============ SOS hero ============ -->
+        <FrameLayout
+            android:id="@+id/sosHero"
+            android:layout_width="match_parent"
+            android:layout_height="284dp"
+            android:layout_marginTop="12dp"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+
+            <View
+                android:id="@+id/sosRing1"
+                android:layout_width="@dimen/ns_sos_size"
+                android:layout_height="@dimen/ns_sos_size"
+                android:layout_gravity="center"
+                android:alpha="0"
+                android:background="@drawable/ns_sos_ring" />
+
+            <View
+                android:id="@+id/sosRing2"
+                android:layout_width="@dimen/ns_sos_size"
+                android:layout_height="@dimen/ns_sos_size"
+                android:layout_gravity="center"
+                android:alpha="0"
+                android:background="@drawable/ns_sos_ring" />
+
+            <View
+                android:id="@+id/sosRing3"
+                android:layout_width="@dimen/ns_sos_size"
+                android:layout_height="@dimen/ns_sos_size"
+                android:layout_gravity="center"
+                android:alpha="0"
+                android:background="@drawable/ns_sos_ring" />
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/sosProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:importantForAccessibility="no"
+                android:max="1000"
+                app:indicatorColor="@color/ns_rose"
+                app:indicatorSize="206dp"
+                app:trackColor="@android:color/transparent"
+                app:trackCornerRadius="3dp"
+                app:trackThickness="5dp" />
+
+            <FrameLayout
+                android:id="@+id/sosButton"
+                android:layout_width="@dimen/ns_sos_size"
+                android:layout_height="@dimen/ns_sos_size"
+                android:layout_gravity="center"
+                android:background="@drawable/ns_sos_core"
+                android:clickable="true"
+                android:contentDescription="@string/sos_cd"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_horizontal"
+                    android:importantForAccessibility="noHideDescendants"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/sosLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sos_label"
+                        android:textAppearance="@style/Ns.Text.Display"
+                        android:textColor="@color/white"
+                        android:textSize="46sp" />
+
+                    <TextView
+                        android:id="@+id/sosHint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:alpha="0.85"
+                        android:text="@string/sos_hint"
+                        android:textAppearance="@style/Ns.Text.Label"
+                        android:textColor="@color/white"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </FrameLayout>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/sosCaption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/sos_caption"
+            android:textAppearance="@style/Ns.Text.Body" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/stopSosButton"
+            style="@style/Ns.Button.Safe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/sos_stop"
+            android:visibility="gone"
+            app:icon="@drawable/ua_ic_check" />
+
+        <!-- ============ Quick actions ============ -->
+        <TextView
+            style="@style/Ns.SectionLabel"
+            android:layout_marginTop="32dp"
+            android:text="@string/home_quick_actions" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <include
+                android:id="@+id/qaTrigger"
+                layout="@layout/ua_item_quick_action"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1" />
+
+            <include
+                android:id="@+id/qaContacts"
+                layout="@layout/ua_item_quick_action"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <include
+                android:id="@+id/qaPolice"
+                layout="@layout/ua_item_quick_action"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1" />
+
+            <include
+                android:id="@+id/qaHelplines"
+                layout="@layout/ua_item_quick_action"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <include
+                android:id="@+id/qaLiveLocation"
+                layout="@layout/ua_item_quick_action"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1" />
+
+            <include
+                android:id="@+id/qaSafeZones"
+                layout="@layout/ua_item_quick_action"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <!-- ============ Safety kit rows ============ -->
+        <TextView
+            style="@style/Ns.SectionLabel"
+            android:text="@string/home_your_safety_kit" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="16dp">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-                <com.airbnb.lottie.LottieAnimationView
-                    android:id="@+id/liveLocationAnimation"
-                    android:layout_width="72dp"
-                    android:layout_height="72dp"
-                    android:contentDescription="@string/live_location_description"
-                    app:lottie_autoPlay="true"
-                    app:lottie_loop="true"
-                    app:lottie_rawRes="@raw/location_animation" />
+                <include
+                    android:id="@+id/rowSchedule"
+                    layout="@layout/ua_item_row" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="12dp"
-                    android:fontFamily="@font/roboto_medium"
-                    android:text="@string/live_location"
-                    android:textColor="@color/onSurface"
-                    android:textSize="18sp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="80dp"
+                    android:background="@color/ns_stroke" />
+
+                <include
+                    android:id="@+id/rowVault"
+                    layout="@layout/ua_item_row" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
-
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>
