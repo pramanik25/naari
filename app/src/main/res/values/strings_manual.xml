@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- User manual and help documentation for Naari Shakti -->
+<resources>
+    <!-- Manual Activity title and navigation -->
+    <string name="manual_title">How to stay safe</string>
+    <string name="manual_overline">User guide</string>
+    <string name="manual_body">Learn how to use every safety feature in Naari Shakti. Swipe left to see more.</string>
+    <string name="manual_back">Back</string>
+
+    <!-- TAB 1: SOS Button -->
+    <string name="manual_tab_sos">SOS Button</string>
+    <string name="manual_sos_heading">Emergency SOS Button</string>
+    <string name="manual_sos_subtitle">The fastest way to alert your contacts</string>
+    <string name="manual_sos_what">What it does: Pressing and holding the large SOS button sends an emergency alert to all your emergency contacts with your live location, calls your first contact, and starts a loud siren.</string>
+    <string name="manual_sos_how_title">How to use it:</string>
+    <string name="manual_sos_how_1">1. On the Home screen, press and hold the blue SOS button for 3 seconds</string>
+    <string name="manual_sos_how_2">2. A countdown will appear—keep holding until it reaches zero</string>
+    <string name="manual_sos_how_3">3. Once triggered, your contacts get an SMS with your location and a call to the first contact</string>
+    <string name="manual_sos_how_4">4. To cancel before it fires, release your finger during the countdown</string>
+    <string name="manual_sos_what_happens">What happens next:
+• Loud siren plays to draw attention (unless you turned on Silent SOS)
+• Your location is sent via SMS and email
+• Audio and photos are recorded quietly
+• If contacts don't answer, the app can call the next contact
+• Your phone will not lock or let you close the SOS screen</string>
+    <string name="manual_sos_stop_title">How to stop the SOS:</string>
+    <string name="manual_sos_stop_1">Settings tab › Safety settings › "Stop an alarm"</string>
+    <string name="manual_sos_stop_2">Choose: Volume keys (press volume down) OR Shake (shake your phone)</string>
+    <string name="manual_sos_tip">Tip: You can also cancel a running SOS by pressing the Stop button that appears on the SOS screen.</string>
+    <string name="manual_sos_needs">Needs: Emergency contacts, SMS or email permission</string>
+
+    <!-- TAB 2: Automatic Triggers -->
+    <string name="manual_tab_triggers">Automatic Triggers</string>
+    <string name="manual_triggers_heading">Ways to start an SOS automatically</string>
+    <string name="manual_triggers_subtitle">Your phone can start the SOS if you can't use the button</string>
+    <string name="manual_triggers_what">Instead of pressing the SOS button, you can trigger an SOS with any of these methods. Each can be turned on or off separately.</string>
+    <string name="manual_triggers_title_shake">Shake (Device Shake)</string>
+    <string name="manual_triggers_shake_desc">Vigorous shaking of your phone starts an SOS with a countdown. You can cancel during the countdown by staying still.</string>
+    <string name="manual_triggers_shake_how">Turn it on: Settings tab › Safety settings › Triggers section › toggle "Shake"</string>
+
+    <string name="manual_triggers_title_power">Power Button Presses</string>
+    <string name="manual_triggers_power_desc">Press the power button multiple times rapidly (default: 3 presses) within a short window (default: 2 seconds) to start an SOS. The number of presses is customizable.</string>
+    <string name="manual_triggers_power_how">Turn it on: Settings tab › Safety settings › Triggers section › toggle "Power" and adjust the number of presses and time window using the sliders</string>
+
+    <string name="manual_triggers_title_voice">Voice/Trigger Word</string>
+    <string name="manual_triggers_voice_desc">Say your chosen trigger word (e.g., "Help," "Emergency") out loud and your phone will start an SOS. The app listens in the background, even when the screen is off. Nothing is recorded until an SOS starts.</string>
+    <string name="manual_triggers_voice_how">Set it up: Home › tap the text under the protection status showing "Listening for..." › Settings tab › Trigger Word › record your trigger word › set active time window (e.g., only during work hours) › Save</string>
+    <string name="manual_triggers_voice_needs">Needs: Microphone permission. Works best in quiet places.</string>
+
+    <string name="manual_triggers_title_scream">Scream Detection</string>
+    <string name="manual_triggers_scream_desc">If your phone hears a loud scream or yell, it automatically starts an SOS. The audio is analyzed locally on your phone and is never stored or sent.</string>
+    <string name="manual_triggers_scream_how">Turn it on: Settings tab › Safety settings › "Automatic triggers" section › toggle "Scream detection"</string>
+    <string name="manual_triggers_scream_needs">Needs: Microphone permission.</string>
+
+    <string name="manual_triggers_title_fall">Fall Detection</string>
+    <string name="manual_triggers_fall_desc">If your phone detects a sudden fall or struggle (using motion sensors), it can automatically start an SOS. Useful if you\'ve been hit or fall and can\'t reach the button.</string>
+    <string name="manual_triggers_fall_how">Turn it on: Settings tab › Safety settings › "Automatic triggers" section › toggle "Fall detection"</string>
+
+    <string name="manual_triggers_title_headset">Headset Button</string>
+    <string name="manual_triggers_headset_desc">Press the button on your wired or Bluetooth headset three times quickly to start an SOS. Useful if your hands are full or the phone is in a bag.</string>
+    <string name="manual_triggers_headset_how">Turn it on: Settings tab › Safety settings › "Automatic triggers" section › toggle "Headset button"</string>
+
+    <string name="manual_triggers_title_volume">Volume Keys (Screen Off)</string>
+    <string name="manual_triggers_volume_desc">Press and hold the volume-down key multiple times (even with the screen off or phone locked) to start an SOS. This works like the power-button trigger but uses the volume keys instead.</string>
+    <string name="manual_triggers_volume_how">Turn it on: Settings tab › Safety settings › "Automatic triggers" section › toggle "Volume keys, screen off"
+Android requires the "Accessibility service" to be on for this to work with the screen off. The app will ask you to enable it.</string>
+    <string name="manual_triggers_volume_needs">Needs: Accessibility service permission (one-time setup).</string>
+
+    <string name="manual_triggers_title_panic">Panic Button (Bluetooth)</string>
+    <string name="manual_triggers_panic_desc">A small wireless Bluetooth panic button (sold as "iTag" keyfinder buttons, ~₹200 online) can be paired with your phone. Press the button twice to start an SOS without taking out your phone.</string>
+    <string name="manual_triggers_panic_how">Set it up: Settings tab › Safety tools › Panic button › Scan for buttons › select your button › Test by pressing twice. The button must stay within Bluetooth range (~20m) while protection is on.</string>
+    <string name="manual_triggers_panic_needs">Needs: Bluetooth permission and a compatible Bluetooth button.</string>
+
+    <!-- TAB 3: Protection & Settings -->
+    <string name="manual_tab_protection">Protection & Countdown</string>
+    <string name="manual_protect_heading">Turn protection on and set SOS timing</string>
+    <string name="manual_protect_subtitle">Control when your triggers work and how long you have to cancel</string>
+
+    <string name="manual_protect_title">What is "Protection"?</string>
+    <string name="manual_protect_desc">The toggle at the top of the Home screen turns protection on and off. When it's on, your phone listens for triggers (voice, shake, power button, etc.) and is ready to start an SOS. When it's off, none of the automatic triggers will fire.</string>
+    <string name="manual_protect_turn_on">To turn on protection:
+1. Home tab › tap the Protection toggle
+2. If it says "Starting…," wait for the microphone to be ready
+3. Once it says "Protected," you\'re listening for your trigger word</string>
+
+    <string name="manual_protect_countdown">SOS Countdown (Confirmation Timeout)</string>
+    <string name="manual_protect_countdown_desc">After an SOS is triggered, a countdown timer appears (default: 5 seconds). If you do nothing, the SOS fires when the timer reaches zero. You can cancel by pressing the X button or using your deactivation method (volume key or shake) before it runs out.</string>
+    <string name="manual_protect_countdown_change">Change it: Settings tab › Safety settings › "SOS behaviour" › "SOS countdown" slider (0–15 seconds)</string>
+    <string name="manual_protect_countdown_zero">If you set it to 0, the SOS fires instantly with no countdown.</string>
+
+    <!-- TAB 4: Evidence & Recording -->
+    <string name="manual_tab_evidence">Evidence & Recording</string>
+    <string name="manual_evidence_heading">What your phone records during an SOS</string>
+    <string name="manual_evidence_subtitle">Photos, audio and video for proof</string>
+
+    <string name="manual_evidence_what">During an SOS, your phone automatically records:
+• Photos (2 per second by default)
+• Audio (in short chunks, uploaded as you record)
+• Location (GPS, updated every few seconds)
+Recordings are kept on your phone and uploaded securely.</string>
+
+    <string name="manual_evidence_audio">Audio Recording</string>
+    <string name="manual_evidence_audio_desc">Sound is recorded in short 10-second chunks during an SOS and uploaded one piece at a time. This keeps files small and lets proof reach the server even if your phone runs out of battery.</string>
+    <string name="manual_evidence_audio_turn_on">Turn it on: Settings tab › Safety settings › "Evidence" › toggle "Record audio"</string>
+
+    <string name="manual_evidence_video">Video Instead of Photos</string>
+    <string name="manual_evidence_video_desc">Choose to record video (instead of still photos) during an SOS. Video uses much more battery and mobile data, so only turn this on if you have a strong signal and good battery.</string>
+    <string name="manual_evidence_video_turn_on">Turn it on: Settings tab › Safety settings › "Evidence" › toggle "Record video"
+The app will ask you to confirm because it uses a lot of data and battery.</string>
+
+    <string name="manual_evidence_upload">Upload on Mobile Data</string>
+    <string name="manual_evidence_upload_desc">By default, evidence uploads only over Wi-Fi. If you turn this on, evidence will start uploading right away, even on slow mobile data (4G/5G). This uses more data but gets proof to the server faster if you\'re away from Wi-Fi.</string>
+    <string name="manual_evidence_upload_turn_on">Turn it on: Settings tab › Safety settings › "Evidence" › toggle "Upload on mobile data"</string>
+
+    <string name="manual_evidence_vault">Evidence Vault (Incident History)</string>
+    <string name="manual_evidence_vault_desc">Every SOS is saved with all its photos, audio clips and video. Each file has a SHA-256 fingerprint that proves it hasn\'t been tampered with or changed.</string>
+    <string name="manual_evidence_vault_view">View it: Settings tab › Vault (or in the Safety tools tab › Incident history)</string>
+    <string name="manual_evidence_vault_export">You can export evidence from any incident and send it to police, lawyers or a trusted person as a ZIP file with all proofs embedded.</string>
+
+    <!-- TAB 5: Escape & Safe -->
+    <string name="manual_tab_escape">Escape & Safety Tools</string>
+    <string name="manual_escape_heading">Quick ways to get out of danger or reach help</string>
+    <string name="manual_escape_subtitle">Fake calls, check-ins, safe places and more</string>
+
+    <string name="manual_escape_title_fake">Fake Call</string>
+    <string name="manual_escape_fake_desc">Get an incoming call from a fake caller (e.g., "Mom") so you have a believable reason to step away from someone dangerous. The call looks real on your phone.</string>
+    <string name="manual_escape_fake_how">Use it: Home tab › Safety tools › "Fake call" › type a caller name and choose delay (5s–5m) › press "Schedule call" › when your phone rings, answer and step away</string>
+
+    <string name="manual_escape_title_checkin">Check-In Timer</string>
+    <string name="manual_escape_checkin_desc">Set a timer (e.g., 1 hour) and if you don\'t tap the "Check in" button before it runs out, your emergency contacts are automatically alerted.</string>
+    <string name="manual_escape_checkin_how">Use it: Home tab › Safety tools › "Check-in timer" › set time (e.g., "I\'ll be home in 1 hour") › press Start › when timer runs out, you\'ll get a notification. Tap it to check in, or let your contacts know you\'re in trouble</string>
+    <string name="manual_escape_checkin_tip">Good for: Long journeys, meetings with strangers, late-night outings</string>
+
+    <string name="manual_escape_title_cab">Cab Mode</string>
+    <string name="manual_escape_cab_desc">When you\'re taking a taxi or cab, Cab Mode records the driver\'s license plate, watches your route and sends regular position updates to your emergency contacts. If you don\'t check in after the trip, they\'re alerted.</string>
+    <string name="manual_escape_cab_how">Use it: Home tab › Safety tools › "Cab mode" › enter destination › press Start › the app records the plate and tracks your route › when you arrive, press "I\'m safe" or the timer will alert contacts</string>
+    <string name="manual_escape_cab_tip">The plate reader tries to capture the license plate automatically, but you can type it manually if needed.</string>
+
+    <string name="manual_escape_title_meeting">Meeting Mode</string>
+    <string name="manual_escape_meeting_desc">When meeting someone you don\'t know (a date, a buyer, a job interview), this mode records your location and sends regular updates to a trusted contact so they know where you are.</string>
+    <string name="manual_escape_meeting_how">Use it: Home tab › Safety tools › "Meeting someone" › set time limit (e.g., "1 hour") › press Start › when done, press "I\'m safe" or let the timer alert your contacts if something goes wrong</string>
+
+    <string name="manual_escape_title_places">Safe Places Nearby</string>
+    <string name="manual_escape_places_desc">Find the nearest police stations, hospitals and 24-hour shops on a map. This is useful if you need to go somewhere safe in an emergency.</string>
+    <string name="manual_escape_places_how">Use it: Home tab › Safety tools › "Safe places nearby" › the map shows nearby safe places › tap one to call, get directions or view details</string>
+    <string name="manual_escape_places_needs">Needs: Location permission and internet connection.</string>
+
+    <string name="manual_escape_title_silent">Silent SOS</string>
+    <string name="manual_escape_silent_desc">When an SOS fires, normally there\'s a loud siren, flashing screen and flashlight. If you turn on Silent SOS, none of those happen—your contacts are alerted and evidence records quietly, but no one nearby knows.</string>
+    <string name="manual_escape_silent_how">Turn it on: Settings tab › Safety settings › "SOS behaviour" › toggle "Silent SOS"
+This is useful if you\'re in danger and can\'t alert anyone nearby without making things worse.</string>
+
+    <!-- TAB 6: Privacy & Diary -->
+    <string name="manual_tab_privacy">Privacy & Recording</string>
+    <string name="manual_privacy_heading">Keep private records and write down what happened</string>
+    <string name="manual_privacy_subtitle">Diary entries, complaints and app lock</string>
+
+    <string name="manual_privacy_title_diary">Private Diary</string>
+    <string name="manual_privacy_diary_desc">Write private, dated diary entries about incidents or feelings. Each entry is timestamped and kept only on your phone (unless you upload it).</string>
+    <string name="manual_privacy_diary_how">Use it: Settings tab › Safety tools › "Private diary" › press + to create a new entry › write what happened › press Save. Your entries are visible only in the app.</string>
+
+    <string name="manual_privacy_title_complaint">Complaint Draft (PDF)</string>
+    <string name="manual_privacy_complaint_desc">Write a formal complaint statement about an incident and export it as a PDF with a timestamp and SHA-256 proof that it wasn\'t changed. You can print or email this to police or a lawyer.</string>
+    <string name="manual_privacy_complaint_how">Use it: Settings tab › Safety tools › "Complaint draft" › write your statement › press Export as PDF › save or share the file</string>
+
+    <string name="manual_privacy_title_pin">App PIN & Duress PIN</string>
+    <string name="manual_privacy_pin_desc">Lock the Naari Shakti app with a PIN so only you can open it. There's also a "Duress PIN" that opens a fake shutdown screen if someone forces you to unlock the app.</string>
+    <string name="manual_privacy_pin_how">Set it up: Settings tab › Safety tools › "App PIN" › create a PIN › optionally set a Duress PIN
+If you enter the Duress PIN instead of the real one, the app shows a fake "Closing…" screen while secretly recording an SOS in the background.</string>
+
+    <!-- TAB 7: Contacts & Messaging -->
+    <string name="manual_tab_contacts">Emergency Contacts</string>
+    <string name="manual_contacts_heading">Add people to alert during an SOS</string>
+    <string name="manual_contacts_subtitle">Phone calls, SMS and more</string>
+
+    <string name="manual_contacts_what">Emergency contacts are the people who get:
+• An SMS with your location (if SMS permission is on)
+• A phone call to the first contact (if phone permission is on)
+• Email alerts (if email is set up)
+• Telegram alerts (if a Telegram number is set up)</string>
+
+    <string name="manual_contacts_add">Add contacts: Settings tab › Profile › Emergency Contacts › + Add Contact
+You can either select from your phone's contacts or type their name and number manually.
+Tip: Put the most trusted person first—they'll be called first during an SOS.</string>
+
+    <string name="manual_contacts_call">Automatic Calling</string>
+    <string name="manual_contacts_call_desc">When an SOS fires, your first emergency contact is called automatically. If they don\'t pick up, the app can try calling the next contact (turn on "Call the next contact" in Safety settings).</string>
+
+    <string name="manual_contacts_escalation">Call Escalation</string>
+    <string name="manual_contacts_escalation_how">Turn it on: Settings tab › Safety settings › "SOS behaviour" › toggle "Call the next contact"
+If enabled, and your first contact doesn\'t answer, the app will call the second contact, then the third, and so on.</string>
+
+    <string name="manual_contacts_emergency_call">Call Emergency Services (112)</string>
+    <string name="manual_contacts_emergency_desc">You can set the app to call 112 (India's emergency number) after trying all your contacts. This only works if you enable it and accept the risk of a false alarm.</string>
+    <string name="manual_contacts_emergency_how">Turn it on: Settings tab › Safety settings › "SOS behaviour" › toggle "Call 112 last"
+Only enable this if you're sure your phone number is registered with authorities.</string>
+
+    <!-- TAB 8: Cloud & Helpers -->
+    <string name="manual_tab_cloud">Cloud & Trusted Helpers</string>
+    <string name="manual_cloud_heading">Backup your proof online and find helpers nearby</string>
+    <string name="manual_cloud_subtitle">Upload evidence and alert nearby guardians</string>
+
+    <string name="manual_cloud_desc">Naari Shakti can upload evidence to a secure server so your proof is safe even if your phone is stolen, lost or turned off. You can also connect with "Guardians"—trusted people nearby who can help in an emergency.</string>
+
+    <string name="manual_cloud_title_upload">Cloud Upload (Evidence Backup)</string>
+    <string name="manual_cloud_upload_desc">Evidence (photos, audio, video) is uploaded to a secure cloud server during an SOS. This ensures that proof is safe in multiple places—on your phone and in the cloud.</string>
+    <string name="manual_cloud_upload_how">Set it up: Settings tab › Cloud settings › link your email account (one-time)
+Evidence will upload automatically during every SOS if you have internet.</string>
+    <string name="manual_cloud_upload_tip">Without cloud upload, evidence stays only on your phone until you manually export it.</string>
+
+    <string name="manual_cloud_title_nearby">Nearby Helpers</string>
+    <string name="manual_cloud_nearby_desc">Other Naari Shakti users near you can be notified if you trigger an SOS (with your permission). They can come help or contact police on your behalf. Useful in crowded areas.</string>
+    <string name="manual_cloud_nearby_how">Set it up: Settings tab › Cloud settings › "Nearby helpers" › toggle on
+Your location (approximate) and situation are shared only during an active SOS.</string>
+
+    <string name="manual_cloud_title_whatsapp">WhatsApp Integration</string>
+    <string name="manual_cloud_whatsapp_desc">Connect your WhatsApp account to receive SOS alerts and updates through WhatsApp groups or contacts. Your emergency messages are delivered via WhatsApp in addition to SMS and calls.</string>
+    <string name="manual_cloud_whatsapp_how">Set it up: Settings tab › Cloud settings › WhatsApp › connect your account
+Trusted contacts can then receive alerts through WhatsApp.</string>
+
+    <!-- TAB 9: Profile & Schedule -->
+    <string name="manual_tab_profile">Profile & Scheduling</string>
+    <string name="manual_profile_heading">Your personal info and scheduled protection</string>
+    <string name="manual_profile_subtitle">Set up your profile and choose when protection is on</string>
+
+    <string name="manual_profile_title_info">Profile Information</string>
+    <string name="manual_profile_info_desc">Store your personal details (name, address, phone number, family info, occupation) in the app. This information is kept private on your phone and is only shared during an SOS with your emergency contacts.</string>
+    <string name="manual_profile_info_how">Update it: Settings tab › Profile › fill in your details › Save
+Include at least your name and a trusted contact number so helpers know who you are.</string>
+
+    <string name="manual_profile_title_schedule">Scheduled Protection</string>
+    <string name="manual_profile_schedule_desc">You can set protection to turn on and off automatically at specific times (e.g., "turn on at 8 PM and off at 8 AM"). Useful if you want protection only during vulnerable hours.</string>
+    <string name="manual_profile_schedule_how">Set it up: Settings tab › Schedule › choose days and times › Save
+Example: Turn on protection on weekdays at 6 PM and turn off at 10 PM.
+Disable: Toggle off or delete the schedule to go back to manual on/off.</string>
+
+    <!-- TAB 10: Permissions & Settings -->
+    <string name="manual_tab_permissions">Permissions & Settings</string>
+    <string name="manual_perms_heading">What permissions the app needs and why</string>
+    <string name="manual_perms_subtitle">Allow access to keep you safe</string>
+
+    <string name="manual_perms_what">Naari Shakti asks for several permissions. You stay in control—you can grant or deny each one, and change them anytime.</string>
+
+    <string name="manual_perms_mic">Microphone – Hear your trigger word and record audio during an SOS</string>
+    <string name="manual_perms_sms">SMS – Text your location to emergency contacts</string>
+    <string name="manual_perms_phone">Phone – Call your first contact automatically during an SOS</string>
+    <string name="manual_perms_location">Location – Know exactly where you are when you need help</string>
+    <string name="manual_perms_camera">Camera – Take photos quietly during an SOS for evidence</string>
+    <string name="manual_perms_contacts">Contacts – Pick emergency contacts from your phone</string>
+    <string name="manual_perms_notifications">Notifications – Know when protection is running and get SOS alerts</string>
+    <string name="manual_perms_battery">Battery optimization – Keep protection running in the background</string>
+    <string name="manual_perms_overlay">Display over other apps – Show the SOS lock screen above everything</string>
+    <string name="manual_perms_fullscreen">Full-screen alerts – Show SOS on the lock screen even when the phone is locked</string>
+    <string name="manual_perms_exact_alarm">Exact alarms – Start scheduled protection right on time</string>
+
+    <string name="manual_perms_grant">Grant permissions: Settings tab › scroll to "Permissions" › tap each permission and follow the prompt
+You don\'t need all permissions for the app to work—grant only what you\'re comfortable with.</string>
+
+    <string name="manual_perms_change">Change any time: Settings tab › "Permissions" section, or:
+Android Settings › Apps › Naari Shakti › Permissions › toggle each one</string>
+
+    <!-- TAB 11: Appearance & Language -->
+    <string name="manual_tab_appearance">Appearance & Language</string>
+    <string name="manual_appearance_heading">Theme and app language</string>
+    <string name="manual_appearance_subtitle">Choose dark mode, light mode or follow your phone</string>
+
+    <string name="manual_appearance_theme">Theme (Dark / Light / System)</string>
+    <string name="manual_appearance_theme_desc">Dark Mode is easier on the eyes at night. Light Mode is clearer in bright sunlight. System follows your phone's setting (most phones use Dark after sunset).</string>
+    <string name="manual_appearance_theme_how">Change it: Settings tab › Appearance › choose Dark, Light or System › changes apply instantly</string>
+
+    <string name="manual_appearance_language">In-App Language</string>
+    <string name="manual_appearance_language_desc">Naari Shakti is available in 13 languages including Hindi, Bengali, Tamil, Telugu, Kannada, Malayalam, Marathi, Gujarati, Punjabi, Odia, Assamese and Urdu. The app language is separate from your phone language.</string>
+    <string name="manual_appearance_language_how">Change it: Settings tab › Appearance › select your language › changes apply instantly</string>
+
+    <!-- TAB 12: Troubleshooting -->
+    <string name="manual_tab_help">Help & Tips</string>
+    <string name="manual_help_heading">Common questions and tips</string>
+    <string name="manual_help_subtitle">Get answers and improve your safety setup</string>
+
+    <string name="manual_help_q1">Q: What if I don't have emergency contacts?</string>
+    <string name="manual_help_a1">A: Some SOS features (like calls and SMS alerts) need at least one emergency contact. Add a trusted friend, family member or local women's helpline. You can add contacts anytime from Settings › Profile › Emergency Contacts.</string>
+
+    <string name="manual_help_q2">Q: Can I use Naari Shakti without turning on all permissions?</string>
+    <string name="manual_help_a2">A: Yes! Each feature needs certain permissions. For example:
+• Voice trigger needs Microphone
+• Sending SMS needs SMS permission
+• Recording photos needs Camera
+• Calling needs Phone permission
+Start with what feels safe and add more later if you want.</string>
+
+    <string name="manual_help_q3">Q: Does the app record my voice all the time?</string>
+    <string name="manual_help_a3">A: No. The app listens for your trigger word (using Vosk on-device AI), but nothing is recorded or uploaded until an SOS fires. Once an SOS starts, audio is recorded in short chunks.</string>
+
+    <string name="manual_help_q4">Q: What if my phone dies during an SOS?</string>
+    <string name="manual_help_a4">A: Your emergency contacts have already been alerted with your last known location. Evidence that reached the cloud is safe there. Enable cloud backup in Settings › Cloud settings so evidence is uploaded during the SOS.</string>
+
+    <string name="manual_help_q5">Q: Can I test the SOS without actually triggering it?</string>
+    <string name="manual_help_a5">A: Yes. Go to Settings › Safety settings › SOS behaviour › set the countdown to 15 seconds. Then trigger an SOS (e.g., press the SOS button) and cancel it during the countdown to test it safely.</string>
+
+    <string name="manual_help_q6">Q: How do I turn off a running SOS?</string>
+    <string name="manual_help_a6">A: During the countdown, press the X button on the screen, or use your deactivation method:
+• If set to Volume: press the volume-down key
+• If set to Shake: shake your phone firmly
+You can only deactivate BEFORE the SOS fully fires (after the countdown ends).</string>
+
+    <string name="manual_help_q7">Q: Can I hide the app or change its name so no one knows I have it?</string>
+    <string name="manual_help_a7">A: The app can be locked with a PIN (Settings › Safety tools › App PIN). There's also a Duress PIN that shows a fake shutdown while secretly recording. However, the app icon will still show on your home screen by default.</string>
+
+    <string name="manual_help_q8">Q: What is the Duress PIN?</string>
+    <string name="manual_help_a8">A: If someone forces you to unlock the app, you can enter the Duress PIN instead of your real PIN. The app will pretend to shut down while secretly starting an SOS and recording evidence in the background.</string>
+
+    <string name="manual_help_q9">Q: How often should I review my emergency contacts?</string>
+    <string name="manual_help_a9">A: Review your contacts every 3–6 months to make sure they're still reachable. If someone moves away or you're no longer in touch, update your list. Keep your most trusted person first.</string>
+
+    <string name="manual_help_q10">Q: Can I export my evidence?</string>
+    <string name="manual_help_a10">A: Yes. Go to Settings › Vault (or Safety tools › Incident history) › select an incident › press Export › choose where to save the file. It's a ZIP with all evidence, timestamps and SHA-256 fingerprints proving nothing was changed.</string>
+
+    <string name="manual_help_tip1">Tip: Keep your trigger word short and uncommon so you don't accidentally say it in everyday conversation.</string>
+    <string name="manual_help_tip2">Tip: Test each trigger (shake, power button, voice) at home first so you know exactly how to use them in an emergency.</string>
+    <string name="manual_help_tip3">Tip: Charge your phone to at least 50% before leaving home if you're going somewhere you feel unsafe. An SOS uses battery quickly.</string>
+    <string name="manual_help_tip4">Tip: Tell your emergency contacts that they might receive alerts from Naari Shakti and explain what each alert means so they know how to help.</string>
+    <string name="manual_help_tip5">Tip: In India, call 112 for any emergency (police, fire, medical). Naari Shakti can do this automatically if you turn it on in Safety settings.</string>
+
+    <!-- Footer & closing -->
+    <string name="manual_footer">Need more help? Check the app's notification or contact your local women's safety helpline.</string>
+
+</resources>

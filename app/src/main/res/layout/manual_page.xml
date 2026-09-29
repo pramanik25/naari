@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="32dp">
+
+        <!-- Page heading -->
+        <TextView
+            android:id="@+id/pageHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textAppearance="@style/Ns.Text.Title"
+            android:textColor="@color/ns_rose" />
+
+        <TextView
+            android:id="@+id/pageSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textAppearance="@style/Ns.Text.Body"
+            android:textColor="@color/ns_text_muted" />
+
+        <!-- Content (body text and formatted lists) -->
+        <TextView
+            android:id="@+id/pageContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textAppearance="@style/Ns.Text.Body"
+            android:lineSpacingMultiplier="1.4"
+            android:text="" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

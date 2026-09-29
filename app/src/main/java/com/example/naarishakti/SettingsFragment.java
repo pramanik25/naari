@@ -482,6 +482,11 @@ public class SettingsFragment extends Fragment {
         bindRow(binding.rowAppearance, R.drawable.ua_ic_tune, R.color.ns_gold, R.color.ns_gold_container,
                 R.string.jr_ss_appearance, getString(R.string.jr_ss_appearance_sub),
                 com.example.naarishakti.core.AppearanceActivity.class);
+
+        // User manual
+        bindRow(binding.rowManual, R.drawable.ua_ic_help, R.color.ns_violet, R.color.ns_violet_container,
+                R.string.settings_manual_title, getString(R.string.settings_manual_sub),
+                ManualActivity.class);
     }
 
     private void bindRow(UaItemRowBinding row, @DrawableRes int icon, @ColorRes int solid, @ColorRes int container,

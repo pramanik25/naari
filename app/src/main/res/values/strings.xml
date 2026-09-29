@@ -125,6 +125,11 @@
     <string name="nav_home">Home</string>
     <string name="nav_settings">Settings</string>
 
+    <!-- ===================== Settings Sections ===================== -->
+    <string name="settings_section_help">Help</string>
+    <string name="settings_manual_title">How to stay safe</string>
+    <string name="settings_manual_sub">User guide for all safety features</string>
+
     <!-- ===================== Splash ===================== -->
     <string name="splash_tagline">Your safety, always on</string>
     <string name="splash_footer">Made for her, with care</string>

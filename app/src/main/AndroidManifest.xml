@@ -263,6 +263,11 @@
             android:exported="false"
             android:foregroundServiceType="location" />
 
+        <!-- User Manual -->
+        <activity
+            android:name=".ManualActivity"
+            android:exported="false" />
+
         <!-- Evidence -->
         <activity
             android:name=".evidence.IncidentsActivity"

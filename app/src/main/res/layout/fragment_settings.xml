@@ -417,6 +417,20 @@
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
+        <!-- ============ Help & Manual ============ -->
+        <TextView
+            style="@style/Ns.SectionLabel"
+            android:text="@string/settings_section_help" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/rowManual"
+                layout="@layout/ua_item_row" />
+        </com.google.android.material.card.MaterialCardView>
+
         <!-- ============ About ============ -->
         <TextView
             style="@style/Ns.SectionLabel"
