@@ -289,8 +289,9 @@
                     style="@style/Ns.SectionLabel"
                     android:text="@string/cl_section_code" />
 
+                <!-- Her one-of-a-kind guardian code: the app's "membership card" moment. -->
                 <com.google.android.material.card.MaterialCardView
-                    style="@style/Ns.Card.Raised"
+                    style="@style/Ns.Card.Elite"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 

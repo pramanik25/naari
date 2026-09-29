@@ -1,29 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- ============================================================
-         Naari Shakti — "Midnight Rose" design tokens.
-         Light (Pearl Rose) and dark (Midnight Rose) palettes: near-black indigo surfaces, a rose
-         signature accent for SOS, violet for secondary actions and a
-         champagne gold used sparingly for premium highlights.
+         Naari Shakti — "Midnight Rose" design tokens (premium/elite pass).
+         Light ("Ivory Pearl") and dark ("Onyx Rose") palettes: a warm,
+         boutique-security neutral base, a rose signature accent for SOS,
+         violet for secondary actions and a champagne gold reserved for
+         premium accents (eyebrows, hairlines, medallions).
          Use the ns_* tokens in new code. Legacy names at the bottom
          are aliases kept so older references still resolve.
          ============================================================ -->
 
-    <!-- Surfaces (elevation increases downwards) — "Pearl Rose" light palette.
-         The dark "Midnight Rose" values live in values-night/colors.xml. -->
-    <color name="ns_bg">#FFF7F6FB</color>
-    <color name="ns_bg_top">#FFEFEAFB</color>
+    <!-- Surfaces (elevation increases downwards) — "Ivory Pearl" light palette.
+         The dark "Onyx Rose" values live in values-night/colors.xml. -->
+    <color name="ns_bg">#FFFAF8F4</color>
+    <color name="ns_bg_top">#FFF2E9DC</color>
     <color name="ns_surface">#FFFFFFFF</color>
-    <color name="ns_surface_high">#FFF4F1FA</color>
-    <color name="ns_surface_highest">#FFE9E4F4</color>
-    <color name="ns_stroke">#FFE3DEEE</color>
+    <color name="ns_surface_high">#FFF5F1E9</color>
+    <color name="ns_surface_highest">#FFEBE3D4</color>
+    <color name="ns_stroke">#FFE8E0D0</color>
     <color name="ns_stroke_soft">#14000000</color>
-    <color name="ns_scrim">#E6F7F6FB</color>
+    <color name="ns_scrim">#E6FAF8F4</color>
 
     <!-- Text -->
-    <color name="ns_text">#FF16132A</color>
-    <color name="ns_text_muted">#FF5B5775</color>
-    <color name="ns_text_faint">#FF8A86A3</color>
+    <color name="ns_text">#FF1B1720</color>
+    <color name="ns_text_muted">#FF5B5568</color>
+    <color name="ns_text_faint">#FF8B8598</color>
 
     <!-- Signature rose (SOS / primary) -->
     <color name="ns_rose">#FFE8336B</color>
@@ -37,9 +38,13 @@
     <color name="ns_violet_deep">#FF4B3BC4</color>
     <color name="ns_violet_container">#1F6A5AE0</color>
 
-    <!-- Gold (premium accent; deeper on light for legible text) -->
-    <color name="ns_gold">#FF9A6A1F</color>
-    <color name="ns_gold_container">#1F9A6A1F</color>
+    <!-- Champagne gold (premium accent; deeper on light for legible text) -->
+    <color name="ns_gold">#FF96631A</color>
+    <color name="ns_gold_container">#1F96631A</color>
+    <!-- Bright gold for small standalone accents (medallion rims, dividers, icons). -->
+    <color name="ns_gold_bright">#FFB9822E</color>
+    <!-- Hairline-strength gold, for the "elite" card border / accent divider. -->
+    <color name="ns_gold_line">#3396631A</color>
 
     <!-- Semantic -->
     <color name="ns_safe">#FF12A06A</color>
@@ -56,9 +61,12 @@
     <color name="ns_rose_glow_2">#26E8336B</color>
     <color name="ns_rose_glow_3">#10E8336B</color>
     <color name="ns_safe_glow">#4012A06A</color>
-    <!-- Soft bloom at the top of screen backgrounds -->
-    <color name="ns_bloom">#26A594F9</color>
-    <color name="ns_bloom_end">#00F7F6FB</color>
+    <!-- Soft bloom at the top of screen backgrounds: a faint rose-gold blush. -->
+    <color name="ns_bloom">#1FE8336B</color>
+    <color name="ns_bloom_end">#00FAF8F4</color>
+    <!-- Soft ambient shadow for elevated "elite" surfaces. -->
+    <color name="ns_shadow">#26000000</color>
+
     <color name="white">#FFFFFFFF</color>
     <color name="black">#FF000000</color>
     <color name="transparent">#00000000</color>

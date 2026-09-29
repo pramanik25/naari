@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- App shell: gradient backdrop, fragment host, hairline-topped bottom navigation. -->
+<!-- App shell: gradient backdrop, fragment host, floating rounded "dock" bottom navigation. -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -17,16 +17,20 @@
         android:layout_height="0dp"
         android:layout_weight="1" />
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/ns_stroke" />
-
+    <!-- Floating "dock": rounded, inset from the edges, with a real cast shadow — the
+         bottom bar reads as a premium instrument rather than a flat edge-to-edge strip. -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         style="@style/Ns.BottomNav"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/ns_dock_bg"
+        android:backgroundTint="@null"
+        android:elevation="10dp"
         app:labelVisibilityMode="labeled"
         app:menu="@menu/bottom_nav_menu" />
 </LinearLayout>

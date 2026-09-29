@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- SOS hero button core: glossy rose sphere with a hairline rim. -->
+<!-- SOS hero button core: glossy rose sphere set in a fine gold bezel, like a premium instrument
+     dial. Layers bottom-to-top: gradient sphere, outer gold bezel ring, inset glass highlight. -->
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item>
         <shape android:shape="oval">
@@ -14,6 +15,13 @@
         </shape>
     </item>
     <item>
+        <shape android:shape="oval">
+            <stroke android:width="2dp" android:color="@color/ns_gold_bright" />
+        </shape>
+    </item>
+    <item
+        android:top="3.5dp" android:bottom="3.5dp"
+        android:left="3.5dp" android:right="3.5dp">
         <shape android:shape="oval">
             <stroke android:width="1.5dp" android:color="#40FFFFFF" />
         </shape>

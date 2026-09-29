@@ -1,28 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Miniature of the dark theme for the Appearance picker (fixed colours by design). -->
+<!-- Miniature of the "Onyx Rose" dark theme for the Appearance picker (fixed colours by design). -->
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item>
         <shape android:shape="rectangle">
             <corners android:radius="14dp" />
-            <solid android:color="#FF0A0A12" />
-            <stroke android:width="1dp" android:color="#FF2A2A40" />
+            <solid android:color="#FF0B0A10" />
+            <stroke android:width="1dp" android:color="#FF342C3D" />
         </shape>
     </item>
     <item android:left="10dp" android:right="10dp" android:top="12dp" android:height="18dp" android:gravity="top">
         <shape android:shape="rectangle">
             <corners android:radius="6dp" />
-            <solid android:color="#FF1B1B2B" />
+            <solid android:color="#FF1D1722" />
         </shape>
     </item>
     <item android:left="10dp" android:right="36dp" android:top="36dp" android:height="8dp" android:gravity="top">
         <shape android:shape="rectangle">
             <corners android:radius="4dp" />
-            <solid android:color="#FF2A2A40" />
+            <solid android:color="#FF342C3D" />
         </shape>
     </item>
     <item android:width="30dp" android:height="30dp" android:gravity="bottom|center_horizontal" android:bottom="10dp">
         <shape android:shape="oval">
             <solid android:color="#FFFF4D7E" />
+            <stroke android:width="1dp" android:color="#FFF3D49A" />
         </shape>
     </item>
 </layer-list>

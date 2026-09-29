@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Midnight Rose (dark) palette. Light values live in values/colors.xml. -->
+    <!-- "Onyx Rose" dark palette (premium/elite pass). Light values live in values/colors.xml. -->
 
-    <!-- Surfaces (elevation increases downwards) -->
-    <color name="ns_bg">#FF0A0A12</color>
-    <color name="ns_bg_top">#FF15122A</color>
-    <color name="ns_surface">#FF13131F</color>
-    <color name="ns_surface_high">#FF1B1B2B</color>
-    <color name="ns_surface_highest">#FF242438</color>
-    <color name="ns_stroke">#FF2A2A40</color>
+    <!-- Surfaces (elevation increases downwards): a warm, near-black onyx rather than a cool
+         blue-black, for a richer "boutique security" feel. -->
+    <color name="ns_bg">#FF0B0A10</color>
+    <color name="ns_bg_top">#FF1A1424</color>
+    <color name="ns_surface">#FF141019</color>
+    <color name="ns_surface_high">#FF1D1722</color>
+    <color name="ns_surface_highest">#FF29222F</color>
+    <color name="ns_stroke">#FF342C3D</color>
     <color name="ns_stroke_soft">#1FFFFFFF</color>
-    <color name="ns_scrim">#E60A0A12</color>
+    <color name="ns_scrim">#E60B0A10</color>
 
     <!-- Text -->
-    <color name="ns_text">#FFF5F3FF</color>
-    <color name="ns_text_muted">#FFA9A6C2</color>
-    <color name="ns_text_faint">#FF6F6C8A</color>
+    <color name="ns_text">#FFF7F3FA</color>
+    <color name="ns_text_muted">#FFACA4BF</color>
+    <color name="ns_text_faint">#FF746C88</color>
 
     <!-- Signature rose (SOS / primary) -->
     <color name="ns_rose">#FFFF4D7E</color>
@@ -32,6 +33,10 @@
     <!-- Champagne gold (premium accent, use sparingly) -->
     <color name="ns_gold">#FFE8C27A</color>
     <color name="ns_gold_container">#29E8C27A</color>
+    <!-- Brighter gold for small standalone accents (medallion rims, dividers, icons). -->
+    <color name="ns_gold_bright">#FFF3D49A</color>
+    <!-- Hairline-strength gold, for the "elite" card border / accent divider. -->
+    <color name="ns_gold_line">#40E8C27A</color>
 
     <!-- Semantic -->
     <color name="ns_safe">#FF3DDC97</color>
@@ -48,8 +53,10 @@
     <color name="ns_rose_glow_2">#26FF4D7E</color>
     <color name="ns_rose_glow_3">#10FF4D7E</color>
     <color name="ns_safe_glow">#403DDC97</color>
-    <!-- Soft bloom at the top of screen backgrounds -->
-    <color name="ns_bloom">#3321184A</color>
-    <color name="ns_bloom_end">#000A0A12</color>
+    <!-- Soft bloom at the top of screen backgrounds: a deep plum-rose glow fading to onyx. -->
+    <color name="ns_bloom">#402A1640</color>
+    <color name="ns_bloom_end">#000B0A10</color>
+    <!-- Soft ambient shadow for elevated "elite" surfaces. -->
+    <color name="ns_shadow">#80000000</color>
 
 </resources>

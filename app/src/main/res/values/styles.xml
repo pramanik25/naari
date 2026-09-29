@@ -35,14 +35,14 @@
         <item name="fontFamily">@font/roboto_black</item>
         <item name="android:fontFamily">@font/roboto_black</item>
         <item name="android:textSize">34sp</item>
-        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:letterSpacing">-0.03</item>
         <item name="android:textColor">@color/ns_text</item>
     </style>
     <style name="Ns.Text.Headline" parent="TextAppearance.Material3.HeadlineSmall">
         <item name="fontFamily">@font/roboto_bold</item>
         <item name="android:fontFamily">@font/roboto_bold</item>
         <item name="android:textSize">26sp</item>
-        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:letterSpacing">-0.02</item>
         <item name="android:textColor">@color/ns_text</item>
     </style>
     <style name="Ns.Text.Title" parent="TextAppearance.Material3.TitleMedium">
@@ -179,6 +179,16 @@
     <style name="Ns.Card.Raised">
         <item name="cardBackgroundColor">@color/ns_surface_high</item>
     </style>
+    <!-- Elite: a fine gold hairline and a soft real shadow, for one hero moment per screen
+         (a headline status card, a plan/summary panel). Don't use for ordinary content cards —
+         it reads as ceremonial, not decorative, and loses that if overused. -->
+    <style name="Ns.Card.Elite">
+        <item name="cardBackgroundColor">@color/ns_surface_high</item>
+        <item name="strokeColor">@color/ns_gold_line</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="cardElevation">6dp</item>
+        <item name="shapeAppearance">@style/Ns.Shape.Large</item>
+    </style>
     <!-- Action tile on Home: clickable, taller padding set in layout. -->
     <style name="Ns.Card.Tile">
         <item name="android:clickable">true</item>
@@ -278,5 +288,12 @@
         <item name="android:padding">11dp</item>
         <item name="android:background">@drawable/ns_icon_badge</item>
         <item name="android:scaleType">fitCenter</item>
+    </style>
+    <!-- Fine gold hairline, for a ceremonial rule under a hero headline. Sparingly. -->
+    <style name="Ns.Divider.Gold" parent="">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:layout_marginTop">14dp</item>
+        <item name="android:background">@color/ns_gold_bright</item>
     </style>
 </resources>
