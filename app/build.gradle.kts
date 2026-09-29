@@ -22,12 +22,12 @@ fun localProp(key: String, def: String = ""): String = localProps.getProperty(ke
 
 android {
     namespace = "com.example.naarishakti"
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.naarishakti"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 36
         versionCode = 2
         versionName = "2.0"
 
@@ -56,6 +56,18 @@ android {
         noCompress += listOf("tflite")
     }
 
+    signingConfigs {
+        create("releaseUpload") {
+            val storePassword = System.getenv("RELEASE_STORE_PASSWORD")
+                ?: localProp("RELEASE_STORE_PASSWORD")
+            storeFile = rootProject.file(localProp("RELEASE_STORE_FILE", "app/naarishakti-upload.jks"))
+            this.storePassword = storePassword
+            keyAlias = localProp("RELEASE_KEY_ALIAS", "naarishakti-upload")
+            keyPassword = System.getenv("RELEASE_KEY_PASSWORD")
+                ?: localProp("RELEASE_KEY_PASSWORD", storePassword)
+        }
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -63,7 +75,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-            signingConfig = signingConfigs.getByName("debug")
+            signingConfig = signingConfigs.getByName("releaseUpload")
         }
     }
     compileOptions {

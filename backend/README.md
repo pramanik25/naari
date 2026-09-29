@@ -175,10 +175,14 @@ sides:
    `naari-shakti`). Analytics can stay off.
 2. **Android app**: in the project, *Add app → Android*, package name `com.example.naarishakti`,
    download `google-services.json` and put it at `app/google-services.json`, then rebuild the app.
-   (The Gradle build works without the file; it just prints a warning and ships without push.)
-3. **Server**: *Project settings → Service accounts → Generate new private key*. Give the server
-   the downloaded JSON, either as a path in `FIREBASE_SERVICE_ACCOUNT_FILE` or pasted on one line
-   into `FIREBASE_SERVICE_ACCOUNT`. Restart; the boot warning about push disappears.
+   This file must come from the same Firebase project as the server service account; without it,
+   the Android app cannot obtain an FCM token and push will not work.
+3. **Server**: *Project settings → Service accounts → Generate new private key*. For local runs,
+   set `FIREBASE_SERVICE_ACCOUNT_FILE` to the downloaded JSON path. For Render, either set the
+   `FIREBASE_SERVICE_ACCOUNT` environment variable to the full JSON value, or add the JSON as a
+   Render Secret File and set `FIREBASE_SERVICE_ACCOUNT_FILE` to its mounted path (for example,
+   `/etc/secrets/firebase-service-account.json`). Redeploy after changing the environment. Keep
+   the private key out of Git. The server's boot warning about push disappears when configured.
 
 The server sends data-only, high-priority FCM messages (the phone builds the alarm-style
 notification itself), retires dead tokens automatically, and phones de-duplicate socket + push by

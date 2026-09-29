@@ -29,6 +29,10 @@ services:
         value: "24"              # free tier: auto-delete evidence 24 h after an incident ends; 0 = keep forever
       - key: LOG_LEVEL
         value: info
+      - key: FIREBASE_SERVICE_ACCOUNT # Firebase project service-account JSON; enables FCM push
+        sync: false
+      - key: FIREBASE_SERVICE_ACCOUNT_FILE # Optional path to a Render Secret File instead
+        sync: false
       # Optional: WhatsApp alerts and server SMS (see backend/README.md)
       - key: WHATSAPP_TOKEN
         sync: false
