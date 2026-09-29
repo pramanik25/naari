@@ -464,6 +464,24 @@ public class SettingsFragment extends Fragment {
                 R.string.row_schedule_title, getString(R.string.schedule_not_scheduled), TimeSettingsActivity.class);
         bindRow(binding.rowVault, R.drawable.ua_ic_photo_library, R.color.ns_violet, R.color.ns_violet_container,
                 R.string.row_vault_title, getString(R.string.settings_vault_sub), DatabaseViewActivity.class);
+
+        // Safety tools entry points (journey module).
+        bindRow(binding.rowSafetySettings, R.drawable.ua_ic_tune, R.color.ns_rose, R.color.ns_rose_container,
+                R.string.jr_settings_row_safety, getString(R.string.jr_settings_row_safety_sub),
+                com.example.naarishakti.journey.SafetySettingsActivity.class);
+        bindRow(binding.rowAppPin, R.drawable.ua_ic_lock, R.color.ns_safe, R.color.ns_safe_container,
+                R.string.jr_settings_row_pin, getString(R.string.jr_settings_row_pin_sub),
+                com.example.naarishakti.security.PinActivity.class);
+        binding.rowAppPin.getRoot().setOnClickListener(v -> {
+            startActivity(com.example.naarishakti.security.PinActivity.setupIntent(requireContext()));
+            requireActivity().overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
+        });
+        bindRow(binding.rowCloud, R.drawable.jr_ic_cloud, R.color.ns_info, R.color.ns_info_container,
+                R.string.jr_settings_row_cloud, getString(R.string.jr_settings_row_cloud_sub),
+                com.example.naarishakti.cloud.CloudSettingsActivity.class);
+        bindRow(binding.rowAppearance, R.drawable.ua_ic_tune, R.color.ns_gold, R.color.ns_gold_container,
+                R.string.jr_ss_appearance, getString(R.string.jr_ss_appearance_sub),
+                com.example.naarishakti.core.AppearanceActivity.class);
     }
 
     private void bindRow(UaItemRowBinding row, @DrawableRes int icon, @ColorRes int solid, @ColorRes int container,

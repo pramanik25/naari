@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ns_accessibility_description">اسکرین بند یا لاک ہو تب بھی Naari Shakti کو والیوم بٹن کے پیٹرن سے SOS شروع کرنے دیتا ہے۔ Naari Shakti آپ کی اسکرین پر موجود کچھ بھی نہیں پڑھتی۔</string>
+
+    <!-- Appearance & language -->
+    <string name="core_back">واپس</string>
+    <string name="core_appearance_eyebrow">اپنی پسند</string>
+    <string name="core_appearance_title">ظاہری شکل &amp; زبان</string>
+    <string name="core_appearance_desc">چنیں کہ Naari Shakti کیسی دکھے اور کس زبان میں بات کرے۔ آپ کے رابطوں کو بھیجے جانے والے الرٹ بھی اسی زبان میں ہوں گے۔</string>
+    <string name="core_section_theme">تھیم</string>
+    <string name="core_theme_dark">ڈارک</string>
+    <string name="core_theme_light">لائٹ</string>
+    <string name="core_theme_system">فون کے مطابق</string>
+    <string name="core_section_language">زبان</string>
+    <string name="core_language_desc">ایمرجنسی نمبر اور SMS لنک ہر زبان میں ایک جیسے رہتے ہیں۔</string>
+    <string name="core_language_system">فون کی زبان</string>
+    <string name="core_language_system_caption">اپنے فون کی سیٹنگز کے مطابق</string>
+    <string name="core_selected">منتخب</string>
+</resources>

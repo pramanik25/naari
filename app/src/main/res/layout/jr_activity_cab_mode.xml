@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/screenRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ns_bg_gradient"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".journey.CabModeActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/ns_gutter"
+            android:paddingTop="12dp"
+            android:paddingEnd="@dimen/ns_gutter"
+            android:paddingBottom="40dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/backButton"
+                style="@style/Ns.Button.Icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="@string/jr_back"
+                app:icon="@drawable/ua_ic_arrow_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/jr_cab_eyebrow"
+                android:textAppearance="@style/Ns.Text.Overline" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/jr_cab_title"
+                android:textAppearance="@style/Ns.Text.Headline" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/jr_cab_body"
+                android:textAppearance="@style/Ns.Text.Body" />
+
+            <!-- ======================= Setup ======================= -->
+            <LinearLayout
+                android:id="@+id/setupGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Ns.SectionLabel"
+                    android:text="@string/jr_cab_section_plate" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cameraCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    app:shapeAppearance="@style/Ns.Shape.Large">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.camera.view.PreviewView
+                            android:id="@+id/previewView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="@string/jr_cab_camera_cd" />
+
+                        <View
+                            android:layout_width="240dp"
+                            android:layout_height="84dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/jr_scan_frame"
+                            android:importantForAccessibility="no" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|start"
+                            android:layout_margin="12dp"
+                            android:background="@drawable/ns_pill"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingStart="12dp"
+                            android:paddingTop="6dp"
+                            android:paddingEnd="12dp"
+                            android:paddingBottom="6dp">
+
+                            <View
+                                android:id="@+id/scanDot"
+                                android:layout_width="8dp"
+                                android:layout_height="8dp"
+                                android:background="@drawable/ns_dot" />
+
+                            <TextView
+                                android:id="@+id/scanStatus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:accessibilityLiveRegion="polite"
+                                android:text="@string/jr_cab_scanning"
+                                android:textAppearance="@style/Ns.Text.Label"
+                                android:textColor="@color/ns_text" />
+                        </LinearLayout>
+
+                        <!-- Shown when camera permission is missing -->
+                        <LinearLayout
+                            android:id="@+id/cameraPlaceholder"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/ns_surface"
+                            android:clickable="true"
+                            android:focusable="false"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="20dp"
+                            android:visibility="gone">
+
+                            <ImageView
+                                style="@style/Ns.IconBadge"
+                                android:backgroundTint="@color/ns_gold_container"
+                                android:importantForAccessibility="no"
+                                android:src="@drawable/ua_ic_camera"
+                                app:tint="@color/ns_gold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center"
+                                android:text="@string/jr_cab_camera_needed"
+                                android:textAppearance="@style/Ns.Text.Caption" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/grantCameraButton"
+                                style="@style/Ns.Button.Tonal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:minHeight="48dp"
+                                android:text="@string/jr_allow_camera" />
+                        </LinearLayout>
+                    </FrameLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/plateLayout"
+                    style="@style/Ns.TextInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="@string/jr_cab_plate_hint"
+                    app:endIconContentDescription="@string/jr_cab_rescan"
+                    app:endIconDrawable="@drawable/ub_ic_refresh"
+                    app:endIconMode="custom"
+                    app:helperText="@string/jr_cab_plate_helper">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/plateInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_bold"
+                        android:inputType="textCapCharacters|textNoSuggestions"
+                        android:letterSpacing="0.08"
+                        android:maxLength="16"
+                        android:maxLines="1"
+                        android:textSize="24sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    style="@style/Ns.SectionLabel"
+                    android:text="@string/jr_cab_section_ride" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/driverLayout"
+                    style="@style/Ns.TextInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/jr_cab_driver_hint"
+                    app:startIconDrawable="@drawable/ua_ic_person">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/driverInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName|textCapWords"
+                        android:maxLength="40"
+                        android:maxLines="1" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/appChips"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    app:singleSelection="true">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipUber"
+                        style="@style/Ns.Chip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/jr_cab_app_uber" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipOla"
+                        style="@style/Ns.Chip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/jr_cab_app_ola" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipRapido"
+                        style="@style/Ns.Chip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/jr_cab_app_rapido" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipAuto"
+                        style="@style/Ns.Chip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/jr_cab_app_auto" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipOther"
+                        style="@style/Ns.Chip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/jr_cab_app_other" />
+                </com.google.android.material.chip.ChipGroup>
+
+                <TextView
+                    style="@style/Ns.SectionLabel"
+                    android:text="@string/jr_cab_section_dest" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/mapCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    app:shapeAppearance="@style/Ns.Shape.Large">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <org.osmdroid.views.MapView
+                            android:id="@+id/mapView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="@string/jr_cab_map_cd" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|start"
+                            android:layout_margin="12dp"
+                            android:background="@drawable/ns_pill"
+                            android:paddingStart="12dp"
+                            android:paddingTop="6dp"
+                            android:paddingEnd="12dp"
+                            android:paddingBottom="6dp"
+                            android:text="@string/jr_cab_map_hint"
+                            android:textAppearance="@style/Ns.Text.Label"
+                            android:textColor="@color/ns_text" />
+                    </FrameLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/destLayout"
+                    style="@style/Ns.TextInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:hint="@string/jr_cab_dest_hint"
+                    app:startIconDrawable="@drawable/ua_ic_location">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/destInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapWords"
+                        android:maxLength="80"
+                        android:maxLines="1" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/contactsNote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textAppearance="@style/Ns.Text.Caption"
+                    tools:text="Your 3 contacts get the plate and a live location link by SMS." />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/startButton"
+                    style="@style/Ns.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/jr_cab_start"
+                    app:icon="@drawable/jr_ic_cab" />
+            </LinearLayout>
+
+            <!-- ======================= Active trip ======================= -->
+            <LinearLayout
+                android:id="@+id/activeGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/Ns.Card.Raised"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/ns_card_padding">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                style="@style/Ns.IconBadge"
+                                android:backgroundTint="@color/ns_rose_container"
+                                android:importantForAccessibility="no"
+                                android:src="@drawable/jr_ic_cab"
+                                app:tint="@color/ns_rose" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/jr_cab_active_overline"
+                                    android:textAppearance="@style/Ns.Text.Overline" />
+
+                                <TextView
+                                    android:id="@+id/activePlate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:textAppearance="@style/Ns.Text.Headline"
+                                    tools:text="KA 01 AB 1234" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/activeMeta"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:textAppearance="@style/Ns.Text.Body"
+                            tools:text="Uber · Driver Ramesh" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:baselineAligned="false"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/jr_cab_elapsed"
+                                    android:textAppearance="@style/Ns.Text.Caption" />
+
+                                <TextView
+                                    android:id="@+id/elapsedText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:textAppearance="@style/Ns.Text.Title"
+                                    tools:text="12:40" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/jr_cab_distance_left"
+                                    android:textAppearance="@style/Ns.Text.Caption" />
+
+                                <TextView
+                                    android:id="@+id/distanceText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:textAppearance="@style/Ns.Text.Title"
+                                    tools:text="3.2 km" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/monitorRow"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:background="@drawable/ub_rounded_16"
+                            android:backgroundTint="@color/ns_safe_container"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingStart="14dp"
+                            android:paddingTop="12dp"
+                            android:paddingEnd="14dp"
+                            android:paddingBottom="12dp">
+
+                            <View
+                                android:id="@+id/monitorDot"
+                                android:layout_width="8dp"
+                                android:layout_height="8dp"
+                                android:background="@drawable/ns_dot" />
+
+                            <TextView
+                                android:id="@+id/monitorText"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_weight="1"
+                                android:textAppearance="@style/Ns.Text.Caption"
+                                android:textColor="@color/ns_text"
+                                tools:text="Watching your route. We'll check on you if the cab goes off course." />
+                        </LinearLayout>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/arrivedButton"
+                            style="@style/Ns.Button.Safe"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="@string/jr_cab_arrived"
+                            android:visibility="gone"
+                            app:icon="@drawable/ua_ic_check" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/endButton"
+                                style="@style/Ns.Button.Tonal"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:paddingStart="12dp"
+                                android:paddingEnd="12dp"
+                                android:text="@string/jr_cab_end"
+                                app:icon="@drawable/ub_ic_stop" />
+
+                            <Space
+                                android:layout_width="12dp"
+                                android:layout_height="0dp" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/sosButton"
+                                style="@style/Ns.Button.Danger"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:paddingStart="12dp"
+                                android:paddingEnd="12dp"
+                                android:text="@string/jr_sos"
+                                app:icon="@drawable/ua_ic_warning" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

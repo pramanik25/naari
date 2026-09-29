@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ===================== Notification channels ===================== -->
+    <string name="cl_channel_guardian">অভিভাবক অ্যালার্ট</string>
+    <string name="cl_channel_guardian_desc">আপনি যাঁদের সুরক্ষা দেন তাঁদের SOS অ্যালার্ট। অ্যালার্মের মতো বাজে।</string>
+    <string name="cl_channel_helper">কাছাকাছি সাহায্যকারী অ্যালার্ট</string>
+    <string name="cl_channel_helper_desc">2 কিমির মধ্যে কারও সাহায্য দরকার। শুধু আপনি কাছাকাছি সাহায্যকারী হিসেবে যোগ দিলে।</string>
+    <string name="cl_channel_cloud">ক্লাউড আপডেট</string>
+    <string name="cl_channel_cloud_desc">সাহায্যকারী আসছেন, SOS শেষ হয়েছে ও আগের অ্যালার্ট।</string>
+
+    <!-- ===================== Notifications ===================== -->
+    <string name="cl_n_someone">আপনি যাঁকে সুরক্ষা দেন</string>
+    <string name="cl_n_sos_title">%1$s-এর সাহায্য দরকার</string>
+    <string name="cl_n_sos_text">SOS চালু হয়েছে। তাঁর লাইভ লোকেশন দেখতে ট্যাপ করুন।</string>
+    <string name="cl_n_duress_title">%1$s হয়তো এখনও বিপদে আছেন</string>
+    <string name="cl_n_duress_text">হয়তো জোর করে তাঁকে SOS বাতিল করানো হয়েছে। তাঁর লাইভ লোকেশন দেখতে থাকুন।</string>
+    <string name="cl_n_overdue_title">%1$s চেক-ইন করেননি</string>
+    <string name="cl_n_overdue_text">তিনি সময়মতো নিরাপদ থাকার খবর দেননি। শেষ লোকেশন দেখতে ট্যাপ করুন।</string>
+    <string name="cl_n_overdue_text_note">“%1$s”: তিনি সময়মতো নিরাপদ থাকার খবর দেননি। শেষ লোকেশন দেখতে ট্যাপ করুন।</string>
+    <string name="cl_n_ended_title">%1$s এখন নিরাপদ</string>
+    <string name="cl_n_ended_text">SOS শেষ হয়েছে।</string>
+    <string name="cl_n_responder_title">একজন কাছাকাছি সাহায্যকারী আসছেন</string>
+    <string name="cl_n_responder_text">%1$s %2$s দূরে আছেন।</string>
+    <string name="cl_n_responder_text_nodist">%1$s আসছেন।</string>
+    <string name="cl_n_responder_someone">একজন স্বেচ্ছাসেবক</string>
+    <string name="cl_n_helper_title">কাছাকাছি কারও সাহায্য দরকার</string>
+    <string name="cl_n_helper_text">আপনার থেকে %1$s দূরে। সাড়া দিতে ট্যাপ করুন। আগে 112-এ কল করুন।</string>
+    <string name="cl_n_helper_text_nodist">আপনার কাছেই। সাড়া দিতে ট্যাপ করুন। আগে 112-এ কল করুন।</string>
+    <string name="cl_n_earlier">আগের অ্যালার্ট</string>
+    <string name="cl_action_open_tracking">লাইভ ট্র্যাকিং খুলুন</string>
+    <string name="cl_action_respond">সাড়া দিন</string>
+
+    <!-- Distances -->
+    <string name="cl_distance_m">%1$d মি</string>
+    <string name="cl_distance_km">%1$s কিমি</string>
+    <string name="cl_distance_away">প্রায় %1$s দূরে</string>
+
+    <!-- ===================== Helper alert screen ===================== -->
+    <string name="cl_helper_eyebrow">কাছাকাছি SOS</string>
+    <string name="cl_helper_title">কাছাকাছি কারও সাহায্য দরকার</string>
+    <string name="cl_helper_subtitle">আপনার কাছাকাছি একজন Naari Shakti ব্যবহারকারী SOS চালু করেছেন।</string>
+    <string name="cl_helper_distance_unknown">আপনার কাছেই</string>
+    <string name="cl_helper_safety">নিজেকে বিপদে ফেলবেন না। আগে 112-এ কল করুন।</string>
+    <string name="cl_helper_safety_detail">লোকজনের চোখের সামনে থাকুন, ফোন সঙ্গে রাখুন এবং পুলিশকে এগিয়ে যেতে দিন।</string>
+    <string name="cl_helper_going">আমি যাচ্ছি</string>
+    <string name="cl_helper_call">112-এ কল করুন</string>
+    <string name="cl_helper_dismiss">সরিয়ে দিন</string>
+    <string name="cl_helper_sending">তাঁকে জানানো হচ্ছে যে আপনি আসছেন…</string>
+    <string name="cl_helper_sent">তিনি ও তাঁর অভিভাবকেরা জানেন যে আপনি আসছেন।</string>
+    <string name="cl_helper_send_failed">সার্ভারে পৌঁছানো যায়নি। তবুও পথ দেখানো হচ্ছে।</string>
+    <string name="cl_helper_no_location">আপনার লোকেশন পাওয়া যায়নি। তবুও পথ দেখানো হচ্ছে।</string>
+    <string name="cl_helper_ended_title">তিনি এখন নিরাপদ</string>
+    <string name="cl_helper_ended">তাঁকে নিরাপদ বলে চিহ্নিত করা হয়েছে। সাহায্যের জন্য তৈরি থাকার জন্য ধন্যবাদ।</string>
+    <string name="cl_helper_map_desc">কোথায় সাহায্য দরকার তা দেখানো ম্যাপ</string>
+    <string name="cl_helper_her_location">এখানে সাহায্য দরকার</string>
+    <string name="cl_no_app">এই ফোনে এটি খোলার মতো কোনো অ্যাপ নেই।</string>
+
+    <!-- ===================== Cloud & guardians screen ===================== -->
+    <string name="cl_back">ফিরে যান</string>
+    <string name="cl_settings_eyebrow">ক্লাউড</string>
+    <string name="cl_settings_title">ক্লাউড ও অভিভাবক</string>
+    <string name="cl_settings_desc">SMS না পৌঁছালেও অভিভাবকেরা সঙ্গে সঙ্গে আপনার SOS পান, সঙ্গে লাইভ লোকেশন ও প্রমাণ।</string>
+
+    <string name="cl_error_offline">আপনি অফলাইনে আছেন। এই ফোনে সেভ করা তথ্য দেখানো হচ্ছে।</string>
+    <string name="cl_error_server">Naari Shakti সার্ভারে পৌঁছানো যায়নি।</string>
+    <string name="cl_error_generic">কিছু একটা সমস্যা হয়েছে (ত্রুটি %1$d)। আবার চেষ্টা করুন।</string>
+    <string name="cl_retry">আবার চেষ্টা করুন</string>
+
+    <string name="cl_off_title">ক্লাউড সিঙ্ক বন্ধ আছে</string>
+    <string name="cl_off_caption_unconfigured">অ্যাপের এই সংস্করণে কোনো সার্ভার সেট করা নেই, তাই অভিভাবক, লাইভ ট্র্যাকিং ও কাছাকাছি সাহায্যকারী পাওয়া যাবে না। SMS অ্যালার্ট তবুও কাজ করবে।</string>
+    <string name="cl_off_caption_deleted">আপনি আপনার ক্লাউড ডেটা মুছে ফেলেছেন। অভিভাবকদের সঙ্গে আবার SOS শেয়ার করতে ক্লাউড সিঙ্ক চালু করুন।</string>
+    <string name="cl_enable_cloud">ক্লাউড সিঙ্ক আবার চালু করুন</string>
+
+    <string name="cl_section_status">অবস্থা</string>
+    <string name="cl_status_server">সার্ভার</string>
+    <string name="cl_status_account">অ্যাকাউন্ট</string>
+    <string name="cl_status_pending">বাকি আপলোড</string>
+    <string name="cl_status_checking">দেখা হচ্ছে…</string>
+    <string name="cl_status_reachable">সংযোগ আছে</string>
+    <string name="cl_status_unreachable">সংযোগ নেই</string>
+    <string name="cl_status_registered">নিবন্ধিত</string>
+    <string name="cl_status_not_registered">নিবন্ধিত নয়</string>
+    <string name="cl_status_unknown">অজানা</string>
+    <plurals name="cl_pending_items">
+        <item quantity="one">%d টি আইটেম</item>
+        <item quantity="other">%d টি আইটেম</item>
+    </plurals>
+
+    <string name="cl_section_code">আপনার অভিভাবক কোড</string>
+    <string name="cl_code_caption">যাঁদের ভরসা করেন তাঁদের সঙ্গে এই কোড শেয়ার করুন। তাঁরা নিজেদের Naari Shakti অ্যাপে এটি দিলে আপনার SOS অ্যালার্ট পাবেন।</string>
+    <string name="cl_copy">কপি করুন</string>
+    <string name="cl_share">শেয়ার করুন</string>
+    <string name="cl_copied">কোড কপি হয়েছে</string>
+    <string name="cl_share_text">Naari Shakti ইনস্টল করে আমার কোড %1$s দিন, তাহলে আমার SOS অ্যালার্ট পাবেন</string>
+    <string name="cl_share_chooser">আপনার অভিভাবক কোড শেয়ার করুন</string>
+
+    <string name="cl_section_link">কারও অভিভাবক হন</string>
+    <string name="cl_link_caption">তাঁর SOS অ্যালার্ট পেতে তাঁর অ্যাপের 6 অক্ষরের কোডটি দিন।</string>
+    <string name="cl_link_hint">অভিভাবক কোড</string>
+    <string name="cl_link_button">যুক্ত করুন</string>
+    <string name="cl_link_success">আপনি এখন %1$s-এর অভিভাবক</string>
+    <string name="cl_link_err_invalid">এই কোড কারও সঙ্গে মেলেনি। দেখে নিয়ে আবার চেষ্টা করুন।</string>
+    <string name="cl_link_err_self">এটি আপনার নিজের কোড।</string>
+    <string name="cl_link_err_limit">অনেকবার ভুল কোড দেওয়া হয়েছে। এক ঘণ্টা পরে আবার চেষ্টা করুন।</string>
+    <string name="cl_link_err_length">কোড হয় 6টি অক্ষর ও সংখ্যা দিয়ে।</string>
+
+    <string name="cl_section_guardians">যাঁরা আপনাকে সুরক্ষা দেন</string>
+    <string name="cl_guardians_empty">এখনও কোনো অভিভাবক নেই। উপরের কোডটি শেয়ার করুন।</string>
+    <string name="cl_section_guarding">আপনি যাঁদের সুরক্ষা দেন</string>
+    <string name="cl_guarding_empty">আপনি এখনও কারও অভিভাবক নন।</string>
+    <string name="cl_linked_on">যুক্ত হয়েছে %1$s</string>
+    <string name="cl_unnamed">নাম নেই</string>
+    <string name="cl_remove">সরান</string>
+    <string name="cl_remove_person">%1$s-কে সরান</string>
+    <string name="cl_remove_title">%1$s-কে সরাবেন?</string>
+    <string name="cl_remove_guardian_msg">%1$s আর আপনার SOS অ্যালার্ট পাবেন না।</string>
+    <string name="cl_remove_guarding_msg">আপনি আর %1$s-এর SOS অ্যালার্ট পাবেন না।</string>
+    <string name="cl_cancel">বাতিল করুন</string>
+
+    <string name="cl_section_helper">কাছাকাছি সাহায্যকারী</string>
+    <string name="cl_helper_switch_title">কাছাকাছি সাহায্যকারী হিসেবে যোগ দিন</string>
+    <string name="cl_helper_switch_caption">2 কিমির মধ্যে কারও সাহায্য দরকার হলে অ্যালার্ট পান। সুরক্ষা চালু থাকলে বা অ্যাপ খোলা থাকলে কাজ করে।</string>
+    <string name="cl_helper_dialog_title">কাছাকাছি সাহায্যকারী হবেন?</string>
+    <string name="cl_helper_dialog_msg">2 কিমির মধ্যে কেউ SOS চালু করলে আপনি অ্যালার্ট পাবেন। আপনার লোকেশন শুধু মেলানোর কাজে ব্যবহার হয়, কখনও অন্যদের দেখানো হয় না।</string>
+    <string name="cl_helper_dialog_ok">চালু করুন</string>
+    <string name="cl_helper_perm_denied">কাছাকাছি মানুষের সঙ্গে আপনাকে মেলাতে লোকেশনের অনুমতি দরকার।</string>
+    <string name="cl_helper_enabled">আপনি এখন একজন কাছাকাছি সাহায্যকারী।</string>
+    <string name="cl_helper_saved_offline">সেভ হয়েছে। আবার অনলাইনে এলে আপনার লোকেশন সিঙ্ক হবে।</string>
+
+    <string name="cl_section_delete">আমার ক্লাউড ডেটা মুছুন</string>
+    <string name="cl_delete_caption">সার্ভার থেকে আপনার অ্যাকাউন্ট, ঘটনা, প্রমাণ ও অভিভাবক-সংযোগ মুছে দেয়। এই ফোন থেকে অ্যালার্ট (SMS, কল) চালু থাকবে।</string>
+    <string name="cl_delete_button">আমার ক্লাউড ডেটা মুছুন</string>
+    <string name="cl_delete_title">আপনার ক্লাউড ডেটা মুছবেন?</string>
+    <string name="cl_delete_msg">এতে সার্ভার থেকে আপনার অ্যাকাউন্ট, ঘটনা, আপলোড করা প্রমাণ ও অভিভাবক-সংযোগ চিরতরে মুছে যাবে। আর ফেরানো যাবে না।</string>
+    <string name="cl_delete_confirm">মুছুন</string>
+    <string name="cl_deleted">আপনার ক্লাউড ডেটা মুছে ফেলা হয়েছে।</string>
+</resources>

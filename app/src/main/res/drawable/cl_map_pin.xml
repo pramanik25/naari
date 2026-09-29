@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Map marker for her position: rose dot with a soft glow. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:width="40dp" android:height="40dp">
+        <shape android:shape="oval">
+            <solid android:color="@color/ns_rose_glow_1" />
+        </shape>
+    </item>
+    <item android:width="18dp" android:height="18dp" android:gravity="center">
+        <shape android:shape="oval">
+            <solid android:color="@color/ns_rose" />
+            <stroke android:width="3dp" android:color="@color/ns_on_rose" />
+        </shape>
+    </item>
+</layer-list>

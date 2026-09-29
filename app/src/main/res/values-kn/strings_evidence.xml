@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ============================ Common ============================ -->
+    <string name="ev_cd_back">ಹಿಂದೆ</string>
+    <string name="ev_cancel">ರದ್ದುಮಾಡಿ</string>
+    <string name="ev_delete">ಅಳಿಸಿ</string>
+    <string name="ev_share_unavailable">ಈ ಫೈಲ್‌ಗೆ ಹಂಚಿಕೆ ಇನ್ನೂ ಲಭ್ಯವಿಲ್ಲ.</string>
+    <string name="ev_no_app">ಇದನ್ನು ತೆರೆಯಲು ಯಾವುದೇ ಆ್ಯಪ್ ಸಿಗಲಿಲ್ಲ.</string>
+    <string name="ev_pdf_page">ಪುಟ %1$d</string>
+    <string name="ev_pdf_confidential">ಖಾಸಗಿ ಮತ್ತು ಗೌಪ್ಯ</string>
+    <string name="ev_pdf_failed">PDF ರಚಿಸಲು ಆಗಲಿಲ್ಲ.</string>
+    <!-- "date · time" -->
+    <string name="ev_date_time">%1$s · %2$s</string>
+    <string name="ev_dur_seconds">%1$d ಸೆ</string>
+    <string name="ev_dur_minutes">%1$d ನಿ</string>
+    <string name="ev_dur_hours">%1$d ಗಂ %2$d ನಿ</string>
+    <string name="ev_counts">%1$s · %2$s · %3$s</string>
+    <!-- Source labels -->
+    <string name="ev_src_voice">ಧ್ವನಿ ಟ್ರಿಗರ್</string>
+    <string name="ev_src_power">ಪವರ್ ಬಟನ್</string>
+    <string name="ev_src_shake">ಅಲುಗಾಟ</string>
+    <string name="ev_src_sos_button">SOS ಬಟನ್</string>
+    <string name="ev_src_scream">ಕಿರುಚಾಟ ಪತ್ತೆಯಾಗಿದೆ</string>
+    <string name="ev_src_fall">ಬೀಳುವಿಕೆ ಪತ್ತೆಯಾಗಿದೆ</string>
+    <string name="ev_src_ble_button">ಪ್ಯಾನಿಕ್ ಬಟನ್</string>
+    <string name="ev_src_headset">ಹೆಡ್‌ಸೆಟ್ ಬಟನ್</string>
+    <string name="ev_src_checkin">ಚೆಕ್-ಇನ್ ತಪ್ಪಿದೆ</string>
+    <string name="ev_src_duress">ಒತ್ತಾಯದ PIN</string>
+    <string name="ev_src_volume">ವಾಲ್ಯೂಮ್ ಬಟನ್‌ಗಳು</string>
+    <string name="ev_src_geofence">ಸುರಕ್ಷಿತ ವಲಯ ಎಚ್ಚರಿಕೆ</string>
+    <string name="ev_src_unknown">SOS</string>
+
+    <!-- ============================ Incidents ============================ -->
+    <string name="ev_inc_overline">ಸಾಕ್ಷ್ಯ ವಾಲ್ಟ್</string>
+    <string name="ev_inc_title">ಘಟನೆಗಳ ಇತಿಹಾಸ</string>
+    <string name="ev_inc_body">ಪ್ರತಿ SOS ಅದರ ಫೋಟೋ, ಆಡಿಯೊ ಮತ್ತು ವೀಡಿಯೊದೊಂದಿಗೆ ಇಲ್ಲಿ ಇರುತ್ತದೆ. ಪ್ರತಿ ಫೈಲ್‌ಗೆ SHA-256 ಬೆರಳಚ್ಚು ಇರುತ್ತದೆ, ಅದು ಫೈಲ್ ಬದಲಾಗಿಲ್ಲ ಎಂದು ತೋರಿಸುತ್ತದೆ.</string>
+    <string name="ev_inc_empty_title">ಇನ್ನೂ ಯಾವುದೇ ಘಟನೆಗಳಿಲ್ಲ</string>
+    <string name="ev_inc_empty_body">SOS ಆರಂಭವಾದಾಗ, ಆ ಸಮಯದಲ್ಲಿ ರೆಕಾರ್ಡ್ ಆದ ಸಾಕ್ಷ್ಯ ಇಲ್ಲಿ ಕಾಣಿಸುತ್ತದೆ.</string>
+    <string name="ev_inc_load_error">ಘಟನೆಗಳ ಇತಿಹಾಸ ಲೋಡ್ ಆಗಲಿಲ್ಲ.</string>
+    <string name="ev_inc_in_progress">ನಡೆಯುತ್ತಿದೆ</string>
+    <string name="ev_inc_duration_unknown">ಅವಧಿ ತಿಳಿದಿಲ್ಲ</string>
+    <string name="ev_inc_meta">%1$s · %2$s</string>
+    <string name="ev_chip_silent">ಮೌನ</string>
+    <string name="ev_chip_duress">ಒತ್ತಾಯ</string>
+    <plurals name="ev_count_photos">
+        <item quantity="one">%d ಫೋಟೋ</item>
+        <item quantity="other">%d ಫೋಟೋಗಳು</item>
+    </plurals>
+    <plurals name="ev_count_audio">
+        <item quantity="one">%d ಆಡಿಯೊ ಕ್ಲಿಪ್</item>
+        <item quantity="other">%d ಆಡಿಯೊ ಕ್ಲಿಪ್‌ಗಳು</item>
+    </plurals>
+    <plurals name="ev_count_videos">
+        <item quantity="one">%d ವೀಡಿಯೊ</item>
+        <item quantity="other">%d ವೀಡಿಯೊಗಳು</item>
+    </plurals>
+    <plurals name="ev_inc_count">
+        <item quantity="one">%d ಘಟನೆ</item>
+        <item quantity="other">%d ಘಟನೆಗಳು</item>
+    </plurals>
+    <string name="ev_upload_status">%1$d/%2$d ಅಪ್‌ಲೋಡ್ ಆಗಿವೆ · %3$d ಪರಿಶೀಲಿತ ✓</string>
+    <string name="ev_upload_local">%1$d ಫೈಲ್‌ಗಳು · ಈ ಫೋನ್‌ನಲ್ಲೇ ಇವೆ</string>
+    <string name="ev_upload_none">ಸಾಕ್ಷ್ಯ ಫೈಲ್‌ಗಳಿಲ್ಲ</string>
+    <string name="ev_action_export">ರಫ್ತು</string>
+    <string name="ev_action_complaint">ದೂರು</string>
+    <string name="ev_action_delete">ಅಳಿಸಿ</string>
+    <string name="ev_cd_expand">ಸಾಕ್ಷ್ಯ ತೋರಿಸಿ</string>
+    <string name="ev_cd_collapse">ಸಾಕ್ಷ್ಯ ಮರೆಮಾಡಿ</string>
+    <string name="ev_delete_title">ಈ ಘಟನೆ ಅಳಿಸಬೇಕೆ?</string>
+    <string name="ev_delete_body">ಇದು ಈ ಫೋನ್‌ನಿಂದ %1$d ಸಾಕ್ಷ್ಯ ಫೈಲ್‌ಗಳನ್ನು ಶಾಶ್ವತವಾಗಿ ಅಳಿಸುತ್ತದೆ. ಸರ್ವರ್‌ಗೆ ಈಗಾಗಲೇ ಅಪ್‌ಲೋಡ್ ಆದ ಪ್ರತಿಗಳಿಗೆ ಏನೂ ಆಗುವುದಿಲ್ಲ.</string>
+    <string name="ev_delete_active">ಈ SOS ಇನ್ನೂ ಚಾಲನೆಯಲ್ಲಿದೆ. ಅಳಿಸುವ ಮೊದಲು ಅದನ್ನು ನಿಲ್ಲಿಸಿ.</string>
+    <string name="ev_deleted">ಘಟನೆ ಅಳಿಸಲಾಗಿದೆ</string>
+    <string name="ev_exporting">ಸಾಕ್ಷ್ಯ ಪ್ಯಾಕೇಜ್ ಸಿದ್ಧಪಡಿಸಲಾಗುತ್ತಿದೆ…</string>
+    <string name="ev_export_failed">ಸಾಕ್ಷ್ಯ ಪ್ಯಾಕೇಜ್ ರಚಿಸಲು ಆಗಲಿಲ್ಲ.</string>
+    <string name="ev_export_empty">ಈ ಘಟನೆಯಲ್ಲಿ ರಫ್ತು ಮಾಡಲು ಫೈಲ್‌ಗಳಿಲ್ಲ.</string>
+    <string name="ev_export_chooser">ಸಾಕ್ಷ್ಯ ಪ್ಯಾಕೇಜ್ ಹಂಚಿಕೊಳ್ಳಿ</string>
+    <string name="ev_export_subject">Naari Shakti ಸಾಕ್ಷ್ಯ ಪ್ಯಾಕೇಜ್</string>
+    <string name="ev_kind_photo">ಫೋಟೋ</string>
+    <string name="ev_kind_audio">ಆಡಿಯೊ ಕ್ಲಿಪ್</string>
+    <string name="ev_kind_video">ವೀಡಿಯೊ</string>
+    <string name="ev_item_title">%1$s · %2$s</string>
+    <string name="ev_hash_short">SHA-256 %1$s…</string>
+    <string name="ev_hash_copied">ಪೂರ್ಣ SHA-256 ಕಾಪಿ ಆಗಿದೆ</string>
+    <string name="ev_hash_label">SHA-256</string>
+    <string name="ev_cd_copy_hash">ಪೂರ್ಣ SHA-256 ಕಾಪಿ ಮಾಡಿ</string>
+    <string name="ev_cd_play">ಪ್ಲೇ</string>
+    <string name="ev_cd_pause">ವಿರಾಮ</string>
+    <string name="ev_item_verified">ಅಪ್‌ಲೋಡ್ ಆಗಿದೆ · ಪರಿಶೀಲಿತ</string>
+    <string name="ev_item_unverified">ಅಪ್‌ಲೋಡ್ ಆಗಿದೆ · ಪರಿಶೀಲಿಸಿಲ್ಲ</string>
+    <string name="ev_item_pending">ಅಪ್‌ಲೋಡ್‌ಗಾಗಿ ಕಾಯುತ್ತಿದೆ</string>
+    <string name="ev_item_local">ಈ ಫೋನ್‌ನಲ್ಲಿ</string>
+    <string name="ev_item_missing">ಫೈಲ್ ಕಾಣೆಯಾಗಿದೆ</string>
+    <string name="ev_play_failed">ಈ ಕ್ಲಿಪ್ ಪ್ಲೇ ಆಗಲಿಲ್ಲ.</string>
+    <string name="ev_no_items">ಈ ಘಟನೆಗೆ ಯಾವುದೇ ಫೈಲ್ ರೆಕಾರ್ಡ್ ಆಗಿಲ್ಲ.</string>
+
+    <!-- ============================ Diary ============================ -->
+    <string name="ev_diary_overline">ಖಾಸಗಿ ದಿನಚರಿ</string>
+    <string name="ev_diary_title">ಘಟನೆಗಳ ಡೈರಿ</string>
+    <string name="ev_diary_body">ಏನು ನಡೆಯುತ್ತದೋ, ನಡೆದಾಗಲೇ ಬರೆದಿಡಿ. ನಮೂದುಗಳು ಈ ಫೋನ್‌ನಲ್ಲಿ ಎನ್‌ಕ್ರಿಪ್ಟ್ ಆಗುತ್ತವೆ ಮತ್ತು ವಕೀಲರು ಅಥವಾ ಪೊಲೀಸರಿಗಾಗಿ PDF ಆಗಿ ರಫ್ತು ಮಾಡಬಹುದು.</string>
+    <string name="ev_diary_empty_title">ನಿಮ್ಮ ಡೈರಿ ಖಾಲಿ ಇದೆ</string>
+    <string name="ev_diary_empty_body">ದಿನಾಂಕಗಳೊಂದಿಗೆ ಆಗಲೇ ಬರೆದ ಟಿಪ್ಪಣಿಗಳು ಮುಂದೆ ಮಹತ್ವ ಪಡೆಯುತ್ತವೆ. ನಿಮ್ಮ ಮೊದಲ ನಮೂದು ಸೇರಿಸಿ.</string>
+    <string name="ev_diary_add">ಹೊಸ ನಮೂದು</string>
+    <string name="ev_diary_export">PDF ರಫ್ತು</string>
+    <string name="ev_diary_pin_title">ನಿಮ್ಮ ಡೈರಿ ಅನ್‌ಲಾಕ್ ಮಾಡಿ</string>
+    <string name="ev_diary_locked_title">ಡೈರಿ ಲಾಕ್ ಆಗಿದೆ</string>
+    <string name="ev_diary_locked_body">ಇದನ್ನು ತೆರೆಯಲು ನಿಮ್ಮ ಆ್ಯಪ್ PIN ನಮೂದಿಸಿ.</string>
+    <string name="ev_diary_unlock">ಅನ್‌ಲಾಕ್</string>
+    <string name="ev_diary_load_error">ಈ ಫೋನ್‌ನಲ್ಲಿ ಡೈರಿ ತೆರೆಯಲು ಆಗಲಿಲ್ಲ.</string>
+    <string name="ev_diary_save_error">ನಮೂದು ಸೇವ್ ಆಗಲಿಲ್ಲ.</string>
+    <string name="ev_diary_new_title">ಹೊಸ ನಮೂದು</string>
+    <string name="ev_diary_edit_title">ನಮೂದು ತಿದ್ದಿ</string>
+    <string name="ev_diary_field_title">ಶೀರ್ಷಿಕೆ</string>
+    <string name="ev_diary_field_body">ಏನು ನಡೆಯಿತು</string>
+    <string name="ev_diary_field_location">ಸ್ಥಳ (ಐಚ್ಛಿಕ)</string>
+    <string name="ev_diary_when">ಯಾವಾಗ</string>
+    <string name="ev_diary_use_location">ನನ್ನ ಲೊಕೇಶನ್ ಬಳಸಿ</string>
+    <string name="ev_diary_attach">ಫೋಟೋ ಲಗತ್ತಿಸಿ</string>
+    <string name="ev_diary_replace_photo">ಫೋಟೋ ಬದಲಿಸಿ</string>
+    <string name="ev_diary_remove_photo">ಫೋಟೋ ತೆಗೆದುಹಾಕಿ</string>
+    <string name="ev_diary_save">ಸೇವ್ ಮಾಡಿ</string>
+    <string name="ev_diary_edit">ತಿದ್ದಿ</string>
+    <string name="ev_diary_title_required">ಚಿಕ್ಕ ಶೀರ್ಷಿಕೆ ಸೇರಿಸಿ</string>
+    <string name="ev_diary_delete_title">ಈ ನಮೂದು ಅಳಿಸಬೇಕೆ?</string>
+    <string name="ev_diary_delete_body">ನಮೂದು ಮತ್ತು ಅದರ ಫೋಟೋ ಈ ಫೋನ್‌ನಿಂದ ತೆಗೆದುಹಾಕಲಾಗುತ್ತದೆ, ಮರಳಿ ಪಡೆಯಲು ಸಾಧ್ಯವಿಲ್ಲ.</string>
+    <string name="ev_diary_deleted">ನಮೂದು ಅಳಿಸಲಾಗಿದೆ</string>
+    <string name="ev_diary_saved">ನಮೂದು ಸೇವ್ ಆಗಿದೆ</string>
+    <string name="ev_diary_no_location">ಈ ಫೋನ್‌ನಲ್ಲಿ ಇತ್ತೀಚಿನ ಲೊಕೇಶನ್ ಇಲ್ಲ. ಸ್ಥಳವನ್ನು ಟೈಪ್ ಮಾಡಿ.</string>
+    <string name="ev_diary_photo_error">ಆ ಫೋಟೋ ಲಗತ್ತಿಸಲು ಆಗಲಿಲ್ಲ.</string>
+    <string name="ev_diary_photo_too_big">ಆ ಫೋಟೋ ತುಂಬಾ ದೊಡ್ಡದಾಗಿದೆ (ಗರಿಷ್ಠ 25 MB).</string>
+    <string name="ev_diary_pdf_subtitle">%1$s ರಂದು ರಫ್ತು · %2$d ನಮೂದುಗಳು</string>
+    <string name="ev_diary_pdf_chooser">ಡೈರಿ PDF ಹಂಚಿಕೊಳ್ಳಿ</string>
+    <string name="ev_diary_pdf_empty">ರಫ್ತು ಮಾಡಲು ಇನ್ನೂ ಏನೂ ಇಲ್ಲ.</string>
+    <string name="ev_diary_pdf_location">ಸ್ಥಳ: %1$s</string>
+    <string name="ev_diary_pdf_written">ಬರೆದದ್ದು %1$s</string>
+    <string name="ev_diary_untitled">ಶೀರ್ಷಿಕೆ ಇಲ್ಲ</string>
+    <string name="ev_diary_photo_attached">ಫೋಟೋ ಲಗತ್ತಿಸಲಾಗಿದೆ</string>
+    <string name="ev_cd_diary_photo">ಲಗತ್ತಿಸಿದ ಫೋಟೋ</string>
+
+    <!-- ============================ Complaint ============================ -->
+    <string name="ev_cmp_overline">ದೂರಿನ ಕರಡು</string>
+    <string name="ev_cmp_title">ದೂರಿನ ಕರಡು ಸಿದ್ಧಪಡಿಸಿ</string>
+    <string name="ev_cmp_body">ನಿಮ್ಮ ಪ್ರೊಫೈಲ್ ಮತ್ತು ಘಟನೆಯ ದಾಖಲೆಯಿಂದ ರಚಿಸಿದ ಔಪಚಾರಿಕ ಕರಡು. ಬಳಸುವ ಮೊದಲು ಏನನ್ನಾದರೂ ತಿದ್ದಬಹುದು.</string>
+    <string name="ev_cmp_label_to">ಯಾರಿಗೆ</string>
+    <string name="ev_cmp_label_lang">ಭಾಷೆ</string>
+    <string name="ev_cmp_to_sho">ಪೊಲೀಸ್ (SHO)</string>
+    <string name="ev_cmp_to_ncw">ಮಹಿಳಾ ಆಯೋಗ (NCW)</string>
+    <string name="ev_cmp_draft_hint">ದೂರು</string>
+    <string name="ev_cmp_section_use">ಬಳಸಿ</string>
+    <string name="ev_cmp_section_file">ಸಲ್ಲಿಸಿ</string>
+    <string name="ev_cmp_copy">ಕಾಪಿ</string>
+    <string name="ev_cmp_share">ಹಂಚಿಕೊಳ್ಳಿ</string>
+    <string name="ev_cmp_pdf">PDF ಆಗಿ ಸೇವ್ ಮಾಡಿ</string>
+    <string name="ev_cmp_ncw">NCW ಆನ್‌ಲೈನ್ ದೂರು</string>
+    <string name="ev_cmp_ncw_body">ರಾಷ್ಟ್ರೀಯ ಮಹಿಳಾ ಆಯೋಗ</string>
+    <string name="ev_cmp_cyber">cybercrime.gov.in</string>
+    <string name="ev_cmp_cyber_body">ಆನ್‌ಲೈನ್ ಕಿರುಕುಳ, ಹಿಂಬಾಲಿಸುವಿಕೆ ಅಥವಾ ಮಾರ್ಫ್ ಮಾಡಿದ ಫೋಟೋಗಳಿಗಾಗಿ</string>
+    <string name="ev_cmp_call">112 ಗೆ ಕರೆ</string>
+    <string name="ev_cmp_call_body">ತುರ್ತು ಸ್ಪಂದನೆ, ಯಾವುದೇ ಸಮಯದಲ್ಲಿ</string>
+    <string name="ev_cmp_copied">ದೂರು ಕಾಪಿ ಆಗಿದೆ</string>
+    <string name="ev_cmp_share_chooser">ದೂರು ಹಂಚಿಕೊಳ್ಳಿ</string>
+    <string name="ev_cmp_pdf_chooser">ದೂರಿನ PDF ಸೇವ್ ಮಾಡಿ ಅಥವಾ ಹಂಚಿಕೊಳ್ಳಿ</string>
+    <string name="ev_cmp_replace_title">ನಿಮ್ಮ ತಿದ್ದುಪಡಿಗಳನ್ನು ಬದಲಿಸಬೇಕೆ?</string>
+    <string name="ev_cmp_replace_body">ಇದನ್ನು ಬದಲಿಸಿದರೆ ಕರಡು ಮತ್ತೆ ರಚನೆಯಾಗುತ್ತದೆ ಮತ್ತು ನಿಮ್ಮ ಬದಲಾವಣೆಗಳು ಕಳೆದುಹೋಗುತ್ತವೆ.</string>
+    <string name="ev_cmp_replace">ಬದಲಿಸಿ</string>
+    <string name="ev_cmp_note_title">ನಿಮಗೆ ನೆರವಾಗುವ ಕರಡು, ಕಾನೂನು ಸಲಹೆ ಅಲ್ಲ</string>
+    <string name="ev_cmp_note_body">ಪೂರ್ತಿ ಓದಿ, ಸರಿಯಿಲ್ಲದ್ದನ್ನು ಬದಲಿಸಿ. ಘಟನೆ ಎಲ್ಲೇ ನಡೆದಿರಲಿ, ಯಾವುದೇ ಪೊಲೀಸ್ ಠಾಣೆಯಲ್ಲಿ ಶೂನ್ಯ FIR (Zero FIR) ದಾಖಲಿಸಬಹುದು; ಪೊಲೀಸರು ಅದನ್ನು ನೋಂದಾಯಿಸಿ ಸಂಬಂಧಿತ ಠಾಣೆಗೆ ಕಳುಹಿಸಬೇಕು. ನಿಮ್ಮ FIR ನ ಉಚಿತ ಪ್ರತಿ ಕೇಳಿ.</string>
+    <string name="ev_cmp_incident_none">ಯಾವುದೇ ಘಟನೆ ಆಯ್ಕೆಯಾಗಿಲ್ಲ: ದಿನಾಂಕ, ಸಮಯ ಮತ್ತು ಸ್ಥಳವನ್ನು ನೀವೇ ಭರ್ತಿ ಮಾಡಿ.</string>
+    <string name="ev_cmp_incident_from">%1$s ರ ಘಟನೆಯ ಆಧಾರದ ಮೇಲೆ</string>
+    <string name="ev_cmp_pdf_title">ದೂರು</string>
+</resources>

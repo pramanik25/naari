@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Status line under a settings row: dot, status text and an optional action. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="48dp"
+    android:orientation="horizontal"
+    android:paddingStart="80dp"
+    android:paddingEnd="8dp"
+    android:paddingBottom="8dp">
+
+    <View
+        android:id="@+id/dot"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:background="@drawable/ns_dot" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_weight="1"
+        android:textAppearance="@style/Ns.Text.Caption"
+        android:textColor="@color/ns_text_muted"
+        tools:text="Accessibility service is off" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/action"
+        style="@style/Ns.Button.Text"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        tools:text="Enable" />
+</LinearLayout>

@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Journey safety + Safety tools hub strings. Every user-visible text (including SMS bodies)
+     lives here so it can be translated; keep the positional format args (%1$s, %2$d...). -->
+<resources>
+    <!-- ============ Common ============ -->
+    <string name="jr_back">Back</string>
+    <string name="jr_cancel">Cancel</string>
+    <string name="jr_ok">OK</string>
+    <string name="jr_allow">Allow</string>
+    <string name="jr_allow_camera">Allow camera</string>
+    <string name="jr_open_settings">Open settings</string>
+    <string name="jr_add_contacts">Add emergency contacts</string>
+    <string name="jr_recenter">Recenter map</string>
+    <string name="jr_sos">SOS</string>
+    <string name="jr_dash">—</string>
+    <string name="jr_list_separator">", "</string>
+    <string name="jr_dot_separator">" · "</string>
+    <string name="jr_joined">%1$s · %2$s</string>
+    <string name="jr_distance_m">%1$d m</string>
+    <string name="jr_distance_km">%1$.1f km</string>
+    <string name="jr_no_contacts_title">Add a contact first</string>
+    <string name="jr_no_contacts_body">Nobody would be alerted. Add at least one emergency contact who should hear from you if something goes wrong.</string>
+    <string name="jr_contacts_none">No emergency contacts</string>
+    <string name="jr_contacts_none_sub">Add emergency contacts so someone is alerted.</string>
+    <string name="jr_contacts_count">%1$d contacts will be alerted</string>
+    <string name="jr_sms_denied">SMS permission is off, so your contacts were not texted.</string>
+    <string name="jr_journey_title">Journey safety</string>
+
+    <!-- Notification channels -->
+    <string name="jr_channel_ongoing">Journeys in progress</string>
+    <string name="jr_channel_ongoing_desc">Shows while a check-in timer or cab trip is running.</string>
+    <string name="jr_channel_alerts">Journey alerts</string>
+    <string name="jr_channel_alerts_desc">Check-in reminders and \"Is everything OK?\" checks during a cab trip.</string>
+
+    <!-- ============ Safety tools hub ============ -->
+    <string name="jr_tools_eyebrow">Safety tools</string>
+    <string name="jr_tools_title">Your safety toolkit</string>
+    <string name="jr_tools_body">Everything that keeps you covered on the move, gets you out of a situation, and records what happened.</string>
+    <string name="jr_status_protection">Protection</string>
+    <string name="jr_status_pin">App PIN</string>
+    <string name="jr_status_cloud">Cloud</string>
+    <string name="jr_status_on">On</string>
+    <string name="jr_status_off">Off</string>
+    <string name="jr_status_pin_set">Set</string>
+    <string name="jr_status_pin_none">Not set</string>
+    <string name="jr_status_cloud_on">Connected</string>
+    <string name="jr_status_cloud_pending">Not linked</string>
+    <string name="jr_status_cloud_off">Offline</string>
+
+    <string name="jr_section_move">On the move</string>
+    <string name="jr_section_escape">Escape</string>
+    <string name="jr_section_evidence">Evidence</string>
+    <string name="jr_section_network">Network</string>
+    <string name="jr_section_settings">Settings</string>
+
+    <string name="jr_tile_checkin">Check-in timer</string>
+    <string name="jr_tile_checkin_cap">Alert contacts if I\'m late</string>
+    <string name="jr_tile_checkin_active">Running · %1$s left</string>
+    <string name="jr_tile_checkin_overdue">Overdue · tap to check in</string>
+    <string name="jr_tile_cab">Cab mode</string>
+    <string name="jr_tile_cab_cap">Share the plate, watch the route</string>
+    <string name="jr_tile_cab_active">On a trip · %1$s</string>
+    <string name="jr_tile_meeting">Meeting someone</string>
+    <string name="jr_tile_meeting_cap">Date, buyer or interview</string>
+    <string name="jr_tile_places">Safe places nearby</string>
+    <string name="jr_tile_places_cap">Police, hospitals, open 24h</string>
+    <string name="jr_tile_fake_call">Fake call</string>
+    <string name="jr_tile_fake_call_cap">A believable way out</string>
+    <string name="jr_tile_silent">Silent SOS</string>
+    <string name="jr_tile_silent_cap">No siren, alerts only</string>
+    <string name="jr_tile_silent_on">On · SOS stays discreet</string>
+    <string name="jr_tile_incidents">Incident history</string>
+    <string name="jr_tile_incidents_cap">Past SOS and evidence</string>
+    <string name="jr_tile_diary">Private diary</string>
+    <string name="jr_tile_diary_cap">Write it down, dated</string>
+    <string name="jr_tile_complaint">Complaint draft</string>
+    <string name="jr_tile_complaint_cap">Ready for the police</string>
+    <string name="jr_tile_cloud">Cloud &amp; guardians</string>
+    <string name="jr_tile_cloud_cap">Backup that works if the phone dies</string>
+    <string name="jr_tile_ble">Panic button</string>
+    <string name="jr_tile_ble_cap">Pair a Bluetooth button</string>
+    <string name="jr_tile_settings">Safety settings</string>
+    <string name="jr_tile_settings_cap">SOS, evidence and triggers</string>
+    <string name="jr_tile_pin">App PIN &amp; duress PIN</string>
+    <string name="jr_tile_pin_cap">Lock the app, fake a stop</string>
+    <string name="jr_tile_pin_cap_set">PIN is set · tap to change</string>
+
+    <!-- Fake call sheet -->
+    <string name="jr_fake_eyebrow">Escape</string>
+    <string name="jr_fake_title">Schedule a fake call</string>
+    <string name="jr_fake_body">Your phone will ring with a real-looking incoming call, so you have a reason to step away.</string>
+    <string name="jr_fake_name_hint">Caller name</string>
+    <string name="jr_fake_default_name">Mom</string>
+    <string name="jr_fake_delay_label">Ring in</string>
+    <string name="jr_fake_5s">5 s</string>
+    <string name="jr_fake_30s">30 s</string>
+    <string name="jr_fake_1m">1 min</string>
+    <string name="jr_fake_5m">5 min</string>
+    <string name="jr_fake_schedule">Schedule call</string>
+    <string name="jr_fake_scheduled">Fake call in %1$s</string>
+    <string name="jr_fake_cancelled">Fake call cancelled</string>
+
+    <!-- ============ Safety settings ============ -->
+    <string name="jr_ss_eyebrow">Safety settings</string>
+    <string name="jr_ss_title">How your SOS behaves</string>
+    <string name="jr_ss_body">Changes save instantly. Features that need a permission will ask for it when you switch them on.</string>
+    <string name="jr_ss_appearance">Appearance &amp; language</string>
+    <string name="jr_ss_appearance_sub">Theme and app language</string>
+
+    <string name="jr_ss_section_sos">SOS behaviour</string>
+    <string name="jr_ss_silent">Silent SOS</string>
+    <string name="jr_ss_silent_sub">No siren, screen or flashlight. Contacts are alerted and evidence is recorded quietly.</string>
+    <string name="jr_ss_strobe">Flashlight strobe</string>
+    <string name="jr_ss_strobe_sub">Flash the torch during a loud SOS to draw attention.</string>
+    <string name="jr_ss_speak">Spoken alert</string>
+    <string name="jr_ss_speak_sub">Say \"Help! Call the police\" out loud between siren bursts.</string>
+    <string name="jr_ss_escalation">Call the next contact</string>
+    <string name="jr_ss_escalation_sub">If a contact doesn\'t pick up, call the next one. Needs phone access.</string>
+    <string name="jr_ss_112">Call 112 last</string>
+    <string name="jr_ss_112_sub">After every contact was tried, call emergency services.</string>
+    <string name="jr_ss_112_confirm_title">Call 112 automatically?</string>
+    <string name="jr_ss_112_confirm_body">Only enable if you accept that a false alarm will call emergency services.</string>
+
+    <string name="jr_ss_section_evidence">Evidence</string>
+    <string name="jr_ss_audio">Record audio</string>
+    <string name="jr_ss_audio_sub">Record sound in short chunks during an SOS and upload each one.</string>
+    <string name="jr_ss_video">Record video</string>
+    <string name="jr_ss_video_sub">Video instead of photos. Uses much more battery and data.</string>
+    <string name="jr_ss_video_confirm_title">Record video during SOS?</string>
+    <string name="jr_ss_video_confirm_body">Video drains the battery faster and uses a lot of mobile data. Photos and audio are usually enough.</string>
+    <string name="jr_ss_mobile">Upload on mobile data</string>
+    <string name="jr_ss_mobile_sub">Send evidence right away, not only on Wi-Fi.</string>
+
+    <string name="jr_ss_section_triggers">Automatic triggers</string>
+    <string name="jr_ss_scream">Scream detection</string>
+    <string name="jr_ss_scream_sub">Listens on the phone for screams. Audio is never stored or sent.</string>
+    <string name="jr_ss_fall">Fall detection</string>
+    <string name="jr_ss_fall_sub">Start an SOS after a hard fall or struggle while protection is on.</string>
+    <string name="jr_ss_headset">Headset button</string>
+    <string name="jr_ss_headset_sub">Press the wired or Bluetooth headset button three times.</string>
+    <string name="jr_ss_volume">Volume keys, screen off</string>
+    <string name="jr_ss_volume_sub">Trigger an SOS with the volume keys even when the phone is locked.</string>
+    <string name="jr_ss_enable">Enable</string>
+    <string name="jr_ss_accessibility_on">Accessibility service is on</string>
+    <string name="jr_ss_accessibility_off">Accessibility service is off</string>
+    <string name="jr_ss_accessibility_title">Turn on the accessibility service</string>
+    <string name="jr_ss_accessibility_body">Android only lets apps see volume-key presses with the screen off through an accessibility service. Naari Shakti uses it for key presses only and never reads your screen. Find Naari Shakti in the list and switch it on.</string>
+    <string name="jr_ss_denied_accessibility">Without the accessibility service the volume keys can\'t start an SOS while the screen is off, so this has been turned off.</string>
+    <string name="jr_ss_panic">Panic button</string>
+    <string name="jr_ss_panic_none">Not paired · pair a small Bluetooth button</string>
+    <string name="jr_ss_panic_paired">Paired: %1$s</string>
+
+    <string name="jr_ss_section_phone">Phone status alerts</string>
+    <string name="jr_ss_shutdown">Phone switched off</string>
+    <string name="jr_ss_shutdown_sub">Text your last location if the phone shuts down during protection.</string>
+    <string name="jr_ss_battery">Battery almost empty</string>
+    <string name="jr_ss_battery_sub" formatted="false">Text your last location when the battery drops to 5%.</string>
+    <string name="jr_ss_sim">SIM card changed</string>
+    <string name="jr_ss_sim_sub">Alert your contacts if someone swaps the SIM. Needs phone access.</string>
+
+    <string name="jr_ss_section_community">Community</string>
+    <string name="jr_ss_mesh">Offline mesh SOS</string>
+    <string name="jr_ss_mesh_sub">Pass your SOS to nearby Naari Shakti phones over Bluetooth and Wi-Fi when there is no signal.</string>
+    <string name="jr_ss_helper">Nearby helper</string>
+    <string name="jr_ss_helper_on">On · you may be asked to help people nearby</string>
+    <string name="jr_ss_helper_off">Off · volunteer to help people near you</string>
+
+    <string name="jr_ss_needs_access">Needs permission · tap to allow</string>
+    <string name="jr_ss_denied_title">%1$s is off</string>
+    <string name="jr_ss_denied_body">%1$s can\'t work without this permission, so it has been turned off. You can switch it on again at any time.</string>
+
+    <!-- ============ Check-in timer ============ -->
+    <string name="jr_ci_eyebrow">Check-in timer</string>
+    <string name="jr_ci_title">Get there safe</string>
+    <string name="jr_ci_title_active">Check-in running</string>
+    <string name="jr_ci_body">Set when you expect to arrive. If you don\'t check in by then, your contacts are alerted automatically, even if your phone dies.</string>
+    <string name="jr_ci_body_active">Tap \"I\'m safe\" when you arrive. Need more time? Add 15 minutes.</string>
+    <string name="jr_ci_section_time">Check in within</string>
+    <string name="jr_ci_15">15 min</string>
+    <string name="jr_ci_30">30 min</string>
+    <string name="jr_ci_45">45 min</string>
+    <string name="jr_ci_60">1 hour</string>
+    <string name="jr_ci_custom">Pick a time</string>
+    <string name="jr_ci_custom_at">At %1$s</string>
+    <string name="jr_ci_custom_title">Check in by</string>
+    <string name="jr_ci_due_at">You\'ll be due at %1$s</string>
+    <string name="jr_ci_time_passed">That time has already passed. Pick a later time.</string>
+    <string name="jr_ci_section_note">Note for your contacts</string>
+    <string name="jr_ci_note_hint">Where are you going?</string>
+    <string name="jr_ci_note_placeholder">Walking home from the metro</string>
+    <string name="jr_ci_section_contacts">Who gets alerted</string>
+    <string name="jr_ci_exact_alarm">Allow \"Alarms &amp; reminders\" so the check-in fires exactly on time.</string>
+    <string name="jr_ci_cloud_on">Server backup is on: your contacts are alerted even if your phone is switched off or loses signal.</string>
+    <string name="jr_ci_cloud_off">Server backup is off, so the alert depends on this phone staying on.</string>
+    <string name="jr_ci_start">Start check-in</string>
+    <string name="jr_ci_no_location">Location is off: the timer still works, but your contacts won\'t see where you are.</string>
+    <string name="jr_ci_replace_title">Replace the running check-in?</string>
+    <string name="jr_ci_replace_body">A check-in is already running. Starting a new one ends it.</string>
+    <string name="jr_ci_replace">Replace</string>
+
+    <string name="jr_ci_left_caption">left · due %1$s</string>
+    <string name="jr_ci_overdue">Overdue</string>
+    <string name="jr_ci_overdue_caption">SOS started</string>
+    <string name="jr_ci_status_active">If you don\'t check in, your %1$d contacts are alerted automatically.</string>
+    <string name="jr_ci_status_overdue">You missed your check-in and an SOS was sent. Tap \"I\'m safe\" once you are.</string>
+    <string name="jr_ci_safe">I\'m safe</string>
+    <string name="jr_ci_extend">+15 min</string>
+    <string name="jr_ci_extended">Check-in moved to %1$s</string>
+    <string name="jr_ci_help">Need help now</string>
+    <string name="jr_ci_pin_title">Enter your PIN to check in</string>
+    <string name="jr_ci_checked_out">Checked in safely. Your contacts won\'t be alerted.</string>
+
+    <string name="jr_ci_warn_title">Check-in due in 2 min</string>
+    <string name="jr_ci_warn_text">Tap \"I\'m safe\" before %1$s or your contacts will be alerted.</string>
+    <string name="jr_ci_missed_title">Check-in missed · SOS sent</string>
+    <string name="jr_ci_missed_text">Your contacts are being alerted. If you\'re safe, tap \"I\'m safe\".</string>
+    <string name="jr_ci_ongoing_title">Check-in running</string>
+    <string name="jr_ci_ongoing_title_overdue">Check-in overdue</string>
+    <string name="jr_ci_ongoing_text">Due at %1$s</string>
+    <string name="jr_ci_ongoing_text_note">Due at %1$s · %2$s</string>
+
+    <!-- ============ Cab mode ============ -->
+    <string name="jr_cab_eyebrow">Cab mode</string>
+    <string name="jr_cab_title">Ride with backup</string>
+    <string name="jr_cab_body">Scan the number plate, and your contacts get the cab details and a live location. We\'ll check on you if the ride goes off course.</string>
+    <string name="jr_cab_section_plate">Number plate</string>
+    <string name="jr_cab_camera_cd">Camera preview for scanning the number plate</string>
+    <string name="jr_cab_scanning">Point at the number plate</string>
+    <string name="jr_cab_detected">Detected %1$s</string>
+    <string name="jr_cab_camera_error">Camera unavailable · type the plate</string>
+    <string name="jr_cab_camera_needed">Allow the camera to read the plate automatically, or type it below.</string>
+    <string name="jr_cab_plate_hint">Number plate</string>
+    <string name="jr_cab_plate_helper">Read on the phone. Check it matches the cab.</string>
+    <string name="jr_cab_plate_needed">Enter the cab\'s number plate</string>
+    <string name="jr_cab_rescan">Clear and scan again</string>
+    <string name="jr_cab_section_ride">Ride details (optional)</string>
+    <string name="jr_cab_driver_hint">Driver name</string>
+    <string name="jr_cab_app_uber">Uber</string>
+    <string name="jr_cab_app_ola">Ola</string>
+    <string name="jr_cab_app_rapido">Rapido</string>
+    <string name="jr_cab_app_auto">Auto</string>
+    <string name="jr_cab_app_other">Other</string>
+    <string name="jr_cab_section_dest">Destination</string>
+    <string name="jr_cab_map_cd">Map. Tap to set where you are going.</string>
+    <string name="jr_cab_map_hint">Tap the map to set your destination</string>
+    <string name="jr_cab_dest_hint">Destination name</string>
+    <string name="jr_cab_dest_generic">the destination</string>
+    <string name="jr_cab_contacts_note">Your %1$d contacts get the plate, ride details and a live location link by SMS.</string>
+    <string name="jr_cab_start">Start trip</string>
+    <string name="jr_cab_sms_sent">Trip details sent to %1$d contacts</string>
+    <string name="jr_cab_no_location">Location is off, so the route can\'t be watched.</string>
+
+    <string name="jr_cab_active_overline">On a trip</string>
+    <string name="jr_cab_driver_label">Driver %1$s</string>
+    <string name="jr_cab_to_label">To %1$s</string>
+    <string name="jr_cab_elapsed">Time in cab</string>
+    <string name="jr_cab_distance_left">Distance left</string>
+    <string name="jr_cab_locating">Locating…</string>
+    <string name="jr_cab_monitor_on">Watching your route. We\'ll check on you if the cab heads the wrong way or stops for too long.</string>
+    <string name="jr_cab_monitor_nodest">No destination set, so the route isn\'t being watched. SOS is one tap away.</string>
+    <string name="jr_cab_monitor_near">You\'re almost there. Tap \"Arrived safely\" to let your contacts know.</string>
+    <string name="jr_cab_monitor_prompt">Checking on you: answer within %1$d s or an SOS is sent.</string>
+    <string name="jr_cab_arrived">Arrived safely</string>
+    <string name="jr_cab_arrived_sent">Your contacts were told you arrived safely.</string>
+    <string name="jr_cab_end">End trip</string>
+    <string name="jr_cab_end_title">End this trip?</string>
+    <string name="jr_cab_end_body">Route watching stops. Your contacts are not texted.</string>
+
+    <string name="jr_cab_prompt_title">Is everything OK?</string>
+    <string name="jr_cab_prompt_text">Your cab has gone off route or stopped for a while. If you don\'t answer within a minute, an SOS is sent.</string>
+    <string name="jr_cab_prompt_dialog">Your cab has gone off route or stopped for a while. An SOS is sent in %1$d s unless you answer.</string>
+    <string name="jr_cab_im_ok">I\'m OK</string>
+    <string name="jr_cab_near_title">You\'re nearly there</string>
+    <string name="jr_cab_near_text">Near %1$s. Let your contacts know you arrived safely.</string>
+    <string name="jr_cab_ongoing_title">Cab trip · %1$s</string>
+    <string name="jr_cab_ongoing_title_noplate">Cab trip</string>
+    <string name="jr_cab_ongoing_left">%1$s to go · route watched</string>
+    <string name="jr_cab_ongoing_locating">Finding your location…</string>
+    <string name="jr_cab_ongoing_nodest">No destination set</string>
+
+    <!-- ============ Meeting mode ============ -->
+    <string name="jr_meet_eyebrow">Meeting someone</string>
+    <string name="jr_meet_title">Meet with a safety net</string>
+    <string name="jr_meet_body">A date, a buyer or seller, an interview. Your contacts get who and where, and a check-in runs until it ends.</string>
+    <string name="jr_meet_section_who">Who</string>
+    <string name="jr_meet_name_hint">Their name</string>
+    <string name="jr_meet_name_needed">Add their name</string>
+    <string name="jr_meet_contact_hint">Phone or profile link</string>
+    <string name="jr_meet_photo_title">Their photo (optional)</string>
+    <string name="jr_meet_photo_caption">Kept privately on this phone.</string>
+    <string name="jr_meet_photo_cd">Photo of the person you are meeting</string>
+    <string name="jr_meet_camera">Camera</string>
+    <string name="jr_meet_gallery">Gallery</string>
+    <string name="jr_meet_photo_saved">Photo saved privately</string>
+    <string name="jr_meet_photo_failed">Couldn\'t save the photo</string>
+    <string name="jr_meet_no_camera">No camera app available</string>
+    <string name="jr_meet_no_gallery">No gallery app available</string>
+    <string name="jr_meet_camera_denied">Camera permission is off.</string>
+    <string name="jr_meet_section_where">Where</string>
+    <string name="jr_meet_map_cd">Map. Tap to set the meeting place.</string>
+    <string name="jr_meet_map_hint">Tap the map, or use your location</string>
+    <string name="jr_meet_use_here">Use my current location</string>
+    <string name="jr_meet_place_hint">Place name</string>
+    <string name="jr_meet_section_until">Until</string>
+    <string name="jr_meet_ends_at">Ends at %1$s</string>
+    <string name="jr_meet_end_caption">You\'ll need to check in by then</string>
+    <string name="jr_meet_end_title">Expected end time</string>
+    <string name="jr_meet_contacts_note">Your %1$d contacts get a summary by SMS, then a check-in starts.</string>
+    <string name="jr_meet_start">Start meeting check-in</string>
+    <string name="jr_meet_note">Meeting %1$s</string>
+    <string name="jr_meet_note_place">Meeting %1$s at %2$s</string>
+
+    <!-- ============ SMS bodies ============ -->
+    <string name="jr_sms_default_name">Your friend</string>
+    <!-- %1$s name, %2$s plate, %3$s optional details from jr_sms_cab_details_* (starts with a space). -->
+    <string name="jr_sms_cab_start">Naari Shakti: %1$s is in cab %2$s%3$s.</string>
+    <string name="jr_sms_cab_details_app_driver">" (%1$s, driver %2$s)"</string>
+    <string name="jr_sms_cab_details_app">" (%1$s)"</string>
+    <string name="jr_sms_cab_details_driver">" (driver %1$s)"</string>
+    <string name="jr_sms_cab_going">Going to %1$s.</string>
+    <string name="jr_sms_live">Live: %1$s</string>
+    <string name="jr_sms_cab_arrived">Naari Shakti: %1$s arrived safely at %2$s.</string>
+    <string name="jr_sms_meet_intro">Naari Shakti: %1$s is meeting %2$s.</string>
+    <string name="jr_sms_meet_contact">Their contact: %1$s.</string>
+    <string name="jr_sms_meet_place">Place: %1$s %2$s</string>
+    <string name="jr_sms_meet_place_nolink">Place: %1$s.</string>
+    <string name="jr_sms_meet_place_unknown">not shared</string>
+    <string name="jr_sms_meet_end">Expected to finish by %1$s. If %2$s doesn\'t check in by then, you\'ll be alerted.</string>
+
+    <!-- ============ Safe places ============ -->
+    <string name="jr_sp_eyebrow">Safe places</string>
+    <string name="jr_sp_title">Help within 3 km</string>
+    <string name="jr_sp_body">Police stations, hospitals, clinics, pharmacies and fuel stations around you. Places open 24 hours are marked.</string>
+    <string name="jr_sp_refresh">Refresh</string>
+    <string name="jr_sp_map_cd">Map of safe places near you</string>
+    <string name="jr_sp_all">All</string>
+    <string name="jr_sp_police">Police</string>
+    <string name="jr_sp_hospital">Hospitals</string>
+    <string name="jr_sp_clinic">Clinics</string>
+    <string name="jr_sp_pharmacy">Pharmacies</string>
+    <string name="jr_sp_fuel">Fuel</string>
+    <string name="jr_sp_type_police">Police station</string>
+    <string name="jr_sp_type_hospital">Hospital</string>
+    <string name="jr_sp_type_clinic">Clinic</string>
+    <string name="jr_sp_type_pharmacy">Pharmacy</string>
+    <string name="jr_sp_type_fuel">Fuel station</string>
+    <string name="jr_sp_open_24h">Open 24h</string>
+    <string name="jr_sp_call">Call</string>
+    <string name="jr_sp_navigate">Navigate</string>
+    <string name="jr_sp_locating">Finding your location…</string>
+    <string name="jr_sp_loading">Looking for places nearby…</string>
+    <string name="jr_sp_summary">%1$d places within 3 km, nearest first</string>
+    <string name="jr_sp_summary_none">No places found</string>
+    <string name="jr_sp_empty">Nothing found within 3 km. Try again when you have a connection.</string>
+    <string name="jr_sp_empty_filter">None of this kind within 3 km.</string>
+    <string name="jr_sp_offline">Offline · showing places saved at %1$s</string>
+    <string name="jr_sp_offline_nocache">Offline and nothing saved yet. Connect to the internet and refresh.</string>
+    <string name="jr_sp_no_location">Location is off, so places can\'t be found around you.</string>
+    <string name="jr_sp_marker">%1$s · %2$s</string>
+    <string name="jr_sp_attribution">Map data © OpenStreetMap contributors</string>
+
+    <!-- ============ Home entry points ============ -->
+    <string name="jr_home_tools_title">Safety tools</string>
+    <string name="jr_home_tools_sub">Check-in timer, cab mode, fake call and more</string>
+    <string name="jr_home_tools_cd">Open safety tools</string>
+    <string name="jr_home_checkin_title">Check-in running</string>
+    <string name="jr_home_checkin_sub">%1$s left · due %2$s</string>
+    <string name="jr_home_checkin_overdue">Check-in overdue</string>
+    <string name="jr_home_checkin_overdue_sub">SOS sent · tap if you\'re safe</string>
+    <string name="jr_home_cab_title">Cab trip · %1$s</string>
+    <string name="jr_home_cab_sub">%1$s to go · tap to open</string>
+    <string name="jr_home_cab_sub_nodist">Trip in progress · tap to open</string>
+
+    <!-- ============ Settings entry points ============ -->
+    <string name="jr_settings_section">Safety tools</string>
+    <string name="jr_settings_row_safety">Safety settings</string>
+    <string name="jr_settings_row_safety_sub">Silent SOS, evidence, automatic triggers</string>
+    <string name="jr_settings_row_pin">App PIN &amp; duress PIN</string>
+    <string name="jr_settings_row_pin_sub">Lock the app and fake a stopped SOS</string>
+    <string name="jr_settings_row_cloud">Cloud &amp; guardians</string>
+    <string name="jr_settings_row_cloud_sub">Server backup, guardians, nearby helpers</string>
+</resources>

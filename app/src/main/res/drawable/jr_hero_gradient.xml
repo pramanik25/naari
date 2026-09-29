@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Gradient accent for the Home "Safety tools" card (rose -> violet), 20dp corners. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <corners android:radius="20dp" />
+    <gradient
+        android:angle="315"
+        android:startColor="@color/ns_rose_deep"
+        android:endColor="@color/ns_violet_deep"
+        android:type="linear" />
+</shape>

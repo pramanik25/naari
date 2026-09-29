@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ns_accessibility_description">इससे Naari Shakti स्क्रीन बंद या लॉक होने पर भी वॉल्यूम बटन के पैटर्न से SOS शुरू कर पाता है। Naari Shakti आपकी स्क्रीन पर दिख रही चीज़ें नहीं पढ़ता।</string>
+
+    <!-- Appearance & language -->
+    <string name="core_back">वापस</string>
+    <string name="core_appearance_eyebrow">अपने हिसाब से</string>
+    <string name="core_appearance_title">रूप और भाषा</string>
+    <string name="core_appearance_desc">चुनें कि Naari Shakti कैसा दिखे और किस भाषा में बात करे। आपके कॉन्टैक्ट्स को भेजे जाने वाले अलर्ट भी इसी भाषा में होंगे।</string>
+    <string name="core_section_theme">थीम</string>
+    <string name="core_theme_dark">डार्क</string>
+    <string name="core_theme_light">लाइट</string>
+    <string name="core_theme_system">फ़ोन जैसा</string>
+    <string name="core_section_language">भाषा</string>
+    <string name="core_language_desc">इमरजेंसी नंबर और SMS लिंक हर भाषा में एक जैसे रहते हैं।</string>
+    <string name="core_language_system">फ़ोन की भाषा</string>
+    <string name="core_language_system_caption">फ़ोन की सेटिंग्स के अनुसार</string>
+    <string name="core_selected">चुना गया</string>
+</resources>

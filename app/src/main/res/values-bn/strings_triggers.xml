@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Common -->
+    <string name="tr_back">ফিরে যান</string>
+    <string name="tr_not_now">এখন নয়</string>
+    <string name="tr_cancel">বাতিল করুন</string>
+    <string name="tr_open_settings">সেটিংস</string>
+
+    <!-- ===================== SMS alerts to emergency contacts ===================== -->
+    <string name="tr_default_owner_name">আপনার কন্টাক্ট</string>
+    <string name="tr_sms_shutdown">Naari Shakti: %1$s-এর ফোন বন্ধ হয়ে যাচ্ছে। শেষ জানা লোকেশন: %2$s</string>
+    <!-- %2$d is the battery percentage. -->
+    <string name="tr_sms_low_battery">Naari Shakti: %1$s-এর ফোনে ব্যাটারি %2$d%%। শেষ জানা লোকেশন: %3$s</string>
+    <string name="tr_sms_sim_changed">Naari Shakti: %1$s-এর ফোনের SIM কার্ড বদলানো হয়েছে। এই বার্তা নতুন SIM থেকে এসেছে। লোকেশন: %2$s</string>
+    <!-- %1$s is a Google Maps link, %2$s the time the location was recorded. -->
+    <string name="tr_sms_location_fmt">%1$s (%2$s)</string>
+    <string name="tr_sms_location_unknown">পাওয়া যায়নি</string>
+
+    <!-- ===================== Volume-key SOS (accessibility) ===================== -->
+    <string name="tr_a11y_dialog_title">ভলিউম বোতামে SOS চালু করুন</string>
+    <string name="tr_a11y_dialog_body">স্ক্রিন বন্ধ থাকলেও ভলিউম-ডাউন 5 বার চেপে SOS শুরু করতে, অ্যাক্সেসিবিলিটি সেটিংসে %1$s চালু করুন।\n\nপরের স্ক্রিনে \"Installed apps\" (বা \"Downloaded apps\") খুলুন, %1$s বেছে নিয়ে চালু করুন। এটি শুধু ভলিউম বোতামে নজর রাখে, কখনও আপনার স্ক্রিন পড়ে না।</string>
+    <string name="tr_a11y_dialog_open">সেটিংস খুলুন</string>
+
+    <!-- ===================== Panic button screen ===================== -->
+    <string name="tr_pb_eyebrow">আরও ট্রিগার</string>
+    <string name="tr_pb_title">প্যানিক বোতাম</string>
+    <string name="tr_pb_desc">একটি ছোট Bluetooth বোতাম যুক্ত করুন, আর ফোন বের না করেই দুবার চেপে SOS শুরু করুন।</string>
+
+    <string name="tr_pb_status_label">আপনার বোতাম</string>
+    <string name="tr_pb_no_button">কোনো বোতাম যুক্ত নেই</string>
+    <string name="tr_pb_unnamed">নামহীন বোতাম</string>
+    <string name="tr_pb_status_not_set">সেট করা নেই</string>
+    <string name="tr_pb_status_connected">যুক্ত আছে</string>
+    <string name="tr_pb_status_connecting">বোতাম খোঁজা হচ্ছে… কাছে রাখুন</string>
+    <string name="tr_pb_status_unsupported">এই ডিভাইসটি সমর্থিত বোতাম নয়</string>
+    <string name="tr_pb_status_bt_off">Bluetooth বন্ধ আছে</string>
+    <string name="tr_pb_status_permission">Bluetooth-এর অনুমতি দরকার</string>
+    <string name="tr_pb_status_unavailable">পাওয়া যাচ্ছে না</string>
+    <string name="tr_pb_status_off">যুক্ত নেই</string>
+    <string name="tr_pb_protection_hint">বোতাম দিয়ে SOS শুরু করতে সুরক্ষা চালু করুন।</string>
+
+    <string name="tr_pb_forget">বোতাম সরান</string>
+    <string name="tr_pb_forget_title">এই বোতামটি সরাবেন?</string>
+    <!-- %1$s is the button's name. -->
+    <string name="tr_pb_forget_body">%1$s দিয়ে আর SOS শুরু হবে না।</string>
+    <string name="tr_pb_forget_confirm">সরান</string>
+    <string name="tr_pb_forgotten">বোতাম সরানো হয়েছে</string>
+
+    <string name="tr_pb_section_test">পরীক্ষা</string>
+    <string name="tr_pb_test_title">পরীক্ষা করতে বোতামটি দুবার চাপুন</string>
+    <string name="tr_pb_test_waiting">বোতাম যুক্ত হওয়ার অপেক্ষা…</string>
+    <string name="tr_pb_test_hint">এক সেকেন্ডের মধ্যে দুবার দ্রুত চাপুন। একবার চাপলে কিছু হয় না, তাই ভুল করে চালু হবে না।</string>
+    <string name="tr_pb_test_one">একবার চাপা হয়েছে। এবার দ্রুত আবার চাপুন</string>
+    <string name="tr_pb_test_success">কাজ করছে!</string>
+    <string name="tr_pb_test_success_body">সুরক্ষা চালু থাকলে দুবার চাপলে SOS কাউন্টডাউন শুরু হয়। কাউন্টডাউনের সময় বাতিল করতে পারবেন। এখানে পরীক্ষা করলে কখনও SOS যায় না।</string>
+    <string name="tr_pb_test_again">আবার পরীক্ষা করুন</string>
+
+    <string name="tr_pb_section_find">আপনার বোতাম খুঁজুন</string>
+    <string name="tr_pb_nearby">কাছাকাছি বোতাম</string>
+    <string name="tr_pb_scan_hint">বোতামটি চালু করুন (বিপ না হওয়া পর্যন্ত চেপে ধরুন) এবং ফোনের পাশে রাখুন।</string>
+    <string name="tr_pb_scan">বোতাম খুঁজুন</string>
+    <string name="tr_pb_stop_scan">খোঁজা থামান</string>
+    <string name="tr_pb_scanning">খোঁজা হচ্ছে…</string>
+    <string name="tr_pb_empty">কোনো বোতাম পাওয়া যায়নি। বোতামটি চালু আছে ও কাছে আছে কি না দেখে আবার খুঁজুন।</string>
+    <string name="tr_pb_empty_location">কোনো বোতাম পাওয়া যায়নি। Bluetooth ডিভাইস খুঁজতে Android-এর লোকেশন চালু থাকা দরকার। চালু করে আবার খুঁজুন।</string>
+    <!-- %1$d is an Android error code. -->
+    <string name="tr_pb_scan_failed">খোঁজা যায়নি (ত্রুটি %1$d)। Bluetooth বন্ধ করে আবার চালু করুন, তারপর চেষ্টা করুন।</string>
+    <string name="tr_pb_no_bluetooth">এই ফোনে Bluetooth Low Energy নেই।</string>
+    <string name="tr_pb_bt_needed">আপনার বোতাম খুঁজতে Bluetooth চালু করুন।</string>
+    <string name="tr_pb_perm_denied">আপনার বোতাম খুঁজতে Naari Shakti-র কাছাকাছি ডিভাইস ও লোকেশনের অনুমতি দরকার।</string>
+    <!-- %1$s is the button's name. -->
+    <string name="tr_pb_paired_snack">%1$s সেভ হয়েছে। এবার পরীক্ষা করতে দুবার চাপুন।</string>
+    <!-- Signal strength, %1$d is negative, e.g. -62 dBm. -->
+    <string name="tr_pb_rssi">%1$d dBm</string>
+    <string name="tr_pb_tag_compatible">চলবে</string>
+    <string name="tr_pb_tag_paired">যুক্ত</string>
+    <!-- Screen reader: %1$s device name, %2$d signal bars (1 to 4). -->
+    <string name="tr_pb_device_cd">%1$s, সিগন্যাল 4-এর মধ্যে %2$d। এই বোতামটি ব্যবহার করতে দুবার ট্যাপ করুন।</string>
+
+    <string name="tr_pb_section_supported">যে বোতামগুলো চলে</string>
+    <string name="tr_pb_sup1_title">iTag কী-ফাইন্ডার বোতাম</string>
+    <string name="tr_pb_sup1_body">\"iTag\" বা \"anti-lost tracker\" নামে বিক্রি হওয়া ছোট Bluetooth কী-ফাইন্ডার বোতাম সবচেয়ে ভালো চলে। অনলাইনে দাম প্রায় ₹200।</string>
+    <string name="tr_pb_sup2_title">কয়েন সেলে চলে</string>
+    <string name="tr_pb_sup2_body">একটি CR2032 ব্যাটারি কয়েক মাস চলে। বোতামটি চাবির রিং, ব্যাগের স্ট্র্যাপ বা জামায় আটকে রাখুন।</string>
+    <string name="tr_pb_sup3_title">ব্যাকগ্রাউন্ডে কাজ করে</string>
+    <string name="tr_pb_sup3_body">সুরক্ষা চালু থাকলে ফোন বোতামের সঙ্গে যুক্ত থাকে, আর বোতাম আবার কাছে এলে নিজে থেকেই যুক্ত হয়ে যায়।</string>
+</resources>

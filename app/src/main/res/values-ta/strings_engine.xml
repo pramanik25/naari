@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Notification channels -->
+    <string name="eng_channel_protection">பாதுகாப்பு நிலை</string>
+    <string name="eng_channel_protection_desc">உங்கள் அவசரச் சொல், குலுக்கல், பவர் பொத்தான் அழுத்தங்களை Naari Shakti கவனிக்கும்போது காட்டப்படும்.</string>
+    <string name="eng_channel_sos">SOS எச்சரிக்கைகள்</string>
+    <string name="eng_channel_sos_desc">SOS கவுண்ட்டவுன் அல்லது செயலில் இருக்கும்போது முழுத்திரை எச்சரிக்கை.</string>
+    <string name="eng_channel_alerts">பாதுகாப்பு எச்சரிக்கைகள்</string>
+    <string name="eng_channel_alerts_desc">மறுதொடக்கத்துக்குப் பின் பாதுகாப்பை மீண்டும் இயக்குவது போன்ற கவனம் தேவைப்படும் நினைவூட்டல்கள்.</string>
+    <string name="eng_channel_live">நேரலை இருப்பிடப் பகிர்வு</string>
+    <string name="eng_channel_live_desc">உங்கள் நேரலை இருப்பிடம் தொடர்புகளுடன் பகிரப்படும்போது காட்டப்படும்.</string>
+    <string name="eng_channel_geofence">சேமித்த இடங்கள்</string>
+    <string name="eng_channel_geofence_desc">சேமித்த இடத்துக்கு வரும்போது அல்லது அங்கிருந்து செல்லும்போது எச்சரிக்கை.</string>
+
+    <!-- Protection notification -->
+    <string name="eng_protect_title">Naari Shakti உங்களைப் பாதுகாக்கிறது</string>
+    <string name="eng_protect_text">“%1$s” கேட்கிறது · SOS-க்கு பவர் ×%2$d</string>
+    <string name="eng_protect_text_no_voice">SOS-க்குக் குலுக்கவும் அல்லது பவர் ×%1$d</string>
+    <string name="eng_action_sos_now">உடனே SOS</string>
+    <string name="eng_action_turn_off">நிறுத்து</string>
+
+    <!-- Resume notification -->
+    <string name="eng_resume_title">பாதுகாப்பை மீண்டும் தொடங்கத் தட்டவும்</string>
+    <string name="eng_resume_text">மறுதொடக்கத்துக்குப் பின் Android, Naari Shakti-ஐ இடைநிறுத்தியது. பாதுகாப்பை மீண்டும் இயக்க ஆப்ஸைத் திறக்கவும்.</string>
+
+    <!-- SOS notification -->
+    <string name="eng_sos_countdown_title">SOS அனுப்புகிறது…</string>
+    <string name="eng_sos_countdown_text">உங்கள் தொடர்புகளுக்குத் தெரிவிக்கப்படும். தவறுதலாக என்றால் ரத்துசெய் என்பதைத் தட்டவும்.</string>
+    <string name="eng_sos_active_title">SOS செயலில்</string>
+    <string name="eng_sos_active_text">தொடர்புகளுக்குத் தெரிவித்து, நேரலை இருப்பிடத்தைப் பகிர்கிறது.</string>
+    <string name="eng_action_cancel">ரத்துசெய்</string>
+    <string name="eng_action_stop_sos">SOS-ஐ நிறுத்து</string>
+    <string name="eng_action_call_contact">%1$s-ஐ அழை</string>
+
+    <!-- SMS bodies -->
+    <string name="eng_sms_location_line">என் இருப்பிடம்: %1$s</string>
+    <string name="eng_sms_location_pending">இருப்பிடம் இன்னும் கிடைக்கவில்லை, விரைவில் அனுப்புகிறேன்.</string>
+    <string name="eng_sms_location_followup">என் தற்போதைய இருப்பிடம்: %1$s</string>
+    <string name="eng_sms_location_update">நேரலை இருப்பிடம் (%1$s): %2$s</string>
+    <string name="eng_sms_safe">நான் இப்போது பாதுகாப்பாக உள்ளேன். முந்தைய SOS-ஐப் பொருட்படுத்த வேண்டாம். - Naari Shakti</string>
+    <string name="eng_sms_live_start_named">%1$s தன் நேரலை இருப்பிடத்தை %2$d நிமிடம் உங்களுடன் பகிர்கிறார்: %3$s</string>
+    <string name="eng_sms_live_start">என் நேரலை இருப்பிடத்தை %1$d நிமிடம் உங்களுடன் பகிர்கிறேன்: %2$s</string>
+    <string name="eng_sms_live_start_no_fix">என் நேரலை இருப்பிடத்தை %1$d நிமிடம் உங்களுடன் பகிர்கிறேன். முதல் இருப்பிடம் விரைவில் வரும்.</string>
+    <string name="eng_sms_live_start_named_no_fix">%1$s தன் நேரலை இருப்பிடத்தை %2$d நிமிடம் உங்களுடன் பகிர்கிறார். முதல் இருப்பிடம் விரைவில் வரும்.</string>
+    <string name="eng_sms_live_update">நேரலை இருப்பிடம் (%1$s): %2$s</string>
+    <string name="eng_sms_live_ended">நேரலை இருப்பிடப் பகிர்வு முடிந்தது.</string>
+
+    <!-- Telegram / email -->
+    <string name="eng_telegram_sos">Naari Shakti-இலிருந்து SOS\n%1$s</string>
+    <string name="eng_telegram_safe">தகவல்: நான் இப்போது பாதுகாப்பாக உள்ளேன்.</string>
+    <string name="eng_email_subject">அவசர ஆதாரப் புகைப்படம் (%1$s கேமரா)</string>
+    <string name="eng_email_body">Naari Shakti-இல் SOS அனுப்பப்பட்டது. இந்தப் புகைப்படம் %2$s மணிக்கு %1$s கேமராவில் தானாக எடுக்கப்பட்டது.</string>
+    <string name="eng_camera_front">முன்</string>
+    <string name="eng_camera_back">பின்</string>
+
+    <!-- Live share notification -->
+    <string name="eng_live_title">உங்கள் நேரலை இருப்பிடம் பகிரப்படுகிறது</string>
+    <string name="eng_live_text">%1$d தொடர்புகளுடன் · %2$s-க்கு முடியும்</string>
+    <string name="eng_action_stop">நிறுத்து</string>
+
+    <!-- Geofence -->
+    <string name="eng_geofence_entered">%1$s-க்கு வந்துள்ளீர்கள்</string>
+    <string name="eng_geofence_left">%1$s-இலிருந்து சென்றுவிட்டீர்கள்</string>
+    <string name="eng_geofence_default_place">சேமித்த இடம்</string>
+    <string name="eng_geofence_text">Naari Shakti சேமித்த இட எச்சரிக்கை</string>
+
+    <!-- PanicActivity: countdown -->
+    <string name="eng_panic_overline">அவசர SOS</string>
+    <string name="eng_panic_countdown_title">SOS அனுப்புகிறது</string>
+    <plurals name="eng_panic_countdown_caption">
+        <item quantity="one">உங்கள் இருப்பிடத்துடன் %d தொடர்புக்குத் தெரிவிக்கிறது</item>
+        <item quantity="other">உங்கள் இருப்பிடத்துடன் %d தொடர்புகளுக்குத் தெரிவிக்கிறது</item>
+    </plurals>
+    <string name="eng_panic_countdown_no_contacts">இன்னும் அவசரத் தொடர்புகள் சேமிக்கப்படவில்லை. சைரனும் ஆதாரப் பதிவும் தொடங்கும்.</string>
+    <string name="eng_panic_cancel">ரத்துசெய்</string>
+    <string name="eng_panic_cancel_hint">தவறுதலாக என்றால் ரத்துசெய் என்பதைத் தட்டவும்</string>
+
+    <!-- PanicActivity: active -->
+    <string name="eng_panic_active_overline">SOS செயலில்</string>
+    <string name="eng_panic_active_title">உதவி வந்துகொண்டிருக்கிறது</string>
+    <string name="eng_panic_active_subtitle">ஃபோனை உடன் வைத்திருங்கள். உங்கள் தொடர்புகளுக்குத் தெரிவிக்கப்படுகிறது.</string>
+    <string name="eng_panic_status_label">நேரலை நிலை</string>
+    <string name="eng_panic_hold_to_stop">நிறுத்தப் பிடிக்கவும் — நான் பாதுகாப்பாக உள்ளேன்</string>
+    <string name="eng_panic_hold_hint">2 வினாடி அழுத்திப் பிடிக்கவும். அன்லாக் செய்யக் கேட்கப்படலாம்.</string>
+
+    <string name="eng_status_sms_pending">தொடர்புகளுக்குத் தெரிவிக்கிறது…</string>
+    <plurals name="eng_status_sms_done">
+        <item quantity="one">%d தொடர்புக்கு எச்சரிக்கை அனுப்பப்பட்டது</item>
+        <item quantity="other">%d தொடர்புகளுக்கு எச்சரிக்கை அனுப்பப்பட்டது</item>
+    </plurals>
+    <string name="eng_status_sms_detail_location">உங்கள் இருப்பிட இணைப்புடன்</string>
+    <string name="eng_status_sms_detail_no_location">இருப்பிடம் கிடைத்தவுடன் அனுப்பப்படும்</string>
+    <string name="eng_status_sms_failed">SMS எச்சரிக்கையை அனுப்ப முடியவில்லை</string>
+    <string name="eng_status_sms_failed_detail">SMS அனுமதியையும் சிக்னலையும் சரிபார்க்கவும்</string>
+    <string name="eng_status_sms_none">அவசரத் தொடர்புகள் இல்லை</string>
+    <string name="eng_status_sms_none_detail">அவசர அமைப்புகளில் தொடர்புகளைச் சேர்க்கவும்</string>
+
+    <string name="eng_status_call_pending">%1$s-ஐ அழைக்கிறது…</string>
+    <string name="eng_status_call_done">%1$s-ஐ அழைக்கிறது</string>
+    <string name="eng_status_call_detail">அவசர அழைப்பு செய்யப்பட்டது</string>
+    <string name="eng_status_call_failed">%1$s-ஐ அழைக்க முடியவில்லை</string>
+    <string name="eng_status_call_failed_detail">ஃபோன் அனுமதியை வழங்கவும் அல்லது அறிவிப்பிலிருந்து அழைக்கவும்</string>
+    <string name="eng_status_call_none">அழைக்கத் தொடர்பு இல்லை</string>
+
+    <string name="eng_status_location_pending">உங்கள் இருப்பிடத்தைக் கண்டறிகிறது…</string>
+    <string name="eng_status_location_done">நேரலை இருப்பிடம் பகிரப்படுகிறது</string>
+    <string name="eng_status_location_detail">ஒவ்வொரு 2 நிமி அல்லது 100 மீ-க்கு புதுப்பிக்கப்படும்</string>
+    <string name="eng_status_location_failed">இருப்பிடம் கிடைக்கவில்லை</string>
+    <string name="eng_status_location_failed_detail">இருப்பிடத்தை இயக்கி அணுகலை அனுமதிக்கவும்</string>
+
+    <string name="eng_status_siren_on">சைரன் ஒலிக்கிறது</string>
+    <string name="eng_status_siren_detail">முழு ஒலியளவில்</string>
+    <string name="eng_status_siren_off">சைரன் கிடைக்கவில்லை</string>
+
+    <plurals name="eng_status_camera_title">
+        <item quantity="one">ஆதாரம் பதிவாகிறது (%d புகைப்படம்)</item>
+        <item quantity="other">ஆதாரம் பதிவாகிறது (%d புகைப்படங்கள்)</item>
+    </plurals>
+    <string name="eng_status_camera_detail">ஒவ்வொரு 15 வி-க்கும் முன் மற்றும் பின் கேமரா</string>
+    <string name="eng_status_camera_failed">கேமரா கிடைக்கவில்லை</string>
+    <string name="eng_status_camera_failed_detail">ஆதாரம் பதிவுசெய்ய கேமரா அணுகலை அனுமதிக்கவும்</string>
+</resources>

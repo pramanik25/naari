@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nb_home_eyebrow">সমাজ</string>
+    <string name="nb_home_title">আপোনাৰ ওচৰৰ মহিলাসকলক সহায় কৰিব নেকি?</string>
+    <string name="nb_home_body">আপোনাৰ ওচৰত কোনোবাই SOS অন কৰিলে, আপুনি তেওঁৰ অৱস্থানৰ সৈতে এটা এলাৰ্ট পাব, যাতে আপুনি সহায় কৰিব পাৰে বা 112 ত কল কৰিব পাৰে। আপোনাৰ অৱস্থান কেৱল ওচৰৰ এলাৰ্টৰ সৈতে মিলাবলৈ ব্যৱহাৰ হয় আৰু কেতিয়াও কাকো দেখুওৱা নহয়।</string>
+    <string name="nb_home_yes">হয়, মই সহায় কৰিম</string>
+    <string name="nb_home_not_now">এতিয়া নহয়</string>
+    <string name="nb_home_thanks">ধন্যবাদ। ওচৰত কোনোবাক সহায় লাগিলে আপুনি এলাৰ্ট পাব।</string>
+    <string name="nb_home_thanks_offline">ধন্যবাদ। ইণ্টাৰনেট পোৱাৰ লগে লগে আপোনাক সহায়কাৰী হিচাপে পঞ্জীয়ন কৰা হ\'ব।</string>
+    <string name="nb_home_location_denied">আপোনাৰ অৱস্থান অবিহনে আমি আপোনাক ওচৰৰ এলাৰ্টৰ সৈতে মিলাব নোৱাৰো। আপুনি পিছত ক্লাউড আৰু অভিভাৱক ত এইটো অন কৰিব পাৰে।</string>
+
+    <string name="nb_mesh_title">ইণ্টাৰনেট নোহোৱাকৈও সহায় কৰিব নেকি?</string>
+    <string name="nb_mesh_body">ইণ্টাৰনেট নাথাকিলে Naari Shakti এ ওচৰৰ ফোনবোৰৰ মাজত Bluetooth ৰে SOS এলাৰ্ট পঠিয়াব পাৰে। ইয়াৰ বাবে ওচৰৰ ডিভাইচৰ অনুমতি লাগিব।</string>
+    <string name="nb_mesh_yes">অন কৰক</string>
+    <string name="nb_mesh_no">নালাগে, ধন্যবাদ</string>
+    <string name="nb_mesh_on">অফলাইন Bluetooth এলাৰ্ট অন আছে।</string>
+    <string name="nb_mesh_denied">অফলাইন Bluetooth এলাৰ্টৰ বাবে ওচৰৰ ডিভাইচৰ অনুমতি লাগিব।</string>
+
+    <string name="nb_broadcast_title">SOS ৰ সময়ত মোৰ ওচৰৰ মানুহক এলাৰ্ট কৰক</string>
+    <string name="nb_broadcast_sub">2 ৰ পৰা 5 কিঃমিঃ ভিতৰৰ সহায়কাৰীসকলে আপোনাৰ অৱস্থান আৰু ফটো পায়, যাতে তেওঁলোকে সহায় কৰিব পাৰে। আপোনাৰ অভিভাৱকসকলে সদায় এলাৰ্ট পায়।</string>
+
+    <plurals name="nb_evidence_count">
+        <item quantity="one">%dটা ফটো বা ৰেকৰ্ডিং</item>
+        <item quantity="other">%dটা ফটো আৰু ৰেকৰ্ডিং</item>
+    </plurals>
+    <string name="nb_radius_km">%1$d কিঃমিঃ ভিতৰত</string>
+    <string name="nb_view_live">লাইভ অৱস্থান আৰু প্ৰমাণ চাওক</string>
+    <string name="nb_photo_desc">তেওঁৰ SOS ৰ আটাইতকৈ নতুন ফটো</string>
+    <string name="nb_n_evidence_text">এতিয়ালৈকে %1$s। লাইভ চাবলৈ টেপ কৰক।</string>
+
+    <string name="nb_wa_section">WhatsApp এলাৰ্ট</string>
+    <string name="nb_wa_title">WhatsApp এলাৰ্ট</string>
+    <string name="nb_wa_caption">আপোনাৰ SOS, লাইভ অৱস্থান আৰু ফটো আপোনাৰ সম্পৰ্কসকলক WhatsApp ত পঠিয়াওক।</string>
+    <string name="nb_wa_explain">এলাৰ্টবোৰ Naari Shakti ৰ WhatsApp নম্বৰৰ পৰা আহে, আপোনাৰ নিজৰ WhatsApp ৰ পৰা নহয়। এলাৰ্ট পোৱাৰ আগতে প্ৰতিজন সম্পৰ্কই আপোনাৰ আমন্ত্ৰণত এবাৰ টেপ কৰি যোগদান কৰিব লাগিব।</string>
+    <string name="nb_wa_joined">যোগদান কৰিছে ✓</string>
+    <string name="nb_wa_not_joined">এতিয়াও যোগদান কৰা নাই</string>
+    <string name="nb_wa_invite">আমন্ত্ৰণ</string>
+    <string name="nb_wa_invite_cd">%1$s ক WhatsApp ত আমন্ত্ৰণ জনাওক</string>
+    <string name="nb_wa_invite_text">নমস্কাৰ, মই আপোনাক Naari Shakti ত মোৰ জৰুৰীকালীন সম্পৰ্ক হিচাপে যোগ কৰিছোঁ। WhatsApp ত মোৰ SOS এলাৰ্ট পাবলৈ এই লিংকটো খুলি বাৰ্তাটো পঠিয়াওক: %1$s</string>
+    <string name="nb_wa_invite_chooser">আমন্ত্ৰণ পঠিয়াওক</string>
+    <plurals name="nb_wa_joined_count">
+        <item quantity="one">%2$d জনৰ ভিতৰত %1$d জনে যোগদান কৰিছে</item>
+        <item quantity="other">%2$d জনৰ ভিতৰত %1$d জনে যোগদান কৰিছে</item>
+    </plurals>
+    <string name="nb_wa_empty">WhatsApp এলাৰ্ট পঠিয়াবলৈ ওপৰত জৰুৰীকালীন সম্পৰ্ক যোগ কৰক।</string>
+    <string name="nb_wa_unavailable">WhatsApp এলাৰ্ট এতিয়াও উপলব্ধ নহয়। SMS, কল আৰু Telegram এলাৰ্ট চলি থাকিব।</string>
+    <string name="nb_wa_cloud_off">WhatsApp এলাৰ্টৰ বাবে ক্লাউড ছিংক লাগে, যিটো এই ফোনত বন্ধ আছে। SMS, কল আৰু Telegram এলাৰ্ট চলি থাকিব।</string>
+    <string name="nb_wa_error">ছাৰ্ভাৰৰ সৈতে যোগাযোগ কৰিব পৰা নগ\'ল। ইণ্টাৰনেট পোৱাৰ লগে লগে আপোনাৰ সলনিবোৰ ছিংক হ\'ব।</string>
+    <string name="nb_wa_retry">পুনৰ চেষ্টা কৰক</string>
+    <string name="nb_wa_checking">কোনে যোগদান কৰিছে চোৱা হৈছে…</string>
+    <string name="nb_wa_unnamed">নাম নাই</string>
+</resources>

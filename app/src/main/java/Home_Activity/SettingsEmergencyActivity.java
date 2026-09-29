@@ -64,6 +64,8 @@ public class SettingsEmergencyActivity extends AppCompatActivity {
     private String savedSender = "";
     private String savedPassword = "";
     private boolean syncing;
+    /** WhatsApp alerts section (cloud module). */
+    private com.example.naarishakti.cloud.WhatsAppSection whatsApp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -126,12 +128,14 @@ public class SettingsEmergencyActivity extends AppCompatActivity {
         contacts.addAll(Prefs.getContacts(this));
         renderContacts();
         renderTelegram();
+        whatsApp = new com.example.naarishakti.cloud.WhatsAppSection(this, b.getRoot());
     }
 
     @Override
     protected void onResume() {
         super.onResume();
         if (!syncing) renderTelegram();
+        whatsApp.refresh();
     }
 
     // ------------------------------------------------------------------ fields
@@ -217,6 +221,7 @@ public class SettingsEmergencyActivity extends AppCompatActivity {
                 .apply();
         Prefs.setContacts(this, contacts);
         Prefs.notifyChanged(this);
+        whatsApp.onContactsChanged();
 
         savedMessage = message;
         savedRecipient = recipient;
@@ -352,6 +357,7 @@ public class SettingsEmergencyActivity extends AppCompatActivity {
     private void persistContacts() {
         Prefs.setContacts(this, contacts);
         Prefs.notifyChanged(this);
+        if (whatsApp != null) whatsApp.onContactsChanged();
     }
 
     /** Compares the last 10 digits so "+91 98765 43210" and "09876543210" are the same person. */

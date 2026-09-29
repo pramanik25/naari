@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ============================ Common ============================ -->
+    <string name="ev_cd_back">উভতি যাওক</string>
+    <string name="ev_cancel">বাতিল কৰক</string>
+    <string name="ev_delete">মচক</string>
+    <string name="ev_share_unavailable">এই ফাইলটো এতিয়াও শ্বেয়াৰ কৰিব নোৱাৰি।</string>
+    <string name="ev_no_app">ইয়াক খুলিব পৰা কোনো এপ পোৱা নগ’ল।</string>
+    <string name="ev_pdf_page">পৃষ্ঠা %1$d</string>
+    <string name="ev_pdf_confidential">ব্যক্তিগত আৰু গোপনীয়</string>
+    <string name="ev_pdf_failed">PDF বনাব পৰা নগ’ল।</string>
+    <!-- "date · time" -->
+    <string name="ev_date_time">%1$s · %2$s</string>
+    <string name="ev_dur_seconds">%1$d ছেকেণ্ড</string>
+    <string name="ev_dur_minutes">%1$d মিনিট</string>
+    <string name="ev_dur_hours">%1$d ঘণ্টা %2$d মিনিট</string>
+    <!-- "3 photos · 5 audio clips · 0 videos" -->
+    <string name="ev_counts">%1$s · %2$s · %3$s</string>
+    <!-- Source labels -->
+    <string name="ev_src_voice">মাতৰ ট্ৰিগাৰ</string>
+    <string name="ev_src_power">পাৱাৰ বুটাম</string>
+    <string name="ev_src_shake">জোকাৰণি</string>
+    <string name="ev_src_sos_button">SOS বুটাম</string>
+    <string name="ev_src_scream">চিঞৰ ধৰা পৰিল</string>
+    <string name="ev_src_fall">পৰি যোৱা ধৰা পৰিল</string>
+    <string name="ev_src_ble_button">পেনিক বুটাম</string>
+    <string name="ev_src_headset">হেডছেটৰ বুটাম</string>
+    <string name="ev_src_checkin">চেক-ইন নহ’ল</string>
+    <string name="ev_src_duress">বিপদ PIN</string>
+    <string name="ev_src_volume">ভলিউম বুটাম</string>
+    <string name="ev_src_geofence">সুৰক্ষিত অঞ্চলৰ সতৰ্কবাৰ্তা</string>
+    <string name="ev_src_unknown">SOS</string>
+
+    <!-- ============================ Incidents ============================ -->
+    <string name="ev_inc_overline">প্ৰমাণ ভল্ট</string>
+    <string name="ev_inc_title">ঘটনাৰ ইতিহাস</string>
+    <string name="ev_inc_body">প্ৰতিটো SOS ইয়াত তাৰ ফটো, অডিঅ’ আৰু ভিডিঅ’সহ ৰখা হয়। প্ৰতিটো ফাইলত এটা SHA-256 ফিংগাৰপ্ৰিণ্ট থাকে, যিয়ে দেখুৱায় যে ফাইলটো সলনি কৰা হোৱা নাই।</string>
+    <string name="ev_inc_empty_title">এতিয়ালৈকে কোনো ঘটনা নাই</string>
+    <string name="ev_inc_empty_body">SOS আৰম্ভ হ’লে, সেই সময়ত ৰেকৰ্ড হোৱা প্ৰমাণ ইয়াত দেখা যাব।</string>
+    <string name="ev_inc_load_error">ঘটনাৰ ইতিহাস ল’ড কৰিব পৰা নগ’ল।</string>
+    <string name="ev_inc_in_progress">চলি আছে</string>
+    <string name="ev_inc_duration_unknown">সময়সীমা অজ্ঞাত</string>
+    <string name="ev_inc_meta">%1$s · %2$s</string>
+    <string name="ev_chip_silent">নিঃশব্দ</string>
+    <string name="ev_chip_duress">বিপদ</string>
+    <plurals name="ev_count_photos">
+        <item quantity="one">%d খন ফটো</item>
+        <item quantity="other">%d খন ফটো</item>
+    </plurals>
+    <plurals name="ev_count_audio">
+        <item quantity="one">%d টা অডিঅ’ ক্লিপ</item>
+        <item quantity="other">%d টা অডিঅ’ ক্লিপ</item>
+    </plurals>
+    <plurals name="ev_count_videos">
+        <item quantity="one">%d টা ভিডিঅ’</item>
+        <item quantity="other">%d টা ভিডিঅ’</item>
+    </plurals>
+    <plurals name="ev_inc_count">
+        <item quantity="one">%d টা ঘটনা</item>
+        <item quantity="other">%d টা ঘটনা</item>
+    </plurals>
+    <string name="ev_upload_status">%2$d-ৰ %1$d টা আপল’ড হ’ল · %3$d টা সত্যাপিত ✓</string>
+    <string name="ev_upload_local">%1$d টা ফাইল · এই ফোনতে ৰখা</string>
+    <string name="ev_upload_none">কোনো প্ৰমাণ ফাইল নাই</string>
+    <string name="ev_action_export">এক্সপ’ৰ্ট</string>
+    <string name="ev_action_complaint">অভিযোগ</string>
+    <string name="ev_action_delete">মচক</string>
+    <string name="ev_cd_expand">প্ৰমাণ দেখুৱাওক</string>
+    <string name="ev_cd_collapse">প্ৰমাণ লুকুৱাওক</string>
+    <string name="ev_delete_title">এই ঘটনাটো মচিব নেকি?</string>
+    <string name="ev_delete_body">ইয়াৰ ফলত এই ফোনৰ পৰা %1$d টা প্ৰমাণ ফাইল চিৰদিনৰ বাবে মচ খাব। ছাৰ্ভাৰত আগতে আপল’ড হোৱা কপিৰ একো নহয়।</string>
+    <string name="ev_delete_active">এই SOS এতিয়াও চলি আছে। মচাৰ আগতে ইয়াক ৰখাওক।</string>
+    <string name="ev_deleted">ঘটনা মচি পেলোৱা হ’ল</string>
+    <string name="ev_exporting">প্ৰমাণৰ পেকেজ সাজু কৰা হৈছে…</string>
+    <string name="ev_export_failed">প্ৰমাণৰ পেকেজ বনাব পৰা নগ’ল।</string>
+    <string name="ev_export_empty">এই ঘটনাত এক্সপ’ৰ্ট কৰিবলৈ কোনো ফাইল নাই।</string>
+    <string name="ev_export_chooser">প্ৰমাণৰ পেকেজ শ্বেয়াৰ কৰক</string>
+    <string name="ev_export_subject">Naari Shakti প্ৰমাণৰ পেকেজ</string>
+    <string name="ev_kind_photo">ফটো</string>
+    <string name="ev_kind_audio">অডিঅ’ ক্লিপ</string>
+    <string name="ev_kind_video">ভিডিঅ’</string>
+    <string name="ev_item_title">%1$s · %2$s</string>
+    <string name="ev_hash_short">SHA-256 %1$s…</string>
+    <string name="ev_hash_copied">সম্পূৰ্ণ SHA-256 কপি হ’ল</string>
+    <string name="ev_hash_label">SHA-256</string>
+    <string name="ev_cd_copy_hash">সম্পূৰ্ণ SHA-256 কপি কৰক</string>
+    <string name="ev_cd_play">চলাওক</string>
+    <string name="ev_cd_pause">ৰখাওক</string>
+    <string name="ev_item_verified">আপল’ড হ’ল · সত্যাপিত</string>
+    <string name="ev_item_unverified">আপল’ড হ’ল · সত্যাপিত নহয়</string>
+    <string name="ev_item_pending">আপল’ডৰ অপেক্ষাত</string>
+    <string name="ev_item_local">এই ফোনত আছে</string>
+    <string name="ev_item_missing">ফাইল পোৱা নাই</string>
+    <string name="ev_play_failed">এই ক্লিপটো চলাব পৰা নগ’ল।</string>
+    <string name="ev_no_items">এই ঘটনাত কোনো ফাইল ৰেকৰ্ড হোৱা নাই।</string>
+
+    <!-- ============================ Diary ============================ -->
+    <string name="ev_diary_overline">ব্যক্তিগত জাৰ্নেল</string>
+    <string name="ev_diary_title">ঘটনাৰ ডায়েৰী</string>
+    <string name="ev_diary_body">যি ঘটিছে, ঘটাৰ লগে লগে লিখি ৰাখক। টোকাবোৰ এই ফোনত এনক্ৰিপ্ট কৰি ৰখা হয়, আৰু উকীল বা পুলিচৰ বাবে PDF হিচাপে এক্সপ’ৰ্ট কৰিব পাৰি।</string>
+    <string name="ev_diary_empty_title">আপোনাৰ ডায়েৰী খালী</string>
+    <string name="ev_diary_empty_body">সেই সময়তে তাৰিখসহ লিখা টোকা পিছত গুৰুত্বপূৰ্ণ হৈ পৰে। আপোনাৰ প্ৰথম টোকাটো যোগ কৰক।</string>
+    <string name="ev_diary_add">নতুন টোকা</string>
+    <string name="ev_diary_export">PDF এক্সপ’ৰ্ট কৰক</string>
+    <string name="ev_diary_pin_title">আপোনাৰ ডায়েৰী আনলক কৰক</string>
+    <string name="ev_diary_locked_title">ডায়েৰী লক কৰা আছে</string>
+    <string name="ev_diary_locked_body">খুলিবলৈ আপোনাৰ এপ PIN দিয়ক।</string>
+    <string name="ev_diary_unlock">আনলক কৰক</string>
+    <string name="ev_diary_load_error">এই ফোনত ডায়েৰী খুলিব পৰা নগ’ল।</string>
+    <string name="ev_diary_save_error">টোকাটো ছেভ কৰিব পৰা নগ’ল।</string>
+    <string name="ev_diary_new_title">নতুন টোকা</string>
+    <string name="ev_diary_edit_title">টোকা সম্পাদনা কৰক</string>
+    <string name="ev_diary_field_title">শিৰোনাম</string>
+    <string name="ev_diary_field_body">কি ঘটিছিল</string>
+    <string name="ev_diary_field_location">ঠাই (ঐচ্ছিক)</string>
+    <string name="ev_diary_when">কেতিয়া</string>
+    <string name="ev_diary_use_location">মোৰ অৱস্থান ব্যৱহাৰ কৰক</string>
+    <string name="ev_diary_attach">ফটো যোগ কৰক</string>
+    <string name="ev_diary_replace_photo">ফটো সলনি কৰক</string>
+    <string name="ev_diary_remove_photo">ফটো আঁতৰাওক</string>
+    <string name="ev_diary_save">ছেভ কৰক</string>
+    <string name="ev_diary_edit">সম্পাদনা কৰক</string>
+    <string name="ev_diary_title_required">এটা চুটি শিৰোনাম দিয়ক</string>
+    <string name="ev_diary_delete_title">এই টোকাটো মচিব নেকি?</string>
+    <string name="ev_diary_delete_body">টোকা আৰু ইয়াৰ ফটো এই ফোনৰ পৰা মচ খাব, পুনৰ ঘূৰাই আনিব নোৱাৰি।</string>
+    <string name="ev_diary_deleted">টোকা মচি পেলোৱা হ’ল</string>
+    <string name="ev_diary_saved">টোকা ছেভ হ’ল</string>
+    <string name="ev_diary_no_location">এই ফোনত শেহতীয়া কোনো অৱস্থান নাই। ঠাইৰ নাম লিখি দিয়ক।</string>
+    <string name="ev_diary_photo_error">ফটোখন যোগ কৰিব পৰা নগ’ল।</string>
+    <string name="ev_diary_photo_too_big">ফটোখন বহুত ডাঙৰ (সৰ্বাধিক 25 MB)।</string>
+    <string name="ev_diary_pdf_subtitle">এক্সপ’ৰ্ট: %1$s · %2$d টা টোকা</string>
+    <string name="ev_diary_pdf_chooser">ডায়েৰীৰ PDF শ্বেয়াৰ কৰক</string>
+    <string name="ev_diary_pdf_empty">এক্সপ’ৰ্ট কৰিবলৈ এতিয়াও একো নাই।</string>
+    <string name="ev_diary_pdf_location">ঠাই: %1$s</string>
+    <string name="ev_diary_pdf_written">লিখা হৈছে %1$s</string>
+    <string name="ev_diary_untitled">শিৰোনাম নাই</string>
+    <string name="ev_diary_photo_attached">ফটো যোগ কৰা হ’ল</string>
+    <string name="ev_cd_diary_photo">যোগ কৰা ফটো</string>
+
+    <!-- ============================ Complaint ============================ -->
+    <string name="ev_cmp_overline">অভিযোগৰ খচৰা</string>
+    <string name="ev_cmp_title">অভিযোগৰ খচৰা প্ৰস্তুত কৰক</string>
+    <string name="ev_cmp_body">আপোনাৰ প্ৰফাইল আৰু ঘটনাৰ ৰেকৰ্ডৰ পৰা প্ৰস্তুত কৰা এখন আনুষ্ঠানিক খচৰা। ব্যৱহাৰ কৰাৰ আগতে যিকোনো কথা সলনি কৰিব পাৰে।</string>
+    <string name="ev_cmp_label_to">কাক উদ্দেশ্য কৰি</string>
+    <string name="ev_cmp_label_lang">ভাষা</string>
+    <string name="ev_cmp_to_sho">আৰক্ষী (থানাৰ ভাৰপ্ৰাপ্ত বিষয়া, SHO)</string>
+    <string name="ev_cmp_to_ncw">মহিলা আয়োগ (NCW)</string>
+    <string name="ev_cmp_draft_hint">অভিযোগ</string>
+    <string name="ev_cmp_section_use">ব্যৱহাৰ কৰক</string>
+    <string name="ev_cmp_section_file">দাখিল কৰক</string>
+    <string name="ev_cmp_copy">কপি কৰক</string>
+    <string name="ev_cmp_share">শ্বেয়াৰ কৰক</string>
+    <string name="ev_cmp_pdf">PDF হিচাপে ছেভ কৰক</string>
+    <string name="ev_cmp_ncw">NCW-ত অনলাইন অভিযোগ</string>
+    <string name="ev_cmp_ncw_body">ৰাষ্ট্ৰীয় মহিলা আয়োগ</string>
+    <string name="ev_cmp_cyber">cybercrime.gov.in</string>
+    <string name="ev_cmp_cyber_body">অনলাইন হাৰাশাস্তি, পিছে পিছে অনুসৰণ বা বিকৃত ফটোৰ বাবে</string>
+    <string name="ev_cmp_call">112-ত কল কৰক</string>
+    <string name="ev_cmp_call_body">জৰুৰী সহায়, যিকোনো সময়ত</string>
+    <string name="ev_cmp_copied">অভিযোগ কপি হ’ল</string>
+    <string name="ev_cmp_share_chooser">অভিযোগ শ্বেয়াৰ কৰক</string>
+    <string name="ev_cmp_pdf_chooser">অভিযোগৰ PDF ছেভ বা শ্বেয়াৰ কৰক</string>
+    <string name="ev_cmp_replace_title">আপোনাৰ সলনিবোৰ বাদ যাব নেকি?</string>
+    <string name="ev_cmp_replace_body">ইয়াক সলনি কৰিলে খচৰাখন নতুনকৈ প্ৰস্তুত হ’ব আৰু আপুনি কৰা সলনিবোৰ হেৰাই যাব।</string>
+    <string name="ev_cmp_replace">নতুনকৈ প্ৰস্তুত কৰক</string>
+    <string name="ev_cmp_note_title">আপোনাক সহায় কৰিবলৈ এখন খচৰা, আইনী পৰামৰ্শ নহয়</string>
+    <string name="ev_cmp_note_body">সম্পূৰ্ণকৈ পঢ়ি লওক আৰু যি শুদ্ধ নহয় সলনি কৰক। ঘটনা য’তেই নঘটক, আপুনি যিকোনো থানাত জিৰো FIR দাখিল কৰিব পাৰে; আৰক্ষীয়ে ইয়াক পঞ্জীয়ন কৰি সঠিক থানালৈ পঠিয়াবলৈ বাধ্য। আপোনাৰ FIR-ৰ এটা বিনামূলীয়া কপি বিচাৰি লওক।</string>
+    <string name="ev_cmp_incident_none">কোনো ঘটনা বাছনি কৰা নাই: তাৰিখ, সময় আৰু ঠাই নিজে লিখি দিয়ক।</string>
+    <string name="ev_cmp_incident_from">%1$s তাৰিখৰ ঘটনাৰ ভিত্তিত</string>
+    <string name="ev_cmp_pdf_title">অভিযোগ</string>
+</resources>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ===================== Notification channels ===================== -->
+    <string name="cl_channel_guardian">অভিভাৱক সতৰ্কবাৰ্তা</string>
+    <string name="cl_channel_guardian_desc">আপুনি সুৰক্ষা দিয়া লোকসকলৰ SOS সতৰ্কবাৰ্তা। এলাৰ্মৰ দৰে বাজে।</string>
+    <string name="cl_channel_helper">ওচৰৰ সহায়কাৰী সতৰ্কবাৰ্তা</string>
+    <string name="cl_channel_helper_desc">2 কিঃমিঃৰ ভিতৰত কোনোবাক সহায় লাগে। কেৱল আপুনি ওচৰৰ সহায়কাৰী হিচাপে যোগ দিলেহে।</string>
+    <string name="cl_channel_cloud">ক্লাউড আপডেট</string>
+    <string name="cl_channel_cloud_desc">সহায়কাৰী আহি আছে, SOS শেষ হ’ল আৰু আগৰ সতৰ্কবাৰ্তা।</string>
+
+    <!-- ===================== Notifications ===================== -->
+    <string name="cl_n_someone">আপুনি সুৰক্ষা দিয়া কোনোবা</string>
+    <string name="cl_n_sos_title">%1$s-ক সহায় লাগে</string>
+    <string name="cl_n_sos_text">SOS আৰম্ভ হৈছে। তেওঁৰ লাইভ অৱস্থান চাবলৈ টেপ কৰক।</string>
+    <string name="cl_n_duress_title">%1$s হয়তো এতিয়াও বিপদত আছে</string>
+    <string name="cl_n_duress_text">হয়তো তেওঁক জোৰকৈ SOS বাতিল কৰোৱা হৈছে। তেওঁৰ লাইভ অৱস্থান চাই থাকক।</string>
+    <string name="cl_n_overdue_title">%1$s-এ চেক-ইন কৰা নাই</string>
+    <string name="cl_n_overdue_text">তেওঁ সময়মতে সুৰক্ষিত বুলি নজনালে। শেষ অৱস্থান চাবলৈ টেপ কৰক।</string>
+    <string name="cl_n_overdue_text_note">“%1$s”: তেওঁ সময়মতে সুৰক্ষিত বুলি নজনালে। শেষ অৱস্থান চাবলৈ টেপ কৰক।</string>
+    <string name="cl_n_ended_title">%1$s এতিয়া সুৰক্ষিত</string>
+    <string name="cl_n_ended_text">SOS শেষ হ’ল।</string>
+    <string name="cl_n_responder_title">ওচৰৰ এজন সহায়কাৰী আহি আছে</string>
+    <string name="cl_n_responder_text">%1$s %2$s দূৰত আছে।</string>
+    <string name="cl_n_responder_text_nodist">%1$s আহি আছে।</string>
+    <string name="cl_n_responder_someone">এজন স্বেচ্ছাসেৱক</string>
+    <string name="cl_n_helper_title">ওচৰৰ কোনোবাক সহায় লাগে</string>
+    <string name="cl_n_helper_text">আপোনাৰ পৰা %1$s দূৰত। সঁহাৰি দিবলৈ টেপ কৰক। প্ৰথমে 112-ত কল কৰক।</string>
+    <string name="cl_n_helper_text_nodist">আপোনাৰ ওচৰতে। সঁহাৰি দিবলৈ টেপ কৰক। প্ৰথমে 112-ত কল কৰক।</string>
+    <string name="cl_n_earlier">আগৰ সতৰ্কবাৰ্তা</string>
+    <string name="cl_action_open_tracking">লাইভ ট্ৰেকিং খোলক</string>
+    <string name="cl_action_respond">সঁহাৰি দিয়ক</string>
+
+    <!-- Distances -->
+    <string name="cl_distance_m">%1$d মিঃ</string>
+    <string name="cl_distance_km">%1$s কিঃমিঃ</string>
+    <string name="cl_distance_away">প্ৰায় %1$s দূৰত</string>
+
+    <!-- ===================== Helper alert screen ===================== -->
+    <string name="cl_helper_eyebrow">ওচৰত SOS</string>
+    <string name="cl_helper_title">ওচৰৰ কোনোবাক সহায় লাগে</string>
+    <string name="cl_helper_subtitle">আপোনাৰ ওচৰৰ এগৰাকী Naari Shakti ব্যৱহাৰকাৰীয়ে SOS আৰম্ভ কৰিছে।</string>
+    <string name="cl_helper_distance_unknown">আপোনাৰ ওচৰতে</string>
+    <string name="cl_helper_safety">নিজকে বিপদত নেপেলাব। প্ৰথমে 112-ত কল কৰক।</string>
+    <string name="cl_helper_safety_detail">মানুহৰ চকুৰ সন্মুখত থাকক, ফোনটো লগত ৰাখক আৰু পুলিচক আগবাঢ়িবলৈ দিয়ক।</string>
+    <string name="cl_helper_going">মই গৈ আছোঁ</string>
+    <string name="cl_helper_call">112-ত কল কৰক</string>
+    <string name="cl_helper_dismiss">আঁতৰাওক</string>
+    <string name="cl_helper_sending">আপুনি আহি আছে বুলি তেওঁক জনোৱা হৈছে…</string>
+    <string name="cl_helper_sent">আপুনি আহি আছে বুলি তেওঁ আৰু তেওঁৰ অভিভাৱকসকলে জানে।</string>
+    <string name="cl_helper_send_failed">ছাৰ্ভাৰৰ লগত সংযোগ হ’ব নোৱাৰিলে। তথাপি পথ দেখুওৱা হৈছে।</string>
+    <string name="cl_helper_no_location">আপোনাৰ অৱস্থান পোৱা নগ’ল। তথাপি পথ দেখুওৱা হৈছে।</string>
+    <string name="cl_helper_ended_title">তেওঁ এতিয়া সুৰক্ষিত</string>
+    <string name="cl_helper_ended">তেওঁক সুৰক্ষিত বুলি চিহ্নিত কৰা হৈছে। সহায়ৰ বাবে সাজু থকাৰ বাবে ধন্যবাদ।</string>
+    <string name="cl_helper_map_desc">ক’ত সহায় লাগে দেখুওৱা মেপ</string>
+    <string name="cl_helper_her_location">ইয়াত সহায় লাগে</string>
+    <string name="cl_no_app">এই ফোনত ইয়াক খুলিব পৰা কোনো এপ নাই।</string>
+
+    <!-- ===================== Cloud & guardians screen ===================== -->
+    <string name="cl_back">উভতি যাওক</string>
+    <string name="cl_settings_eyebrow">ক্লাউড</string>
+    <string name="cl_settings_title">ক্লাউড আৰু অভিভাৱক</string>
+    <string name="cl_settings_desc">SMS নগ’লেও অভিভাৱকসকলে তৎক্ষণাত আপোনাৰ SOS পায়, লগতে লাইভ অৱস্থান আৰু প্ৰমাণ।</string>
+
+    <string name="cl_error_offline">আপুনি অফলাইন আছে। এই ফোনত ছেভ কৰি ৰখা তথ্য দেখুওৱা হৈছে।</string>
+    <string name="cl_error_server">Naari Shakti ছাৰ্ভাৰৰ লগত সংযোগ হ’ব নোৱাৰিলে।</string>
+    <string name="cl_error_generic">কিবা সমস্যা হ’ল (ত্ৰুটি %1$d)। পুনৰ চেষ্টা কৰক।</string>
+    <string name="cl_retry">পুনৰ চেষ্টা কৰক</string>
+
+    <string name="cl_off_title">ক্লাউড ছিংক অফ আছে</string>
+    <string name="cl_off_caption_unconfigured">এপৰ এই সংস্কৰণত কোনো ছাৰ্ভাৰ ছেট কৰা নাই, সেয়েহে অভিভাৱক, লাইভ ট্ৰেকিং আৰু ওচৰৰ সহায়কাৰী উপলব্ধ নহয়। SMS সতৰ্কবাৰ্তা তথাপি কাম কৰে।</string>
+    <string name="cl_off_caption_deleted">আপুনি আপোনাৰ ক্লাউড ডেটা মচি পেলাইছে। অভিভাৱকসকলৰ লগত পুনৰ SOS শ্বেয়াৰ কৰিবলৈ ক্লাউড ছিংক অন কৰক।</string>
+    <string name="cl_enable_cloud">ক্লাউড ছিংক পুনৰ অন কৰক</string>
+
+    <string name="cl_section_status">স্থিতি</string>
+    <string name="cl_status_server">ছাৰ্ভাৰ</string>
+    <string name="cl_status_account">একাউণ্ট</string>
+    <string name="cl_status_pending">বাকী থকা আপল’ড</string>
+    <string name="cl_status_checking">পৰীক্ষা কৰা হৈছে…</string>
+    <string name="cl_status_reachable">সংযোগ আছে</string>
+    <string name="cl_status_unreachable">সংযোগ নাই</string>
+    <string name="cl_status_registered">পঞ্জীয়নভুক্ত</string>
+    <string name="cl_status_not_registered">পঞ্জীয়নভুক্ত নহয়</string>
+    <string name="cl_status_unknown">অজ্ঞাত</string>
+    <plurals name="cl_pending_items">
+        <item quantity="one">%d টা বস্তু</item>
+        <item quantity="other">%d টা বস্তু</item>
+    </plurals>
+
+    <string name="cl_section_code">আপোনাৰ অভিভাৱক ক’ড</string>
+    <string name="cl_code_caption">যিসকলক বিশ্বাস কৰে, তেওঁলোকৰ লগত এই ক’ড শ্বেয়াৰ কৰক। তেওঁলোকে নিজৰ Naari Shakti এপত ইয়াক দিলে আপোনাৰ SOS সতৰ্কবাৰ্তা পাব।</string>
+    <string name="cl_copy">কপি কৰক</string>
+    <string name="cl_share">শ্বেয়াৰ কৰক</string>
+    <string name="cl_copied">ক’ড কপি হ’ল</string>
+    <string name="cl_share_text">Naari Shakti ইনষ্টল কৰি মোৰ ক’ড %1$s দিয়ক, তেতিয়া মোৰ SOS সতৰ্কবাৰ্তা পাব</string>
+    <string name="cl_share_chooser">আপোনাৰ অভিভাৱক ক’ড শ্বেয়াৰ কৰক</string>
+
+    <string name="cl_section_link">কাৰোবাৰ অভিভাৱক হওক</string>
+    <string name="cl_link_caption">তেওঁৰ SOS সতৰ্কবাৰ্তা পাবলৈ তেওঁৰ এপৰ 6 আখৰৰ ক’ডটো দিয়ক।</string>
+    <string name="cl_link_hint">অভিভাৱক ক’ড</string>
+    <string name="cl_link_button">সংযোগ কৰক</string>
+    <string name="cl_link_success">আপুনি এতিয়া %1$s-ৰ অভিভাৱক</string>
+    <string name="cl_link_err_invalid">এই ক’ড কাৰো লগত নিমিলিল। চাই লৈ পুনৰ চেষ্টা কৰক।</string>
+    <string name="cl_link_err_self">এইটো আপোনাৰ নিজৰ ক’ড।</string>
+    <string name="cl_link_err_limit">বহুবাৰ ভুল ক’ড দিয়া হ’ল। এঘণ্টা পিছত পুনৰ চেষ্টা কৰক।</string>
+    <string name="cl_link_err_length">ক’ড 6টা আখৰ আৰু সংখ্যাৰে গঠিত।</string>
+
+    <string name="cl_section_guardians">যিসকলে আপোনাক সুৰক্ষা দিয়ে</string>
+    <string name="cl_guardians_empty">এতিয়ালৈকে কোনো অভিভাৱক নাই। ওপৰৰ ক’ডটো শ্বেয়াৰ কৰক।</string>
+    <string name="cl_section_guarding">আপুনি সুৰক্ষা দিয়া লোকসকল</string>
+    <string name="cl_guarding_empty">আপুনি এতিয়ালৈকে কাৰো অভিভাৱক হোৱা নাই।</string>
+    <string name="cl_linked_on">সংযোগ হৈছে %1$s</string>
+    <string name="cl_unnamed">নাম নাই</string>
+    <string name="cl_remove">আঁতৰাওক</string>
+    <string name="cl_remove_person">%1$s-ক আঁতৰাওক</string>
+    <string name="cl_remove_title">%1$s-ক আঁতৰাব নেকি?</string>
+    <string name="cl_remove_guardian_msg">%1$s-এ আৰু আপোনাৰ SOS সতৰ্কবাৰ্তা নাপাব।</string>
+    <string name="cl_remove_guarding_msg">আপুনি আৰু %1$s-ৰ SOS সতৰ্কবাৰ্তা নাপাব।</string>
+    <string name="cl_cancel">বাতিল কৰক</string>
+
+    <string name="cl_section_helper">ওচৰৰ সহায়কাৰী</string>
+    <string name="cl_helper_switch_title">ওচৰৰ সহায়কাৰী হিচাপে যোগ দিয়ক</string>
+    <string name="cl_helper_switch_caption">2 কিঃমিঃৰ ভিতৰত কোনোবাক সহায় লাগিলে সতৰ্কবাৰ্তা পাওক। সুৰক্ষা অন থাকিলে বা এপ খোলা থাকিলে কাম কৰে।</string>
+    <string name="cl_helper_dialog_title">ওচৰৰ সহায়কাৰী হ’ব নেকি?</string>
+    <string name="cl_helper_dialog_msg">2 কিঃমিঃৰ ভিতৰত কোনোবাই SOS আৰম্ভ কৰিলে আপুনি সতৰ্কবাৰ্তা পাব। আপোনাৰ অৱস্থান কেৱল মিলোৱাৰ কামত ব্যৱহাৰ হয়, আনক কেতিয়াও দেখুওৱা নহয়।</string>
+    <string name="cl_helper_dialog_ok">অন কৰক</string>
+    <string name="cl_helper_perm_denied">ওচৰৰ মানুহৰ লগত আপোনাক মিলাবলৈ অৱস্থানৰ অনুমতি প্ৰয়োজন।</string>
+    <string name="cl_helper_enabled">আপুনি এতিয়া ওচৰৰ সহায়কাৰী।</string>
+    <string name="cl_helper_saved_offline">ছেভ হ’ল। পুনৰ অনলাইন হ’লে আপোনাৰ অৱস্থান ছিংক হ’ব।</string>
+
+    <string name="cl_section_delete">মোৰ ক্লাউড ডেটা মচক</string>
+    <string name="cl_delete_caption">ছাৰ্ভাৰৰ পৰা আপোনাৰ একাউণ্ট, ঘটনা, প্ৰমাণ আৰু অভিভাৱক-সংযোগ মচি পেলায়। এই ফোনৰ পৰা সতৰ্কবাৰ্তা (SMS, কল) চলি থাকিব।</string>
+    <string name="cl_delete_button">মোৰ ক্লাউড ডেটা মচক</string>
+    <string name="cl_delete_title">আপোনাৰ ক্লাউড ডেটা মচিব নেকি?</string>
+    <string name="cl_delete_msg">ইয়াৰ ফলত ছাৰ্ভাৰৰ পৰা আপোনাৰ একাউণ্ট, ঘটনা, আপল’ড কৰা প্ৰমাণ আৰু অভিভাৱক-সংযোগ চিৰদিনৰ বাবে মচ খাব। পুনৰ ঘূৰাই আনিব নোৱাৰি।</string>
+    <string name="cl_delete_confirm">মচক</string>
+    <string name="cl_deleted">আপোনাৰ ক্লাউড ডেটা মচি পেলোৱা হ’ল।</string>
+</resources>

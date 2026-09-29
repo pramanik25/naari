@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nb_home_eyebrow">کمیونٹی</string>
+    <string name="nb_home_title">کیا آپ اپنے آس پاس کی خواتین کی مدد کریں گی؟</string>
+    <string name="nb_home_body">جب آپ کے آس پاس کوئی SOS چالو کرے گی تو آپ کو اس کی لوکیشن کے ساتھ الرٹ ملے گا، تاکہ آپ مدد کر سکیں یا 112 پر کال کر سکیں۔ آپ کی لوکیشن صرف آس پاس کے الرٹس سے ملانے کے لیے استعمال ہوتی ہے اور کبھی کسی کو نہیں دکھائی جاتی۔</string>
+    <string name="nb_home_yes">ہاں، میں مدد کروں گی</string>
+    <string name="nb_home_not_now">ابھی نہیں</string>
+    <string name="nb_home_thanks">شکریہ۔ آس پاس کسی کو مدد چاہیے ہوگی تو آپ کو الرٹ ملے گا۔</string>
+    <string name="nb_home_thanks_offline">شکریہ۔ انٹرنیٹ ملتے ہی آپ کو مددگار کے طور پر شامل کر لیا جائے گا۔</string>
+    <string name="nb_home_location_denied">آپ کی لوکیشن کے بغیر ہم آپ کو آس پاس کے الرٹس سے نہیں ملا سکتے۔ آپ اسے بعد میں کلاؤڈ &amp; سرپرست میں چالو کر سکتی ہیں۔</string>
+
+    <string name="nb_mesh_title">کیا انٹرنیٹ کے بغیر بھی مدد کریں گی؟</string>
+    <string name="nb_mesh_body">انٹرنیٹ نہ ہونے پر Naari Shakti آس پاس کے فونز کے درمیان Bluetooth کے ذریعے SOS الرٹ پہنچا سکتا ہے۔ اس کے لیے آس پاس کے آلات کی اجازت چاہیے۔</string>
+    <string name="nb_mesh_yes">آن کریں</string>
+    <string name="nb_mesh_no">نہیں، شکریہ</string>
+    <string name="nb_mesh_on">آف لائن Bluetooth الرٹس آن ہیں۔</string>
+    <string name="nb_mesh_denied">آف لائن Bluetooth الرٹس کے لیے آس پاس کے آلات کی اجازت چاہیے۔</string>
+
+    <string name="nb_broadcast_title">SOS کے دوران میرے آس پاس کے لوگوں کو الرٹ کریں</string>
+    <string name="nb_broadcast_sub">2 سے 5 کلومیٹر کے اندر کے مددگاروں کو آپ کی لوکیشن اور تصاویر ملتی ہیں، تاکہ وہ مدد کر سکیں۔ آپ کے سرپرستوں کو ہمیشہ الرٹ ملتا ہے۔</string>
+
+    <plurals name="nb_evidence_count">
+        <item quantity="one">%d تصویر یا ریکارڈنگ</item>
+        <item quantity="other">%d تصاویر اور ریکارڈنگز</item>
+    </plurals>
+    <string name="nb_radius_km">%1$d کلومیٹر کے اندر</string>
+    <string name="nb_view_live">لائیو لوکیشن اور ثبوت دیکھیں</string>
+    <string name="nb_photo_desc">اس کے SOS کی تازہ ترین تصویر</string>
+    <string name="nb_n_evidence_text">اب تک %1$s۔ لائیو دیکھنے کے لیے ٹیپ کریں۔</string>
+
+    <string name="nb_wa_section">WhatsApp الرٹس</string>
+    <string name="nb_wa_title">WhatsApp الرٹس</string>
+    <string name="nb_wa_caption">اپنا SOS، لائیو لوکیشن اور تصاویر اپنے رابطوں کو WhatsApp پر بھیجیں۔</string>
+    <string name="nb_wa_explain">الرٹس Naari Shakti کے WhatsApp نمبر سے آتے ہیں، آپ کے اپنے WhatsApp سے نہیں۔ الرٹس ملنے سے پہلے ہر رابطے کو آپ کی دعوت پر ایک بار ٹیپ کر کے شامل ہونا ہوگا۔</string>
+    <string name="nb_wa_joined">شامل ہو گئے ✓</string>
+    <string name="nb_wa_not_joined">ابھی شامل نہیں ہوئے</string>
+    <string name="nb_wa_invite">دعوت دیں</string>
+    <string name="nb_wa_invite_cd">%1$s کو WhatsApp پر دعوت دیں</string>
+    <string name="nb_wa_invite_text">السلام علیکم، میں نے آپ کو Naari Shakti میں اپنے ہنگامی رابطے کے طور پر شامل کیا ہے۔ WhatsApp پر میرے SOS الرٹس پانے کے لیے یہ لنک کھولیں اور پیغام بھیجیں: %1$s</string>
+    <string name="nb_wa_invite_chooser">دعوت بھیجیں</string>
+    <plurals name="nb_wa_joined_count">
+        <item quantity="one">%2$d میں سے %1$d رابطہ شامل ہوا ہے</item>
+        <item quantity="other">%2$d میں سے %1$d رابطے شامل ہوئے ہیں</item>
+    </plurals>
+    <string name="nb_wa_empty">WhatsApp الرٹس بھیجنے کے لیے اوپر ہنگامی رابطے شامل کریں۔</string>
+    <string name="nb_wa_unavailable">WhatsApp الرٹس ابھی دستیاب نہیں ہیں۔ SMS، کالز اور Telegram الرٹس کام کرتے رہیں گے۔</string>
+    <string name="nb_wa_cloud_off">WhatsApp الرٹس کے لیے کلاؤڈ سنک چاہیے، جو اس فون پر بند ہے۔ SMS، کالز اور Telegram الرٹس کام کرتے رہیں گے۔</string>
+    <string name="nb_wa_error">سرور سے رابطہ نہیں ہو سکا۔ انٹرنیٹ ملتے ہی آپ کی تبدیلیاں سنک ہو جائیں گی۔</string>
+    <string name="nb_wa_retry">دوبارہ کوشش کریں</string>
+    <string name="nb_wa_checking">دیکھ رہے ہیں کہ کون شامل ہوا ہے…</string>
+    <string name="nb_wa_unnamed">بے نام</string>
+</resources>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Bottom sheet: schedule a fake incoming call. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/ns_gutter"
+    android:paddingTop="8dp"
+    android:paddingEnd="@dimen/ns_gutter"
+    android:paddingBottom="28dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/jr_fake_eyebrow"
+        android:textAppearance="@style/Ns.Text.Overline" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/jr_fake_title"
+        android:textAppearance="@style/Ns.Text.Title" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/jr_fake_body"
+        android:textAppearance="@style/Ns.Text.Body" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nameLayout"
+        style="@style/Ns.TextInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/jr_fake_name_hint"
+        app:startIconDrawable="@drawable/ua_ic_person">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName|textCapWords"
+            android:maxLength="40"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/jr_fake_delay_label"
+        android:textAppearance="@style/Ns.Text.Caption" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/delayChips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:selectionRequired="true"
+        app:singleSelection="true">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip5s"
+            style="@style/Ns.Chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jr_fake_5s" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip30s"
+            style="@style/Ns.Chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jr_fake_30s" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip1m"
+            style="@style/Ns.Chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jr_fake_1m" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip5m"
+            style="@style/Ns.Chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jr_fake_5m" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/scheduleButton"
+        style="@style/Ns.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/jr_fake_schedule"
+        app:icon="@drawable/ua_ic_phone" />
+</LinearLayout>

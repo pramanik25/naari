@@ -29,7 +29,21 @@
          can also be launched while another app is in the foreground. -->
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
-    <!-- Photos go to app-specific storage (no permission needed on API 19+); kept only for old devices. -->
+    <!-- Call escalation (detect unanswered calls) and SIM-change alerts. -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- BLE panic button + offline mesh SOS (Nearby Connections). -->
+    <uses-permission
+        android:name="android.permission.BLUETOOTH"
+        android:maxSdkVersion="30" />
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_ADMIN"
+        android:maxSdkVersion="30" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.NEARBY_WIFI_DEVICES" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />    <!-- Photos go to app-specific storage (no permission needed on API 19+); kept only for old devices. -->
     <uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         android:maxSdkVersion="28" />
@@ -64,9 +78,12 @@
     </queries>
 
     <application
+        android:name=".NaariApp"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:localeConfig="@xml/locales_config"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -174,6 +191,134 @@
         <receiver
             android:name="Location.GeofenceBroadcastReceiver"
             android:exported="false" />
+
+        <!-- Appearance: theme + in-app language picker -->
+        <activity
+            android:name=".core.AppearanceActivity"
+            android:exported="false" />
+        <!-- Persists the in-app language on Android 12 and older (AppCompat per-app locales). -->
+        <service
+            android:name="androidx.appcompat.app.AppLocalesMetadataHolderService"
+            android:enabled="false"
+            android:exported="false">
+            <meta-data
+                android:name="autoStoreLocales"
+                android:value="true" />
+        </service>
+
+        <!-- ================= Safety v2 ================= -->        <!-- Security: app PIN + duress PIN -->
+        <activity
+            android:name=".security.PinActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+
+        <!-- Escape tools -->
+        <activity
+            android:name=".escape.FakeCallActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:showWhenLocked="true"
+            android:taskAffinity="com.example.naarishakti.fakecall"
+            android:theme="@style/Theme.NaariShakti.Panic"
+            android:turnScreenOn="true"
+            tools:targetApi="o_mr1" />
+        <receiver
+            android:name=".escape.FakeCallReceiver"
+            android:exported="false" />
+
+        <!-- Journey safety hub -->
+        <activity
+            android:name=".journey.SafetyToolsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".journey.SafetySettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".journey.CheckInActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".journey.CabModeActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".journey.MeetingModeActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".journey.SafePlacesActivity"
+            android:exported="false" />
+        <receiver
+            android:name=".journey.CheckInReceiver"
+            android:exported="false">
+            <!-- Re-arms an active check-in's alarms after a reboot or app update. -->
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+        <service
+            android:name=".journey.JourneyService"
+            android:exported="false"
+            android:foregroundServiceType="location" />
+
+        <!-- Evidence -->
+        <activity
+            android:name=".evidence.IncidentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".evidence.DiaryActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".evidence.ComplaintActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <!-- Extra triggers & device guard -->
+        <activity
+            android:name=".triggers.PanicButtonActivity"
+            android:exported="false" />
+        <service
+            android:name=".triggers.SafetyAccessibilityService"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/ns_accessibility_service" />
+        </service>
+        <receiver
+            android:name=".triggers.DeviceGuardReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+                <action android:name="android.intent.action.QUICKBOOT_POWEROFF" />
+                <action android:name="android.intent.action.SIM_STATE_CHANGED" />
+                <action android:name="android.telephony.action.CARRIER_CONFIG_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Cloud: guardians, nearby helpers (alerts arrive over the API WebSocket) -->
+        <activity
+            android:name=".cloud.CloudSettingsActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".cloud.HelperAlertActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:showWhenLocked="true"
+            android:taskAffinity="com.example.naarishakti.helper"
+            android:theme="@style/Theme.NaariShakti.Panic"
+            android:turnScreenOn="true"
+            tools:targetApi="o_mr1" />
 
         <provider
             android:name="androidx.core.content.FileProvider"

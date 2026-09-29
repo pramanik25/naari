@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="your_class">உங்கள் வகுப்பு</string>
+    <string name="hello_blank_fragment">வணக்கம்</string>
+
+    <string name="set_alarm_settings">அலாரம் அமைப்புகள்</string>
+    <string name="alarm_status">அலாரம் நிலை:</string>
+    <string name="select_day">நாள் தேர்வு:</string>
+    <string name="select_date">தேதியைத் தேர்வுசெய்யவும்</string>
+    <string name="day_today">இன்று</string>
+    <string name="day_tomorrow">நாளை</string>
+    <string name="day_specific_date">குறிப்பிட்ட தேதி</string>
+    <string name="day_daily">தினமும்</string>
+
+    <string-array name="alarm_repeat_options">
+        <item>ஒருமுறை</item>
+        <item>தினமும்</item>
+        <item>நாளை</item>
+        <item>குறிப்பிட்ட தேதி</item>
+        <item>தனிப்பயன்</item>
+    </string-array>
+
+    <!-- ===================== Shared ===================== -->
+    <string name="cd_back">பின்செல்</string>
+    <string name="cd_close">மூடு</string>
+    <string name="action_open_settings">அமைப்புகளைத் திற</string>
+    <string name="action_not_now">இப்போது வேண்டாம்</string>
+    <string name="action_grant">அனுமதி</string>
+    <string name="action_fix">சரிசெய்</string>
+    <string name="action_allow">அனுமதி</string>
+    <string name="action_delete">நீக்கு</string>
+    <string name="action_review">சரிபார்</string>
+    <string name="action_turn_on">இயக்கு</string>
+    <string name="status_allowed">அனுமதிக்கப்பட்டது</string>
+    <string name="status_not_allowed">அனுமதி இல்லை</string>
+    <string name="status_limited">தோராயமாக மட்டும்</string>
+
+    <!-- ===================== Navigation ===================== -->
+    <string name="nav_home">முகப்பு</string>
+    <string name="nav_settings">அமைப்புகள்</string>
+
+    <!-- ===================== Splash ===================== -->
+    <string name="splash_tagline">உங்கள் பாதுகாப்பு, எப்போதும்</string>
+    <string name="splash_footer">அவளுக்காக, அக்கறையுடன்</string>
+
+    <!-- ===================== Onboarding ===================== -->
+    <string name="onb_overline">தொடங்கும் முன்</string>
+    <string name="onb_title">உங்கள் பாதுகாப்பு வலையை அமைப்போம்</string>
+    <string name="onb_body">உங்களைப் பாதுகாக்க Naari Shakti-க்குச் சில அனுமதிகள் தேவை. கட்டுப்பாடு உங்களிடமே இருக்கும்; அமைப்புகளில் எப்போது வேண்டுமானாலும் மாற்றலாம்.</string>
+    <string name="onb_allow">அனுமதி வழங்கு</string>
+    <string name="onb_done">எல்லாம் தயார். நீங்கள் தயாரானதும் பாதுகாப்பை இயக்கவும்.</string>
+    <string name="onb_partial">சில அனுமதிகள் தவிர்க்கப்பட்டன. அவற்றை அமைப்புகளில் வழங்கலாம்.</string>
+    <string name="perm_mic_title">மைக்ரோஃபோன்</string>
+    <string name="perm_mic_why">திரை அணைந்திருந்தாலும் உங்கள் அவசரச் சொல்லைக் கேட்க</string>
+    <string name="perm_sms_title">SMS</string>
+    <string name="perm_sms_why">உங்கள் நேரலை இருப்பிடத்தைத் தொடர்புகளுக்கு SMS அனுப்ப</string>
+    <string name="perm_phone_title">ஃபோன்</string>
+    <string name="perm_phone_why">உங்கள் முதல் தொடர்பைத் தானாக அழைக்க</string>
+    <string name="perm_location_title">இருப்பிடம்</string>
+    <string name="perm_location_why">SOS-இன்போது நீங்கள் இருக்கும் இடத்தைத் துல்லியமாகப் பகிர</string>
+    <string name="perm_camera_title">கேமரா</string>
+    <string name="perm_camera_why">SOS-இன்போது அமைதியாக ஆதாரங்களைப் பதிவுசெய்ய</string>
+    <string name="perm_contacts_title">தொடர்புகள்</string>
+    <string name="perm_contacts_why">உங்கள் ஃபோனிலிருந்து அவசரத் தொடர்புகளைத் தேர்வுசெய்ய</string>
+    <string name="perm_notifications_title">அறிவிப்புகள்</string>
+    <string name="perm_notifications_why">பாதுகாப்பு இயங்குவதைக் காட்ட</string>
+    <string name="perm_battery_title">பேட்டரி மேம்படுத்தல்</string>
+    <string name="perm_battery_why">பின்னணியில் பாதுகாப்பைத் தொடர்ந்து இயங்கவைக்க</string>
+    <string name="perm_fullscreen_title">முழுத்திரை எச்சரிக்கைகள்</string>
+    <string name="perm_fullscreen_why">பூட்டுத் திரையின் மேல் SOS திரையைக் காட்ட</string>
+    <string name="perm_exact_alarm_title">துல்லியமான அலாரங்கள்</string>
+    <string name="perm_exact_alarm_why">திட்டமிட்ட பாதுகாப்பைச் சரியான நேரத்தில் தொடங்க</string>
+    <string name="perm_overlay_title">பிற ஆப்ஸின் மேல் காட்டு</string>
+    <string name="perm_overlay_why">பிற ஆப்ஸின் மேல் SOS பூட்டுத் திரையைக் காட்ட</string>
+    <string name="perm_denied_title">அனுமதி தேவை</string>
+    <string name="perm_denied_body">%1$s அணுகல் முடக்கப்பட்டுள்ளது. ஆப்ஸ் அமைப்புகள் பக்கத்தில் அதை அனுமதிக்கலாம்.</string>
+    <string name="perm_summary">%2$d-இல் %1$d தயார்</string>
+
+    <!-- ===================== Home ===================== -->
+    <string name="greeting_morning">காலை வணக்கம்</string>
+    <string name="greeting_afternoon">மதிய வணக்கம்</string>
+    <string name="greeting_evening">மாலை வணக்கம்</string>
+    <string name="greeting_night">இனிய இரவு</string>
+    <string name="home_default_name">பாதுகாப்பாக இருங்கள்</string>
+    <string name="cd_open_profile">சுயவிவரத்தைத் திற</string>
+    <string name="cd_protection_switch">பாதுகாப்பு</string>
+    <string name="home_status_protected">பாதுகாப்பில்</string>
+    <string name="home_status_starting">தொடங்குகிறது…</string>
+    <string name="home_status_paused">இடைநிறுத்தம்</string>
+    <string name="home_status_off">ஆஃப்</string>
+    <string name="home_protection_on">பாதுகாப்பு இயக்கத்தில் உள்ளது</string>
+    <string name="home_protection_starting">பாதுகாப்பு தொடங்குகிறது</string>
+    <string name="home_protection_paused">பாதுகாப்பு இயங்கவில்லை</string>
+    <string name="home_protection_off">பாதுகாப்பு முடக்கத்தில் உள்ளது</string>
+    <string name="home_protection_off_sub">உங்கள் அவசரச் சொல்லைக் கேட்க இயக்கவும்</string>
+    <string name="home_protection_starting_sub">மைக்ரோஃபோன் தயாராகிறது…</string>
+    <string name="home_protection_paused_sub">எதிர்பாராமல் நின்றுவிட்டது. மீண்டும் தொடங்கத் தட்டவும்.</string>
+    <string name="home_listening_for">“%1$s” என்பதைக் கேட்கிறது</string>
+    <string name="home_trigger_shake">குலுக்கல்</string>
+    <string name="home_trigger_power">பவர் ×%1$d</string>
+    <string name="home_mic_needed_title">மைக்ரோஃபோனை அனுமதிக்கவும்</string>
+    <string name="home_mic_needed_body">பாதுகாப்பு இயங்கும்போது பின்னணியில் உங்கள் அவசரச் சொல்லைக் கேட்கும். SOS தொடங்கும் வரை எதுவும் பதிவுசெய்யப்படாது, பதிவேற்றப்படாது.</string>
+    <string name="home_mic_denied">பாதுகாப்பை இயக்க மைக்ரோஃபோன் அணுகல் தேவை.</string>
+    <string name="sos_label">SOS</string>
+    <string name="sos_hint">3 வினாடி அழுத்திப் பிடிக்கவும்</string>
+    <string name="sos_hint_holding">தொடர்ந்து பிடிக்கவும் · %1$d</string>
+    <string name="sos_hint_active">செயலில்</string>
+    <string name="sos_caption">நேரலை இருப்பிடத்துடன் தொடர்புகளுக்குத் தெரிவிக்கும், முதல் தொடர்பை அழைக்கும், சைரனை ஒலிக்கும்.</string>
+    <string name="sos_caption_active">SOS செயலில் உள்ளது. உங்கள் தொடர்புகளுக்குத் தெரிவிக்கப்படுகிறது.</string>
+    <string name="sos_cd">SOS பொத்தான். அவசர எச்சரிக்கை அனுப்ப 3 வினாடி அழுத்திப் பிடிக்கவும்.</string>
+    <string name="sos_a11y_action">SOS அனுப்பு</string>
+    <string name="sos_confirm_title">இப்போது SOS அனுப்பவா?</string>
+    <string name="sos_confirm_body">உங்கள் இருப்பிடத்துடன் அவசரத் தொடர்புகளுக்குத் தெரிவிக்கப்படும், முதல் தொடர்பு அழைக்கப்படுவார்.</string>
+    <string name="sos_sent">SOS அனுப்பப்பட்டது. தொடர்புகளுக்குத் தெரிவிக்கிறது…</string>
+    <string name="sos_sent_no_contacts">SOS தொடங்கியது, ஆனால் இன்னும் அவசரத் தொடர்புகள் இல்லை.</string>
+    <string name="sos_stop">நான் பாதுகாப்பாக உள்ளேன், SOS-ஐ நிறுத்து</string>
+    <string name="home_quick_actions">விரைவுச் செயல்கள்</string>
+    <string name="home_your_safety_kit">உங்கள் பாதுகாப்புக் கருவிகள்</string>
+    <string name="qa_trigger_title">அவசரச் சொல்</string>
+    <string name="qa_trigger_caption">உங்கள் ரகசியச் சொல்</string>
+    <string name="qa_contacts_title">தொடர்புகள்</string>
+    <string name="qa_contacts_caption">யாருக்குத் தெரிவிப்போம்</string>
+    <string name="qa_police_title">காவல்துறை</string>
+    <string name="qa_police_caption">112-ஐ உடனே அழைக்க</string>
+    <string name="qa_helplines_title">உதவி எண்கள்</string>
+    <string name="qa_helplines_caption">பெண்களுக்கான உதவி</string>
+    <string name="qa_live_location_title">நேரலை இருப்பிடம்</string>
+    <string name="qa_live_location_caption">இருக்கும் இடத்தைப் பகிர</string>
+    <string name="qa_safe_zones_title">பாதுகாப்பு மண்டலங்கள்</string>
+    <string name="qa_safe_zones_caption">இடங்களுக்கான எச்சரிக்கை</string>
+    <string name="nudge_contacts_title">அவசரத் தொடர்புகளைச் சேர்க்கவும்</string>
+    <string name="nudge_contacts_sub">SOS இன்னும் யாருக்கும் தெரிவிக்காது</string>
+    <string name="nudge_trigger_title">உங்கள் அவசரச் சொல்லைப் பதிவுசெய்யவும்</string>
+    <string name="nudge_trigger_sub">அதுவரை “%1$s” என்பதைக் கேட்போம்</string>
+    <string name="row_schedule_title">பாதுகாப்பு அட்டவணை</string>
+    <string name="row_vault_title">ஆதாரப் பெட்டகம்</string>
+    <string name="row_vault_empty">SOS-இன்போது எடுத்த புகைப்படங்கள்</string>
+    <plurals name="row_vault_count">
+        <item quantity="one">%1$d புகைப்படம் எடுக்கப்பட்டது</item>
+        <item quantity="other">%1$d புகைப்படங்கள் எடுக்கப்பட்டன</item>
+    </plurals>
+
+    <!-- ===================== Settings ===================== -->
+    <string name="settings_overline">விருப்பங்கள்</string>
+    <string name="settings_title">அமைப்புகள்</string>
+    <string name="settings_body">மாற்றங்கள் தானாகச் சேமிக்கப்பட்டு உடனே அமலுக்கு வரும்.</string>
+    <string name="settings_section_sos">SOS செயல்பாடு</string>
+    <string name="settings_section_triggers">SOS தூண்டிகள்</string>
+    <string name="settings_section_stop">அலாரத்தை நிறுத்துதல்</string>
+    <string name="settings_section_permissions">அனுமதிகள்</string>
+    <string name="settings_section_more">மேலும்</string>
+    <string name="settings_section_about">அறிமுகம்</string>
+    <string name="settings_countdown_label">SOS கவுண்ட்டவுன்: %1$d வி</string>
+    <string name="settings_countdown_off">SOS கவுண்ட்டவுன்: ஆஃப்</string>
+    <string name="settings_countdown_caption">எச்சரிக்கைகள் அனுப்பப்படும் முன், தவறான அலாரத்தை ரத்துசெய்ய உங்களுக்குக் கிடைக்கும் நேரம்.</string>
+    <string name="settings_freeze_label">SOS-க்குப் பின் திரைப் பூட்டு: %1$s</string>
+    <string name="settings_freeze_caption">அலாரத்துக்குப் பின் SOS பூட்டுத் திரை எவ்வளவு நேரம் இருக்கும்.</string>
+    <string name="settings_shake_title">குலுக்கினால் SOS</string>
+    <string name="settings_shake_sub">அலாரம் எழுப்ப ஃபோனை வேகமாகக் குலுக்கவும்</string>
+    <string name="settings_power_title">பவர் பொத்தான் ×%1$d</string>
+    <string name="settings_power_sub">அலாரம் எழுப்ப பவர் பொத்தானை வேகமாக அழுத்தவும்</string>
+    <string name="settings_presses_label">பவர் அழுத்தங்கள்: %1$d</string>
+    <string name="settings_window_label">அழுத்தும் நேரம்: %1$s வி</string>
+    <string name="settings_stop_title">செயலில் உள்ள அலாரத்தை நிறுத்துவது எப்படி</string>
+    <string name="settings_stop_volume">ஒலியளவு பேட்டர்ன்</string>
+    <string name="settings_stop_shake">குலுக்கல்</string>
+    <string name="settings_stop_volume_caption">சைரனையும் பூட்டுத் திரையையும் நிறுத்த, உங்கள் பேட்டர்னில் ஒலியளவுப் பொத்தான்களை அழுத்தவும்.</string>
+    <string name="settings_stop_shake_caption">சைரனையும் பூட்டுத் திரையையும் நிறுத்த ஃபோனை வேகமாகக் குலுக்கவும்.</string>
+    <string name="settings_input_label">அழுத்தங்களுக்கு இடையே இடைவெளி: %1$s வி</string>
+    <string name="settings_input_caption">ஒலியளவு அழுத்தங்களுக்கு இடையே அனுமதிக்கப்படும் அதிகபட்ச இடைவெளி.</string>
+    <string name="settings_profile_sub">பெயர், புகைப்படம், தொடர்பு விவரங்கள்</string>
+    <string name="settings_vault_sub">SOS-இன்போது எடுத்த புகைப்படங்கள்</string>
+    <string name="settings_version">பதிப்பு %1$s</string>
+    <string name="settings_about_body">கிளவுட் பேக்அப்பை நீங்கள் இயக்கும் வரை உங்கள் தரவு இந்த ஃபோனிலேயே இருக்கும்.</string>
+    <string name="duration_seconds">%1$d வி</string>
+    <string name="duration_minutes">%1$d நிமி</string>
+    <string name="duration_minutes_seconds">%1$d நிமி %2$d வி</string>
+
+    <!-- ===================== Schedule ===================== -->
+    <string name="schedule_overline">அட்டவணை</string>
+    <string name="schedule_title">பாதுகாப்பு அட்டவணை</string>
+    <string name="schedule_body">பயணத்தின்போதும் இரவு நேரங்களிலும் பாதுகாப்பைத் தானாக இயக்கி நிறுத்தலாம்.</string>
+    <string name="schedule_master_title">திட்டமிட்ட பாதுகாப்பு</string>
+    <string name="schedule_master_on">கீழே உள்ள நேரத்தில் தானாக இயங்கும்</string>
+    <string name="schedule_master_off">ஆஃப். நீங்கள் இயக்கும்போது மட்டுமே பாதுகாப்பு இயங்கும்</string>
+    <string name="schedule_window">நேர இடைவெளி</string>
+    <string name="schedule_turns_on">தொடங்கும்</string>
+    <string name="schedule_turns_off">நிற்கும்</string>
+    <string name="schedule_tap_to_change">மாற்றத் தட்டவும்</string>
+    <string name="schedule_repeat">மீண்டும்</string>
+    <string name="schedule_every_day">தினமும்</string>
+    <string name="schedule_today">இன்று</string>
+    <string name="schedule_tomorrow">நாளை</string>
+    <string name="schedule_pick_date">தேதியைத் தேர்வுசெய்</string>
+    <string name="schedule_pick_start">பாதுகாப்பு தொடங்கும் நேரம்</string>
+    <string name="schedule_pick_end">பாதுகாப்பு நிற்கும் நேரம்</string>
+    <string name="schedule_pick_date_title">தேதியைத் தேர்வுசெய்யவும்</string>
+    <string name="schedule_save">அட்டவணையைச் சேமி</string>
+    <string name="schedule_saved">அட்டவணை சேமிக்கப்பட்டது</string>
+    <string name="schedule_not_scheduled">திட்டமிடப்படவில்லை</string>
+    <string name="schedule_off_summary">திட்டமிட்ட பாதுகாப்பு முடக்கத்தில் உள்ளது.</string>
+    <string name="schedule_summary">%4$s, %1$s-க்குப் பாதுகாப்பு தொடங்கி,%3$s %2$s-க்கு நிற்கும்.</string>
+    <string name="schedule_next_day">" மறுநாள்"</string>
+    <string name="schedule_when_daily">தினமும்</string>
+    <string name="schedule_when_today">இன்று மட்டும்</string>
+    <string name="schedule_when_tomorrow">நாளை மட்டும்</string>
+    <string name="schedule_when_date">%1$s அன்று</string>
+    <string name="schedule_short">%1$s – %2$s · %3$s</string>
+    <string name="schedule_error_same">தொடக்க நேரமும் முடிவு நேரமும் ஒன்றாக இருக்கக்கூடாது.</string>
+    <string name="schedule_error_date">முதலில் ஒரு தேதியைத் தேர்வுசெய்யவும்.</string>
+    <string name="schedule_error_passed">அந்த நேரம் இன்று ஏற்கெனவே முடிந்துவிட்டது. நாளை அல்லது ஒரு தேதியைத் தேர்வுசெய்யவும்.</string>
+    <string name="schedule_exact_title">துல்லியமான அலாரங்களை அனுமதிக்கவும்</string>
+    <string name="schedule_exact_body">பாதுகாப்பைச் சரியான நேரத்தில் தொடங்க Android-க்கு உங்கள் அனுமதி தேவை.</string>
+
+    <!-- ===================== Profile ===================== -->
+    <string name="profile_overline">உங்கள் சுயவிவரம்</string>
+    <string name="profile_title">உங்களைப் பற்றி</string>
+    <string name="profile_body">உங்கள் தொடர்புகளும் மீட்புப் பணியாளர்களும் உங்களை அடையாளம் காண உதவும். இந்தச் சாதனத்தில் மட்டுமே சேமிக்கப்படும்.</string>
+    <string name="profile_add_photo">புகைப்படம் சேர்க்கத் தட்டவும்</string>
+    <string name="profile_change_photo">புகைப்படத்தை மாற்றத் தட்டவும்</string>
+    <string name="cd_profile_photo">சுயவிவரப் புகைப்படம். மாற்ற இருமுறை தட்டவும்.</string>
+    <string name="profile_section_personal">தனிப்பட்ட விவரம்</string>
+    <string name="profile_section_contact">தொடர்பு</string>
+    <string name="profile_section_occupation">தொழில்</string>
+    <string name="profile_full_name">முழுப் பெயர்</string>
+    <string name="profile_guardian_name">தந்தை அல்லது பாதுகாவலர் பெயர்</string>
+    <string name="profile_address">வீட்டு முகவரி</string>
+    <string name="profile_mobile">உங்கள் மொபைல் எண்</string>
+    <string name="profile_guardian_mobile">பாதுகாவலரின் மொபைல் எண்</string>
+    <string name="profile_mobile_helper">10 இலக்கங்கள், +91 விருப்பத்தேர்வு</string>
+    <string name="profile_college">கல்லூரி</string>
+    <string name="profile_degree">பட்டம் அல்லது படிப்பு</string>
+    <string name="profile_office">அலுவலக இடம்</string>
+    <string name="profile_update">சுயவிவரத்தைப் புதுப்பி</string>
+    <string name="profile_saved">சுயவிவரம் சேமிக்கப்பட்டது</string>
+    <string name="profile_save_error">சுயவிவரத்தைச் சேமிக்க முடியவில்லை. மீண்டும் முயலவும்.</string>
+    <string name="profile_photo_error">அந்தப் புகைப்படத்தை ஏற்ற முடியவில்லை.</string>
+    <string name="profile_error_required">தேவை</string>
+    <string name="profile_error_mobile">சரியான 10 இலக்க மொபைல் எண்ணை உள்ளிடவும்</string>
+    <string name="profile_error_pincode">சரியான 6 இலக்கப் பின்கோடை உள்ளிடவும்</string>
+
+    <!-- ===================== Evidence vault ===================== -->
+    <string name="vault_overline">ஆதாரம்</string>
+    <string name="vault_title">ஆதாரப் பெட்டகம்</string>
+    <string name="vault_body">SOS-இன்போது தானாக எடுத்த புகைப்படங்கள், புதியவை முதலில்.</string>
+    <string name="vault_empty_title">இன்னும் ஆதாரம் எதுவும் இல்லை</string>
+    <string name="vault_empty_body">SOS தொடங்கும்போது, Naari Shakti முன் மற்றும் பின் கேமராக்களில் அமைதியாகப் புகைப்படங்கள் எடுக்கும். அவை இங்கே தோன்றும்.</string>
+    <string name="vault_front">முன் கேமரா</string>
+    <string name="vault_back">பின் கேமரா</string>
+    <string name="vault_photo">புகைப்படம்</string>
+    <string name="vault_unknown_time">நேரம் தெரியவில்லை</string>
+    <string name="vault_delete_title">இந்தப் புகைப்படத்தை நீக்கவா?</string>
+    <string name="vault_delete_body">இது இந்தச் சாதனத்திலிருந்து நிரந்தரமாக நீக்கப்படும். இதைத் திரும்பப் பெற முடியாது.</string>
+    <string name="vault_deleted">புகைப்படம் நீக்கப்பட்டது</string>
+    <string name="vault_load_error">ஆதாரப் பெட்டகத்தைத் திறக்க முடியவில்லை.</string>
+    <string name="cd_delete_photo">புகைப்படத்தை நீக்கு</string>
+    <plurals name="vault_count">
+        <item quantity="one">%1$d புகைப்படம்</item>
+        <item quantity="other">%1$d புகைப்படங்கள்</item>
+    </plurals>
+</resources>

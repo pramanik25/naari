@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Common -->
+    <string name="tr_back">వెనుకకు</string>
+    <string name="tr_not_now">ఇప్పుడు కాదు</string>
+    <string name="tr_cancel">రద్దు చేయండి</string>
+    <string name="tr_open_settings">సెట్టింగ్‌లు</string>
+
+    <!-- SMS alerts to emergency contacts (keep short) -->
+    <string name="tr_default_owner_name">మీ కాంటాక్ట్</string>
+    <string name="tr_sms_shutdown">Naari Shakti: %1$s ఫోన్ ఆఫ్ అవుతోంది. చివరి లొకేషన్: %2$s</string>
+    <!-- %2$d is the battery percentage. -->
+    <string name="tr_sms_low_battery">Naari Shakti: %1$s ఫోన్ బ్యాటరీ %2$d%% ఉంది. చివరి లొకేషన్: %3$s</string>
+    <string name="tr_sms_sim_changed">Naari Shakti: %1$s ఫోన్‌లో SIM కార్డ్ మారింది. ఈ మెసేజ్ కొత్త SIM నుండి వచ్చింది. లొకేషన్: %2$s</string>
+    <string name="tr_sms_location_fmt">%1$s (%2$s)</string>
+    <string name="tr_sms_location_unknown">అందుబాటులో లేదు</string>
+
+    <!-- ===================== Volume-key SOS (accessibility) ===================== -->
+    <string name="tr_a11y_dialog_title">వాల్యూమ్ బటన్ SOS ఆన్ చేయండి</string>
+    <string name="tr_a11y_dialog_body">స్క్రీన్ ఆఫ్‌లో ఉన్నా, వాల్యూమ్-డౌన్ 5 సార్లు నొక్కి SOS ప్రారంభించడానికి, యాక్సెసిబిలిటీ సెట్టింగ్‌లలో %1$s ఆన్ చేయండి.\n\nతర్వాతి స్క్రీన్‌లో “ఇన్‌స్టాల్ చేసిన యాప్‌లు” (లేదా “డౌన్‌లోడ్ చేసిన యాప్‌లు”) తెరిచి, %1$s ఎంచుకుని ఆన్ చేయండి. ఇది వాల్యూమ్ బటన్‌లను మాత్రమే గమనిస్తుంది, మీ స్క్రీన్‌ను ఎప్పుడూ చదవదు.</string>
+    <string name="tr_a11y_dialog_open">సెట్టింగ్‌లు తెరవండి</string>
+
+    <!-- ===================== Panic button screen ===================== -->
+    <string name="tr_pb_eyebrow">అదనపు ట్రిగ్గర్‌లు</string>
+    <string name="tr_pb_title">ప్యానిక్ బటన్</string>
+    <string name="tr_pb_desc">చిన్న Bluetooth బటన్‌ను జత చేసి, ఫోన్ బయటకు తీయకుండానే రెండుసార్లు నొక్కి SOS ప్రారంభించండి.</string>
+
+    <string name="tr_pb_status_label">మీ బటన్</string>
+    <string name="tr_pb_no_button">బటన్ ఏదీ జత కాలేదు</string>
+    <string name="tr_pb_unnamed">పేరు లేని బటన్</string>
+    <string name="tr_pb_status_not_set">సెటప్ కాలేదు</string>
+    <string name="tr_pb_status_connected">కనెక్ట్ అయింది</string>
+    <string name="tr_pb_status_connecting">బటన్ కోసం వెతుకుతోంది… దగ్గరగా ఉంచండి</string>
+    <string name="tr_pb_status_unsupported">ఈ పరికరం సపోర్ట్ చేసే బటన్ కాదు</string>
+    <string name="tr_pb_status_bt_off">Bluetooth ఆఫ్‌లో ఉంది</string>
+    <string name="tr_pb_status_permission">Bluetooth అనుమతి అవసరం</string>
+    <string name="tr_pb_status_unavailable">అందుబాటులో లేదు</string>
+    <string name="tr_pb_status_off">కనెక్ట్ కాలేదు</string>
+    <string name="tr_pb_protection_hint">బటన్ SOS ప్రారంభించగలిగేలా రక్షణను ఆన్ చేయండి.</string>
+
+    <string name="tr_pb_forget">బటన్ మర్చిపోండి</string>
+    <string name="tr_pb_forget_title">ఈ బటన్‌ను మర్చిపోవాలా?</string>
+    <!-- %1$s is the button's name. -->
+    <string name="tr_pb_forget_body">%1$s ఇకపై SOS ప్రారంభించదు.</string>
+    <string name="tr_pb_forget_confirm">మర్చిపోండి</string>
+    <string name="tr_pb_forgotten">బటన్ తీసివేయబడింది</string>
+
+    <string name="tr_pb_section_test">పరీక్ష</string>
+    <string name="tr_pb_test_title">పరీక్షించడానికి బటన్‌ను రెండుసార్లు నొక్కండి</string>
+    <string name="tr_pb_test_waiting">బటన్ కనెక్ట్ అయ్యే వరకు వేచి ఉంది…</string>
+    <string name="tr_pb_test_hint">ఒక సెకనులో వేగంగా రెండుసార్లు నొక్కండి. ఒక్కసారి నొక్కితే ఏమీ జరగదు, కాబట్టి పొరపాటున మొదలవదు.</string>
+    <string name="tr_pb_test_one">ఒకసారి నొక్కారు. ఇప్పుడు వేగంగా మళ్లీ నొక్కండి</string>
+    <string name="tr_pb_test_success">పనిచేస్తోంది!</string>
+    <string name="tr_pb_test_success_body">రక్షణ ఆన్‌లో ఉన్నప్పుడు, రెండుసార్లు నొక్కితే SOS కౌంట్‌డౌన్ మొదలవుతుంది. కౌంట్‌డౌన్ సమయంలో రద్దు చేయవచ్చు. ఇక్కడ పరీక్షిస్తే SOS ఎప్పుడూ వెళ్లదు.</string>
+    <string name="tr_pb_test_again">మళ్లీ పరీక్షించండి</string>
+
+    <string name="tr_pb_section_find">మీ బటన్‌ను కనుగొనండి</string>
+    <string name="tr_pb_nearby">దగ్గరలోని బటన్‌లు</string>
+    <string name="tr_pb_scan_hint">బటన్‌ను ఆన్ చేసి (బీప్ వచ్చే వరకు నొక్కి పట్టుకోండి) మీ ఫోన్ పక్కనే ఉంచండి.</string>
+    <string name="tr_pb_scan">బటన్‌ల కోసం స్కాన్ చేయండి</string>
+    <string name="tr_pb_stop_scan">స్కాన్ ఆపండి</string>
+    <string name="tr_pb_scanning">స్కాన్ చేస్తోంది…</string>
+    <string name="tr_pb_empty">బటన్‌లు ఏవీ దొరకలేదు. అది ఆన్‌లో, దగ్గరగా ఉందో చూసుకుని మళ్లీ స్కాన్ చేయండి.</string>
+    <string name="tr_pb_empty_location">బటన్‌లు ఏవీ దొరకలేదు. Bluetooth పరికరాల కోసం స్కాన్ చేయడానికి Android కి లొకేషన్ ఆన్‌లో ఉండాలి. దాన్ని ఆన్ చేసి మళ్లీ స్కాన్ చేయండి.</string>
+    <!-- %1$d is an Android error code. -->
+    <string name="tr_pb_scan_failed">స్కాన్ విఫలమైంది (ఎర్రర్ %1$d). Bluetooth ఆఫ్ చేసి మళ్లీ ఆన్ చేసి, ప్రయత్నించండి.</string>
+    <string name="tr_pb_no_bluetooth">ఈ ఫోన్ Bluetooth Low Energy కి సపోర్ట్ చేయదు.</string>
+    <string name="tr_pb_bt_needed">మీ బటన్‌ను కనుగొనడానికి Bluetooth ఆన్ చేయండి.</string>
+    <string name="tr_pb_perm_denied">మీ బటన్‌ను కనుగొనడానికి Naari Shakti కి సమీపంలోని పరికరాలు, లొకేషన్ అనుమతులు కావాలి.</string>
+    <!-- %1$s is the button's name. -->
+    <string name="tr_pb_paired_snack">%1$s సేవ్ అయింది. ఇప్పుడు పరీక్షించడానికి రెండుసార్లు నొక్కండి.</string>
+    <!-- Signal strength, %1$d is negative, e.g. -62 dBm. -->
+    <string name="tr_pb_rssi">%1$d dBm</string>
+    <string name="tr_pb_tag_compatible">సరిపోతుంది</string>
+    <string name="tr_pb_tag_paired">జత అయింది</string>
+    <!-- Screen reader: %1$s device name, %2$d signal bars (1 to 4). -->
+    <string name="tr_pb_device_cd">%1$s, సిగ్నల్ 4 లో %2$d. ఈ బటన్ ఉపయోగించడానికి రెండుసార్లు నొక్కండి.</string>
+
+    <string name="tr_pb_section_supported">సపోర్ట్ చేసే బటన్‌లు</string>
+    <string name="tr_pb_sup1_title">iTag కీఫైండర్ బటన్‌లు</string>
+    <string name="tr_pb_sup1_body">“iTag” లేదా “anti-lost tracker” పేరుతో అమ్మే చిన్న Bluetooth కీఫైండర్ బటన్‌లు బాగా పనిచేస్తాయి. ఆన్‌లైన్‌లో సుమారు ₹200 ఉంటాయి.</string>
+    <string name="tr_pb_sup2_title">కాయిన్ సెల్‌తో పనిచేస్తుంది</string>
+    <string name="tr_pb_sup2_body">CR2032 బ్యాటరీ నెలల పాటు ఉంటుంది. బటన్‌ను మీ తాళాలకు, బ్యాగ్ పట్టీకి లేదా బట్టలకు తగిలించండి.</string>
+    <string name="tr_pb_sup3_title">బ్యాక్‌గ్రౌండ్‌లో పనిచేస్తుంది</string>
+    <string name="tr_pb_sup3_body">రక్షణ ఆన్‌లో ఉన్నప్పుడు, మీ ఫోన్ కనెక్ట్ అయి ఉంటుంది, బటన్ మళ్లీ పరిధిలోకి వచ్చినప్పుడు దానంతట అదే తిరిగి కనెక్ట్ అవుతుంది.</string>
+</resources>

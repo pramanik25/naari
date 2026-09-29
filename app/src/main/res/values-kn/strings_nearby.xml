@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nb_home_eyebrow">ಸಮುದಾಯ</string>
+    <string name="nb_home_title">ನಿಮ್ಮ ಹತ್ತಿರದ ಮಹಿಳೆಯರಿಗೆ ಸಹಾಯ ಮಾಡುತ್ತೀರಾ?</string>
+    <string name="nb_home_body">ನಿಮ್ಮ ಹತ್ತಿರ ಯಾರಾದರೂ SOS ಆನ್ ಮಾಡಿದಾಗ, ಅವರ ಸ್ಥಳದೊಂದಿಗೆ ನಿಮಗೆ ಅಲರ್ಟ್ ಬರುತ್ತದೆ, ಆದ್ದರಿಂದ ನೀವು ಸಹಾಯ ಮಾಡಬಹುದು ಅಥವಾ 112 ಗೆ ಕರೆ ಮಾಡಬಹುದು. ನಿಮ್ಮ ಸ್ಥಳವನ್ನು ಹತ್ತಿರದ ಅಲರ್ಟ್‌ಗಳೊಂದಿಗೆ ಹೊಂದಿಸಲು ಮಾತ್ರ ಬಳಸಲಾಗುತ್ತದೆ ಮತ್ತು ಯಾರಿಗೂ ಎಂದಿಗೂ ತೋರಿಸಲಾಗುವುದಿಲ್ಲ.</string>
+    <string name="nb_home_yes">ಹೌದು, ನಾನು ಸಹಾಯ ಮಾಡುತ್ತೇನೆ</string>
+    <string name="nb_home_not_now">ಈಗ ಬೇಡ</string>
+    <string name="nb_home_thanks">ಧನ್ಯವಾದಗಳು. ಹತ್ತಿರದಲ್ಲಿ ಯಾರಿಗಾದರೂ ಸಹಾಯ ಬೇಕಾದಾಗ ನಿಮಗೆ ಅಲರ್ಟ್ ಬರುತ್ತದೆ.</string>
+    <string name="nb_home_thanks_offline">ಧನ್ಯವಾದಗಳು. ಇಂಟರ್ನೆಟ್ ಸಿಕ್ಕ ತಕ್ಷಣ ನಿಮ್ಮನ್ನು ಸಹಾಯಕರಾಗಿ ನೋಂದಾಯಿಸಲಾಗುತ್ತದೆ.</string>
+    <string name="nb_home_location_denied">ನಿಮ್ಮ ಸ್ಥಳವಿಲ್ಲದೆ ನಿಮ್ಮನ್ನು ಹತ್ತಿರದ ಅಲರ್ಟ್‌ಗಳೊಂದಿಗೆ ಹೊಂದಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ. ನಂತರ ಕ್ಲೌಡ್ &amp; ಪೋಷಕರು ನಲ್ಲಿ ಇದನ್ನು ಆನ್ ಮಾಡಬಹುದು.</string>
+
+    <string name="nb_mesh_title">ಇಂಟರ್ನೆಟ್ ಇಲ್ಲದೆಯೂ ಸಹಾಯ ಮಾಡುತ್ತೀರಾ?</string>
+    <string name="nb_mesh_body">ಇಂಟರ್ನೆಟ್ ಇಲ್ಲದಿದ್ದಾಗ Naari Shakti ಹತ್ತಿರದ ಫೋನ್‌ಗಳ ನಡುವೆ Bluetooth ಮೂಲಕ SOS ಅಲರ್ಟ್‌ಗಳನ್ನು ತಲುಪಿಸಬಹುದು. ಇದಕ್ಕೆ ಹತ್ತಿರದ ಸಾಧನಗಳ ಅನುಮತಿ ಬೇಕು.</string>
+    <string name="nb_mesh_yes">ಆನ್ ಮಾಡಿ</string>
+    <string name="nb_mesh_no">ಬೇಡ, ಧನ್ಯವಾದಗಳು</string>
+    <string name="nb_mesh_on">ಆಫ್‌ಲೈನ್ Bluetooth ಅಲರ್ಟ್‌ಗಳು ಆನ್ ಆಗಿವೆ.</string>
+    <string name="nb_mesh_denied">ಆಫ್‌ಲೈನ್ Bluetooth ಅಲರ್ಟ್‌ಗಳಿಗೆ ಹತ್ತಿರದ ಸಾಧನಗಳ ಅನುಮತಿ ಬೇಕು.</string>
+
+    <string name="nb_broadcast_title">SOS ಸಮಯದಲ್ಲಿ ನನ್ನ ಹತ್ತಿರದವರಿಗೆ ಅಲರ್ಟ್ ಮಾಡಿ</string>
+    <string name="nb_broadcast_sub">2 ರಿಂದ 5 ಕಿ.ಮೀ. ಒಳಗಿನ ಸಹಾಯಕರಿಗೆ ನಿಮ್ಮ ಸ್ಥಳ ಮತ್ತು ಫೋಟೋಗಳು ಸಿಗುತ್ತವೆ, ಆದ್ದರಿಂದ ಅವರು ಸಹಾಯ ಮಾಡಬಹುದು. ನಿಮ್ಮ ಪೋಷಕರಿಗೆ ಯಾವಾಗಲೂ ಅಲರ್ಟ್ ಬರುತ್ತದೆ.</string>
+
+    <plurals name="nb_evidence_count">
+        <item quantity="one">%d ಫೋಟೋ ಅಥವಾ ರೆಕಾರ್ಡಿಂಗ್</item>
+        <item quantity="other">%d ಫೋಟೋಗಳು ಮತ್ತು ರೆಕಾರ್ಡಿಂಗ್‌ಗಳು</item>
+    </plurals>
+    <string name="nb_radius_km">%1$d ಕಿ.ಮೀ. ಒಳಗೆ</string>
+    <string name="nb_view_live">ಲೈವ್ ಸ್ಥಳ ಮತ್ತು ಸಾಕ್ಷ್ಯಗಳನ್ನು ನೋಡಿ</string>
+    <string name="nb_photo_desc">ಅವರ SOS ನ ಇತ್ತೀಚಿನ ಫೋಟೋ</string>
+    <string name="nb_n_evidence_text">ಇಲ್ಲಿಯವರೆಗೆ %1$s. ಲೈವ್ ನೋಡಲು ಟ್ಯಾಪ್ ಮಾಡಿ.</string>
+
+    <string name="nb_wa_section">WhatsApp ಅಲರ್ಟ್‌ಗಳು</string>
+    <string name="nb_wa_title">WhatsApp ಅಲರ್ಟ್‌ಗಳು</string>
+    <string name="nb_wa_caption">ನಿಮ್ಮ SOS, ಲೈವ್ ಸ್ಥಳ ಮತ್ತು ಫೋಟೋಗಳನ್ನು ನಿಮ್ಮ ಸಂಪರ್ಕಗಳಿಗೆ WhatsApp ನಲ್ಲಿ ಕಳುಹಿಸಿ.</string>
+    <string name="nb_wa_explain">ಅಲರ್ಟ್‌ಗಳು Naari Shakti WhatsApp ಸಂಖ್ಯೆಯಿಂದ ಬರುತ್ತವೆ, ನಿಮ್ಮ ಸ್ವಂತ WhatsApp ನಿಂದಲ್ಲ. ಅಲರ್ಟ್‌ಗಳನ್ನು ಪಡೆಯುವ ಮೊದಲು ಪ್ರತಿ ಸಂಪರ್ಕವೂ ನಿಮ್ಮ ಆಹ್ವಾನವನ್ನು ಒಮ್ಮೆ ಟ್ಯಾಪ್ ಮಾಡಿ ಸೇರಬೇಕು.</string>
+    <string name="nb_wa_joined">ಸೇರಿದ್ದಾರೆ ✓</string>
+    <string name="nb_wa_not_joined">ಇನ್ನೂ ಸೇರಿಲ್ಲ</string>
+    <string name="nb_wa_invite">ಆಹ್ವಾನಿಸಿ</string>
+    <string name="nb_wa_invite_cd">%1$s ಅವರನ್ನು WhatsApp ನಲ್ಲಿ ಆಹ್ವಾನಿಸಿ</string>
+    <string name="nb_wa_invite_text">ನಮಸ್ಕಾರ, ನಾನು ನಿಮ್ಮನ್ನು Naari Shakti ನಲ್ಲಿ ನನ್ನ ತುರ್ತು ಸಂಪರ್ಕವಾಗಿ ಸೇರಿಸಿದ್ದೇನೆ. WhatsApp ನಲ್ಲಿ ನನ್ನ SOS ಅಲರ್ಟ್‌ಗಳನ್ನು ಪಡೆಯಲು ಈ ಲಿಂಕ್ ತೆರೆದು ಸಂದೇಶ ಕಳುಹಿಸಿ: %1$s</string>
+    <string name="nb_wa_invite_chooser">ಆಹ್ವಾನ ಕಳುಹಿಸಿ</string>
+    <plurals name="nb_wa_joined_count">
+        <item quantity="one">%2$d ರಲ್ಲಿ %1$d ಸಂಪರ್ಕ ಸೇರಿದೆ</item>
+        <item quantity="other">%2$d ರಲ್ಲಿ %1$d ಸಂಪರ್ಕಗಳು ಸೇರಿವೆ</item>
+    </plurals>
+    <string name="nb_wa_empty">WhatsApp ಅಲರ್ಟ್‌ಗಳನ್ನು ಕಳುಹಿಸಲು ಮೇಲೆ ತುರ್ತು ಸಂಪರ್ಕಗಳನ್ನು ಸೇರಿಸಿ.</string>
+    <string name="nb_wa_unavailable">WhatsApp ಅಲರ್ಟ್‌ಗಳು ಇನ್ನೂ ಲಭ್ಯವಿಲ್ಲ. SMS, ಕರೆಗಳು ಮತ್ತು Telegram ಅಲರ್ಟ್‌ಗಳು ಕೆಲಸ ಮಾಡುತ್ತಲೇ ಇರುತ್ತವೆ.</string>
+    <string name="nb_wa_cloud_off">WhatsApp ಅಲರ್ಟ್‌ಗಳಿಗೆ ಕ್ಲೌಡ್ ಸಿಂಕ್ ಬೇಕು, ಅದು ಈ ಫೋನ್‌ನಲ್ಲಿ ಆಫ್ ಆಗಿದೆ. SMS, ಕರೆಗಳು ಮತ್ತು Telegram ಅಲರ್ಟ್‌ಗಳು ಕೆಲಸ ಮಾಡುತ್ತಲೇ ಇರುತ್ತವೆ.</string>
+    <string name="nb_wa_error">ಸರ್ವರ್ ತಲುಪಲು ಆಗಲಿಲ್ಲ. ಇಂಟರ್ನೆಟ್ ಸಿಕ್ಕ ತಕ್ಷಣ ನಿಮ್ಮ ಬದಲಾವಣೆಗಳು ಸಿಂಕ್ ಆಗುತ್ತವೆ.</string>
+    <string name="nb_wa_retry">ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ</string>
+    <string name="nb_wa_checking">ಯಾರು ಸೇರಿದ್ದಾರೆ ಎಂದು ಪರಿಶೀಲಿಸಲಾಗುತ್ತಿದೆ…</string>
+    <string name="nb_wa_unnamed">ಹೆಸರಿಲ್ಲ</string>
+</resources>

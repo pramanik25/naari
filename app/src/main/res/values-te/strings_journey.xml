@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ============ Common ============ -->
+    <string name="jr_back">వెనుకకు</string>
+    <string name="jr_cancel">రద్దు చేయండి</string>
+    <string name="jr_ok">సరే</string>
+    <string name="jr_allow">అనుమతించండి</string>
+    <string name="jr_allow_camera">కెమెరా అనుమతించండి</string>
+    <string name="jr_open_settings">సెట్టింగ్‌లు తెరవండి</string>
+    <string name="jr_add_contacts">అత్యవసర కాంటాక్ట్‌లను జోడించండి</string>
+    <string name="jr_recenter">మ్యాప్‌ను మధ్యకు తీసుకురండి</string>
+    <string name="jr_sos">SOS</string>
+    <string name="jr_dash">—</string>
+    <string name="jr_list_separator">", "</string>
+    <string name="jr_dot_separator">" · "</string>
+    <string name="jr_joined">%1$s · %2$s</string>
+    <string name="jr_distance_m">%1$d మీ</string>
+    <string name="jr_distance_km">%1$.1f కి.మీ.</string>
+    <string name="jr_no_contacts_title">ముందుగా ఒక కాంటాక్ట్ జోడించండి</string>
+    <string name="jr_no_contacts_body">ఎవరికీ అలర్ట్ వెళ్లదు. ఏదైనా తప్పు జరిగితే మీ నుండి సమాచారం అందుకోవాల్సిన కనీసం ఒక అత్యవసర కాంటాక్ట్‌ను జోడించండి.</string>
+    <string name="jr_contacts_none">అత్యవసర కాంటాక్ట్‌లు లేవు</string>
+    <string name="jr_contacts_none_sub">ఎవరికైనా అలర్ట్ వెళ్లేలా అత్యవసర కాంటాక్ట్‌లను జోడించండి.</string>
+    <string name="jr_contacts_count">%1$d కాంటాక్ట్‌లకు అలర్ట్ వెళ్తుంది</string>
+    <string name="jr_sms_denied">SMS అనుమతి ఆఫ్‌లో ఉంది, కాబట్టి మీ కాంటాక్ట్‌లకు మెసేజ్ వెళ్లలేదు.</string>
+    <string name="jr_journey_title">ప్రయాణ భద్రత</string>
+
+    <!-- Notification channels -->
+    <string name="jr_channel_ongoing">జరుగుతున్న ప్రయాణాలు</string>
+    <string name="jr_channel_ongoing_desc">చెక్-ఇన్ టైమర్ లేదా క్యాబ్ ప్రయాణం నడుస్తున్నప్పుడు కనిపిస్తుంది.</string>
+    <string name="jr_channel_alerts">ప్రయాణ అలర్ట్‌లు</string>
+    <string name="jr_channel_alerts_desc">చెక్-ఇన్ రిమైండర్‌లు, క్యాబ్ ప్రయాణంలో “అంతా బాగానే ఉందా?” అని అడిగే తనిఖీలు.</string>
+
+    <!-- ============ Safety tools hub ============ -->
+    <string name="jr_tools_eyebrow">భద్రతా సాధనాలు</string>
+    <string name="jr_tools_title">మీ భద్రతా టూల్‌కిట్</string>
+    <string name="jr_tools_body">ప్రయాణంలో మీకు రక్షణగా, ఇబ్బందికర పరిస్థితి నుండి బయటపడేలా, జరిగినదాన్ని రికార్డ్ చేసేలా అన్నీ ఒకే చోట.</string>
+    <string name="jr_status_protection">రక్షణ</string>
+    <string name="jr_status_pin">యాప్ PIN</string>
+    <string name="jr_status_cloud">క్లౌడ్</string>
+    <string name="jr_status_on">ఆన్</string>
+    <string name="jr_status_off">ఆఫ్</string>
+    <string name="jr_status_pin_set">సెట్ అయింది</string>
+    <string name="jr_status_pin_none">సెట్ కాలేదు</string>
+    <string name="jr_status_cloud_on">కనెక్ట్ అయింది</string>
+    <string name="jr_status_cloud_pending">లింక్ కాలేదు</string>
+    <string name="jr_status_cloud_off">ఆఫ్‌లైన్</string>
+
+    <string name="jr_section_move">ప్రయాణంలో</string>
+    <string name="jr_section_escape">తప్పించుకోవడం</string>
+    <string name="jr_section_evidence">సాక్ష్యం</string>
+    <string name="jr_section_network">నెట్‌వర్క్</string>
+    <string name="jr_section_settings">సెట్టింగ్‌లు</string>
+
+    <string name="jr_tile_checkin">చెక్-ఇన్ టైమర్</string>
+    <string name="jr_tile_checkin_cap">నేను ఆలస్యమైతే కాంటాక్ట్‌లకు అలర్ట్</string>
+    <string name="jr_tile_checkin_active">నడుస్తోంది · ఇంకా %1$s</string>
+    <string name="jr_tile_checkin_overdue">గడువు దాటింది · చెక్-ఇన్ చేయడానికి నొక్కండి</string>
+    <string name="jr_tile_cab">క్యాబ్ మోడ్</string>
+    <string name="jr_tile_cab_cap">నంబర్ ప్లేట్ పంపండి, దారిని గమనించండి</string>
+    <string name="jr_tile_cab_active">ప్రయాణంలో · %1$s</string>
+    <string name="jr_tile_meeting">ఒకరిని కలవడం</string>
+    <string name="jr_tile_meeting_cap">డేట్, కొనుగోలుదారు లేదా ఇంటర్వ్యూ</string>
+    <string name="jr_tile_places">దగ్గరలోని సురక్షిత ప్రదేశాలు</string>
+    <string name="jr_tile_places_cap">పోలీసు, ఆసుపత్రులు, 24 గం తెరిచి ఉండేవి</string>
+    <string name="jr_tile_fake_call">ఫేక్ కాల్</string>
+    <string name="jr_tile_fake_call_cap">నమ్మదగిన రీతిలో బయటపడే మార్గం</string>
+    <string name="jr_tile_silent">నిశ్శబ్ద SOS</string>
+    <string name="jr_tile_silent_cap">సైరన్ ఉండదు, అలర్ట్‌లు మాత్రమే</string>
+    <string name="jr_tile_silent_on">ఆన్ · SOS రహస్యంగా ఉంటుంది</string>
+    <string name="jr_tile_incidents">సంఘటనల చరిత్ర</string>
+    <string name="jr_tile_incidents_cap">గత SOS లు, సాక్ష్యం</string>
+    <string name="jr_tile_diary">వ్యక్తిగత డైరీ</string>
+    <string name="jr_tile_diary_cap">తేదీతో రాసి ఉంచండి</string>
+    <string name="jr_tile_complaint">ఫిర్యాదు ముసాయిదా</string>
+    <string name="jr_tile_complaint_cap">పోలీసుల కోసం సిద్ధంగా</string>
+    <string name="jr_tile_cloud">క్లౌడ్ &amp; సంరక్షకులు</string>
+    <string name="jr_tile_cloud_cap">ఫోన్ ఆగిపోయినా పనిచేసే బ్యాకప్</string>
+    <string name="jr_tile_ble">ప్యానిక్ బటన్</string>
+    <string name="jr_tile_ble_cap">Bluetooth బటన్ జత చేయండి</string>
+    <string name="jr_tile_settings">భద్రతా సెట్టింగ్‌లు</string>
+    <string name="jr_tile_settings_cap">SOS, సాక్ష్యం, ట్రిగ్గర్‌లు</string>
+    <string name="jr_tile_pin">యాప్ PIN &amp; బలవంతపు PIN</string>
+    <string name="jr_tile_pin_cap">యాప్ లాక్ చేయండి, ఆపినట్లు నటించండి</string>
+    <string name="jr_tile_pin_cap_set">PIN సెట్ అయింది · మార్చడానికి నొక్కండి</string>
+
+    <!-- Fake call sheet -->
+    <string name="jr_fake_eyebrow">తప్పించుకోవడం</string>
+    <string name="jr_fake_title">ఫేక్ కాల్ షెడ్యూల్ చేయండి</string>
+    <string name="jr_fake_body">నిజమైనదిలా కనిపించే ఇన్‌కమింగ్ కాల్‌తో మీ ఫోన్ మోగుతుంది, అక్కడి నుండి పక్కకు వెళ్లడానికి మీకు కారణం దొరుకుతుంది.</string>
+    <string name="jr_fake_name_hint">కాల్ చేసేవారి పేరు</string>
+    <string name="jr_fake_default_name">అమ్మ</string>
+    <string name="jr_fake_delay_label">ఎప్పుడు మోగాలి</string>
+    <string name="jr_fake_5s">5 సె</string>
+    <string name="jr_fake_30s">30 సె</string>
+    <string name="jr_fake_1m">1 ని</string>
+    <string name="jr_fake_5m">5 ని</string>
+    <string name="jr_fake_schedule">కాల్ షెడ్యూల్ చేయండి</string>
+    <string name="jr_fake_scheduled">%1$s లో ఫేక్ కాల్</string>
+    <string name="jr_fake_cancelled">ఫేక్ కాల్ రద్దు అయింది</string>
+
+    <!-- ============ Safety settings ============ -->
+    <string name="jr_ss_eyebrow">భద్రతా సెట్టింగ్‌లు</string>
+    <string name="jr_ss_title">మీ SOS ఎలా పనిచేయాలి</string>
+    <string name="jr_ss_body">మార్పులు వెంటనే సేవ్ అవుతాయి. అనుమతి అవసరమైన ఫీచర్‌లు ఆన్ చేసినప్పుడు అనుమతి అడుగుతాయి.</string>
+    <string name="jr_ss_appearance">రూపం &amp; భాష</string>
+    <string name="jr_ss_appearance_sub">థీమ్, యాప్ భాష</string>
+
+    <string name="jr_ss_section_sos">SOS పనితీరు</string>
+    <string name="jr_ss_silent">నిశ్శబ్ద SOS</string>
+    <string name="jr_ss_silent_sub">సైరన్, స్క్రీన్, ఫ్లాష్‌లైట్ ఉండవు. కాంటాక్ట్‌లకు అలర్ట్ వెళ్తుంది, సాక్ష్యం నిశ్శబ్దంగా రికార్డ్ అవుతుంది.</string>
+    <string name="jr_ss_strobe">ఫ్లాష్‌లైట్ మెరుపులు</string>
+    <string name="jr_ss_strobe_sub">బిగ్గరగా SOS జరుగుతున్నప్పుడు దృష్టిని ఆకర్షించడానికి టార్చ్ మెరిపించండి.</string>
+    <string name="jr_ss_speak">మాటల అలర్ట్</string>
+    <string name="jr_ss_speak_sub">సైరన్ మోతల మధ్య “కాపాడండి! పోలీసులను పిలవండి” అని బిగ్గరగా చెబుతుంది.</string>
+    <string name="jr_ss_escalation">తర్వాతి కాంటాక్ట్‌కు కాల్</string>
+    <string name="jr_ss_escalation_sub">ఒక కాంటాక్ట్ ఎత్తకపోతే, తర్వాతి వారికి కాల్ చేస్తుంది. ఫోన్ యాక్సెస్ అవసరం.</string>
+    <string name="jr_ss_112">చివరగా 112 కి కాల్</string>
+    <string name="jr_ss_112_sub">అందరు కాంటాక్ట్‌లకు ప్రయత్నించిన తర్వాత, అత్యవసర సేవలకు కాల్ చేస్తుంది.</string>
+    <string name="jr_ss_112_confirm_title">112 కి ఆటోమేటిక్‌గా కాల్ చేయాలా?</string>
+    <string name="jr_ss_112_confirm_body">పొరపాటు అలారం వచ్చినా అత్యవసర సేవలకు కాల్ వెళ్తుందని మీరు అంగీకరిస్తేనే ఆన్ చేయండి.</string>
+
+    <string name="jr_ss_section_evidence">సాక్ష్యం</string>
+    <string name="jr_ss_audio">ఆడియో రికార్డ్ చేయండి</string>
+    <string name="jr_ss_audio_sub">SOS సమయంలో చిన్న చిన్న భాగాలుగా శబ్దం రికార్డ్ చేసి ప్రతిదాన్ని అప్‌లోడ్ చేస్తుంది.</string>
+    <string name="jr_ss_video">వీడియో రికార్డ్ చేయండి</string>
+    <string name="jr_ss_video_sub">ఫోటోల బదులు వీడియో. చాలా ఎక్కువ బ్యాటరీ, డేటా వాడుతుంది.</string>
+    <string name="jr_ss_video_confirm_title">SOS సమయంలో వీడియో రికార్డ్ చేయాలా?</string>
+    <string name="jr_ss_video_confirm_body">వీడియో బ్యాటరీని వేగంగా తగ్గిస్తుంది, మొబైల్ డేటా ఎక్కువగా వాడుతుంది. సాధారణంగా ఫోటోలు, ఆడియో సరిపోతాయి.</string>
+    <string name="jr_ss_mobile">మొబైల్ డేటాలో అప్‌లోడ్</string>
+    <string name="jr_ss_mobile_sub">Wi-Fi లో మాత్రమే కాకుండా, సాక్ష్యాన్ని వెంటనే పంపండి.</string>
+
+    <string name="jr_ss_section_triggers">ఆటోమేటిక్ ట్రిగ్గర్‌లు</string>
+    <string name="jr_ss_scream">అరుపు గుర్తింపు</string>
+    <string name="jr_ss_scream_sub">ఫోన్‌లోనే అరుపుల కోసం వింటుంది. ఆడియో ఎప్పుడూ నిల్వ చేయబడదు, పంపబడదు.</string>
+    <string name="jr_ss_fall">పడిపోవడం గుర్తింపు</string>
+    <string name="jr_ss_fall_sub">రక్షణ ఆన్‌లో ఉన్నప్పుడు గట్టిగా పడిపోయినా లేదా పెనుగులాట జరిగినా SOS ప్రారంభిస్తుంది.</string>
+    <string name="jr_ss_headset">హెడ్‌సెట్ బటన్</string>
+    <string name="jr_ss_headset_sub">వైర్డ్ లేదా Bluetooth హెడ్‌సెట్ బటన్‌ను మూడుసార్లు నొక్కండి.</string>
+    <string name="jr_ss_volume">వాల్యూమ్ బటన్‌లు, స్క్రీన్ ఆఫ్</string>
+    <string name="jr_ss_volume_sub">ఫోన్ లాక్‌లో ఉన్నా వాల్యూమ్ బటన్‌లతో SOS ప్రారంభించండి.</string>
+    <string name="jr_ss_enable">ఆన్ చేయండి</string>
+    <string name="jr_ss_accessibility_on">యాక్సెసిబిలిటీ సేవ ఆన్‌లో ఉంది</string>
+    <string name="jr_ss_accessibility_off">యాక్సెసిబిలిటీ సేవ ఆఫ్‌లో ఉంది</string>
+    <string name="jr_ss_accessibility_title">యాక్సెసిబిలిటీ సేవను ఆన్ చేయండి</string>
+    <string name="jr_ss_accessibility_body">స్క్రీన్ ఆఫ్‌లో ఉన్నప్పుడు వాల్యూమ్ బటన్ నొక్కులను యాప్‌లు చూడాలంటే Android యాక్సెసిబిలిటీ సేవ ద్వారా మాత్రమే అనుమతిస్తుంది. Naari Shakti దీన్ని బటన్ నొక్కుల కోసం మాత్రమే ఉపయోగిస్తుంది, మీ స్క్రీన్‌ను ఎప్పుడూ చదవదు. జాబితాలో Naari Shakti ని కనుగొని ఆన్ చేయండి.</string>
+    <string name="jr_ss_denied_accessibility">యాక్సెసిబిలిటీ సేవ లేకుండా స్క్రీన్ ఆఫ్‌లో ఉన్నప్పుడు వాల్యూమ్ బటన్‌లు SOS ప్రారంభించలేవు, కాబట్టి ఇది ఆఫ్ చేయబడింది.</string>
+    <string name="jr_ss_panic">ప్యానిక్ బటన్</string>
+    <string name="jr_ss_panic_none">జత కాలేదు · చిన్న Bluetooth బటన్ జత చేయండి</string>
+    <string name="jr_ss_panic_paired">జత అయింది: %1$s</string>
+
+    <string name="jr_ss_section_phone">ఫోన్ స్థితి అలర్ట్‌లు</string>
+    <string name="jr_ss_shutdown">ఫోన్ ఆఫ్ అయింది</string>
+    <string name="jr_ss_shutdown_sub">రక్షణ సమయంలో ఫోన్ ఆఫ్ అయితే మీ చివరి లొకేషన్ మెసేజ్ చేస్తుంది.</string>
+    <string name="jr_ss_battery">బ్యాటరీ దాదాపు అయిపోయింది</string>
+    <string name="jr_ss_battery_sub" formatted="false">బ్యాటరీ 5% కి పడిపోయినప్పుడు మీ చివరి లొకేషన్ మెసేజ్ చేస్తుంది.</string>
+    <string name="jr_ss_sim">SIM కార్డ్ మారింది</string>
+    <string name="jr_ss_sim_sub">ఎవరైనా SIM మార్చితే మీ కాంటాక్ట్‌లకు అలర్ట్ చేస్తుంది. ఫోన్ యాక్సెస్ అవసరం.</string>
+
+    <string name="jr_ss_section_community">కమ్యూనిటీ</string>
+    <string name="jr_ss_mesh">ఆఫ్‌లైన్ మెష్ SOS</string>
+    <string name="jr_ss_mesh_sub">సిగ్నల్ లేనప్పుడు Bluetooth, Wi-Fi ద్వారా దగ్గరలోని Naari Shakti ఫోన్‌లకు మీ SOS పంపుతుంది.</string>
+    <string name="jr_ss_helper">సమీప సహాయకులు</string>
+    <string name="jr_ss_helper_on">ఆన్ · దగ్గరలోని వారికి సహాయం చేయమని మిమ్మల్ని అడగవచ్చు</string>
+    <string name="jr_ss_helper_off">ఆఫ్ · మీ దగ్గరలోని వారికి సహాయం చేయడానికి ముందుకు రండి</string>
+
+    <string name="jr_ss_needs_access">అనుమతి అవసరం · అనుమతించడానికి నొక్కండి</string>
+    <string name="jr_ss_denied_title">%1$s ఆఫ్‌లో ఉంది</string>
+    <string name="jr_ss_denied_body">ఈ అనుమతి లేకుండా %1$s పనిచేయదు, కాబట్టి ఇది ఆఫ్ చేయబడింది. ఎప్పుడైనా మళ్లీ ఆన్ చేయవచ్చు.</string>
+
+    <!-- ============ Check-in timer ============ -->
+    <string name="jr_ci_eyebrow">చెక్-ఇన్ టైమర్</string>
+    <string name="jr_ci_title">సురక్షితంగా చేరుకోండి</string>
+    <string name="jr_ci_title_active">చెక్-ఇన్ నడుస్తోంది</string>
+    <string name="jr_ci_body">మీరు ఎప్పుడు చేరుకుంటారో సెట్ చేయండి. అప్పటికి మీరు చెక్-ఇన్ చేయకపోతే, మీ ఫోన్ ఆగిపోయినా మీ కాంటాక్ట్‌లకు ఆటోమేటిక్‌గా అలర్ట్ వెళ్తుంది.</string>
+    <string name="jr_ci_body_active">చేరుకున్నాక “నేను సురక్షితం” నొక్కండి. ఇంకా సమయం కావాలా? 15 నిమిషాలు జోడించండి.</string>
+    <string name="jr_ci_section_time">ఇంతలోపు చెక్-ఇన్</string>
+    <string name="jr_ci_15">15 ని</string>
+    <string name="jr_ci_30">30 ని</string>
+    <string name="jr_ci_45">45 ని</string>
+    <string name="jr_ci_60">1 గంట</string>
+    <string name="jr_ci_custom">సమయం ఎంచుకోండి</string>
+    <string name="jr_ci_custom_at">%1$s కి</string>
+    <string name="jr_ci_custom_title">ఈ సమయానికి చెక్-ఇన్</string>
+    <string name="jr_ci_due_at">మీ గడువు %1$s</string>
+    <string name="jr_ci_time_passed">ఆ సమయం ఇప్పటికే దాటిపోయింది. తర్వాతి సమయం ఎంచుకోండి.</string>
+    <string name="jr_ci_section_note">మీ కాంటాక్ట్‌ల కోసం నోట్</string>
+    <string name="jr_ci_note_hint">మీరు ఎక్కడికి వెళ్తున్నారు?</string>
+    <string name="jr_ci_note_placeholder">మెట్రో నుండి ఇంటికి నడుస్తున్నాను</string>
+    <string name="jr_ci_section_contacts">ఎవరికి అలర్ట్ వెళ్తుంది</string>
+    <string name="jr_ci_exact_alarm">చెక్-ఇన్ సరిగ్గా సమయానికి జరగాలంటే “అలారాలు &amp; రిమైండర్‌లు” అనుమతించండి.</string>
+    <string name="jr_ci_cloud_on">సర్వర్ బ్యాకప్ ఆన్‌లో ఉంది: మీ ఫోన్ ఆఫ్ అయినా లేదా సిగ్నల్ పోయినా మీ కాంటాక్ట్‌లకు అలర్ట్ వెళ్తుంది.</string>
+    <string name="jr_ci_cloud_off">సర్వర్ బ్యాకప్ ఆఫ్‌లో ఉంది, కాబట్టి అలర్ట్ ఈ ఫోన్ ఆన్‌లో ఉండటంపై ఆధారపడుతుంది.</string>
+    <string name="jr_ci_start">చెక్-ఇన్ ప్రారంభించండి</string>
+    <string name="jr_ci_no_location">లొకేషన్ ఆఫ్‌లో ఉంది: టైమర్ పనిచేస్తుంది, కానీ మీరు ఎక్కడ ఉన్నారో మీ కాంటాక్ట్‌లకు కనిపించదు.</string>
+    <string name="jr_ci_replace_title">నడుస్తున్న చెక్-ఇన్‌ను మార్చాలా?</string>
+    <string name="jr_ci_replace_body">ఇప్పటికే ఒక చెక్-ఇన్ నడుస్తోంది. కొత్తది ప్రారంభిస్తే అది ముగుస్తుంది.</string>
+    <string name="jr_ci_replace">మార్చండి</string>
+
+    <string name="jr_ci_left_caption">మిగిలి ఉంది · గడువు %1$s</string>
+    <string name="jr_ci_overdue">గడువు దాటింది</string>
+    <string name="jr_ci_overdue_caption">SOS మొదలైంది</string>
+    <string name="jr_ci_status_active">మీరు చెక్-ఇన్ చేయకపోతే, మీ %1$d కాంటాక్ట్‌లకు ఆటోమేటిక్‌గా అలర్ట్ వెళ్తుంది.</string>
+    <string name="jr_ci_status_overdue">మీరు చెక్-ఇన్ చేయలేదు, SOS పంపబడింది. మీరు సురక్షితంగా ఉంటే “నేను సురక్షితం” నొక్కండి.</string>
+    <string name="jr_ci_safe">నేను సురక్షితం</string>
+    <string name="jr_ci_extend">+15 ని</string>
+    <string name="jr_ci_extended">చెక్-ఇన్ %1$s కి మార్చబడింది</string>
+    <string name="jr_ci_help">ఇప్పుడే సహాయం కావాలి</string>
+    <string name="jr_ci_pin_title">చెక్-ఇన్ చేయడానికి మీ PIN ఎంటర్ చేయండి</string>
+    <string name="jr_ci_checked_out">సురక్షితంగా చెక్-ఇన్ అయ్యారు. మీ కాంటాక్ట్‌లకు అలర్ట్ వెళ్లదు.</string>
+
+    <string name="jr_ci_warn_title">2 ని. లో చెక్-ఇన్ గడువు</string>
+    <string name="jr_ci_warn_text">%1$s లోపు “నేను సురక్షితం” నొక్కండి, లేదంటే మీ కాంటాక్ట్‌లకు అలర్ట్ వెళ్తుంది.</string>
+    <string name="jr_ci_missed_title">చెక్-ఇన్ మిస్ అయింది · SOS పంపబడింది</string>
+    <string name="jr_ci_missed_text">మీ కాంటాక్ట్‌లకు అలర్ట్ వెళ్తోంది. మీరు సురక్షితంగా ఉంటే “నేను సురక్షితం” నొక్కండి.</string>
+    <string name="jr_ci_ongoing_title">చెక్-ఇన్ నడుస్తోంది</string>
+    <string name="jr_ci_ongoing_title_overdue">చెక్-ఇన్ గడువు దాటింది</string>
+    <string name="jr_ci_ongoing_text">గడువు %1$s</string>
+    <string name="jr_ci_ongoing_text_note">గడువు %1$s · %2$s</string>
+
+    <!-- ============ Cab mode ============ -->
+    <string name="jr_cab_eyebrow">క్యాబ్ మోడ్</string>
+    <string name="jr_cab_title">తోడుతో ప్రయాణించండి</string>
+    <string name="jr_cab_body">నంబర్ ప్లేట్ స్కాన్ చేయండి, మీ కాంటాక్ట్‌లకు క్యాబ్ వివరాలు, లైవ్ లొకేషన్ వెళ్తాయి. ప్రయాణం దారి తప్పితే మేము మిమ్మల్ని అడిగి తెలుసుకుంటాము.</string>
+    <string name="jr_cab_section_plate">నంబర్ ప్లేట్</string>
+    <string name="jr_cab_camera_cd">నంబర్ ప్లేట్ స్కాన్ చేయడానికి కెమెరా ప్రివ్యూ</string>
+    <string name="jr_cab_scanning">నంబర్ ప్లేట్ వైపు చూపండి</string>
+    <string name="jr_cab_detected">%1$s గుర్తించబడింది</string>
+    <string name="jr_cab_camera_error">కెమెరా అందుబాటులో లేదు · ప్లేట్ టైప్ చేయండి</string>
+    <string name="jr_cab_camera_needed">ప్లేట్‌ను ఆటోమేటిక్‌గా చదవడానికి కెమెరా అనుమతించండి, లేదా కింద టైప్ చేయండి.</string>
+    <string name="jr_cab_plate_hint">నంబర్ ప్లేట్</string>
+    <string name="jr_cab_plate_helper">ఫోన్‌లోనే చదవబడింది. క్యాబ్‌తో సరిపోతుందో చూసుకోండి.</string>
+    <string name="jr_cab_plate_needed">క్యాబ్ నంబర్ ప్లేట్ ఎంటర్ చేయండి</string>
+    <string name="jr_cab_rescan">తీసివేసి మళ్లీ స్కాన్ చేయండి</string>
+    <string name="jr_cab_section_ride">ప్రయాణ వివరాలు (ఐచ్ఛికం)</string>
+    <string name="jr_cab_driver_hint">డ్రైవర్ పేరు</string>
+    <string name="jr_cab_app_uber">Uber</string>
+    <string name="jr_cab_app_ola">Ola</string>
+    <string name="jr_cab_app_rapido">Rapido</string>
+    <string name="jr_cab_app_auto">ఆటో</string>
+    <string name="jr_cab_app_other">ఇతర</string>
+    <string name="jr_cab_section_dest">గమ్యం</string>
+    <string name="jr_cab_map_cd">మ్యాప్. మీరు ఎక్కడికి వెళ్తున్నారో సెట్ చేయడానికి నొక్కండి.</string>
+    <string name="jr_cab_map_hint">మీ గమ్యం సెట్ చేయడానికి మ్యాప్‌పై నొక్కండి</string>
+    <string name="jr_cab_dest_hint">గమ్యం పేరు</string>
+    <string name="jr_cab_dest_generic">గమ్యం</string>
+    <string name="jr_cab_contacts_note">మీ %1$d కాంటాక్ట్‌లకు ప్లేట్, ప్రయాణ వివరాలు, లైవ్ లొకేషన్ లింక్ SMS ద్వారా వెళ్తాయి.</string>
+    <string name="jr_cab_start">ప్రయాణం ప్రారంభించండి</string>
+    <string name="jr_cab_sms_sent">ప్రయాణ వివరాలు %1$d కాంటాక్ట్‌లకు పంపబడ్డాయి</string>
+    <string name="jr_cab_no_location">లొకేషన్ ఆఫ్‌లో ఉంది, కాబట్టి దారిని గమనించలేము.</string>
+
+    <string name="jr_cab_active_overline">ప్రయాణంలో</string>
+    <string name="jr_cab_driver_label">డ్రైవర్ %1$s</string>
+    <string name="jr_cab_to_label">%1$s కి</string>
+    <string name="jr_cab_elapsed">క్యాబ్‌లో సమయం</string>
+    <string name="jr_cab_distance_left">మిగిలిన దూరం</string>
+    <string name="jr_cab_locating">లొకేషన్ కనుగొంటోంది…</string>
+    <string name="jr_cab_monitor_on">మీ దారిని గమనిస్తున్నాము. క్యాబ్ తప్పు దారిలో వెళ్లినా లేదా చాలాసేపు ఆగినా మిమ్మల్ని అడిగి తెలుసుకుంటాము.</string>
+    <string name="jr_cab_monitor_nodest">గమ్యం సెట్ చేయలేదు, కాబట్టి దారిని గమనించడం లేదు. SOS ఒక్క నొక్కు దూరంలో ఉంది.</string>
+    <string name="jr_cab_monitor_near">మీరు దాదాపు చేరుకున్నారు. మీ కాంటాక్ట్‌లకు తెలియజేయడానికి “సురక్షితంగా చేరాను” నొక్కండి.</string>
+    <string name="jr_cab_monitor_prompt">మిమ్మల్ని అడుగుతున్నాము: %1$d సె. లోపు జవాబివ్వండి, లేదంటే SOS పంపబడుతుంది.</string>
+    <string name="jr_cab_arrived">సురక్షితంగా చేరాను</string>
+    <string name="jr_cab_arrived_sent">మీరు సురక్షితంగా చేరారని మీ కాంటాక్ట్‌లకు తెలియజేశాము.</string>
+    <string name="jr_cab_end">ప్రయాణం ముగించండి</string>
+    <string name="jr_cab_end_title">ఈ ప్రయాణం ముగించాలా?</string>
+    <string name="jr_cab_end_body">దారిని గమనించడం ఆగుతుంది. మీ కాంటాక్ట్‌లకు మెసేజ్ వెళ్లదు.</string>
+
+    <string name="jr_cab_prompt_title">అంతా బాగానే ఉందా?</string>
+    <string name="jr_cab_prompt_text">మీ క్యాబ్ దారి తప్పింది లేదా చాలాసేపు ఆగింది. ఒక నిమిషంలో జవాబివ్వకపోతే, SOS పంపబడుతుంది.</string>
+    <string name="jr_cab_prompt_dialog">మీ క్యాబ్ దారి తప్పింది లేదా చాలాసేపు ఆగింది. మీరు జవాబివ్వకపోతే %1$d సె. లో SOS పంపబడుతుంది.</string>
+    <string name="jr_cab_im_ok">నేను బాగున్నాను</string>
+    <string name="jr_cab_near_title">మీరు దాదాపు చేరుకున్నారు</string>
+    <string name="jr_cab_near_text">%1$s దగ్గర. మీరు సురక్షితంగా చేరారని మీ కాంటాక్ట్‌లకు తెలియజేయండి.</string>
+    <string name="jr_cab_ongoing_title">క్యాబ్ ప్రయాణం · %1$s</string>
+    <string name="jr_cab_ongoing_title_noplate">క్యాబ్ ప్రయాణం</string>
+    <string name="jr_cab_ongoing_left">ఇంకా %1$s · దారి గమనిస్తున్నాము</string>
+    <string name="jr_cab_ongoing_locating">మీ లొకేషన్ కనుగొంటోంది…</string>
+    <string name="jr_cab_ongoing_nodest">గమ్యం సెట్ చేయలేదు</string>
+
+    <!-- ============ Meeting mode ============ -->
+    <string name="jr_meet_eyebrow">ఒకరిని కలవడం</string>
+    <string name="jr_meet_title">భద్రతా వలయంతో కలవండి</string>
+    <string name="jr_meet_body">డేట్, కొనుగోలుదారు లేదా అమ్మకందారు, ఇంటర్వ్యూ. ఎవరిని, ఎక్కడ కలుస్తున్నారో మీ కాంటాక్ట్‌లకు తెలుస్తుంది, అది ముగిసే వరకు చెక్-ఇన్ నడుస్తుంది.</string>
+    <string name="jr_meet_section_who">ఎవరు</string>
+    <string name="jr_meet_name_hint">వారి పేరు</string>
+    <string name="jr_meet_name_needed">వారి పేరు జోడించండి</string>
+    <string name="jr_meet_contact_hint">ఫోన్ లేదా ప్రొఫైల్ లింక్</string>
+    <string name="jr_meet_photo_title">వారి ఫోటో (ఐచ్ఛికం)</string>
+    <string name="jr_meet_photo_caption">ఈ ఫోన్‌లోనే గోప్యంగా ఉంచబడుతుంది.</string>
+    <string name="jr_meet_photo_cd">మీరు కలుస్తున్న వ్యక్తి ఫోటో</string>
+    <string name="jr_meet_camera">కెమెరా</string>
+    <string name="jr_meet_gallery">గ్యాలరీ</string>
+    <string name="jr_meet_photo_saved">ఫోటో గోప్యంగా సేవ్ అయింది</string>
+    <string name="jr_meet_photo_failed">ఫోటో సేవ్ కాలేదు</string>
+    <string name="jr_meet_no_camera">కెమెరా యాప్ అందుబాటులో లేదు</string>
+    <string name="jr_meet_no_gallery">గ్యాలరీ యాప్ అందుబాటులో లేదు</string>
+    <string name="jr_meet_camera_denied">కెమెరా అనుమతి ఆఫ్‌లో ఉంది.</string>
+    <string name="jr_meet_section_where">ఎక్కడ</string>
+    <string name="jr_meet_map_cd">మ్యాప్. కలిసే ప్రదేశం సెట్ చేయడానికి నొక్కండి.</string>
+    <string name="jr_meet_map_hint">మ్యాప్‌పై నొక్కండి, లేదా మీ లొకేషన్ ఉపయోగించండి</string>
+    <string name="jr_meet_use_here">నా ప్రస్తుత లొకేషన్ ఉపయోగించండి</string>
+    <string name="jr_meet_place_hint">ప్రదేశం పేరు</string>
+    <string name="jr_meet_section_until">ఎప్పటి వరకు</string>
+    <string name="jr_meet_ends_at">%1$s కి ముగుస్తుంది</string>
+    <string name="jr_meet_end_caption">అప్పటికల్లా మీరు చెక్-ఇన్ చేయాలి</string>
+    <string name="jr_meet_end_title">ముగిసే సమయం (అంచనా)</string>
+    <string name="jr_meet_contacts_note">మీ %1$d కాంటాక్ట్‌లకు SMS ద్వారా సారాంశం వెళ్తుంది, తర్వాత చెక్-ఇన్ ప్రారంభమవుతుంది.</string>
+    <string name="jr_meet_start">మీటింగ్ చెక్-ఇన్ ప్రారంభించండి</string>
+    <string name="jr_meet_note">%1$s ని కలుస్తున్నాను</string>
+    <string name="jr_meet_note_place">%2$s లో %1$s ని కలుస్తున్నాను</string>
+
+    <!-- ============ SMS bodies ============ -->
+    <string name="jr_sms_default_name">మీ స్నేహితురాలు</string>
+    <!-- %1$s name, %2$s plate, %3$s optional details from jr_sms_cab_details_* (starts with a space). -->
+    <string name="jr_sms_cab_start">Naari Shakti: %1$s క్యాబ్ %2$s%3$s లో ఉన్నారు.</string>
+    <string name="jr_sms_cab_details_app_driver">" (%1$s, డ్రైవర్ %2$s)"</string>
+    <string name="jr_sms_cab_details_app">" (%1$s)"</string>
+    <string name="jr_sms_cab_details_driver">" (డ్రైవర్ %1$s)"</string>
+    <string name="jr_sms_cab_going">%1$s కి వెళ్తున్నారు.</string>
+    <string name="jr_sms_live">లైవ్: %1$s</string>
+    <string name="jr_sms_cab_arrived">Naari Shakti: %1$s సురక్షితంగా %2$s కి చేరారు.</string>
+    <string name="jr_sms_meet_intro">Naari Shakti: %1$s, %2$s ని కలుస్తున్నారు.</string>
+    <string name="jr_sms_meet_contact">వారి కాంటాక్ట్: %1$s.</string>
+    <string name="jr_sms_meet_place">ప్రదేశం: %1$s %2$s</string>
+    <string name="jr_sms_meet_place_nolink">ప్రదేశం: %1$s.</string>
+    <string name="jr_sms_meet_place_unknown">పంచుకోలేదు</string>
+    <string name="jr_sms_meet_end">%1$s కల్లా ముగుస్తుంది. అప్పటికి %2$s చెక్-ఇన్ చేయకపోతే, మీకు అలర్ట్ వస్తుంది.</string>
+
+    <!-- ============ Safe places ============ -->
+    <string name="jr_sp_eyebrow">సురక్షిత ప్రదేశాలు</string>
+    <string name="jr_sp_title">3 కి.మీ. లోపల సహాయం</string>
+    <string name="jr_sp_body">మీ చుట్టూ ఉన్న పోలీస్ స్టేషన్‌లు, ఆసుపత్రులు, క్లినిక్‌లు, మెడికల్ షాప్‌లు, పెట్రోల్ బంక్‌లు. 24 గంటలు తెరిచి ఉండేవి గుర్తించబడ్డాయి.</string>
+    <string name="jr_sp_refresh">రిఫ్రెష్</string>
+    <string name="jr_sp_map_cd">మీ దగ్గరలోని సురక్షిత ప్రదేశాల మ్యాప్</string>
+    <string name="jr_sp_all">అన్నీ</string>
+    <string name="jr_sp_police">పోలీసు</string>
+    <string name="jr_sp_hospital">ఆసుపత్రులు</string>
+    <string name="jr_sp_clinic">క్లినిక్‌లు</string>
+    <string name="jr_sp_pharmacy">మెడికల్ షాప్‌లు</string>
+    <string name="jr_sp_fuel">పెట్రోల్</string>
+    <string name="jr_sp_type_police">పోలీస్ స్టేషన్</string>
+    <string name="jr_sp_type_hospital">ఆసుపత్రి</string>
+    <string name="jr_sp_type_clinic">క్లినిక్</string>
+    <string name="jr_sp_type_pharmacy">మెడికల్ షాప్</string>
+    <string name="jr_sp_type_fuel">పెట్రోల్ బంక్</string>
+    <string name="jr_sp_open_24h">24 గం తెరిచి ఉంటుంది</string>
+    <string name="jr_sp_call">కాల్</string>
+    <string name="jr_sp_navigate">దారి చూపండి</string>
+    <string name="jr_sp_locating">మీ లొకేషన్ కనుగొంటోంది…</string>
+    <string name="jr_sp_loading">దగ్గరలోని ప్రదేశాల కోసం వెతుకుతోంది…</string>
+    <string name="jr_sp_summary">3 కి.మీ. లోపల %1$d ప్రదేశాలు, దగ్గరివి ముందు</string>
+    <string name="jr_sp_summary_none">ప్రదేశాలు ఏవీ దొరకలేదు</string>
+    <string name="jr_sp_empty">3 కి.మీ. లోపల ఏమీ దొరకలేదు. ఇంటర్నెట్ ఉన్నప్పుడు మళ్లీ ప్రయత్నించండి.</string>
+    <string name="jr_sp_empty_filter">3 కి.మీ. లోపల ఈ రకమైనవి ఏవీ లేవు.</string>
+    <string name="jr_sp_offline">ఆఫ్‌లైన్ · %1$s న సేవ్ చేసిన ప్రదేశాలు చూపిస్తోంది</string>
+    <string name="jr_sp_offline_nocache">ఆఫ్‌లైన్‌లో ఉన్నారు, ఇంకా ఏమీ సేవ్ కాలేదు. ఇంటర్నెట్‌కు కనెక్ట్ అయి రిఫ్రెష్ చేయండి.</string>
+    <string name="jr_sp_no_location">లొకేషన్ ఆఫ్‌లో ఉంది, కాబట్టి మీ చుట్టూ ఉన్న ప్రదేశాలు కనుగొనలేము.</string>
+    <string name="jr_sp_marker">%1$s · %2$s</string>
+    <string name="jr_sp_attribution">మ్యాప్ డేటా © OpenStreetMap కంట్రిబ్యూటర్లు</string>
+
+    <!-- ============ Home entry points ============ -->
+    <string name="jr_home_tools_title">భద్రతా సాధనాలు</string>
+    <string name="jr_home_tools_sub">చెక్-ఇన్ టైమర్, క్యాబ్ మోడ్, ఫేక్ కాల్ ఇంకా మరిన్ని</string>
+    <string name="jr_home_tools_cd">భద్రతా సాధనాలు తెరవండి</string>
+    <string name="jr_home_checkin_title">చెక్-ఇన్ నడుస్తోంది</string>
+    <string name="jr_home_checkin_sub">ఇంకా %1$s · గడువు %2$s</string>
+    <string name="jr_home_checkin_overdue">చెక్-ఇన్ గడువు దాటింది</string>
+    <string name="jr_home_checkin_overdue_sub">SOS పంపబడింది · మీరు సురక్షితంగా ఉంటే నొక్కండి</string>
+    <string name="jr_home_cab_title">క్యాబ్ ప్రయాణం · %1$s</string>
+    <string name="jr_home_cab_sub">ఇంకా %1$s · తెరవడానికి నొక్కండి</string>
+    <string name="jr_home_cab_sub_nodist">ప్రయాణం జరుగుతోంది · తెరవడానికి నొక్కండి</string>
+
+    <!-- ============ Settings entry points ============ -->
+    <string name="jr_settings_section">భద్రతా సాధనాలు</string>
+    <string name="jr_settings_row_safety">భద్రతా సెట్టింగ్‌లు</string>
+    <string name="jr_settings_row_safety_sub">నిశ్శబ్ద SOS, సాక్ష్యం, ఆటోమేటిక్ ట్రిగ్గర్‌లు</string>
+    <string name="jr_settings_row_pin">యాప్ PIN &amp; బలవంతపు PIN</string>
+    <string name="jr_settings_row_pin_sub">యాప్ లాక్ చేయండి, SOS ఆగినట్లు నటించండి</string>
+    <string name="jr_settings_row_cloud">క్లౌడ్ &amp; సంరక్షకులు</string>
+    <string name="jr_settings_row_cloud_sub">సర్వర్ బ్యాకప్, సంరక్షకులు, సమీప సహాయకులు</string>
+</resources>

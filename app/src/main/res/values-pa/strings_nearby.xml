@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nb_home_eyebrow">ਭਾਈਚਾਰਾ</string>
+    <string name="nb_home_title">ਕੀ ਤੁਸੀਂ ਆਪਣੇ ਨੇੜੇ ਦੀਆਂ ਔਰਤਾਂ ਦੀ ਮਦਦ ਕਰੋਗੇ?</string>
+    <string name="nb_home_body">ਜਦੋਂ ਤੁਹਾਡੇ ਨੇੜੇ ਕੋਈ SOS ਚਾਲੂ ਕਰੇਗੀ, ਤਾਂ ਤੁਹਾਨੂੰ ਉਸਦੀ ਲੋਕੇਸ਼ਨ ਨਾਲ ਅਲਰਟ ਮਿਲੇਗਾ, ਤਾਂ ਜੋ ਤੁਸੀਂ ਮਦਦ ਕਰ ਸਕੋ ਜਾਂ 112 ਤੇ ਕਾਲ ਕਰ ਸਕੋ। ਤੁਹਾਡੀ ਲੋਕੇਸ਼ਨ ਸਿਰਫ਼ ਨੇੜਲੇ ਅਲਰਟਾਂ ਨਾਲ ਮਿਲਾਉਣ ਲਈ ਵਰਤੀ ਜਾਂਦੀ ਹੈ ਅਤੇ ਕਦੇ ਕਿਸੇ ਨੂੰ ਨਹੀਂ ਦਿਖਾਈ ਜਾਂਦੀ।</string>
+    <string name="nb_home_yes">ਹਾਂ, ਮੈਂ ਮਦਦ ਕਰਾਂਗੀ</string>
+    <string name="nb_home_not_now">ਹੁਣੇ ਨਹੀਂ</string>
+    <string name="nb_home_thanks">ਧੰਨਵਾਦ। ਨੇੜੇ ਕਿਸੇ ਨੂੰ ਮਦਦ ਚਾਹੀਦੀ ਹੋਵੇਗੀ ਤਾਂ ਤੁਹਾਨੂੰ ਅਲਰਟ ਮਿਲੇਗਾ।</string>
+    <string name="nb_home_thanks_offline">ਧੰਨਵਾਦ। ਇੰਟਰਨੈੱਟ ਮਿਲਦੇ ਹੀ ਤੁਹਾਨੂੰ ਮਦਦਗਾਰ ਵਜੋਂ ਜੋੜ ਦਿੱਤਾ ਜਾਵੇਗਾ।</string>
+    <string name="nb_home_location_denied">ਤੁਹਾਡੀ ਲੋਕੇਸ਼ਨ ਤੋਂ ਬਿਨਾਂ ਅਸੀਂ ਤੁਹਾਨੂੰ ਨੇੜਲੇ ਅਲਰਟਾਂ ਨਾਲ ਨਹੀਂ ਮਿਲਾ ਸਕਦੇ। ਤੁਸੀਂ ਇਸਨੂੰ ਬਾਅਦ ਵਿੱਚ ਕਲਾਊਡ ਅਤੇ ਗਾਰਡੀਅਨ ਵਿੱਚ ਚਾਲੂ ਕਰ ਸਕਦੇ ਹੋ।</string>
+
+    <string name="nb_mesh_title">ਕੀ ਇੰਟਰਨੈੱਟ ਤੋਂ ਬਿਨਾਂ ਵੀ ਮਦਦ ਕਰੋਗੇ?</string>
+    <string name="nb_mesh_body">ਇੰਟਰਨੈੱਟ ਨਾ ਹੋਣ ਤੇ Naari Shakti ਨੇੜਲੇ ਫ਼ੋਨਾਂ ਵਿਚਕਾਰ Bluetooth ਰਾਹੀਂ SOS ਅਲਰਟ ਪਹੁੰਚਾ ਸਕਦਾ ਹੈ। ਇਸ ਲਈ ਨੇੜਲੇ ਡਿਵਾਈਸਾਂ ਦੀ ਇਜਾਜ਼ਤ ਚਾਹੀਦੀ ਹੈ।</string>
+    <string name="nb_mesh_yes">ਚਾਲੂ ਕਰੋ</string>
+    <string name="nb_mesh_no">ਨਹੀਂ, ਧੰਨਵਾਦ</string>
+    <string name="nb_mesh_on">ਆਫ਼ਲਾਈਨ Bluetooth ਅਲਰਟ ਚਾਲੂ ਹਨ।</string>
+    <string name="nb_mesh_denied">ਆਫ਼ਲਾਈਨ Bluetooth ਅਲਰਟਾਂ ਲਈ ਨੇੜਲੇ ਡਿਵਾਈਸਾਂ ਦੀ ਇਜਾਜ਼ਤ ਚਾਹੀਦੀ ਹੈ।</string>
+
+    <string name="nb_broadcast_title">SOS ਦੌਰਾਨ ਮੇਰੇ ਨੇੜਲੇ ਲੋਕਾਂ ਨੂੰ ਅਲਰਟ ਕਰੋ</string>
+    <string name="nb_broadcast_sub">2 ਤੋਂ 5 ਕਿ.ਮੀ. ਦੇ ਅੰਦਰ ਦੇ ਮਦਦਗਾਰਾਂ ਨੂੰ ਤੁਹਾਡੀ ਲੋਕੇਸ਼ਨ ਅਤੇ ਫ਼ੋਟੋਆਂ ਮਿਲਦੀਆਂ ਹਨ, ਤਾਂ ਜੋ ਉਹ ਮਦਦ ਕਰ ਸਕਣ। ਤੁਹਾਡੇ ਗਾਰਡੀਅਨ ਨੂੰ ਹਮੇਸ਼ਾ ਅਲਰਟ ਮਿਲਦਾ ਹੈ।</string>
+
+    <plurals name="nb_evidence_count">
+        <item quantity="one">%d ਫ਼ੋਟੋ ਜਾਂ ਰਿਕਾਰਡਿੰਗ</item>
+        <item quantity="other">%d ਫ਼ੋਟੋਆਂ ਅਤੇ ਰਿਕਾਰਡਿੰਗਾਂ</item>
+    </plurals>
+    <string name="nb_radius_km">%1$d ਕਿ.ਮੀ. ਦੇ ਅੰਦਰ</string>
+    <string name="nb_view_live">ਲਾਈਵ ਲੋਕੇਸ਼ਨ ਅਤੇ ਸਬੂਤ ਦੇਖੋ</string>
+    <string name="nb_photo_desc">ਉਸਦੇ SOS ਦੀ ਸਭ ਤੋਂ ਨਵੀਂ ਫ਼ੋਟੋ</string>
+    <string name="nb_n_evidence_text">ਹੁਣ ਤੱਕ %1$s। ਲਾਈਵ ਦੇਖਣ ਲਈ ਟੈਪ ਕਰੋ।</string>
+
+    <string name="nb_wa_section">WhatsApp ਅਲਰਟ</string>
+    <string name="nb_wa_title">WhatsApp ਅਲਰਟ</string>
+    <string name="nb_wa_caption">ਆਪਣਾ SOS, ਲਾਈਵ ਲੋਕੇਸ਼ਨ ਅਤੇ ਫ਼ੋਟੋਆਂ ਆਪਣੇ ਸੰਪਰਕਾਂ ਨੂੰ WhatsApp ਤੇ ਭੇਜੋ।</string>
+    <string name="nb_wa_explain">ਅਲਰਟ Naari Shakti ਦੇ WhatsApp ਨੰਬਰ ਤੋਂ ਆਉਂਦੇ ਹਨ, ਤੁਹਾਡੇ ਆਪਣੇ WhatsApp ਤੋਂ ਨਹੀਂ। ਅਲਰਟ ਮਿਲਣ ਤੋਂ ਪਹਿਲਾਂ ਹਰ ਸੰਪਰਕ ਨੂੰ ਤੁਹਾਡੇ ਸੱਦੇ ਤੇ ਇੱਕ ਵਾਰ ਟੈਪ ਕਰਕੇ ਜੁੜਨਾ ਪਵੇਗਾ।</string>
+    <string name="nb_wa_joined">ਜੁੜ ਗਏ ✓</string>
+    <string name="nb_wa_not_joined">ਹਾਲੇ ਨਹੀਂ ਜੁੜੇ</string>
+    <string name="nb_wa_invite">ਸੱਦਾ ਦਿਓ</string>
+    <string name="nb_wa_invite_cd">%1$s ਨੂੰ WhatsApp ਤੇ ਸੱਦਾ ਦਿਓ</string>
+    <string name="nb_wa_invite_text">ਸਤ ਸ੍ਰੀ ਅਕਾਲ, ਮੈਂ ਤੁਹਾਨੂੰ Naari Shakti ਵਿੱਚ ਆਪਣੇ ਐਮਰਜੈਂਸੀ ਸੰਪਰਕ ਵਜੋਂ ਜੋੜਿਆ ਹੈ। WhatsApp ਤੇ ਮੇਰੇ SOS ਅਲਰਟ ਲੈਣ ਲਈ ਇਹ ਲਿੰਕ ਖੋਲ੍ਹੋ ਅਤੇ ਸੁਨੇਹਾ ਭੇਜੋ: %1$s</string>
+    <string name="nb_wa_invite_chooser">ਸੱਦਾ ਭੇਜੋ</string>
+    <plurals name="nb_wa_joined_count">
+        <item quantity="one">%2$d ਵਿੱਚੋਂ %1$d ਸੰਪਰਕ ਜੁੜਿਆ ਹੈ</item>
+        <item quantity="other">%2$d ਵਿੱਚੋਂ %1$d ਸੰਪਰਕ ਜੁੜੇ ਹਨ</item>
+    </plurals>
+    <string name="nb_wa_empty">WhatsApp ਅਲਰਟ ਭੇਜਣ ਲਈ ਉੱਪਰ ਐਮਰਜੈਂਸੀ ਸੰਪਰਕ ਜੋੜੋ।</string>
+    <string name="nb_wa_unavailable">WhatsApp ਅਲਰਟ ਹਾਲੇ ਉਪਲਬਧ ਨਹੀਂ ਹਨ। SMS, ਕਾਲ ਅਤੇ Telegram ਅਲਰਟ ਚੱਲਦੇ ਰਹਿਣਗੇ।</string>
+    <string name="nb_wa_cloud_off">WhatsApp ਅਲਰਟਾਂ ਲਈ ਕਲਾਊਡ ਸਿੰਕ ਚਾਹੀਦਾ ਹੈ, ਜੋ ਇਸ ਫ਼ੋਨ ਤੇ ਬੰਦ ਹੈ। SMS, ਕਾਲ ਅਤੇ Telegram ਅਲਰਟ ਚੱਲਦੇ ਰਹਿਣਗੇ।</string>
+    <string name="nb_wa_error">ਸਰਵਰ ਨਾਲ ਸੰਪਰਕ ਨਹੀਂ ਹੋ ਸਕਿਆ। ਇੰਟਰਨੈੱਟ ਮਿਲਦੇ ਹੀ ਤੁਹਾਡੀਆਂ ਤਬਦੀਲੀਆਂ ਸਿੰਕ ਹੋ ਜਾਣਗੀਆਂ।</string>
+    <string name="nb_wa_retry">ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ</string>
+    <string name="nb_wa_checking">ਦੇਖ ਰਹੇ ਹਾਂ ਕਿ ਕੌਣ ਜੁੜਿਆ ਹੈ…</string>
+    <string name="nb_wa_unnamed">ਬਿਨਾਂ ਨਾਮ</string>
+</resources>

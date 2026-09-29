@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- "WhatsApp alerts" section, driven by cloud.WhatsAppSection. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/Ns.SectionLabel"
+        android:text="@string/nb_wa_section" />
+
+    <!-- Shown instead of the card when the server or cloud can't send WhatsApp alerts. -->
+    <TextView
+        android:id="@+id/nbWaUnavailable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="12dp"
+        android:gravity="center_vertical"
+        android:textAppearance="@style/Ns.Text.Body"
+        android:visibility="gone"
+        app:drawableStartCompat="@drawable/cl_ic_chat"
+        app:drawableTint="@color/ns_text_faint" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/nbWaContent"
+        style="@style/Ns.Card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/ns_card_padding"
+            android:paddingBottom="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/ns_card_padding"
+                android:paddingEnd="@dimen/ns_card_padding">
+
+                <ImageView
+                    style="@style/Ns.IconBadge"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:backgroundTint="@color/ns_safe_container"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/cl_ic_chat"
+                    app:tint="@color/ns_safe" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nb_wa_title"
+                        android:textAppearance="@style/Ns.Text.Subtitle" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/nb_wa_caption"
+                        android:textAppearance="@style/Ns.Text.Caption" />
+                </LinearLayout>
+
+                <com.google.android.material.materialswitch.MaterialSwitch
+                    android:id="@+id/nbWaSwitch"
+                    style="@style/Ns.Switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/nb_wa_title" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:paddingStart="@dimen/ns_card_padding"
+                android:paddingEnd="@dimen/ns_card_padding"
+                android:text="@string/nb_wa_explain"
+                android:textAppearance="@style/Ns.Text.Caption"
+                android:textColor="@color/ns_text_muted" />
+
+            <LinearLayout
+                android:id="@+id/nbWaDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="14dp"
+                    android:background="@color/ns_stroke" />
+
+                <TextView
+                    android:id="@+id/nbWaStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:paddingStart="@dimen/ns_card_padding"
+                    android:paddingEnd="@dimen/ns_card_padding"
+                    android:textAppearance="@style/Ns.Text.Label"
+                    android:textColor="@color/ns_text" />
+
+                <LinearLayout
+                    android:id="@+id/nbWaList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:orientation="vertical" />
+
+                <TextView
+                    android:id="@+id/nbWaEmpty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:paddingStart="@dimen/ns_card_padding"
+                    android:paddingEnd="@dimen/ns_card_padding"
+                    android:text="@string/nb_wa_empty"
+                    android:textAppearance="@style/Ns.Text.Body"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/nbWaErrorRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/ns_card_padding"
+                android:paddingEnd="8dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/nb_wa_error"
+                    android:textAppearance="@style/Ns.Text.Caption"
+                    android:textColor="@color/ns_warn" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/nbWaRetry"
+                    style="@style/Ns.Button.Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nb_wa_retry" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

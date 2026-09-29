@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ============================ Common ============================ -->
+    <string name="ev_cd_back">వెనుకకు</string>
+    <string name="ev_cancel">రద్దు చేయండి</string>
+    <string name="ev_delete">తొలగించండి</string>
+    <string name="ev_share_unavailable">ఈ ఫైల్‌కు షేరింగ్ ఇంకా అందుబాటులో లేదు.</string>
+    <string name="ev_no_app">దీన్ని తెరవడానికి యాప్ ఏదీ లేదు.</string>
+    <string name="ev_pdf_page">పేజీ %1$d</string>
+    <string name="ev_pdf_confidential">వ్యక్తిగతం, గోప్యం</string>
+    <string name="ev_pdf_failed">PDF సృష్టించలేకపోయాము.</string>
+    <!-- "date · time" -->
+    <string name="ev_date_time">%1$s · %2$s</string>
+    <string name="ev_dur_seconds">%1$d సె</string>
+    <string name="ev_dur_minutes">%1$d ని</string>
+    <string name="ev_dur_hours">%1$d గం %2$d ని</string>
+    <string name="ev_counts">%1$s · %2$s · %3$s</string>
+    <!-- Source labels -->
+    <string name="ev_src_voice">వాయిస్ ట్రిగ్గర్</string>
+    <string name="ev_src_power">పవర్ బటన్</string>
+    <string name="ev_src_shake">షేక్</string>
+    <string name="ev_src_sos_button">SOS బటన్</string>
+    <string name="ev_src_scream">అరుపు గుర్తించబడింది</string>
+    <string name="ev_src_fall">పడిపోవడం గుర్తించబడింది</string>
+    <string name="ev_src_ble_button">ప్యానిక్ బటన్</string>
+    <string name="ev_src_headset">హెడ్‌సెట్ బటన్</string>
+    <string name="ev_src_checkin">చెక్-ఇన్ మిస్ అయింది</string>
+    <string name="ev_src_duress">బలవంతపు PIN</string>
+    <string name="ev_src_volume">వాల్యూమ్ బటన్‌లు</string>
+    <string name="ev_src_geofence">సురక్షిత ప్రాంతం అలర్ట్</string>
+    <string name="ev_src_unknown">SOS</string>
+
+    <!-- ============================ Incidents ============================ -->
+    <string name="ev_inc_overline">సాక్ష్యాల వాల్ట్</string>
+    <string name="ev_inc_title">సంఘటనల చరిత్ర</string>
+    <string name="ev_inc_body">ప్రతి SOS దాని ఫోటోలు, ఆడియో, వీడియోతో ఇక్కడ భద్రంగా ఉంటుంది. ప్రతి ఫైల్‌కు SHA-256 వేలిముద్ర ఉంటుంది, అది ఫైల్ మారలేదని చూపిస్తుంది.</string>
+    <string name="ev_inc_empty_title">ఇంకా సంఘటనలు లేవు</string>
+    <string name="ev_inc_empty_body">SOS మొదలైనప్పుడు, ఆ సమయంలో రికార్డ్ అయిన సాక్ష్యం ఇక్కడ కనిపిస్తుంది.</string>
+    <string name="ev_inc_load_error">సంఘటనల చరిత్ర లోడ్ కాలేదు.</string>
+    <string name="ev_inc_in_progress">జరుగుతోంది</string>
+    <string name="ev_inc_duration_unknown">వ్యవధి తెలియదు</string>
+    <string name="ev_inc_meta">%1$s · %2$s</string>
+    <string name="ev_chip_silent">నిశ్శబ్దం</string>
+    <string name="ev_chip_duress">బలవంతం</string>
+    <plurals name="ev_count_photos">
+        <item quantity="one">%d ఫోటో</item>
+        <item quantity="other">%d ఫోటోలు</item>
+    </plurals>
+    <plurals name="ev_count_audio">
+        <item quantity="one">%d ఆడియో క్లిప్</item>
+        <item quantity="other">%d ఆడియో క్లిప్‌లు</item>
+    </plurals>
+    <plurals name="ev_count_videos">
+        <item quantity="one">%d వీడియో</item>
+        <item quantity="other">%d వీడియోలు</item>
+    </plurals>
+    <plurals name="ev_inc_count">
+        <item quantity="one">%d సంఘటన</item>
+        <item quantity="other">%d సంఘటనలు</item>
+    </plurals>
+    <string name="ev_upload_status">%1$d/%2$d అప్‌లోడ్ అయ్యాయి · %3$d ధృవీకరించబడ్డాయి ✓</string>
+    <string name="ev_upload_local">%1$d ఫైల్‌లు · ఈ ఫోన్‌లోనే ఉన్నాయి</string>
+    <string name="ev_upload_none">సాక్ష్యం ఫైల్‌లు లేవు</string>
+    <string name="ev_action_export">ఎక్స్‌పోర్ట్</string>
+    <string name="ev_action_complaint">ఫిర్యాదు</string>
+    <string name="ev_action_delete">తొలగించండి</string>
+    <string name="ev_cd_expand">సాక్ష్యం చూపించండి</string>
+    <string name="ev_cd_collapse">సాక్ష్యం దాచండి</string>
+    <string name="ev_delete_title">ఈ సంఘటనను తొలగించాలా?</string>
+    <string name="ev_delete_body">ఇది ఈ ఫోన్ నుండి %1$d సాక్ష్యం ఫైల్‌లను శాశ్వతంగా తొలగిస్తుంది. సర్వర్‌కు ఇప్పటికే అప్‌లోడ్ అయిన కాపీలపై ప్రభావం ఉండదు.</string>
+    <string name="ev_delete_active">ఈ SOS ఇంకా నడుస్తోంది. తొలగించే ముందు దాన్ని ఆపండి.</string>
+    <string name="ev_deleted">సంఘటన తొలగించబడింది</string>
+    <string name="ev_exporting">సాక్ష్యం ప్యాకేజీ సిద్ధం చేస్తోంది…</string>
+    <string name="ev_export_failed">సాక్ష్యం ప్యాకేజీ సృష్టించలేకపోయాము.</string>
+    <string name="ev_export_empty">ఈ సంఘటనలో ఎక్స్‌పోర్ట్ చేయడానికి ఫైల్‌లు లేవు.</string>
+    <string name="ev_export_chooser">సాక్ష్యం ప్యాకేజీ షేర్ చేయండి</string>
+    <string name="ev_export_subject">Naari Shakti సాక్ష్యం ప్యాకేజీ</string>
+    <string name="ev_kind_photo">ఫోటో</string>
+    <string name="ev_kind_audio">ఆడియో క్లిప్</string>
+    <string name="ev_kind_video">వీడియో</string>
+    <string name="ev_item_title">%1$s · %2$s</string>
+    <string name="ev_hash_short">SHA-256 %1$s…</string>
+    <string name="ev_hash_copied">పూర్తి SHA-256 కాపీ అయింది</string>
+    <string name="ev_hash_label">SHA-256</string>
+    <string name="ev_cd_copy_hash">పూర్తి SHA-256 కాపీ చేయండి</string>
+    <string name="ev_cd_play">ప్లే</string>
+    <string name="ev_cd_pause">పాజ్</string>
+    <string name="ev_item_verified">అప్‌లోడ్ అయింది · ధృవీకరించబడింది</string>
+    <string name="ev_item_unverified">అప్‌లోడ్ అయింది · ధృవీకరించబడలేదు</string>
+    <string name="ev_item_pending">అప్‌లోడ్ కోసం వేచి ఉంది</string>
+    <string name="ev_item_local">ఈ ఫోన్‌లో</string>
+    <string name="ev_item_missing">ఫైల్ కనిపించడం లేదు</string>
+    <string name="ev_play_failed">ఈ క్లిప్ ప్లే కాలేదు.</string>
+    <string name="ev_no_items">ఈ సంఘటనకు ఫైల్‌లు ఏవీ రికార్డ్ కాలేదు.</string>
+
+    <!-- ============================ Diary ============================ -->
+    <string name="ev_diary_overline">వ్యక్తిగత డైరీ</string>
+    <string name="ev_diary_title">సంఘటనల డైరీ</string>
+    <string name="ev_diary_body">ఏం జరిగిందో, జరిగినప్పుడే రాసుకోండి. ఎంట్రీలు ఈ ఫోన్‌లో ఎన్‌క్రిప్ట్ అవుతాయి, లాయర్ లేదా పోలీసుల కోసం PDF గా ఎక్స్‌పోర్ట్ చేయవచ్చు.</string>
+    <string name="ev_diary_empty_title">మీ డైరీ ఖాళీగా ఉంది</string>
+    <string name="ev_diary_empty_body">తేదీలతో అప్పటికప్పుడు రాసిన నోట్స్ తర్వాత బలంగా నిలుస్తాయి. మీ మొదటి ఎంట్రీ జోడించండి.</string>
+    <string name="ev_diary_add">కొత్త ఎంట్రీ</string>
+    <string name="ev_diary_export">PDF ఎక్స్‌పోర్ట్</string>
+    <string name="ev_diary_pin_title">మీ డైరీ అన్‌లాక్ చేయండి</string>
+    <string name="ev_diary_locked_title">డైరీ లాక్ అయింది</string>
+    <string name="ev_diary_locked_body">దీన్ని తెరవడానికి మీ యాప్ PIN ఎంటర్ చేయండి.</string>
+    <string name="ev_diary_unlock">అన్‌లాక్</string>
+    <string name="ev_diary_load_error">ఈ ఫోన్‌లో డైరీ తెరవలేకపోయాము.</string>
+    <string name="ev_diary_save_error">ఎంట్రీ సేవ్ కాలేదు.</string>
+    <string name="ev_diary_new_title">కొత్త ఎంట్రీ</string>
+    <string name="ev_diary_edit_title">ఎంట్రీ మార్చండి</string>
+    <string name="ev_diary_field_title">శీర్షిక</string>
+    <string name="ev_diary_field_body">ఏం జరిగింది</string>
+    <string name="ev_diary_field_location">ప్రదేశం (ఐచ్ఛికం)</string>
+    <string name="ev_diary_when">ఎప్పుడు</string>
+    <string name="ev_diary_use_location">నా లొకేషన్ ఉపయోగించండి</string>
+    <string name="ev_diary_attach">ఫోటో జత చేయండి</string>
+    <string name="ev_diary_replace_photo">ఫోటో మార్చండి</string>
+    <string name="ev_diary_remove_photo">ఫోటో తీసివేయండి</string>
+    <string name="ev_diary_save">సేవ్ చేయండి</string>
+    <string name="ev_diary_edit">మార్చండి</string>
+    <string name="ev_diary_title_required">చిన్న శీర్షిక జోడించండి</string>
+    <string name="ev_diary_delete_title">ఈ ఎంట్రీని తొలగించాలా?</string>
+    <string name="ev_diary_delete_body">ఎంట్రీ, దాని ఫోటో ఈ ఫోన్ నుండి తొలగించబడతాయి, తిరిగి పొందలేరు.</string>
+    <string name="ev_diary_deleted">ఎంట్రీ తొలగించబడింది</string>
+    <string name="ev_diary_saved">ఎంట్రీ సేవ్ అయింది</string>
+    <string name="ev_diary_no_location">ఈ ఫోన్‌లో ఇటీవలి లొకేషన్ లేదు. ప్రదేశాన్ని టైప్ చేయండి.</string>
+    <string name="ev_diary_photo_error">ఆ ఫోటో జత కాలేదు.</string>
+    <string name="ev_diary_photo_too_big">ఆ ఫోటో చాలా పెద్దది (గరిష్టం 25 MB).</string>
+    <string name="ev_diary_pdf_subtitle">%1$s న ఎక్స్‌పోర్ట్ · %2$d ఎంట్రీలు</string>
+    <string name="ev_diary_pdf_chooser">డైరీ PDF షేర్ చేయండి</string>
+    <string name="ev_diary_pdf_empty">ఎక్స్‌పోర్ట్ చేయడానికి ఇంకా ఏమీ లేదు.</string>
+    <string name="ev_diary_pdf_location">ప్రదేశం: %1$s</string>
+    <string name="ev_diary_pdf_written">రాసినది %1$s</string>
+    <string name="ev_diary_untitled">శీర్షిక లేదు</string>
+    <string name="ev_diary_photo_attached">ఫోటో జత చేయబడింది</string>
+    <string name="ev_cd_diary_photo">జత చేసిన ఫోటో</string>
+
+    <!-- ============================ Complaint ============================ -->
+    <string name="ev_cmp_overline">ఫిర్యాదు ముసాయిదా</string>
+    <string name="ev_cmp_title">ఫిర్యాదు ముసాయిదా రాయండి</string>
+    <string name="ev_cmp_body">మీ ప్రొఫైల్, సంఘటన రికార్డు ఆధారంగా తయారైన అధికారిక ముసాయిదా. ఉపయోగించే ముందు ఏదైనా మార్చుకోవచ్చు.</string>
+    <string name="ev_cmp_label_to">ఎవరికి</string>
+    <string name="ev_cmp_label_lang">భాష</string>
+    <string name="ev_cmp_to_sho">పోలీసు (SHO)</string>
+    <string name="ev_cmp_to_ncw">మహిళా కమిషన్ (NCW)</string>
+    <string name="ev_cmp_draft_hint">ఫిర్యాదు</string>
+    <string name="ev_cmp_section_use">ఉపయోగించండి</string>
+    <string name="ev_cmp_section_file">దాఖలు చేయండి</string>
+    <string name="ev_cmp_copy">కాపీ</string>
+    <string name="ev_cmp_share">షేర్</string>
+    <string name="ev_cmp_pdf">PDF గా సేవ్ చేయండి</string>
+    <string name="ev_cmp_ncw">NCW ఆన్‌లైన్ ఫిర్యాదు</string>
+    <string name="ev_cmp_ncw_body">జాతీయ మహిళా కమిషన్</string>
+    <string name="ev_cmp_cyber">cybercrime.gov.in</string>
+    <string name="ev_cmp_cyber_body">ఆన్‌లైన్ వేధింపులు, వెంటాడటం లేదా మార్ఫ్ చేసిన ఫోటోల కోసం</string>
+    <string name="ev_cmp_call">112 కి కాల్</string>
+    <string name="ev_cmp_call_body">అత్యవసర సహాయం, ఏ సమయంలోనైనా</string>
+    <string name="ev_cmp_copied">ఫిర్యాదు కాపీ అయింది</string>
+    <string name="ev_cmp_share_chooser">ఫిర్యాదు షేర్ చేయండి</string>
+    <string name="ev_cmp_pdf_chooser">ఫిర్యాదు PDF సేవ్ లేదా షేర్ చేయండి</string>
+    <string name="ev_cmp_replace_title">మీ మార్పులను మార్చాలా?</string>
+    <string name="ev_cmp_replace_body">దీన్ని మార్చితే ముసాయిదా మళ్లీ తయారవుతుంది, మీ మార్పులు పోతాయి.</string>
+    <string name="ev_cmp_replace">మార్చండి</string>
+    <string name="ev_cmp_note_title">మీకు సహాయపడే ముసాయిదా, న్యాయ సలహా కాదు</string>
+    <string name="ev_cmp_note_body">పూర్తిగా చదివి, సరిగా లేనిది ఏదైనా మార్చండి. సంఘటన ఎక్కడ జరిగినా, ఏ పోలీస్ స్టేషన్‌లోనైనా జీరో FIR దాఖలు చేయవచ్చు; పోలీసులు దాన్ని నమోదు చేసి సంబంధిత స్టేషన్‌కు పంపాలి. మీ FIR ఉచిత కాపీ అడగండి.</string>
+    <string name="ev_cmp_incident_none">సంఘటన ఎంచుకోలేదు: తేదీ, సమయం, ప్రదేశం మీరే నింపండి.</string>
+    <string name="ev_cmp_incident_from">%1$s నాటి సంఘటన ఆధారంగా</string>
+    <string name="ev_cmp_pdf_title">ఫిర్యాదు</string>
+</resources>

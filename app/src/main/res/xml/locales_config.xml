@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Languages offered in Android 13+ system Settings > Apps > Naari Shakti > Language.
+     Keep in sync with core/Appearance.LANGUAGES and the values-xx/ folders. -->
+<locale-config xmlns:android="http://schemas.android.com/apk/res/android">
+    <locale android:name="en" />
+    <locale android:name="hi" />
+    <locale android:name="bn" />
+    <locale android:name="mr" />
+    <locale android:name="te" />
+    <locale android:name="ta" />
+    <locale android:name="gu" />
+    <locale android:name="kn" />
+    <locale android:name="ml" />
+    <locale android:name="pa" />
+    <locale android:name="or" />
+    <locale android:name="as" />
+    <locale android:name="ur" />
+</locale-config>

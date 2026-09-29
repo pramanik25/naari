@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="your_class">ଆପଣଙ୍କ ଶ୍ରେଣୀ</string>
+    <string name="hello_blank_fragment">ନମସ୍କାର, ଖାଲି ଫ୍ରାଗମେଣ୍ଟ</string>
+
+    <string name="set_alarm_settings">ଆଲାର୍ମ ସେଟିଂସ</string>
+    <string name="alarm_status">ଆଲାର୍ମ ସ୍ଥିତି:</string>
+    <string name="select_day">ଦିନ ବାଛନ୍ତୁ:</string>
+    <string name="select_date">ତାରିଖ ବାଛନ୍ତୁ</string>
+    <string name="day_today">ଆଜି</string>
+    <string name="day_tomorrow">ଆସନ୍ତାକାଲି</string>
+    <string name="day_specific_date">ନିର୍ଦ୍ଦିଷ୍ଟ ତାରିଖ</string>
+    <string name="day_daily">ପ୍ରତିଦିନ</string>
+
+    <string-array name="alarm_repeat_options">
+        <item>ଥରେ</item>
+        <item>ପ୍ରତିଦିନ</item>
+        <item>ଆସନ୍ତାକାଲି</item>
+        <item>ନିର୍ଦ୍ଦିଷ୍ଟ ତାରିଖ</item>
+        <item>ନିଜ ପସନ୍ଦ</item>
+    </string-array>
+
+    <!-- ===================== Shared ===================== -->
+    <string name="cd_back">ପଛକୁ</string>
+    <string name="cd_close">ବନ୍ଦ କରନ୍ତୁ</string>
+    <string name="action_open_settings">ସେଟିଂସ ଖୋଲନ୍ତୁ</string>
+    <string name="action_not_now">ଏବେ ନୁହେଁ</string>
+    <string name="action_grant">ଅନୁମତି ଦିଅନ୍ତୁ</string>
+    <string name="action_fix">ଠିକ୍ କରନ୍ତୁ</string>
+    <string name="action_allow">ଅନୁମତି ଦିଅନ୍ତୁ</string>
+    <string name="action_delete">ଡିଲିଟ୍</string>
+    <string name="action_review">ଦେଖନ୍ତୁ</string>
+    <string name="action_turn_on">ଚାଲୁ କରନ୍ତୁ</string>
+    <string name="status_allowed">ଅନୁମତି ଅଛି</string>
+    <string name="status_not_allowed">ଅନୁମତି ନାହିଁ</string>
+    <string name="status_limited">କେବଳ ଆନୁମାନିକ</string>
+
+    <!-- ===================== Navigation ===================== -->
+    <string name="nav_home">ହୋମ</string>
+    <string name="nav_settings">ସେଟିଂସ</string>
+
+    <!-- ===================== Splash ===================== -->
+    <string name="splash_tagline">ଆପଣଙ୍କ ସୁରକ୍ଷା, ସବୁବେଳେ ଚାଲୁ</string>
+    <string name="splash_footer">ତାଙ୍କ ପାଇଁ, ଯତ୍ନର ସହ ତିଆରି</string>
+
+    <!-- ===================== Onboarding ===================== -->
+    <string name="onb_overline">ଆରମ୍ଭ କରିବା ପୂର୍ବରୁ</string>
+    <string name="onb_title">ଆସନ୍ତୁ, ଆପଣଙ୍କ ସୁରକ୍ଷା କବଚ ପ୍ରସ୍ତୁତ କରିବା</string>
+    <string name="onb_body">ଆପଣଙ୍କୁ ସୁରକ୍ଷା ଦେବା ପାଇଁ Naari Shakti କୁ କିଛି ଅନୁମତି ଦରକାର। ନିୟନ୍ତ୍ରଣ ଆପଣଙ୍କ ହାତରେ ରହିବ, ଏବଂ ଆପଣ ଯେକୌଣସି ସମୟରେ ସେଟିଂସରେ ଏହାକୁ ବଦଳାଇପାରିବେ।</string>
+    <string name="onb_allow">ଅନୁମତି ଦିଅନ୍ତୁ</string>
+    <string name="onb_done">ସବୁ ପ୍ରସ୍ତୁତ। ଆପଣ ଯେତେବେଳେ ଚାହିଁବେ ସୁରକ୍ଷା ଚାଲୁ କରନ୍ତୁ।</string>
+    <string name="onb_partial">କିଛି ଅନୁମତି ଛାଡ଼ି ଦିଆଗଲା। ଆପଣ ସେଗୁଡ଼ିକ ସେଟିଂସରେ ଦେଇପାରିବେ।</string>
+    <string name="perm_mic_title">ମାଇକ୍ରୋଫୋନ</string>
+    <string name="perm_mic_why">ସ୍କ୍ରିନ ବନ୍ଦ ଥିଲେ ବି ଆପଣଙ୍କ ଟ୍ରିଗର ଶବ୍ଦ ଶୁଣିବା ପାଇଁ</string>
+    <string name="perm_sms_title">SMS</string>
+    <string name="perm_sms_why">ଆପଣଙ୍କ କଣ୍ଟାକ୍ଟଙ୍କୁ ଲାଇଭ ଲୋକେସନ SMS କରିବା ପାଇଁ</string>
+    <string name="perm_phone_title">ଫୋନ</string>
+    <string name="perm_phone_why">ଆପଣଙ୍କ ପ୍ରଥମ କଣ୍ଟାକ୍ଟଙ୍କୁ ନିଜେ କଲ କରିବା ପାଇଁ</string>
+    <string name="perm_location_title">ଲୋକେସନ</string>
+    <string name="perm_location_why">SOS ସମୟରେ ଆପଣ ଠିକ୍ କେଉଁଠି ଅଛନ୍ତି ଜଣାଇବା ପାଇଁ</string>
+    <string name="perm_camera_title">କ୍ୟାମେରା</string>
+    <string name="perm_camera_why">SOS ସମୟରେ ଚୁପଚାପ ପ୍ରମାଣ ସଂଗ୍ରହ କରିବା ପାଇଁ</string>
+    <string name="perm_contacts_title">କଣ୍ଟାକ୍ଟ</string>
+    <string name="perm_contacts_why">ଆପଣଙ୍କ ଫୋନରୁ ଜରୁରୀ କଣ୍ଟାକ୍ଟ ବାଛିବା ପାଇଁ</string>
+    <string name="perm_notifications_title">ନୋଟିଫିକେସନ</string>
+    <string name="perm_notifications_why">ସୁରକ୍ଷା ଚାଲୁଛି ବୋଲି ଦେଖାଇବା ପାଇଁ</string>
+    <string name="perm_battery_title">ବ୍ୟାଟେରୀ ଅପ୍ଟିମାଇଜେସନ</string>
+    <string name="perm_battery_why">ବ୍ୟାକଗ୍ରାଉଣ୍ଡରେ ସୁରକ୍ଷା ଚାଲୁ ରଖିବା ପାଇଁ</string>
+    <string name="perm_fullscreen_title">ଫୁଲ-ସ୍କ୍ରିନ ଆଲର୍ଟ</string>
+    <string name="perm_fullscreen_why">ଲକ ସ୍କ୍ରିନ ଉପରେ SOS ସ୍କ୍ରିନ ଦେଖାଇବା ପାଇଁ</string>
+    <string name="perm_exact_alarm_title">ସଠିକ ସମୟର ଆଲାର୍ମ</string>
+    <string name="perm_exact_alarm_why">ନିର୍ଧାରିତ ସୁରକ୍ଷା ଠିକ୍ ସମୟରେ ଆରମ୍ଭ କରିବା ପାଇଁ</string>
+    <string name="perm_overlay_title">ଅନ୍ୟ ଆପ ଉପରେ ଦେଖାନ୍ତୁ</string>
+    <string name="perm_overlay_why">ଅନ୍ୟ ଆପ ଉପରେ SOS ଲକ ସ୍କ୍ରିନ ଦେଖାଇବା ପାଇଁ</string>
+    <string name="perm_denied_title">ଅନୁମତି ଦରକାର</string>
+    <string name="perm_denied_body">%1$s ଆକ୍ସେସ ବନ୍ଦ କରାଯାଇଛି। ଆପଣ ଆପ ସେଟିଂସ ପେଜରୁ ଏହାକୁ ଅନୁମତି ଦେଇପାରିବେ।</string>
+    <string name="perm_summary">%2$d ମଧ୍ୟରୁ %1$d ପ୍ରସ୍ତୁତ</string>
+
+    <!-- ===================== Home ===================== -->
+    <string name="greeting_morning">ଶୁଭ ସକାଳ</string>
+    <string name="greeting_afternoon">ଶୁଭ ଅପରାହ୍ନ</string>
+    <string name="greeting_evening">ଶୁଭ ସନ୍ଧ୍ୟା</string>
+    <string name="greeting_night">ଶୁଭ ରାତ୍ରି</string>
+    <string name="home_default_name">ସୁରକ୍ଷିତ ରୁହନ୍ତୁ</string>
+    <string name="cd_open_profile">ପ୍ରୋଫାଇଲ ଖୋଲନ୍ତୁ</string>
+    <string name="cd_protection_switch">ସୁରକ୍ଷା</string>
+    <string name="home_status_protected">ସୁରକ୍ଷିତ</string>
+    <string name="home_status_starting">ଆରମ୍ଭ ହେଉଛି…</string>
+    <string name="home_status_paused">ବିରତ</string>
+    <string name="home_status_off">ବନ୍ଦ</string>
+    <string name="home_protection_on">ସୁରକ୍ଷା ଚାଲୁ ଅଛି</string>
+    <string name="home_protection_starting">ସୁରକ୍ଷା ଆରମ୍ଭ ହେଉଛି</string>
+    <string name="home_protection_paused">ସୁରକ୍ଷା ଚାଲୁନାହିଁ</string>
+    <string name="home_protection_off">ସୁରକ୍ଷା ବନ୍ଦ ଅଛି</string>
+    <string name="home_protection_off_sub">ଆପଣଙ୍କ ଟ୍ରିଗର ଶବ୍ଦ ଶୁଣିବା ପାଇଁ ଚାଲୁ କରନ୍ତୁ</string>
+    <string name="home_protection_starting_sub">ମାଇକ୍ରୋଫୋନ ପ୍ରସ୍ତୁତ ହେଉଛି…</string>
+    <string name="home_protection_paused_sub">ଏହା ହଠାତ୍ ବନ୍ଦ ହୋଇଗଲା। ପୁଣି ଆରମ୍ଭ କରିବାକୁ ଟ୍ୟାପ କରନ୍ତୁ।</string>
+    <string name="home_listening_for">“%1$s” ପାଇଁ ଶୁଣୁଛି</string>
+    <string name="home_trigger_shake">ହଲାନ୍ତୁ</string>
+    <string name="home_trigger_power">ପାୱାର ×%1$d</string>
+    <string name="home_mic_needed_title">ମାଇକ୍ରୋଫୋନ ଅନୁମତି ଦିଅନ୍ତୁ</string>
+    <string name="home_mic_needed_body">ସୁରକ୍ଷା ବ୍ୟାକଗ୍ରାଉଣ୍ଡରେ ଆପଣଙ୍କ ଟ୍ରିଗର ଶବ୍ଦ ଶୁଣେ। SOS ଆରମ୍ଭ ନହେବା ପର୍ଯ୍ୟନ୍ତ କିଛି ରେକର୍ଡ କିମ୍ବା ଅପଲୋଡ ହୁଏ ନାହିଁ।</string>
+    <string name="home_mic_denied">ସୁରକ୍ଷା ଚାଲୁ କରିବା ପାଇଁ ମାଇକ୍ରୋଫୋନ ଅନୁମତି ଦରକାର।</string>
+    <string name="sos_label">SOS</string>
+    <string name="sos_hint">3 ସେକେଣ୍ଡ ଦବାଇ ରଖନ୍ତୁ</string>
+    <string name="sos_hint_holding">ଦବାଇ ରଖନ୍ତୁ · %1$d</string>
+    <string name="sos_hint_active">ସକ୍ରିୟ</string>
+    <string name="sos_caption">ଲାଇଭ ଲୋକେସନ ସହ ଆପଣଙ୍କ କଣ୍ଟାକ୍ଟଙ୍କୁ ସତର୍କ କରେ, ପ୍ରଥମ କଣ୍ଟାକ୍ଟଙ୍କୁ କଲ କରେ ଏବଂ ସାଇରେନ ବଜାଏ।</string>
+    <string name="sos_caption_active">SOS ସକ୍ରିୟ ଅଛି। ଆପଣଙ୍କ କଣ୍ଟାକ୍ଟଙ୍କୁ ସତର୍କ କରାଯାଉଛି।</string>
+    <string name="sos_cd">SOS ବଟନ। ଜରୁରୀ ଆଲର୍ଟ ପଠାଇବାକୁ 3 ସେକେଣ୍ଡ ଦବାଇ ରଖନ୍ତୁ।</string>
+    <string name="sos_a11y_action">SOS ପଠାନ୍ତୁ</string>
+    <string name="sos_confirm_title">ଏବେ SOS ପଠାଇବେ?</string>
+    <string name="sos_confirm_body">ଆପଣଙ୍କ ଜରୁରୀ କଣ୍ଟାକ୍ଟଙ୍କୁ ଆପଣଙ୍କ ଲୋକେସନ ସହ ସତର୍କ କରାଯିବ ଏବଂ ପ୍ରଥମ କଣ୍ଟାକ୍ଟଙ୍କୁ କଲ କରାଯିବ।</string>
+    <string name="sos_sent">SOS ପଠାଗଲା। କଣ୍ଟାକ୍ଟଙ୍କୁ ସତର୍କ କରାଯାଉଛି…</string>
+    <string name="sos_sent_no_contacts">SOS ଆରମ୍ଭ ହେଲା, କିନ୍ତୁ ଆପଣଙ୍କର ଏପର୍ଯ୍ୟନ୍ତ କୌଣସି ଜରୁରୀ କଣ୍ଟାକ୍ଟ ନାହାନ୍ତି।</string>
+    <string name="sos_stop">ମୁଁ ସୁରକ୍ଷିତ, SOS ବନ୍ଦ କରନ୍ତୁ</string>
+    <string name="home_quick_actions">ଶୀଘ୍ର କାର୍ଯ୍ୟ</string>
+    <string name="home_your_safety_kit">ଆପଣଙ୍କ ସୁରକ୍ଷା କିଟ</string>
+    <string name="qa_trigger_title">ଟ୍ରିଗର ଶବ୍ଦ</string>
+    <string name="qa_trigger_caption">ଆପଣଙ୍କ ଗୁପ୍ତ ଶବ୍ଦ</string>
+    <string name="qa_contacts_title">କଣ୍ଟାକ୍ଟ</string>
+    <string name="qa_contacts_caption">କାହାକୁ ସତର୍କ କରିବୁ</string>
+    <string name="qa_police_title">ପୋଲିସକୁ କଲ</string>
+    <string name="qa_police_caption">ଶୀଘ୍ର 112 ଡାଏଲ କରନ୍ତୁ</string>
+    <string name="qa_helplines_title">ହେଲ୍ପଲାଇନ</string>
+    <string name="qa_helplines_caption">ମହିଳାଙ୍କ ପାଇଁ ସହାୟତା</string>
+    <string name="qa_live_location_title">ଲାଇଭ ଲୋକେସନ</string>
+    <string name="qa_live_location_caption">ଆପଣ କେଉଁଠି ଅଛନ୍ତି ଜଣାନ୍ତୁ</string>
+    <string name="qa_safe_zones_title">ସୁରକ୍ଷିତ ଜୋନ</string>
+    <string name="qa_safe_zones_caption">ସ୍ଥାନ ପାଇଁ ଆଲର୍ଟ</string>
+    <string name="nudge_contacts_title">ଜରୁରୀ କଣ୍ଟାକ୍ଟ ଯୋଡ଼ନ୍ତୁ</string>
+    <string name="nudge_contacts_sub">SOS ଏବେ କାହାକୁ ସତର୍କ କରିପାରିବ ନାହିଁ</string>
+    <string name="nudge_trigger_title">ଆପଣଙ୍କ ଟ୍ରିଗର ଶବ୍ଦ ରେକର୍ଡ କରନ୍ତୁ</string>
+    <string name="nudge_trigger_sub">ସେପର୍ଯ୍ୟନ୍ତ ଆମେ “%1$s” ଶୁଣିବୁ</string>
+    <string name="row_schedule_title">ସୁରକ୍ଷା ସମୟସୂଚୀ</string>
+    <string name="row_vault_title">ପ୍ରମାଣ ଭଣ୍ଡାର</string>
+    <string name="row_vault_empty">SOS ସମୟରେ ନିଆଯାଇଥିବା ଫଟୋ</string>
+    <plurals name="row_vault_count">
+        <item quantity="one">%1$d ଟି ଫଟୋ ନିଆଗଲା</item>
+        <item quantity="other">%1$d ଟି ଫଟୋ ନିଆଗଲା</item>
+    </plurals>
+
+    <!-- ===================== Settings ===================== -->
+    <string name="settings_overline">ପସନ୍ଦ</string>
+    <string name="settings_title">ସେଟିଂସ</string>
+    <string name="settings_body">ପରିବର୍ତ୍ତନ ନିଜେ ସେଭ ହୁଏ ଏବଂ ତୁରନ୍ତ ଲାଗୁ ହୁଏ।</string>
+    <string name="settings_section_sos">SOS କିପରି କାମ କରେ</string>
+    <string name="settings_section_triggers">ଟ୍ରିଗର</string>
+    <string name="settings_section_stop">ଆଲାର୍ମ ବନ୍ଦ କରିବା</string>
+    <string name="settings_section_permissions">ଅନୁମତି</string>
+    <string name="settings_section_more">ଅଧିକ</string>
+    <string name="settings_section_about">ବିଷୟରେ</string>
+    <string name="settings_countdown_label">SOS କାଉଣ୍ଟଡାଉନ: %1$d ସେକେଣ୍ଡ</string>
+    <string name="settings_countdown_off">SOS କାଉଣ୍ଟଡାଉନ: ବନ୍ଦ</string>
+    <string name="settings_countdown_caption">ଆଲର୍ଟ ଯିବା ପୂର୍ବରୁ ଭୁଲ ଆଲାର୍ମ ବାତିଲ କରିବା ପାଇଁ ଆପଣ ପାଉଥିବା ସମୟ।</string>
+    <string name="settings_freeze_label">SOS ପରେ ସ୍କ୍ରିନ ଲକ: %1$s</string>
+    <string name="settings_freeze_caption">ଆଲାର୍ମ ପରେ SOS ଲକ ସ୍କ୍ରିନ କେତେ ସମୟ ରହିବ।</string>
+    <string name="settings_shake_title">ହଲାଇ SOS</string>
+    <string name="settings_shake_sub">ଆଲାର୍ମ ବଜାଇବାକୁ ଫୋନ ଜୋରରେ ହଲାନ୍ତୁ</string>
+    <string name="settings_power_title">ପାୱାର ବଟନ ×%1$d</string>
+    <string name="settings_power_sub">ଆଲାର୍ମ ବଜାଇବାକୁ ପାୱାର ବଟନ ଶୀଘ୍ର ଶୀଘ୍ର ଦବାନ୍ତୁ</string>
+    <string name="settings_presses_label">ପାୱାର ଦବାଇବା: %1$d ଥର</string>
+    <string name="settings_window_label">ଦବାଇବା ସମୟ: %1$s ସେକେଣ୍ଡ</string>
+    <string name="settings_stop_title">ସକ୍ରିୟ ଆଲାର୍ମ କିପରି ବନ୍ଦ କରିବେ</string>
+    <string name="settings_stop_volume">ଭଲ୍ୟୁମ ପ୍ୟାଟର୍ନ</string>
+    <string name="settings_stop_shake">ହଲାନ୍ତୁ</string>
+    <string name="settings_stop_volume_caption">ସାଇରେନ ଓ ଲକ ସ୍କ୍ରିନ ବନ୍ଦ କରିବାକୁ ଆପଣଙ୍କ ପ୍ୟାଟର୍ନରେ ଭଲ୍ୟୁମ ବଟନ ଦବାନ୍ତୁ।</string>
+    <string name="settings_stop_shake_caption">ସାଇରେନ ଓ ଲକ ସ୍କ୍ରିନ ବନ୍ଦ କରିବାକୁ ଫୋନ ଜୋରରେ ହଲାନ୍ତୁ।</string>
+    <string name="settings_input_label">ବଟନ ଦବାଇବା ମଧ୍ୟରେ ବ୍ୟବଧାନ: %1$s ସେକେଣ୍ଡ</string>
+    <string name="settings_input_caption">ଭଲ୍ୟୁମ ଦବାଇବା ମଧ୍ୟରେ ସବୁଠୁ ଅଧିକ ବିରତି।</string>
+    <string name="settings_profile_sub">ନାମ, ଫଟୋ ଓ ଯୋଗାଯୋଗ ବିବରଣୀ</string>
+    <string name="settings_vault_sub">SOS ସମୟରେ ନିଆଯାଇଥିବା ଫଟୋ</string>
+    <string name="settings_version">ସଂସ୍କରଣ %1$s</string>
+    <string name="settings_about_body">ଆପଣ କ୍ଲାଉଡ ବ୍ୟାକଅପ ଚାଲୁ ନକରିବା ପର୍ଯ୍ୟନ୍ତ ଆପଣଙ୍କ ଡାଟା ଏହି ଫୋନରେ ରହେ।</string>
+    <string name="duration_seconds">%1$d ସେକେଣ୍ଡ</string>
+    <string name="duration_minutes">%1$d ମିନିଟ</string>
+    <string name="duration_minutes_seconds">%1$d ମିନିଟ %2$d ସେକେଣ୍ଡ</string>
+
+    <!-- ===================== Schedule ===================== -->
+    <string name="schedule_overline">ସମୟସୂଚୀ</string>
+    <string name="schedule_title">ସୁରକ୍ଷା ସମୟସୂଚୀ</string>
+    <string name="schedule_body">ଯାତାୟାତ କିମ୍ବା ରାତି ବେଳା ପାଇଁ ସୁରକ୍ଷା ନିଜେ ଚାଲୁ ଓ ବନ୍ଦ କରନ୍ତୁ।</string>
+    <string name="schedule_master_title">ନିର୍ଧାରିତ ସୁରକ୍ଷା</string>
+    <string name="schedule_master_on">ତଳେ ଥିବା ସମୟରେ ନିଜେ ଚାଲେ</string>
+    <string name="schedule_master_off">ବନ୍ଦ। ଆପଣ ଚାଲୁ କଲେ ହିଁ ସୁରକ୍ଷା ଚାଲେ</string>
+    <string name="schedule_window">ସମୟ ସୀମା</string>
+    <string name="schedule_turns_on">ଚାଲୁ ହେବ</string>
+    <string name="schedule_turns_off">ବନ୍ଦ ହେବ</string>
+    <string name="schedule_tap_to_change">ବଦଳାଇବାକୁ ଟ୍ୟାପ କରନ୍ତୁ</string>
+    <string name="schedule_repeat">ଦୋହରାନ୍ତୁ</string>
+    <string name="schedule_every_day">ପ୍ରତିଦିନ</string>
+    <string name="schedule_today">ଆଜି</string>
+    <string name="schedule_tomorrow">ଆସନ୍ତାକାଲି</string>
+    <string name="schedule_pick_date">ତାରିଖ ବାଛନ୍ତୁ</string>
+    <string name="schedule_pick_start">ସୁରକ୍ଷା ଚାଲୁ ହେବାର ସମୟ</string>
+    <string name="schedule_pick_end">ସୁରକ୍ଷା ବନ୍ଦ ହେବାର ସମୟ</string>
+    <string name="schedule_pick_date_title">ଦିନ ବାଛନ୍ତୁ</string>
+    <string name="schedule_save">ସମୟସୂଚୀ ସେଭ କରନ୍ତୁ</string>
+    <string name="schedule_saved">ସମୟସୂଚୀ ସେଭ ହେଲା</string>
+    <string name="schedule_not_scheduled">ନିର୍ଧାରିତ ହୋଇନାହିଁ</string>
+    <string name="schedule_off_summary">ନିର୍ଧାରିତ ସୁରକ୍ଷା ବନ୍ଦ ଅଛି।</string>
+    <string name="schedule_summary">ସୁରକ୍ଷା %1$s ରେ ଚାଲୁ ହେବ ଏବଂ%3$s %2$s ରେ ବନ୍ଦ ହେବ, %4$s।</string>
+    <string name="schedule_next_day">" ପରଦିନ"</string>
+    <string name="schedule_when_daily">ପ୍ରତିଦିନ</string>
+    <string name="schedule_when_today">କେବଳ ଆଜି</string>
+    <string name="schedule_when_tomorrow">କେବଳ ଆସନ୍ତାକାଲି</string>
+    <string name="schedule_when_date">%1$s ରେ</string>
+    <string name="schedule_short">%1$s – %2$s · %3$s</string>
+    <string name="schedule_error_same">ଆରମ୍ଭ ଓ ଶେଷ ସମୟ ସମାନ ହୋଇପାରିବ ନାହିଁ।</string>
+    <string name="schedule_error_date">ପ୍ରଥମେ ଏକ ତାରିଖ ବାଛନ୍ତୁ।</string>
+    <string name="schedule_error_passed">ଆଜି ସେହି ସମୟ ଶେଷ ହୋଇସାରିଛି। ଆସନ୍ତାକାଲି କିମ୍ବା ଅନ୍ୟ ଏକ ତାରିଖ ବାଛନ୍ତୁ।</string>
+    <string name="schedule_exact_title">ସଠିକ ସମୟର ଆଲାର୍ମକୁ ଅନୁମତି ଦିଅନ୍ତୁ</string>
+    <string name="schedule_exact_body">ଠିକ୍ ସମୟରେ ସୁରକ୍ଷା ଆରମ୍ଭ କରିବା ପାଇଁ Android କୁ ଆପଣଙ୍କ ଅନୁମତି ଦରକାର।</string>
+
+    <!-- ===================== Profile ===================== -->
+    <string name="profile_overline">ଆପଣଙ୍କ ପ୍ରୋଫାଇଲ</string>
+    <string name="profile_title">ଆପଣଙ୍କ ବିଷୟରେ</string>
+    <string name="profile_body">ଆପଣଙ୍କ କଣ୍ଟାକ୍ଟ ଓ ଉଦ୍ଧାରକାରୀମାନଙ୍କୁ ଆପଣଙ୍କୁ ଚିହ୍ନିବାରେ ସାହାଯ୍ୟ କରେ। କେବଳ ଏହି ଡିଭାଇସରେ ସେଭ ହୁଏ।</string>
+    <string name="profile_add_photo">ଫଟୋ ଯୋଡ଼ିବାକୁ ଟ୍ୟାପ କରନ୍ତୁ</string>
+    <string name="profile_change_photo">ଫଟୋ ବଦଳାଇବାକୁ ଟ୍ୟାପ କରନ୍ତୁ</string>
+    <string name="cd_profile_photo">ପ୍ରୋଫାଇଲ ଫଟୋ। ବଦଳାଇବାକୁ ଦୁଇଥର ଟ୍ୟାପ କରନ୍ତୁ।</string>
+    <string name="profile_section_personal">ବ୍ୟକ୍ତିଗତ</string>
+    <string name="profile_section_contact">ଯୋଗାଯୋଗ</string>
+    <string name="profile_section_occupation">ବୃତ୍ତି</string>
+    <string name="profile_full_name">ପୂରା ନାମ</string>
+    <string name="profile_guardian_name">ପିତା କିମ୍ବା ଅଭିଭାବକଙ୍କ ନାମ</string>
+    <string name="profile_address">ଘର ଠିକଣା</string>
+    <string name="profile_mobile">ଆପଣଙ୍କ ମୋବାଇଲ ନମ୍ବର</string>
+    <string name="profile_guardian_mobile">ଅଭିଭାବକଙ୍କ ମୋବାଇଲ ନମ୍ବର</string>
+    <string name="profile_mobile_helper">10 ଅଙ୍କ, +91 ଇଚ୍ଛାଧୀନ</string>
+    <string name="profile_college">କଲେଜ</string>
+    <string name="profile_degree">ଡିଗ୍ରୀ କିମ୍ବା କୋର୍ସ</string>
+    <string name="profile_office">ଅଫିସ ଠିକଣା</string>
+    <string name="profile_update">ପ୍ରୋଫାଇଲ ଅପଡେଟ କରନ୍ତୁ</string>
+    <string name="profile_saved">ପ୍ରୋଫାଇଲ ସେଭ ହେଲା</string>
+    <string name="profile_save_error">ଆପଣଙ୍କ ପ୍ରୋଫାଇଲ ସେଭ ହୋଇପାରିଲା ନାହିଁ। ଦୟାକରି ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।</string>
+    <string name="profile_photo_error">ସେହି ଫଟୋ ଲୋଡ ହୋଇପାରିଲା ନାହିଁ।</string>
+    <string name="profile_error_required">ଆବଶ୍ୟକ</string>
+    <string name="profile_error_mobile">ଏକ ସଠିକ 10-ଅଙ୍କ ମୋବାଇଲ ନମ୍ବର ଦିଅନ୍ତୁ</string>
+    <string name="profile_error_pincode">ଏକ ସଠିକ 6-ଅଙ୍କ ପିନକୋଡ ଦିଅନ୍ତୁ</string>
+
+    <!-- ===================== Evidence vault ===================== -->
+    <string name="vault_overline">ପ୍ରମାଣ</string>
+    <string name="vault_title">ପ୍ରମାଣ ଭଣ୍ଡାର</string>
+    <string name="vault_body">SOS ସମୟରେ ନିଜେ ନିଆଯାଇଥିବା ଫଟୋ, ନୂଆଟି ପ୍ରଥମେ।</string>
+    <string name="vault_empty_title">ଏପର୍ଯ୍ୟନ୍ତ କୌଣସି ପ୍ରମାଣ ନାହିଁ</string>
+    <string name="vault_empty_body">SOS ଆରମ୍ଭ ହେଲେ, Naari Shakti ଆଗ ଓ ପଛ କ୍ୟାମେରାରେ ଚୁପଚାପ ଫଟୋ ନିଏ। ସେଗୁଡ଼ିକ ଏଠାରେ ଦେଖାଯିବ।</string>
+    <string name="vault_front">ଆଗ କ୍ୟାମେରା</string>
+    <string name="vault_back">ପଛ କ୍ୟାମେରା</string>
+    <string name="vault_photo">ଫଟୋ</string>
+    <string name="vault_unknown_time">ଅଜଣା ସମୟ</string>
+    <string name="vault_delete_title">ଏହି ଫଟୋ ଡିଲିଟ କରିବେ?</string>
+    <string name="vault_delete_body">ଏହା ଏହି ଡିଭାଇସରୁ ସବୁଦିନ ପାଇଁ ହଟିଯିବ। ଏହାକୁ ଫେରାଇ ହେବ ନାହିଁ।</string>
+    <string name="vault_deleted">ଫଟୋ ଡିଲିଟ ହେଲା</string>
+    <string name="vault_load_error">ପ୍ରମାଣ ଭଣ୍ଡାର ଖୋଲିପାରିଲା ନାହିଁ।</string>
+    <string name="cd_delete_photo">ଫଟୋ ଡିଲିଟ କରନ୍ତୁ</string>
+    <plurals name="vault_count">
+        <item quantity="one">%1$d ଟି ଫଟୋ</item>
+        <item quantity="other">%1$d ଟି ଫଟୋ</item>
+    </plurals>
+</resources>

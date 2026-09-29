@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Common -->
+    <string name="tr_back">ପଛକୁ</string>
+    <string name="tr_not_now">ଏବେ ନୁହେଁ</string>
+    <string name="tr_cancel">ବାତିଲ</string>
+    <string name="tr_open_settings">ସେଟିଂସ</string>
+
+    <!-- SMS alerts to emergency contacts -->
+    <string name="tr_default_owner_name">ଆପଣଙ୍କ କଣ୍ଟାକ୍ଟ</string>
+    <string name="tr_sms_shutdown">Naari Shakti: %1$s ଙ୍କ ଫୋନ ବନ୍ଦ ହେଉଛି। ଶେଷ ଜଣା ଲୋକେସନ: %2$s</string>
+    <string name="tr_sms_low_battery">Naari Shakti: %1$s ଙ୍କ ଫୋନ ବ୍ୟାଟେରୀ %2$d%% ରେ ଅଛି। ଶେଷ ଜଣା ଲୋକେସନ: %3$s</string>
+    <string name="tr_sms_sim_changed">Naari Shakti: %1$s ଙ୍କ ଫୋନର SIM କାର୍ଡ ବଦଳାଯାଇଛି। ଏହି ମେସେଜ ନୂଆ SIM ରୁ ଆସିଛି। ଲୋକେସନ: %2$s</string>
+    <string name="tr_sms_location_fmt">%1$s (%2$s)</string>
+    <string name="tr_sms_location_unknown">ଉପଲବ୍ଧ ନାହିଁ</string>
+
+    <!-- Volume-key SOS (accessibility) -->
+    <string name="tr_a11y_dialog_title">ଭଲ୍ୟୁମ ବଟନ SOS ଚାଲୁ କରନ୍ତୁ</string>
+    <string name="tr_a11y_dialog_body">ସ୍କ୍ରିନ ବନ୍ଦ ଥିଲେ ବି ଭଲ୍ୟୁମ-ଡାଉନ 5 ଥର ଦବାଇ SOS ଆରମ୍ଭ କରିବାକୁ, ଆକ୍ସେସିବିଲିଟି ସେଟିଂସରେ %1$s ଚାଲୁ କରନ୍ତୁ।\n\nପରବର୍ତ୍ତୀ ସ୍କ୍ରିନରେ “ଇନଷ୍ଟଲ ହୋଇଥିବା ଆପ” (ବା “ଡାଉନଲୋଡ ହୋଇଥିବା ଆପ”) ଖୋଲନ୍ତୁ, %1$s ବାଛି ଚାଲୁ କରନ୍ତୁ। ଏହା କେବଳ ଭଲ୍ୟୁମ ବଟନ ଉପରେ ନଜର ରଖେ ଏବଂ ଆପଣଙ୍କ ସ୍କ୍ରିନ କେବେ ପଢ଼େ ନାହିଁ।</string>
+    <string name="tr_a11y_dialog_open">ସେଟିଂସ ଖୋଲନ୍ତୁ</string>
+
+    <!-- Panic button screen -->
+    <string name="tr_pb_eyebrow">ଅତିରିକ୍ତ ଟ୍ରିଗର</string>
+    <string name="tr_pb_title">ପ୍ୟାନିକ ବଟନ</string>
+    <string name="tr_pb_desc">ଏକ ଛୋଟ Bluetooth ବଟନ ପେୟାର କରନ୍ତୁ ଏବଂ ଫୋନ ବାହାର ନକରି SOS ଆରମ୍ଭ କରିବାକୁ ଏହାକୁ ଦୁଇଥର ଦବାନ୍ତୁ।</string>
+
+    <string name="tr_pb_status_label">ଆପଣଙ୍କ ବଟନ</string>
+    <string name="tr_pb_no_button">କୌଣସି ବଟନ ପେୟାର ହୋଇନାହିଁ</string>
+    <string name="tr_pb_unnamed">ନାମହୀନ ବଟନ</string>
+    <string name="tr_pb_status_not_set">ସେଟ ହୋଇନାହିଁ</string>
+    <string name="tr_pb_status_connected">ସଂଯୁକ୍ତ</string>
+    <string name="tr_pb_status_connecting">ବଟନ ଖୋଜାଯାଉଛି… ପାଖରେ ରଖନ୍ତୁ</string>
+    <string name="tr_pb_status_unsupported">ଏହି ଡିଭାଇସ ସମର୍ଥିତ ବଟନ ନୁହେଁ</string>
+    <string name="tr_pb_status_bt_off">Bluetooth ବନ୍ଦ ଅଛି</string>
+    <string name="tr_pb_status_permission">Bluetooth ଅନୁମତି ଦରକାର</string>
+    <string name="tr_pb_status_unavailable">ଉପଲବ୍ଧ ନାହିଁ</string>
+    <string name="tr_pb_status_off">ସଂଯୁକ୍ତ ନୁହେଁ</string>
+    <string name="tr_pb_protection_hint">ବଟନ SOS ଆରମ୍ଭ କରିପାରିବା ପାଇଁ ସୁରକ୍ଷା ଚାଲୁ କରନ୍ତୁ।</string>
+
+    <string name="tr_pb_forget">ବଟନ ଭୁଲିଯାଆନ୍ତୁ</string>
+    <string name="tr_pb_forget_title">ଏହି ବଟନ ଭୁଲିଯିବେ?</string>
+    <string name="tr_pb_forget_body">%1$s ଆଉ SOS ଆରମ୍ଭ କରିବ ନାହିଁ।</string>
+    <string name="tr_pb_forget_confirm">ଭୁଲିଯାଆନ୍ତୁ</string>
+    <string name="tr_pb_forgotten">ବଟନ ହଟାଗଲା</string>
+
+    <string name="tr_pb_section_test">ପରୀକ୍ଷା</string>
+    <string name="tr_pb_test_title">ପରୀକ୍ଷା ପାଇଁ ବଟନ ଦୁଇଥର ଦବାନ୍ତୁ</string>
+    <string name="tr_pb_test_waiting">ବଟନ ସଂଯୁକ୍ତ ହେବାକୁ ଅପେକ୍ଷା…</string>
+    <string name="tr_pb_test_hint">ଏକ ସେକେଣ୍ଡ ଭିତରେ ଦୁଇଥର ଶୀଘ୍ର ଦବାନ୍ତୁ। ଥରେ ଦବାଇଲେ କିଛି ହୁଏ ନାହିଁ, ତେଣୁ ଭୁଲରେ ଚାଲୁ ହେବ ନାହିଁ।</string>
+    <string name="tr_pb_test_one">ଥରେ ଦବାଗଲା। ଏବେ ଶୀଘ୍ର ପୁଣି ଦବାନ୍ତୁ</string>
+    <string name="tr_pb_test_success">ଏହା କାମ କରୁଛି!</string>
+    <string name="tr_pb_test_success_body">ସୁରକ୍ଷା ଚାଲୁ ଥିବା ବେଳେ, ଦୁଇଥର ଦବାଇଲେ SOS କାଉଣ୍ଟଡାଉନ ଆରମ୍ଭ ହୁଏ। କାଉଣ୍ଟଡାଉନ ସମୟରେ ଆପଣ ତଥାପି ବାତିଲ କରିପାରିବେ। ଏଠାରେ ପରୀକ୍ଷା କଲେ କେବେ SOS ଯାଏ ନାହିଁ।</string>
+    <string name="tr_pb_test_again">ପୁଣି ପରୀକ୍ଷା କରନ୍ତୁ</string>
+
+    <string name="tr_pb_section_find">ଆପଣଙ୍କ ବଟନ ଖୋଜନ୍ତୁ</string>
+    <string name="tr_pb_nearby">ନିକଟସ୍ଥ ବଟନ</string>
+    <string name="tr_pb_scan_hint">ବଟନ ଚାଲୁ କରନ୍ତୁ (ବିପ ନ ହେବା ପର୍ଯ୍ୟନ୍ତ ଦବାଇ ରଖନ୍ତୁ) ଏବଂ ଫୋନ ପାଖରେ ରଖନ୍ତୁ।</string>
+    <string name="tr_pb_scan">ବଟନ ପାଇଁ ସ୍କାନ କରନ୍ତୁ</string>
+    <string name="tr_pb_stop_scan">ସ୍କାନିଂ ବନ୍ଦ କରନ୍ତୁ</string>
+    <string name="tr_pb_scanning">ସ୍କାନ ହେଉଛି…</string>
+    <string name="tr_pb_empty">କୌଣସି ବଟନ ମିଳିଲା ନାହିଁ। ଏହା ଚାଲୁ ଓ ପାଖରେ ଅଛି କି ନିଶ୍ଚିତ କରି ପୁଣି ସ୍କାନ କରନ୍ତୁ।</string>
+    <string name="tr_pb_empty_location">କୌଣସି ବଟନ ମିଳିଲା ନାହିଁ। Bluetooth ଡିଭାଇସ ସ୍କାନ ପାଇଁ Android ରେ ଲୋକେସନ ଚାଲୁ ଥିବା ଦରକାର। ଏହାକୁ ଚାଲୁ କରି ପୁଣି ସ୍କାନ କରନ୍ତୁ।</string>
+    <string name="tr_pb_scan_failed">ସ୍କାନିଂ ବିଫଳ (ତ୍ରୁଟି %1$d)। Bluetooth ବନ୍ଦ କରି ପୁଣି ଚାଲୁ କରନ୍ତୁ, ତାପରେ ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।</string>
+    <string name="tr_pb_no_bluetooth">ଏହି ଫୋନ Bluetooth Low Energy ସମର୍ଥନ କରେ ନାହିଁ।</string>
+    <string name="tr_pb_bt_needed">ଆପଣଙ୍କ ବଟନ ଖୋଜିବାକୁ Bluetooth ଚାଲୁ କରନ୍ତୁ।</string>
+    <string name="tr_pb_perm_denied">ଆପଣଙ୍କ ବଟନ ଖୋଜିବା ପାଇଁ Naari Shakti କୁ ନିକଟସ୍ଥ ଡିଭାଇସ ଓ ଲୋକେସନ ଅନୁମତି ଦରକାର।</string>
+    <string name="tr_pb_paired_snack">%1$s ସେଭ ହେଲା। ଏବେ ପରୀକ୍ଷା ପାଇଁ ଏହାକୁ ଦୁଇଥର ଦବାନ୍ତୁ।</string>
+    <string name="tr_pb_rssi">%1$d dBm</string>
+    <string name="tr_pb_tag_compatible">ସମର୍ଥିତ</string>
+    <string name="tr_pb_tag_paired">ପେୟାର ହୋଇଛି</string>
+    <string name="tr_pb_device_cd">%1$s, ସିଗନାଲ 4 ମଧ୍ୟରୁ %2$d। ଏହି ବଟନ ବ୍ୟବହାର କରିବାକୁ ଦୁଇଥର ଟ୍ୟାପ କରନ୍ତୁ।</string>
+
+    <string name="tr_pb_section_supported">ସମର୍ଥିତ ବଟନ</string>
+    <string name="tr_pb_sup1_title">iTag କି-ଫାଇଣ୍ଡର ବଟନ</string>
+    <string name="tr_pb_sup1_body">“iTag” ବା “anti-lost tracker” ନାମରେ ବିକ୍ରି ହେଉଥିବା ଛୋଟ Bluetooth କି-ଫାଇଣ୍ଡର ବଟନ ସବୁଠୁ ଭଲ କାମ କରେ। ଅନଲାଇନରେ ଏହାର ଦାମ ପ୍ରାୟ ₹200।</string>
+    <string name="tr_pb_sup2_title">କଏନ ସେଲରେ ଚାଲେ</string>
+    <string name="tr_pb_sup2_body">ଗୋଟିଏ CR2032 ବ୍ୟାଟେରୀ ମାସ ମାସ ଧରି ଚାଲେ। ବଟନକୁ ଚାବି, ବ୍ୟାଗ ଷ୍ଟ୍ରାପ ବା ପୋଷାକରେ ଲଗାନ୍ତୁ।</string>
+    <string name="tr_pb_sup3_title">ବ୍ୟାକଗ୍ରାଉଣ୍ଡରେ କାମ କରେ</string>
+    <string name="tr_pb_sup3_body">ସୁରକ୍ଷା ଚାଲୁ ଥିବା ବେଳେ, ଫୋନ ସଂଯୁକ୍ତ ରହେ ଏବଂ ବଟନ ପୁଣି ପରିସରକୁ ଆସିଲେ ନିଜେ ପୁଣି ସଂଯୁକ୍ତ ହୁଏ।</string>
+</resources>

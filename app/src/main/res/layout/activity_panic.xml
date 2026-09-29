@@ -616,12 +616,231 @@
             </FrameLayout>
 
             <TextView
+                android:id="@+id/holdHint"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/ns_space_2"
+                android:accessibilityLiveRegion="polite"
                 android:gravity="center"
                 android:text="@string/eng_panic_hold_hint"
                 android:textAppearance="@style/Ns.Text.Caption" />
         </LinearLayout>
+    </LinearLayout>
+
+    <!-- ===================== Covert (silent SOS / after duress) ===================== -->
+    <LinearLayout
+        android:id="@+id/covertGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ns_bg_gradient"
+        android:fitsSystemWindows="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/ns_gutter"
+        android:paddingEnd="@dimen/ns_gutter"
+        android:visibility="gone">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@drawable/ns_icon_badge"
+            android:backgroundTint="@color/ns_violet_container"
+            android:importantForAccessibility="no"
+            android:padding="18dp"
+            android:src="@drawable/eng_ic_location"
+            app:tint="@color/ns_violet" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ns_space_5"
+            android:text="@string/en_covert_overline"
+            android:textAppearance="@style/Ns.Text.Overline" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ns_space_1"
+            android:gravity="center"
+            android:text="@string/en_covert_heading"
+            android:textAppearance="@style/Ns.Text.Headline" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ns_space_2"
+            android:gravity="center"
+            android:text="@string/en_covert_body"
+            android:textAppearance="@style/Ns.Text.Body" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/covertHoldButton"
+                style="@style/Ns.Button.Tonal"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="@string/en_covert_hold"
+                app:icon="@drawable/eng_ic_close"
+                app:iconGravity="textStart" />
+
+            <View
+                android:id="@+id/covertHoldFill"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:alpha="0.25"
+                android:background="@drawable/eng_hold_fill"
+                android:clickable="false"
+                android:elevation="12dp"
+                android:focusable="false"
+                android:importantForAccessibility="no" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/covertHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ns_space_2"
+            android:accessibilityLiveRegion="polite"
+            android:gravity="center"
+            android:text="@string/en_covert_hint"
+            android:textAppearance="@style/Ns.Text.Caption" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/covertClose"
+            style="@style/Ns.Button.Text.Muted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ns_space_2"
+            android:layout_marginBottom="@dimen/ns_space_4"
+            android:text="@string/en_covert_close" />
+    </LinearLayout>
+
+    <!-- ===================== PIN pad (stop requires the app PIN) ===================== -->
+    <LinearLayout
+        android:id="@+id/pinGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ns_bg_gradient"
+        android:clickable="true"
+        android:clipChildren="false"
+        android:elevation="16dp"
+        android:fitsSystemWindows="true"
+        android:focusable="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/ns_gutter"
+        android:paddingEnd="@dimen/ns_gutter"
+        android:visibility="gone">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/ns_icon_badge"
+            android:backgroundTint="@color/ns_rose_container"
+            android:importantForAccessibility="no"
+            android:padding="15dp"
+            android:src="@drawable/en_ic_lock"
+            app:tint="@color/ns_rose" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ns_space_4"
+            android:gravity="center"
+            android:text="@string/en_pin_stop_title"
+            android:textAppearance="@style/Ns.Text.Headline" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ns_space_2"
+            android:gravity="center"
+            android:text="@string/en_pin_stop_subtitle"
+            android:textAppearance="@style/Ns.Text.Body" />
+
+        <com.example.naarishakti.security.PinPadView
+            android:id="@+id/panicPinPad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ns_space_8" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/pinBack"
+            style="@style/Ns.Button.Text.Muted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/ns_space_4"
+            android:text="@string/en_pin_back_to_sos" />
+    </LinearLayout>
+
+    <!-- ===================== Stopped confirmation ===================== -->
+    <LinearLayout
+        android:id="@+id/stoppedGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/ns_bg"
+        android:clickable="true"
+        android:elevation="20dp"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/ns_gutter"
+        android:paddingEnd="@dimen/ns_gutter"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:id="@+id/stoppedBadge"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/en_stopped_badge">
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:importantForAccessibility="no"
+                android:src="@drawable/eng_ic_check"
+                app:tint="@color/ns_safe" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ns_space_6"
+            android:accessibilityLiveRegion="assertive"
+            android:gravity="center"
+            android:text="@string/en_stopped_title"
+            android:textAppearance="@style/Ns.Text.Headline" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ns_space_2"
+            android:gravity="center"
+            android:text="@string/en_stopped_body"
+            android:textAppearance="@style/Ns.Text.Body" />
     </LinearLayout>
 </FrameLayout>

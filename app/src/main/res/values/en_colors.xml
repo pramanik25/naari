@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Fake incoming call screen: a neutral stock-dialer look, intentionally not app-branded,
+     identical in light and dark theme. Used only by the en_call_* drawables and layout. -->
+<resources>
+    <color name="en_call_bg_top">#FF20303A</color>
+    <color name="en_call_bg_bottom">#FF0B1115</color>
+    <color name="en_call_text">#FFFFFFFF</color>
+    <color name="en_call_text_secondary">#B3FFFFFF</color>
+    <color name="en_call_accept">#FF1FA855</color>
+    <color name="en_call_decline">#FFE5484D</color>
+    <color name="en_call_button">#26FFFFFF</color>
+    <color name="en_call_button_active">#FFFFFFFF</color>
+    <color name="en_call_icon_active">#FF20303A</color>
+    <color name="en_call_ripple">#33FFFFFF</color>
+    <color name="en_call_avatar_1">#FF5C6BC0</color>
+    <color name="en_call_avatar_2">#FF26A69A</color>
+    <color name="en_call_avatar_3">#FFEF6C00</color>
+    <color name="en_call_avatar_4">#FF8E24AA</color>
+    <color name="en_call_avatar_5">#FF546E7A</color>
+</resources>

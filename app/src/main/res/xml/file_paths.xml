@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <paths>
     <external-path name="my_images" path="Android/data/com.example.naarishakti/files/Pictures/Emergency" />
+    <!-- Evidence recorded during an SOS (audio/video/photos) and exported evidence packages. -->
+    <external-files-path name="ev_evidence" path="Evidence/" />
+    <files-path name="ev_evidence_internal" path="Evidence/" />
+    <cache-path name="ev_exports" path="exports/" />
 </paths>

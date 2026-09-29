@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- v1.1: nearby helpers, SOS broadcast, helper evidence and WhatsApp alerts. -->
+<resources>
+
+    <!-- ===================== Home: "Help women near you?" ===================== -->
+    <string name="nb_home_eyebrow">Community</string>
+    <string name="nb_home_title">Help women near you?</string>
+    <string name="nb_home_body">When someone nearby triggers SOS, you\'ll get an alert with her location so you can help or call 112. Your location is used only to match you with alerts nearby and is never shown to anyone.</string>
+    <string name="nb_home_yes">Yes, I\'ll help</string>
+    <string name="nb_home_not_now">Not now</string>
+    <string name="nb_home_thanks">Thank you. You\'ll be alerted when someone nearby needs help.</string>
+    <string name="nb_home_thanks_offline">Thank you. You\'ll be registered as a helper as soon as you\'re online.</string>
+    <string name="nb_home_location_denied">Without your location we can\'t match you with alerts nearby. You can turn this on later in Cloud &amp; guardians.</string>
+
+    <!-- Offer after "Yes": offline Bluetooth alerts (mesh) -->
+    <string name="nb_mesh_title">Also help without internet?</string>
+    <string name="nb_mesh_body">Naari Shakti can also pass SOS alerts between nearby phones over Bluetooth when there is no internet. This needs the nearby devices permission.</string>
+    <string name="nb_mesh_yes">Turn on</string>
+    <string name="nb_mesh_no">No thanks</string>
+    <string name="nb_mesh_on">Offline Bluetooth alerts are on.</string>
+    <string name="nb_mesh_denied">Offline Bluetooth alerts need the nearby devices permission.</string>
+
+    <!-- ===================== Safety settings: Community ===================== -->
+    <string name="nb_broadcast_title">Alert people near me during SOS</string>
+    <string name="nb_broadcast_sub">Volunteers within 2 to 5 km get your location and photos so they can help. Your guardians are always alerted.</string>
+
+    <!-- ===================== Helper alert: evidence ===================== -->
+    <plurals name="nb_evidence_count">
+        <item quantity="one">%d photo or recording</item>
+        <item quantity="other">%d photos and recordings</item>
+    </plurals>
+    <string name="nb_radius_km">Within %1$d km</string>
+    <string name="nb_view_live">View live location &amp; evidence</string>
+    <string name="nb_photo_desc">Latest photo from her SOS</string>
+    <!-- Notification summary; %1$s is nb_evidence_count, e.g. "3 photos and recordings". -->
+    <string name="nb_n_evidence_text">%1$s so far. Tap to see them live.</string>
+
+    <!-- ===================== Emergency settings: WhatsApp alerts ===================== -->
+    <string name="nb_wa_section">WhatsApp alerts</string>
+    <string name="nb_wa_title">WhatsApp alerts</string>
+    <string name="nb_wa_caption">Send your SOS, live location and photos to your contacts on WhatsApp.</string>
+    <string name="nb_wa_explain">Alerts come from the Naari Shakti WhatsApp number, not from your own WhatsApp. Each contact must tap your invite once to join before they can get alerts.</string>
+    <string name="nb_wa_joined">Joined ✓</string>
+    <string name="nb_wa_not_joined">Not joined yet</string>
+    <string name="nb_wa_invite">Invite</string>
+    <string name="nb_wa_invite_cd">Invite %1$s on WhatsApp</string>
+    <string name="nb_wa_invite_text">Hi, I\'ve added you as an emergency contact in Naari Shakti. To get my SOS alerts on WhatsApp, open this link and send the message: %1$s</string>
+    <string name="nb_wa_invite_chooser">Send invite</string>
+    <plurals name="nb_wa_joined_count">
+        <item quantity="one">%1$d of %2$d contact has joined</item>
+        <item quantity="other">%1$d of %2$d contacts have joined</item>
+    </plurals>
+    <string name="nb_wa_empty">Add emergency contacts above to send them WhatsApp alerts.</string>
+    <string name="nb_wa_unavailable">WhatsApp alerts aren\'t available yet. SMS, calls and Telegram alerts still work.</string>
+    <string name="nb_wa_cloud_off">WhatsApp alerts need cloud sync, which is off on this phone. SMS, calls and Telegram alerts still work.</string>
+    <string name="nb_wa_error">Couldn\'t reach the server. Your changes will sync when you\'re online.</string>
+    <string name="nb_wa_retry">Retry</string>
+    <string name="nb_wa_checking">Checking who has joined…</string>
+    <string name="nb_wa_unnamed">Unnamed</string>
+</resources>

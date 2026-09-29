@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Notification channels -->
+    <string name="eng_channel_protection">সুরক্ষার অবস্থা</string>
+    <string name="eng_channel_protection_desc">Naari Shakti যখন আপনার ট্রিগার শব্দ, ঝাঁকানো ও পাওয়ার বোতাম চাপার অপেক্ষায় থাকে, তখন দেখায়।</string>
+    <string name="eng_channel_sos">SOS অ্যালার্ট</string>
+    <string name="eng_channel_sos_desc">SOS কাউন্টডাউন বা চালু থাকার সময় ফুল-স্ক্রিন অ্যালার্ট।</string>
+    <string name="eng_channel_alerts">সুরক্ষা অ্যালার্ট</string>
+    <string name="eng_channel_alerts_desc">যে রিমাইন্ডারে আপনার নজর দরকার, যেমন রিস্টার্টের পরে সুরক্ষা আবার চালু করা।</string>
+    <string name="eng_channel_live">লাইভ লোকেশন শেয়ার</string>
+    <string name="eng_channel_live_desc">কন্টাক্টদের সঙ্গে আপনার লাইভ লোকেশন শেয়ার হওয়ার সময় দেখায়।</string>
+    <string name="eng_channel_geofence">সেভ করা জায়গা</string>
+    <string name="eng_channel_geofence_desc">সেভ করা কোনো জায়গায় পৌঁছালে বা সেখান থেকে বেরোলে অ্যালার্ট।</string>
+
+    <!-- Protection notification -->
+    <string name="eng_protect_title">Naari Shakti আপনাকে সুরক্ষা দিচ্ছে</string>
+    <string name="eng_protect_text">“%1$s” শোনার অপেক্ষায় · SOS-এর জন্য পাওয়ার ×%2$d চাপুন</string>
+    <string name="eng_protect_text_no_voice">SOS-এর জন্য ঝাঁকান বা পাওয়ার ×%1$d চাপুন</string>
+    <string name="eng_action_sos_now">এখনই SOS</string>
+    <string name="eng_action_turn_off">বন্ধ করুন</string>
+
+    <!-- Resume notification -->
+    <string name="eng_resume_title">সুরক্ষা আবার চালু করতে ট্যাপ করুন</string>
+    <string name="eng_resume_text">রিস্টার্টের পরে Android, Naari Shakti-কে থামিয়ে দিয়েছে। সুরক্ষা আবার চালু করতে অ্যাপটি খুলুন।</string>
+
+    <!-- SOS notification -->
+    <string name="eng_sos_countdown_title">SOS পাঠানো হচ্ছে…</string>
+    <string name="eng_sos_countdown_text">আপনার কন্টাক্টদের সতর্ক করা হবে। ভুল করে হলে বাতিল করুন-এ ট্যাপ করুন।</string>
+    <string name="eng_sos_active_title">SOS চালু</string>
+    <string name="eng_sos_active_text">কন্টাক্টদের সতর্ক করা হচ্ছে এবং আপনার লাইভ লোকেশন শেয়ার হচ্ছে।</string>
+    <string name="eng_action_cancel">বাতিল করুন</string>
+    <string name="eng_action_stop_sos">SOS থামান</string>
+    <string name="eng_action_call_contact">%1$s-কে কল করুন</string>
+
+    <!-- SMS bodies -->
+    <string name="eng_sms_location_line">আমার লোকেশন: %1$s</string>
+    <string name="eng_sms_location_pending">লোকেশন এখনও পাওয়া যায়নি, একটু পরেই পাঠাচ্ছি।</string>
+    <string name="eng_sms_location_followup">আমার এখনকার লোকেশন: %1$s</string>
+    <string name="eng_sms_location_update">লাইভ লোকেশন আপডেট (%1$s): %2$s</string>
+    <string name="eng_sms_safe">আমি এখন নিরাপদ। আগের SOS অ্যালার্টটি উপেক্ষা করুন। - Naari Shakti থেকে পাঠানো</string>
+    <string name="eng_sms_live_start_named">%1$s %2$d মিনিটের জন্য আপনার সঙ্গে লাইভ লোকেশন শেয়ার করছেন: %3$s</string>
+    <string name="eng_sms_live_start">আমি %1$d মিনিটের জন্য আপনার সঙ্গে আমার লাইভ লোকেশন শেয়ার করছি: %2$s</string>
+    <string name="eng_sms_live_start_no_fix">আমি %1$d মিনিটের জন্য আপনার সঙ্গে আমার লাইভ লোকেশন শেয়ার করছি। প্রথম লোকেশন একটু পরেই আসবে।</string>
+    <string name="eng_sms_live_start_named_no_fix">%1$s %2$d মিনিটের জন্য আপনার সঙ্গে লাইভ লোকেশন শেয়ার করছেন। প্রথম লোকেশন একটু পরেই আসবে।</string>
+    <string name="eng_sms_live_update">লাইভ লোকেশন (%1$s): %2$s</string>
+    <string name="eng_sms_live_ended">লাইভ লোকেশন শেয়ার শেষ হয়েছে।</string>
+
+    <!-- Telegram / email -->
+    <string name="eng_telegram_sos">Naari Shakti থেকে SOS\n%1$s</string>
+    <string name="eng_telegram_safe">আপডেট: আমি এখন নিরাপদ।</string>
+    <string name="eng_email_subject">জরুরি প্রমাণের ছবি (%1$s ক্যামেরা)</string>
+    <string name="eng_email_body">Naari Shakti-তে একটি SOS চালু হয়েছিল। এই ছবিটি %2$s-এ %1$s ক্যামেরা দিয়ে নিজে থেকে তোলা হয়েছে।</string>
+    <string name="eng_camera_front">সামনের</string>
+    <string name="eng_camera_back">পেছনের</string>
+
+    <!-- Live share notification -->
+    <string name="eng_live_title">আপনার লাইভ লোকেশন শেয়ার হচ্ছে</string>
+    <string name="eng_live_text">%1$d জন কন্টাক্টের সঙ্গে · শেষ হবে %2$s-এ</string>
+    <string name="eng_action_stop">থামান</string>
+
+    <!-- Geofence -->
+    <string name="eng_geofence_entered">%1$s-এ পৌঁছেছেন</string>
+    <string name="eng_geofence_left">%1$s থেকে বেরিয়েছেন</string>
+    <string name="eng_geofence_default_place">একটি সেভ করা জায়গা</string>
+    <string name="eng_geofence_text">Naari Shakti থেকে সেভ করা জায়গার অ্যালার্ট</string>
+
+    <!-- PanicActivity: countdown -->
+    <string name="eng_panic_overline">জরুরি SOS</string>
+    <string name="eng_panic_countdown_title">SOS পাঠানো হচ্ছে</string>
+    <plurals name="eng_panic_countdown_caption">
+        <item quantity="one">%d জন কন্টাক্টকে আপনার লোকেশনসহ সতর্ক করা হচ্ছে</item>
+        <item quantity="other">%d জন কন্টাক্টকে আপনার লোকেশনসহ সতর্ক করা হচ্ছে</item>
+    </plurals>
+    <string name="eng_panic_countdown_no_contacts">এখনও কোনো জরুরি কন্টাক্ট সেভ করা নেই। সাইরেন ও প্রমাণ সংগ্রহ তবুও শুরু হবে।</string>
+    <string name="eng_panic_cancel">বাতিল করুন</string>
+    <string name="eng_panic_cancel_hint">ভুল করে হলে বাতিল করুন-এ ট্যাপ করুন</string>
+
+    <!-- PanicActivity: active -->
+    <string name="eng_panic_active_overline">SOS চালু</string>
+    <string name="eng_panic_active_title">সাহায্য আসছে</string>
+    <string name="eng_panic_active_subtitle">ফোন সঙ্গে রাখুন। আপনার কন্টাক্টদের সতর্ক করা হচ্ছে।</string>
+    <string name="eng_panic_status_label">লাইভ অবস্থা</string>
+    <string name="eng_panic_hold_to_stop">থামাতে চেপে ধরুন — আমি নিরাপদ</string>
+    <string name="eng_panic_hold_hint">2 সেকেন্ড চেপে ধরে রাখুন। হয়তো ফোন আনলক করতে বলা হবে।</string>
+
+    <string name="eng_status_sms_pending">আপনার কন্টাক্টদের সতর্ক করা হচ্ছে…</string>
+    <plurals name="eng_status_sms_done">
+        <item quantity="one">%d জন কন্টাক্টকে অ্যালার্ট পাঠানো হয়েছে</item>
+        <item quantity="other">%d জন কন্টাক্টকে অ্যালার্ট পাঠানো হয়েছে</item>
+    </plurals>
+    <string name="eng_status_sms_detail_location">আপনার লোকেশনের লিঙ্কসহ</string>
+    <string name="eng_status_sms_detail_no_location">লোকেশন পাওয়া গেলেই পাঠানো হবে</string>
+    <string name="eng_status_sms_failed">SMS অ্যালার্ট পাঠানো যায়নি</string>
+    <string name="eng_status_sms_failed_detail">SMS-এর অনুমতি ও নেটওয়ার্ক দেখুন</string>
+    <string name="eng_status_sms_none">কোনো জরুরি কন্টাক্ট নেই</string>
+    <string name="eng_status_sms_none_detail">জরুরি সেটিংসে কন্টাক্ট যোগ করুন</string>
+
+    <string name="eng_status_call_pending">%1$s-কে কল করা হচ্ছে…</string>
+    <string name="eng_status_call_done">%1$s-কে কল করা হচ্ছে</string>
+    <string name="eng_status_call_detail">জরুরি কল করা হয়েছে</string>
+    <string name="eng_status_call_failed">%1$s-কে কল করা যায়নি</string>
+    <string name="eng_status_call_failed_detail">ফোনের অনুমতি দিন বা বিজ্ঞপ্তি থেকে কল করুন</string>
+    <string name="eng_status_call_none">কল করার মতো কোনো কন্টাক্ট নেই</string>
+
+    <string name="eng_status_location_pending">আপনার লোকেশন খোঁজা হচ্ছে…</string>
+    <string name="eng_status_location_done">লাইভ লোকেশন শেয়ার হচ্ছে</string>
+    <string name="eng_status_location_detail">প্রতি 2 মিনিটে বা 100 মি সরলে আপডেট হয়</string>
+    <string name="eng_status_location_failed">লোকেশন পাওয়া যাচ্ছে না</string>
+    <string name="eng_status_location_failed_detail">লোকেশন চালু করে অনুমতি দিন</string>
+
+    <string name="eng_status_siren_on">সাইরেন চালু</string>
+    <string name="eng_status_siren_detail">পুরো ভলিউমে বাজছে</string>
+    <string name="eng_status_siren_off">সাইরেন চালানো যাচ্ছে না</string>
+
+    <plurals name="eng_status_camera_title">
+        <item quantity="one">প্রমাণ তোলা হচ্ছে (%d টি ছবি)</item>
+        <item quantity="other">প্রমাণ তোলা হচ্ছে (%d টি ছবি)</item>
+    </plurals>
+    <string name="eng_status_camera_detail">প্রতি 15 সেকেন্ডে সামনের ও পেছনের ক্যামেরা</string>
+    <string name="eng_status_camera_failed">ক্যামেরা পাওয়া যাচ্ছে না</string>
+    <string name="eng_status_camera_failed_detail">প্রমাণ তুলতে ক্যামেরার অনুমতি দিন</string>
+</resources>

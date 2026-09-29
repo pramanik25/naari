@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Cloud module (guardians, nearby helpers, realtime alerts). Every user-visible text of the
+     cloud package lives here so it can be translated. -->
+<resources>
+
+    <!-- ===================== Notification channels ===================== -->
+    <string name="cl_channel_guardian">Guardian alerts</string>
+    <string name="cl_channel_guardian_desc">SOS alerts from people you protect. Rings like an alarm.</string>
+    <string name="cl_channel_helper">Nearby helper alerts</string>
+    <string name="cl_channel_helper_desc">Someone within 2 km needs help. Only when you volunteer as a nearby helper.</string>
+    <string name="cl_channel_cloud">Cloud updates</string>
+    <string name="cl_channel_cloud_desc">Helpers on the way, SOS ended and earlier alerts.</string>
+
+    <!-- ===================== Notifications ===================== -->
+    <string name="cl_n_someone">Someone you protect</string>
+    <string name="cl_n_sos_title">%1$s needs help</string>
+    <string name="cl_n_sos_text">SOS triggered. Tap to see her live location.</string>
+    <string name="cl_n_duress_title">%1$s may still be in danger</string>
+    <string name="cl_n_duress_text">She may have been forced to cancel her SOS. Keep following her live location.</string>
+    <string name="cl_n_overdue_title">%1$s missed her check-in</string>
+    <string name="cl_n_overdue_text">She didn\'t confirm she\'s safe in time. Tap to see her last location.</string>
+    <string name="cl_n_overdue_text_note">“%1$s”: she didn\'t confirm she\'s safe in time. Tap to see her last location.</string>
+    <string name="cl_n_ended_title">%1$s is safe now</string>
+    <string name="cl_n_ended_text">The SOS has ended.</string>
+    <string name="cl_n_responder_title">A nearby helper is on the way</string>
+    <string name="cl_n_responder_text">%1$s is %2$s away.</string>
+    <string name="cl_n_responder_text_nodist">%1$s is on the way.</string>
+    <string name="cl_n_responder_someone">A volunteer</string>
+    <string name="cl_n_helper_title">Someone nearby needs help</string>
+    <string name="cl_n_helper_text">%1$s from you. Tap to respond. Call 112 first.</string>
+    <string name="cl_n_helper_text_nodist">Close to you. Tap to respond. Call 112 first.</string>
+    <string name="cl_n_earlier">Earlier alert</string>
+    <string name="cl_action_open_tracking">Open live tracking</string>
+    <string name="cl_action_respond">Respond</string>
+
+    <!-- Distances -->
+    <string name="cl_distance_m">%1$d m</string>
+    <string name="cl_distance_km">%1$s km</string>
+    <string name="cl_distance_away">About %1$s away</string>
+
+    <!-- ===================== Helper alert screen ===================== -->
+    <string name="cl_helper_eyebrow">Nearby SOS</string>
+    <string name="cl_helper_title">Someone nearby needs help</string>
+    <string name="cl_helper_subtitle">A Naari Shakti user close to you has triggered an SOS.</string>
+    <string name="cl_helper_distance_unknown">Close to you</string>
+    <string name="cl_helper_safety">Don\'t put yourself in danger. Call 112 first.</string>
+    <string name="cl_helper_safety_detail">Stay in public view, keep your phone with you and let the police lead.</string>
+    <string name="cl_helper_going">I\'m going</string>
+    <string name="cl_helper_call">Call 112</string>
+    <string name="cl_helper_dismiss">Dismiss</string>
+    <string name="cl_helper_sending">Letting her know you\'re on the way…</string>
+    <string name="cl_helper_sent">She and her guardians know you\'re coming.</string>
+    <string name="cl_helper_send_failed">Couldn\'t reach the server. Navigating anyway.</string>
+    <string name="cl_helper_no_location">Couldn\'t get your location. Navigating anyway.</string>
+    <string name="cl_helper_ended_title">She\'s safe now</string>
+    <string name="cl_helper_ended">She has been marked safe. Thank you for being ready to help.</string>
+    <string name="cl_helper_map_desc">Map showing where help is needed</string>
+    <string name="cl_helper_her_location">Help needed here</string>
+    <string name="cl_no_app">No app on this phone can open this.</string>
+
+    <!-- ===================== Cloud & guardians screen ===================== -->
+    <string name="cl_back">Back</string>
+    <string name="cl_settings_eyebrow">Cloud</string>
+    <string name="cl_settings_title">Cloud &amp; guardians</string>
+    <string name="cl_settings_desc">Guardians get your SOS instantly, with your live location and evidence, even when SMS doesn\'t get through.</string>
+
+    <string name="cl_error_offline">You\'re offline. Showing what\'s saved on this phone.</string>
+    <string name="cl_error_server">Couldn\'t reach the Naari Shakti server.</string>
+    <string name="cl_error_generic">Something went wrong (error %1$d). Please try again.</string>
+    <string name="cl_retry">Retry</string>
+
+    <string name="cl_off_title">Cloud sync is off</string>
+    <string name="cl_off_caption_unconfigured">This version of the app has no server set up, so guardians, live tracking and nearby helpers aren\'t available. SMS alerts still work.</string>
+    <string name="cl_off_caption_deleted">You deleted your cloud data. Turn cloud sync back on to share your SOS with guardians again.</string>
+    <string name="cl_enable_cloud">Turn cloud sync back on</string>
+
+    <string name="cl_section_status">Status</string>
+    <string name="cl_status_server">Server</string>
+    <string name="cl_status_account">Account</string>
+    <string name="cl_status_pending">Pending uploads</string>
+    <string name="cl_status_checking">Checking…</string>
+    <string name="cl_status_reachable">Reachable</string>
+    <string name="cl_status_unreachable">Unreachable</string>
+    <string name="cl_status_registered">Registered</string>
+    <string name="cl_status_not_registered">Not registered</string>
+    <string name="cl_status_unknown">Unknown</string>
+    <plurals name="cl_pending_items">
+        <item quantity="one">%d item</item>
+        <item quantity="other">%d items</item>
+    </plurals>
+
+    <string name="cl_section_code">Your guardian code</string>
+    <string name="cl_code_caption">Share this code with people you trust. They enter it in their Naari Shakti app to get your SOS alerts.</string>
+    <string name="cl_code_placeholder" translatable="false">······</string>
+    <string name="cl_copy">Copy</string>
+    <string name="cl_share">Share</string>
+    <string name="cl_copied">Code copied</string>
+    <string name="cl_share_text">Install Naari Shakti and enter my code %1$s to get my SOS alerts</string>
+    <string name="cl_share_chooser">Share your guardian code</string>
+
+    <string name="cl_section_link">Become someone\'s guardian</string>
+    <string name="cl_link_caption">Enter the 6-character code from her app to get her SOS alerts.</string>
+    <string name="cl_link_hint">Guardian code</string>
+    <string name="cl_link_button">Link</string>
+    <string name="cl_link_success">You\'re now a guardian of %1$s</string>
+    <string name="cl_link_err_invalid">That code doesn\'t match anyone. Check it and try again.</string>
+    <string name="cl_link_err_self">That\'s your own code.</string>
+    <string name="cl_link_err_limit">Too many wrong codes. Try again in an hour.</string>
+    <string name="cl_link_err_length">Codes are 6 letters and numbers.</string>
+
+    <string name="cl_section_guardians">People protecting you</string>
+    <string name="cl_guardians_empty">No guardians yet. Share your code above.</string>
+    <string name="cl_section_guarding">People you protect</string>
+    <string name="cl_guarding_empty">You aren\'t protecting anyone yet.</string>
+    <string name="cl_linked_on">Linked %1$s</string>
+    <string name="cl_unnamed">Unnamed</string>
+    <string name="cl_remove">Remove</string>
+    <string name="cl_remove_person">Remove %1$s</string>
+    <string name="cl_remove_title">Remove %1$s?</string>
+    <string name="cl_remove_guardian_msg">%1$s will stop getting your SOS alerts.</string>
+    <string name="cl_remove_guarding_msg">You\'ll stop getting SOS alerts from %1$s.</string>
+    <string name="cl_cancel">Cancel</string>
+
+    <string name="cl_section_helper">Nearby helper</string>
+    <string name="cl_helper_switch_title">Volunteer as a nearby helper</string>
+    <string name="cl_helper_switch_caption">Get alerts when someone within 2 km needs help. Works while protection is on or the app is open.</string>
+    <string name="cl_helper_dialog_title">Become a nearby helper?</string>
+    <string name="cl_helper_dialog_msg">You\'ll get alerts when someone within 2 km triggers SOS. Your location is used only for matching and is never shown to others.</string>
+    <string name="cl_helper_dialog_ok">Turn on</string>
+    <string name="cl_helper_perm_denied">Location permission is needed to match you with people nearby.</string>
+    <string name="cl_helper_enabled">You\'re now a nearby helper.</string>
+    <string name="cl_helper_saved_offline">Saved. Your location will sync when you\'re back online.</string>
+
+    <string name="cl_section_delete">Delete my cloud data</string>
+    <string name="cl_delete_caption">Removes your account, incidents, evidence and guardian links from the server. Alerts from this phone (SMS, calls) keep working.</string>
+    <string name="cl_delete_button">Delete my cloud data</string>
+    <string name="cl_delete_title">Delete your cloud data?</string>
+    <string name="cl_delete_msg">This permanently deletes your account, incidents, uploaded evidence and guardian links from the server. It can\'t be undone.</string>
+    <string name="cl_delete_confirm">Delete</string>
+    <string name="cl_deleted">Your cloud data was deleted.</string>
+</resources>

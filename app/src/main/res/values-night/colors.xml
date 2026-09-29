@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Midnight Rose (dark) palette. Light values live in values/colors.xml. -->
+
+    <!-- Surfaces (elevation increases downwards) -->
+    <color name="ns_bg">#FF0A0A12</color>
+    <color name="ns_bg_top">#FF15122A</color>
+    <color name="ns_surface">#FF13131F</color>
+    <color name="ns_surface_high">#FF1B1B2B</color>
+    <color name="ns_surface_highest">#FF242438</color>
+    <color name="ns_stroke">#FF2A2A40</color>
+    <color name="ns_stroke_soft">#1FFFFFFF</color>
+    <color name="ns_scrim">#E60A0A12</color>
+
+    <!-- Text -->
+    <color name="ns_text">#FFF5F3FF</color>
+    <color name="ns_text_muted">#FFA9A6C2</color>
+    <color name="ns_text_faint">#FF6F6C8A</color>
+
+    <!-- Signature rose (SOS / primary) -->
+    <color name="ns_rose">#FFFF4D7E</color>
+    <color name="ns_rose_deep">#FFD81B60</color>
+    <color name="ns_rose_dark">#FF8E0E3E</color>
+    <color name="ns_rose_container">#33FF4D7E</color>
+    <color name="ns_on_rose">#FFFFFFFF</color>
+
+    <!-- Violet (secondary) -->
+    <color name="ns_violet">#FF8B7CFF</color>
+    <color name="ns_violet_deep">#FF5B4BDB</color>
+    <color name="ns_violet_container">#338B7CFF</color>
+
+    <!-- Champagne gold (premium accent, use sparingly) -->
+    <color name="ns_gold">#FFE8C27A</color>
+    <color name="ns_gold_container">#29E8C27A</color>
+
+    <!-- Semantic -->
+    <color name="ns_safe">#FF3DDC97</color>
+    <color name="ns_safe_container">#293DDC97</color>
+    <color name="ns_warn">#FFFFB547</color>
+    <color name="ns_warn_container">#29FFB547</color>
+    <color name="ns_danger">#FFFF5A5F</color>
+    <color name="ns_danger_container">#29FF5A5F</color>
+    <color name="ns_info">#FF5EC8FF</color>
+    <color name="ns_info_container">#295EC8FF</color>
+
+    <!-- Glow / ring alphas for the SOS hero -->
+    <color name="ns_rose_glow_1">#59FF4D7E</color>
+    <color name="ns_rose_glow_2">#26FF4D7E</color>
+    <color name="ns_rose_glow_3">#10FF4D7E</color>
+    <color name="ns_safe_glow">#403DDC97</color>
+    <!-- Soft bloom at the top of screen backgrounds -->
+    <color name="ns_bloom">#3321184A</color>
+    <color name="ns_bloom_end">#000A0A12</color>
+
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Common -->
+    <string name="tr_back">واپس</string>
+    <string name="tr_not_now">ابھی نہیں</string>
+    <string name="tr_cancel">منسوخ</string>
+    <string name="tr_open_settings">سیٹنگز</string>
+
+    <!-- SMS alerts to emergency contacts -->
+    <string name="tr_default_owner_name">آپ کا رابطہ</string>
+    <string name="tr_sms_shutdown">Naari Shakti: %1$s کا فون بند ہو رہا ہے۔ آخری معلوم لوکیشن: %2$s</string>
+    <string name="tr_sms_low_battery">Naari Shakti: %1$s کے فون کی بیٹری %2$d%% ہے۔ آخری معلوم لوکیشن: %3$s</string>
+    <string name="tr_sms_sim_changed">Naari Shakti: %1$s کے فون کا SIM کارڈ بدل دیا گیا ہے۔ یہ پیغام نئے SIM سے ہے۔ لوکیشن: %2$s</string>
+    <string name="tr_sms_location_fmt">%1$s (%2$s)</string>
+    <string name="tr_sms_location_unknown">دستیاب نہیں</string>
+
+    <!-- Volume-key SOS (accessibility) -->
+    <string name="tr_a11y_dialog_title">والیوم بٹن SOS آن کریں</string>
+    <string name="tr_a11y_dialog_body">اسکرین بند ہو تب بھی والیوم کم کرنے کا بٹن 5 بار دبا کر SOS شروع کرنے کے لیے، ایکسیسبلٹی سیٹنگز میں %1$s آن کریں۔\n\nاگلی اسکرین پر “انسٹال کردہ ایپس” (یا “ڈاؤن لوڈ کردہ ایپس”) کھولیں، %1$s چنیں اور آن کریں۔ یہ صرف والیوم بٹنوں پر نظر رکھتی ہے اور کبھی آپ کی اسکرین نہیں پڑھتی۔</string>
+    <string name="tr_a11y_dialog_open">سیٹنگز کھولیں</string>
+
+    <!-- Panic button screen -->
+    <string name="tr_pb_eyebrow">اضافی ٹرگرز</string>
+    <string name="tr_pb_title">پینک بٹن</string>
+    <string name="tr_pb_desc">ایک چھوٹا Bluetooth بٹن جوڑیں اور فون نکالے بغیر SOS شروع کرنے کے لیے اسے دو بار دبائیں۔</string>
+
+    <string name="tr_pb_status_label">آپ کا بٹن</string>
+    <string name="tr_pb_no_button">کوئی بٹن جڑا نہیں</string>
+    <string name="tr_pb_unnamed">بے نام بٹن</string>
+    <string name="tr_pb_status_not_set">سیٹ نہیں</string>
+    <string name="tr_pb_status_connected">جڑا ہوا</string>
+    <string name="tr_pb_status_connecting">بٹن تلاش ہو رہا ہے… اسے قریب رکھیں</string>
+    <string name="tr_pb_status_unsupported">یہ ڈیوائس معاون بٹن نہیں ہے</string>
+    <string name="tr_pb_status_bt_off">Bluetooth بند ہے</string>
+    <string name="tr_pb_status_permission">Bluetooth کی اجازت چاہیے</string>
+    <string name="tr_pb_status_unavailable">دستیاب نہیں</string>
+    <string name="tr_pb_status_off">جڑا نہیں</string>
+    <string name="tr_pb_protection_hint">تحفظ آن کریں تاکہ بٹن SOS شروع کر سکے۔</string>
+
+    <string name="tr_pb_forget">بٹن ہٹائیں</string>
+    <string name="tr_pb_forget_title">یہ بٹن ہٹائیں؟</string>
+    <string name="tr_pb_forget_body">%1$s اب SOS شروع نہیں کرے گا۔</string>
+    <string name="tr_pb_forget_confirm">ہٹائیں</string>
+    <string name="tr_pb_forgotten">بٹن ہٹا دیا گیا</string>
+
+    <string name="tr_pb_section_test">ٹیسٹ</string>
+    <string name="tr_pb_test_title">ٹیسٹ کے لیے بٹن دو بار دبائیں</string>
+    <string name="tr_pb_test_waiting">بٹن جڑنے کا انتظار…</string>
+    <string name="tr_pb_test_hint">ایک سیکنڈ کے اندر دو بار جلدی دبائیں۔ ایک بار دبانے سے کچھ نہیں ہوتا، اس لیے یہ غلطی سے نہیں چلے گا۔</string>
+    <string name="tr_pb_test_one">ایک بار دبایا۔ اب جلدی سے پھر دبائیں</string>
+    <string name="tr_pb_test_success">یہ کام کر رہا ہے!</string>
+    <string name="tr_pb_test_success_body">تحفظ آن ہو تو دو بار دبانے سے SOS کی الٹی گنتی شروع ہوتی ہے۔ الٹی گنتی کے دوران آپ پھر بھی منسوخ کر سکتی ہیں۔ یہاں ٹیسٹ کرنے سے کبھی SOS نہیں جاتا۔</string>
+    <string name="tr_pb_test_again">دوبارہ ٹیسٹ کریں</string>
+
+    <string name="tr_pb_section_find">اپنا بٹن ڈھونڈیں</string>
+    <string name="tr_pb_nearby">قریبی بٹن</string>
+    <string name="tr_pb_scan_hint">بٹن آن کریں (بیپ ہونے تک دبائے رکھیں) اور اسے فون کے پاس رکھیں۔</string>
+    <string name="tr_pb_scan">بٹن اسکین کریں</string>
+    <string name="tr_pb_stop_scan">اسکین روکیں</string>
+    <string name="tr_pb_scanning">اسکین ہو رہا ہے…</string>
+    <string name="tr_pb_empty">کوئی بٹن نہیں ملا۔ یقینی بنائیں کہ یہ آن اور قریب ہے، پھر دوبارہ اسکین کریں۔</string>
+    <string name="tr_pb_empty_location">کوئی بٹن نہیں ملا۔ Bluetooth ڈیوائسز اسکین کرنے کے لیے Android میں لوکیشن آن ہونی چاہیے۔ اسے آن کر کے دوبارہ اسکین کریں۔</string>
+    <string name="tr_pb_scan_failed">اسکین ناکام (خرابی %1$d)۔ Bluetooth بند کر کے دوبارہ آن کریں، پھر کوشش کریں۔</string>
+    <string name="tr_pb_no_bluetooth">یہ فون Bluetooth Low Energy کو سپورٹ نہیں کرتا۔</string>
+    <string name="tr_pb_bt_needed">اپنا بٹن ڈھونڈنے کے لیے Bluetooth آن کریں۔</string>
+    <string name="tr_pb_perm_denied">آپ کا بٹن ڈھونڈنے کے لیے Naari Shakti کو قریبی ڈیوائسز اور لوکیشن کی اجازت چاہیے۔</string>
+    <string name="tr_pb_paired_snack">%1$s محفوظ ہو گیا۔ اب ٹیسٹ کے لیے اسے دو بار دبائیں۔</string>
+    <string name="tr_pb_rssi">%1$d dBm</string>
+    <string name="tr_pb_tag_compatible">معاون</string>
+    <string name="tr_pb_tag_paired">جڑا ہوا</string>
+    <string name="tr_pb_device_cd">%1$s، سگنل 4 میں سے %2$d۔ یہ بٹن استعمال کرنے کے لیے دو بار ٹیپ کریں۔</string>
+
+    <string name="tr_pb_section_supported">معاون بٹن</string>
+    <string name="tr_pb_sup1_title">iTag کی فائنڈر بٹن</string>
+    <string name="tr_pb_sup1_body">“iTag” یا “anti-lost tracker” کے نام سے بکنے والے چھوٹے Bluetooth کی فائنڈر بٹن سب سے اچھا کام کرتے ہیں۔ آن لائن ان کی قیمت تقریباً ₹200 ہے۔</string>
+    <string name="tr_pb_sup2_title">سکے جیسے سیل سے چلتا ہے</string>
+    <string name="tr_pb_sup2_body">ایک CR2032 بیٹری مہینوں چلتی ہے۔ بٹن کو چابیوں، بیگ کی پٹی یا کپڑوں پر لگائیں۔</string>
+    <string name="tr_pb_sup3_title">بیک گراؤنڈ میں کام کرتا ہے</string>
+    <string name="tr_pb_sup3_body">تحفظ آن ہو تو فون جڑا رہتا ہے اور بٹن دوبارہ رینج میں آتے ہی خود جڑ جاتا ہے۔</string>
+</resources>

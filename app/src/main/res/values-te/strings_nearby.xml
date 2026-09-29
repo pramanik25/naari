@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nb_home_eyebrow">సమాజం</string>
+    <string name="nb_home_title">మీ దగ్గరలోని మహిళలకు సహాయం చేస్తారా?</string>
+    <string name="nb_home_body">మీ దగ్గరలో ఎవరైనా SOS ఆన్ చేసినప్పుడు, ఆమె లొకేషన్‌తో మీకు అలర్ట్ వస్తుంది, తద్వారా మీరు సహాయం చేయవచ్చు లేదా 112కి కాల్ చేయవచ్చు. మీ లొకేషన్ దగ్గరలోని అలర్ట్‌లతో జత చేయడానికి మాత్రమే ఉపయోగించబడుతుంది, ఎప్పుడూ ఎవరికీ చూపబడదు.</string>
+    <string name="nb_home_yes">అవును, నేను సహాయం చేస్తాను</string>
+    <string name="nb_home_not_now">ఇప్పుడు కాదు</string>
+    <string name="nb_home_thanks">ధన్యవాదాలు. దగ్గరలో ఎవరికైనా సహాయం కావాలంటే మీకు అలర్ట్ వస్తుంది.</string>
+    <string name="nb_home_thanks_offline">ధన్యవాదాలు. ఇంటర్నెట్ రాగానే మిమ్మల్ని సహాయకురాలిగా నమోదు చేస్తాం.</string>
+    <string name="nb_home_location_denied">మీ లొకేషన్ లేకుండా మిమ్మల్ని దగ్గరలోని అలర్ట్‌లతో జత చేయలేము. తర్వాత క్లౌడ్ &amp; సంరక్షకులు లో దీన్ని ఆన్ చేయవచ్చు.</string>
+
+    <string name="nb_mesh_title">ఇంటర్నెట్ లేకుండా కూడా సహాయం చేస్తారా?</string>
+    <string name="nb_mesh_body">ఇంటర్నెట్ లేనప్పుడు Naari Shakti దగ్గరలోని ఫోన్‌ల మధ్య Bluetooth ద్వారా SOS అలర్ట్‌లను అందించగలదు. దీనికి సమీప పరికరాల అనుమతి కావాలి.</string>
+    <string name="nb_mesh_yes">ఆన్ చేయండి</string>
+    <string name="nb_mesh_no">వద్దు, ధన్యవాదాలు</string>
+    <string name="nb_mesh_on">ఆఫ్‌లైన్ Bluetooth అలర్ట్‌లు ఆన్‌లో ఉన్నాయి.</string>
+    <string name="nb_mesh_denied">ఆఫ్‌లైన్ Bluetooth అలర్ట్‌లకు సమీప పరికరాల అనుమతి కావాలి.</string>
+
+    <string name="nb_broadcast_title">SOS సమయంలో నా దగ్గరలోని వారిని అలర్ట్ చేయండి</string>
+    <string name="nb_broadcast_sub">2 నుండి 5 కి.మీ. లోపల ఉన్న సహాయకులకు మీ లొకేషన్ మరియు ఫోటోలు అందుతాయి, తద్వారా వారు సహాయం చేయగలరు. మీ సంరక్షకులకు ఎల్లప్పుడూ అలర్ట్ వస్తుంది.</string>
+
+    <plurals name="nb_evidence_count">
+        <item quantity="one">%d ఫోటో లేదా రికార్డింగ్</item>
+        <item quantity="other">%d ఫోటోలు మరియు రికార్డింగ్‌లు</item>
+    </plurals>
+    <string name="nb_radius_km">%1$d కి.మీ. లోపల</string>
+    <string name="nb_view_live">లైవ్ లొకేషన్ మరియు సాక్ష్యాలు చూడండి</string>
+    <string name="nb_photo_desc">ఆమె SOS నుండి తాజా ఫోటో</string>
+    <string name="nb_n_evidence_text">ఇప్పటివరకు %1$s. లైవ్‌గా చూడటానికి ట్యాప్ చేయండి.</string>
+
+    <string name="nb_wa_section">WhatsApp అలర్ట్‌లు</string>
+    <string name="nb_wa_title">WhatsApp అలర్ట్‌లు</string>
+    <string name="nb_wa_caption">మీ SOS, లైవ్ లొకేషన్ మరియు ఫోటోలను మీ పరిచయాలకు WhatsAppలో పంపండి.</string>
+    <string name="nb_wa_explain">అలర్ట్‌లు Naari Shakti WhatsApp నంబర్ నుండి వస్తాయి, మీ స్వంత WhatsApp నుండి కాదు. అలర్ట్‌లు పొందడానికి ముందు ప్రతి పరిచయం మీ ఆహ్వానాన్ని ఒకసారి ట్యాప్ చేసి చేరాలి.</string>
+    <string name="nb_wa_joined">చేరారు ✓</string>
+    <string name="nb_wa_not_joined">ఇంకా చేరలేదు</string>
+    <string name="nb_wa_invite">ఆహ్వానించండి</string>
+    <string name="nb_wa_invite_cd">%1$sను WhatsAppలో ఆహ్వానించండి</string>
+    <string name="nb_wa_invite_text">నమస్తే, నేను మిమ్మల్ని Naari Shaktiలో నా అత్యవసర పరిచయంగా చేర్చాను. WhatsAppలో నా SOS అలర్ట్‌లు పొందడానికి ఈ లింక్ తెరిచి సందేశం పంపండి: %1$s</string>
+    <string name="nb_wa_invite_chooser">ఆహ్వానం పంపండి</string>
+    <plurals name="nb_wa_joined_count">
+        <item quantity="one">%2$d మందిలో %1$d పరిచయం చేరారు</item>
+        <item quantity="other">%2$d మందిలో %1$d పరిచయాలు చేరారు</item>
+    </plurals>
+    <string name="nb_wa_empty">WhatsApp అలర్ట్‌లు పంపడానికి పైన అత్యవసర పరిచయాలను జోడించండి.</string>
+    <string name="nb_wa_unavailable">WhatsApp అలర్ట్‌లు ఇంకా అందుబాటులో లేవు. SMS, కాల్‌లు మరియు Telegram అలర్ట్‌లు పనిచేస్తూనే ఉంటాయి.</string>
+    <string name="nb_wa_cloud_off">WhatsApp అలర్ట్‌లకు క్లౌడ్ సింక్ అవసరం, అది ఈ ఫోన్‌లో ఆఫ్‌లో ఉంది. SMS, కాల్‌లు మరియు Telegram అలర్ట్‌లు పనిచేస్తూనే ఉంటాయి.</string>
+    <string name="nb_wa_error">సర్వర్‌ను చేరుకోలేకపోయాం. ఇంటర్నెట్ రాగానే మీ మార్పులు సింక్ అవుతాయి.</string>
+    <string name="nb_wa_retry">మళ్లీ ప్రయత్నించండి</string>
+    <string name="nb_wa_checking">ఎవరు చేరారో చూస్తున్నాం…</string>
+    <string name="nb_wa_unnamed">పేరు లేదు</string>
+</resources>

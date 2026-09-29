@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nb_home_eyebrow">சமூகம்</string>
+    <string name="nb_home_title">உங்கள் அருகிலுள்ள பெண்களுக்கு உதவுவீர்களா?</string>
+    <string name="nb_home_body">உங்கள் அருகில் யாராவது SOS இயக்கினால், அவரின் இருப்பிடத்துடன் உங்களுக்கு எச்சரிக்கை வரும், அதனால் நீங்கள் உதவலாம் அல்லது 112 ஐ அழைக்கலாம். உங்கள் இருப்பிடம் அருகிலுள்ள எச்சரிக்கைகளுடன் பொருத்த மட்டுமே பயன்படுத்தப்படும், யாருக்கும் ஒருபோதும் காட்டப்படாது.</string>
+    <string name="nb_home_yes">ஆம், நான் உதவுவேன்</string>
+    <string name="nb_home_not_now">இப்போது வேண்டாம்</string>
+    <string name="nb_home_thanks">நன்றி. அருகில் யாருக்காவது உதவி தேவைப்படும்போது உங்களுக்கு எச்சரிக்கை வரும்.</string>
+    <string name="nb_home_thanks_offline">நன்றி. இணையம் கிடைத்ததும் நீங்கள் உதவியாளராகப் பதிவு செய்யப்படுவீர்கள்.</string>
+    <string name="nb_home_location_denied">உங்கள் இருப்பிடம் இல்லாமல் உங்களை அருகிலுள்ள எச்சரிக்கைகளுடன் பொருத்த முடியாது. பிறகு கிளவுட் &amp; பாதுகாவலர்கள் இல் இதை இயக்கலாம்.</string>
+
+    <string name="nb_mesh_title">இணையம் இல்லாமலும் உதவுவீர்களா?</string>
+    <string name="nb_mesh_body">இணையம் இல்லாதபோது Naari Shakti அருகிலுள்ள ஃபோன்களுக்கு இடையே Bluetooth மூலம் SOS எச்சரிக்கைகளைக் கொண்டு சேர்க்க முடியும். இதற்கு அருகிலுள்ள சாதனங்களின் அனுமதி தேவை.</string>
+    <string name="nb_mesh_yes">இயக்கு</string>
+    <string name="nb_mesh_no">வேண்டாம், நன்றி</string>
+    <string name="nb_mesh_on">ஆஃப்லைன் Bluetooth எச்சரிக்கைகள் இயக்கத்தில் உள்ளன.</string>
+    <string name="nb_mesh_denied">ஆஃப்லைன் Bluetooth எச்சரிக்கைகளுக்கு அருகிலுள்ள சாதனங்களின் அனுமதி தேவை.</string>
+
+    <string name="nb_broadcast_title">SOS நேரத்தில் என் அருகிலுள்ளவர்களை எச்சரி</string>
+    <string name="nb_broadcast_sub">2 முதல் 5 கி.மீ க்குள் உள்ள உதவியாளர்களுக்கு உங்கள் இருப்பிடமும் புகைப்படங்களும் கிடைக்கும், அதனால் அவர்கள் உதவ முடியும். உங்கள் பாதுகாவலர்களுக்கு எப்போதும் எச்சரிக்கை செல்லும்.</string>
+
+    <plurals name="nb_evidence_count">
+        <item quantity="one">%d புகைப்படம் அல்லது பதிவு</item>
+        <item quantity="other">%d புகைப்படங்கள் மற்றும் பதிவுகள்</item>
+    </plurals>
+    <string name="nb_radius_km">%1$d கி.மீ க்குள்</string>
+    <string name="nb_view_live">நேரடி இருப்பிடம் மற்றும் சான்றுகளைப் பார்</string>
+    <string name="nb_photo_desc">அவரின் SOS இலிருந்து சமீபத்திய புகைப்படம்</string>
+    <string name="nb_n_evidence_text">இதுவரை %1$s. நேரலையில் பார்க்கத் தட்டவும்.</string>
+
+    <string name="nb_wa_section">WhatsApp எச்சரிக்கைகள்</string>
+    <string name="nb_wa_title">WhatsApp எச்சரிக்கைகள்</string>
+    <string name="nb_wa_caption">உங்கள் SOS, நேரடி இருப்பிடம் மற்றும் புகைப்படங்களை உங்கள் தொடர்புகளுக்கு WhatsApp இல் அனுப்புங்கள்.</string>
+    <string name="nb_wa_explain">எச்சரிக்கைகள் Naari Shakti WhatsApp எண்ணிலிருந்து வரும், உங்கள் சொந்த WhatsApp இலிருந்து அல்ல. எச்சரிக்கைகள் பெறுவதற்கு முன் ஒவ்வொரு தொடர்பும் உங்கள் அழைப்பை ஒருமுறை தட்டிச் சேர வேண்டும்.</string>
+    <string name="nb_wa_joined">சேர்ந்துவிட்டார் ✓</string>
+    <string name="nb_wa_not_joined">இன்னும் சேரவில்லை</string>
+    <string name="nb_wa_invite">அழை</string>
+    <string name="nb_wa_invite_cd">%1$s ஐ WhatsApp இல் அழைக்கவும்</string>
+    <string name="nb_wa_invite_text">வணக்கம், Naari Shakti இல் உங்களை என் அவசரத் தொடர்பாகச் சேர்த்துள்ளேன். WhatsApp இல் என் SOS எச்சரிக்கைகளைப் பெற இந்த இணைப்பைத் திறந்து செய்தியை அனுப்புங்கள்: %1$s</string>
+    <string name="nb_wa_invite_chooser">அழைப்பை அனுப்பு</string>
+    <plurals name="nb_wa_joined_count">
+        <item quantity="one">%2$d இல் %1$d தொடர்பு சேர்ந்துள்ளார்</item>
+        <item quantity="other">%2$d இல் %1$d தொடர்புகள் சேர்ந்துள்ளனர்</item>
+    </plurals>
+    <string name="nb_wa_empty">WhatsApp எச்சரிக்கைகளை அனுப்ப மேலே அவசரத் தொடர்புகளைச் சேர்க்கவும்.</string>
+    <string name="nb_wa_unavailable">WhatsApp எச்சரிக்கைகள் இன்னும் கிடைக்கவில்லை. SMS, அழைப்புகள் மற்றும் Telegram எச்சரிக்கைகள் தொடர்ந்து வேலை செய்யும்.</string>
+    <string name="nb_wa_cloud_off">WhatsApp எச்சரிக்கைகளுக்கு கிளவுட் ஒத்திசைவு தேவை, அது இந்த ஃபோனில் முடக்கப்பட்டுள்ளது. SMS, அழைப்புகள் மற்றும் Telegram எச்சரிக்கைகள் தொடர்ந்து வேலை செய்யும்.</string>
+    <string name="nb_wa_error">சர்வரை அடைய முடியவில்லை. இணையம் கிடைத்ததும் உங்கள் மாற்றங்கள் ஒத்திசைக்கப்படும்.</string>
+    <string name="nb_wa_retry">மீண்டும் முயல்</string>
+    <string name="nb_wa_checking">யார் சேர்ந்துள்ளனர் என்று பார்க்கிறோம்…</string>
+    <string name="nb_wa_unnamed">பெயரில்லை</string>
+</resources>

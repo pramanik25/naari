@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="your_class">તમારો વર્ગ</string>
+    <string name="hello_blank_fragment">નમસ્તે, ખાલી ફ્રેગમેન્ટ</string>
+
+    <string name="set_alarm_settings">અલાર્મ સેટિંગ્સ</string>
+    <string name="alarm_status">અલાર્મની સ્થિતિ:</string>
+    <string name="select_day">દિવસ પસંદ કરો:</string>
+    <string name="select_date">તારીખ પસંદ કરો</string>
+    <string name="day_today">આજે</string>
+    <string name="day_tomorrow">આવતીકાલે</string>
+    <string name="day_specific_date">ચોક્કસ તારીખ</string>
+    <string name="day_daily">દરરોજ</string>
+
+    <string-array name="alarm_repeat_options">
+        <item>એક વાર</item>
+        <item>દરરોજ</item>
+        <item>આવતીકાલે</item>
+        <item>ચોક્કસ તારીખ</item>
+        <item>કસ્ટમ</item>
+    </string-array>
+
+    <!-- ===================== Shared ===================== -->
+    <string name="cd_back">પાછળ</string>
+    <string name="cd_close">બંધ કરો</string>
+    <string name="action_open_settings">સેટિંગ્સ ખોલો</string>
+    <string name="action_not_now">હમણાં નહીં</string>
+    <string name="action_grant">મંજૂરી આપો</string>
+    <string name="action_fix">સુધારો</string>
+    <string name="action_allow">મંજૂરી આપો</string>
+    <string name="action_delete">ડિલીટ કરો</string>
+    <string name="action_review">જુઓ</string>
+    <string name="action_turn_on">ચાલુ કરો</string>
+    <string name="status_allowed">મંજૂર</string>
+    <string name="status_not_allowed">મંજૂર નથી</string>
+    <string name="status_limited">ફક્ત અંદાજિત</string>
+
+    <!-- ===================== Navigation ===================== -->
+    <string name="nav_home">હોમ</string>
+    <string name="nav_settings">સેટિંગ્સ</string>
+
+    <!-- ===================== Splash ===================== -->
+    <string name="splash_tagline">તમારી સુરક્ષા, હંમેશાં ચાલુ</string>
+    <string name="splash_footer">તેના માટે, કાળજીથી બનાવેલ</string>
+
+    <!-- ===================== Onboarding ===================== -->
+    <string name="onb_overline">શરૂ કરતાં પહેલાં</string>
+    <string name="onb_title">ચાલો, તમારી સુરક્ષા તૈયાર કરીએ</string>
+    <string name="onb_body">તમારી સુરક્ષા માટે Naari Shakti ને થોડી પરવાનગીઓ જોઈએ છે. નિયંત્રણ તમારા હાથમાં જ રહેશે, અને તમે સેટિંગ્સમાં ગમે ત્યારે તેને બદલી શકો છો.</string>
+    <string name="onb_allow">ઍક્સેસ આપો</string>
+    <string name="onb_done">બધું તૈયાર છે. જ્યારે તૈયાર હો ત્યારે સુરક્ષા ચાલુ કરો.</string>
+    <string name="onb_partial">અમુક પરવાનગીઓ બાકી રહી ગઈ. તમે તેને સેટિંગ્સમાં આપી શકો છો.</string>
+    <string name="perm_mic_title">માઇક્રોફોન</string>
+    <string name="perm_mic_why">સ્ક્રીન બંધ હોય ત્યારે પણ તમારો ટ્રિગર શબ્દ સાંભળવા</string>
+    <string name="perm_sms_title">SMS</string>
+    <string name="perm_sms_why">તમારા સંપર્કોને તમારું લાઇવ લોકેશન SMS કરવા</string>
+    <string name="perm_phone_title">ફોન</string>
+    <string name="perm_phone_why">તમારા પહેલા સંપર્કને આપમેળે કૉલ કરવા</string>
+    <string name="perm_location_title">લોકેશન</string>
+    <string name="perm_location_why">SOS વખતે તમે બરાબર ક્યાં છો તે શેર કરવા</string>
+    <string name="perm_camera_title">કૅમેરા</string>
+    <string name="perm_camera_why">SOS વખતે ચુપચાપ પુરાવા લેવા</string>
+    <string name="perm_contacts_title">સંપર્કો</string>
+    <string name="perm_contacts_why">તમારા ફોનમાંથી ઇમરજન્સી સંપર્કો પસંદ કરવા</string>
+    <string name="perm_notifications_title">નોટિફિકેશન</string>
+    <string name="perm_notifications_why">સુરક્ષા ચાલુ છે તે બતાવવા</string>
+    <string name="perm_battery_title">બૅટરી ઑપ્ટિમાઇઝેશન</string>
+    <string name="perm_battery_why">બૅકગ્રાઉન્ડમાં સુરક્ષા ચાલુ રાખવા</string>
+    <string name="perm_fullscreen_title">ફુલ-સ્ક્રીન એલર્ટ</string>
+    <string name="perm_fullscreen_why">લૉક સ્ક્રીન પર SOS સ્ક્રીન બતાવવા</string>
+    <string name="perm_exact_alarm_title">ચોક્કસ સમયના અલાર્મ</string>
+    <string name="perm_exact_alarm_why">શેડ્યૂલ કરેલી સુરક્ષા બરાબર સમયે શરૂ કરવા</string>
+    <string name="perm_overlay_title">બીજી ઍપ પર બતાવો</string>
+    <string name="perm_overlay_why">બીજી ઍપની ઉપર SOS લૉક સ્ક્રીન બતાવવા</string>
+    <string name="perm_denied_title">પરવાનગી જરૂરી છે</string>
+    <string name="perm_denied_body">%1$s ઍક્સેસ બંધ છે. તમે ઍપના સેટિંગ્સ પેજમાંથી તેને મંજૂરી આપી શકો છો.</string>
+    <string name="perm_summary">%2$d માંથી %1$d તૈયાર</string>
+
+    <!-- ===================== Home ===================== -->
+    <string name="greeting_morning">સુપ્રભાત</string>
+    <string name="greeting_afternoon">નમસ્તે</string>
+    <string name="greeting_evening">શુભ સાંજ</string>
+    <string name="greeting_night">શુભ રાત્રિ</string>
+    <string name="home_default_name">સુરક્ષિત રહો</string>
+    <string name="cd_open_profile">પ્રોફાઇલ ખોલો</string>
+    <string name="cd_protection_switch">સુરક્ષા</string>
+    <string name="home_status_protected">સુરક્ષિત</string>
+    <string name="home_status_starting">શરૂ થઈ રહી છે…</string>
+    <string name="home_status_paused">અટકેલી</string>
+    <string name="home_status_off">બંધ</string>
+    <string name="home_protection_on">સુરક્ષા ચાલુ છે</string>
+    <string name="home_protection_starting">સુરક્ષા શરૂ થઈ રહી છે</string>
+    <string name="home_protection_paused">સુરક્ષા ચાલી રહી નથી</string>
+    <string name="home_protection_off">સુરક્ષા બંધ છે</string>
+    <string name="home_protection_off_sub">તમારો ટ્રિગર શબ્દ સાંભળવા માટે ચાલુ કરો</string>
+    <string name="home_protection_starting_sub">માઇક્રોફોન તૈયાર થઈ રહ્યું છે…</string>
+    <string name="home_protection_paused_sub">તે અચાનક અટકી ગઈ. ફરી શરૂ કરવા ટૅપ કરો.</string>
+    <string name="home_listening_for">“%1$s” સાંભળી રહી છે</string>
+    <string name="home_trigger_shake">હલાવો</string>
+    <string name="home_trigger_power">પાવર ×%1$d</string>
+    <string name="home_mic_needed_title">માઇક્રોફોનની મંજૂરી આપો</string>
+    <string name="home_mic_needed_body">સુરક્ષા બૅકગ્રાઉન્ડમાં તમારો ટ્રિગર શબ્દ સાંભળે છે. SOS શરૂ ન થાય ત્યાં સુધી કશું રેકોર્ડ કે અપલોડ થતું નથી.</string>
+    <string name="home_mic_denied">સુરક્ષા ચાલુ કરવા માટે માઇક્રોફોન ઍક્સેસ જરૂરી છે.</string>
+    <string name="sos_label">SOS</string>
+    <string name="sos_hint">3 સેકન્ડ દબાવી રાખો</string>
+    <string name="sos_hint_holding">દબાવી રાખો · %1$d</string>
+    <string name="sos_hint_active">ચાલુ</string>
+    <string name="sos_caption">તમારા સંપર્કોને લાઇવ લોકેશન સાથે એલર્ટ મોકલે છે, પહેલા સંપર્કને કૉલ કરે છે અને સાયરન વગાડે છે.</string>
+    <string name="sos_caption_active">SOS ચાલુ છે. તમારા સંપર્કોને એલર્ટ મોકલાઈ રહ્યો છે.</string>
+    <string name="sos_cd">SOS બટન. ઇમરજન્સી એલર્ટ મોકલવા 3 સેકન્ડ દબાવી રાખો.</string>
+    <string name="sos_a11y_action">SOS મોકલો</string>
+    <string name="sos_confirm_title">હમણાં SOS મોકલીએ?</string>
+    <string name="sos_confirm_body">તમારા ઇમરજન્સી સંપર્કોને તમારા લોકેશન સાથે એલર્ટ મળશે અને પહેલા સંપર્કને કૉલ થશે.</string>
+    <string name="sos_sent">SOS મોકલ્યો. તમારા સંપર્કોને જાણ કરી રહ્યાં છીએ…</string>
+    <string name="sos_sent_no_contacts">SOS શરૂ થયો, પણ હજી તમારો કોઈ ઇમરજન્સી સંપર્ક નથી.</string>
+    <string name="sos_stop">હું સુરક્ષિત છું, SOS બંધ કરો</string>
+    <string name="home_quick_actions">ઝડપી વિકલ્પો</string>
+    <string name="home_your_safety_kit">તમારી સુરક્ષા કિટ</string>
+    <string name="qa_trigger_title">ટ્રિગર શબ્દ</string>
+    <string name="qa_trigger_caption">તમારો ગુપ્ત શબ્દ</string>
+    <string name="qa_contacts_title">સંપર્કો</string>
+    <string name="qa_contacts_caption">કોને જાણ કરીએ</string>
+    <string name="qa_police_title">પોલીસને કૉલ</string>
+    <string name="qa_police_caption">ઝડપથી 112 ડાયલ કરો</string>
+    <string name="qa_helplines_title">હેલ્પલાઇન</string>
+    <string name="qa_helplines_caption">મહિલાઓ માટે મદદ</string>
+    <string name="qa_live_location_title">લાઇવ લોકેશન</string>
+    <string name="qa_live_location_caption">તમે ક્યાં છો તે શેર કરો</string>
+    <string name="qa_safe_zones_title">સેફ ઝોન</string>
+    <string name="qa_safe_zones_caption">જગ્યાઓ માટે એલર્ટ</string>
+    <string name="nudge_contacts_title">ઇમરજન્સી સંપર્કો ઉમેરો</string>
+    <string name="nudge_contacts_sub">SOS હજી કોઈને જાણ કરી શકતું નથી</string>
+    <string name="nudge_trigger_title">તમારો ટ્રિગર શબ્દ રેકોર્ડ કરો</string>
+    <string name="nudge_trigger_sub">ત્યાં સુધી અમે “%1$s” સાંભળીશું</string>
+    <string name="row_schedule_title">સુરક્ષાનું શેડ્યૂલ</string>
+    <string name="row_vault_title">પુરાવા સંગ્રહ</string>
+    <string name="row_vault_empty">SOS વખતે લીધેલા ફોટા</string>
+    <plurals name="row_vault_count">
+        <item quantity="one">%1$d ફોટો લેવાયો</item>
+        <item quantity="other">%1$d ફોટા લેવાયા</item>
+    </plurals>
+
+    <!-- ===================== Settings ===================== -->
+    <string name="settings_overline">પસંદગીઓ</string>
+    <string name="settings_title">સેટિંગ્સ</string>
+    <string name="settings_body">ફેરફારો આપમેળે સેવ થાય છે અને તરત લાગુ થાય છે.</string>
+    <string name="settings_section_sos">SOS ની રીત</string>
+    <string name="settings_section_triggers">ટ્રિગર</string>
+    <string name="settings_section_stop">અલાર્મ બંધ કરવો</string>
+    <string name="settings_section_permissions">પરવાનગીઓ</string>
+    <string name="settings_section_more">વધુ</string>
+    <string name="settings_section_about">વિશે</string>
+    <string name="settings_countdown_label">SOS કાઉન્ટડાઉન: %1$d સેકન્ડ</string>
+    <string name="settings_countdown_off">SOS કાઉન્ટડાઉન: બંધ</string>
+    <string name="settings_countdown_caption">એલર્ટ મોકલાય તે પહેલાં ભૂલથી થયેલો અલાર્મ રદ કરવાનો સમય.</string>
+    <string name="settings_freeze_label">SOS પછી સ્ક્રીન લૉક: %1$s</string>
+    <string name="settings_freeze_caption">અલાર્મ પછી SOS લૉક સ્ક્રીન કેટલો સમય રહેશે.</string>
+    <string name="settings_shake_title">હલાવીને SOS</string>
+    <string name="settings_shake_sub">અલાર્મ વગાડવા ફોનને જોરથી હલાવો</string>
+    <string name="settings_power_title">પાવર બટન ×%1$d</string>
+    <string name="settings_power_sub">અલાર્મ વગાડવા પાવર બટન ઝડપથી દબાવો</string>
+    <string name="settings_presses_label">પાવર દબાવવાની સંખ્યા: %1$d</string>
+    <string name="settings_window_label">દબાવવાનો સમય: %1$s સેકન્ડ</string>
+    <string name="settings_stop_title">ચાલુ અલાર્મ કેવી રીતે બંધ કરવો</string>
+    <string name="settings_stop_volume">વૉલ્યૂમ પેટર્ન</string>
+    <string name="settings_stop_shake">હલાવો</string>
+    <string name="settings_stop_volume_caption">સાયરન અને લૉક સ્ક્રીન બંધ કરવા તમારી પેટર્ન મુજબ વૉલ્યૂમ બટન દબાવો.</string>
+    <string name="settings_stop_shake_caption">સાયરન અને લૉક સ્ક્રીન બંધ કરવા ફોનને જોરથી હલાવો.</string>
+    <string name="settings_input_label">બટન દબાવવા વચ્ચેનો સમય: %1$s સેકન્ડ</string>
+    <string name="settings_input_caption">વૉલ્યૂમ બટન દબાવવા વચ્ચે વધુમાં વધુ કેટલો વિરામ ચાલે.</string>
+    <string name="settings_profile_sub">નામ, ફોટો અને સંપર્ક વિગતો</string>
+    <string name="settings_vault_sub">SOS વખતે લીધેલા ફોટા</string>
+    <string name="settings_version">વર્ઝન %1$s</string>
+    <string name="settings_about_body">તમે ક્લાઉડ બેકઅપ ચાલુ ન કરો ત્યાં સુધી તમારો ડેટા આ ફોનમાં જ રહે છે.</string>
+    <string name="duration_seconds">%1$d સેકન્ડ</string>
+    <string name="duration_minutes">%1$d મિનિટ</string>
+    <string name="duration_minutes_seconds">%1$d મિનિટ %2$d સેકન્ડ</string>
+
+    <!-- ===================== Schedule ===================== -->
+    <string name="schedule_overline">શેડ્યૂલ</string>
+    <string name="schedule_title">સુરક્ષાનું શેડ્યૂલ</string>
+    <string name="schedule_body">આવવા-જવા કે મોડી રાત માટે સુરક્ષા આપમેળે ચાલુ અને બંધ કરો.</string>
+    <string name="schedule_master_title">શેડ્યૂલ કરેલી સુરક્ષા</string>
+    <string name="schedule_master_on">નીચેના સમય દરમિયાન આપમેળે ચાલે છે</string>
+    <string name="schedule_master_off">બંધ. તમે ચાલુ કરો ત્યારે જ સુરક્ષા ચાલે છે</string>
+    <string name="schedule_window">સમય</string>
+    <string name="schedule_turns_on">ચાલુ થશે</string>
+    <string name="schedule_turns_off">બંધ થશે</string>
+    <string name="schedule_tap_to_change">બદલવા ટૅપ કરો</string>
+    <string name="schedule_repeat">પુનરાવર્તન</string>
+    <string name="schedule_every_day">દરરોજ</string>
+    <string name="schedule_today">આજે</string>
+    <string name="schedule_tomorrow">આવતીકાલે</string>
+    <string name="schedule_pick_date">તારીખ પસંદ કરો</string>
+    <string name="schedule_pick_start">સુરક્ષા ચાલુ થવાનો સમય</string>
+    <string name="schedule_pick_end">સુરક્ષા બંધ થવાનો સમય</string>
+    <string name="schedule_pick_date_title">દિવસ પસંદ કરો</string>
+    <string name="schedule_save">શેડ્યૂલ સેવ કરો</string>
+    <string name="schedule_saved">શેડ્યૂલ સેવ થયું</string>
+    <string name="schedule_not_scheduled">શેડ્યૂલ નથી</string>
+    <string name="schedule_off_summary">શેડ્યૂલ કરેલી સુરક્ષા બંધ છે.</string>
+    <string name="schedule_summary">%4$s, સુરક્ષા %1$s વાગ્યે ચાલુ થશે અને%3$s %2$s વાગ્યે બંધ થશે.</string>
+    <string name="schedule_next_day">" બીજા દિવસે"</string>
+    <string name="schedule_when_daily">દરરોજ</string>
+    <string name="schedule_when_today">ફક્ત આજે</string>
+    <string name="schedule_when_tomorrow">ફક્ત આવતીકાલે</string>
+    <string name="schedule_when_date">%1$s ના રોજ</string>
+    <string name="schedule_short">%1$s – %2$s · %3$s</string>
+    <string name="schedule_error_same">શરૂ અને અંતનો સમય એક સરખો ન હોઈ શકે.</string>
+    <string name="schedule_error_date">પહેલાં તારીખ પસંદ કરો.</string>
+    <string name="schedule_error_passed">આજનો આ સમય પૂરો થઈ ગયો છે. આવતીકાલ અથવા કોઈ તારીખ પસંદ કરો.</string>
+    <string name="schedule_exact_title">ચોક્કસ સમયના અલાર્મની મંજૂરી આપો</string>
+    <string name="schedule_exact_body">સુરક્ષા બરાબર સમયે શરૂ કરવા Android ને તમારી પરવાનગી જોઈએ છે.</string>
+
+    <!-- ===================== Profile ===================== -->
+    <string name="profile_overline">તમારી પ્રોફાઇલ</string>
+    <string name="profile_title">તમારા વિશે</string>
+    <string name="profile_body">તમારા સંપર્કો અને મદદ કરનારાઓને તમને ઓળખવામાં મદદ કરે છે. ફક્ત આ ડિવાઇસ પર સેવ થાય છે.</string>
+    <string name="profile_add_photo">ફોટો ઉમેરવા ટૅપ કરો</string>
+    <string name="profile_change_photo">ફોટો બદલવા ટૅપ કરો</string>
+    <string name="cd_profile_photo">પ્રોફાઇલ ફોટો. બદલવા બે વાર ટૅપ કરો.</string>
+    <string name="profile_section_personal">અંગત</string>
+    <string name="profile_section_contact">સંપર્ક</string>
+    <string name="profile_section_occupation">વ્યવસાય</string>
+    <string name="profile_full_name">પૂરું નામ</string>
+    <string name="profile_guardian_name">પિતા અથવા વાલીનું નામ</string>
+    <string name="profile_address">ઘરનું સરનામું</string>
+    <string name="profile_mobile">તમારો મોબાઇલ નંબર</string>
+    <string name="profile_guardian_mobile">વાલીનો મોબાઇલ નંબર</string>
+    <string name="profile_mobile_helper">10 અંક, +91 વૈકલ્પિક</string>
+    <string name="profile_college">કૉલેજ</string>
+    <string name="profile_degree">ડિગ્રી અથવા કોર્સ</string>
+    <string name="profile_office">ઑફિસનું સ્થળ</string>
+    <string name="profile_update">પ્રોફાઇલ અપડેટ કરો</string>
+    <string name="profile_saved">પ્રોફાઇલ સેવ થઈ</string>
+    <string name="profile_save_error">તમારી પ્રોફાઇલ સેવ ન થઈ. કૃપા કરીને ફરી પ્રયાસ કરો.</string>
+    <string name="profile_photo_error">તે ફોટો ખૂલી શક્યો નહીં.</string>
+    <string name="profile_error_required">જરૂરી</string>
+    <string name="profile_error_mobile">માન્ય 10 અંકનો મોબાઇલ નંબર લખો</string>
+    <string name="profile_error_pincode">માન્ય 6 અંકનો પિનકોડ લખો</string>
+
+    <!-- ===================== Evidence vault ===================== -->
+    <string name="vault_overline">પુરાવા</string>
+    <string name="vault_title">પુરાવા સંગ્રહ</string>
+    <string name="vault_body">SOS વખતે આપમેળે લીધેલા ફોટા, નવા પહેલાં.</string>
+    <string name="vault_empty_title">હજી કોઈ પુરાવા નથી</string>
+    <string name="vault_empty_body">SOS શરૂ થાય ત્યારે Naari Shakti આગળ અને પાછળના કૅમેરાથી ચુપચાપ ફોટા લે છે. તે અહીં દેખાશે.</string>
+    <string name="vault_front">આગળનો કૅમેરા</string>
+    <string name="vault_back">પાછળનો કૅમેરા</string>
+    <string name="vault_photo">ફોટો</string>
+    <string name="vault_unknown_time">સમય ખબર નથી</string>
+    <string name="vault_delete_title">આ ફોટો ડિલીટ કરીએ?</string>
+    <string name="vault_delete_body">તે આ ડિવાઇસમાંથી કાયમ માટે દૂર થશે. આ પાછું લાવી શકાશે નહીં.</string>
+    <string name="vault_deleted">ફોટો ડિલીટ થયો</string>
+    <string name="vault_load_error">પુરાવા સંગ્રહ ખૂલી શક્યો નહીં.</string>
+    <string name="cd_delete_photo">ફોટો ડિલીટ કરો</string>
+    <plurals name="vault_count">
+        <item quantity="one">%1$d ફોટો</item>
+        <item quantity="other">%1$d ફોટા</item>
+    </plurals>
+</resources>

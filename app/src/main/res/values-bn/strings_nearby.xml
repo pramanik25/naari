@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nb_home_eyebrow">কমিউনিটি</string>
+    <string name="nb_home_title">আপনার কাছাকাছি মহিলাদের সাহায্য করবেন?</string>
+    <string name="nb_home_body">আপনার কাছাকাছি কেউ SOS চালু করলে, আপনি তার লোকেশনসহ একটি অ্যালার্ট পাবেন, যাতে আপনি সাহায্য করতে পারেন বা 112-এ কল করতে পারেন। আপনার লোকেশন শুধু কাছাকাছি অ্যালার্টের সঙ্গে মেলাতে ব্যবহার হয় এবং কখনও কাউকে দেখানো হয় না।</string>
+    <string name="nb_home_yes">হ্যাঁ, আমি সাহায্য করব</string>
+    <string name="nb_home_not_now">এখন নয়</string>
+    <string name="nb_home_thanks">ধন্যবাদ। কাছাকাছি কারও সাহায্য দরকার হলে আপনি অ্যালার্ট পাবেন।</string>
+    <string name="nb_home_thanks_offline">ধন্যবাদ। ইন্টারনেট পেলেই আপনাকে সাহায্যকারী হিসেবে যুক্ত করা হবে।</string>
+    <string name="nb_home_location_denied">আপনার লোকেশন ছাড়া আমরা আপনাকে কাছাকাছি অ্যালার্টের সঙ্গে মেলাতে পারব না। পরে ক্লাউড ও অভিভাবক থেকে এটি চালু করতে পারেন।</string>
+
+    <string name="nb_mesh_title">ইন্টারনেট ছাড়াও সাহায্য করবেন?</string>
+    <string name="nb_mesh_body">ইন্টারনেট না থাকলে Naari Shakti কাছাকাছি ফোনগুলির মধ্যে Bluetooth দিয়ে SOS অ্যালার্ট পৌঁছে দিতে পারে। এর জন্য কাছাকাছি ডিভাইসের অনুমতি লাগবে।</string>
+    <string name="nb_mesh_yes">চালু করুন</string>
+    <string name="nb_mesh_no">না, ধন্যবাদ</string>
+    <string name="nb_mesh_on">অফলাইন Bluetooth অ্যালার্ট চালু আছে।</string>
+    <string name="nb_mesh_denied">অফলাইন Bluetooth অ্যালার্টের জন্য কাছাকাছি ডিভাইসের অনুমতি লাগবে।</string>
+
+    <string name="nb_broadcast_title">SOS-এর সময় আমার কাছাকাছি মানুষদের অ্যালার্ট করুন</string>
+    <string name="nb_broadcast_sub">2 থেকে 5 কিমির মধ্যে থাকা সাহায্যকারীরা আপনার লোকেশন ও ছবি পান, যাতে তাঁরা সাহায্য করতে পারেন। আপনার অভিভাবকেরা সবসময় অ্যালার্ট পান।</string>
+
+    <plurals name="nb_evidence_count">
+        <item quantity="one">%dটি ছবি বা রেকর্ডিং</item>
+        <item quantity="other">%dটি ছবি ও রেকর্ডিং</item>
+    </plurals>
+    <string name="nb_radius_km">%1$d কিমির মধ্যে</string>
+    <string name="nb_view_live">লাইভ লোকেশন ও প্রমাণ দেখুন</string>
+    <string name="nb_photo_desc">তার SOS-এর সবচেয়ে নতুন ছবি</string>
+    <string name="nb_n_evidence_text">এখন পর্যন্ত %1$s। লাইভ দেখতে ট্যাপ করুন।</string>
+
+    <string name="nb_wa_section">WhatsApp অ্যালার্ট</string>
+    <string name="nb_wa_title">WhatsApp অ্যালার্ট</string>
+    <string name="nb_wa_caption">আপনার SOS, লাইভ লোকেশন ও ছবি আপনার পরিচিতদের WhatsApp-এ পাঠান।</string>
+    <string name="nb_wa_explain">অ্যালার্ট আসে Naari Shakti-র WhatsApp নম্বর থেকে, আপনার নিজের WhatsApp থেকে নয়। অ্যালার্ট পাওয়ার আগে প্রত্যেক পরিচিতকে আপনার আমন্ত্রণে একবার ট্যাপ করে যোগ দিতে হবে।</string>
+    <string name="nb_wa_joined">যোগ দিয়েছেন ✓</string>
+    <string name="nb_wa_not_joined">এখনও যোগ দেননি</string>
+    <string name="nb_wa_invite">আমন্ত্রণ</string>
+    <string name="nb_wa_invite_cd">%1$s-কে WhatsApp-এ আমন্ত্রণ জানান</string>
+    <string name="nb_wa_invite_text">নমস্কার, আমি Naari Shakti-তে আপনাকে আমার জরুরি পরিচিতি হিসেবে যোগ করেছি। WhatsApp-এ আমার SOS অ্যালার্ট পেতে এই লিঙ্কটি খুলে মেসেজটি পাঠান: %1$s</string>
+    <string name="nb_wa_invite_chooser">আমন্ত্রণ পাঠান</string>
+    <plurals name="nb_wa_joined_count">
+        <item quantity="one">%2$d জনের মধ্যে %1$d জন যোগ দিয়েছেন</item>
+        <item quantity="other">%2$d জনের মধ্যে %1$d জন যোগ দিয়েছেন</item>
+    </plurals>
+    <string name="nb_wa_empty">WhatsApp অ্যালার্ট পাঠাতে ওপরে জরুরি পরিচিতি যোগ করুন।</string>
+    <string name="nb_wa_unavailable">WhatsApp অ্যালার্ট এখনও উপলব্ধ নয়। SMS, কল ও Telegram অ্যালার্ট কাজ করতে থাকবে।</string>
+    <string name="nb_wa_cloud_off">WhatsApp অ্যালার্টের জন্য ক্লাউড সিঙ্ক দরকার, যা এই ফোনে বন্ধ আছে। SMS, কল ও Telegram অ্যালার্ট কাজ করতে থাকবে।</string>
+    <string name="nb_wa_error">সার্ভারের সঙ্গে যোগাযোগ করা যায়নি। ইন্টারনেট পেলেই আপনার পরিবর্তনগুলি সিঙ্ক হবে।</string>
+    <string name="nb_wa_retry">আবার চেষ্টা করুন</string>
+    <string name="nb_wa_checking">কে কে যোগ দিয়েছেন দেখা হচ্ছে…</string>
+    <string name="nb_wa_unnamed">নাম নেই</string>
+</resources>

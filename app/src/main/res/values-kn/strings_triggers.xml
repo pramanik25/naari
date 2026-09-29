@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Common -->
+    <string name="tr_back">ಹಿಂದೆ</string>
+    <string name="tr_not_now">ಈಗ ಬೇಡ</string>
+    <string name="tr_cancel">ರದ್ದುಮಾಡಿ</string>
+    <string name="tr_open_settings">ಸೆಟ್ಟಿಂಗ್‌ಗಳು</string>
+
+    <!-- SMS alerts to emergency contacts (keep short) -->
+    <string name="tr_default_owner_name">ನಿಮ್ಮ ಸಂಪರ್ಕ</string>
+    <string name="tr_sms_shutdown">Naari Shakti: %1$s ಅವರ ಫೋನ್ ಆಫ್ ಆಗುತ್ತಿದೆ. ಕೊನೆಯ ಲೊಕೇಶನ್: %2$s</string>
+    <!-- %2$d is the battery percentage. -->
+    <string name="tr_sms_low_battery">Naari Shakti: %1$s ಅವರ ಫೋನ್ ಬ್ಯಾಟರಿ %2$d%% ಇದೆ. ಕೊನೆಯ ಲೊಕೇಶನ್: %3$s</string>
+    <string name="tr_sms_sim_changed">Naari Shakti: %1$s ಅವರ ಫೋನ್‌ನ SIM ಕಾರ್ಡ್ ಬದಲಾಗಿದೆ. ಈ ಮೆಸೇಜ್ ಹೊಸ SIM ನಿಂದ ಬಂದಿದೆ. ಲೊಕೇಶನ್: %2$s</string>
+    <string name="tr_sms_location_fmt">%1$s (%2$s)</string>
+    <string name="tr_sms_location_unknown">ಲಭ್ಯವಿಲ್ಲ</string>
+
+    <!-- ===================== Volume-key SOS (accessibility) ===================== -->
+    <string name="tr_a11y_dialog_title">ವಾಲ್ಯೂಮ್ ಬಟನ್ SOS ಆನ್ ಮಾಡಿ</string>
+    <string name="tr_a11y_dialog_body">ಸ್ಕ್ರೀನ್ ಆಫ್ ಇದ್ದರೂ, ವಾಲ್ಯೂಮ್-ಡೌನ್ ಅನ್ನು 5 ಬಾರಿ ಒತ್ತಿ SOS ಆರಂಭಿಸಲು, ಪ್ರವೇಶಿಸುವಿಕೆ ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ %1$s ಆನ್ ಮಾಡಿ.\n\nಮುಂದಿನ ಸ್ಕ್ರೀನ್‌ನಲ್ಲಿ “ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಿರುವ ಆ್ಯಪ್‌ಗಳು” (ಅಥವಾ “ಡೌನ್‌ಲೋಡ್ ಮಾಡಿದ ಆ್ಯಪ್‌ಗಳು”) ತೆರೆದು, %1$s ಆಯ್ಕೆಮಾಡಿ ಆನ್ ಮಾಡಿ. ಇದು ವಾಲ್ಯೂಮ್ ಬಟನ್‌ಗಳನ್ನು ಮಾತ್ರ ಗಮನಿಸುತ್ತದೆ, ನಿಮ್ಮ ಸ್ಕ್ರೀನ್ ಅನ್ನು ಎಂದಿಗೂ ಓದುವುದಿಲ್ಲ.</string>
+    <string name="tr_a11y_dialog_open">ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ತೆರೆಯಿರಿ</string>
+
+    <!-- ===================== Panic button screen ===================== -->
+    <string name="tr_pb_eyebrow">ಹೆಚ್ಚುವರಿ ಟ್ರಿಗರ್‌ಗಳು</string>
+    <string name="tr_pb_title">ಪ್ಯಾನಿಕ್ ಬಟನ್</string>
+    <string name="tr_pb_desc">ಚಿಕ್ಕ Bluetooth ಬಟನ್ ಜೋಡಿಸಿ, ಫೋನ್ ಹೊರತೆಗೆಯದೆಯೇ ಅದನ್ನು ಎರಡು ಬಾರಿ ಒತ್ತಿ SOS ಆರಂಭಿಸಿ.</string>
+
+    <string name="tr_pb_status_label">ನಿಮ್ಮ ಬಟನ್</string>
+    <string name="tr_pb_no_button">ಯಾವುದೇ ಬಟನ್ ಜೋಡಿಸಿಲ್ಲ</string>
+    <string name="tr_pb_unnamed">ಹೆಸರಿಲ್ಲದ ಬಟನ್</string>
+    <string name="tr_pb_status_not_set">ಹೊಂದಿಸಿಲ್ಲ</string>
+    <string name="tr_pb_status_connected">ಸಂಪರ್ಕಿತ</string>
+    <string name="tr_pb_status_connecting">ಬಟನ್‌ಗಾಗಿ ಹುಡುಕಲಾಗುತ್ತಿದೆ… ಹತ್ತಿರ ಇಡಿ</string>
+    <string name="tr_pb_status_unsupported">ಈ ಸಾಧನ ಬೆಂಬಲಿತ ಬಟನ್ ಅಲ್ಲ</string>
+    <string name="tr_pb_status_bt_off">Bluetooth ಆಫ್ ಆಗಿದೆ</string>
+    <string name="tr_pb_status_permission">Bluetooth ಅನುಮತಿ ಬೇಕು</string>
+    <string name="tr_pb_status_unavailable">ಲಭ್ಯವಿಲ್ಲ</string>
+    <string name="tr_pb_status_off">ಸಂಪರ್ಕವಾಗಿಲ್ಲ</string>
+    <string name="tr_pb_protection_hint">ಬಟನ್ SOS ಆರಂಭಿಸಲು ರಕ್ಷಣೆಯನ್ನು ಆನ್ ಮಾಡಿ.</string>
+
+    <string name="tr_pb_forget">ಬಟನ್ ಮರೆತುಬಿಡಿ</string>
+    <string name="tr_pb_forget_title">ಈ ಬಟನ್ ಮರೆತುಬಿಡಬೇಕೆ?</string>
+    <!-- %1$s is the button's name. -->
+    <string name="tr_pb_forget_body">%1$s ಇನ್ನು SOS ಆರಂಭಿಸುವುದಿಲ್ಲ.</string>
+    <string name="tr_pb_forget_confirm">ಮರೆತುಬಿಡಿ</string>
+    <string name="tr_pb_forgotten">ಬಟನ್ ತೆಗೆದುಹಾಕಲಾಗಿದೆ</string>
+
+    <string name="tr_pb_section_test">ಪರೀಕ್ಷೆ</string>
+    <string name="tr_pb_test_title">ಪರೀಕ್ಷಿಸಲು ಬಟನ್ ಅನ್ನು ಎರಡು ಬಾರಿ ಒತ್ತಿ</string>
+    <string name="tr_pb_test_waiting">ಬಟನ್ ಸಂಪರ್ಕವಾಗಲು ಕಾಯಲಾಗುತ್ತಿದೆ…</string>
+    <string name="tr_pb_test_hint">ಒಂದು ಸೆಕೆಂಡಿನಲ್ಲಿ ಎರಡು ಬಾರಿ ವೇಗವಾಗಿ ಒತ್ತಿ. ಒಮ್ಮೆ ಒತ್ತಿದರೆ ಏನೂ ಆಗುವುದಿಲ್ಲ, ಹಾಗಾಗಿ ಆಕಸ್ಮಿಕವಾಗಿ ಆರಂಭವಾಗುವುದಿಲ್ಲ.</string>
+    <string name="tr_pb_test_one">ಒಮ್ಮೆ ಒತ್ತಿದ್ದೀರಿ. ಈಗ ಬೇಗ ಮತ್ತೆ ಒತ್ತಿ</string>
+    <string name="tr_pb_test_success">ಇದು ಕೆಲಸ ಮಾಡುತ್ತಿದೆ!</string>
+    <string name="tr_pb_test_success_body">ರಕ್ಷಣೆ ಆನ್ ಇರುವಾಗ, ಎರಡು ಬಾರಿ ಒತ್ತಿದರೆ SOS ಕೌಂಟ್‌ಡೌನ್ ಆರಂಭವಾಗುತ್ತದೆ. ಕೌಂಟ್‌ಡೌನ್ ಸಮಯದಲ್ಲಿ ರದ್ದುಮಾಡಬಹುದು. ಇಲ್ಲಿ ಪರೀಕ್ಷಿಸಿದರೆ ಎಂದಿಗೂ SOS ಹೋಗುವುದಿಲ್ಲ.</string>
+    <string name="tr_pb_test_again">ಮತ್ತೆ ಪರೀಕ್ಷಿಸಿ</string>
+
+    <string name="tr_pb_section_find">ನಿಮ್ಮ ಬಟನ್ ಹುಡುಕಿ</string>
+    <string name="tr_pb_nearby">ಹತ್ತಿರದ ಬಟನ್‌ಗಳು</string>
+    <string name="tr_pb_scan_hint">ಬಟನ್ ಆನ್ ಮಾಡಿ (ಬೀಪ್ ಆಗುವವರೆಗೆ ಒತ್ತಿ ಹಿಡಿಯಿರಿ) ಮತ್ತು ನಿಮ್ಮ ಫೋನ್ ಪಕ್ಕದಲ್ಲೇ ಇಡಿ.</string>
+    <string name="tr_pb_scan">ಬಟನ್‌ಗಳಿಗಾಗಿ ಸ್ಕ್ಯಾನ್ ಮಾಡಿ</string>
+    <string name="tr_pb_stop_scan">ಸ್ಕ್ಯಾನ್ ನಿಲ್ಲಿಸಿ</string>
+    <string name="tr_pb_scanning">ಸ್ಕ್ಯಾನ್ ಮಾಡಲಾಗುತ್ತಿದೆ…</string>
+    <string name="tr_pb_empty">ಯಾವುದೇ ಬಟನ್ ಸಿಗಲಿಲ್ಲ. ಅದು ಆನ್ ಆಗಿದೆಯೇ ಮತ್ತು ಹತ್ತಿರದಲ್ಲಿದೆಯೇ ಎಂದು ಖಚಿತಪಡಿಸಿ, ನಂತರ ಮತ್ತೆ ಸ್ಕ್ಯಾನ್ ಮಾಡಿ.</string>
+    <string name="tr_pb_empty_location">ಯಾವುದೇ ಬಟನ್ ಸಿಗಲಿಲ್ಲ. Bluetooth ಸಾಧನಗಳಿಗಾಗಿ ಸ್ಕ್ಯಾನ್ ಮಾಡಲು Android ಗೆ ಲೊಕೇಶನ್ ಆನ್ ಇರಬೇಕು. ಅದನ್ನು ಆನ್ ಮಾಡಿ ಮತ್ತೆ ಸ್ಕ್ಯಾನ್ ಮಾಡಿ.</string>
+    <!-- %1$d is an Android error code. -->
+    <string name="tr_pb_scan_failed">ಸ್ಕ್ಯಾನ್ ವಿಫಲವಾಗಿದೆ (ದೋಷ %1$d). Bluetooth ಆಫ್ ಮಾಡಿ ಮತ್ತೆ ಆನ್ ಮಾಡಿ, ನಂತರ ಪ್ರಯತ್ನಿಸಿ.</string>
+    <string name="tr_pb_no_bluetooth">ಈ ಫೋನ್ Bluetooth Low Energy ಅನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ.</string>
+    <string name="tr_pb_bt_needed">ನಿಮ್ಮ ಬಟನ್ ಹುಡುಕಲು Bluetooth ಆನ್ ಮಾಡಿ.</string>
+    <string name="tr_pb_perm_denied">ನಿಮ್ಮ ಬಟನ್ ಹುಡುಕಲು Naari Shakti ಗೆ ಸಮೀಪದ ಸಾಧನಗಳು ಮತ್ತು ಲೊಕೇಶನ್ ಅನುಮತಿಗಳು ಬೇಕು.</string>
+    <!-- %1$s is the button's name. -->
+    <string name="tr_pb_paired_snack">%1$s ಸೇವ್ ಆಗಿದೆ. ಈಗ ಪರೀಕ್ಷಿಸಲು ಎರಡು ಬಾರಿ ಒತ್ತಿ.</string>
+    <!-- Signal strength, %1$d is negative, e.g. -62 dBm. -->
+    <string name="tr_pb_rssi">%1$d dBm</string>
+    <string name="tr_pb_tag_compatible">ಹೊಂದಿಕೆಯಾಗುತ್ತದೆ</string>
+    <string name="tr_pb_tag_paired">ಜೋಡಿಸಲಾಗಿದೆ</string>
+    <!-- Screen reader: %1$s device name, %2$d signal bars (1 to 4). -->
+    <string name="tr_pb_device_cd">%1$s, ಸಿಗ್ನಲ್ 4 ರಲ್ಲಿ %2$d. ಈ ಬಟನ್ ಬಳಸಲು ಎರಡು ಬಾರಿ ಟ್ಯಾಪ್ ಮಾಡಿ.</string>
+
+    <string name="tr_pb_section_supported">ಬೆಂಬಲಿತ ಬಟನ್‌ಗಳು</string>
+    <string name="tr_pb_sup1_title">iTag ಕೀಫೈಂಡರ್ ಬಟನ್‌ಗಳು</string>
+    <string name="tr_pb_sup1_body">“iTag” ಅಥವಾ “anti-lost tracker” ಎಂಬ ಹೆಸರಿನಲ್ಲಿ ಮಾರಾಟವಾಗುವ ಚಿಕ್ಕ Bluetooth ಕೀಫೈಂಡರ್ ಬಟನ್‌ಗಳು ಚೆನ್ನಾಗಿ ಕೆಲಸ ಮಾಡುತ್ತವೆ. ಆನ್‌ಲೈನ್‌ನಲ್ಲಿ ಸುಮಾರು ₹200 ಬೆಲೆ.</string>
+    <string name="tr_pb_sup2_title">ಕಾಯಿನ್ ಸೆಲ್‌ನಲ್ಲಿ ಕೆಲಸ ಮಾಡುತ್ತದೆ</string>
+    <string name="tr_pb_sup2_body">CR2032 ಬ್ಯಾಟರಿ ತಿಂಗಳುಗಟ್ಟಲೆ ಬರುತ್ತದೆ. ಬಟನ್ ಅನ್ನು ನಿಮ್ಮ ಕೀಲಿಗಳು, ಬ್ಯಾಗ್ ಪಟ್ಟಿ ಅಥವಾ ಬಟ್ಟೆಗೆ ಸಿಕ್ಕಿಸಿ.</string>
+    <string name="tr_pb_sup3_title">ಹಿನ್ನೆಲೆಯಲ್ಲಿ ಕೆಲಸ ಮಾಡುತ್ತದೆ</string>
+    <string name="tr_pb_sup3_body">ರಕ್ಷಣೆ ಆನ್ ಇರುವಾಗ, ನಿಮ್ಮ ಫೋನ್ ಸಂಪರ್ಕದಲ್ಲೇ ಇರುತ್ತದೆ ಮತ್ತು ಬಟನ್ ಮತ್ತೆ ವ್ಯಾಪ್ತಿಗೆ ಬಂದಾಗ ತಾನಾಗಿಯೇ ಮರುಸಂಪರ್ಕಗೊಳ್ಳುತ್ತದೆ.</string>
+</resources>

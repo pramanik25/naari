@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Common -->
+    <string name="tr_back">മടങ്ങുക</string>
+    <string name="tr_not_now">ഇപ്പോൾ വേണ്ട</string>
+    <string name="tr_cancel">റദ്ദാക്കുക</string>
+    <string name="tr_open_settings">ക്രമീകരണം</string>
+
+    <!-- ===================== SMS alerts to emergency contacts ===================== -->
+    <string name="tr_default_owner_name">നിങ്ങളുടെ കോൺടാക്റ്റ്</string>
+    <string name="tr_sms_shutdown">Naari Shakti: %1$s-ന്റെ ഫോൺ ഓഫാകുന്നു. അവസാന ലൊക്കേഷൻ: %2$s</string>
+    <string name="tr_sms_low_battery">Naari Shakti: %1$s-ന്റെ ഫോണിൽ ബാറ്ററി %2$d%% മാത്രം. അവസാന ലൊക്കേഷൻ: %3$s</string>
+    <string name="tr_sms_sim_changed">Naari Shakti: %1$s-ന്റെ ഫോണിലെ SIM കാർഡ് മാറ്റി. ഈ സന്ദേശം പുതിയ SIM-ൽ നിന്നാണ്. ലൊക്കേഷൻ: %2$s</string>
+    <string name="tr_sms_location_fmt">%1$s (%2$s)</string>
+    <string name="tr_sms_location_unknown">ലഭ്യമല്ല</string>
+
+    <!-- ===================== Volume-key SOS (accessibility) ===================== -->
+    <string name="tr_a11y_dialog_title">വോളിയം കീ SOS ഓണാക്കുക</string>
+    <string name="tr_a11y_dialog_body">സ്ക്രീൻ ഓഫായിരിക്കുമ്പോഴും വോളിയം ഡൗൺ 5 തവണ അമർത്തി SOS തുടങ്ങാൻ, ആക്സസിബിലിറ്റി ക്രമീകരണത്തിൽ %1$s ഓണാക്കുക.\n\nഅടുത്ത സ്ക്രീനിൽ \"ഇൻസ്റ്റാൾ ചെയ്ത ആപ്പുകൾ\" (അല്ലെങ്കിൽ \"ഡൗൺലോഡ് ചെയ്ത ആപ്പുകൾ\") തുറന്ന് %1$s തിരഞ്ഞെടുത്ത് ഓണാക്കുക. ഇത് വോളിയം കീകൾ മാത്രം ശ്രദ്ധിക്കും, നിങ്ങളുടെ സ്ക്രീൻ ഒരിക്കലും വായിക്കില്ല.</string>
+    <string name="tr_a11y_dialog_open">ക്രമീകരണം തുറക്കുക</string>
+
+    <!-- ===================== Panic button screen ===================== -->
+    <string name="tr_pb_eyebrow">കൂടുതൽ ട്രിഗറുകൾ</string>
+    <string name="tr_pb_title">പാനിക് ബട്ടൺ</string>
+    <string name="tr_pb_desc">ചെറിയൊരു Bluetooth ബട്ടൺ ജോടിയാക്കി രണ്ടുതവണ അമർത്തിയാൽ, ഫോൺ പുറത്തെടുക്കാതെ തന്നെ SOS തുടങ്ങാം.</string>
+
+    <string name="tr_pb_status_label">നിങ്ങളുടെ ബട്ടൺ</string>
+    <string name="tr_pb_no_button">ബട്ടൺ ജോടിയാക്കിയിട്ടില്ല</string>
+    <string name="tr_pb_unnamed">പേരില്ലാത്ത ബട്ടൺ</string>
+    <string name="tr_pb_status_not_set">സജ്ജമാക്കിയിട്ടില്ല</string>
+    <string name="tr_pb_status_connected">കണക്റ്റ് ചെയ്തു</string>
+    <string name="tr_pb_status_connecting">ബട്ടൺ തിരയുന്നു… അടുത്ത് വയ്ക്കുക</string>
+    <string name="tr_pb_status_unsupported">ഈ ഉപകരണം പിന്തുണയ്ക്കുന്ന ബട്ടണല്ല</string>
+    <string name="tr_pb_status_bt_off">Bluetooth ഓഫാണ്</string>
+    <string name="tr_pb_status_permission">Bluetooth അനുമതി വേണം</string>
+    <string name="tr_pb_status_unavailable">ലഭ്യമല്ല</string>
+    <string name="tr_pb_status_off">കണക്റ്റ് ചെയ്തിട്ടില്ല</string>
+    <string name="tr_pb_protection_hint">ബട്ടണിന് SOS തുടങ്ങാൻ സംരക്ഷണം ഓണാക്കുക.</string>
+
+    <string name="tr_pb_forget">ബട്ടൺ മറക്കുക</string>
+    <string name="tr_pb_forget_title">ഈ ബട്ടൺ മറക്കണോ?</string>
+    <string name="tr_pb_forget_body">%1$s ഇനി SOS തുടങ്ങില്ല.</string>
+    <string name="tr_pb_forget_confirm">മറക്കുക</string>
+    <string name="tr_pb_forgotten">ബട്ടൺ മറന്നു</string>
+
+    <string name="tr_pb_section_test">പരിശോധന</string>
+    <string name="tr_pb_test_title">പരിശോധിക്കാൻ ബട്ടൺ രണ്ടുതവണ അമർത്തുക</string>
+    <string name="tr_pb_test_waiting">ബട്ടൺ കണക്റ്റ് ആകാൻ കാത്തിരിക്കുന്നു…</string>
+    <string name="tr_pb_test_hint">ഒരു സെക്കൻഡിനുള്ളിൽ രണ്ട് വേഗത്തിലുള്ള അമർത്തലുകൾ. ഒറ്റ അമർത്തലിൽ ഒന്നും സംഭവിക്കില്ല, അതിനാൽ അബദ്ധത്തിൽ തുടങ്ങില്ല.</string>
+    <string name="tr_pb_test_one">ഒരു അമർത്തൽ. ഇനി വേഗം വീണ്ടും അമർത്തുക</string>
+    <string name="tr_pb_test_success">പ്രവർത്തിക്കുന്നു!</string>
+    <string name="tr_pb_test_success_body">സംരക്ഷണം ഓണായിരിക്കുമ്പോൾ രണ്ടുതവണ അമർത്തിയാൽ SOS കൗണ്ട്ഡൗൺ തുടങ്ങും. കൗണ്ട്ഡൗണിനിടെ റദ്ദാക്കാം. ഇവിടെ പരിശോധിക്കുമ്പോൾ ഒരിക്കലും SOS അയയ്ക്കില്ല.</string>
+    <string name="tr_pb_test_again">വീണ്ടും പരിശോധിക്കുക</string>
+
+    <string name="tr_pb_section_find">നിങ്ങളുടെ ബട്ടൺ കണ്ടെത്തുക</string>
+    <string name="tr_pb_nearby">സമീപത്തെ ബട്ടണുകൾ</string>
+    <string name="tr_pb_scan_hint">ബട്ടൺ ഓണാക്കി (ബീപ്പ് കേൾക്കുന്നതുവരെ അമർത്തിപ്പിടിക്കുക) ഫോണിനടുത്ത് വയ്ക്കുക.</string>
+    <string name="tr_pb_scan">ബട്ടണുകൾ തിരയുക</string>
+    <string name="tr_pb_stop_scan">തിരയൽ നിർത്തുക</string>
+    <string name="tr_pb_scanning">തിരയുന്നു…</string>
+    <string name="tr_pb_empty">ബട്ടണുകളൊന്നും കണ്ടെത്തിയില്ല. അത് ഓണാണെന്നും അടുത്തുണ്ടെന്നും ഉറപ്പാക്കി വീണ്ടും തിരയുക.</string>
+    <string name="tr_pb_empty_location">ബട്ടണുകളൊന്നും കണ്ടെത്തിയില്ല. Bluetooth ഉപകരണങ്ങൾ തിരയാൻ Android-ന് ലൊക്കേഷൻ ഓണായിരിക്കണം. അത് ഓണാക്കി വീണ്ടും തിരയുക.</string>
+    <string name="tr_pb_scan_failed">തിരയൽ പരാജയപ്പെട്ടു (പിശക് %1$d). Bluetooth ഓഫാക്കി ഓണാക്കിയ ശേഷം വീണ്ടും ശ്രമിക്കുക.</string>
+    <string name="tr_pb_no_bluetooth">ഈ ഫോൺ Bluetooth Low Energy പിന്തുണയ്ക്കുന്നില്ല.</string>
+    <string name="tr_pb_bt_needed">ബട്ടൺ കണ്ടെത്താൻ Bluetooth ഓണാക്കുക.</string>
+    <string name="tr_pb_perm_denied">ബട്ടൺ കണ്ടെത്താൻ Naari Shakti-ക്ക് സമീപ ഉപകരണങ്ങൾ, ലൊക്കേഷൻ എന്നീ അനുമതികൾ വേണം.</string>
+    <string name="tr_pb_paired_snack">%1$s സേവ് ചെയ്തു. ഇനി പരിശോധിക്കാൻ രണ്ടുതവണ അമർത്തുക.</string>
+    <string name="tr_pb_rssi">%1$d dBm</string>
+    <string name="tr_pb_tag_compatible">അനുയോജ്യം</string>
+    <string name="tr_pb_tag_paired">ജോടിയാക്കി</string>
+    <string name="tr_pb_device_cd">%1$s, സിഗ്നൽ 4-ൽ %2$d. ഈ ബട്ടൺ ഉപയോഗിക്കാൻ രണ്ടുതവണ ടാപ്പ് ചെയ്യുക.</string>
+
+    <string name="tr_pb_section_supported">പിന്തുണയ്ക്കുന്ന ബട്ടണുകൾ</string>
+    <string name="tr_pb_sup1_title">iTag കീഫൈൻഡർ ബട്ടണുകൾ</string>
+    <string name="tr_pb_sup1_body">\"iTag\" അല്ലെങ്കിൽ \"anti-lost tracker\" എന്ന പേരിൽ വിൽക്കുന്ന ചെറിയ Bluetooth കീഫൈൻഡർ ബട്ടണുകളാണ് ഏറ്റവും നല്ലത്. ഓൺലൈനിൽ ഏകദേശം ₹200 വിലവരും.</string>
+    <string name="tr_pb_sup2_title">കോയിൻ സെല്ലിൽ പ്രവർത്തിക്കും</string>
+    <string name="tr_pb_sup2_body">ഒരു CR2032 ബാറ്ററി മാസങ്ങളോളം നിലനിൽക്കും. ബട്ടൺ താക്കോലിലോ ബാഗിന്റെ സ്ട്രാപ്പിലോ വസ്ത്രത്തിലോ ഘടിപ്പിക്കാം.</string>
+    <string name="tr_pb_sup3_title">പശ്ചാത്തലത്തിൽ പ്രവർത്തിക്കും</string>
+    <string name="tr_pb_sup3_body">സംരക്ഷണം ഓണായിരിക്കുമ്പോൾ ഫോൺ കണക്റ്റ് ആയിരിക്കും; ബട്ടൺ വീണ്ടും പരിധിയിൽ വരുമ്പോൾ സ്വയം വീണ്ടും കണക്റ്റ് ചെയ്യും.</string>
+</resources>

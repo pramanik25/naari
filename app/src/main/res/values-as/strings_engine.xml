@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Notification channels -->
+    <string name="eng_channel_protection">সুৰক্ষাৰ স্থিতি</string>
+    <string name="eng_channel_protection_desc">Naari Shakti-এ আপোনাৰ ট্ৰিগাৰ শব্দ, জোকাৰণি আৰু পাৱাৰ বুটাম টিপালৈ অপেক্ষা কৰি থাকোঁতে দেখুৱায়।</string>
+    <string name="eng_channel_sos">SOS সতৰ্কবাৰ্তা</string>
+    <string name="eng_channel_sos_desc">SOS কাউণ্টডাউন বা সক্ৰিয় হৈ থাকোঁতে সম্পূৰ্ণ-স্ক্ৰীণ সতৰ্কবাৰ্তা।</string>
+    <string name="eng_channel_alerts">সুৰক্ষা সতৰ্কবাৰ্তা</string>
+    <string name="eng_channel_alerts_desc">আপোনাৰ মনোযোগ লগা ৰিমাইণ্ডাৰ, যেনে ৰিষ্টাৰ্টৰ পিছত সুৰক্ষা পুনৰ অন কৰা।</string>
+    <string name="eng_channel_live">লাইভ অৱস্থান শ্বেয়াৰ</string>
+    <string name="eng_channel_live_desc">কণ্টেক্টসকলৰ লগত আপোনাৰ লাইভ অৱস্থান শ্বেয়াৰ হৈ থাকোঁতে দেখুৱায়।</string>
+    <string name="eng_channel_geofence">ছেভ কৰা ঠাই</string>
+    <string name="eng_channel_geofence_desc">ছেভ কৰা কোনো ঠাইত উপস্থিত হ’লে বা তাৰ পৰা ওলাই গ’লে সতৰ্কবাৰ্তা।</string>
+
+    <!-- Protection notification -->
+    <string name="eng_protect_title">Naari Shakti-এ আপোনাক সুৰক্ষা দি আছে</string>
+    <string name="eng_protect_text">“%1$s” শুনিবলৈ সাজু · SOS-ৰ বাবে পাৱাৰ ×%2$d টিপক</string>
+    <string name="eng_protect_text_no_voice">SOS-ৰ বাবে জোকাৰক বা পাৱাৰ ×%1$d টিপক</string>
+    <string name="eng_action_sos_now">এতিয়াই SOS</string>
+    <string name="eng_action_turn_off">অফ কৰক</string>
+
+    <!-- Resume notification -->
+    <string name="eng_resume_title">সুৰক্ষা পুনৰ অন কৰিবলৈ টেপ কৰক</string>
+    <string name="eng_resume_text">ৰিষ্টাৰ্টৰ পিছত Android-এ Naari Shakti ৰখাই দিলে। সুৰক্ষা পুনৰ অন কৰিবলৈ এপটো খোলক।</string>
+
+    <!-- SOS notification -->
+    <string name="eng_sos_countdown_title">SOS পঠিওৱা হৈছে…</string>
+    <string name="eng_sos_countdown_text">আপোনাৰ কণ্টেক্টসকলক সতৰ্ক কৰা হ’ব। ভুলতে হ’লে বাতিল কৰক-ত টেপ কৰক।</string>
+    <string name="eng_sos_active_title">SOS সক্ৰিয়</string>
+    <string name="eng_sos_active_text">কণ্টেক্টসকলক সতৰ্ক কৰা হৈছে আৰু আপোনাৰ লাইভ অৱস্থান শ্বেয়াৰ হৈছে।</string>
+    <string name="eng_action_cancel">বাতিল কৰক</string>
+    <string name="eng_action_stop_sos">SOS ৰখাওক</string>
+    <string name="eng_action_call_contact">%1$s-ক কল কৰক</string>
+
+    <!-- SMS bodies -->
+    <string name="eng_sms_location_line">মোৰ অৱস্থান: %1$s</string>
+    <string name="eng_sms_location_pending">অৱস্থান এতিয়াও পোৱা নাই, অলপ পিছতে পঠিয়াম।</string>
+    <string name="eng_sms_location_followup">মোৰ বৰ্তমানৰ অৱস্থান: %1$s</string>
+    <string name="eng_sms_location_update">লাইভ অৱস্থান আপডেট (%1$s): %2$s</string>
+    <string name="eng_sms_safe">মই এতিয়া সুৰক্ষিত। মোৰ আগৰ SOS সতৰ্কবাৰ্তা আওকাণ কৰক। - Naari Shakti-ৰ পৰা পঠিওৱা</string>
+    <string name="eng_sms_live_start_named">%1$s-এ %2$d মিনিটৰ বাবে আপোনাৰ লগত লাইভ অৱস্থান শ্বেয়াৰ কৰিছে: %3$s</string>
+    <string name="eng_sms_live_start">মই %1$d মিনিটৰ বাবে আপোনাৰ লগত মোৰ লাইভ অৱস্থান শ্বেয়াৰ কৰিছোঁ: %2$s</string>
+    <string name="eng_sms_live_start_no_fix">মই %1$d মিনিটৰ বাবে আপোনাৰ লগত মোৰ লাইভ অৱস্থান শ্বেয়াৰ কৰিছোঁ। প্ৰথম অৱস্থান অলপ পিছতে আহিব।</string>
+    <string name="eng_sms_live_start_named_no_fix">%1$s-এ %2$d মিনিটৰ বাবে আপোনাৰ লগত লাইভ অৱস্থান শ্বেয়াৰ কৰিছে। প্ৰথম অৱস্থান অলপ পিছতে আহিব।</string>
+    <string name="eng_sms_live_update">লাইভ অৱস্থান (%1$s): %2$s</string>
+    <string name="eng_sms_live_ended">লাইভ অৱস্থান শ্বেয়াৰ শেষ হ’ল।</string>
+
+    <!-- Telegram / email -->
+    <string name="eng_telegram_sos">Naari Shakti-ৰ পৰা SOS\n%1$s</string>
+    <string name="eng_telegram_safe">আপডেট: মই এতিয়া সুৰক্ষিত।</string>
+    <string name="eng_email_subject">জৰুৰী প্ৰমাণৰ ফটো (%1$s কেমেৰা)</string>
+    <string name="eng_email_body">Naari Shakti-ত এটা SOS আৰম্ভ হৈছিল। এই ফটোখন %2$s-ত %1$s কেমেৰাৰে নিজে নিজে তোলা হৈছে।</string>
+    <string name="eng_camera_front">সন্মুখৰ</string>
+    <string name="eng_camera_back">পিছফালৰ</string>
+
+    <!-- Live share notification -->
+    <string name="eng_live_title">আপোনাৰ লাইভ অৱস্থান শ্বেয়াৰ হৈছে</string>
+    <string name="eng_live_text">%1$d জন কণ্টেক্টৰ লগত · শেষ হ’ব %2$s-ত</string>
+    <string name="eng_action_stop">ৰখাওক</string>
+
+    <!-- Geofence -->
+    <string name="eng_geofence_entered">%1$s-ত উপস্থিত হ’ল</string>
+    <string name="eng_geofence_left">%1$s-ৰ পৰা ওলাই গ’ল</string>
+    <string name="eng_geofence_default_place">এটা ছেভ কৰা ঠাই</string>
+    <string name="eng_geofence_text">Naari Shakti-ৰ পৰা ছেভ কৰা ঠাইৰ সতৰ্কবাৰ্তা</string>
+
+    <!-- PanicActivity: countdown -->
+    <string name="eng_panic_overline">জৰুৰী SOS</string>
+    <string name="eng_panic_countdown_title">SOS পঠিওৱা হৈছে</string>
+    <plurals name="eng_panic_countdown_caption">
+        <item quantity="one">%d জন কণ্টেক্টক আপোনাৰ অৱস্থানসহ সতৰ্ক কৰা হৈছে</item>
+        <item quantity="other">%d জন কণ্টেক্টক আপোনাৰ অৱস্থানসহ সতৰ্ক কৰা হৈছে</item>
+    </plurals>
+    <string name="eng_panic_countdown_no_contacts">এতিয়ালৈকে কোনো জৰুৰী কণ্টেক্ট ছেভ কৰা নাই। চাইৰেন আৰু প্ৰমাণ সংগ্ৰহ তথাপি আৰম্ভ হ’ব।</string>
+    <string name="eng_panic_cancel">বাতিল কৰক</string>
+    <string name="eng_panic_cancel_hint">ভুলতে হ’লে বাতিল কৰক-ত টেপ কৰক</string>
+
+    <!-- PanicActivity: active -->
+    <string name="eng_panic_active_overline">SOS সক্ৰিয়</string>
+    <string name="eng_panic_active_title">সহায় আহি আছে</string>
+    <string name="eng_panic_active_subtitle">ফোনটো লগত ৰাখক। আপোনাৰ কণ্টেক্টসকলক সতৰ্ক কৰা হৈছে।</string>
+    <string name="eng_panic_status_label">লাইভ স্থিতি</string>
+    <string name="eng_panic_hold_to_stop">ৰখাবলৈ হেঁচি ধৰক — মই সুৰক্ষিত</string>
+    <string name="eng_panic_hold_hint">2 ছেকেণ্ড হেঁচি ধৰি ৰাখক। হয়তো ফোন আনলক কৰিবলৈ কোৱা হ’ব।</string>
+
+    <string name="eng_status_sms_pending">আপোনাৰ কণ্টেক্টসকলক সতৰ্ক কৰা হৈছে…</string>
+    <plurals name="eng_status_sms_done">
+        <item quantity="one">%d জন কণ্টেক্টলৈ সতৰ্কবাৰ্তা পঠিওৱা হ’ল</item>
+        <item quantity="other">%d জন কণ্টেক্টলৈ সতৰ্কবাৰ্তা পঠিওৱা হ’ল</item>
+    </plurals>
+    <string name="eng_status_sms_detail_location">আপোনাৰ অৱস্থানৰ লিংকসহ</string>
+    <string name="eng_status_sms_detail_no_location">অৱস্থান পোৱাৰ লগে লগে পঠিওৱা হ’ব</string>
+    <string name="eng_status_sms_failed">SMS সতৰ্কবাৰ্তা পঠিয়াব পৰা নগ’ল</string>
+    <string name="eng_status_sms_failed_detail">SMS-ৰ অনুমতি আৰু নেটৱৰ্ক পৰীক্ষা কৰক</string>
+    <string name="eng_status_sms_none">কোনো জৰুৰী কণ্টেক্ট নাই</string>
+    <string name="eng_status_sms_none_detail">জৰুৰী ছেটিংছত কণ্টেক্ট যোগ কৰক</string>
+
+    <string name="eng_status_call_pending">%1$s-ক কল কৰা হৈছে…</string>
+    <string name="eng_status_call_done">%1$s-ক কল কৰা হৈছে</string>
+    <string name="eng_status_call_detail">জৰুৰী কল কৰা হ’ল</string>
+    <string name="eng_status_call_failed">%1$s-ক কল কৰিব পৰা নগ’ল</string>
+    <string name="eng_status_call_failed_detail">ফোনৰ অনুমতি দিয়ক বা জাননীৰ পৰা কল কৰক</string>
+    <string name="eng_status_call_none">কল কৰিবলৈ কোনো কণ্টেক্ট নাই</string>
+
+    <string name="eng_status_location_pending">আপোনাৰ অৱস্থান বিচৰা হৈছে…</string>
+    <string name="eng_status_location_done">লাইভ অৱস্থান শ্বেয়াৰ হৈছে</string>
+    <string name="eng_status_location_detail">প্ৰতি 2 মিনিটত বা 100 মিঃ গ’লে আপডেট হয়</string>
+    <string name="eng_status_location_failed">অৱস্থান উপলব্ধ নহয়</string>
+    <string name="eng_status_location_failed_detail">অৱস্থান অন কৰি অনুমতি দিয়ক</string>
+
+    <string name="eng_status_siren_on">চাইৰেন অন</string>
+    <string name="eng_status_siren_detail">সম্পূৰ্ণ ভলিউমত বাজি আছে</string>
+    <string name="eng_status_siren_off">চাইৰেন উপলব্ধ নহয়</string>
+
+    <plurals name="eng_status_camera_title">
+        <item quantity="one">প্ৰমাণ সংগ্ৰহ কৰা হৈছে (%d খন ফটো)</item>
+        <item quantity="other">প্ৰমাণ সংগ্ৰহ কৰা হৈছে (%d খন ফটো)</item>
+    </plurals>
+    <string name="eng_status_camera_detail">প্ৰতি 15 ছেকেণ্ডত সন্মুখ আৰু পিছফালৰ কেমেৰা</string>
+    <string name="eng_status_camera_failed">কেমেৰা উপলব্ধ নহয়</string>
+    <string name="eng_status_camera_failed_detail">প্ৰমাণ সংগ্ৰহ কৰিবলৈ কেমেৰাৰ অনুমতি দিয়ক</string>
+</resources>

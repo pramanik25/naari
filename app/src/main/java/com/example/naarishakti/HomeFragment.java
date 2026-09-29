@@ -100,6 +100,10 @@ public class HomeFragment extends Fragment {
     private int lastHoldStep;
     private boolean suppressSwitchEvents;
     private long startRequestedAt;
+    /** Safety tools card + live check-in/cab banner (journey module). */
+    @Nullable private com.example.naarishakti.journey.HomeJourneyEntry journeyEntry;
+    /** One-time "Help women near you?" card (cloud module). */
+    private com.example.naarishakti.cloud.NearbyHelperCard nearbyHelperCard;
 
     private final Runnable rerenderState = this::renderProtectionState;
 
@@ -118,6 +122,7 @@ public class HomeFragment extends Fragment {
         super.onCreate(savedInstanceState);
         micPermissionLauncher = registerForActivityResult(
                 new ActivityResultContracts.RequestMultiplePermissions(), this::onMicPermissionResult);
+        nearbyHelperCard = new com.example.naarishakti.cloud.NearbyHelperCard(this);
     }
 
     @Override
@@ -136,6 +141,8 @@ public class HomeFragment extends Fragment {
         setupNudges();
         setupQuickActions();
         setupRows();
+        journeyEntry = new com.example.naarishakti.journey.HomeJourneyEntry(view);
+        nearbyHelperCard.attach(view);
     }
 
     @Override
@@ -158,6 +165,7 @@ public class HomeFragment extends Fragment {
         LocalBroadcastManager.getInstance(requireContext()).unregisterReceiver(stateReceiver);
         stopPulse();
         cancelHold(false);
+        if (journeyEntry != null) journeyEntry.pause();
         super.onStop();
     }
 
@@ -168,6 +176,7 @@ public class HomeFragment extends Fragment {
         if (hidden) {
             stopPulse();
             cancelHold(false);
+            if (journeyEntry != null) journeyEntry.pause();
         } else {
             startPulse();
             refreshAll();
@@ -176,6 +185,9 @@ public class HomeFragment extends Fragment {
 
     @Override
     public void onDestroyView() {
+        if (journeyEntry != null) journeyEntry.pause();
+        journeyEntry = null;
+        nearbyHelperCard.detach();
         main.removeCallbacksAndMessages(null);
         stopPulse();
         if (holdAnimator != null) {
@@ -200,6 +212,8 @@ public class HomeFragment extends Fragment {
         renderNudges();
         binding.rowSchedule.subtitle.setText(TimeSettingsActivity.buildShortSummary(requireContext()));
         loadProfileAndVault();
+        nearbyHelperCard.render();
+        if (journeyEntry != null && !isHidden()) journeyEntry.resume();
     }
 
     // ------------------------------------------------------------------ header

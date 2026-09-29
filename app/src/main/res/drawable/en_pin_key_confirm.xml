@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Round "done" key: rose sphere. -->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="?attr/colorControlHighlight">
+    <item>
+        <shape android:shape="oval">
+            <gradient
+                android:angle="315"
+                android:startColor="@color/ns_rose"
+                android:endColor="@color/ns_rose_deep" />
+        </shape>
+    </item>
+</ripple>

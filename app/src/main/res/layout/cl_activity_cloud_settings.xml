@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ns_bg_gradient"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".cloud.CloudSettingsActivity">
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/clProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="gone"
+        app:indicatorColor="@color/ns_rose"
+        app:trackColor="@color/ns_surface_high" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/ns_gutter"
+            android:paddingTop="12dp"
+            android:paddingEnd="@dimen/ns_gutter"
+            android:paddingBottom="32dp">
+
+            <!-- ============ Header ============ -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/clBack"
+                style="@style/Ns.Button.Icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="@string/cl_back"
+                app:icon="@drawable/cl_ic_arrow_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/cl_settings_eyebrow"
+                android:textAppearance="@style/Ns.Text.Overline" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/cl_settings_title"
+                android:textAppearance="@style/Ns.Text.Headline" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/cl_settings_desc"
+                android:textAppearance="@style/Ns.Text.Body" />
+
+            <!-- ============ Inline error ============ -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/clErrorCard"
+                style="@style/Ns.Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"
+                app:cardBackgroundColor="@color/ns_danger_container"
+                app:strokeColor="@color/ns_danger"
+                tools:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingEnd="8dp"
+                    android:paddingBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/cl_ic_warning"
+                        app:tint="@color/ns_danger" />
+
+                    <TextView
+                        android:id="@+id/clErrorText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_weight="1"
+                        android:textAppearance="@style/Ns.Text.Body"
+                        android:textColor="@color/ns_text"
+                        tools:text="@string/cl_error_offline" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/clRetry"
+                        style="@style/Ns.Button.Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cl_retry" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- ============ Cloud off ============ -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/clOffCard"
+                style="@style/Ns.Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/ns_card_padding">
+
+                    <ImageView
+                        style="@style/Ns.IconBadge"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:backgroundTint="@color/ns_violet_container"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/cl_ic_cloud"
+                        app:tint="@color/ns_violet" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:text="@string/cl_off_title"
+                        android:textAppearance="@style/Ns.Text.Title" />
+
+                    <TextView
+                        android:id="@+id/clOffCaption"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:textAppearance="@style/Ns.Text.Body"
+                        tools:text="@string/cl_off_caption_deleted" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/clEnableCloud"
+                        style="@style/Ns.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/cl_enable_cloud"
+                        app:icon="@drawable/cl_ic_cloud"
+                        app:iconGravity="textStart" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Everything below needs a configured, enabled cloud. -->
+            <LinearLayout
+                android:id="@+id/clContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- ============ Status ============ -->
+                <TextView
+                    style="@style/Ns.SectionLabel"
+                    android:text="@string/cl_section_status" />
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/Ns.Card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingStart="@dimen/ns_card_padding"
+                        android:paddingTop="8dp"
+                        android:paddingEnd="@dimen/ns_card_padding"
+                        android:paddingBottom="8dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/cl_status_server"
+                                android:textAppearance="@style/Ns.Text.Body" />
+
+                            <ImageView
+                                android:id="@+id/clServerDot"
+                                android:layout_width="8dp"
+                                android:layout_height="8dp"
+                                android:importantForAccessibility="no"
+                                android:src="@drawable/ns_dot" />
+
+                            <TextView
+                                android:id="@+id/clServerValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:textAppearance="@style/Ns.Text.Label"
+                                android:textColor="@color/ns_text"
+                                tools:text="@string/cl_status_reachable" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/ns_stroke" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/cl_status_account"
+                                android:textAppearance="@style/Ns.Text.Body" />
+
+                            <ImageView
+                                android:id="@+id/clAccountDot"
+                                android:layout_width="8dp"
+                                android:layout_height="8dp"
+                                android:importantForAccessibility="no"
+                                android:src="@drawable/ns_dot" />
+
+                            <TextView
+                                android:id="@+id/clAccountValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:textAppearance="@style/Ns.Text.Label"
+                                android:textColor="@color/ns_text"
+                                tools:text="@string/cl_status_registered" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/ns_stroke" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/cl_status_pending"
+                                android:textAppearance="@style/Ns.Text.Body" />
+
+                            <TextView
+                                android:id="@+id/clPendingValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="@style/Ns.Text.Label"
+                                android:textColor="@color/ns_text" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- ============ Guardian code ============ -->
+                <TextView
+                    style="@style/Ns.SectionLabel"
+                    android:text="@string/cl_section_code" />
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/Ns.Card.Raised"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/ns_card_padding">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                style="@style/Ns.IconBadge"
+                                android:layout_width="44dp"
+                                android:layout_height="44dp"
+                                android:backgroundTint="@color/ns_gold_container"
+                                android:importantForAccessibility="no"
+                                android:src="@drawable/cl_ic_key"
+                                app:tint="@color/ns_gold" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_weight="1"
+                                android:text="@string/cl_code_caption"
+                                android:textAppearance="@style/Ns.Text.Caption"
+                                android:textColor="@color/ns_text_muted" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/clCode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:background="@drawable/cl_code_bg"
+                            android:fontFamily="monospace"
+                            android:gravity="center"
+                            android:letterSpacing="0.3"
+                            android:paddingTop="18dp"
+                            android:paddingBottom="18dp"
+                            android:textColor="@color/ns_gold"
+                            android:textIsSelectable="true"
+                            android:textSize="38sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/clCopy"
+                                style="@style/Ns.Button.Tonal"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/cl_copy"
+                                app:icon="@drawable/cl_ic_copy"
+                                app:iconGravity="textStart" />
+
+                            <Space
+                                android:layout_width="12dp"
+                                android:layout_height="0dp" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/clShare"
+                                style="@style/Ns.Button"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/cl_share"
+                                app:icon="@drawable/cl_ic_share"
+                                app:iconGravity="textStart" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- ============ Become a guardian ============ -->
+                <TextView
+                    style="@style/Ns.SectionLabel"
+                    android:text="@string/cl_section_link" />
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/Ns.Card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/ns_card_padding">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                style="@style/Ns.IconBadge"
+                                android:layout_width="44dp"
+                                android:layout_height="44dp"
+                                android:backgroundTint="@color/ns_rose_container"
+                                android:importantForAccessibility="no"
+                                android:src="@drawable/cl_ic_link"
+                                app:tint="@color/ns_rose" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_weight="1"
+                                android:text="@string/cl_link_caption"
+                                android:textAppearance="@style/Ns.Text.Caption"
+                                android:textColor="@color/ns_text_muted" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:gravity="top"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/clLinkLayout"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:hint="@string/cl_link_hint">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/clLinkInput"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="monospace"
+                                    android:imeOptions="actionDone"
+                                    android:importantForAutofill="no"
+                                    android:inputType="textCapCharacters|textNoSuggestions|textVisiblePassword"
+                                    android:maxLength="6" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/clLinkButton"
+                                style="@style/Ns.Button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="4dp"
+                                android:text="@string/cl_link_button" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- ============ People protecting you ============ -->
+                <TextView
+                    style="@style/Ns.SectionLabel"
+                    android:text="@string/cl_section_guardians" />
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/Ns.Card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp">
+
+                        <LinearLayout
+                            android:id="@+id/clGuardiansList"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:animateLayoutChanges="true"
+                            android:orientation="vertical" />
+
+                        <TextView
+                            android:id="@+id/clGuardiansEmpty"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="12dp"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/ns_card_padding"
+                            android:text="@string/cl_guardians_empty"
+                            android:textAppearance="@style/Ns.Text.Body"
+                            app:drawableStartCompat="@drawable/cl_ic_group"
+                            app:drawableTint="@color/ns_text_faint" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- ============ People you protect ============ -->
+                <TextView
+                    style="@style/Ns.SectionLabel"
+                    android:text="@string/cl_section_guarding" />
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/Ns.Card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp">
+
+                        <LinearLayout
+                            android:id="@+id/clGuardingList"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:animateLayoutChanges="true"
+                            android:orientation="vertical" />
+
+                        <TextView
+                            android:id="@+id/clGuardingEmpty"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="12dp"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/ns_card_padding"
+                            android:text="@string/cl_guarding_empty"
+                            android:textAppearance="@style/Ns.Text.Body"
+                            app:drawableStartCompat="@drawable/cl_ic_shield"
+                            app:drawableTint="@color/ns_text_faint" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- ============ Nearby helper ============ -->
+                <TextView
+                    style="@style/Ns.SectionLabel"
+                    android:text="@string/cl_section_helper" />
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/Ns.Card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/ns_card_padding">
+
+                        <ImageView
+                            style="@style/Ns.IconBadge"
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:backgroundTint="@color/ns_safe_container"
+                            android:importantForAccessibility="no"
+                            android:src="@drawable/cl_ic_helper"
+                            app:tint="@color/ns_safe" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginEnd="12dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/cl_helper_switch_title"
+                                android:textAppearance="@style/Ns.Text.Subtitle" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="@string/cl_helper_switch_caption"
+                                android:textAppearance="@style/Ns.Text.Caption" />
+                        </LinearLayout>
+
+                        <com.google.android.material.materialswitch.MaterialSwitch
+                            android:id="@+id/clHelperSwitch"
+                            style="@style/Ns.Switch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/cl_helper_switch_title" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- ============ Delete ============ -->
+                <TextView
+                    style="@style/Ns.SectionLabel"
+                    android:text="@string/cl_section_delete" />
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/Ns.Card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/ns_card_padding">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cl_delete_caption"
+                            android:textAppearance="@style/Ns.Text.Body" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/clDelete"
+                            style="@style/Ns.Button.Outlined"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="@string/cl_delete_button"
+                            android:textColor="@color/ns_danger"
+                            app:icon="@drawable/cl_ic_delete"
+                            app:iconGravity="textStart"
+                            app:iconTint="@color/ns_danger"
+                            app:strokeColor="@color/ns_danger" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

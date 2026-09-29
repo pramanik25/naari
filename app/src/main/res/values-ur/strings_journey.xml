@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ============ Common ============ -->
+    <string name="jr_back">واپس</string>
+    <string name="jr_cancel">منسوخ</string>
+    <string name="jr_ok">ٹھیک ہے</string>
+    <string name="jr_allow">اجازت دیں</string>
+    <string name="jr_allow_camera">کیمرے کی اجازت دیں</string>
+    <string name="jr_open_settings">سیٹنگز کھولیں</string>
+    <string name="jr_add_contacts">ایمرجنسی رابطے شامل کریں</string>
+    <string name="jr_recenter">نقشہ درمیان میں لائیں</string>
+    <string name="jr_sos">SOS</string>
+    <string name="jr_dash">—</string>
+    <string name="jr_list_separator">"، "</string>
+    <string name="jr_dot_separator">" · "</string>
+    <string name="jr_joined">%1$s · %2$s</string>
+    <string name="jr_distance_m">%1$d میٹر</string>
+    <string name="jr_distance_km">%1$.1f کلومیٹر</string>
+    <string name="jr_no_contacts_title">پہلے ایک رابطہ شامل کریں</string>
+    <string name="jr_no_contacts_body">کسی کو خبر نہیں ملے گی۔ کم از کم ایک ایمرجنسی رابطہ شامل کریں جسے کچھ غلط ہونے پر آپ کی خبر ملنی چاہیے۔</string>
+    <string name="jr_contacts_none">کوئی ایمرجنسی رابطہ نہیں</string>
+    <string name="jr_contacts_none_sub">ایمرجنسی رابطے شامل کریں تاکہ کسی کو خبر ملے۔</string>
+    <string name="jr_contacts_count">%1$d رابطوں کو خبردار کیا جائے گا</string>
+    <string name="jr_sms_denied">SMS کی اجازت بند ہے، اس لیے آپ کے رابطوں کو SMS نہیں گیا۔</string>
+    <string name="jr_journey_title">سفر میں حفاظت</string>
+
+    <!-- Notification channels -->
+    <string name="jr_channel_ongoing">جاری سفر</string>
+    <string name="jr_channel_ongoing_desc">چیک اِن ٹائمر یا کیب کا سفر چلنے کے دوران دکھتا ہے۔</string>
+    <string name="jr_channel_alerts">سفر کے الرٹ</string>
+    <string name="jr_channel_alerts_desc">چیک اِن کی یاد دہانیاں اور کیب کے سفر میں “سب ٹھیک ہے؟” کی جانچ۔</string>
+
+    <!-- ============ Safety tools hub ============ -->
+    <string name="jr_tools_eyebrow">حفاظتی ٹولز</string>
+    <string name="jr_tools_title">آپ کی حفاظتی ٹول کٹ</string>
+    <string name="jr_tools_body">سفر میں آپ کو محفوظ رکھنے، مشکل حالات سے نکلنے اور جو ہوا اسے ریکارڈ کرنے کے لیے سب کچھ۔</string>
+    <string name="jr_status_protection">تحفظ</string>
+    <string name="jr_status_pin">ایپ PIN</string>
+    <string name="jr_status_cloud">کلاؤڈ</string>
+    <string name="jr_status_on">آن</string>
+    <string name="jr_status_off">بند</string>
+    <string name="jr_status_pin_set">سیٹ ہے</string>
+    <string name="jr_status_pin_none">سیٹ نہیں</string>
+    <string name="jr_status_cloud_on">جڑا ہوا</string>
+    <string name="jr_status_cloud_pending">لنک نہیں</string>
+    <string name="jr_status_cloud_off">آف لائن</string>
+
+    <string name="jr_section_move">سفر میں</string>
+    <string name="jr_section_escape">نکلنے کے لیے</string>
+    <string name="jr_section_evidence">ثبوت</string>
+    <string name="jr_section_network">نیٹ ورک</string>
+    <string name="jr_section_settings">سیٹنگز</string>
+
+    <string name="jr_tile_checkin">چیک اِن ٹائمر</string>
+    <string name="jr_tile_checkin_cap">دیر ہو تو رابطوں کو خبر دیں</string>
+    <string name="jr_tile_checkin_active">جاری · %1$s باقی</string>
+    <string name="jr_tile_checkin_overdue">وقت گزر گیا · چیک اِن کے لیے ٹیپ کریں</string>
+    <string name="jr_tile_cab">کیب موڈ</string>
+    <string name="jr_tile_cab_cap">نمبر پلیٹ شیئر کریں، راستے پر نظر</string>
+    <string name="jr_tile_cab_active">سفر میں · %1$s</string>
+    <string name="jr_tile_meeting">کسی سے ملاقات</string>
+    <string name="jr_tile_meeting_cap">ڈیٹ، خریدار یا انٹرویو</string>
+    <string name="jr_tile_places">قریبی محفوظ جگہیں</string>
+    <string name="jr_tile_places_cap">پولیس، اسپتال، 24 گھنٹے کھلے</string>
+    <string name="jr_tile_fake_call">فرضی کال</string>
+    <string name="jr_tile_fake_call_cap">نکلنے کا ایک قابلِ یقین بہانہ</string>
+    <string name="jr_tile_silent">خاموش SOS</string>
+    <string name="jr_tile_silent_cap">سائرن نہیں، صرف الرٹ</string>
+    <string name="jr_tile_silent_on">آن · SOS خفیہ رہتا ہے</string>
+    <string name="jr_tile_incidents">واقعات کی تاریخ</string>
+    <string name="jr_tile_incidents_cap">پچھلے SOS اور ثبوت</string>
+    <string name="jr_tile_diary">نجی ڈائری</string>
+    <string name="jr_tile_diary_cap">تاریخ کے ساتھ لکھ لیں</string>
+    <string name="jr_tile_complaint">شکایت کا مسودہ</string>
+    <string name="jr_tile_complaint_cap">پولیس کے لیے تیار</string>
+    <string name="jr_tile_cloud">کلاؤڈ &amp; سرپرست</string>
+    <string name="jr_tile_cloud_cap">فون بند ہو جائے تب بھی کام کرنے والا بیک اپ</string>
+    <string name="jr_tile_ble">پینک بٹن</string>
+    <string name="jr_tile_ble_cap">Bluetooth بٹن جوڑیں</string>
+    <string name="jr_tile_settings">حفاظتی سیٹنگز</string>
+    <string name="jr_tile_settings_cap">SOS، ثبوت اور ٹرگرز</string>
+    <string name="jr_tile_pin">ایپ PIN &amp; زبردستی PIN</string>
+    <string name="jr_tile_pin_cap">ایپ لاک کریں، دکھاوے کا روکنا</string>
+    <string name="jr_tile_pin_cap_set">PIN سیٹ ہے · بدلنے کے لیے ٹیپ کریں</string>
+
+    <!-- Fake call sheet -->
+    <string name="jr_fake_eyebrow">نکلنے کے لیے</string>
+    <string name="jr_fake_title">فرضی کال شیڈول کریں</string>
+    <string name="jr_fake_body">آپ کے فون پر اصلی جیسی آنے والی کال بجے گی، تاکہ آپ کو وہاں سے ہٹنے کا بہانہ مل جائے۔</string>
+    <string name="jr_fake_name_hint">کال کرنے والے کا نام</string>
+    <string name="jr_fake_default_name">امی</string>
+    <string name="jr_fake_delay_label">کب بجے</string>
+    <string name="jr_fake_5s">5 سیکنڈ</string>
+    <string name="jr_fake_30s">30 سیکنڈ</string>
+    <string name="jr_fake_1m">1 منٹ</string>
+    <string name="jr_fake_5m">5 منٹ</string>
+    <string name="jr_fake_schedule">کال شیڈول کریں</string>
+    <string name="jr_fake_scheduled">%1$s میں فرضی کال</string>
+    <string name="jr_fake_cancelled">فرضی کال منسوخ ہو گئی</string>
+
+    <!-- ============ Safety settings ============ -->
+    <string name="jr_ss_eyebrow">حفاظتی سیٹنگز</string>
+    <string name="jr_ss_title">آپ کا SOS کیسے کام کرے</string>
+    <string name="jr_ss_body">تبدیلیاں فوراً محفوظ ہوتی ہیں۔ جن فیچرز کو اجازت چاہیے، وہ آن کرتے وقت اجازت مانگیں گے۔</string>
+    <string name="jr_ss_appearance">ظاہری شکل &amp; زبان</string>
+    <string name="jr_ss_appearance_sub">تھیم اور ایپ کی زبان</string>
+
+    <string name="jr_ss_section_sos">SOS کیسے کام کرے</string>
+    <string name="jr_ss_silent">خاموش SOS</string>
+    <string name="jr_ss_silent_sub">نہ سائرن، نہ اسکرین، نہ ٹارچ۔ رابطوں کو خبر دی جاتی ہے اور ثبوت خاموشی سے ریکارڈ ہوتا ہے۔</string>
+    <string name="jr_ss_strobe">ٹارچ فلیش</string>
+    <string name="jr_ss_strobe_sub">توجہ کھینچنے کے لیے تیز آواز والے SOS میں ٹارچ جلتی بجھتی رہے۔</string>
+    <string name="jr_ss_speak">بولا ہوا الرٹ</string>
+    <string name="jr_ss_speak_sub">سائرن کے بیچ میں زور سے “بچاؤ! پولیس کو بلائیں” بولے۔</string>
+    <string name="jr_ss_escalation">اگلے رابطے کو کال</string>
+    <string name="jr_ss_escalation_sub">اگر کوئی رابطہ کال نہ اٹھائے تو اگلے کو کال کرے۔ فون کی اجازت چاہیے۔</string>
+    <string name="jr_ss_112">آخر میں 112 پر کال</string>
+    <string name="jr_ss_112_sub">سب رابطوں کو آزمانے کے بعد ایمرجنسی سروسز کو کال کرے۔</string>
+    <string name="jr_ss_112_confirm_title">112 پر خود بخود کال کریں؟</string>
+    <string name="jr_ss_112_confirm_body">صرف تب آن کریں جب آپ مانتی ہوں کہ غلط الارم پر بھی ایمرجنسی سروسز کو کال جائے گی۔</string>
+
+    <string name="jr_ss_section_evidence">ثبوت</string>
+    <string name="jr_ss_audio">آڈیو ریکارڈ</string>
+    <string name="jr_ss_audio_sub">SOS کے دوران چھوٹے حصوں میں آواز ریکارڈ کر کے ہر حصہ اپ لوڈ کرے۔</string>
+    <string name="jr_ss_video">ویڈیو ریکارڈ</string>
+    <string name="jr_ss_video_sub">تصویروں کی جگہ ویڈیو۔ بہت زیادہ بیٹری اور ڈیٹا خرچ ہوتا ہے۔</string>
+    <string name="jr_ss_video_confirm_title">SOS کے دوران ویڈیو ریکارڈ کریں؟</string>
+    <string name="jr_ss_video_confirm_body">ویڈیو بیٹری جلدی ختم کرتی ہے اور بہت موبائل ڈیٹا لیتی ہے۔ عام طور پر تصویریں اور آڈیو کافی ہیں۔</string>
+    <string name="jr_ss_mobile">موبائل ڈیٹا پر اپ لوڈ</string>
+    <string name="jr_ss_mobile_sub">صرف Wi-Fi پر نہیں، ثبوت فوراً بھیجیں۔</string>
+
+    <string name="jr_ss_section_triggers">خودکار ٹرگرز</string>
+    <string name="jr_ss_scream">چیخ کی پہچان</string>
+    <string name="jr_ss_scream_sub">فون پر ہی چیخیں سنتا ہے۔ آڈیو کبھی محفوظ یا بھیجی نہیں جاتی۔</string>
+    <string name="jr_ss_fall">گرنے کی پہچان</string>
+    <string name="jr_ss_fall_sub">تحفظ آن ہو تو زور سے گرنے یا ہاتھا پائی کے بعد SOS شروع کرے۔</string>
+    <string name="jr_ss_headset">ہیڈسیٹ بٹن</string>
+    <string name="jr_ss_headset_sub">تار والے یا Bluetooth ہیڈسیٹ کا بٹن تین بار دبائیں۔</string>
+    <string name="jr_ss_volume">والیوم بٹن، اسکرین بند</string>
+    <string name="jr_ss_volume_sub">فون لاک ہو تب بھی والیوم بٹن سے SOS شروع کریں۔</string>
+    <string name="jr_ss_enable">آن کریں</string>
+    <string name="jr_ss_accessibility_on">ایکسیسبلٹی سروس آن ہے</string>
+    <string name="jr_ss_accessibility_off">ایکسیسبلٹی سروس بند ہے</string>
+    <string name="jr_ss_accessibility_title">ایکسیسبلٹی سروس آن کریں</string>
+    <string name="jr_ss_accessibility_body">اسکرین بند ہونے پر Android ایپس کو والیوم بٹن دبانا صرف ایکسیسبلٹی سروس کے ذریعے دیکھنے دیتا ہے۔ Naari Shakti اسے صرف بٹن دبانے کے لیے استعمال کرتی ہے اور کبھی آپ کی اسکرین نہیں پڑھتی۔ فہرست میں Naari Shakti ڈھونڈ کر آن کریں۔</string>
+    <string name="jr_ss_denied_accessibility">ایکسیسبلٹی سروس کے بغیر اسکرین بند ہونے پر والیوم بٹن SOS شروع نہیں کر سکتے، اس لیے اسے بند کر دیا گیا۔</string>
+    <string name="jr_ss_panic">پینک بٹن</string>
+    <string name="jr_ss_panic_none">جوڑا نہیں گیا · ایک چھوٹا Bluetooth بٹن جوڑیں</string>
+    <string name="jr_ss_panic_paired">جڑا ہوا: %1$s</string>
+
+    <string name="jr_ss_section_phone">فون کی حالت کے الرٹ</string>
+    <string name="jr_ss_shutdown">فون بند ہو گیا</string>
+    <string name="jr_ss_shutdown_sub">تحفظ کے دوران فون بند ہو تو آپ کی آخری لوکیشن SMS کرے۔</string>
+    <string name="jr_ss_battery">بیٹری تقریباً ختم</string>
+    <string name="jr_ss_battery_sub" formatted="false">بیٹری 5% تک گرے تو آپ کی آخری لوکیشن SMS کرے۔</string>
+    <string name="jr_ss_sim">SIM کارڈ بدلا گیا</string>
+    <string name="jr_ss_sim_sub">کوئی SIM بدلے تو آپ کے رابطوں کو خبر دے۔ فون کی اجازت چاہیے۔</string>
+
+    <string name="jr_ss_section_community">کمیونٹی</string>
+    <string name="jr_ss_mesh">آف لائن میش SOS</string>
+    <string name="jr_ss_mesh_sub">سگنل نہ ہو تو Bluetooth اور Wi-Fi کے ذریعے آپ کا SOS قریبی Naari Shakti فونز تک پہنچائے۔</string>
+    <string name="jr_ss_helper">قریبی مددگار</string>
+    <string name="jr_ss_helper_on">آن · آپ سے قریب کے لوگوں کی مدد کو کہا جا سکتا ہے</string>
+    <string name="jr_ss_helper_off">بند · قریب کے لوگوں کی مدد کے لیے رضاکار بنیں</string>
+
+    <string name="jr_ss_needs_access">اجازت چاہیے · دینے کے لیے ٹیپ کریں</string>
+    <string name="jr_ss_denied_title">%1$s بند ہے</string>
+    <string name="jr_ss_denied_body">اس اجازت کے بغیر %1$s کام نہیں کر سکتا، اس لیے اسے بند کر دیا گیا۔ آپ اسے کسی بھی وقت دوبارہ آن کر سکتی ہیں۔</string>
+
+    <!-- ============ Check-in timer ============ -->
+    <string name="jr_ci_eyebrow">چیک اِن ٹائمر</string>
+    <string name="jr_ci_title">محفوظ پہنچیں</string>
+    <string name="jr_ci_title_active">چیک اِن جاری ہے</string>
+    <string name="jr_ci_body">سیٹ کریں کہ آپ کب تک پہنچیں گی۔ اگر تب تک چیک اِن نہ کیا تو آپ کے رابطوں کو خود بخود خبر دی جائے گی، چاہے فون بند ہو جائے۔</string>
+    <string name="jr_ci_body_active">پہنچ کر “میں محفوظ ہوں” پر ٹیپ کریں۔ اور وقت چاہیے؟ 15 منٹ بڑھائیں۔</string>
+    <string name="jr_ci_section_time">اتنے وقت میں چیک اِن</string>
+    <string name="jr_ci_15">15 منٹ</string>
+    <string name="jr_ci_30">30 منٹ</string>
+    <string name="jr_ci_45">45 منٹ</string>
+    <string name="jr_ci_60">1 گھنٹہ</string>
+    <string name="jr_ci_custom">وقت چنیں</string>
+    <string name="jr_ci_custom_at">%1$s پر</string>
+    <string name="jr_ci_custom_title">اس وقت تک چیک اِن</string>
+    <string name="jr_ci_due_at">آپ کا چیک اِن کا وقت %1$s</string>
+    <string name="jr_ci_time_passed">یہ وقت گزر چکا ہے۔ بعد کا کوئی وقت چنیں۔</string>
+    <string name="jr_ci_section_note">رابطوں کے لیے نوٹ</string>
+    <string name="jr_ci_note_hint">آپ کہاں جا رہی ہیں؟</string>
+    <string name="jr_ci_note_placeholder">میٹرو سے پیدل گھر جا رہی ہوں</string>
+    <string name="jr_ci_section_contacts">کسے خبر دی جائے گی</string>
+    <string name="jr_ci_exact_alarm">“الارم &amp; یاد دہانیاں” کی اجازت دیں تاکہ چیک اِن ٹھیک وقت پر ہو۔</string>
+    <string name="jr_ci_cloud_on">سرور بیک اپ آن ہے: فون بند ہو یا سگنل چلا جائے تب بھی آپ کے رابطوں کو خبر ملے گی۔</string>
+    <string name="jr_ci_cloud_off">سرور بیک اپ بند ہے، اس لیے الرٹ اس فون کے آن رہنے پر منحصر ہے۔</string>
+    <string name="jr_ci_start">چیک اِن شروع کریں</string>
+    <string name="jr_ci_no_location">لوکیشن بند ہے: ٹائمر پھر بھی چلے گا، لیکن رابطے یہ نہیں دیکھ پائیں گے کہ آپ کہاں ہیں۔</string>
+    <string name="jr_ci_replace_title">جاری چیک اِن بدلیں؟</string>
+    <string name="jr_ci_replace_body">ایک چیک اِن پہلے سے جاری ہے۔ نیا شروع کرنے سے وہ ختم ہو جائے گا۔</string>
+    <string name="jr_ci_replace">بدلیں</string>
+
+    <string name="jr_ci_left_caption">باقی · %1$s تک</string>
+    <string name="jr_ci_overdue">وقت گزر گیا</string>
+    <string name="jr_ci_overdue_caption">SOS شروع ہو گیا</string>
+    <string name="jr_ci_status_active">اگر آپ نے چیک اِن نہ کیا تو آپ کے %1$d رابطوں کو خود بخود خبر دی جائے گی۔</string>
+    <string name="jr_ci_status_overdue">آپ کا چیک اِن رہ گیا اور SOS بھیج دیا گیا۔ محفوظ ہوں تو “میں محفوظ ہوں” پر ٹیپ کریں۔</string>
+    <string name="jr_ci_safe">میں محفوظ ہوں</string>
+    <string name="jr_ci_extend">+15 منٹ</string>
+    <string name="jr_ci_extended">چیک اِن %1$s تک بڑھا دیا گیا</string>
+    <string name="jr_ci_help">ابھی مدد چاہیے</string>
+    <string name="jr_ci_pin_title">چیک اِن کے لیے اپنا PIN درج کریں</string>
+    <string name="jr_ci_checked_out">محفوظ چیک اِن ہو گیا۔ آپ کے رابطوں کو خبر نہیں دی جائے گی۔</string>
+
+    <string name="jr_ci_warn_title">2 منٹ میں چیک اِن کا وقت</string>
+    <string name="jr_ci_warn_text">%1$s سے پہلے “میں محفوظ ہوں” پر ٹیپ کریں ورنہ رابطوں کو خبر دی جائے گی۔</string>
+    <string name="jr_ci_missed_title">چیک اِن رہ گیا · SOS بھیجا گیا</string>
+    <string name="jr_ci_missed_text">آپ کے رابطوں کو خبر دی جا رہی ہے۔ محفوظ ہوں تو “میں محفوظ ہوں” پر ٹیپ کریں۔</string>
+    <string name="jr_ci_ongoing_title">چیک اِن جاری ہے</string>
+    <string name="jr_ci_ongoing_title_overdue">چیک اِن کا وقت گزر گیا</string>
+    <string name="jr_ci_ongoing_text">%1$s تک</string>
+    <string name="jr_ci_ongoing_text_note">%1$s تک · %2$s</string>
+
+    <!-- ============ Cab mode ============ -->
+    <string name="jr_cab_eyebrow">کیب موڈ</string>
+    <string name="jr_cab_title">حفاظت کے ساتھ سفر</string>
+    <string name="jr_cab_body">نمبر پلیٹ اسکین کریں، آپ کے رابطوں کو کیب کی تفصیل اور لائیو لوکیشن مل جائے گی۔ اگر سفر راستے سے ہٹا تو ہم آپ کی خیریت پوچھیں گے۔</string>
+    <string name="jr_cab_section_plate">نمبر پلیٹ</string>
+    <string name="jr_cab_camera_cd">نمبر پلیٹ اسکین کرنے کے لیے کیمرا پری ویو</string>
+    <string name="jr_cab_scanning">کیمرا نمبر پلیٹ کی طرف کریں</string>
+    <string name="jr_cab_detected">%1$s پہچانا گیا</string>
+    <string name="jr_cab_camera_error">کیمرا دستیاب نہیں · پلیٹ ٹائپ کریں</string>
+    <string name="jr_cab_camera_needed">پلیٹ خود پڑھنے کے لیے کیمرے کی اجازت دیں، یا نیچے ٹائپ کریں۔</string>
+    <string name="jr_cab_plate_hint">نمبر پلیٹ</string>
+    <string name="jr_cab_plate_helper">فون پر پڑھی گئی۔ جانچ لیں کہ کیب سے میل کھاتی ہے۔</string>
+    <string name="jr_cab_plate_needed">کیب کی نمبر پلیٹ درج کریں</string>
+    <string name="jr_cab_rescan">صاف کر کے دوبارہ اسکین کریں</string>
+    <string name="jr_cab_section_ride">سفر کی تفصیل (اختیاری)</string>
+    <string name="jr_cab_driver_hint">ڈرائیور کا نام</string>
+    <string name="jr_cab_app_uber">Uber</string>
+    <string name="jr_cab_app_ola">Ola</string>
+    <string name="jr_cab_app_rapido">Rapido</string>
+    <string name="jr_cab_app_auto">آٹو</string>
+    <string name="jr_cab_app_other">دیگر</string>
+    <string name="jr_cab_section_dest">منزل</string>
+    <string name="jr_cab_map_cd">نقشہ۔ آپ کہاں جا رہی ہیں یہ سیٹ کرنے کے لیے ٹیپ کریں۔</string>
+    <string name="jr_cab_map_hint">منزل سیٹ کرنے کے لیے نقشے پر ٹیپ کریں</string>
+    <string name="jr_cab_dest_hint">منزل کا نام</string>
+    <string name="jr_cab_dest_generic">منزل</string>
+    <string name="jr_cab_contacts_note">آپ کے %1$d رابطوں کو SMS سے پلیٹ، سفر کی تفصیل اور لائیو لوکیشن کا لنک ملے گا۔</string>
+    <string name="jr_cab_start">سفر شروع کریں</string>
+    <string name="jr_cab_sms_sent">%1$d رابطوں کو سفر کی تفصیل بھیجی گئی</string>
+    <string name="jr_cab_no_location">لوکیشن بند ہے، اس لیے راستے پر نظر نہیں رکھی جا سکتی۔</string>
+
+    <string name="jr_cab_active_overline">سفر میں</string>
+    <string name="jr_cab_driver_label">ڈرائیور %1$s</string>
+    <string name="jr_cab_to_label">%1$s کی طرف</string>
+    <string name="jr_cab_elapsed">کیب میں وقت</string>
+    <string name="jr_cab_distance_left">باقی فاصلہ</string>
+    <string name="jr_cab_locating">لوکیشن تلاش ہو رہی ہے…</string>
+    <string name="jr_cab_monitor_on">آپ کے راستے پر نظر رکھی جا رہی ہے۔ کیب غلط سمت جائے یا بہت دیر رکے تو ہم آپ کی خیریت پوچھیں گے۔</string>
+    <string name="jr_cab_monitor_nodest">کوئی منزل سیٹ نہیں، اس لیے راستے پر نظر نہیں رکھی جا رہی۔ SOS بس ایک ٹیپ دور ہے۔</string>
+    <string name="jr_cab_monitor_near">آپ تقریباً پہنچ گئیں۔ رابطوں کو بتانے کے لیے “محفوظ پہنچ گئی” پر ٹیپ کریں۔</string>
+    <string name="jr_cab_monitor_prompt">آپ کی خیریت پوچھ رہے ہیں: %1$d سیکنڈ میں جواب دیں ورنہ SOS بھیجا جائے گا۔</string>
+    <string name="jr_cab_arrived">محفوظ پہنچ گئی</string>
+    <string name="jr_cab_arrived_sent">آپ کے رابطوں کو بتا دیا گیا کہ آپ محفوظ پہنچ گئیں۔</string>
+    <string name="jr_cab_end">سفر ختم کریں</string>
+    <string name="jr_cab_end_title">یہ سفر ختم کریں؟</string>
+    <string name="jr_cab_end_body">راستے کی نگرانی رک جائے گی۔ رابطوں کو SMS نہیں جائے گا۔</string>
+
+    <string name="jr_cab_prompt_title">سب ٹھیک ہے؟</string>
+    <string name="jr_cab_prompt_text">آپ کی کیب راستے سے ہٹ گئی ہے یا کچھ دیر سے رکی ہے۔ ایک منٹ میں جواب نہ دیا تو SOS بھیجا جائے گا۔</string>
+    <string name="jr_cab_prompt_dialog">آپ کی کیب راستے سے ہٹ گئی ہے یا کچھ دیر سے رکی ہے۔ جواب نہ دیا تو %1$d سیکنڈ میں SOS بھیجا جائے گا۔</string>
+    <string name="jr_cab_im_ok">میں ٹھیک ہوں</string>
+    <string name="jr_cab_near_title">آپ تقریباً پہنچ گئیں</string>
+    <string name="jr_cab_near_text">%1$s کے قریب۔ رابطوں کو بتائیں کہ آپ محفوظ پہنچ گئیں۔</string>
+    <string name="jr_cab_ongoing_title">کیب کا سفر · %1$s</string>
+    <string name="jr_cab_ongoing_title_noplate">کیب کا سفر</string>
+    <string name="jr_cab_ongoing_left">%1$s باقی · راستے پر نظر</string>
+    <string name="jr_cab_ongoing_locating">آپ کی لوکیشن تلاش ہو رہی ہے…</string>
+    <string name="jr_cab_ongoing_nodest">کوئی منزل سیٹ نہیں</string>
+
+    <!-- ============ Meeting mode ============ -->
+    <string name="jr_meet_eyebrow">کسی سے ملاقات</string>
+    <string name="jr_meet_title">حفاظت کے ساتھ ملیں</string>
+    <string name="jr_meet_body">ڈیٹ، خریدار یا بیچنے والا، انٹرویو۔ آپ کے رابطوں کو پتا ہوگا کس سے اور کہاں، اور ملاقات ختم ہونے تک چیک اِن چلے گا۔</string>
+    <string name="jr_meet_section_who">کون</string>
+    <string name="jr_meet_name_hint">اُن کا نام</string>
+    <string name="jr_meet_name_needed">اُن کا نام لکھیں</string>
+    <string name="jr_meet_contact_hint">فون یا پروفائل لنک</string>
+    <string name="jr_meet_photo_title">اُن کی تصویر (اختیاری)</string>
+    <string name="jr_meet_photo_caption">اسی فون پر نجی طور پر رکھی جاتی ہے۔</string>
+    <string name="jr_meet_photo_cd">جس سے آپ مل رہی ہیں اُن کی تصویر</string>
+    <string name="jr_meet_camera">کیمرا</string>
+    <string name="jr_meet_gallery">گیلری</string>
+    <string name="jr_meet_photo_saved">تصویر نجی طور پر محفوظ ہو گئی</string>
+    <string name="jr_meet_photo_failed">تصویر محفوظ نہیں ہو سکی</string>
+    <string name="jr_meet_no_camera">کوئی کیمرا ایپ دستیاب نہیں</string>
+    <string name="jr_meet_no_gallery">کوئی گیلری ایپ دستیاب نہیں</string>
+    <string name="jr_meet_camera_denied">کیمرے کی اجازت بند ہے۔</string>
+    <string name="jr_meet_section_where">کہاں</string>
+    <string name="jr_meet_map_cd">نقشہ۔ ملاقات کی جگہ سیٹ کرنے کے لیے ٹیپ کریں۔</string>
+    <string name="jr_meet_map_hint">نقشے پر ٹیپ کریں، یا اپنی لوکیشن استعمال کریں</string>
+    <string name="jr_meet_use_here">میری موجودہ لوکیشن استعمال کریں</string>
+    <string name="jr_meet_place_hint">جگہ کا نام</string>
+    <string name="jr_meet_section_until">کب تک</string>
+    <string name="jr_meet_ends_at">%1$s پر ختم</string>
+    <string name="jr_meet_end_caption">تب تک آپ کو چیک اِن کرنا ہوگا</string>
+    <string name="jr_meet_end_title">متوقع ختم ہونے کا وقت</string>
+    <string name="jr_meet_contacts_note">آپ کے %1$d رابطوں کو SMS سے خلاصہ ملے گا، پھر چیک اِن شروع ہوگا۔</string>
+    <string name="jr_meet_start">ملاقات کا چیک اِن شروع کریں</string>
+    <string name="jr_meet_note">%1$s سے ملاقات</string>
+    <string name="jr_meet_note_place">%2$s پر %1$s سے ملاقات</string>
+
+    <!-- ============ SMS bodies ============ -->
+    <string name="jr_sms_default_name">آپ کی دوست</string>
+    <string name="jr_sms_cab_start">Naari Shakti: %1$s کیب %2$s%3$s میں ہیں۔</string>
+    <string name="jr_sms_cab_details_app_driver">" (%1$s، ڈرائیور %2$s)"</string>
+    <string name="jr_sms_cab_details_app">" (%1$s)"</string>
+    <string name="jr_sms_cab_details_driver">" (ڈرائیور %1$s)"</string>
+    <string name="jr_sms_cab_going">%1$s کی طرف جا رہی ہیں۔</string>
+    <string name="jr_sms_live">لائیو: %1$s</string>
+    <string name="jr_sms_cab_arrived">Naari Shakti: %1$s بحفاظت %2$s پہنچ گئیں۔</string>
+    <string name="jr_sms_meet_intro">Naari Shakti: %1$s، %2$s سے مل رہی ہیں۔</string>
+    <string name="jr_sms_meet_contact">اُن کا رابطہ: %1$s۔</string>
+    <string name="jr_sms_meet_place">جگہ: %1$s %2$s</string>
+    <string name="jr_sms_meet_place_nolink">جگہ: %1$s۔</string>
+    <string name="jr_sms_meet_place_unknown">نہیں بتائی گئی</string>
+    <string name="jr_sms_meet_end">%1$s تک ختم ہونے کی امید ہے۔ اگر تب تک %2$s نے چیک اِن نہ کیا تو آپ کو خبر دی جائے گی۔</string>
+
+    <!-- ============ Safe places ============ -->
+    <string name="jr_sp_eyebrow">محفوظ جگہیں</string>
+    <string name="jr_sp_title">3 کلومیٹر کے اندر مدد</string>
+    <string name="jr_sp_body">آپ کے آس پاس تھانے، اسپتال، کلینک، دوا کی دکانیں اور پیٹرول پمپ۔ 24 گھنٹے کھلی جگہوں پر نشان لگا ہے۔</string>
+    <string name="jr_sp_refresh">ریفریش</string>
+    <string name="jr_sp_map_cd">آپ کے قریب محفوظ جگہوں کا نقشہ</string>
+    <string name="jr_sp_all">سب</string>
+    <string name="jr_sp_police">پولیس</string>
+    <string name="jr_sp_hospital">اسپتال</string>
+    <string name="jr_sp_clinic">کلینک</string>
+    <string name="jr_sp_pharmacy">دوا کی دکانیں</string>
+    <string name="jr_sp_fuel">پیٹرول پمپ</string>
+    <string name="jr_sp_type_police">تھانہ</string>
+    <string name="jr_sp_type_hospital">اسپتال</string>
+    <string name="jr_sp_type_clinic">کلینک</string>
+    <string name="jr_sp_type_pharmacy">دوا کی دکان</string>
+    <string name="jr_sp_type_fuel">پیٹرول پمپ</string>
+    <string name="jr_sp_open_24h">24 گھنٹے کھلا</string>
+    <string name="jr_sp_call">کال</string>
+    <string name="jr_sp_navigate">راستہ دکھائیں</string>
+    <string name="jr_sp_locating">آپ کی لوکیشن تلاش ہو رہی ہے…</string>
+    <string name="jr_sp_loading">قریبی جگہیں تلاش ہو رہی ہیں…</string>
+    <string name="jr_sp_summary">3 کلومیٹر کے اندر %1$d جگہیں، سب سے قریب پہلے</string>
+    <string name="jr_sp_summary_none">کوئی جگہ نہیں ملی</string>
+    <string name="jr_sp_empty">3 کلومیٹر کے اندر کچھ نہیں ملا۔ انٹرنیٹ ہو تو دوبارہ کوشش کریں۔</string>
+    <string name="jr_sp_empty_filter">3 کلومیٹر کے اندر اس قسم کی کوئی جگہ نہیں۔</string>
+    <string name="jr_sp_offline">آف لائن · %1$s کو محفوظ کی گئی جگہیں دکھائی جا رہی ہیں</string>
+    <string name="jr_sp_offline_nocache">آف لائن ہیں اور ابھی کچھ محفوظ نہیں۔ انٹرنیٹ سے جڑ کر ریفریش کریں۔</string>
+    <string name="jr_sp_no_location">لوکیشن بند ہے، اس لیے آپ کے آس پاس کی جگہیں تلاش نہیں ہو سکتیں۔</string>
+    <string name="jr_sp_marker">%1$s · %2$s</string>
+    <string name="jr_sp_attribution">نقشے کا ڈیٹا © OpenStreetMap معاونین</string>
+
+    <!-- ============ Home entry points ============ -->
+    <string name="jr_home_tools_title">حفاظتی ٹولز</string>
+    <string name="jr_home_tools_sub">چیک اِن ٹائمر، کیب موڈ، فرضی کال اور مزید</string>
+    <string name="jr_home_tools_cd">حفاظتی ٹولز کھولیں</string>
+    <string name="jr_home_checkin_title">چیک اِن جاری ہے</string>
+    <string name="jr_home_checkin_sub">%1$s باقی · %2$s تک</string>
+    <string name="jr_home_checkin_overdue">چیک اِن کا وقت گزر گیا</string>
+    <string name="jr_home_checkin_overdue_sub">SOS بھیجا گیا · محفوظ ہوں تو ٹیپ کریں</string>
+    <string name="jr_home_cab_title">کیب کا سفر · %1$s</string>
+    <string name="jr_home_cab_sub">%1$s باقی · کھولنے کے لیے ٹیپ کریں</string>
+    <string name="jr_home_cab_sub_nodist">سفر جاری ہے · کھولنے کے لیے ٹیپ کریں</string>
+
+    <!-- ============ Settings entry points ============ -->
+    <string name="jr_settings_section">حفاظتی ٹولز</string>
+    <string name="jr_settings_row_safety">حفاظتی سیٹنگز</string>
+    <string name="jr_settings_row_safety_sub">خاموش SOS، ثبوت، خودکار ٹرگرز</string>
+    <string name="jr_settings_row_pin">ایپ PIN &amp; زبردستی PIN</string>
+    <string name="jr_settings_row_pin_sub">ایپ لاک کریں اور SOS رکا ہوا دکھائیں</string>
+    <string name="jr_settings_row_cloud">کلاؤڈ &amp; سرپرست</string>
+    <string name="jr_settings_row_cloud_sub">سرور بیک اپ، سرپرست، قریبی مددگار</string>
+</resources>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ============================ Common ============================ -->
+    <string name="ev_cd_back">Back</string>
+    <string name="ev_cancel">Cancel</string>
+    <string name="ev_delete">Delete</string>
+    <string name="ev_share_unavailable">Sharing isn\'t available for this file yet.</string>
+    <string name="ev_no_app">No app found to open this.</string>
+    <string name="ev_pdf_page">Page %1$d</string>
+    <string name="ev_pdf_confidential">Private and confidential</string>
+    <string name="ev_pdf_failed">Couldn\'t create the PDF.</string>
+    <!-- "date · time" -->
+    <string name="ev_date_time">%1$s · %2$s</string>
+    <string name="ev_dur_seconds">%1$d s</string>
+    <string name="ev_dur_minutes">%1$d min</string>
+    <string name="ev_dur_hours">%1$d h %2$d min</string>
+    <!-- "3 photos · 5 audio clips · 0 videos" -->
+    <string name="ev_counts">%1$s · %2$s · %3$s</string>
+    <!-- Coordinates, always formatted with Latin digits and a dot decimal separator. -->
+    <string name="ev_latlng" translatable="false">%1$.5f, %2$.5f</string>
+    <!-- Source labels -->
+    <string name="ev_src_voice">Voice trigger</string>
+    <string name="ev_src_power">Power button</string>
+    <string name="ev_src_shake">Shake</string>
+    <string name="ev_src_sos_button">SOS button</string>
+    <string name="ev_src_scream">Scream detected</string>
+    <string name="ev_src_fall">Fall detected</string>
+    <string name="ev_src_ble_button">Panic button</string>
+    <string name="ev_src_headset">Headset button</string>
+    <string name="ev_src_checkin">Missed check-in</string>
+    <string name="ev_src_duress">Duress PIN</string>
+    <string name="ev_src_volume">Volume keys</string>
+    <string name="ev_src_geofence">Safe-zone alert</string>
+    <string name="ev_src_unknown">SOS</string>
+
+    <!-- ============================ Incidents ============================ -->
+    <string name="ev_inc_overline">Evidence vault</string>
+    <string name="ev_inc_title">Incident history</string>
+    <string name="ev_inc_body">Every SOS is kept here with its photos, audio and video. Each file carries a SHA-256 fingerprint that shows it hasn\'t been changed.</string>
+    <string name="ev_inc_empty_title">No incidents yet</string>
+    <string name="ev_inc_empty_body">When an SOS fires, the evidence recorded during it appears here.</string>
+    <string name="ev_inc_load_error">Couldn\'t load the incident history.</string>
+    <string name="ev_inc_in_progress">In progress</string>
+    <string name="ev_inc_duration_unknown">Duration unknown</string>
+    <string name="ev_inc_meta">%1$s · %2$s</string>
+    <string name="ev_chip_silent">Silent</string>
+    <string name="ev_chip_duress">Duress</string>
+    <plurals name="ev_count_photos">
+        <item quantity="one">%d photo</item>
+        <item quantity="other">%d photos</item>
+    </plurals>
+    <plurals name="ev_count_audio">
+        <item quantity="one">%d audio clip</item>
+        <item quantity="other">%d audio clips</item>
+    </plurals>
+    <plurals name="ev_count_videos">
+        <item quantity="one">%d video</item>
+        <item quantity="other">%d videos</item>
+    </plurals>
+    <plurals name="ev_inc_count">
+        <item quantity="one">%d incident</item>
+        <item quantity="other">%d incidents</item>
+    </plurals>
+    <string name="ev_upload_status">%1$d/%2$d uploaded · %3$d verified ✓</string>
+    <string name="ev_upload_local">%1$d files · kept on this phone</string>
+    <string name="ev_upload_none">No evidence files</string>
+    <string name="ev_action_export">Export</string>
+    <string name="ev_action_complaint">Complaint</string>
+    <string name="ev_action_delete">Delete</string>
+    <string name="ev_cd_expand">Show evidence</string>
+    <string name="ev_cd_collapse">Hide evidence</string>
+    <string name="ev_delete_title">Delete this incident?</string>
+    <string name="ev_delete_body">This permanently deletes %1$d evidence files from this phone. Copies already uploaded to the server are not affected.</string>
+    <string name="ev_delete_active">This SOS is still running. Stop it before deleting.</string>
+    <string name="ev_deleted">Incident deleted</string>
+    <string name="ev_exporting">Preparing the evidence package…</string>
+    <string name="ev_export_failed">Couldn\'t create the evidence package.</string>
+    <string name="ev_export_empty">This incident has no files to export.</string>
+    <string name="ev_export_chooser">Share evidence package</string>
+    <string name="ev_export_subject">Naari Shakti evidence package</string>
+    <string name="ev_kind_photo">Photo</string>
+    <string name="ev_kind_audio">Audio clip</string>
+    <string name="ev_kind_video">Video</string>
+    <string name="ev_item_title">%1$s · %2$s</string>
+    <string name="ev_hash_short">SHA-256 %1$s…</string>
+    <string name="ev_hash_copied">Full SHA-256 copied</string>
+    <string name="ev_hash_label">SHA-256</string>
+    <string name="ev_cd_copy_hash">Copy full SHA-256</string>
+    <string name="ev_cd_play">Play</string>
+    <string name="ev_cd_pause">Pause</string>
+    <string name="ev_item_verified">Uploaded · verified</string>
+    <string name="ev_item_unverified">Uploaded · not verified</string>
+    <string name="ev_item_pending">Waiting to upload</string>
+    <string name="ev_item_local">On this phone</string>
+    <string name="ev_item_missing">File missing</string>
+    <string name="ev_play_failed">Couldn\'t play this clip.</string>
+    <string name="ev_no_items">No files were recorded for this incident.</string>
+
+    <!-- ============================ Diary ============================ -->
+    <string name="ev_diary_overline">Private journal</string>
+    <string name="ev_diary_title">Incident diary</string>
+    <string name="ev_diary_body">Write down what happens, when it happens. Entries are encrypted on this phone and can be exported as a PDF for a lawyer or the police.</string>
+    <string name="ev_diary_empty_title">Your diary is empty</string>
+    <string name="ev_diary_empty_body">Notes written at the time, with dates, carry weight later. Add your first entry.</string>
+    <string name="ev_diary_add">New entry</string>
+    <string name="ev_diary_export">Export PDF</string>
+    <string name="ev_diary_pin_title">Unlock your diary</string>
+    <string name="ev_diary_locked_title">Diary locked</string>
+    <string name="ev_diary_locked_body">Enter your app PIN to open it.</string>
+    <string name="ev_diary_unlock">Unlock</string>
+    <string name="ev_diary_load_error">Couldn\'t open the diary on this phone.</string>
+    <string name="ev_diary_save_error">Couldn\'t save the entry.</string>
+    <string name="ev_diary_new_title">New entry</string>
+    <string name="ev_diary_edit_title">Edit entry</string>
+    <string name="ev_diary_field_title">Title</string>
+    <string name="ev_diary_field_body">What happened</string>
+    <string name="ev_diary_field_location">Place (optional)</string>
+    <string name="ev_diary_when">When</string>
+    <string name="ev_diary_use_location">Use my location</string>
+    <string name="ev_diary_attach">Attach photo</string>
+    <string name="ev_diary_replace_photo">Replace photo</string>
+    <string name="ev_diary_remove_photo">Remove photo</string>
+    <string name="ev_diary_save">Save</string>
+    <string name="ev_diary_edit">Edit</string>
+    <string name="ev_diary_title_required">Add a short title</string>
+    <string name="ev_diary_delete_title">Delete this entry?</string>
+    <string name="ev_diary_delete_body">The entry and its photo are removed from this phone and can\'t be recovered.</string>
+    <string name="ev_diary_deleted">Entry deleted</string>
+    <string name="ev_diary_saved">Entry saved</string>
+    <string name="ev_diary_no_location">No recent location on this phone. Type the place instead.</string>
+    <string name="ev_diary_photo_error">Couldn\'t attach that photo.</string>
+    <string name="ev_diary_photo_too_big">That photo is too large (max 25 MB).</string>
+    <string name="ev_diary_pdf_subtitle">Exported %1$s · %2$d entries</string>
+    <string name="ev_diary_pdf_chooser">Share diary PDF</string>
+    <string name="ev_diary_pdf_empty">Nothing to export yet.</string>
+    <string name="ev_diary_pdf_location">Place: %1$s</string>
+    <string name="ev_diary_pdf_written">Written %1$s</string>
+    <string name="ev_diary_untitled">Untitled</string>
+    <string name="ev_diary_photo_attached">Photo attached</string>
+    <string name="ev_cd_diary_photo">Attached photo</string>
+
+    <!-- ============================ Complaint ============================ -->
+    <string name="ev_cmp_overline">Complaint draft</string>
+    <string name="ev_cmp_title">Draft a complaint</string>
+    <string name="ev_cmp_body">A formal draft built from your profile and the incident record. Edit anything before you use it.</string>
+    <string name="ev_cmp_label_to">Address it to</string>
+    <string name="ev_cmp_label_lang">Language</string>
+    <string name="ev_cmp_to_sho">Police (SHO)</string>
+    <string name="ev_cmp_to_ncw">Women\'s Commission (NCW)</string>
+    <string name="ev_cmp_lang_en" translatable="false">English</string>
+    <string name="ev_cmp_lang_hi" translatable="false">हिन्दी</string>
+    <string name="ev_cmp_draft_hint">Complaint</string>
+    <string name="ev_cmp_section_use">Use it</string>
+    <string name="ev_cmp_section_file">File it</string>
+    <string name="ev_cmp_copy">Copy</string>
+    <string name="ev_cmp_share">Share</string>
+    <string name="ev_cmp_pdf">Save as PDF</string>
+    <string name="ev_cmp_ncw">NCW online complaint</string>
+    <string name="ev_cmp_ncw_body">National Commission for Women</string>
+    <string name="ev_cmp_cyber">cybercrime.gov.in</string>
+    <string name="ev_cmp_cyber_body">For online harassment, stalking or morphed photos</string>
+    <string name="ev_cmp_call">Call 112</string>
+    <string name="ev_cmp_call_body">Emergency response, any time</string>
+    <string name="ev_cmp_copied">Complaint copied</string>
+    <string name="ev_cmp_share_chooser">Share complaint</string>
+    <string name="ev_cmp_pdf_chooser">Save or share the complaint PDF</string>
+    <string name="ev_cmp_replace_title">Replace your edits?</string>
+    <string name="ev_cmp_replace_body">Changing this rebuilds the draft and your changes will be lost.</string>
+    <string name="ev_cmp_replace">Replace</string>
+    <string name="ev_cmp_note_title">A draft to help you, not legal advice</string>
+    <string name="ev_cmp_note_body">Read it through and change anything that isn\'t right. You can file a Zero FIR at any police station, wherever the incident happened; the police must register it and pass it to the right station. Ask for a free copy of your FIR.</string>
+    <string name="ev_cmp_incident_none">No incident selected: fill in the date, time and place yourself.</string>
+    <string name="ev_cmp_incident_from">Based on the incident of %1$s</string>
+    <string name="ev_cmp_pdf_title">Complaint</string>
+
+    <!-- ===================== Complaint template: English =====================
+         The two templates are the document content of the English / Hindi chips, so they are
+         not translated with the UI: each chip always produces its own language. -->
+    <string name="ev_tpl_en_to_sho" translatable="false">To,\nThe Station House Officer,\nPolice Station: ____________\nDistrict / City: ____________</string>
+    <string name="ev_tpl_en_to_ncw" translatable="false">To,\nThe Chairperson,\nNational Commission for Women,\nNew Delhi</string>
+    <string name="ev_tpl_en_date" translatable="false">Date: %1$s</string>
+    <string name="ev_tpl_en_subject_sho" translatable="false">Subject: Complaint about an incident on %1$s and request to register an FIR</string>
+    <string name="ev_tpl_en_subject_ncw" translatable="false">Subject: Complaint about an incident on %1$s and request for intervention</string>
+    <string name="ev_tpl_en_salutation" translatable="false">Respected Sir / Madam,</string>
+    <string name="ev_tpl_en_intro" translatable="false">I, %1$s, daughter of %2$s, residing at %3$s, mobile %4$s, respectfully submit the following complaint.</string>
+    <string name="ev_tpl_en_sec1" translatable="false">1. Complainant details</string>
+    <string name="ev_tpl_en_name" translatable="false">Name: %1$s</string>
+    <string name="ev_tpl_en_father" translatable="false">Father\'s / Husband\'s name: %1$s</string>
+    <string name="ev_tpl_en_address" translatable="false">Address: %1$s</string>
+    <string name="ev_tpl_blank" translatable="false">____________</string>
+    <string name="ev_tpl_en_address_pin" translatable="false">%1$s, PIN %2$s</string>
+    <string name="ev_tpl_en_mobile" translatable="false">Mobile: %1$s</string>
+    <string name="ev_tpl_en_occupation" translatable="false">Occupation: %1$s</string>
+    <string name="ev_tpl_en_sec2" translatable="false">2. Incident details</string>
+    <string name="ev_tpl_en_inc_date" translatable="false">Date: %1$s</string>
+    <string name="ev_tpl_en_inc_time_range" translatable="false">Time: from %1$s to %2$s</string>
+    <string name="ev_tpl_en_inc_time" translatable="false">Time: about %1$s</string>
+    <string name="ev_tpl_en_inc_place" translatable="false">Place: ____________</string>
+    <string name="ev_tpl_en_inc_place_gps" translatable="false">Place: ____________ (approximate GPS location recorded by my phone: %1$s, %2$s)</string>
+    <string name="ev_tpl_en_inc_alert" translatable="false">An emergency alert was sent from my phone at %1$s.</string>
+    <string name="ev_tpl_en_sec3" translatable="false">3. What happened</string>
+    <string name="ev_tpl_en_desc" translatable="false">[Describe in your own words what happened, in the order it happened. Include who was involved (name, or a description of the person or people), any vehicle number, what was said or done to you, any injury or loss, and the names of any witnesses.]</string>
+    <string name="ev_tpl_en_sec4" translatable="false">4. Evidence</string>
+    <string name="ev_tpl_en_ev_intro" translatable="false">My phone recorded the files below during the incident. The SHA-256 fingerprint of each file is given so that its integrity can be checked. I will provide the original files on request.</string>
+    <string name="ev_tpl_en_ev_none" translatable="false">[List any evidence you have: photos, recordings, messages, medical reports, witnesses.]</string>
+    <string name="ev_tpl_en_ev_item" translatable="false">%1$d. %2$s, recorded %3$s, %4$s\n   SHA-256: %5$s</string>
+    <string name="ev_tpl_en_ev_verified" translatable="false">\n   A copy was received and verified by the Naari Shakti server.</string>
+    <string name="ev_tpl_en_kind_photo" translatable="false">Photo</string>
+    <string name="ev_tpl_en_kind_audio" translatable="false">Audio recording</string>
+    <string name="ev_tpl_en_kind_video" translatable="false">Video recording</string>
+    <string name="ev_tpl_en_sec5" translatable="false">5. Request for action</string>
+    <string name="ev_tpl_en_request_sho" translatable="false">I request you to register an FIR under the relevant provisions of the Bharatiya Nyaya Sanhita, 2023 and other applicable laws, investigate the matter, take action against the person or persons responsible, and give me a free copy of the FIR. I also request protection if it is needed.</string>
+    <string name="ev_tpl_en_request_ncw" translatable="false">I request the Commission to take note of my complaint and direct the authorities concerned to register an FIR, investigate the matter and take action against the person or persons responsible, and to ensure my safety.</string>
+    <string name="ev_tpl_en_closing" translatable="false">Yours faithfully,</string>
+    <string name="ev_tpl_en_sign_date" translatable="false">Date: %1$s</string>
+    <string name="ev_tpl_en_sign_place" translatable="false">Place: ____________</string>
+
+    <!-- ===================== Complaint template: Hindi ===================== -->
+    <string name="ev_tpl_hi_to_sho" translatable="false">सेवा में,\nथाना प्रभारी (SHO) महोदय / महोदया,\nथाना: ____________\nज़िला / शहर: ____________</string>
+    <string name="ev_tpl_hi_to_ncw" translatable="false">सेवा में,\nअध्यक्ष महोदया,\nराष्ट्रीय महिला आयोग,\nनई दिल्ली</string>
+    <string name="ev_tpl_hi_date" translatable="false">दिनांक: %1$s</string>
+    <string name="ev_tpl_hi_subject_sho" translatable="false">विषय: दिनांक %1$s को हुई घटना के संबंध में शिकायत एवं प्राथमिकी (FIR) दर्ज करने हेतु प्रार्थना-पत्र</string>
+    <string name="ev_tpl_hi_subject_ncw" translatable="false">विषय: दिनांक %1$s को हुई घटना के संबंध में शिकायत एवं हस्तक्षेप हेतु प्रार्थना-पत्र</string>
+    <string name="ev_tpl_hi_salutation" translatable="false">महोदय / महोदया,</string>
+    <string name="ev_tpl_hi_intro" translatable="false">मैं, %1$s, पुत्री %2$s, निवासी %3$s, मोबाइल %4$s, आपके समक्ष निम्नलिखित शिकायत सादर प्रस्तुत करती हूँ।</string>
+    <string name="ev_tpl_hi_sec1" translatable="false">1. शिकायतकर्ता का विवरण</string>
+    <string name="ev_tpl_hi_name" translatable="false">नाम: %1$s</string>
+    <string name="ev_tpl_hi_father" translatable="false">पिता / पति का नाम: %1$s</string>
+    <string name="ev_tpl_hi_address" translatable="false">पता: %1$s</string>
+    <string name="ev_tpl_hi_address_pin" translatable="false">%1$s, पिन %2$s</string>
+    <string name="ev_tpl_hi_mobile" translatable="false">मोबाइल: %1$s</string>
+    <string name="ev_tpl_hi_occupation" translatable="false">व्यवसाय: %1$s</string>
+    <string name="ev_tpl_hi_sec2" translatable="false">2. घटना का विवरण</string>
+    <string name="ev_tpl_hi_inc_date" translatable="false">दिनांक: %1$s</string>
+    <string name="ev_tpl_hi_inc_time_range" translatable="false">समय: %1$s से %2$s तक</string>
+    <string name="ev_tpl_hi_inc_time" translatable="false">समय: लगभग %1$s</string>
+    <string name="ev_tpl_hi_inc_place" translatable="false">स्थान: ____________</string>
+    <string name="ev_tpl_hi_inc_place_gps" translatable="false">स्थान: ____________ (मेरे फ़ोन द्वारा दर्ज अनुमानित GPS स्थान: %1$s, %2$s)</string>
+    <string name="ev_tpl_hi_inc_alert" translatable="false">%1$s बजे मेरे फ़ोन से आपातकालीन सूचना (SOS) भेजी गई।</string>
+    <string name="ev_tpl_hi_sec3" translatable="false">3. घटना का विवरण (अपने शब्दों में)</string>
+    <string name="ev_tpl_hi_desc" translatable="false">[यहाँ अपने शब्दों में, क्रम से लिखें कि क्या हुआ। कौन शामिल था (नाम, या व्यक्ति/व्यक्तियों का हुलिया), वाहन संख्या यदि हो, आपके साथ क्या कहा या किया गया, कोई चोट या नुकसान, और गवाहों के नाम लिखें।]</string>
+    <string name="ev_tpl_hi_sec4" translatable="false">4. साक्ष्य</string>
+    <string name="ev_tpl_hi_ev_intro" translatable="false">घटना के दौरान मेरे फ़ोन ने नीचे दी गई फ़ाइलें रिकॉर्ड कीं। प्रत्येक फ़ाइल का SHA-256 फ़िंगरप्रिंट दिया गया है, जिससे उसकी प्रामाणिकता जाँची जा सकती है। माँगे जाने पर मैं मूल फ़ाइलें उपलब्ध कराऊँगी।</string>
+    <string name="ev_tpl_hi_ev_none" translatable="false">[आपके पास जो भी साक्ष्य हों, उन्हें लिखें: फ़ोटो, रिकॉर्डिंग, संदेश, मेडिकल रिपोर्ट, गवाह।]</string>
+    <string name="ev_tpl_hi_ev_item" translatable="false">%1$d. %2$s, रिकॉर्ड समय %3$s, %4$s\n   SHA-256: %5$s</string>
+    <string name="ev_tpl_hi_ev_verified" translatable="false">\n   इसकी एक प्रति Naari Shakti सर्वर द्वारा प्राप्त एवं सत्यापित की गई।</string>
+    <string name="ev_tpl_hi_kind_photo" translatable="false">फ़ोटो</string>
+    <string name="ev_tpl_hi_kind_audio" translatable="false">ऑडियो रिकॉर्डिंग</string>
+    <string name="ev_tpl_hi_kind_video" translatable="false">वीडियो रिकॉर्डिंग</string>
+    <string name="ev_tpl_hi_sec5" translatable="false">5. कार्रवाई हेतु प्रार्थना</string>
+    <string name="ev_tpl_hi_request_sho" translatable="false">अतः आपसे निवेदन है कि भारतीय न्याय संहिता, 2023 एवं अन्य लागू कानूनों की संबंधित धाराओं के अंतर्गत प्राथमिकी (FIR) दर्ज कर मामले की जाँच करें, दोषी व्यक्ति/व्यक्तियों के विरुद्ध उचित कार्रवाई करें तथा मुझे FIR की निःशुल्क प्रति प्रदान करें। आवश्यकता होने पर मुझे सुरक्षा भी प्रदान करें।</string>
+    <string name="ev_tpl_hi_request_ncw" translatable="false">अतः आयोग से निवेदन है कि मेरी शिकायत का संज्ञान लेकर संबंधित अधिकारियों को FIR दर्ज करने, मामले की जाँच करने एवं दोषी व्यक्ति/व्यक्तियों के विरुद्ध उचित कार्रवाई करने का निर्देश दें, तथा मेरी सुरक्षा सुनिश्चित करें।</string>
+    <string name="ev_tpl_hi_closing" translatable="false">भवदीया,</string>
+    <string name="ev_tpl_hi_sign_date" translatable="false">दिनांक: %1$s</string>
+    <string name="ev_tpl_hi_sign_place" translatable="false">स्थान: ____________</string>
+</resources>

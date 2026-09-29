@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Strings owned by the SOS engine v2: silent SOS, duress PIN, PIN screen, fake call, call
+     escalation, strobe / spoken alert and the offline mesh. SMS bodies stay short and use
+     plain characters so each part fits one SMS in English. -->
+<resources>
+
+    <!-- Silent SOS: low-key notification and covert screen -->
+    <string name="en_covert_title">Naari Shakti · sharing location</string>
+    <string name="en_covert_text">Tap to manage</string>
+    <string name="en_covert_overline">Naari Shakti</string>
+    <string name="en_covert_heading">Sharing your location</string>
+    <string name="en_covert_body">Your trusted contacts are receiving your live location.</string>
+    <string name="en_covert_hold">Hold to stop sharing</string>
+    <string name="en_covert_hint">Press and hold for 2 seconds.</string>
+    <string name="en_covert_close">Close</string>
+
+    <!-- SMS (plain characters only) -->
+    <string name="en_sms_tracking_line">Live location &amp; evidence: %1$s</string>
+    <string name="en_sms_duress">Naari Shakti: %1$s may have been forced to cancel the alert. Treat this as still active. Live location: %2$s</string>
+    <string name="en_sms_duress_no_link">Naari Shakti: %1$s may have been forced to cancel the alert. Treat this as still active. Location will follow.</string>
+    <string name="en_duress_name_fallback">Your contact</string>
+
+    <!-- Spoken alert (text to speech, loud) -->
+    <string name="en_spoken_alert">Help! I need help! Call the police!</string>
+
+    <!-- Protection notification -->
+    <string name="en_action_fake_call">Fake call in %1$d s</string>
+
+    <!-- SOS screen: calls -->
+    <string name="en_call_112">Emergency 112</string>
+    <string name="en_status_call_progress">Calling %1$s (%2$d of %3$d)</string>
+    <string name="en_status_call_progress_detail">If there’s no answer, the next contact is called</string>
+    <string name="en_status_call_connected">Connected to %1$s</string>
+    <string name="en_status_call_connected_detail">Call answered · stay on the line if you can</string>
+    <string name="en_status_call_no_answer">No one answered</string>
+    <string name="en_status_call_no_answer_detail">Your contacts still received the SMS alert</string>
+
+    <!-- SOS screen: siren row -->
+    <string name="en_status_siren_detail_strobe">Full volume · flashlight strobe</string>
+    <string name="en_status_siren_detail_voice">Full volume · spoken alert</string>
+    <string name="en_status_siren_detail_both">Full volume · strobe · spoken alert</string>
+
+    <!-- SOS screen: video evidence -->
+    <string name="en_status_video">Recording video</string>
+    <string name="en_status_video_detail">Evidence video is saved and uploaded</string>
+
+    <!-- SOS screen: PIN pad and stopped confirmation -->
+    <string name="en_pin_stop_title">Enter your PIN to stop</string>
+    <string name="en_pin_stop_subtitle">Your SOS stays active until your PIN is entered.</string>
+    <string name="en_pin_back_to_sos">Back to SOS</string>
+    <string name="en_pin_locked_hint">Too many wrong PIN attempts. Your SOS continues. Try again in %1$d s.</string>
+    <string name="en_stopped_title">SOS stopped</string>
+    <string name="en_stopped_body">You’re marked safe. Protection stays on.</string>
+
+    <!-- PIN pad -->
+    <string name="en_pin_key_delete">Delete</string>
+    <string name="en_pin_key_done">Done</string>
+    <plurals name="en_pin_digits_entered">
+        <item quantity="one">%d digit entered</item>
+        <item quantity="other">%d digits entered</item>
+    </plurals>
+    <plurals name="en_pin_attempts_left">
+        <item quantity="one">Wrong PIN · %d attempt left</item>
+        <item quantity="other">Wrong PIN · %d attempts left</item>
+    </plurals>
+
+    <!-- PIN screen -->
+    <string name="en_back">Back</string>
+    <string name="en_cancel">Cancel</string>
+    <string name="en_pin_lockout">Too many attempts. Try again in %1$d s.</string>
+    <string name="en_pin_verify_title">Enter your PIN</string>
+    <string name="en_pin_verify_subtitle">Enter your Naari Shakti PIN to continue.</string>
+    <string name="en_pin_current_title">Enter current PIN</string>
+    <string name="en_pin_current_subtitle">Confirm it’s you before changing your PIN.</string>
+    <string name="en_pin_manage_title">App PIN</string>
+    <string name="en_pin_manage_subtitle">Your PIN is needed to stop an SOS.</string>
+    <string name="en_pin_duress_status_on">Your app PIN is on and a duress PIN is set.</string>
+    <string name="en_pin_duress_status_off">Your app PIN is on. No duress PIN is set.</string>
+    <string name="en_pin_change">Change PINs</string>
+    <string name="en_pin_remove">Remove PIN</string>
+    <string name="en_pin_new_title">Create a PIN</string>
+    <string name="en_pin_new_subtitle">Choose 4 to 6 digits. You’ll need it to stop an SOS.</string>
+    <string name="en_pin_confirm_title">Confirm your PIN</string>
+    <string name="en_pin_confirm_subtitle">Enter the same PIN again.</string>
+    <string name="en_pin_mismatch">PINs didn’t match. Try again.</string>
+    <string name="en_pin_duress_title">Add a duress PIN?</string>
+    <string name="en_pin_duress_subtitle">A second, secret PIN for when someone forces you to cancel.</string>
+    <string name="en_pin_duress_body">If someone forces you to stop an SOS, enter your duress PIN instead of your real PIN.\n\nThe phone will look exactly as if the SOS was cancelled: the siren, flashlight and SOS screen stop.\n\nSecretly, your contacts keep receiving your live location, evidence keeps recording, and they get a message that you may have been forced to cancel. No “I’m safe” message is sent.</string>
+    <string name="en_pin_duress_set">Set duress PIN</string>
+    <string name="en_pin_duress_skip">Skip — no duress PIN</string>
+    <string name="en_pin_duress_new_title">Create a duress PIN</string>
+    <string name="en_pin_duress_new_subtitle">4 to 6 digits, different from your app PIN.</string>
+    <string name="en_pin_duress_confirm_title">Confirm duress PIN</string>
+    <string name="en_pin_duress_same">Must be different from your app PIN</string>
+    <string name="en_pin_saved">PIN saved</string>
+    <string name="en_pin_saved_duress">PIN and duress PIN saved</string>
+    <string name="en_pin_save_failed">Couldn’t save the PIN. Try again.</string>
+    <string name="en_pin_removed">PIN removed</string>
+    <string name="en_pin_remove_confirm_title">Remove PIN?</string>
+    <string name="en_pin_remove_confirm_body">Anyone holding your phone will be able to stop an SOS. Your duress PIN will be removed too.</string>
+    <string name="en_pin_remove_confirm_ok">Remove</string>
+
+    <!-- Fake incoming call -->
+    <string name="en_channel_fake_call">Scheduled calls</string>
+    <string name="en_channel_fake_call_desc">Incoming call screen you scheduled yourself.</string>
+    <string name="en_fake_default_name">Papa</string>
+    <string name="en_fake_call_scheduled">Incoming call in %1$d s</string>
+    <string name="en_fake_incoming">Incoming call</string>
+    <string name="en_fake_mobile">Mobile</string>
+    <string name="en_fake_answer">Answer</string>
+    <string name="en_fake_decline">Decline</string>
+    <string name="en_fake_swipe_hint">Swipe up to answer</string>
+    <string name="en_fake_mute">Mute</string>
+    <string name="en_fake_keypad">Keypad</string>
+    <string name="en_fake_speaker">Speaker</string>
+    <string name="en_fake_end">End call</string>
+    <string name="en_fake_ended">Call ended</string>
+
+    <!-- Offline mesh alert (on the helper's phone) -->
+    <string name="en_mesh_title">Someone nearby needs help — about %1$s away</string>
+    <string name="en_mesh_title_unknown">Someone nearby needs help</string>
+    <string name="en_mesh_text">%1$s sent an SOS %2$s. Tap to see where.</string>
+    <string name="en_mesh_someone">Someone</string>
+    <string name="en_mesh_just_now">just now</string>
+    <plurals name="en_mesh_minutes_ago">
+        <item quantity="one">%d min ago</item>
+        <item quantity="other">%d min ago</item>
+    </plurals>
+    <string name="en_mesh_open_map">Open map</string>
+    <string name="en_mesh_call_112">Call 112</string>
+    <string name="en_mesh_distance_m">%1$d m</string>
+    <string name="en_mesh_distance_km">%1$s km</string>
+</resources>

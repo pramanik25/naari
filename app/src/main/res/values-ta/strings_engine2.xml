@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Silent SOS: low-key notification and covert screen -->
+    <string name="en_covert_title">Naari Shakti · இருப்பிடம் பகிரப்படுகிறது</string>
+    <string name="en_covert_text">நிர்வகிக்கத் தட்டவும்</string>
+    <string name="en_covert_overline">Naari Shakti</string>
+    <string name="en_covert_heading">உங்கள் இருப்பிடம் பகிரப்படுகிறது</string>
+    <string name="en_covert_body">நீங்கள் நம்பும் தொடர்புகளுக்கு உங்கள் நேரலை இருப்பிடம் சென்றுகொண்டிருக்கிறது.</string>
+    <string name="en_covert_hold">பகிர்வை நிறுத்தப் பிடிக்கவும்</string>
+    <string name="en_covert_hint">2 வினாடி அழுத்திப் பிடிக்கவும்.</string>
+    <string name="en_covert_close">மூடு</string>
+
+    <!-- SMS -->
+    <string name="en_sms_tracking_line">நேரலை இருப்பிடம் &amp; ஆதாரம்: %1$s</string>
+    <string name="en_sms_duress">Naari Shakti: %1$s எச்சரிக்கையை ரத்துசெய்ய வற்புறுத்தப்பட்டிருக்கலாம். இது இன்னும் செயலில் உள்ளதாகக் கருதுங்கள். நேரலை இருப்பிடம்: %2$s</string>
+    <string name="en_sms_duress_no_link">Naari Shakti: %1$s எச்சரிக்கையை ரத்துசெய்ய வற்புறுத்தப்பட்டிருக்கலாம். இது இன்னும் செயலில் உள்ளதாகக் கருதுங்கள். இருப்பிடம் பின்னர் வரும்.</string>
+    <string name="en_duress_name_fallback">உங்கள் தொடர்பு</string>
+
+    <!-- Spoken alert (text to speech, loud) -->
+    <string name="en_spoken_alert">உதவி! எனக்கு உதவி வேண்டும்! போலீஸைக் கூப்பிடுங்கள்!</string>
+
+    <!-- Protection notification -->
+    <string name="en_action_fake_call">%1$d வி-இல் போலி அழைப்பு</string>
+
+    <!-- SOS screen: calls -->
+    <string name="en_call_112">அவசர எண் 112</string>
+    <string name="en_status_call_progress">%1$s-ஐ அழைக்கிறது (%3$d-இல் %2$d)</string>
+    <string name="en_status_call_progress_detail">பதில் இல்லையெனில், அடுத்த தொடர்பு அழைக்கப்படுவார்</string>
+    <string name="en_status_call_connected">%1$s-உடன் இணைக்கப்பட்டது</string>
+    <string name="en_status_call_connected_detail">அழைப்பு ஏற்கப்பட்டது · முடிந்தால் லைனில் இருங்கள்</string>
+    <string name="en_status_call_no_answer">யாரும் பதிலளிக்கவில்லை</string>
+    <string name="en_status_call_no_answer_detail">உங்கள் தொடர்புகளுக்கு SMS எச்சரிக்கை சென்றுவிட்டது</string>
+
+    <!-- SOS screen: siren row -->
+    <string name="en_status_siren_detail_strobe">முழு ஒலியளவு · டார்ச் மின்னல்</string>
+    <string name="en_status_siren_detail_voice">முழு ஒலியளவு · குரல் எச்சரிக்கை</string>
+    <string name="en_status_siren_detail_both">முழு ஒலியளவு · மின்னல் · குரல் எச்சரிக்கை</string>
+
+    <!-- SOS screen: video evidence -->
+    <string name="en_status_video">வீடியோ பதிவாகிறது</string>
+    <string name="en_status_video_detail">ஆதார வீடியோ சேமிக்கப்பட்டுப் பதிவேற்றப்படுகிறது</string>
+
+    <!-- SOS screen: PIN pad and stopped confirmation -->
+    <string name="en_pin_stop_title">நிறுத்த உங்கள் PIN-ஐ உள்ளிடவும்</string>
+    <string name="en_pin_stop_subtitle">PIN உள்ளிடும் வரை உங்கள் SOS செயலில் இருக்கும்.</string>
+    <string name="en_pin_back_to_sos">SOS-க்குத் திரும்பு</string>
+    <string name="en_pin_locked_hint">பல முறை தவறான PIN. உங்கள் SOS தொடர்கிறது. %1$d வி கழித்து முயலவும்.</string>
+    <string name="en_stopped_title">SOS நிறுத்தப்பட்டது</string>
+    <string name="en_stopped_body">நீங்கள் பாதுகாப்பாக இருப்பதாகக் குறிக்கப்பட்டது. பாதுகாப்பு தொடர்ந்து இயங்கும்.</string>
+
+    <!-- PIN pad -->
+    <string name="en_pin_key_delete">நீக்கு</string>
+    <string name="en_pin_key_done">முடிந்தது</string>
+    <plurals name="en_pin_digits_entered">
+        <item quantity="one">%d இலக்கம் உள்ளிடப்பட்டது</item>
+        <item quantity="other">%d இலக்கங்கள் உள்ளிடப்பட்டன</item>
+    </plurals>
+    <plurals name="en_pin_attempts_left">
+        <item quantity="one">தவறான PIN · %d முயற்சி மீதம்</item>
+        <item quantity="other">தவறான PIN · %d முயற்சிகள் மீதம்</item>
+    </plurals>
+
+    <!-- PIN screen -->
+    <string name="en_back">பின்செல்</string>
+    <string name="en_cancel">ரத்துசெய்</string>
+    <string name="en_pin_lockout">பல முயற்சிகள். %1$d வி கழித்து முயலவும்.</string>
+    <string name="en_pin_verify_title">உங்கள் PIN-ஐ உள்ளிடவும்</string>
+    <string name="en_pin_verify_subtitle">தொடர உங்கள் Naari Shakti PIN-ஐ உள்ளிடவும்.</string>
+    <string name="en_pin_current_title">தற்போதைய PIN-ஐ உள்ளிடவும்</string>
+    <string name="en_pin_current_subtitle">PIN-ஐ மாற்றும் முன் இது நீங்கள்தான் என உறுதிசெய்யவும்.</string>
+    <string name="en_pin_manage_title">ஆப்ஸ் PIN</string>
+    <string name="en_pin_manage_subtitle">SOS-ஐ நிறுத்த உங்கள் PIN தேவை.</string>
+    <string name="en_pin_duress_status_on">ஆப்ஸ் PIN இயக்கத்தில் உள்ளது, நிர்ப்பந்த PIN அமைக்கப்பட்டுள்ளது.</string>
+    <string name="en_pin_duress_status_off">ஆப்ஸ் PIN இயக்கத்தில் உள்ளது. நிர்ப்பந்த PIN அமைக்கப்படவில்லை.</string>
+    <string name="en_pin_change">PIN-களை மாற்று</string>
+    <string name="en_pin_remove">PIN-ஐ அகற்று</string>
+    <string name="en_pin_new_title">PIN உருவாக்கவும்</string>
+    <string name="en_pin_new_subtitle">4 முதல் 6 இலக்கங்களைத் தேர்வுசெய்யவும். SOS-ஐ நிறுத்த இது தேவைப்படும்.</string>
+    <string name="en_pin_confirm_title">உங்கள் PIN-ஐ உறுதிசெய்யவும்</string>
+    <string name="en_pin_confirm_subtitle">அதே PIN-ஐ மீண்டும் உள்ளிடவும்.</string>
+    <string name="en_pin_mismatch">PIN-கள் பொருந்தவில்லை. மீண்டும் முயலவும்.</string>
+    <string name="en_pin_duress_title">நிர்ப்பந்த PIN சேர்க்கவா?</string>
+    <string name="en_pin_duress_subtitle">யாராவது உங்களை ரத்துசெய்ய வற்புறுத்தும்போது பயன்படுத்த, இரண்டாவது ரகசிய PIN.</string>
+    <string name="en_pin_duress_body">யாராவது SOS-ஐ நிறுத்தும்படி உங்களை வற்புறுத்தினால், உண்மையான PIN-க்குப் பதிலாக நிர்ப்பந்த PIN-ஐ உள்ளிடவும்.\n\nSOS ரத்தானது போலவே ஃபோன் தோன்றும்: சைரன், டார்ச், SOS திரை நின்றுவிடும்.\n\nஆனால் ரகசியமாக, உங்கள் தொடர்புகளுக்கு நேரலை இருப்பிடம் தொடர்ந்து செல்லும், ஆதாரப் பதிவு தொடரும், நீங்கள் ரத்துசெய்ய வற்புறுத்தப்பட்டிருக்கலாம் என்ற செய்தியும் அவர்களுக்குச் செல்லும். “நான் பாதுகாப்பாக உள்ளேன்” செய்தி அனுப்பப்படாது.</string>
+    <string name="en_pin_duress_set">நிர்ப்பந்த PIN அமை</string>
+    <string name="en_pin_duress_skip">தவிர் — நிர்ப்பந்த PIN வேண்டாம்</string>
+    <string name="en_pin_duress_new_title">நிர்ப்பந்த PIN உருவாக்கவும்</string>
+    <string name="en_pin_duress_new_subtitle">4 முதல் 6 இலக்கங்கள், ஆப்ஸ் PIN-இலிருந்து வேறுபட்டது.</string>
+    <string name="en_pin_duress_confirm_title">நிர்ப்பந்த PIN-ஐ உறுதிசெய்யவும்</string>
+    <string name="en_pin_duress_same">ஆப்ஸ் PIN-இலிருந்து வேறுபட்டிருக்க வேண்டும்</string>
+    <string name="en_pin_saved">PIN சேமிக்கப்பட்டது</string>
+    <string name="en_pin_saved_duress">PIN-உம் நிர்ப்பந்த PIN-உம் சேமிக்கப்பட்டன</string>
+    <string name="en_pin_save_failed">PIN-ஐச் சேமிக்க முடியவில்லை. மீண்டும் முயலவும்.</string>
+    <string name="en_pin_removed">PIN அகற்றப்பட்டது</string>
+    <string name="en_pin_remove_confirm_title">PIN-ஐ அகற்றவா?</string>
+    <string name="en_pin_remove_confirm_body">உங்கள் ஃபோனை வைத்திருக்கும் எவரும் SOS-ஐ நிறுத்த முடியும். நிர்ப்பந்த PIN-உம் அகற்றப்படும்.</string>
+    <string name="en_pin_remove_confirm_ok">அகற்று</string>
+
+    <!-- Fake incoming call -->
+    <string name="en_channel_fake_call">திட்டமிட்ட அழைப்புகள்</string>
+    <string name="en_channel_fake_call_desc">நீங்களே திட்டமிட்ட உள்வரும் அழைப்புத் திரை.</string>
+    <string name="en_fake_default_name">அப்பா</string>
+    <string name="en_fake_call_scheduled">%1$d வி-இல் உள்வரும் அழைப்பு</string>
+    <string name="en_fake_incoming">உள்வரும் அழைப்பு</string>
+    <string name="en_fake_mobile">மொபைல்</string>
+    <string name="en_fake_answer">ஏற்கவும்</string>
+    <string name="en_fake_decline">நிராகரி</string>
+    <string name="en_fake_swipe_hint">ஏற்க மேலே ஸ்வைப் செய்யவும்</string>
+    <string name="en_fake_mute">மியூட்</string>
+    <string name="en_fake_keypad">கீபேட்</string>
+    <string name="en_fake_speaker">ஸ்பீக்கர்</string>
+    <string name="en_fake_end">அழைப்பை முடி</string>
+    <string name="en_fake_ended">அழைப்பு முடிந்தது</string>
+
+    <!-- Offline mesh alert (on the helper's phone) -->
+    <string name="en_mesh_title">அருகில் ஒருவருக்கு உதவி தேவை — சுமார் %1$s தொலைவில்</string>
+    <string name="en_mesh_title_unknown">அருகில் ஒருவருக்கு உதவி தேவை</string>
+    <string name="en_mesh_text">%1$s %2$s SOS அனுப்பினார். இடத்தைப் பார்க்கத் தட்டவும்.</string>
+    <string name="en_mesh_someone">ஒருவர்</string>
+    <string name="en_mesh_just_now">இப்போதுதான்</string>
+    <plurals name="en_mesh_minutes_ago">
+        <item quantity="one">%d நிமி முன்</item>
+        <item quantity="other">%d நிமி முன்</item>
+    </plurals>
+    <string name="en_mesh_open_map">வரைபடத்தைத் திற</string>
+    <string name="en_mesh_call_112">112-ஐ அழை</string>
+    <string name="en_mesh_distance_m">%1$d மீ</string>
+    <string name="en_mesh_distance_km">%1$s கி.மீ</string>
+</resources>

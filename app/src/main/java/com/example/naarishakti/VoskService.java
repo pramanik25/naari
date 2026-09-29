@@ -42,10 +42,38 @@ import Utils.VoskModelLoader;
  * Offline, continuous trigger-phrase listener. Vosk is the only recogniser that touches the mic, so
  * nothing competes for audio. When the phrase is heard it asks the engine to start the SOS flow via
  * {@link ProtectionController#triggerPanic}.
+ *
+ * Other on-device detectors (scream detection) read the same audio through {@link #setAudioTap}
+ * instead of opening a second microphone. While an SOS is active the microphone is released so
+ * the evidence recorder can use it; listening resumes when the SOS ends.
  */
 public class VoskService extends Service {
 
     private static final String TAG = "VoskService";
+
+    /**
+     * Receives every block of 16 kHz mono PCM16 audio the listener reads. Called on the listener
+     * thread: implementations must return immediately (hand the data to their own thread).
+     */
+    public interface AudioTap {
+        /** @param buffer freshly allocated for this call, so the tap may keep it; {@code length} samples are valid. */
+        void onAudio(short[] buffer, int length);
+    }
+
+    /** Sample rate of the audio delivered to {@link AudioTap}. */
+    public static final int TAP_SAMPLE_RATE = 16000;
+
+    @Nullable private static volatile AudioTap audioTap;
+
+    /** Installs (or with null, removes) the single audio tap. Thread-safe. */
+    public static void setAudioTap(@Nullable AudioTap tap) {
+        audioTap = tap;
+    }
+
+    @Nullable
+    public static AudioTap getAudioTap() {
+        return audioTap;
+    }
 
     /** Broadcast (global or local) sent by the trigger word screen after saving a new phrase. */
     public static final String ACTION_TRIGGER_PHRASE_UPDATED = "com.example.naarishakti.ACTION_TRIGGER_PHRASE_UPDATED";
@@ -67,6 +95,9 @@ public class VoskService extends Service {
     private boolean foreground;
     private volatile long cooldownUntil;
     private volatile boolean resetRecognizer;
+    /** Set when a recording session ended because an SOS started (not an error). */
+    private volatile boolean pausedForPanic;
+    private final Object pauseLock = new Object();
 
     private Thread listenThread;
     private Model model;
@@ -77,6 +108,16 @@ public class VoskService extends Service {
         @Override
         public void onReceive(Context context, Intent intent) {
             loadPhrase();
+        }
+    };
+
+    /** Wakes the listener thread when an SOS starts or ends. */
+    private final BroadcastReceiver stateReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            synchronized (pauseLock) {
+                pauseLock.notifyAll();
+            }
         }
     };
 
@@ -95,6 +136,8 @@ public class VoskService extends Service {
         IntentFilter filter = new IntentFilter(Prefs.ACTION_SETTINGS_UPDATED);
         filter.addAction(ACTION_TRIGGER_PHRASE_UPDATED);
         LocalBroadcastManager.getInstance(this).registerReceiver(settingsReceiver, filter);
+        LocalBroadcastManager.getInstance(this).registerReceiver(stateReceiver,
+                new IntentFilter(ProtectionController.ACTION_STATE_CHANGED));
         // The trigger word screen also sends the phrase update as a normal app broadcast.
         ContextCompat.registerReceiver(this, settingsReceiver,
                 new IntentFilter(ACTION_TRIGGER_PHRASE_UPDATED), ContextCompat.RECEIVER_NOT_EXPORTED);
@@ -167,8 +210,17 @@ public class VoskService extends Service {
 
     private void listenLoop() {
         while (running) {
+            if (ProtectionController.isPanicActive()) {
+                waitWhilePanic();
+                continue;
+            }
+            pausedForPanic = false;
             boolean ok = listenOnce();
             if (!running) break;
+            if (pausedForPanic) {
+                // Released the mic for the SOS; not a failure, no back-off.
+                continue;
+            }
             consecutiveFailures = ok ? 0 : consecutiveFailures + 1;
             if (consecutiveFailures >= MAX_CONSECUTIVE_FAILURES) {
                 Log.e(TAG, "Voice listener keeps failing; giving up until protection restarts");
@@ -177,6 +229,23 @@ public class VoskService extends Service {
             SystemClock.sleep(RESTART_DELAY_MS * Math.max(1, consecutiveFailures));
         }
         if (running) stopSelf();
+    }
+
+    /** Blocks the listener thread (mic released) until the SOS ends or the service stops. */
+    private void waitWhilePanic() {
+        Log.d(TAG, "SOS active: microphone released");
+        synchronized (pauseLock) {
+            while (running && ProtectionController.isPanicActive()) {
+                try {
+                    // Timed wait as a safety net in case a state broadcast is missed.
+                    pauseLock.wait(1000);
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
+                    return;
+                }
+            }
+        }
+        if (running) Log.d(TAG, "SOS ended: resuming listening");
     }
 
     /** One recording session. Returns false if it ended because of an error. */
@@ -213,8 +282,17 @@ public class VoskService extends Service {
                 }
                 if (read == 0) continue;
 
-                // While an SOS runs (or right after a match) keep draining the mic but don't match.
-                if (ProtectionController.isPanicActive() || SystemClock.elapsedRealtime() < cooldownUntil) {
+                // An SOS started: release the microphone so evidence recording can use it.
+                if (ProtectionController.isPanicActive()) {
+                    pausedForPanic = true;
+                    return true;
+                }
+
+                AudioTap tap = audioTap;
+                if (tap != null) deliverToTap(tap, buffer, read);
+
+                // Right after a match keep draining the mic but don't match.
+                if (SystemClock.elapsedRealtime() < cooldownUntil) {
                     resetRecognizer = true;
                     continue;
                 }
@@ -243,6 +321,21 @@ public class VoskService extends Service {
                 audio.release();
             }
             if (recognizer != null) recognizer.close();
+        }
+    }
+
+    /** Converts little-endian PCM16 bytes to samples and hands them to the tap; never throws. */
+    private static void deliverToTap(AudioTap tap, byte[] bytes, int byteCount) {
+        int samples = byteCount / 2;
+        if (samples <= 0) return;
+        short[] out = new short[samples];
+        for (int i = 0, j = 0; i < samples; i++, j += 2) {
+            out[i] = (short) ((bytes[j] & 0xFF) | (bytes[j + 1] << 8));
+        }
+        try {
+            tap.onAudio(out, samples);
+        } catch (Throwable t) {
+            Log.e(TAG, "Audio tap failed", t);
         }
     }
 
@@ -292,6 +385,9 @@ public class VoskService extends Service {
     @Override
     public void onDestroy() {
         running = false;
+        synchronized (pauseLock) {
+            pauseLock.notifyAll();
+        }
         Thread thread = listenThread;
         if (thread != null) {
             try {
@@ -306,6 +402,7 @@ public class VoskService extends Service {
             model = null;
         }
         LocalBroadcastManager.getInstance(this).unregisterReceiver(settingsReceiver);
+        LocalBroadcastManager.getInstance(this).unregisterReceiver(stateReceiver);
         try {
             unregisterReceiver(settingsReceiver);
         } catch (IllegalArgumentException ignored) {

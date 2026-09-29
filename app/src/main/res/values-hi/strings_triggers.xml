@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Extra SOS triggers and device guard (package .triggers). Hindi. -->
+
+    <!-- Common -->
+    <string name="tr_back">वापस</string>
+    <string name="tr_not_now">अभी नहीं</string>
+    <string name="tr_cancel">रद्द करें</string>
+    <string name="tr_open_settings">सेटिंग्स</string>
+
+    <!-- ===================== SMS alerts to emergency contacts ===================== -->
+    <string name="tr_default_owner_name">आपकी करीबी</string>
+    <string name="tr_sms_shutdown">Naari Shakti: %1$s का फ़ोन बंद हो रहा है। आखिरी लोकेशन: %2$s</string>
+    <string name="tr_sms_low_battery">Naari Shakti: %1$s के फ़ोन की बैटरी %2$d%% है। आखिरी लोकेशन: %3$s</string>
+    <string name="tr_sms_sim_changed">Naari Shakti: %1$s के फ़ोन का SIM कार्ड बदला गया है। यह मैसेज नए SIM से आया है। लोकेशन: %2$s</string>
+    <string name="tr_sms_location_fmt">%1$s (%2$s)</string>
+    <string name="tr_sms_location_unknown">उपलब्ध नहीं</string>
+
+    <!-- ===================== Volume-key SOS (accessibility) ===================== -->
+    <string name="tr_a11y_dialog_title">वॉल्यूम बटन से SOS चालू करें</string>
+    <string name="tr_a11y_dialog_body">स्क्रीन बंद होने पर भी वॉल्यूम-डाउन 5 बार दबाकर SOS शुरू करने के लिए, Accessibility (सुलभता) सेटिंग्स में %1$s चालू करें।\n\nअगली स्क्रीन पर \"इंस्टॉल किए गए ऐप\" (\"Installed apps\" या \"Downloaded apps\") खोलें, %1$s चुनें और उसे चालू करें। यह सिर्फ़ वॉल्यूम बटन देखता है और आपकी स्क्रीन कभी नहीं पढ़ता।</string>
+    <string name="tr_a11y_dialog_open">सेटिंग्स खोलें</string>
+
+    <!-- ===================== Panic button screen ===================== -->
+    <string name="tr_pb_eyebrow">और ट्रिगर</string>
+    <string name="tr_pb_title">पैनिक बटन</string>
+    <string name="tr_pb_desc">एक छोटा Bluetooth बटन जोड़ें और फ़ोन निकाले बिना SOS शुरू करने के लिए उसे दो बार दबाएँ।</string>
+
+    <string name="tr_pb_status_label">आपका बटन</string>
+    <string name="tr_pb_no_button">कोई बटन जुड़ा नहीं</string>
+    <string name="tr_pb_unnamed">बिना नाम का बटन</string>
+    <string name="tr_pb_status_not_set">सेट नहीं है</string>
+    <string name="tr_pb_status_connected">कनेक्टेड</string>
+    <string name="tr_pb_status_connecting">बटन ढूँढ रहे हैं… इसे पास रखें</string>
+    <string name="tr_pb_status_unsupported">यह डिवाइस सपोर्टेड बटन नहीं है</string>
+    <string name="tr_pb_status_bt_off">Bluetooth बंद है</string>
+    <string name="tr_pb_status_permission">Bluetooth की अनुमति चाहिए</string>
+    <string name="tr_pb_status_unavailable">उपलब्ध नहीं</string>
+    <string name="tr_pb_status_off">कनेक्ट नहीं है</string>
+    <string name="tr_pb_protection_hint">सुरक्षा चालू करें ताकि बटन SOS शुरू कर सके।</string>
+
+    <string name="tr_pb_forget">बटन हटाएँ</string>
+    <string name="tr_pb_forget_title">यह बटन हटाएँ?</string>
+    <string name="tr_pb_forget_body">%1$s से अब SOS शुरू नहीं होगा।</string>
+    <string name="tr_pb_forget_confirm">हटाएँ</string>
+    <string name="tr_pb_forgotten">बटन हटा दिया गया</string>
+
+    <string name="tr_pb_section_test">टेस्ट</string>
+    <string name="tr_pb_test_title">टेस्ट करने के लिए बटन दो बार दबाएँ</string>
+    <string name="tr_pb_test_waiting">बटन के कनेक्ट होने का इंतज़ार…</string>
+    <string name="tr_pb_test_hint">एक सेकंड के अंदर दो बार जल्दी दबाएँ। एक बार दबाने से कुछ नहीं होता, इसलिए यह गलती से नहीं चलेगा।</string>
+    <string name="tr_pb_test_one">एक बार दबा। अब जल्दी से फिर दबाएँ</string>
+    <string name="tr_pb_test_success">यह काम कर रहा है!</string>
+    <string name="tr_pb_test_success_body">सुरक्षा चालू होने पर दो बार दबाने से SOS काउंटडाउन शुरू होता है। काउंटडाउन के दौरान इसे रद्द भी किया जा सकता है। यहाँ टेस्ट करने से कभी SOS नहीं जाता।</string>
+    <string name="tr_pb_test_again">फिर से टेस्ट करें</string>
+
+    <string name="tr_pb_section_find">अपना बटन ढूँढें</string>
+    <string name="tr_pb_nearby">आस-पास के बटन</string>
+    <string name="tr_pb_scan_hint">बटन चालू करें (बीप होने तक दबाए रखें) और उसे फ़ोन के पास रखें।</string>
+    <string name="tr_pb_scan">बटन स्कैन करें</string>
+    <string name="tr_pb_stop_scan">स्कैन रोकें</string>
+    <string name="tr_pb_scanning">स्कैन हो रहा है…</string>
+    <string name="tr_pb_empty">कोई बटन नहीं मिला। पक्का करें कि वह चालू है और पास में है, फिर से स्कैन करें।</string>
+    <string name="tr_pb_empty_location">कोई बटन नहीं मिला। Bluetooth डिवाइस स्कैन करने के लिए Android में लोकेशन चालू होनी चाहिए। इसे चालू करके फिर से स्कैन करें।</string>
+    <string name="tr_pb_scan_failed">स्कैन नहीं हो पाया (एरर %1$d)। Bluetooth बंद करके फिर चालू करें, फिर कोशिश करें।</string>
+    <string name="tr_pb_no_bluetooth">यह फ़ोन Bluetooth Low Energy सपोर्ट नहीं करता।</string>
+    <string name="tr_pb_bt_needed">अपना बटन ढूँढने के लिए Bluetooth चालू करें।</string>
+    <string name="tr_pb_perm_denied">आपका बटन ढूँढने के लिए Naari Shakti को आस-पास के डिवाइस और लोकेशन की अनुमति चाहिए।</string>
+    <string name="tr_pb_paired_snack">%1$s सेव हो गया। अब टेस्ट करने के लिए इसे दो बार दबाएँ।</string>
+    <string name="tr_pb_rssi">%1$d dBm</string>
+    <string name="tr_pb_tag_compatible">सपोर्टेड</string>
+    <string name="tr_pb_tag_paired">जुड़ा हुआ</string>
+    <string name="tr_pb_device_cd">%1$s, सिग्नल 4 में से %2$d। इस बटन को इस्तेमाल करने के लिए दो बार टैप करें।</string>
+
+    <string name="tr_pb_section_supported">सपोर्टेड बटन</string>
+    <string name="tr_pb_sup1_title">iTag कीफ़ाइंडर बटन</string>
+    <string name="tr_pb_sup1_body">\"iTag\" या \"anti-lost tracker\" नाम से बिकने वाले छोटे Bluetooth कीफ़ाइंडर बटन सबसे अच्छे चलते हैं। ऑनलाइन इनकी कीमत लगभग ₹200 है।</string>
+    <string name="tr_pb_sup2_title">सिक्के जैसी बैटरी पर चलता है</string>
+    <string name="tr_pb_sup2_body">एक CR2032 बैटरी महीनों चलती है। बटन को अपनी चाबियों, बैग की पट्टी या कपड़ों पर लगा लें।</string>
+    <string name="tr_pb_sup3_title">बैकग्राउंड में काम करता है</string>
+    <string name="tr_pb_sup3_body">सुरक्षा चालू होने पर फ़ोन बटन से जुड़ा रहता है, और बटन के फिर से पास आने पर अपने-आप दोबारा जुड़ जाता है।</string>
+</resources>

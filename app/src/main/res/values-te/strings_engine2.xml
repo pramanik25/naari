@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Silent SOS: low-key notification and covert screen -->
+    <string name="en_covert_title">Naari Shakti · లొకేషన్ షేర్ అవుతోంది</string>
+    <string name="en_covert_text">నిర్వహించడానికి నొక్కండి</string>
+    <string name="en_covert_overline">Naari Shakti</string>
+    <string name="en_covert_heading">మీ లొకేషన్ షేర్ అవుతోంది</string>
+    <string name="en_covert_body">మీరు నమ్మే కాంటాక్ట్‌లకు మీ లైవ్ లొకేషన్ వెళ్తోంది.</string>
+    <string name="en_covert_hold">షేరింగ్ ఆపడానికి పట్టుకోండి</string>
+    <string name="en_covert_hint">2 సెకన్లు నొక్కి పట్టుకోండి.</string>
+    <string name="en_covert_close">మూసివేయి</string>
+
+    <!-- SMS -->
+    <string name="en_sms_tracking_line">లైవ్ లొకేషన్ &amp; సాక్ష్యం: %1$s</string>
+    <string name="en_sms_duress">Naari Shakti: %1$s ను బలవంతంగా అలర్ట్ రద్దు చేయించి ఉండవచ్చు. ఇది ఇంకా యాక్టివ్ అని భావించండి. లైవ్ లొకేషన్: %2$s</string>
+    <string name="en_sms_duress_no_link">Naari Shakti: %1$s ను బలవంతంగా అలర్ట్ రద్దు చేయించి ఉండవచ్చు. ఇది ఇంకా యాక్టివ్ అని భావించండి. లొకేషన్ త్వరలో వస్తుంది.</string>
+    <string name="en_duress_name_fallback">మీ కాంటాక్ట్</string>
+
+    <!-- Spoken alert (text to speech, loud) -->
+    <string name="en_spoken_alert">కాపాడండి! నాకు సహాయం కావాలి! పోలీసులను పిలవండి!</string>
+
+    <!-- Protection notification -->
+    <string name="en_action_fake_call">%1$d సె. లో ఫేక్ కాల్</string>
+
+    <!-- SOS screen: calls -->
+    <string name="en_call_112">అత్యవసరం 112</string>
+    <string name="en_status_call_progress">%1$s కి కాల్ చేస్తోంది (%3$d లో %2$d)</string>
+    <string name="en_status_call_progress_detail">జవాబు రాకపోతే, తర్వాతి కాంటాక్ట్‌కు కాల్ వెళ్తుంది</string>
+    <string name="en_status_call_connected">%1$s తో కనెక్ట్ అయింది</string>
+    <string name="en_status_call_connected_detail">కాల్ ఎత్తారు · వీలైతే లైన్‌లోనే ఉండండి</string>
+    <string name="en_status_call_no_answer">ఎవరూ జవాబివ్వలేదు</string>
+    <string name="en_status_call_no_answer_detail">అయినా మీ కాంటాక్ట్‌లకు SMS అలర్ట్ చేరింది</string>
+
+    <!-- SOS screen: siren row -->
+    <string name="en_status_siren_detail_strobe">పూర్తి వాల్యూమ్ · ఫ్లాష్‌లైట్ మెరుపులు</string>
+    <string name="en_status_siren_detail_voice">పూర్తి వాల్యూమ్ · మాటల అలర్ట్</string>
+    <string name="en_status_siren_detail_both">పూర్తి వాల్యూమ్ · మెరుపులు · మాటల అలర్ట్</string>
+
+    <!-- SOS screen: video evidence -->
+    <string name="en_status_video">వీడియో రికార్డ్ అవుతోంది</string>
+    <string name="en_status_video_detail">సాక్ష్యం వీడియో సేవ్ అయి అప్‌లోడ్ అవుతుంది</string>
+
+    <!-- SOS screen: PIN pad and stopped confirmation -->
+    <string name="en_pin_stop_title">ఆపడానికి మీ PIN ఎంటర్ చేయండి</string>
+    <string name="en_pin_stop_subtitle">మీ PIN ఎంటర్ చేసే వరకు SOS యాక్టివ్‌గానే ఉంటుంది.</string>
+    <string name="en_pin_back_to_sos">SOS కి తిరిగి</string>
+    <string name="en_pin_locked_hint">చాలాసార్లు తప్పు PIN. మీ SOS కొనసాగుతోంది. %1$d సె. తర్వాత మళ్లీ ప్రయత్నించండి.</string>
+    <string name="en_stopped_title">SOS ఆగింది</string>
+    <string name="en_stopped_body">మీరు సురక్షితంగా ఉన్నట్లు గుర్తించబడింది. రక్షణ ఆన్‌లోనే ఉంటుంది.</string>
+
+    <!-- PIN pad -->
+    <string name="en_pin_key_delete">తొలగించు</string>
+    <string name="en_pin_key_done">పూర్తయింది</string>
+    <plurals name="en_pin_digits_entered">
+        <item quantity="one">%d అంకె ఎంటర్ అయింది</item>
+        <item quantity="other">%d అంకెలు ఎంటర్ అయ్యాయి</item>
+    </plurals>
+    <plurals name="en_pin_attempts_left">
+        <item quantity="one">తప్పు PIN · ఇంకా %d ప్రయత్నం ఉంది</item>
+        <item quantity="other">తప్పు PIN · ఇంకా %d ప్రయత్నాలు ఉన్నాయి</item>
+    </plurals>
+
+    <!-- PIN screen -->
+    <string name="en_back">వెనుకకు</string>
+    <string name="en_cancel">రద్దు చేయండి</string>
+    <string name="en_pin_lockout">చాలా ప్రయత్నాలు. %1$d సె. తర్వాత మళ్లీ ప్రయత్నించండి.</string>
+    <string name="en_pin_verify_title">మీ PIN ఎంటర్ చేయండి</string>
+    <string name="en_pin_verify_subtitle">కొనసాగడానికి మీ Naari Shakti PIN ఎంటర్ చేయండి.</string>
+    <string name="en_pin_current_title">ప్రస్తుత PIN ఎంటర్ చేయండి</string>
+    <string name="en_pin_current_subtitle">PIN మార్చే ముందు ఇది మీరేనని నిర్ధారించండి.</string>
+    <string name="en_pin_manage_title">యాప్ PIN</string>
+    <string name="en_pin_manage_subtitle">SOS ఆపడానికి మీ PIN అవసరం.</string>
+    <string name="en_pin_duress_status_on">మీ యాప్ PIN ఆన్‌లో ఉంది, బలవంతపు PIN కూడా సెట్ అయింది.</string>
+    <string name="en_pin_duress_status_off">మీ యాప్ PIN ఆన్‌లో ఉంది. బలవంతపు PIN సెట్ కాలేదు.</string>
+    <string name="en_pin_change">PIN లు మార్చండి</string>
+    <string name="en_pin_remove">PIN తీసివేయండి</string>
+    <string name="en_pin_new_title">PIN సృష్టించండి</string>
+    <string name="en_pin_new_subtitle">4 నుండి 6 అంకెలు ఎంచుకోండి. SOS ఆపడానికి ఇది అవసరం.</string>
+    <string name="en_pin_confirm_title">మీ PIN నిర్ధారించండి</string>
+    <string name="en_pin_confirm_subtitle">అదే PIN మళ్లీ ఎంటర్ చేయండి.</string>
+    <string name="en_pin_mismatch">PIN లు సరిపోలలేదు. మళ్లీ ప్రయత్నించండి.</string>
+    <string name="en_pin_duress_title">బలవంతపు PIN జోడించాలా?</string>
+    <string name="en_pin_duress_subtitle">ఎవరైనా బలవంతంగా రద్దు చేయిస్తే ఉపయోగించడానికి రెండో, రహస్య PIN.</string>
+    <string name="en_pin_duress_body">ఎవరైనా మిమ్మల్ని బలవంతంగా SOS ఆపించాలని చూస్తే, మీ అసలు PIN బదులు బలవంతపు PIN ఎంటర్ చేయండి.\n\nSOS రద్దు అయినట్లే ఫోన్ కనిపిస్తుంది: సైరన్, ఫ్లాష్‌లైట్, SOS స్క్రీన్ ఆగిపోతాయి.\n\nరహస్యంగా, మీ కాంటాక్ట్‌లకు మీ లైవ్ లొకేషన్ వెళ్తూనే ఉంటుంది, సాక్ష్యం రికార్డ్ అవుతూనే ఉంటుంది, మిమ్మల్ని బలవంతంగా రద్దు చేయించి ఉండవచ్చని వారికి మెసేజ్ వెళ్తుంది. “నేను సురక్షితం” మెసేజ్ పంపబడదు.</string>
+    <string name="en_pin_duress_set">బలవంతపు PIN సెట్ చేయండి</string>
+    <string name="en_pin_duress_skip">దాటవేయండి — బలవంతపు PIN వద్దు</string>
+    <string name="en_pin_duress_new_title">బలవంతపు PIN సృష్టించండి</string>
+    <string name="en_pin_duress_new_subtitle">4 నుండి 6 అంకెలు, మీ యాప్ PIN కి భిన్నంగా.</string>
+    <string name="en_pin_duress_confirm_title">బలవంతపు PIN నిర్ధారించండి</string>
+    <string name="en_pin_duress_same">మీ యాప్ PIN కి భిన్నంగా ఉండాలి</string>
+    <string name="en_pin_saved">PIN సేవ్ అయింది</string>
+    <string name="en_pin_saved_duress">PIN, బలవంతపు PIN సేవ్ అయ్యాయి</string>
+    <string name="en_pin_save_failed">PIN సేవ్ కాలేదు. మళ్లీ ప్రయత్నించండి.</string>
+    <string name="en_pin_removed">PIN తీసివేయబడింది</string>
+    <string name="en_pin_remove_confirm_title">PIN తీసివేయాలా?</string>
+    <string name="en_pin_remove_confirm_body">మీ ఫోన్ ఎవరి చేతిలో ఉన్నా SOS ఆపగలరు. మీ బలవంతపు PIN కూడా తీసివేయబడుతుంది.</string>
+    <string name="en_pin_remove_confirm_ok">తీసివేయండి</string>
+
+    <!-- Fake incoming call -->
+    <string name="en_channel_fake_call">షెడ్యూల్ చేసిన కాల్‌లు</string>
+    <string name="en_channel_fake_call_desc">మీరే షెడ్యూల్ చేసిన ఇన్‌కమింగ్ కాల్ స్క్రీన్.</string>
+    <string name="en_fake_default_name">నాన్న</string>
+    <string name="en_fake_call_scheduled">%1$d సె. లో ఇన్‌కమింగ్ కాల్</string>
+    <string name="en_fake_incoming">ఇన్‌కమింగ్ కాల్</string>
+    <string name="en_fake_mobile">మొబైల్</string>
+    <string name="en_fake_answer">జవాబివ్వండి</string>
+    <string name="en_fake_decline">తిరస్కరించండి</string>
+    <string name="en_fake_swipe_hint">జవాబివ్వడానికి పైకి స్వైప్ చేయండి</string>
+    <string name="en_fake_mute">మ్యూట్</string>
+    <string name="en_fake_keypad">కీప్యాడ్</string>
+    <string name="en_fake_speaker">స్పీకర్</string>
+    <string name="en_fake_end">కాల్ ముగించండి</string>
+    <string name="en_fake_ended">కాల్ ముగిసింది</string>
+
+    <!-- Offline mesh alert (on the helper's phone) -->
+    <string name="en_mesh_title">సమీపంలో ఎవరికో సహాయం కావాలి — సుమారు %1$s దూరంలో</string>
+    <string name="en_mesh_title_unknown">సమీపంలో ఎవరికో సహాయం కావాలి</string>
+    <string name="en_mesh_text">%1$s %2$s SOS పంపారు. ఎక్కడో చూడటానికి నొక్కండి.</string>
+    <string name="en_mesh_someone">ఎవరో</string>
+    <string name="en_mesh_just_now">ఇప్పుడే</string>
+    <plurals name="en_mesh_minutes_ago">
+        <item quantity="one">%d ని. క్రితం</item>
+        <item quantity="other">%d ని. క్రితం</item>
+    </plurals>
+    <string name="en_mesh_open_map">మ్యాప్ తెరవండి</string>
+    <string name="en_mesh_call_112">112 కి కాల్</string>
+    <string name="en_mesh_distance_m">%1$d మీ</string>
+    <string name="en_mesh_distance_km">%1$s కి.మీ.</string>
+</resources>

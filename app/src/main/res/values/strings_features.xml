@@ -65,7 +65,7 @@
     <string name="ub_trigger_record_cd">Record phrase</string>
     <string name="ub_trigger_stop_cd">Stop recording</string>
     <string name="ub_trigger_tap_to_record">Tap the mic and say your phrase</string>
-    <string name="ub_trigger_record_hint">Two or three unusual words work best, like “purple mango”.</string>
+    <string name="ub_trigger_record_hint">Two or three unusual English words work best, like “purple mango”.</string>
     <string name="ub_trigger_starting">Getting ready…</string>
     <string name="ub_trigger_listening">Listening… say your phrase</string>
     <string name="ub_trigger_processing">Got it, checking…</string>
@@ -74,13 +74,13 @@
     <string name="ub_trigger_try_again">Try again</string>
     <string name="ub_trigger_use">Use this</string>
     <string name="ub_trigger_input_hint">Trigger phrase</string>
-    <string name="ub_trigger_input_helper">1–4 words, letters only.</string>
+    <string name="ub_trigger_input_helper">1–4 English words, letters a–z only.</string>
     <string name="ub_trigger_save_typed">Save phrase</string>
     <string name="ub_trigger_saved">Trigger phrase set to “%1$s”</string>
     <string name="ub_trigger_err_empty">Enter a phrase</string>
     <string name="ub_trigger_err_short">That’s too short to detect reliably</string>
     <string name="ub_trigger_err_words">Keep it to 4 words or fewer</string>
-    <string name="ub_trigger_err_letters">Use letters and spaces only</string>
+    <string name="ub_trigger_err_letters">Use English letters (a–z) and spaces only</string>
     <string name="ub_trigger_err_no_match">Didn’t catch that. Tap the mic to try again.</string>
     <string name="ub_trigger_err_busy">The microphone is busy. If protection is listening, pause it or type your phrase below.</string>
     <string name="ub_trigger_err_network">Speech recognition needs a connection right now. Type your phrase below instead.</string>

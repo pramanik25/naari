@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Common -->
+    <string name="tr_back">উভতি যাওক</string>
+    <string name="tr_not_now">এতিয়া নহয়</string>
+    <string name="tr_cancel">বাতিল কৰক</string>
+    <string name="tr_open_settings">ছেটিংছ</string>
+
+    <!-- ===================== SMS alerts to emergency contacts ===================== -->
+    <string name="tr_default_owner_name">আপোনাৰ কণ্টেক্ট</string>
+    <string name="tr_sms_shutdown">Naari Shakti: %1$s-ৰ ফোন বন্ধ হৈ আছে। শেষ জনা অৱস্থান: %2$s</string>
+    <!-- %2$d is the battery percentage. -->
+    <string name="tr_sms_low_battery">Naari Shakti: %1$s-ৰ ফোনৰ বেটাৰী %2$d%%। শেষ জনা অৱস্থান: %3$s</string>
+    <string name="tr_sms_sim_changed">Naari Shakti: %1$s-ৰ ফোনৰ SIM কাৰ্ড সলনি কৰা হৈছে। এই বাৰ্তা নতুন SIM-ৰ পৰা আহিছে। অৱস্থান: %2$s</string>
+    <!-- %1$s is a Google Maps link, %2$s the time the location was recorded. -->
+    <string name="tr_sms_location_fmt">%1$s (%2$s)</string>
+    <string name="tr_sms_location_unknown">উপলব্ধ নহয়</string>
+
+    <!-- ===================== Volume-key SOS (accessibility) ===================== -->
+    <string name="tr_a11y_dialog_title">ভলিউম বুটামেৰে SOS অন কৰক</string>
+    <string name="tr_a11y_dialog_body">স্ক্ৰীণ অফ থাকিলেও ভলিউম-ডাউন 5 বাৰ টিপি SOS আৰম্ভ কৰিবলৈ, এক্সেছিবিলিটি ছেটিংছত %1$s অন কৰক।\n\nপৰৱৰ্তী স্ক্ৰীণত \"Installed apps\" (বা \"Downloaded apps\") খোলক, %1$s বাছি অন কৰক। ই কেৱল ভলিউম বুটামত নজৰ ৰাখে, কেতিয়াও আপোনাৰ স্ক্ৰীণ নপঢ়ে।</string>
+    <string name="tr_a11y_dialog_open">ছেটিংছ খোলক</string>
+
+    <!-- ===================== Panic button screen ===================== -->
+    <string name="tr_pb_eyebrow">অতিৰিক্ত ট্ৰিগাৰ</string>
+    <string name="tr_pb_title">পেনিক বুটাম</string>
+    <string name="tr_pb_desc">এটা সৰু Bluetooth বুটাম সংযোগ কৰক, আৰু ফোন উলিওৱা নোহোৱাকৈ দুবাৰ টিপি SOS আৰম্ভ কৰক।</string>
+
+    <string name="tr_pb_status_label">আপোনাৰ বুটাম</string>
+    <string name="tr_pb_no_button">কোনো বুটাম সংযোগ কৰা নাই</string>
+    <string name="tr_pb_unnamed">নাম নথকা বুটাম</string>
+    <string name="tr_pb_status_not_set">ছেট কৰা নাই</string>
+    <string name="tr_pb_status_connected">সংযুক্ত</string>
+    <string name="tr_pb_status_connecting">বুটাম বিচৰা হৈছে… ওচৰত ৰাখক</string>
+    <string name="tr_pb_status_unsupported">এই ডিভাইচটো সমৰ্থিত বুটাম নহয়</string>
+    <string name="tr_pb_status_bt_off">Bluetooth অফ আছে</string>
+    <string name="tr_pb_status_permission">Bluetooth-ৰ অনুমতি প্ৰয়োজন</string>
+    <string name="tr_pb_status_unavailable">উপলব্ধ নহয়</string>
+    <string name="tr_pb_status_off">সংযুক্ত নহয়</string>
+    <string name="tr_pb_protection_hint">বুটামেৰে SOS আৰম্ভ কৰিবলৈ সুৰক্ষা অন কৰক।</string>
+
+    <string name="tr_pb_forget">বুটাম আঁতৰাওক</string>
+    <string name="tr_pb_forget_title">এই বুটামটো আঁতৰাব নেকি?</string>
+    <!-- %1$s is the button's name. -->
+    <string name="tr_pb_forget_body">%1$s-ৰে আৰু SOS আৰম্ভ নহ’ব।</string>
+    <string name="tr_pb_forget_confirm">আঁতৰাওক</string>
+    <string name="tr_pb_forgotten">বুটাম আঁতৰোৱা হ’ল</string>
+
+    <string name="tr_pb_section_test">পৰীক্ষা</string>
+    <string name="tr_pb_test_title">পৰীক্ষা কৰিবলৈ বুটামটো দুবাৰ টিপক</string>
+    <string name="tr_pb_test_waiting">বুটাম সংযোগ হোৱালৈ অপেক্ষা…</string>
+    <string name="tr_pb_test_hint">এক ছেকেণ্ডৰ ভিতৰত দুবাৰ সোনকালে টিপক। এবাৰ টিপিলে একো নহয়, সেয়েহে ভুলতে অন নহয়।</string>
+    <string name="tr_pb_test_one">এবাৰ টিপা হ’ল। এতিয়া সোনকালে আকৌ টিপক</string>
+    <string name="tr_pb_test_success">কাম কৰিছে!</string>
+    <string name="tr_pb_test_success_body">সুৰক্ষা অন থাকোঁতে দুবাৰ টিপিলে SOS কাউণ্টডাউন আৰম্ভ হয়। কাউণ্টডাউনৰ সময়ত বাতিল কৰিব পাৰিব। ইয়াত পৰীক্ষা কৰিলে কেতিয়াও SOS নাযায়।</string>
+    <string name="tr_pb_test_again">আকৌ পৰীক্ষা কৰক</string>
+
+    <string name="tr_pb_section_find">আপোনাৰ বুটাম বিচাৰক</string>
+    <string name="tr_pb_nearby">ওচৰৰ বুটাম</string>
+    <string name="tr_pb_scan_hint">বুটামটো অন কৰক (বিপ শব্দ নোহোৱালৈকে হেঁচি ধৰি ৰাখক) আৰু ফোনৰ কাষত ৰাখক।</string>
+    <string name="tr_pb_scan">বুটাম বিচাৰক</string>
+    <string name="tr_pb_stop_scan">বিচৰা ৰখাওক</string>
+    <string name="tr_pb_scanning">বিচৰা হৈছে…</string>
+    <string name="tr_pb_empty">কোনো বুটাম পোৱা নগ’ল। বুটামটো অন আৰু ওচৰত আছে নে নাই চাই পুনৰ বিচাৰক।</string>
+    <string name="tr_pb_empty_location">কোনো বুটাম পোৱা নগ’ল। Bluetooth ডিভাইচ বিচাৰিবলৈ Android-ক অৱস্থান অন থকাটো লাগে। অন কৰি পুনৰ বিচাৰক।</string>
+    <!-- %1$d is an Android error code. -->
+    <string name="tr_pb_scan_failed">বিচাৰিব পৰা নগ’ল (ত্ৰুটি %1$d)। Bluetooth অফ কৰি পুনৰ অন কৰক, তাৰ পিছত চেষ্টা কৰক।</string>
+    <string name="tr_pb_no_bluetooth">এই ফোনত Bluetooth Low Energy নাই।</string>
+    <string name="tr_pb_bt_needed">আপোনাৰ বুটাম বিচাৰিবলৈ Bluetooth অন কৰক।</string>
+    <string name="tr_pb_perm_denied">আপোনাৰ বুটাম বিচাৰিবলৈ Naari Shakti-ক ওচৰৰ ডিভাইচ আৰু অৱস্থানৰ অনুমতি লাগে।</string>
+    <!-- %1$s is the button's name. -->
+    <string name="tr_pb_paired_snack">%1$s ছেভ হ’ল। এতিয়া পৰীক্ষা কৰিবলৈ দুবাৰ টিপক।</string>
+    <!-- Signal strength, %1$d is negative, e.g. -62 dBm. -->
+    <string name="tr_pb_rssi">%1$d dBm</string>
+    <string name="tr_pb_tag_compatible">চলিব</string>
+    <string name="tr_pb_tag_paired">সংযুক্ত</string>
+    <!-- Screen reader: %1$s device name, %2$d signal bars (1 to 4). -->
+    <string name="tr_pb_device_cd">%1$s, ছিগনেল 4-ৰ %2$d। এই বুটামটো ব্যৱহাৰ কৰিবলৈ দুবাৰ টেপ কৰক।</string>
+
+    <string name="tr_pb_section_supported">চলা বুটামসমূহ</string>
+    <string name="tr_pb_sup1_title">iTag কী-ফাইণ্ডাৰ বুটাম</string>
+    <string name="tr_pb_sup1_body">\"iTag\" বা \"anti-lost tracker\" নামেৰে বিক্ৰী হোৱা সৰু Bluetooth কী-ফাইণ্ডাৰ বুটামে আটাইতকৈ ভাল কাম কৰে। অনলাইনত দাম প্ৰায় ₹200।</string>
+    <string name="tr_pb_sup2_title">কইন চেলত চলে</string>
+    <string name="tr_pb_sup2_body">এটা CR2032 বেটাৰী কেইবামাহো চলে। বুটামটো চাবিৰ থোপা, বেগৰ ফিটা বা কাপোৰত লগাই ৰাখক।</string>
+    <string name="tr_pb_sup3_title">বেকগ্ৰাউণ্ডত কাম কৰে</string>
+    <string name="tr_pb_sup3_body">সুৰক্ষা অন থাকোঁতে ফোনটো বুটামৰ লগত সংযুক্ত হৈ থাকে, আৰু বুটাম পুনৰ ওচৰলৈ আহিলে নিজে নিজে সংযোগ হয়।</string>
+</resources>

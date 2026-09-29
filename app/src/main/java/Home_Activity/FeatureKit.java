@@ -231,7 +231,7 @@ public final class FeatureKit {
         cfg.setOsmdroidTileCache(new File(base, "tiles"));
     }
 
-    /** MAPNIK tiles, multitouch, no zoom buttons, dark "midnight" tile filter, plays nice in scroll views. */
+    /** MAPNIK tiles, multitouch, no zoom buttons, "midnight" tiles in dark theme, plays nice in scroll views. */
     @SuppressLint("ClickableViewAccessibility")
     public static void styleMap(MapView map) {
         Context ctx = map.getContext();
@@ -244,7 +244,11 @@ public final class FeatureKit {
         TilesOverlay tiles = map.getOverlayManager().getTilesOverlay();
         tiles.setLoadingBackgroundColor(ContextCompat.getColor(ctx, R.color.ns_surface));
         tiles.setLoadingLineColor(ContextCompat.getColor(ctx, R.color.ns_surface_high));
-        tiles.setColorFilter(darkTileFilter());
+        // Dim the tiles only in the dark theme; the light theme uses the regular map colours.
+        int uiMode = ctx.getResources().getConfiguration().uiMode
+                & android.content.res.Configuration.UI_MODE_NIGHT_MASK;
+        tiles.setColorFilter(uiMode == android.content.res.Configuration.UI_MODE_NIGHT_YES
+                ? darkTileFilter() : null);
         // Let the map pan inside a NestedScrollView instead of scrolling the page.
         map.setOnTouchListener((v, e) -> {
             ViewParent parent = v.getParent();

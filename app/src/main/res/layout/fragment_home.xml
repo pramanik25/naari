@@ -163,6 +163,69 @@
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
+        <!-- ============ Journey: live check-in / cab banner (journey module) ============ -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/jrJourneyBanner"
+            style="@style/Ns.Card.Tile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/ns_card_padding"
+                android:paddingTop="14dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="14dp">
+
+                <ImageView
+                    android:id="@+id/jrJourneyIcon"
+                    style="@style/Ns.IconBadge"
+                    android:importantForAccessibility="no"
+                    tools:src="@drawable/ua_ic_timer" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/jrJourneyTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:textAppearance="@style/Ns.Text.Subtitle"
+                        tools:text="Check-in running" />
+
+                    <TextView
+                        android:id="@+id/jrJourneySubtitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:accessibilityLiveRegion="none"
+                        android:maxLines="1"
+                        android:textAppearance="@style/Ns.Text.Caption"
+                        android:textColor="@color/ns_text_muted"
+                        tools:text="24:13 left · due 21:45 · tap to open" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="8dp"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ua_ic_chevron_right"
+                    app:tint="@color/ns_text_faint" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
         <!-- ============ Setup nudges ============ -->
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/contactsNudge"
@@ -193,6 +256,15 @@
                 android:id="@+id/triggerNudgeRow"
                 layout="@layout/ua_item_row" />
         </com.google.android.material.card.MaterialCardView>
+
+        <!-- One-time "Help women near you?" (cloud.NearbyHelperCard) -->
+        <include
+            android:id="@+id/nbHelperCard"
+            layout="@layout/cl_card_nearby_helper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:visibility="gone" />
 
         <!-- ============ SOS hero ============ -->
         <FrameLayout
@@ -374,6 +446,68 @@
                 android:layout_marginStart="6dp"
                 android:layout_weight="1" />
         </LinearLayout>
+
+        <!-- ============ Safety tools hub entry (journey module) ============ -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/jrSafetyToolsCard"
+            style="@style/Ns.Card.Tile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:contentDescription="@string/jr_home_tools_cd"
+            app:strokeWidth="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/jr_hero_gradient"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/ns_card_padding"
+                android:paddingTop="18dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="18dp">
+
+                <ImageView
+                    style="@style/Ns.IconBadge"
+                    android:backgroundTint="@color/ns_stroke_soft"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ua_ic_shield"
+                    app:tint="@color/ns_on_rose" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/jr_home_tools_title"
+                        android:textAppearance="@style/Ns.Text.Title"
+                        android:textColor="@color/ns_on_rose" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:alpha="0.85"
+                        android:text="@string/jr_home_tools_sub"
+                        android:textAppearance="@style/Ns.Text.Caption"
+                        android:textColor="@color/ns_on_rose" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="8dp"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ua_ic_chevron_right"
+                    app:tint="@color/ns_on_rose" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
 
         <!-- ============ Safety kit rows ============ -->
         <TextView

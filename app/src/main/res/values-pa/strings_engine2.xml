@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Silent SOS: low-key notification and covert screen -->
+    <string name="en_covert_title">Naari Shakti · ਲੋਕੇਸ਼ਨ ਸਾਂਝੀ ਹੋ ਰਹੀ ਹੈ</string>
+    <string name="en_covert_text">ਸੰਭਾਲਣ ਲਈ ਟੈਪ ਕਰੋ</string>
+    <string name="en_covert_overline">Naari Shakti</string>
+    <string name="en_covert_heading">ਤੁਹਾਡੀ ਲੋਕੇਸ਼ਨ ਸਾਂਝੀ ਹੋ ਰਹੀ ਹੈ</string>
+    <string name="en_covert_body">ਤੁਹਾਡੇ ਭਰੋਸੇਮੰਦ ਸੰਪਰਕਾਂ ਨੂੰ ਤੁਹਾਡੀ ਲਾਈਵ ਲੋਕੇਸ਼ਨ ਮਿਲ ਰਹੀ ਹੈ।</string>
+    <string name="en_covert_hold">ਸਾਂਝਾ ਕਰਨਾ ਬੰਦ ਕਰਨ ਲਈ ਦਬਾ ਕੇ ਰੱਖੋ</string>
+    <string name="en_covert_hint">2 ਸਕਿੰਟ ਦਬਾ ਕੇ ਰੱਖੋ।</string>
+    <string name="en_covert_close">ਬੰਦ ਕਰੋ</string>
+
+    <!-- SMS -->
+    <string name="en_sms_tracking_line">ਲਾਈਵ ਲੋਕੇਸ਼ਨ ਅਤੇ ਸਬੂਤ: %1$s</string>
+    <string name="en_sms_duress">Naari Shakti: ਹੋ ਸਕਦਾ ਹੈ %1$s ਨੂੰ ਅਲਰਟ ਰੱਦ ਕਰਨ ਲਈ ਮਜਬੂਰ ਕੀਤਾ ਗਿਆ ਹੋਵੇ। ਇਸਨੂੰ ਅਜੇ ਵੀ ਚਾਲੂ ਸਮਝੋ। ਲਾਈਵ ਲੋਕੇਸ਼ਨ: %2$s</string>
+    <string name="en_sms_duress_no_link">Naari Shakti: ਹੋ ਸਕਦਾ ਹੈ %1$s ਨੂੰ ਅਲਰਟ ਰੱਦ ਕਰਨ ਲਈ ਮਜਬੂਰ ਕੀਤਾ ਗਿਆ ਹੋਵੇ। ਇਸਨੂੰ ਅਜੇ ਵੀ ਚਾਲੂ ਸਮਝੋ। ਲੋਕੇਸ਼ਨ ਬਾਅਦ ਵਿੱਚ ਆਵੇਗੀ।</string>
+    <string name="en_duress_name_fallback">ਤੁਹਾਡਾ ਸੰਪਰਕ</string>
+
+    <!-- Spoken alert (text to speech, loud) -->
+    <string name="en_spoken_alert">ਬਚਾਓ! ਮੈਨੂੰ ਮਦਦ ਚਾਹੀਦੀ ਹੈ! ਪੁਲਿਸ ਨੂੰ ਬੁਲਾਓ!</string>
+
+    <!-- Protection notification -->
+    <string name="en_action_fake_call">%1$d ਸਕਿੰਟ ਵਿੱਚ ਨਕਲੀ ਕਾਲ</string>
+
+    <!-- SOS screen: calls -->
+    <string name="en_call_112">ਐਮਰਜੈਂਸੀ 112</string>
+    <string name="en_status_call_progress">%1$s ਨੂੰ ਕਾਲ ਕਰ ਰਹੇ ਹਾਂ (%3$d ਵਿੱਚੋਂ %2$d)</string>
+    <string name="en_status_call_progress_detail">ਜਵਾਬ ਨਾ ਮਿਲਣ ’ਤੇ ਅਗਲੇ ਸੰਪਰਕ ਨੂੰ ਕਾਲ ਜਾਵੇਗੀ</string>
+    <string name="en_status_call_connected">%1$s ਨਾਲ ਜੁੜ ਗਏ</string>
+    <string name="en_status_call_connected_detail">ਕਾਲ ਚੁੱਕੀ ਗਈ · ਹੋ ਸਕੇ ਤਾਂ ਲਾਈਨ ’ਤੇ ਰਹੋ</string>
+    <string name="en_status_call_no_answer">ਕਿਸੇ ਨੇ ਜਵਾਬ ਨਹੀਂ ਦਿੱਤਾ</string>
+    <string name="en_status_call_no_answer_detail">ਤੁਹਾਡੇ ਸੰਪਰਕਾਂ ਨੂੰ SMS ਅਲਰਟ ਫਿਰ ਵੀ ਮਿਲ ਗਿਆ ਹੈ</string>
+
+    <!-- SOS screen: siren row -->
+    <string name="en_status_siren_detail_strobe">ਪੂਰੀ ਆਵਾਜ਼ · ਫ਼ਲੈਸ਼ਲਾਈਟ ਜਗ-ਬੁਝ</string>
+    <string name="en_status_siren_detail_voice">ਪੂਰੀ ਆਵਾਜ਼ · ਬੋਲ ਕੇ ਅਲਰਟ</string>
+    <string name="en_status_siren_detail_both">ਪੂਰੀ ਆਵਾਜ਼ · ਫ਼ਲੈਸ਼ · ਬੋਲ ਕੇ ਅਲਰਟ</string>
+
+    <!-- SOS screen: video evidence -->
+    <string name="en_status_video">ਵੀਡੀਓ ਰਿਕਾਰਡ ਹੋ ਰਹੀ ਹੈ</string>
+    <string name="en_status_video_detail">ਸਬੂਤ ਵਾਲੀ ਵੀਡੀਓ ਸੇਵ ਅਤੇ ਅੱਪਲੋਡ ਹੁੰਦੀ ਹੈ</string>
+
+    <!-- SOS screen: PIN pad and stopped confirmation -->
+    <string name="en_pin_stop_title">ਬੰਦ ਕਰਨ ਲਈ ਆਪਣਾ PIN ਲਿਖੋ</string>
+    <string name="en_pin_stop_subtitle">PIN ਲਿਖਣ ਤੱਕ ਤੁਹਾਡਾ SOS ਚਾਲੂ ਰਹੇਗਾ।</string>
+    <string name="en_pin_back_to_sos">SOS ’ਤੇ ਵਾਪਸ ਜਾਓ</string>
+    <string name="en_pin_locked_hint">ਕਈ ਵਾਰ ਗਲਤ PIN ਲਿਖਿਆ ਗਿਆ। ਤੁਹਾਡਾ SOS ਜਾਰੀ ਹੈ। %1$d ਸਕਿੰਟ ਬਾਅਦ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।</string>
+    <string name="en_stopped_title">SOS ਬੰਦ ਹੋ ਗਿਆ</string>
+    <string name="en_stopped_body">ਤੁਹਾਨੂੰ ਸੁਰੱਖਿਅਤ ਮਾਰਕ ਕੀਤਾ ਗਿਆ ਹੈ। ਸੁਰੱਖਿਆ ਚਾਲੂ ਰਹੇਗੀ।</string>
+
+    <!-- PIN pad -->
+    <string name="en_pin_key_delete">ਮਿਟਾਓ</string>
+    <string name="en_pin_key_done">ਹੋ ਗਿਆ</string>
+    <plurals name="en_pin_digits_entered">
+        <item quantity="one">%d ਅੰਕ ਲਿਖਿਆ</item>
+        <item quantity="other">%d ਅੰਕ ਲਿਖੇ</item>
+    </plurals>
+    <plurals name="en_pin_attempts_left">
+        <item quantity="one">ਗਲਤ PIN · %d ਕੋਸ਼ਿਸ਼ ਬਾਕੀ</item>
+        <item quantity="other">ਗਲਤ PIN · %d ਕੋਸ਼ਿਸ਼ਾਂ ਬਾਕੀ</item>
+    </plurals>
+
+    <!-- PIN screen -->
+    <string name="en_back">ਪਿੱਛੇ</string>
+    <string name="en_cancel">ਰੱਦ ਕਰੋ</string>
+    <string name="en_pin_lockout">ਬਹੁਤ ਕੋਸ਼ਿਸ਼ਾਂ ਹੋ ਗਈਆਂ। %1$d ਸਕਿੰਟ ਬਾਅਦ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।</string>
+    <string name="en_pin_verify_title">ਆਪਣਾ PIN ਲਿਖੋ</string>
+    <string name="en_pin_verify_subtitle">ਅੱਗੇ ਵਧਣ ਲਈ ਆਪਣਾ Naari Shakti PIN ਲਿਖੋ।</string>
+    <string name="en_pin_current_title">ਮੌਜੂਦਾ PIN ਲਿਖੋ</string>
+    <string name="en_pin_current_subtitle">PIN ਬਦਲਣ ਤੋਂ ਪਹਿਲਾਂ ਪੁਸ਼ਟੀ ਕਰੋ ਕਿ ਇਹ ਤੁਸੀਂ ਹੀ ਹੋ।</string>
+    <string name="en_pin_manage_title">ਐਪ PIN</string>
+    <string name="en_pin_manage_subtitle">SOS ਬੰਦ ਕਰਨ ਲਈ ਤੁਹਾਡਾ PIN ਚਾਹੀਦਾ ਹੈ।</string>
+    <string name="en_pin_duress_status_on">ਤੁਹਾਡਾ ਐਪ PIN ਚਾਲੂ ਹੈ ਅਤੇ ਮਜਬੂਰੀ PIN ਸੈੱਟ ਹੈ।</string>
+    <string name="en_pin_duress_status_off">ਤੁਹਾਡਾ ਐਪ PIN ਚਾਲੂ ਹੈ। ਕੋਈ ਮਜਬੂਰੀ PIN ਸੈੱਟ ਨਹੀਂ ਹੈ।</string>
+    <string name="en_pin_change">PIN ਬਦਲੋ</string>
+    <string name="en_pin_remove">PIN ਹਟਾਓ</string>
+    <string name="en_pin_new_title">PIN ਬਣਾਓ</string>
+    <string name="en_pin_new_subtitle">4 ਤੋਂ 6 ਅੰਕ ਚੁਣੋ। SOS ਬੰਦ ਕਰਨ ਲਈ ਇਸਦੀ ਲੋੜ ਪਵੇਗੀ।</string>
+    <string name="en_pin_confirm_title">ਆਪਣੇ PIN ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ</string>
+    <string name="en_pin_confirm_subtitle">ਉਹੀ PIN ਦੁਬਾਰਾ ਲਿਖੋ।</string>
+    <string name="en_pin_mismatch">PIN ਮੇਲ ਨਹੀਂ ਖਾਂਦੇ। ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।</string>
+    <string name="en_pin_duress_title">ਮਜਬੂਰੀ PIN ਜੋੜੀਏ?</string>
+    <string name="en_pin_duress_subtitle">ਦੂਜਾ, ਗੁਪਤ PIN, ਜਦੋਂ ਕੋਈ ਤੁਹਾਨੂੰ ਰੱਦ ਕਰਨ ਲਈ ਮਜਬੂਰ ਕਰੇ।</string>
+    <string name="en_pin_duress_body">ਜੇ ਕੋਈ ਤੁਹਾਨੂੰ SOS ਬੰਦ ਕਰਨ ਲਈ ਮਜਬੂਰ ਕਰੇ, ਤਾਂ ਆਪਣੇ ਅਸਲੀ PIN ਦੀ ਥਾਂ ਮਜਬੂਰੀ PIN ਲਿਖੋ।\n\nਫ਼ੋਨ ਬਿਲਕੁਲ ਇੰਝ ਦਿਖੇਗਾ ਜਿਵੇਂ SOS ਰੱਦ ਹੋ ਗਿਆ ਹੋਵੇ: ਸਾਇਰਨ, ਫ਼ਲੈਸ਼ਲਾਈਟ ਅਤੇ SOS ਸਕ੍ਰੀਨ ਬੰਦ ਹੋ ਜਾਣਗੇ।\n\nਪਰ ਚੁੱਪਚਾਪ, ਤੁਹਾਡੇ ਸੰਪਰਕਾਂ ਨੂੰ ਤੁਹਾਡੀ ਲਾਈਵ ਲੋਕੇਸ਼ਨ ਮਿਲਦੀ ਰਹੇਗੀ, ਸਬੂਤ ਰਿਕਾਰਡ ਹੁੰਦੇ ਰਹਿਣਗੇ, ਅਤੇ ਉਨ੍ਹਾਂ ਨੂੰ ਸੁਨੇਹਾ ਜਾਵੇਗਾ ਕਿ ਸ਼ਾਇਦ ਤੁਹਾਨੂੰ ਰੱਦ ਕਰਨ ਲਈ ਮਜਬੂਰ ਕੀਤਾ ਗਿਆ ਹੈ। “ਮੈਂ ਸੁਰੱਖਿਅਤ ਹਾਂ” ਵਾਲਾ ਸੁਨੇਹਾ ਨਹੀਂ ਜਾਵੇਗਾ।</string>
+    <string name="en_pin_duress_set">ਮਜਬੂਰੀ PIN ਸੈੱਟ ਕਰੋ</string>
+    <string name="en_pin_duress_skip">ਛੱਡੋ — ਮਜਬੂਰੀ PIN ਨਹੀਂ</string>
+    <string name="en_pin_duress_new_title">ਮਜਬੂਰੀ PIN ਬਣਾਓ</string>
+    <string name="en_pin_duress_new_subtitle">4 ਤੋਂ 6 ਅੰਕ, ਤੁਹਾਡੇ ਐਪ PIN ਤੋਂ ਵੱਖਰਾ।</string>
+    <string name="en_pin_duress_confirm_title">ਮਜਬੂਰੀ PIN ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ</string>
+    <string name="en_pin_duress_same">ਤੁਹਾਡੇ ਐਪ PIN ਤੋਂ ਵੱਖਰਾ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ</string>
+    <string name="en_pin_saved">PIN ਸੇਵ ਹੋ ਗਿਆ</string>
+    <string name="en_pin_saved_duress">PIN ਅਤੇ ਮਜਬੂਰੀ PIN ਸੇਵ ਹੋ ਗਏ</string>
+    <string name="en_pin_save_failed">PIN ਸੇਵ ਨਹੀਂ ਹੋ ਸਕਿਆ। ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।</string>
+    <string name="en_pin_removed">PIN ਹਟਾ ਦਿੱਤਾ ਗਿਆ</string>
+    <string name="en_pin_remove_confirm_title">PIN ਹਟਾਈਏ?</string>
+    <string name="en_pin_remove_confirm_body">ਜਿਸਦੇ ਹੱਥ ਵਿੱਚ ਤੁਹਾਡਾ ਫ਼ੋਨ ਹੋਵੇਗਾ ਉਹ SOS ਬੰਦ ਕਰ ਸਕੇਗਾ। ਤੁਹਾਡਾ ਮਜਬੂਰੀ PIN ਵੀ ਹਟ ਜਾਵੇਗਾ।</string>
+    <string name="en_pin_remove_confirm_ok">ਹਟਾਓ</string>
+
+    <!-- Fake incoming call -->
+    <string name="en_channel_fake_call">ਸ਼ਡਿਊਲ ਕੀਤੀਆਂ ਕਾਲਾਂ</string>
+    <string name="en_channel_fake_call_desc">ਤੁਹਾਡੇ ਵੱਲੋਂ ਖੁਦ ਸ਼ਡਿਊਲ ਕੀਤੀ ਇਨਕਮਿੰਗ ਕਾਲ ਸਕ੍ਰੀਨ।</string>
+    <string name="en_fake_default_name">ਪਾਪਾ</string>
+    <string name="en_fake_call_scheduled">%1$d ਸਕਿੰਟ ਵਿੱਚ ਇਨਕਮਿੰਗ ਕਾਲ</string>
+    <string name="en_fake_incoming">ਇਨਕਮਿੰਗ ਕਾਲ</string>
+    <string name="en_fake_mobile">ਮੋਬਾਈਲ</string>
+    <string name="en_fake_answer">ਚੁੱਕੋ</string>
+    <string name="en_fake_decline">ਕੱਟੋ</string>
+    <string name="en_fake_swipe_hint">ਚੁੱਕਣ ਲਈ ਉੱਪਰ ਸਵਾਈਪ ਕਰੋ</string>
+    <string name="en_fake_mute">ਮਿਊਟ</string>
+    <string name="en_fake_keypad">ਕੀਪੈਡ</string>
+    <string name="en_fake_speaker">ਸਪੀਕਰ</string>
+    <string name="en_fake_end">ਕਾਲ ਕੱਟੋ</string>
+    <string name="en_fake_ended">ਕਾਲ ਖਤਮ ਹੋਈ</string>
+
+    <!-- Offline mesh alert (on the helper's phone) -->
+    <string name="en_mesh_title">ਨੇੜੇ ਕਿਸੇ ਨੂੰ ਮਦਦ ਚਾਹੀਦੀ ਹੈ — ਲਗਭਗ %1$s ਦੂਰ</string>
+    <string name="en_mesh_title_unknown">ਨੇੜੇ ਕਿਸੇ ਨੂੰ ਮਦਦ ਚਾਹੀਦੀ ਹੈ</string>
+    <string name="en_mesh_text">%1$s ਨੇ %2$s SOS ਭੇਜਿਆ। ਕਿੱਥੇ ਹੈ, ਦੇਖਣ ਲਈ ਟੈਪ ਕਰੋ।</string>
+    <string name="en_mesh_someone">ਕਿਸੇ</string>
+    <string name="en_mesh_just_now">ਹੁਣੇ ਹੁਣੇ</string>
+    <plurals name="en_mesh_minutes_ago">
+        <item quantity="one">%d ਮਿੰਟ ਪਹਿਲਾਂ</item>
+        <item quantity="other">%d ਮਿੰਟ ਪਹਿਲਾਂ</item>
+    </plurals>
+    <string name="en_mesh_open_map">ਨਕਸ਼ਾ ਖੋਲ੍ਹੋ</string>
+    <string name="en_mesh_call_112">112 ’ਤੇ ਕਾਲ ਕਰੋ</string>
+    <string name="en_mesh_distance_m">%1$d ਮੀ.</string>
+    <string name="en_mesh_distance_km">%1$s ਕਿ.ਮੀ.</string>
+</resources>

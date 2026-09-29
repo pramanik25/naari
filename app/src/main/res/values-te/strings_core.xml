@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ns_accessibility_description">స్క్రీన్ ఆఫ్‌లో లేదా లాక్‌లో ఉన్నప్పుడు వాల్యూమ్ బటన్ ప్యాటర్న్‌తో Naari Shakti SOS ప్రారంభించేలా చేస్తుంది. Naari Shakti మీ స్క్రీన్‌పై ఉన్నదాన్ని చదవదు.</string>
+
+    <!-- Appearance & language -->
+    <string name="core_back">వెనుకకు</string>
+    <string name="core_appearance_eyebrow">మీకు నచ్చినట్లు</string>
+    <string name="core_appearance_title">రూపం &amp; భాష</string>
+    <string name="core_appearance_desc">Naari Shakti ఎలా కనిపించాలో, ఏ భాషలో మాట్లాడాలో ఎంచుకోండి. మీ కాంటాక్ట్‌లకు వెళ్లే అలర్ట్‌లు కూడా ఈ భాషలోనే ఉంటాయి.</string>
+    <string name="core_section_theme">థీమ్</string>
+    <string name="core_theme_dark">డార్క్</string>
+    <string name="core_theme_light">లైట్</string>
+    <string name="core_theme_system">ఫోన్</string>
+    <string name="core_section_language">భాష</string>
+    <string name="core_language_desc">అత్యవసర నంబర్లు, SMS లింక్‌లు అన్ని భాషల్లోనూ ఒకేలా ఉంటాయి.</string>
+    <string name="core_language_system">ఫోన్ భాష</string>
+    <string name="core_language_system_caption">మీ ఫోన్ సెట్టింగ్‌లను అనుసరించండి</string>
+    <string name="core_selected">ఎంచుకోబడింది</string>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- In-call toggle (mute / keypad / speaker); selected = on. -->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/en_call_ripple">
+    <item>
+        <selector>
+            <item android:state_selected="true">
+                <shape android:shape="oval">
+                    <solid android:color="@color/en_call_button_active" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="@color/en_call_button" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+</ripple>

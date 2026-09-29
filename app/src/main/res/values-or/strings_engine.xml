@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Notification channels -->
+    <string name="eng_channel_protection">ସୁରକ୍ଷା ସ୍ଥିତି</string>
+    <string name="eng_channel_protection_desc">Naari Shakti ଆପଣଙ୍କ ଟ୍ରିଗର ଶବ୍ଦ, ଫୋନ ହଲାଇବା ଓ ପାୱାର ବଟନ ଦବାଇବା ପାଇଁ ଶୁଣୁଥିବା ବେଳେ ଦେଖାଯାଏ।</string>
+    <string name="eng_channel_sos">SOS ଆଲର୍ଟ</string>
+    <string name="eng_channel_sos_desc">SOS କାଉଣ୍ଟଡାଉନ ଚାଲୁଥିବା ବା ସକ୍ରିୟ ଥିବା ବେଳେ ଫୁଲ-ସ୍କ୍ରିନ ଆଲର୍ଟ।</string>
+    <string name="eng_channel_alerts">ସୁରକ୍ଷା ଆଲର୍ଟ</string>
+    <string name="eng_channel_alerts_desc">ଆପଣଙ୍କ ଧ୍ୟାନ ଦରକାର ଥିବା ସୂଚନା, ଯେପରି ରିଷ୍ଟାର୍ଟ ପରେ ସୁରକ୍ଷା ପୁଣି ଚାଲୁ କରିବା।</string>
+    <string name="eng_channel_live">ଲାଇଭ ଲୋକେସନ ସେୟାରିଂ</string>
+    <string name="eng_channel_live_desc">ଆପଣଙ୍କ ଲାଇଭ ଲୋକେସନ କଣ୍ଟାକ୍ଟଙ୍କ ସହ ସେୟାର ହେଉଥିବା ବେଳେ ଦେଖାଯାଏ।</string>
+    <string name="eng_channel_geofence">ସେଭ ହୋଇଥିବା ସ୍ଥାନ</string>
+    <string name="eng_channel_geofence_desc">ଆପଣ ଏକ ସେଭ ହୋଇଥିବା ସ୍ଥାନରେ ପହଞ୍ଚିଲେ ବା ଛାଡ଼ିଲେ ଆଲର୍ଟ।</string>
+
+    <!-- Protection notification -->
+    <string name="eng_protect_title">Naari Shakti ଆପଣଙ୍କୁ ସୁରକ୍ଷା ଦେଉଛି</string>
+    <string name="eng_protect_text">“%1$s” ପାଇଁ ଶୁଣୁଛି · SOS ପାଇଁ ପାୱାର ×%2$d ଦବାନ୍ତୁ</string>
+    <string name="eng_protect_text_no_voice">SOS ପାଇଁ ହଲାନ୍ତୁ ବା ପାୱାର ×%1$d ଦବାନ୍ତୁ</string>
+    <string name="eng_action_sos_now">ଏବେ SOS</string>
+    <string name="eng_action_turn_off">ବନ୍ଦ କରନ୍ତୁ</string>
+
+    <!-- Resume notification -->
+    <string name="eng_resume_title">ସୁରକ୍ଷା ପୁଣି ଚାଲୁ କରିବାକୁ ଟ୍ୟାପ କରନ୍ତୁ</string>
+    <string name="eng_resume_text">ରିଷ୍ଟାର୍ଟ ପରେ Android, Naari Shakti କୁ ବିରତ କରିଛି। ସୁରକ୍ଷା ପୁଣି ଚାଲୁ କରିବାକୁ ଆପ ଖୋଲନ୍ତୁ।</string>
+
+    <!-- SOS notification -->
+    <string name="eng_sos_countdown_title">SOS ପଠାଯାଉଛି…</string>
+    <string name="eng_sos_countdown_text">ଆପଣଙ୍କ କଣ୍ଟାକ୍ଟଙ୍କୁ ସତର୍କ କରାଯିବ। ଭୁଲରେ ହୋଇଥିଲେ ବାତିଲ ଟ୍ୟାପ କରନ୍ତୁ।</string>
+    <string name="eng_sos_active_title">SOS ସକ୍ରିୟ</string>
+    <string name="eng_sos_active_text">କଣ୍ଟାକ୍ଟଙ୍କୁ ସତର୍କ କରାଯାଉଛି ଓ ଲାଇଭ ଲୋକେସନ ସେୟାର ହେଉଛି।</string>
+    <string name="eng_action_cancel">ବାତିଲ</string>
+    <string name="eng_action_stop_sos">SOS ବନ୍ଦ କରନ୍ତୁ</string>
+    <string name="eng_action_call_contact">%1$s ଙ୍କୁ କଲ</string>
+
+    <!-- SMS bodies -->
+    <string name="eng_sms_location_line">ମୋ ଲୋକେସନ: %1$s</string>
+    <string name="eng_sms_location_pending">ଲୋକେସନ ଏବେ ମିଳିନାହିଁ, ମୁଁ ଶୀଘ୍ର ପଠାଇବି।</string>
+    <string name="eng_sms_location_followup">ମୋ ବର୍ତ୍ତମାନର ଲୋକେସନ: %1$s</string>
+    <string name="eng_sms_location_update">ଲାଇଭ ଲୋକେସନ ଅପଡେଟ (%1$s): %2$s</string>
+    <string name="eng_sms_safe">ମୁଁ ଏବେ ସୁରକ୍ଷିତ ଅଛି। ଦୟାକରି ମୋର ପୂର୍ବ SOS ଆଲର୍ଟକୁ ଧ୍ୟାନ ଦିଅନ୍ତୁ ନାହିଁ। - Naari Shakti ରୁ ପଠାଯାଇଛି</string>
+    <string name="eng_sms_live_start_named">%1$s ଆପଣଙ୍କ ସହ %2$d ମିନିଟ ପାଇଁ ଲାଇଭ ଲୋକେସନ ସେୟାର କରୁଛନ୍ତି: %3$s</string>
+    <string name="eng_sms_live_start">ମୁଁ ଆପଣଙ୍କ ସହ %1$d ମିନିଟ ପାଇଁ ମୋ ଲାଇଭ ଲୋକେସନ ସେୟାର କରୁଛି: %2$s</string>
+    <string name="eng_sms_live_start_no_fix">ମୁଁ ଆପଣଙ୍କ ସହ %1$d ମିନିଟ ପାଇଁ ମୋ ଲାଇଭ ଲୋକେସନ ସେୟାର କରୁଛି। ପ୍ରଥମ ଲୋକେସନ ଶୀଘ୍ର ଆସିବ।</string>
+    <string name="eng_sms_live_start_named_no_fix">%1$s ଆପଣଙ୍କ ସହ %2$d ମିନିଟ ପାଇଁ ଲାଇଭ ଲୋକେସନ ସେୟାର କରୁଛନ୍ତି। ପ୍ରଥମ ଲୋକେସନ ଶୀଘ୍ର ଆସିବ।</string>
+    <string name="eng_sms_live_update">ଲାଇଭ ଲୋକେସନ (%1$s): %2$s</string>
+    <string name="eng_sms_live_ended">ଲାଇଭ ଲୋକେସନ ସେୟାରିଂ ଶେଷ ହେଲା।</string>
+
+    <!-- Telegram / email -->
+    <string name="eng_telegram_sos">Naari Shakti ରୁ SOS\n%1$s</string>
+    <string name="eng_telegram_safe">ଅପଡେଟ: ମୁଁ ଏବେ ସୁରକ୍ଷିତ ଅଛି।</string>
+    <string name="eng_email_subject">ଜରୁରୀ ପ୍ରମାଣ ଫଟୋ (%1$s କ୍ୟାମେରା)</string>
+    <string name="eng_email_body">Naari Shakti ରେ ଏକ SOS ଆରମ୍ଭ ହୋଇଥିଲା। ଏହି ଫଟୋଟି %2$s ରେ %1$s କ୍ୟାମେରା ଦ୍ୱାରା ନିଜେ ନିଆଯାଇଛି।</string>
+    <string name="eng_camera_front">ଆଗ</string>
+    <string name="eng_camera_back">ପଛ</string>
+
+    <!-- Live share notification -->
+    <string name="eng_live_title">ଆପଣଙ୍କ ଲାଇଭ ଲୋକେସନ ସେୟାର ହେଉଛି</string>
+    <string name="eng_live_text">%1$d ଜଣ କଣ୍ଟାକ୍ଟଙ୍କ ସହ · %2$s ରେ ଶେଷ ହେବ</string>
+    <string name="eng_action_stop">ବନ୍ଦ କରନ୍ତୁ</string>
+
+    <!-- Geofence -->
+    <string name="eng_geofence_entered">%1$s ରେ ପହଞ୍ଚିଲେ</string>
+    <string name="eng_geofence_left">%1$s ଛାଡ଼ିଲେ</string>
+    <string name="eng_geofence_default_place">ଏକ ସେଭ ହୋଇଥିବା ସ୍ଥାନ</string>
+    <string name="eng_geofence_text">Naari Shakti ରୁ ସେଭ ହୋଇଥିବା ସ୍ଥାନର ଆଲର୍ଟ</string>
+
+    <!-- PanicActivity: countdown -->
+    <string name="eng_panic_overline">ଜରୁରୀ SOS</string>
+    <string name="eng_panic_countdown_title">SOS ପଠାଯାଉଛି</string>
+    <plurals name="eng_panic_countdown_caption">
+        <item quantity="one">%d ଜଣ କଣ୍ଟାକ୍ଟଙ୍କୁ ଆପଣଙ୍କ ଲୋକେସନ ସହ ସତର୍କ କରାଯାଉଛି</item>
+        <item quantity="other">%d ଜଣ କଣ୍ଟାକ୍ଟଙ୍କୁ ଆପଣଙ୍କ ଲୋକେସନ ସହ ସତର୍କ କରାଯାଉଛି</item>
+    </plurals>
+    <string name="eng_panic_countdown_no_contacts">ଏପର୍ଯ୍ୟନ୍ତ କୌଣସି ଜରୁରୀ କଣ୍ଟାକ୍ଟ ସେଭ ହୋଇନାହାନ୍ତି। ସାଇରେନ ଓ ପ୍ରମାଣ ସଂଗ୍ରହ ତଥାପି ଆରମ୍ଭ ହେବ।</string>
+    <string name="eng_panic_cancel">ବାତିଲ</string>
+    <string name="eng_panic_cancel_hint">ଭୁଲରେ ହୋଇଥିଲେ ବାତିଲ ଟ୍ୟାପ କରନ୍ତୁ</string>
+
+    <!-- PanicActivity: active -->
+    <string name="eng_panic_active_overline">SOS ସକ୍ରିୟ</string>
+    <string name="eng_panic_active_title">ସାହାଯ୍ୟ ଆସୁଛି</string>
+    <string name="eng_panic_active_subtitle">ଫୋନ ପାଖରେ ରଖନ୍ତୁ। ଆପଣଙ୍କ କଣ୍ଟାକ୍ଟଙ୍କୁ ସତର୍କ କରାଯାଉଛି।</string>
+    <string name="eng_panic_status_label">ଲାଇଭ ସ୍ଥିତି</string>
+    <string name="eng_panic_hold_to_stop">ବନ୍ଦ କରିବାକୁ ଦବାଇ ରଖନ୍ତୁ — ମୁଁ ସୁରକ୍ଷିତ</string>
+    <string name="eng_panic_hold_hint">2 ସେକେଣ୍ଡ ଦବାଇ ରଖନ୍ତୁ। ଆପଣଙ୍କୁ ଅନଲକ କରିବାକୁ କୁହାଯାଇପାରେ।</string>
+
+    <string name="eng_status_sms_pending">ଆପଣଙ୍କ କଣ୍ଟାକ୍ଟଙ୍କୁ ସତର୍କ କରାଯାଉଛି…</string>
+    <plurals name="eng_status_sms_done">
+        <item quantity="one">%d ଜଣ କଣ୍ଟାକ୍ଟଙ୍କୁ ଆଲର୍ଟ ପଠାଗଲା</item>
+        <item quantity="other">%d ଜଣ କଣ୍ଟାକ୍ଟଙ୍କୁ ଆଲର୍ଟ ପଠାଗଲା</item>
+    </plurals>
+    <string name="eng_status_sms_detail_location">ଆପଣଙ୍କ ଲୋକେସନର ଲିଙ୍କ ସହ</string>
+    <string name="eng_status_sms_detail_no_location">ଲୋକେସନ ମିଳିବା ମାତ୍ରେ ପଠାଯିବ</string>
+    <string name="eng_status_sms_failed">SMS ଆଲର୍ଟ ପଠାଯାଇପାରିଲା ନାହିଁ</string>
+    <string name="eng_status_sms_failed_detail">SMS ଅନୁମତି ଓ ନେଟୱର୍କ ଯାଞ୍ଚ କରନ୍ତୁ</string>
+    <string name="eng_status_sms_none">କୌଣସି ଜରୁରୀ କଣ୍ଟାକ୍ଟ ନାହାନ୍ତି</string>
+    <string name="eng_status_sms_none_detail">ଜରୁରୀ ସେଟିଂସରେ କଣ୍ଟାକ୍ଟ ଯୋଡ଼ନ୍ତୁ</string>
+
+    <string name="eng_status_call_pending">%1$s ଙ୍କୁ କଲ କରାଯାଉଛି…</string>
+    <string name="eng_status_call_done">%1$s ଙ୍କୁ କଲ ଚାଲିଛି</string>
+    <string name="eng_status_call_detail">ଜରୁରୀ କଲ କରାଗଲା</string>
+    <string name="eng_status_call_failed">%1$s ଙ୍କୁ କଲ ହୋଇପାରିଲା ନାହିଁ</string>
+    <string name="eng_status_call_failed_detail">ଫୋନ ଅନୁମତି ଦିଅନ୍ତୁ କିମ୍ବା ନୋଟିଫିକେସନରୁ କଲ କରନ୍ତୁ</string>
+    <string name="eng_status_call_none">କଲ କରିବାକୁ କୌଣସି କଣ୍ଟାକ୍ଟ ନାହାନ୍ତି</string>
+
+    <string name="eng_status_location_pending">ଆପଣଙ୍କ ଲୋକେସନ ଖୋଜାଯାଉଛି…</string>
+    <string name="eng_status_location_done">ଲାଇଭ ଲୋକେସନ ସେୟାର ହେଉଛି</string>
+    <string name="eng_status_location_detail">ପ୍ରତି 2 ମିନିଟ ବା 100 ମି.ରେ ଅପଡେଟ</string>
+    <string name="eng_status_location_failed">ଲୋକେସନ ଉପଲବ୍ଧ ନାହିଁ</string>
+    <string name="eng_status_location_failed_detail">ଲୋକେସନ ଚାଲୁ କରନ୍ତୁ ଓ ଅନୁମତି ଦିଅନ୍ତୁ</string>
+
+    <string name="eng_status_siren_on">ସାଇରେନ ଚାଲୁ</string>
+    <string name="eng_status_siren_detail">ପୂରା ଭଲ୍ୟୁମରେ ବାଜୁଛି</string>
+    <string name="eng_status_siren_off">ସାଇରେନ ଉପଲବ୍ଧ ନାହିଁ</string>
+
+    <plurals name="eng_status_camera_title">
+        <item quantity="one">ପ୍ରମାଣ ସଂଗ୍ରହ ହେଉଛି (%d ଟି ଫଟୋ)</item>
+        <item quantity="other">ପ୍ରମାଣ ସଂଗ୍ରହ ହେଉଛି (%d ଟି ଫଟୋ)</item>
+    </plurals>
+    <string name="eng_status_camera_detail">ପ୍ରତି 15 ସେକେଣ୍ଡରେ ଆଗ ଓ ପଛ କ୍ୟାମେରା</string>
+    <string name="eng_status_camera_failed">କ୍ୟାମେରା ଉପଲବ୍ଧ ନାହିଁ</string>
+    <string name="eng_status_camera_failed_detail">ପ୍ରମାଣ ସଂଗ୍ରହ ପାଇଁ କ୍ୟାମେରା ଅନୁମତି ଦିଅନ୍ତୁ</string>
+</resources>

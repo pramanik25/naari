@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nb_home_eyebrow">समुदाय</string>
+    <string name="nb_home_title">तुमच्या जवळच्या महिलांना मदत कराल?</string>
+    <string name="nb_home_body">तुमच्या जवळ कोणी SOS सुरू केल्यास, तिच्या लोकेशनसह तुम्हाला अलर्ट मिळेल, म्हणजे तुम्ही मदत करू शकाल किंवा 112 वर कॉल करू शकाल. तुमचे लोकेशन फक्त जवळच्या अलर्टशी जुळवण्यासाठी वापरले जाते आणि ते कधीही कोणालाही दाखवले जात नाही.</string>
+    <string name="nb_home_yes">हो, मी मदत करेन</string>
+    <string name="nb_home_not_now">आत्ता नको</string>
+    <string name="nb_home_thanks">धन्यवाद. जवळ कोणाला मदत हवी असेल तेव्हा तुम्हाला अलर्ट मिळेल.</string>
+    <string name="nb_home_thanks_offline">धन्यवाद. इंटरनेट मिळताच तुमची मदतनीस म्हणून नोंदणी होईल.</string>
+    <string name="nb_home_location_denied">तुमच्या लोकेशनशिवाय आम्ही तुम्हाला जवळच्या अलर्टशी जुळवू शकत नाही. तुम्ही हे नंतर क्लाउड आणि गार्डियन मध्ये सुरू करू शकता.</string>
+
+    <string name="nb_mesh_title">इंटरनेटशिवायही मदत कराल?</string>
+    <string name="nb_mesh_body">इंटरनेट नसताना Naari Shakti जवळच्या फोनमध्ये Bluetooth द्वारे SOS अलर्ट पोहोचवू शकते. यासाठी जवळच्या डिव्हाइसची परवानगी लागते.</string>
+    <string name="nb_mesh_yes">चालू करा</string>
+    <string name="nb_mesh_no">नको, धन्यवाद</string>
+    <string name="nb_mesh_on">ऑफलाइन Bluetooth अलर्ट चालू आहेत.</string>
+    <string name="nb_mesh_denied">ऑफलाइन Bluetooth अलर्टसाठी जवळच्या डिव्हाइसची परवानगी लागते.</string>
+
+    <string name="nb_broadcast_title">SOS दरम्यान माझ्या जवळच्या लोकांना अलर्ट करा</string>
+    <string name="nb_broadcast_sub">2 ते 5 km अंतरातील मदतनिसांना तुमचे लोकेशन आणि फोटो मिळतात, म्हणजे ते मदत करू शकतात. तुमच्या गार्डियनना नेहमीच अलर्ट मिळतो.</string>
+
+    <plurals name="nb_evidence_count">
+        <item quantity="one">%d फोटो किंवा रेकॉर्डिंग</item>
+        <item quantity="other">%d फोटो आणि रेकॉर्डिंग</item>
+    </plurals>
+    <string name="nb_radius_km">%1$d km च्या आत</string>
+    <string name="nb_view_live">लाइव्ह लोकेशन आणि पुरावे पहा</string>
+    <string name="nb_photo_desc">तिच्या SOS मधील सर्वात नवीन फोटो</string>
+    <string name="nb_n_evidence_text">आतापर्यंत %1$s. लाइव्ह पाहण्यासाठी टॅप करा.</string>
+
+    <string name="nb_wa_section">WhatsApp अलर्ट</string>
+    <string name="nb_wa_title">WhatsApp अलर्ट</string>
+    <string name="nb_wa_caption">तुमचा SOS, लाइव्ह लोकेशन आणि फोटो तुमच्या संपर्कांना WhatsApp वर पाठवा.</string>
+    <string name="nb_wa_explain">अलर्ट Naari Shakti च्या WhatsApp नंबरवरून येतात, तुमच्या स्वतःच्या WhatsApp वरून नाही. अलर्ट मिळण्यापूर्वी प्रत्येक संपर्काने तुमच्या आमंत्रणावर एकदा टॅप करून सामील व्हायला हवे.</string>
+    <string name="nb_wa_joined">सामील ✓</string>
+    <string name="nb_wa_not_joined">अजून सामील नाही</string>
+    <string name="nb_wa_invite">आमंत्रित करा</string>
+    <string name="nb_wa_invite_cd">%1$s यांना WhatsApp वर आमंत्रित करा</string>
+    <string name="nb_wa_invite_text">नमस्कार, मी तुम्हाला Naari Shakti मध्ये माझा आपत्कालीन संपर्क म्हणून जोडले आहे. WhatsApp वर माझे SOS अलर्ट मिळवण्यासाठी ही लिंक उघडा आणि संदेश पाठवा: %1$s</string>
+    <string name="nb_wa_invite_chooser">आमंत्रण पाठवा</string>
+    <plurals name="nb_wa_joined_count">
+        <item quantity="one">%2$d पैकी %1$d संपर्क सामील झाला आहे</item>
+        <item quantity="other">%2$d पैकी %1$d संपर्क सामील झाले आहेत</item>
+    </plurals>
+    <string name="nb_wa_empty">WhatsApp अलर्ट पाठवण्यासाठी वर आपत्कालीन संपर्क जोडा.</string>
+    <string name="nb_wa_unavailable">WhatsApp अलर्ट अजून उपलब्ध नाहीत. SMS, कॉल आणि Telegram अलर्ट सुरू राहतील.</string>
+    <string name="nb_wa_cloud_off">WhatsApp अलर्टसाठी क्लाउड सिंक लागतो, जो या फोनवर बंद आहे. SMS, कॉल आणि Telegram अलर्ट सुरू राहतील.</string>
+    <string name="nb_wa_error">सर्व्हरशी संपर्क होऊ शकला नाही. इंटरनेट मिळताच तुमचे बदल सिंक होतील.</string>
+    <string name="nb_wa_retry">पुन्हा प्रयत्न करा</string>
+    <string name="nb_wa_checking">कोण सामील झाले ते तपासत आहोत…</string>
+    <string name="nb_wa_unnamed">नाव नाही</string>
+</resources>

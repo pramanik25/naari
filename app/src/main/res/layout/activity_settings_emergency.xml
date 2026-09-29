@@ -298,6 +298,13 @@
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
+            <!-- ============ WhatsApp alerts (cloud.WhatsAppSection) ============ -->
+            <include
+                android:id="@+id/nbWaSection"
+                layout="@layout/cl_section_whatsapp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
             <!-- ============ Telegram ============ -->
             <TextView
                 style="@style/Ns.SectionLabel"

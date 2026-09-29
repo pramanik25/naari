@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Common -->
+    <string name="tr_back">பின்செல்</string>
+    <string name="tr_not_now">இப்போது வேண்டாம்</string>
+    <string name="tr_cancel">ரத்துசெய்</string>
+    <string name="tr_open_settings">அமைப்புகள்</string>
+
+    <!-- ===================== SMS alerts to emergency contacts ===================== -->
+    <string name="tr_default_owner_name">உங்கள் தொடர்பு</string>
+    <string name="tr_sms_shutdown">Naari Shakti: %1$s-இன் ஃபோன் அணைகிறது. கடைசி இருப்பிடம்: %2$s</string>
+    <string name="tr_sms_low_battery">Naari Shakti: %1$s-இன் ஃபோன் பேட்டரி %2$d%% உள்ளது. கடைசி இருப்பிடம்: %3$s</string>
+    <string name="tr_sms_sim_changed">Naari Shakti: %1$s-இன் ஃபோனில் SIM கார்டு மாற்றப்பட்டது. இந்தச் செய்தி புதிய SIM-இலிருந்து வருகிறது. இருப்பிடம்: %2$s</string>
+    <string name="tr_sms_location_fmt">%1$s (%2$s)</string>
+    <string name="tr_sms_location_unknown">கிடைக்கவில்லை</string>
+
+    <!-- ===================== Volume-key SOS (accessibility) ===================== -->
+    <string name="tr_a11y_dialog_title">ஒலியளவுப் பொத்தான் SOS-ஐ இயக்கவும்</string>
+    <string name="tr_a11y_dialog_body">திரை அணைந்திருந்தாலும் ஒலியளவைக் குறைக்கும் பொத்தானை 5 முறை அழுத்தி SOS தொடங்க, அணுகல்தன்மை அமைப்புகளில் %1$s-ஐ இயக்கவும்.\n\nஅடுத்த திரையில் \"நிறுவிய ஆப்ஸ்\" (அல்லது \"பதிவிறக்கிய ஆப்ஸ்\") என்பதைத் திறந்து, %1$s-ஐத் தேர்வுசெய்து இயக்கவும். இது ஒலியளவுப் பொத்தான்களை மட்டுமே கவனிக்கும், உங்கள் திரையை ஒருபோதும் படிக்காது.</string>
+    <string name="tr_a11y_dialog_open">அமைப்புகளைத் திற</string>
+
+    <!-- ===================== Panic button screen ===================== -->
+    <string name="tr_pb_eyebrow">கூடுதல் தூண்டிகள்</string>
+    <string name="tr_pb_title">பேனிக் பொத்தான்</string>
+    <string name="tr_pb_desc">சிறிய Bluetooth பொத்தானை இணைத்து, அதை இருமுறை அழுத்தினால், ஃபோனை வெளியே எடுக்காமலேயே SOS தொடங்கும்.</string>
+
+    <string name="tr_pb_status_label">உங்கள் பொத்தான்</string>
+    <string name="tr_pb_no_button">பொத்தான் இணைக்கப்படவில்லை</string>
+    <string name="tr_pb_unnamed">பெயரில்லாத பொத்தான்</string>
+    <string name="tr_pb_status_not_set">அமைக்கப்படவில்லை</string>
+    <string name="tr_pb_status_connected">இணைக்கப்பட்டது</string>
+    <string name="tr_pb_status_connecting">பொத்தானைத் தேடுகிறது… அருகில் வைக்கவும்</string>
+    <string name="tr_pb_status_unsupported">இந்தச் சாதனம் ஆதரிக்கப்படும் பொத்தான் அல்ல</string>
+    <string name="tr_pb_status_bt_off">Bluetooth முடக்கத்தில் உள்ளது</string>
+    <string name="tr_pb_status_permission">Bluetooth அனுமதி தேவை</string>
+    <string name="tr_pb_status_unavailable">கிடைக்கவில்லை</string>
+    <string name="tr_pb_status_off">இணைக்கப்படவில்லை</string>
+    <string name="tr_pb_protection_hint">பொத்தான் SOS தொடங்க, பாதுகாப்பை இயக்கவும்.</string>
+
+    <string name="tr_pb_forget">பொத்தானை மற</string>
+    <string name="tr_pb_forget_title">இந்தப் பொத்தானை மறக்கவா?</string>
+    <string name="tr_pb_forget_body">%1$s இனி SOS தொடங்காது.</string>
+    <string name="tr_pb_forget_confirm">மற</string>
+    <string name="tr_pb_forgotten">பொத்தான் மறக்கப்பட்டது</string>
+
+    <string name="tr_pb_section_test">சோதனை</string>
+    <string name="tr_pb_test_title">சோதிக்கப் பொத்தானை இருமுறை அழுத்தவும்</string>
+    <string name="tr_pb_test_waiting">பொத்தான் இணையக் காத்திருக்கிறது…</string>
+    <string name="tr_pb_test_hint">ஒரு வினாடிக்குள் இரண்டு விரைவான அழுத்தங்கள். ஒருமுறை அழுத்தினால் எதுவும் நடக்காது, எனவே தவறுதலாகத் தொடங்காது.</string>
+    <string name="tr_pb_test_one">ஒரு அழுத்தம். இப்போது மீண்டும் வேகமாக அழுத்தவும்</string>
+    <string name="tr_pb_test_success">வேலை செய்கிறது!</string>
+    <string name="tr_pb_test_success_body">பாதுகாப்பு இயக்கத்தில் இருக்கும்போது, இருமுறை அழுத்தினால் SOS கவுண்ட்டவுன் தொடங்கும். கவுண்ட்டவுனின்போது ரத்துசெய்யலாம். இங்கே சோதிக்கும்போது SOS ஒருபோதும் அனுப்பப்படாது.</string>
+    <string name="tr_pb_test_again">மீண்டும் சோதி</string>
+
+    <string name="tr_pb_section_find">உங்கள் பொத்தானைக் கண்டறியவும்</string>
+    <string name="tr_pb_nearby">அருகிலுள்ள பொத்தான்கள்</string>
+    <string name="tr_pb_scan_hint">பொத்தானை இயக்கி (பீப் ஒலி வரும் வரை அழுத்திப் பிடிக்கவும்), ஃபோனுக்கு அருகில் வைக்கவும்.</string>
+    <string name="tr_pb_scan">பொத்தான்களைத் தேடு</string>
+    <string name="tr_pb_stop_scan">தேடலை நிறுத்து</string>
+    <string name="tr_pb_scanning">தேடுகிறது…</string>
+    <string name="tr_pb_empty">பொத்தான்கள் எதுவும் கிடைக்கவில்லை. அது இயக்கத்தில் உள்ளதா, அருகில் உள்ளதா எனச் சரிபார்த்து மீண்டும் தேடவும்.</string>
+    <string name="tr_pb_empty_location">பொத்தான்கள் எதுவும் கிடைக்கவில்லை. Bluetooth சாதனங்களைத் தேட Android-க்கு இருப்பிடம் இயக்கத்தில் இருக்க வேண்டும். அதை இயக்கி மீண்டும் தேடவும்.</string>
+    <string name="tr_pb_scan_failed">தேடல் தோல்வியடைந்தது (பிழை %1$d). Bluetooth-ஐ அணைத்து மீண்டும் இயக்கி, மீண்டும் முயலவும்.</string>
+    <string name="tr_pb_no_bluetooth">இந்த ஃபோன் Bluetooth Low Energy-ஐ ஆதரிக்கவில்லை.</string>
+    <string name="tr_pb_bt_needed">உங்கள் பொத்தானைக் கண்டறிய Bluetooth-ஐ இயக்கவும்.</string>
+    <string name="tr_pb_perm_denied">உங்கள் பொத்தானைக் கண்டறிய Naari Shakti-க்கு அருகிலுள்ள சாதனங்கள், இருப்பிடம் ஆகிய அனுமதிகள் தேவை.</string>
+    <string name="tr_pb_paired_snack">%1$s சேமிக்கப்பட்டது. இப்போது சோதிக்க இருமுறை அழுத்தவும்.</string>
+    <string name="tr_pb_rssi">%1$d dBm</string>
+    <string name="tr_pb_tag_compatible">இணக்கமானது</string>
+    <string name="tr_pb_tag_paired">இணைக்கப்பட்டது</string>
+    <string name="tr_pb_device_cd">%1$s, சிக்னல் 4-இல் %2$d. இந்தப் பொத்தானைப் பயன்படுத்த இருமுறை தட்டவும்.</string>
+
+    <string name="tr_pb_section_supported">ஆதரிக்கப்படும் பொத்தான்கள்</string>
+    <string name="tr_pb_sup1_title">iTag கீஃபைண்டர் பொத்தான்கள்</string>
+    <string name="tr_pb_sup1_body">\"iTag\" அல்லது \"anti-lost tracker\" என விற்கப்படும் சிறிய Bluetooth கீஃபைண்டர் பொத்தான்கள் சிறப்பாக வேலை செய்யும். ஆன்லைனில் சுமார் ₹200 ஆகும்.</string>
+    <string name="tr_pb_sup2_title">காயின் செல் பேட்டரியில் இயங்கும்</string>
+    <string name="tr_pb_sup2_body">CR2032 பேட்டரி பல மாதங்கள் நீடிக்கும். பொத்தானைச் சாவி, பை வார் அல்லது உடையில் மாட்டிக்கொள்ளலாம்.</string>
+    <string name="tr_pb_sup3_title">பின்னணியில் வேலை செய்யும்</string>
+    <string name="tr_pb_sup3_body">பாதுகாப்பு இயக்கத்தில் இருக்கும்போது, ஃபோன் இணைப்பில் இருக்கும்; பொத்தான் மீண்டும் அருகில் வந்ததும் தானாக மீண்டும் இணையும்.</string>
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ============================================================
+         Extra SOS triggers and device guard (package .triggers).
+         ============================================================ -->
+
+    <!-- Common -->
+    <string name="tr_back">Back</string>
+    <string name="tr_not_now">Not now</string>
+    <string name="tr_cancel">Cancel</string>
+    <string name="tr_open_settings">Settings</string>
+
+    <!-- ===================== SMS alerts to emergency contacts =====================
+         Keep these short: they are sent as SMS. %1$s is the phone owner's name (or
+         tr_default_owner_name), the location argument is tr_sms_location_fmt or
+         tr_sms_location_unknown. -->
+    <string name="tr_default_owner_name">Your contact</string>
+    <string name="tr_sms_shutdown">Naari Shakti: %1$s\'s phone is switching off. Last known location: %2$s</string>
+    <!-- %2$d is the battery percentage. -->
+    <string name="tr_sms_low_battery">Naari Shakti: %1$s\'s phone battery is at %2$d%%. Last known location: %3$s</string>
+    <string name="tr_sms_sim_changed">Naari Shakti: The SIM card in %1$s\'s phone was changed. This message is from the new SIM. Location: %2$s</string>
+    <!-- %1$s is a Google Maps link, %2$s the time the location was recorded. -->
+    <string name="tr_sms_location_fmt">%1$s (%2$s)</string>
+    <string name="tr_sms_location_unknown">not available</string>
+
+    <!-- ===================== Volume-key SOS (accessibility) ===================== -->
+    <string name="tr_a11y_dialog_title">Turn on volume-key SOS</string>
+    <!-- %1$s is the app name as listed in Accessibility settings. -->
+    <string name="tr_a11y_dialog_body">To start an SOS by pressing volume-down 5 times, even with the screen off, turn on %1$s in Accessibility settings.\n\nOn the next screen open \"Installed apps\" (or \"Downloaded apps\"), choose %1$s and switch it on. It only watches the volume keys and never reads your screen.</string>
+    <string name="tr_a11y_dialog_open">Open settings</string>
+
+    <!-- ===================== Panic button screen ===================== -->
+    <string name="tr_pb_eyebrow">Extra triggers</string>
+    <string name="tr_pb_title">Panic button</string>
+    <string name="tr_pb_desc">Pair a small Bluetooth button and press it twice to start an SOS without taking out your phone.</string>
+
+    <string name="tr_pb_status_label">Your button</string>
+    <string name="tr_pb_no_button">No button paired</string>
+    <string name="tr_pb_unnamed">Unnamed button</string>
+    <string name="tr_pb_status_not_set">Not set up</string>
+    <string name="tr_pb_status_connected">Connected</string>
+    <string name="tr_pb_status_connecting">Looking for the button… keep it close</string>
+    <string name="tr_pb_status_unsupported">This device isn\'t a supported button</string>
+    <string name="tr_pb_status_bt_off">Bluetooth is off</string>
+    <string name="tr_pb_status_permission">Bluetooth permission needed</string>
+    <string name="tr_pb_status_unavailable">Not available</string>
+    <string name="tr_pb_status_off">Not connected</string>
+    <string name="tr_pb_protection_hint">Turn on protection so the button can start an SOS.</string>
+
+    <string name="tr_pb_forget">Forget button</string>
+    <string name="tr_pb_forget_title">Forget this button?</string>
+    <!-- %1$s is the button's name. -->
+    <string name="tr_pb_forget_body">%1$s will no longer start an SOS.</string>
+    <string name="tr_pb_forget_confirm">Forget</string>
+    <string name="tr_pb_forgotten">Button forgotten</string>
+
+    <string name="tr_pb_section_test">Test</string>
+    <string name="tr_pb_test_title">Press the button twice to test</string>
+    <string name="tr_pb_test_waiting">Waiting for the button to connect…</string>
+    <string name="tr_pb_test_hint">Two quick presses within a second. A single press does nothing, so it can\'t go off by accident.</string>
+    <string name="tr_pb_test_one">One press. Now press again quickly</string>
+    <string name="tr_pb_test_success">It works!</string>
+    <string name="tr_pb_test_success_body">While protection is on, a double-press starts the SOS countdown. You can still cancel during the countdown. Testing here never sends an SOS.</string>
+    <string name="tr_pb_test_again">Test again</string>
+
+    <string name="tr_pb_section_find">Find your button</string>
+    <string name="tr_pb_nearby">Nearby buttons</string>
+    <string name="tr_pb_scan_hint">Switch the button on (press and hold until it beeps) and keep it next to your phone.</string>
+    <string name="tr_pb_scan">Scan for buttons</string>
+    <string name="tr_pb_stop_scan">Stop scanning</string>
+    <string name="tr_pb_scanning">Scanning…</string>
+    <string name="tr_pb_empty">No buttons found. Make sure it\'s switched on and close by, then scan again.</string>
+    <string name="tr_pb_empty_location">No buttons found. Android needs Location turned on to scan for Bluetooth devices. Turn it on and scan again.</string>
+    <!-- %1$d is an Android error code. -->
+    <string name="tr_pb_scan_failed">Scanning failed (error %1$d). Turn Bluetooth off and on, then try again.</string>
+    <string name="tr_pb_no_bluetooth">This phone doesn\'t support Bluetooth Low Energy.</string>
+    <string name="tr_pb_bt_needed">Turn on Bluetooth to find your button.</string>
+    <string name="tr_pb_perm_denied">Naari Shakti needs the Nearby devices and Location permissions to find your button.</string>
+    <!-- %1$s is the button's name. -->
+    <string name="tr_pb_paired_snack">%1$s saved. Now press it twice to test.</string>
+    <!-- Signal strength, %1$d is negative, e.g. -62 dBm. -->
+    <string name="tr_pb_rssi">%1$d dBm</string>
+    <string name="tr_pb_tag_compatible">Compatible</string>
+    <string name="tr_pb_tag_paired">Paired</string>
+    <!-- Screen reader: %1$s device name, %2$d signal bars (1 to 4). -->
+    <string name="tr_pb_device_cd">%1$s, signal %2$d of 4. Double-tap to use this button.</string>
+
+    <string name="tr_pb_section_supported">Supported buttons</string>
+    <string name="tr_pb_sup1_title">iTag keyfinder buttons</string>
+    <string name="tr_pb_sup1_body">Small Bluetooth keyfinder buttons sold as \"iTag\" or \"anti-lost tracker\" work best. They cost about ₹200 online.</string>
+    <string name="tr_pb_sup2_title">Runs on a coin cell</string>
+    <string name="tr_pb_sup2_body">A CR2032 battery lasts for months. Clip the button to your keys, bag strap or clothes.</string>
+    <string name="tr_pb_sup3_title">Works in the background</string>
+    <string name="tr_pb_sup3_body">While protection is on, your phone stays connected and reconnects on its own when the button comes back in range.</string>
+</resources>

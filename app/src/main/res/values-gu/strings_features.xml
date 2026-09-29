@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ===================== Shared ===================== -->
+    <string name="ub_back">પાછળ</string>
+    <string name="ub_add">ઉમેરો</string>
+    <string name="ub_cancel">રદ કરો</string>
+    <string name="ub_continue">આગળ વધો</string>
+    <string name="ub_not_now">હમણાં નહીં</string>
+    <string name="ub_delete">ડિલીટ કરો</string>
+    <string name="ub_discard">રદ કરો</string>
+    <string name="ub_undo">પાછું લાવો</string>
+    <string name="ub_send">મોકલો</string>
+    <string name="ub_share">શેર કરો</string>
+    <string name="ub_copy">કૉપિ કરો</string>
+    <string name="ub_copied">લોકેશન કૉપિ થયું</string>
+    <string name="ub_open_in_maps">નકશામાં ખોલો</string>
+    <string name="ub_open_settings">સેટિંગ્સ</string>
+    <string name="ub_allow_location">લોકેશનની મંજૂરી આપો</string>
+    <string name="ub_add_contacts">સંપર્કો ઉમેરો</string>
+    <string name="ub_text_contacts">સંપર્કોને SMS કરો</string>
+    <string name="ub_locating">લોકેશન શોધી રહ્યાં છીએ…</string>
+    <string name="ub_ellipsis">…</string>
+    <string name="ub_quoted">“%1$s”</string>
+    <string name="ub_quoted_partial">“%1$s…”</string>
+    <string name="ub_recenter_cd">મારા લોકેશન પર લાવો</string>
+    <string name="ub_share_subject">મારું લોકેશન</string>
+    <string name="ub_share_chooser">તમારું લોકેશન શેર કરો</string>
+    <string name="ub_no_contacts">પહેલાં ઇમરજન્સી સંપર્કો ઉમેરો</string>
+    <string name="ub_location_denied">તમે ક્યાં છો તે શોધવા લોકેશનની પરવાનગી જરૂરી છે.</string>
+    <string name="ub_location_unavailable">તમારું લોકેશન મળ્યું નહીં. લોકેશન ચાલુ કરીને ફરી પ્રયાસ કરો.</string>
+    <string name="ub_sms_denied_fallback">SMS પરવાનગી મળી નથી, તેથી તેના બદલે શેર વિકલ્પો ખોલીશું.</string>
+    <string name="ub_sms_failed">SMS મોકલી શકાયા નહીં.</string>
+    <string name="ub_share_caption_none">તમારું લોકેશન SMS કરવા ઇમરજન્સી સંપર્કો ઉમેરો</string>
+    <string name="ub_share_confirm_body">તેમને SMS માં Google Maps ની લિંક મળશે, જે બતાવશે કે તમે અત્યારે ક્યાં છો.</string>
+    <string name="ub_location_message_help">મને કદાચ મદદની જરૂર છે. મારું હાલનું લોકેશન: %1$s</string>
+    <string name="ub_location_message_share">આ મારું હાલનું લોકેશન છે: %1$s</string>
+    <string name="ub_location_message_address">હું %1$s ની નજીક છું. મારું હાલનું લોકેશન: %2$s</string>
+
+    <plurals name="ub_share_caption">
+        <item quantity="one">તમારા %d ઇમરજન્સી સંપર્કને Google Maps લિંક SMS કરે છે</item>
+        <item quantity="other">તમારા %d ઇમરજન્સી સંપર્કોને Google Maps લિંક SMS કરે છે</item>
+    </plurals>
+    <plurals name="ub_share_confirm_title">
+        <item quantity="one">%d સંપર્કને તમારું લોકેશન મોકલીએ?</item>
+        <item quantity="other">%d સંપર્કોને તમારું લોકેશન મોકલીએ?</item>
+    </plurals>
+    <plurals name="ub_sms_sent">
+        <item quantity="one">%d સંપર્કને લોકેશન મોકલ્યું</item>
+        <item quantity="other">%d સંપર્કોને લોકેશન મોકલ્યું</item>
+    </plurals>
+
+    <!-- ===================== Trigger phrase ===================== -->
+    <string name="ub_trigger_eyebrow">અવાજથી ટ્રિગર</string>
+    <string name="ub_trigger_title">ટ્રિગર શબ્દ</string>
+    <string name="ub_trigger_desc">સુરક્ષા ચાલુ હોય ત્યારે આ શબ્દ બોલો, અને Naari Shakti તમારો SOS મોકલી દેશે.</string>
+    <string name="ub_trigger_current_label">તમારો ટ્રિગર શબ્દ</string>
+    <string name="ub_trigger_status_active">હમણાં સાંભળી રહી છે · ઑફલાઇન કામ કરે છે</string>
+    <string name="ub_trigger_status_inactive">ફક્ત સુરક્ષા ચાલુ હોય ત્યારે જ સંભળાય છે</string>
+    <string name="ub_trigger_section_record">તમારો શબ્દ રેકોર્ડ કરો</string>
+    <string name="ub_trigger_section_type">અથવા લખો</string>
+    <string name="ub_trigger_section_tips">ટિપ્સ</string>
+    <string name="ub_trigger_record_cd">શબ્દ રેકોર્ડ કરો</string>
+    <string name="ub_trigger_stop_cd">રેકોર્ડિંગ બંધ કરો</string>
+    <string name="ub_trigger_tap_to_record">માઇક પર ટૅપ કરો અને તમારો શબ્દ બોલો</string>
+    <string name="ub_trigger_record_hint">બે-ત્રણ અસામાન્ય અંગ્રેજી શબ્દો સૌથી સારા રહે છે, જેમ કે “purple mango”.</string>
+    <string name="ub_trigger_starting">તૈયાર થઈ રહ્યું છે…</string>
+    <string name="ub_trigger_listening">સાંભળી રહી છે… તમારો શબ્દ બોલો</string>
+    <string name="ub_trigger_processing">મળી ગયું, તપાસી રહ્યાં છીએ…</string>
+    <string name="ub_trigger_confirm_prompt">શું અમે બરાબર સાંભળ્યું?</string>
+    <string name="ub_trigger_we_heard">અમે સાંભળ્યું</string>
+    <string name="ub_trigger_try_again">ફરી પ્રયાસ કરો</string>
+    <string name="ub_trigger_use">આ વાપરો</string>
+    <string name="ub_trigger_input_hint">ટ્રિગર શબ્દ</string>
+    <string name="ub_trigger_input_helper">1–4 અંગ્રેજી શબ્દો, ફક્ત a–z અક્ષરો.</string>
+    <string name="ub_trigger_save_typed">શબ્દ સેવ કરો</string>
+    <string name="ub_trigger_saved">ટ્રિગર શબ્દ “%1$s” સેટ થયો</string>
+    <string name="ub_trigger_err_empty">શબ્દ લખો</string>
+    <string name="ub_trigger_err_short">આ બરાબર ઓળખવા માટે બહુ ટૂંકો છે</string>
+    <string name="ub_trigger_err_words">વધુમાં વધુ 4 શબ્દો રાખો</string>
+    <string name="ub_trigger_err_letters">ફક્ત અંગ્રેજી અક્ષરો (a–z) અને સ્પેસ વાપરો</string>
+    <string name="ub_trigger_err_no_match">બરાબર સંભળાયું નહીં. ફરી પ્રયાસ કરવા માઇક પર ટૅપ કરો.</string>
+    <string name="ub_trigger_err_busy">માઇક્રોફોન વ્યસ્ત છે. જો સુરક્ષા સાંભળી રહી હોય, તો તેને થોભાવો અથવા નીચે તમારો શબ્દ લખો.</string>
+    <string name="ub_trigger_err_network">અત્યારે અવાજ ઓળખવા માટે ઇન્ટરનેટ જરૂરી છે. તેના બદલે નીચે તમારો શબ્દ લખો.</string>
+    <string name="ub_trigger_err_generic">રેકોર્ડિંગ ન થયું. ફરી પ્રયાસ કરો અથવા નીચે તમારો શબ્દ લખો.</string>
+    <string name="ub_trigger_mic_denied">રેકોર્ડ કરવા માઇક્રોફોન ઍક્સેસ જરૂરી છે. તેના બદલે તમે તમારો શબ્દ લખી શકો છો.</string>
+    <string name="ub_trigger_mic_rationale_title">માઇક્રોફોનની મંજૂરી આપો</string>
+    <string name="ub_trigger_mic_rationale_body">Naari Shakti માઇક્રોફોનનો ઉપયોગ ફક્ત તમારો શબ્દ એક વાર સાંભળીને લખવા માટે કરે છે. કોઈ ઑડિયો સેવ થતો નથી.</string>
+    <string name="ub_trigger_unavailable_title">અવાજ રેકોર્ડિંગ ઉપલબ્ધ નથી</string>
+    <string name="ub_trigger_unavailable_body">આ ફોનમાં અવાજ ઓળખવાની સેવા નથી. તેના બદલે નીચે તમારો શબ્દ લખો.</string>
+    <string name="ub_trigger_warn_title">ઓછો વપરાતો શબ્દ પસંદ કરશો?</string>
+    <string name="ub_trigger_warn_common">“%1$s” રોજની વાતચીતમાં વારંવાર આવે છે અને ખોટા અલાર્મ વગાડી શકે છે. બે-ત્રણ અસામાન્ય શબ્દો સૌથી સારા રહે છે.</string>
+    <string name="ub_trigger_warn_single">એક જ શબ્દ ભૂલથી બોલાઈ જાય એવું સહેલું છે. બે-ત્રણ અસામાન્ય શબ્દો સૌથી સારા રહે છે.</string>
+    <string name="ub_trigger_save_anyway">તો પણ સેવ કરો</string>
+    <string name="ub_trigger_change">બદલો</string>
+    <string name="ub_trigger_tip1_title">સ્પષ્ટ બોલો</string>
+    <string name="ub_trigger_tip1_body">ઇમરજન્સીમાં જેમ બોલો તેમ, સામાન્ય અવાજે બોલો.</string>
+    <string name="ub_trigger_tip2_title">ઑફલાઇન કામ કરે છે</string>
+    <string name="ub_trigger_tip2_body">ઓળખ તમારા ફોનમાં જ થાય છે. કોઈ ઑડિયો ડિવાઇસની બહાર જતો નથી.</string>
+    <string name="ub_trigger_tip3_title">સુરક્ષા ચાલુ હોવી જોઈએ</string>
+    <string name="ub_trigger_tip3_body">હોમ પરથી સુરક્ષા ચાલુ હોય ત્યારે જ તમારો શબ્દ સાંભળવામાં આવે છે.</string>
+
+    <!-- ===================== Emergency contacts & alerts ===================== -->
+    <string name="ub_emg_eyebrow">ઇમરજન્સી સેટઅપ</string>
+    <string name="ub_emg_title">સંપર્કો અને એલર્ટ</string>
+    <string name="ub_emg_desc">SOS વખતે કોને જાણ થશે, અને તેમને શું મળશે.</string>
+    <string name="ub_emg_section_message">ઇમરજન્સી સંદેશ</string>
+    <string name="ub_emg_section_contacts">ઇમરજન્સી સંપર્કો</string>
+    <string name="ub_emg_section_telegram">Telegram ફોટો એલર્ટ</string>
+    <string name="ub_emg_section_email">ઈમેલ ફોટો એલર્ટ</string>
+    <string name="ub_emg_message_title">SOS સંદેશ</string>
+    <string name="ub_emg_message_caption">દરેક સંપર્કને SMS થી મોકલાય છે</string>
+    <string name="ub_emg_message_hint">મને મદદ જોઈએ છે! આ ઇમરજન્સી છે.</string>
+    <string name="ub_emg_message_preview">+ તમારા લાઇવ લોકેશનની લિંક આપમેળે ઉમેરાય છે</string>
+    <string name="ub_emg_contacts_title">વિશ્વાસુ લોકો</string>
+    <string name="ub_emg_contacts_caption">SOS વખતે SMS · પહેલાને કૉલ</string>
+    <string name="ub_emg_count">%1$d / %2$d</string>
+    <string name="ub_emg_contacts_empty_title">હજી કોઈ સંપર્ક નથી</string>
+    <string name="ub_emg_contacts_empty_body">5 લોકો સુધી ઉમેરો, જેમને તમારો SOS સંદેશ અને કૉલ મળશે.</string>
+    <string name="ub_emg_add_from_contacts">સંપર્કોમાંથી ઉમેરો</string>
+    <string name="ub_emg_add_manually">નંબર જાતે ઉમેરો</string>
+    <string name="ub_emg_limit_reached">5 માંથી 5 સંપર્કો ઉમેર્યા</string>
+    <string name="ub_emg_limit_reached_long">તમે 5 સંપર્કો સુધી ઉમેરી શકો છો. બીજો ઉમેરવા એક દૂર કરો.</string>
+    <string name="ub_emg_primary_pill">મુખ્ય · પહેલો કૉલ</string>
+    <string name="ub_emg_unnamed">નામ વગરનો સંપર્ક</string>
+    <string name="ub_emg_options_cd">%1$s માટે વિકલ્પો</string>
+    <string name="ub_emg_make_primary">મુખ્ય બનાવો</string>
+    <string name="ub_emg_remove">દૂર કરો</string>
+    <string name="ub_emg_now_primary">%1$s ને પહેલો કૉલ થશે</string>
+    <string name="ub_emg_remove_title">%1$s ને દૂર કરીએ?</string>
+    <string name="ub_emg_remove_body">તેમને હવે તમારા SOS સંદેશ કે કૉલ નહીં મળે.</string>
+    <string name="ub_emg_removed">%1$s દૂર થયા</string>
+    <string name="ub_emg_added">%1$s ઉમેરાયા</string>
+    <string name="ub_emg_dialog_title">સંપર્ક ઉમેરો</string>
+    <string name="ub_emg_dialog_name_hint">નામ</string>
+    <string name="ub_emg_dialog_number_hint">ફોન નંબર</string>
+    <string name="ub_emg_dialog_number_helper">ભારત બહારનો નંબર હોય તો દેશનો કોડ ઉમેરો, જેમ કે +44</string>
+    <string name="ub_emg_err_number">માન્ય ફોન નંબર લખો</string>
+    <string name="ub_emg_err_picked_number">તે સંપર્કમાં માન્ય ફોન નંબર નથી.</string>
+    <string name="ub_emg_err_duplicate">આ નંબર તમારી યાદીમાં પહેલેથી છે</string>
+    <string name="ub_emg_err_read_contact">તે સંપર્ક વાંચી શકાયો નહીં. નંબર જાતે ઉમેરી જુઓ.</string>
+    <string name="ub_emg_contacts_denied">સંપર્કોની ઍક્સેસ નકારાઈ.</string>
+    <string name="ub_emg_no_contacts_app">કોઈ સંપર્કો ઍપ મળી નથી.</string>
+    <string name="ub_emg_telegram_title">Telegram</string>
+    <string name="ub_emg_telegram_not_linked">હજી જોડાયેલું નથી</string>
+    <string name="ub_emg_telegram_not_configured">બૉટ સેટ નથી</string>
+    <string name="ub_emg_telegram_not_configured_body">ઍપના આ વર્ઝનમાં Telegram એલર્ટ સેટ નથી. SMS અને ઈમેલ એલર્ટ હજી પણ કામ કરે છે.</string>
+    <string name="ub_emg_telegram_explain">જે સંપર્કોને ફોટા મળવા જોઈએ તેઓ બૉટ ખોલીને Start પર ટૅપ કરે, પછી તમે સિંક પર ટૅપ કરો.</string>
+    <string name="ub_emg_open_bot">બૉટ ખોલો</string>
+    <string name="ub_emg_open_bot_failed">Telegram ખૂલી શક્યું નહીં.</string>
+    <string name="ub_emg_sync">સિંક</string>
+    <string name="ub_emg_syncing">સિંક થઈ રહ્યું છે…</string>
+    <string name="ub_emg_sync_failed">સિંક નિષ્ફળ: %1$s</string>
+    <string name="ub_emg_sync_none">હજી કોઈ ચૅટ નથી. દરેક સંપર્કને બૉટ ખોલીને Start પર ટૅપ કરવા કહો.</string>
+    <string name="ub_emg_email_title">ઈમેલ</string>
+    <string name="ub_emg_email_caption">SOS વખતે લીધેલા ફોટા ઈમેલથી મોકલાય છે</string>
+    <string name="ub_emg_recipient_hint">એલર્ટ અહીં મોકલો</string>
+    <string name="ub_emg_sender_hint">મોકલનારનું Gmail</string>
+    <string name="ub_emg_sender_helper">એલર્ટ મોકલનાર Gmail એકાઉન્ટ</string>
+    <string name="ub_emg_password_hint">મોકલનારનો App Password</string>
+    <string name="ub_emg_password_helper">Gmail નો App Password વાપરો, એકાઉન્ટનો પાસવર્ડ નહીં</string>
+    <string name="ub_emg_password_link">App Password બનાવો</string>
+    <string name="ub_emg_err_email">માન્ય ઈમેલ સરનામું લખો</string>
+    <string name="ub_emg_err_sender_needed">એલર્ટ મોકલનાર Gmail ઉમેરો</string>
+    <string name="ub_emg_err_recipient_needed">એલર્ટ ક્યાં મોકલવા તે ઉમેરો</string>
+    <string name="ub_emg_err_password_needed">આ Gmail નો App Password લખો</string>
+    <string name="ub_emg_save">ફેરફારો સેવ કરો</string>
+    <string name="ub_emg_saved">સેવ થયું</string>
+    <string name="ub_emg_saved_no_contacts">સેવ થયું. તમારો SOS કોઈ સુધી પહોંચે તે માટે ઓછામાં ઓછો એક સંપર્ક ઉમેરો.</string>
+    <string name="ub_emg_unsaved_title">તમારા ફેરફારો સેવ કરીએ?</string>
+    <string name="ub_emg_unsaved_body">તમારા સંદેશ કે ઈમેલ સેટિંગ્સમાં એવા ફેરફારો છે જે હજી સેવ થયા નથી.</string>
+
+    <plurals name="ub_emg_telegram_linked">
+        <item quantity="one">જોડાયેલ: %d ચૅટ</item>
+        <item quantity="other">જોડાયેલ: %d ચૅટ</item>
+    </plurals>
+    <plurals name="ub_emg_sync_new">
+        <item quantity="one">%d નવી ચૅટ જોડી</item>
+        <item quantity="other">%d નવી ચૅટ જોડી</item>
+    </plurals>
+    <plurals name="ub_emg_sync_up_to_date">
+        <item quantity="one">અપ ટુ ડેટ · %d ચૅટ જોડાયેલ</item>
+        <item quantity="other">અપ ટુ ડેટ · %d ચૅટ જોડાયેલ</item>
+    </plurals>
+
+    <!-- ===================== Call police ===================== -->
+    <string name="ub_police_eyebrow">ઇમરજન્સી</string>
+    <string name="ub_police_title">મદદ માટે કૉલ કરો</string>
+    <string name="ub_police_desc">એક ટૅપમાં ભારતની ઇમરજન્સી સેવાઓ સાથે જોડાઓ.</string>
+    <string name="ub_police_orb_label">ઇમરજન્સી · 112</string>
+    <string name="ub_police_orb_sublabel">પોલીસ, ફાયર અને ઍમ્બ્યુલન્સ · 24×7</string>
+    <string name="ub_police_orb_cd">112 પર કૉલ કરો, ઇમરજન્સી સેવાઓ</string>
+    <string name="ub_police_tap_to_call">કૉલ કરવા ટૅપ કરો</string>
+    <string name="ub_police_tap_to_cancel">રદ કરવા બટન ફરી ટૅપ કરો</string>
+    <string name="ub_police_calling_in">%1$d માં કૉલ થશે</string>
+    <string name="ub_police_calling_label">%1$s ને કૉલ કરી રહ્યાં છીએ</string>
+    <string name="ub_police_cancel_call">કૉલ રદ કરો</string>
+    <string name="ub_police_cancel_cd">%1$s નો કૉલ રદ કરો</string>
+    <string name="ub_police_countdown_announce">3 સેકન્ડમાં %1$s ને કૉલ થશે. રદ કરવા ટૅપ કરો.</string>
+    <string name="ub_police_call_cancelled">કૉલ રદ થયો</string>
+    <string name="ub_police_section_other">બીજા નંબર</string>
+    <string name="ub_police_100_name">પોલીસ</string>
+    <string name="ub_police_1091_name">મહિલા હેલ્પલાઇન (પોલીસ)</string>
+    <string name="ub_police_label_100">પોલીસ · 100</string>
+    <string name="ub_police_label_1091">મહિલા હેલ્પલાઇન · 1091</string>
+    <string name="ub_police_100_cd">100 પર કૉલ કરો, પોલીસ</string>
+    <string name="ub_police_1091_cd">1091 પર કૉલ કરો, મહિલા હેલ્પલાઇન, પોલીસ</string>
+    <string name="ub_police_section_share">કોઈને જાણ કરો</string>
+    <string name="ub_police_share_title">મારું લોકેશન શેર કરો</string>
+    <string name="ub_police_section_tip">સુરક્ષા ટિપ</string>
+    <string name="ub_police_tip_counter">%2$d માંથી ટિપ %1$d</string>
+
+    <string-array name="ub_police_tips">
+        <item>લાઇન પર રહો. ઑપરેટરને પહેલાં તમે ક્યાં છો તે કહો, પછી શું થઈ રહ્યું છે તે.</item>
+        <item>જો તમે બોલી ન શકો, તો લાઇન ચાલુ રાખો. ઑપરેટર સાંભળી શકે છે અને કૉલ ટ્રેસ કરી શકે છે.</item>
+        <item>દુકાન, ATM કે પેટ્રોલ પંપ જેવી અજવાળાવાળી, ભીડવાળી જગ્યા તરફ જાઓ.</item>
+        <item>આસપાસની નિશાનીઓ યાદ રાખો: દુકાનોનાં નામ, બસ સ્ટૉપ અને વાહન નંબર.</item>
+        <item>રાત્રે મુસાફરી કરો ત્યારે ફોન ચાર્જ રાખો અને લોકેશન ચાલુ રાખો.</item>
+        <item>મોડી રાતની સવારી પહેલાં કોઈ વિશ્વાસુ વ્યક્તિ સાથે લાઇવ લોકેશન શેર કરો.</item>
+    </string-array>
+
+    <!-- ===================== Helplines ===================== -->
+    <string name="ub_help_eyebrow">હેલ્પલાઇન</string>
+    <string name="ub_help_title">હેલ્પલાઇન યાદી</string>
+    <string name="ub_help_desc">ઇમરજન્સી, મહિલા સુરક્ષા, આરોગ્ય અને સાયબર ક્રાઇમ માટે રાષ્ટ્રીય નંબર.</string>
+    <string name="ub_help_note">નંબર આખા ભારતમાં ચાલે છે. મોટા ભાગના ફોનમાં SIM વગર પણ 112 પર કૉલ થઈ શકે છે.</string>
+    <string name="ub_help_search_hint">નામ અથવા નંબરથી શોધો</string>
+    <string name="ub_help_cat_all">બધા</string>
+    <string name="ub_help_cat_emergency">ઇમરજન્સી</string>
+    <string name="ub_help_cat_women">મહિલાઓ</string>
+    <string name="ub_help_cat_health">આરોગ્ય</string>
+    <string name="ub_help_cat_cyber">સાયબર</string>
+    <string name="ub_help_empty_title">કોઈ હેલ્પલાઇન મળી નથી</string>
+    <string name="ub_help_empty_body">બીજું નામ કે નંબર અજમાવો, અથવા બધા પસંદ કરો.</string>
+    <string name="ub_help_112_name">રાષ્ટ્રીય ઇમરજન્સી (ERSS)</string>
+    <string name="ub_help_112_desc">એક જ નંબર પર પોલીસ, ફાયર અને ઍમ્બ્યુલન્સ, 24×7.</string>
+    <string name="ub_help_181_name">મહિલા હેલ્પલાઇન</string>
+    <string name="ub_help_181_desc">મિશન શક્તિ · વન સ્ટૉપ સેન્ટર સહાય, કાઉન્સેલિંગ અને માર્ગદર્શન.</string>
+    <string name="ub_help_1091_name">મહિલા હેલ્પલાઇન – પોલીસ</string>
+    <string name="ub_help_1091_desc">હેરાનગતિ કે હિંસાનો સામનો કરતી મહિલાઓ માટે પોલીસ હેલ્પલાઇન.</string>
+    <string name="ub_help_100_name">પોલીસ</string>
+    <string name="ub_help_100_desc">તમારો સ્થાનિક પોલીસ કંટ્રોલ રૂમ.</string>
+    <string name="ub_help_108_name">ઍમ્બ્યુલન્સ</string>
+    <string name="ub_help_108_desc">ઇમરજન્સી તબીબી સહાય અને ઍમ્બ્યુલન્સ.</string>
+    <string name="ub_help_1098_name">ચાઇલ્ડલાઇન</string>
+    <string name="ub_help_1098_desc">મુશ્કેલી કે જોખમમાં હોય તેવાં બાળકો માટે મદદ.</string>
+    <string name="ub_help_1930_name">સાયબર ક્રાઇમ હેલ્પલાઇન</string>
+    <string name="ub_help_1930_desc">ઑનલાઇન છેતરપિંડી, પીછો કે હેરાનગતિની જાણ કરો. cybercrime.gov.in પર પણ.</string>
+    <string name="ub_help_ncw_name">રાષ્ટ્રીય મહિલા આયોગ (NCW)</string>
+    <string name="ub_help_ncw_desc">ફરિયાદ અને સહાય માટે WhatsApp હેલ્પલાઇન.</string>
+    <string name="ub_help_call_cd">%1$s ને %2$s પર કૉલ કરો</string>
+    <string name="ub_help_card_cd">%1$s, %2$s. %3$s</string>
+    <string name="ub_help_whatsapp_cd">%1$s ને WhatsApp પર સંદેશ મોકલો</string>
+    <string name="ub_help_web_cd">cybercrime.gov.in ખોલો</string>
+    <string name="ub_help_whatsapp_failed">WhatsApp ખૂલી શક્યું નહીં.</string>
+    <string name="ub_help_web_failed">વેબસાઇટ ખૂલી શકી નહીં.</string>
+    <string name="ub_help_dial_failed">ડાયલર ખૂલી શક્યું નહીં. %1$s જાતે ડાયલ કરો.</string>
+
+    <!-- ===================== Live location ===================== -->
+    <string name="ub_live_eyebrow">લાઇવ લોકેશન</string>
+    <string name="ub_live_title">હું ક્યાં છું</string>
+    <string name="ub_live_desc">તમારું સ્થાન જુઓ અને તમારા વિશ્વાસુ લોકો સાથે શેર કરો.</string>
+    <string name="ub_live_map_cd">તમારું હાલનું લોકેશન બતાવતો નકશો</string>
+    <string name="ub_live_status_idle">તમારું લોકેશન</string>
+    <string name="ub_live_status_live">લાઇવ · શેર થાય છે</string>
+    <string name="ub_live_perm_title">Naari Shakti માટે લોકેશન બંધ છે</string>
+    <string name="ub_live_perm_body">તમે ક્યાં છો તે જોવા અને શેર કરવા લોકેશનની મંજૂરી આપો.</string>
+    <string name="ub_live_you_are_here">તમે અહીં છો</string>
+    <string name="ub_live_finding">તમારું લોકેશન શોધી રહ્યાં છીએ…</string>
+    <string name="ub_live_coords_accuracy">%1$s · ±%2$d મી</string>
+    <string name="ub_live_still_locating">હજી તમારું લોકેશન શોધી રહ્યાં છીએ…</string>
+    <string name="ub_live_section_once">એક વાર શેર કરો</string>
+    <string name="ub_live_once_title">હાલનું લોકેશન મોકલો</string>
+    <string name="ub_live_once_caption">એક વખતની Google Maps લિંક</string>
+    <string name="ub_live_section_live">લાઇવ શેરિંગ</string>
+    <string name="ub_live_live_title">મુસાફરી દરમિયાન શેર કરો</string>
+    <string name="ub_live_live_caption">ટાઇમર પૂરું થાય ત્યાં સુધી તમારા સંપર્કોને નવી લિંક મળતી રહે છે</string>
+    <string name="ub_live_share_for">કેટલો સમય શેર કરવું</string>
+    <string name="ub_live_15">15 મિનિટ</string>
+    <string name="ub_live_30">30 મિનિટ</string>
+    <string name="ub_live_60">1 કલાક</string>
+    <string name="ub_live_120">2 કલાક</string>
+    <string name="ub_live_no_contacts">લાઇવ શેરિંગ શરૂ કરવા ઇમરજન્સી સંપર્કો ઉમેરો</string>
+    <string name="ub_live_start">લાઇવ શેરિંગ શરૂ કરો</string>
+    <string name="ub_live_stop">શેરિંગ બંધ કરો</string>
+    <string name="ub_live_started">%1$s માટે તમારું લોકેશન શેર થઈ રહ્યું છે</string>
+    <string name="ub_live_stopped">લાઇવ શેરિંગ બંધ થયું</string>
+    <string name="ub_live_sms_needed">લાઇવ શેરિંગ માટે લોકેશન અને SMS પરવાનગી જરૂરી છે.</string>
+
+    <plurals name="ub_live_sharing_status">
+        <item quantity="one">%1$d સંપર્ક સાથે શેર · %2$s બાકી</item>
+        <item quantity="other">%1$d સંપર્કો સાથે શેર · %2$s બાકી</item>
+    </plurals>
+
+    <!-- ===================== Safe zones ===================== -->
+    <string name="ub_zone_eyebrow">જિયોફેન્સિંગ</string>
+    <string name="ub_zone_title">સેફ ઝોન</string>
+    <string name="ub_zone_desc">ઘર કે કૉલેજ જેવી જગ્યાએ પહોંચો કે ત્યાંથી નીકળો ત્યારે જાણ મેળવો.</string>
+    <string name="ub_zone_map_cd">નકશો. સેફ ઝોનની પિન મૂકવા ટૅપ કરો.</string>
+    <string name="ub_zone_map_hint">પિન મૂકવા નકશા પર ટૅપ કરો</string>
+    <string name="ub_zone_use_my_location">મારું લોકેશન વાપરો</string>
+    <string name="ub_zone_new">નવો સેફ ઝોન</string>
+    <string name="ub_zone_no_pin">હજી પિન નથી</string>
+    <string name="ub_zone_no_pin_caption">નકશા પર ટૅપ કરો અથવા તમારું લોકેશન વાપરો</string>
+    <string name="ub_zone_pin_placed">પિન મૂકી</string>
+    <string name="ub_zone_pin_mine">તમારું હાલનું લોકેશન</string>
+    <string name="ub_zone_name_hint">નામ, જેમ કે ઘર, કૉલેજ</string>
+    <string name="ub_zone_radius">ત્રિજ્યા</string>
+    <string name="ub_zone_radius_value">%1$d મી</string>
+    <string name="ub_zone_radius_hint">મોટા ઝોન વધુ ભરોસાપાત્ર એલર્ટ આપે છે; 300 મી કે વધુ સલાહભર્યું છે.</string>
+    <string name="ub_zone_add">સેફ ઝોન ઉમેરો</string>
+    <string name="ub_zone_need_pin">પહેલાં પિન મૂકવા નકશા પર ટૅપ કરો</string>
+    <string name="ub_zone_need_name">આ જગ્યાને નામ આપો</string>
+    <string name="ub_zone_limit">તમે વધુમાં વધુ સેફ ઝોન ઉમેરી લીધા છે.</string>
+    <string name="ub_zone_added">“%1$s” ઉમેરાયું</string>
+    <string name="ub_zone_added_needs_bg">“%1$s” સેવ થયું. એલર્ટ માટે લોકેશનને હંમેશાં મંજૂરી આપો.</string>
+    <string name="ub_zone_section_saved">તમારા સેફ ઝોન</string>
+    <string name="ub_zone_meta">%1$d મી ત્રિજ્યા · %2$s</string>
+    <string name="ub_zone_item_cd">%1$s, %2$d મીટર ત્રિજ્યા. નકશા પર જોવા ટૅપ કરો.</string>
+    <string name="ub_zone_delete_cd">%1$s ડિલીટ કરો</string>
+    <string name="ub_zone_delete_title">“%1$s” ડિલીટ કરીએ?</string>
+    <string name="ub_zone_delete_body">તમને આ જગ્યા માટે એલર્ટ મળવાનું બંધ થશે.</string>
+    <string name="ub_zone_deleted">“%1$s” ડિલીટ થયું</string>
+    <string name="ub_zone_default_name">સેફ ઝોન</string>
+    <string name="ub_zone_empty_title">હજી કોઈ સેફ ઝોન નથી</string>
+    <string name="ub_zone_empty_body">ઘર કે કૉલેજ જેવી વારંવાર જતા હો તે જગ્યા પર પિન મૂકો.</string>
+    <string name="ub_zone_perm_title">ચોક્કસ લોકેશન જરૂરી છે</string>
+    <string name="ub_zone_perm_body">પિન મૂકવા અને સેફ ઝોન પર નજર રાખવા ચોક્કસ લોકેશનની મંજૂરી આપો.</string>
+    <string name="ub_zone_bg_title">એલર્ટ ફક્ત “હંમેશાં મંજૂરી આપો” સાથે જ કામ કરે છે</string>
+    <string name="ub_zone_bg_body">Naari Shakti બંધ હોય ત્યારે સેફ ઝોન પર નજર રાખવા Android ને બૅકગ્રાઉન્ડ લોકેશન જોઈએ છે.</string>
+    <string name="ub_zone_bg_fix">મંજૂરી આપો</string>
+    <string name="ub_zone_bg_dialog_title">લોકેશનને હંમેશાં મંજૂરી આપો</string>
+    <string name="ub_zone_bg_dialog_body">“હંમેશાં મંજૂરી આપો” પસંદ કરો, જેથી Naari Shakti બંધ હોય ત્યારે પણ સેફ ઝોન એલર્ટ કામ કરે. તમારું લોકેશન ફક્ત આ ફોનમાં જ તપાસાય છે.</string>
+    <string name="ub_zone_bg_dialog_body_settings">આગલી સ્ક્રીન પર “હંમેશાં મંજૂરી આપો” પસંદ કરો, જેથી Naari Shakti બંધ હોય ત્યારે પણ સેફ ઝોન એલર્ટ કામ કરે. તમારું લોકેશન ફક્ત આ ફોનમાં જ તપાસાય છે.</string>
+    <string name="ub_zone_bg_granted">હવે સેફ ઝોન બૅકગ્રાઉન્ડમાં પણ તમને એલર્ટ આપશે</string>
+    <string name="ub_zone_bg_denied">બૅકગ્રાઉન્ડ લોકેશન બંધ છે. સેટિંગ્સ → પરવાનગીઓ → લોકેશનમાં “હંમેશાં મંજૂરી આપો” ચાલુ કરો.</string>
+
+    <plurals name="ub_zone_count">
+        <item quantity="one">%d ઝોન</item>
+        <item quantity="other">%d ઝોન</item>
+    </plurals>
+</resources>

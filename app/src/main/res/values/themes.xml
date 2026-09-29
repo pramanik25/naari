@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- Naari Shakti is dark-first: one theme for every screen, regardless of system mode. -->
-    <style name="Theme.NaariShakti" parent="Theme.Material3.Dark.NoActionBar">
+    <!-- One theme for every screen. Colours switch between the light (values/) and dark
+         (values-night/) palettes; the user picks Light / Dark / System in Appearance
+         (dark by default, see core/Appearance). -->
+    <style name="Theme.NaariShakti" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="colorPrimary">@color/ns_rose</item>
         <item name="colorOnPrimary">@color/ns_on_rose</item>
         <item name="colorPrimaryContainer">@color/ns_rose_container</item>
@@ -40,7 +42,8 @@
         <item name="android:windowBackground">@color/ns_bg</item>
         <item name="android:statusBarColor">@color/ns_bg</item>
         <item name="android:navigationBarColor">@color/ns_bg</item>
-        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightStatusBar">@bool/ns_light_bars</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">@bool/ns_light_bars</item>
 
         <!-- Component defaults -->
         <item name="materialButtonStyle">@style/Ns.Button</item>
@@ -71,6 +74,7 @@
         <item name="android:windowBackground">@color/ns_bg</item>
         <item name="android:statusBarColor">@color/ns_rose_dark</item>
         <item name="android:navigationBarColor">@color/ns_bg</item>
+        <item name="android:windowLightStatusBar">false</item>
     </style>
 
     <style name="ThemeOverlay.Ns.Dialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">

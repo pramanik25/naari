@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ns_accessibility_description">Lets Naari Shakti start an SOS from a volume-key pattern while the screen is off or locked. Naari Shakti does not read what is on your screen.</string>
+
+    <!-- Appearance & language -->
+    <string name="core_back">Back</string>
+    <string name="core_appearance_eyebrow">Personalise</string>
+    <string name="core_appearance_title">Appearance &amp; language</string>
+    <string name="core_appearance_desc">Choose how Naari Shakti looks and which language it speaks. Alerts sent to your contacts use this language too.</string>
+    <string name="core_section_theme">Theme</string>
+    <string name="core_theme_dark">Dark</string>
+    <string name="core_theme_light">Light</string>
+    <string name="core_theme_system">Phone</string>
+    <string name="core_section_language">Language</string>
+    <string name="core_language_desc">Emergency numbers and SMS links stay the same in every language.</string>
+    <string name="core_language_system">Phone\'s language</string>
+    <string name="core_language_system_caption">Follow your phone\'s settings</string>
+    <string name="core_selected">Selected</string>
+</resources>

@@ -27,6 +27,8 @@ public final class ProtectionController {
     public static final String ACTION_STOP_PANIC = "com.example.naarishakti.ACTION_STOP_PANIC";
     /** Optional String extra on ACTION_TRIGGER_PANIC describing the source ("sos_button", "power", "shake", "voice"). */
     public static final String EXTRA_SOURCE = "source";
+    /** Optional boolean extra on ACTION_TRIGGER_PANIC: force a covert (silent) SOS. */
+    public static final String EXTRA_SILENT = "silent";
 
     /** Extras understood by VoskService.onStartCommand. */
     public static final String EXTRA_START = "start_service";
@@ -62,10 +64,20 @@ public final class ProtectionController {
 
     /** Fire the SOS flow now (SMS + location, call, siren, overlay, evidence capture). */
     public static void triggerPanic(Context context, String source) {
+        triggerPanic(context, source, false);
+    }
+
+    /**
+     * @param forceSilent true for a covert SOS regardless of the Silent SOS setting: no siren,
+     *                    no SOS screen, no countdown — alerts, tracking and evidence only
+     *                    (used for duress PIN and overdue check-ins entered under duress).
+     */
+    public static void triggerPanic(Context context, String source, boolean forceSilent) {
         Context app = context.getApplicationContext();
         Intent i = new Intent(app, VoiceRecognitionService.class)
                 .setAction(ACTION_TRIGGER_PANIC)
-                .putExtra(EXTRA_SOURCE, source);
+                .putExtra(EXTRA_SOURCE, source)
+                .putExtra(EXTRA_SILENT, forceSilent);
         try {
             ContextCompat.startForegroundService(app, i);
         } catch (Exception e) {
