@@ -257,14 +257,16 @@ public class HelperAlertActivity extends AppCompatActivity {
     }
 
     private void styleMap() {
-        // Carto basemaps: tile.openstreetmap.org (MAPNIK) 403-blocks mobile apps.
-        map.setTileSource(isNightMode() ? FeatureKit.CARTO_DARK : FeatureKit.CARTO_LIGHT);
+        // tile.openstreetmap.org (MAPNIK) 403-blocks mobile apps and Carto now needs
+        // an API key, so use Esri's keyless tiles with an inversion filter at night.
+        map.setTileSource(FeatureKit.STREET_TILES);
         map.setMultiTouchControls(true);
         map.setTilesScaledToDpi(true);
         map.getZoomController().setVisibility(CustomZoomButtonsController.Visibility.NEVER);
         TilesOverlay tiles = map.getOverlayManager().getTilesOverlay();
         tiles.setLoadingBackgroundColor(ContextCompat.getColor(this, R.color.ns_surface));
         tiles.setLoadingLineColor(ContextCompat.getColor(this, R.color.ns_surface_high));
+        tiles.setColorFilter(isNightMode() ? FeatureKit.DARK_TILE_FILTER : null);
         map.getController().setZoom(15.0);
     }
 

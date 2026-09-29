@@ -7,6 +7,8 @@ import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.ColorMatrix;
+import android.graphics.ColorMatrixColorFilter;
 import android.location.Location;
 import android.net.Uri;
 import android.os.Build;
@@ -32,7 +34,7 @@ import com.google.android.gms.tasks.CancellationTokenSource;
 import org.osmdroid.config.Configuration;
 import org.osmdroid.config.IConfigurationProvider;
 import org.osmdroid.tileprovider.tilesource.OnlineTileSourceBase;
-import org.osmdroid.tileprovider.tilesource.XYTileSource;
+import org.osmdroid.util.MapTileIndex;
 import org.osmdroid.views.CustomZoomButtonsController;
 import org.osmdroid.views.MapView;
 import org.osmdroid.views.overlay.TilesOverlay;
@@ -219,20 +221,39 @@ public final class FeatureKit {
 
     // ------------------------------------------------------------------ maps
 
-    // tile.openstreetmap.org 403-blocks mobile apps, so tiles come from Carto's
-    // OSM-based basemaps instead (free with the attribution below).
-    public static final OnlineTileSourceBase CARTO_LIGHT = cartoTileSource("CartoVoyager", "rastertiles/voyager");
-    public static final OnlineTileSourceBase CARTO_DARK = cartoTileSource("CartoDarkMatter", "dark_all");
+    // tile.openstreetmap.org 403-blocks mobile apps, Carto's basemaps.cartocdn.com now
+    // requires an API key, and tile.openstreetmap.de is blocked on some networks, so
+    // tiles come from Esri's keyless, CDN-hosted World Street Map. Its URL scheme is
+    // z/y/x (not the usual z/x/y), hence the custom getTileURLString.
+    public static final OnlineTileSourceBase STREET_TILES = new OnlineTileSourceBase(
+            "EsriWorldStreetMap", 0, 19, 256, "",
+            new String[]{"https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/"},
+            "Esri — Sources: Esri, HERE, Garmin, © OpenStreetMap contributors") {
+        @Override
+        public String getTileURLString(long pMapTileIndex) {
+            return getBaseUrl()
+                    + MapTileIndex.getZoom(pMapTileIndex) + "/"
+                    + MapTileIndex.getY(pMapTileIndex) + "/"
+                    + MapTileIndex.getX(pMapTileIndex);
+        }
+    };
 
-    private static OnlineTileSourceBase cartoTileSource(String name, String style) {
-        return new XYTileSource(name, 0, 20, 256, ".png",
-                new String[]{
-                        "https://a.basemaps.cartocdn.com/" + style + "/",
-                        "https://b.basemaps.cartocdn.com/" + style + "/",
-                        "https://c.basemaps.cartocdn.com/" + style + "/",
-                        "https://d.basemaps.cartocdn.com/" + style + "/"},
-                "© OpenStreetMap contributors © CARTO");
+    /** Inverts tile colours for the dark theme (no keyless dark tileset exists). */
+    private static ColorMatrixColorFilter darkTileFilter() {
+        ColorMatrix inverted = new ColorMatrix(new float[]{
+                -1, 0, 0, 0, 255,
+                0, -1, 0, 0, 255,
+                0, 0, -1, 0, 255,
+                0, 0, 0, 1, 0});
+        // Desaturate a little so inverted land/water colours stay muted.
+        ColorMatrix desaturated = new ColorMatrix();
+        desaturated.setSaturation(0.75f);
+        desaturated.postConcat(inverted);
+        return new ColorMatrixColorFilter(desaturated);
     }
+
+    /** One filter for every map so all screens tint tiles identically in dark mode. */
+    public static final ColorMatrixColorFilter DARK_TILE_FILTER = darkTileFilter();
 
     public static boolean isNightMode(Context ctx) {
         int uiMode = ctx.getResources().getConfiguration().uiMode
@@ -251,21 +272,20 @@ public final class FeatureKit {
         cfg.setOsmdroidTileCache(new File(base, "tiles"));
     }
 
-    /** Carto tiles (dark basemap in dark theme), multitouch, no zoom buttons, plays nice in scroll views. */
+    /** OSM tiles (inverted in dark theme), multitouch, no zoom buttons, plays nice in scroll views. */
     @SuppressLint("ClickableViewAccessibility")
     public static void styleMap(MapView map) {
         Context ctx = map.getContext();
-        map.setTileSource(isNightMode(ctx) ? CARTO_DARK : CARTO_LIGHT);
+        map.setTileSource(STREET_TILES);
         map.setMultiTouchControls(true);
         map.setTilesScaledToDpi(true);
         map.setMinZoomLevel(4.0);
-        map.setMaxZoomLevel(19.0);
+        map.setMaxZoomLevel(18.0);
         map.getZoomController().setVisibility(CustomZoomButtonsController.Visibility.NEVER);
         TilesOverlay tiles = map.getOverlayManager().getTilesOverlay();
         tiles.setLoadingBackgroundColor(ContextCompat.getColor(ctx, R.color.ns_surface));
         tiles.setLoadingLineColor(ContextCompat.getColor(ctx, R.color.ns_surface_high));
-        // The dark theme uses Carto's native dark basemap, so no colour filter is needed.
-        tiles.setColorFilter(null);
+        tiles.setColorFilter(isNightMode(ctx) ? DARK_TILE_FILTER : null);
         // Let the map pan inside a NestedScrollView instead of scrolling the page.
         map.setOnTouchListener((v, e) -> {
             ViewParent parent = v.getParent();

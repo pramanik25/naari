@@ -67,7 +67,7 @@ function createApp({ config, pool, log, hub = null, whatsapp = null, limits = {}
         formAction: ["'none'"],
         scriptSrc: ["'self'", 'https://unpkg.com', 'https://cdnjs.cloudflare.com'],
         styleSrc: ["'self'", 'https://unpkg.com', 'https://cdnjs.cloudflare.com'],
-        imgSrc: ["'self'", 'data:', 'https://*.basemaps.cartocdn.com', 'https://tile.openstreetmap.de'],
+        imgSrc: ["'self'", 'data:', 'https://server.arcgisonline.com'],
         mediaSrc: ["'self'"],
         connectSrc: ["'self'"],
         fontSrc: ["'self'"],

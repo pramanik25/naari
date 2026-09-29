@@ -72,23 +72,13 @@
     var L = window.L;
     state.map = L.map('map', { zoomControl: true, attributionControl: true, worldCopyJump: true })
       .setView([22.5, 79], 4);
-    // CARTO's free basemap: tile.openstreetmap.org 403-blocks production apps per its usage policy.
-    var osmAttribution = '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions" target="_blank" rel="noopener">CARTO</a>';
-    var tiles = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-      subdomains: 'abcd',
+    // tile.openstreetmap.org 403-blocks production apps, CARTO's basemaps now require
+    // an API key, and tile.openstreetmap.de is blocked on some networks, so use Esri's
+    // keyless CDN-hosted World Street Map (note the z/y/x tile order).
+    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
       maxZoom: 19,
-      attribution: osmAttribution
+      attribution: 'Esri — Sources: Esri, HERE, Garmin, &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors'
     }).addTo(state.map);
-    var tileErrors = 0;
-    tiles.on('tileerror', function () {
-      // If CARTO is unreachable, fall back to the community-run German OSM server.
-      if (++tileErrors !== 4) return;
-      tiles.remove();
-      L.tileLayer('https://tile.openstreetmap.de/{z}/{x}/{y}.png', {
-        maxZoom: 18,
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors'
-      }).addTo(state.map);
-    });
     state.map.on('dragstart', function () { state.follow = false; });
     return true;
   }
