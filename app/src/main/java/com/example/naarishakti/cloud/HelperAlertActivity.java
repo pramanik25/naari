@@ -60,6 +60,8 @@ public class HelperAlertActivity extends AppCompatActivity {
     static final String EXTRA_RADIUS_KM = "radiusKm";
     static final String EXTRA_EVIDENCE_COUNT = "evidenceCount";
     static final String EXTRA_PHOTO_URL = "photoUrl";
+    static final String EXTRA_OWNER_NAME = "ownerName";
+    static final String EXTRA_MESSAGE = "message";
 
     /** Photos are decoded to about this many pixels on the long side. */
     private static final int PHOTO_PX = 1080;
@@ -83,6 +85,7 @@ public class HelperAlertActivity extends AppCompatActivity {
     private TextView distanceText;
     private TextView statusText;
     private TextView titleText;
+    private TextView messageText;
     private MaterialButton goingButton;
     private ObjectAnimator ring1Anim;
     private ObjectAnimator ring2Anim;
@@ -133,6 +136,7 @@ public class HelperAlertActivity extends AppCompatActivity {
         distanceText = findViewById(R.id.clHelperDistance);
         statusText = findViewById(R.id.clHelperStatus);
         titleText = findViewById(R.id.clHelperTitle);
+        messageText = findViewById(R.id.clHelperMessage);
         goingButton = findViewById(R.id.clHelperGoing);
         MaterialButton callButton = findViewById(R.id.clHelperCall);
         MaterialButton dismissButton = findViewById(R.id.clHelperDismiss);
@@ -300,7 +304,17 @@ public class HelperAlertActivity extends AppCompatActivity {
             finish();
             return;
         }
-        titleText.setText(R.string.cl_helper_title);
+        String ownerName = intent.getStringExtra(EXTRA_OWNER_NAME);
+        titleText.setText(TextUtils.isEmpty(ownerName)
+                ? getString(R.string.cl_helper_title)
+                : getString(R.string.cl_helper_title_named, ownerName));
+        String message = intent.getStringExtra(EXTRA_MESSAGE);
+        if (TextUtils.isEmpty(message)) {
+            messageText.setVisibility(View.GONE);
+        } else {
+            messageText.setText(getString(R.string.cl_helper_message, message));
+            messageText.setVisibility(View.VISIBLE);
+        }
         goingButton.setEnabled(true);
         statusText.setVisibility(View.GONE);
         distanceText.setText(distance >= 0

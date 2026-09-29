@@ -573,7 +573,7 @@ public class SettingsEmergencyActivity extends AppCompatActivity {
                         emergencyChatIds.remove(allChatIds.get(which));
                     }
                 })
-                .setPositiveButton(R.string.ub_save, (dialog, which) -> {
+                .setPositiveButton(R.string.ub_emg_save, (dialog, which) -> {
                     Prefs.setTelegramEmergencyChatIds(this, emergencyChatIds);
                     renderTelegram();
                     Snackbar.make(b.getRoot(), R.string.ub_emg_telegram_saved, Snackbar.LENGTH_SHORT).show();

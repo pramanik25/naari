@@ -73,7 +73,7 @@ const REFAN_MAX_INTERVAL_MS = 5 * 60_000;
 async function fanOutHelpers(pool, config, incidentId) {
   return tx(pool, async (c) => {
     const { rows } = await c.query(
-      `SELECT id, user_id, track_token, last_lat, last_lng, helpers_fanned_out_at, fanout_lat, fanout_lng
+      `SELECT id, user_id, track_token, last_lat, last_lng, helpers_fanned_out_at, fanout_lat, fanout_lng, message
          FROM incidents
         WHERE id = $1 AND last_lat IS NOT NULL AND broadcast AND (status = 'active' OR duress)
         FOR UPDATE`,
@@ -127,11 +127,13 @@ async function fanOutHelpers(pool, config, incidentId) {
     const url = trackUrl(config, inc.track_token);
     const ev = await evidenceSummary(c, inc.id);
     const photoUrl = ev.photoId ? signedEvidenceUrl(config, inc.track_token, ev.photoId) : null;
+    const ownerName = await userName(c, inc.user_id);
     await notifyEach(c, 'helper_alert', inc.id, near.map((h) => ({
       recipientId: h.id,
       payload: {
         incidentId: inc.id, lat: inc.last_lat, lng: inc.last_lng, distanceM: h.d, trackUrl: url,
         radiusKm, evidenceCount: ev.evidenceCount, photoUrl,
+        ownerName, message: inc.message || '',
       },
     })));
     return near.length;

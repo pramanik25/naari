@@ -89,6 +89,17 @@
             android:text="@string/cl_helper_subtitle"
             android:textAppearance="@style/Ns.Text.Body" />
 
+        <TextView
+            android:id="@+id/clHelperMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textAppearance="@style/Ns.Text.Body"
+            android:textColor="@color/ns_text"
+            android:textStyle="italic"
+            android:visibility="gone" />
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

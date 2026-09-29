@@ -103,7 +103,7 @@ test('helper fan-out: <10 within 2 km extends to 5 km; stale/owner/guardians exc
   await setHelper(ctx.app, ward, area);
   await ctx.pool.query(`UPDATE helpers SET updated_at = now() - interval '25 hours' WHERE user_id = $1`, [stale.userId]);
 
-  const inc = await createIncident(ctx.app, ward);
+  const inc = await createIncident(ctx.app, ward, { message: 'I need help! Near the market.' });
   assert.equal(ofType(await notifications(ctx.app, near), 'helper_alert').length, 0, 'no location yet');
 
   const loc = { points: [{ lat: area.lat, lng: area.lng, accuracy: 8, at: Date.now() }] };
@@ -116,7 +116,8 @@ test('helper fan-out: <10 within 2 km extends to 5 km; stale/owner/guardians exc
   assert.equal(a.lat, area.lat);
   assert.equal(a.lng, area.lng);
   assert.equal(a.trackUrl, inc.trackUrl);
-  assert.equal(a.ownerName, undefined, 'helpers never get the owner name');
+  assert.equal(a.ownerName, 'Asha', 'helpers get the owner name');
+  assert.equal(a.message, 'I need help! Near the market.', 'helpers get the emergency message');
   assert.equal(a.radiusKm, 5, 'fewer than 10 helpers within 2 km -> 5 km tier');
   assert.equal(a.evidenceCount, 0);
   assert.equal(a.photoUrl, null);

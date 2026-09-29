@@ -26,6 +26,12 @@ const optInt = (v, min, max, field) => {
   return v;
 };
 
+const optMessage = (v) => {
+  if (v === undefined || v === null) return undefined;
+  if (typeof v !== 'string') throw badRequest('invalid_request', 'message must be a string');
+  return v.trim().slice(0, 500);
+};
+
 /** Validates one location point -> { lat, lng, accuracy, at: Date }. */
 function parsePoint(p) {
   if (!p || typeof p !== 'object' || !isLat(p.lat) || !isLng(p.lng)) {
@@ -59,6 +65,7 @@ function incidentsRouter({ pool, config, log, whatsapp }) {
     }
     const contactsCount = optInt(b.contactsCount, 0, 1000, 'contactsCount');
     const battery = optInt(b.battery, 0, 100, 'battery');
+    const message = optMessage(b.message);
 
     const existing = (await pool.query('SELECT user_id, track_token FROM incidents WHERE id = $1', [id])).rows[0];
     if (existing) {
@@ -66,9 +73,10 @@ function incidentsRouter({ pool, config, log, whatsapp }) {
       // token and source are immutable: silently keep the stored values.
       await pool.query(
         `UPDATE incidents SET silent = COALESCE($2, silent), contacts_count = COALESCE($3, contacts_count),
-                battery = COALESCE($4, battery), broadcast = COALESCE($5, broadcast), updated_at = now()
+                battery = COALESCE($4, battery), broadcast = COALESCE($5, broadcast),
+                message = COALESCE($6, message), updated_at = now()
           WHERE id = $1`,
-        [id, b.silent ?? null, contactsCount ?? null, battery ?? null, b.broadcast ?? null]);
+        [id, b.silent ?? null, contactsCount ?? null, battery ?? null, b.broadcast ?? null, message ?? null]);
       if (b.broadcast === true) {
         // turned on after a location arrived: fan out now (no-op if already done)
         await fanOutHelpers(pool, config, id).catch((err) => log && log.error({ err }, 'helper fan-out failed'));
@@ -91,12 +99,12 @@ function incidentsRouter({ pool, config, log, whatsapp }) {
       let ins;
       try {
         ins = await c.query(
-          `INSERT INTO incidents (id, user_id, track_token, source, silent, started_at, contacts_count, battery, broadcast)
-           VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)
+          `INSERT INTO incidents (id, user_id, track_token, source, silent, started_at, contacts_count, battery, broadcast, message)
+           VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)
            ON CONFLICT (id) DO NOTHING
            RETURNING id, track_token`,
           [id, req.userId, b.token, b.source, b.silent ?? false, startedAt, contactsCount ?? 0, battery ?? null,
-            b.broadcast ?? true]);
+            b.broadcast ?? true, message ?? '']);
       } catch (err) {
         if (err.code === '23505') throw new ApiError(409, 'token_conflict', 'tracking token already in use');
         throw err;

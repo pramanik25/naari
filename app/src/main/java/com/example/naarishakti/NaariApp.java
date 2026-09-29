@@ -4,6 +4,7 @@ import android.app.Application;
 
 import com.example.naarishakti.cloud.Cloud;
 import com.example.naarishakti.core.Appearance;
+import com.example.naarishakti.core.Kv;
 import com.example.naarishakti.cloud.CloudModule;
 import com.example.naarishakti.core.SafetyHooks;
 import com.example.naarishakti.evidence.EvidenceModule;
@@ -16,6 +17,7 @@ public class NaariApp extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        Kv.init(this); // storage first: everything below reads settings
         Appearance.apply(this);
         Cloud.init(this);
         // Order matters only for logging; each module is isolated by SafetyHooks.

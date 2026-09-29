@@ -27,6 +27,7 @@
     <string name="cl_n_responder_text_nodist">%1$s is on the way.</string>
     <string name="cl_n_responder_someone">A volunteer</string>
     <string name="cl_n_helper_title">Someone nearby needs help</string>
+    <string name="cl_n_helper_title_named">%1$s needs help nearby</string>
     <string name="cl_n_helper_text">%1$s from you. Tap to respond. Call 112 first.</string>
     <string name="cl_n_helper_text_nodist">Close to you. Tap to respond. Call 112 first.</string>
     <string name="cl_n_earlier">Earlier alert</string>
@@ -41,7 +42,9 @@
     <!-- ===================== Helper alert screen ===================== -->
     <string name="cl_helper_eyebrow">Nearby SOS</string>
     <string name="cl_helper_title">Someone nearby needs help</string>
+    <string name="cl_helper_title_named">%1$s needs help</string>
     <string name="cl_helper_subtitle">A Naari Shakti user close to you has triggered an SOS.</string>
+    <string name="cl_helper_message">“%1$s”</string>
     <string name="cl_helper_distance_unknown">Close to you</string>
     <string name="cl_helper_safety">Don\'t put yourself in danger. Call 112 first.</string>
     <string name="cl_helper_safety_detail">Stay in public view, keep your phone with you and let the police lead.</string>

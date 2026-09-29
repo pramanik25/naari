@@ -73,6 +73,9 @@ function loadConfig(env = process.env, log = null) {
     signingSecret,
     signingSecretEphemeral,
     maxEvidenceBytes: intEnv(env, 'MAX_EVIDENCE_BYTES', 52428800, 1, 1024 * 1024 * 1024 * 4),
+    // Free-tier storage: evidence (photos/audio/video) is deleted this long after the incident
+    // ends. 0 = keep forever (set this once storage is upgraded).
+    evidenceRetentionHours: intEnv(env, 'EVIDENCE_RETENTION_HOURS', 24, 0, 24 * 365),
     twilio,
     whatsapp,
     trustProxy: parseTrustProxy(env.TRUST_PROXY),

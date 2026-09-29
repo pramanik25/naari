@@ -109,7 +109,7 @@ public final class Cloud {
     }
 
     static SharedPreferences state(Context ctx) {
-        return ctx.getApplicationContext().getSharedPreferences(STATE_FILE, Context.MODE_PRIVATE);
+        return com.example.naarishakti.core.Kv.get(ctx, STATE_FILE);
     }
 
     static ExecutorService io() {

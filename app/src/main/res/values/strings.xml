@@ -352,34 +352,7 @@
         <item quantity="other">%1$d photos</item>
     </plurals>
 
-    <!-- ===================== Helplines (Women Helpline Activity) ===================== -->
-    <string name="ub_help_112_name">Emergency</string>
-    <string name="ub_help_112_desc">Police emergency line</string>
-    <string name="ub_help_181_name">Women Helpline</string>
-    <string name="ub_help_181_desc">National domestic violence helpline</string>
-    <string name="ub_help_1091_name">Crime Against Women</string>
-    <string name="ub_help_1091_desc">Report crimes against women</string>
-    <string name="ub_help_100_name">Police</string>
-    <string name="ub_help_100_desc">Local police non-emergency line</string>
-    <string name="ub_help_108_name">Ambulance</string>
-    <string name="ub_help_108_desc">Emergency medical services</string>
-    <string name="ub_help_1098_name">Child Helpline</string>
-    <string name="ub_help_1098_desc">Support for children in distress</string>
-    <string name="ub_help_1930_name">Cybercrime</string>
-    <string name="ub_help_1930_desc">Report cybercrime and online harassment</string>
-    <string name="ub_help_ncw_name">NCW Legal Cell</string>
-    <string name="ub_help_ncw_desc">National Commission for Women WhatsApp</string>
+    <!-- Helplines: shared strings live in strings_features.xml (translated); only new ones here. -->
     <string name="ub_help_community_name">NaariShakti Community</string>
     <string name="ub_help_community_desc">Join our WhatsApp community for updates and support</string>
-    <string name="ub_help_cat_emergency">Emergency</string>
-    <string name="ub_help_cat_women">Women\'s Support</string>
-    <string name="ub_help_cat_health">Health</string>
-    <string name="ub_help_cat_cyber">Cyber Crime</string>
-    <string name="ub_help_call_cd">Call %1$s: %2$s</string>
-    <string name="ub_help_card_cd">%1$s: %2$s. %3$s</string>
-    <string name="ub_help_whatsapp_cd">Chat on WhatsApp: %1$s</string>
-    <string name="ub_help_web_cd">Open website</string>
-    <string name="ub_help_dial_failed">Couldn\'t dial %1$s</string>
-    <string name="ub_help_whatsapp_failed">WhatsApp not available</string>
-    <string name="ub_help_web_failed">Couldn\'t open webpage</string>
 </resources>

@@ -25,6 +25,8 @@ services:
         value: "true"
       - key: EVIDENCE_DIR
         value: /tmp/evidence     # free plan has no persistent disk — see backend/README.md
+      - key: EVIDENCE_RETENTION_HOURS
+        value: "24"              # free tier: auto-delete evidence 24 h after an incident ends; 0 = keep forever
       - key: LOG_LEVEL
         value: info
       # Optional: WhatsApp alerts and server SMS (see backend/README.md)

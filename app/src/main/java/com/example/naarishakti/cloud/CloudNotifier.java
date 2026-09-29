@@ -256,6 +256,10 @@ final class CloudNotifier {
         String photoUrl = Json.str(n, "photoUrl");
         if (photoUrl != null) meta.addProperty("photoUrl", photoUrl);
         if (trackUrl != null) meta.addProperty("trackUrl", trackUrl);
+        String ownerName = Json.str(n, "ownerName");
+        if (!TextUtils.isEmpty(ownerName)) meta.addProperty("ownerName", ownerName);
+        String message = Json.str(n, "message");
+        if (!TextUtils.isEmpty(message)) meta.addProperty("message", message);
         putMeta(ctx, ROLE_HELPER, incidentId, meta);
 
         Intent activity = helperIntent(ctx, incidentId, meta);
@@ -283,6 +287,8 @@ final class CloudNotifier {
                 .putExtra(HelperAlertActivity.EXTRA_EVIDENCE_COUNT, (int) Json.lng(meta, "evidenceCount", 0L))
                 .putExtra(HelperAlertActivity.EXTRA_PHOTO_URL, Json.str(meta, "photoUrl"))
                 .putExtra(HelperAlertActivity.EXTRA_TRACK_URL, Json.str(meta, "trackUrl"))
+                .putExtra(HelperAlertActivity.EXTRA_OWNER_NAME, Json.str(meta, "ownerName"))
+                .putExtra(HelperAlertActivity.EXTRA_MESSAGE, Json.str(meta, "message"))
                 .putExtra(HelperAlertActivity.EXTRA_NOTIFICATION_ID, id("help", incidentId));
     }
 
@@ -291,14 +297,20 @@ final class CloudNotifier {
         int nid = id("help", incidentId);
         PendingIntent pi = PendingIntent.getActivity(ctx, nid, helperIntent(ctx, incidentId, meta), piFlags());
         double d = Json.dbl(meta, "distanceM", -1);
+        String owner = Json.str(meta, "ownerName");
+        String title = TextUtils.isEmpty(owner)
+                ? ctx.getString(R.string.cl_n_helper_title)
+                : ctx.getString(R.string.cl_n_helper_title_named, owner);
         String text = d >= 0
                 ? ctx.getString(R.string.cl_n_helper_text, formatDistance(ctx, d))
                 : ctx.getString(R.string.cl_n_helper_text_nodist);
+        String message = Json.str(meta, "message");
+        if (!TextUtils.isEmpty(message)) text = text + "\n“" + message + "”";
         String channel = alerting || isActive(ctx, nid) ? CH_HELPER : CH_CLOUD;
         NotificationCompat.Builder b = new NotificationCompat.Builder(ctx, channel)
                 .setSmallIcon(R.drawable.cl_ic_shield)
                 .setColor(ContextCompat.getColor(ctx, R.color.ns_rose))
-                .setContentTitle(ctx.getString(R.string.cl_n_helper_title))
+                .setContentTitle(title)
                 .setContentText(text)
                 .setCategory(NotificationCompat.CATEGORY_ALARM)
                 .setVisibility(NotificationCompat.VISIBILITY_PUBLIC)

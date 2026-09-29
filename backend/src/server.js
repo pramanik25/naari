@@ -12,6 +12,7 @@ const { createSms } = require('./sms');
 const { createWhatsApp } = require('./whatsapp');
 const { CHANNEL } = require('./notify');
 const { createCheckinSweeper } = require('./jobs/checkinSweeper');
+const { createEvidenceCleaner } = require('./jobs/evidenceCleaner');
 
 /**
  * Boots everything: migrations, HTTP + WebSocket, LISTEN client, check-in sweeper.
@@ -42,8 +43,10 @@ async function start(opts = {}) {
 
   const listener = createListener(config.databaseUrl, CHANNEL, (id) => { hub.onNotify(id); }, log);
   const sweeper = createCheckinSweeper({ pool, config, sms, whatsapp, log, intervalMs: config.sweepIntervalMs });
+  const evidenceCleaner = createEvidenceCleaner({ pool, config, log });
   if (opts.sweeper !== false) {
     sweeper.start();
+    evidenceCleaner.start();
     whatsapp.start();
   }
 
@@ -60,6 +63,7 @@ async function start(opts = {}) {
     if (closing) return closing;
     closing = (async () => {
       await sweeper.stop();
+      await evidenceCleaner.stop();
       await whatsapp.stop();
       hub.close();
       await new Promise((r) => {
@@ -73,7 +77,7 @@ async function start(opts = {}) {
     return closing;
   }
 
-  return { server, port, app, pool, config, hub, sweeper, whatsapp, close, log };
+  return { server, port, app, pool, config, hub, sweeper, evidenceCleaner, whatsapp, close, log };
 }
 
 module.exports = { start };

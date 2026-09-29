@@ -103,6 +103,9 @@ dependencies {
     implementation("androidx.camera:camera-lifecycle:1.3.4")
     implementation("androidx.camera:camera-view:1.3.4")
 
+    // Fast memory-mapped key-value storage (replaces SharedPreferences XML, no size penalty)
+    implementation("com.tencent:mmkv:2.4.2")
+
     // Networking, mail, misc
     implementation("com.squareup.okhttp3:okhttp:4.10.0")
     implementation("com.sun.mail:android-mail:1.6.6")

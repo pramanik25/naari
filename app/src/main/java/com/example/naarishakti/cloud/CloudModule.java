@@ -104,6 +104,14 @@ public final class CloudModule implements SafetyHooks.Module {
             Log.w(Cloud.TAG, "Contacts unreadable", t);
         }
         body.addProperty("contactsCount", contacts);
+        try {
+            String message = Prefs.getEmergencyMessage(app);
+            if (message != null && !message.isEmpty()) {
+                body.addProperty("message", message.length() > 500 ? message.substring(0, 500) : message);
+            }
+        } catch (Throwable t) {
+            Log.w(Cloud.TAG, "Emergency message unreadable", t);
+        }
         int battery = batteryPercent(app);
         if (battery >= 0) body.addProperty("battery", battery);
         // v1.1: false = never alert nearby helpers for this incident (guardians still get it).

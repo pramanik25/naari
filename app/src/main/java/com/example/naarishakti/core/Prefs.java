@@ -159,7 +159,7 @@ public final class Prefs {
     private Prefs() {}
 
     public static SharedPreferences get(Context context) {
-        return context.getApplicationContext().getSharedPreferences(FILE, Context.MODE_PRIVATE);
+        return Kv.get(context, FILE);
     }
 
     /** Tell running services that settings changed. Call after every save. */
