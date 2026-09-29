@@ -26,10 +26,10 @@
 
     <!-- Donation Amounts -->
     <string name="donation_amount_title">Quick Donation</string>
-    <string name="donation_amount_₹50">₹50 – One month of server costs</string>
-    <string name="donation_amount_₹100">₹100 – Two months of security updates</string>
-    <string name="donation_amount_₹500">₹500 – Six months of cloud backup</string>
-    <string name="donation_amount_₹1000">₹1000 – One year of protection</string>
+    <string name="donation_amount_50">₹50 – One month of server costs</string>
+    <string name="donation_amount_100">₹100 – Two months of security updates</string>
+    <string name="donation_amount_500">₹500 – Six months of cloud backup</string>
+    <string name="donation_amount_1000">₹1000 – One year of protection</string>
     <string name="donation_amount_custom">Custom Amount</string>
 
     <!-- Thank You -->
@@ -37,7 +37,7 @@
     <string name="donation_thanks_body">Every rupee helps us protect more women. Your donation is secure and will be used only for server maintenance and safety features.\n\nNo amount is too small. Together, we make safety accessible to everyone.</string>
 
     <!-- Transparency -->
-    <string name="donation_transparency_title">Transparency & Trust</string>
+    <string name="donation_transparency_title">Transparency &amp; Trust</string>
     <string name="donation_transparency_body">• All donations go directly to server costs
 • No middlemen or commissions
 • Monthly updates on app improvements

@@ -484,12 +484,12 @@ public class SettingsFragment extends Fragment {
                 com.example.naarishakti.core.AppearanceActivity.class);
 
         // User manual
-        bindRow(binding.rowManual, R.drawable.ua_ic_help, R.color.ns_violet, R.color.ns_violet_container,
+        bindRow(binding.rowManual, R.drawable.ua_ic_info, R.color.ns_violet, R.color.ns_violet_container,
                 R.string.settings_manual_title, getString(R.string.settings_manual_sub),
                 ManualActivity.class);
 
         // Donation
-        bindRow(binding.rowDonation, R.drawable.ua_ic_heart, R.color.ns_rose, R.color.ns_rose_container,
+        bindRow(binding.rowDonation, R.drawable.ns_ic_heart, R.color.ns_rose, R.color.ns_rose_container,
                 R.string.settings_donation_title, getString(R.string.settings_donation_sub),
                 DonationActivity.class);
     }

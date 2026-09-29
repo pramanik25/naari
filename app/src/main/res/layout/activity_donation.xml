@@ -249,7 +249,7 @@
                         android:layout_height="40dp"
                         android:layout_marginStart="8dp"
                         android:contentDescription="@string/donation_upi_copy"
-                        app:icon="@drawable/ua_ic_copy" />
+                        app:icon="@drawable/ub_ic_copy" />
                 </LinearLayout>
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>

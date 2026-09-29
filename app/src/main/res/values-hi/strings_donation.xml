@@ -26,10 +26,10 @@
 
     <!-- Donation Amounts -->
     <string name="donation_amount_title">त्वरित दान</string>
-    <string name="donation_amount_₹50">₹50 – एक महीने के सर्वर लागत</string>
-    <string name="donation_amount_₹100">₹100 – दो महीने की सुरक्षा अपडेट</string>
-    <string name="donation_amount_₹500">₹500 – छह महीने का क्लाउड बैक अप</string>
-    <string name="donation_amount_₹1000">₹1000 – एक साल की सुरक्षा</string>
+    <string name="donation_amount_50">₹50 – एक महीने के सर्वर लागत</string>
+    <string name="donation_amount_100">₹100 – दो महीने की सुरक्षा अपडेट</string>
+    <string name="donation_amount_500">₹500 – छह महीने का क्लाउड बैक अप</string>
+    <string name="donation_amount_1000">₹1000 – एक साल की सुरक्षा</string>
     <string name="donation_amount_custom">कस्टम राशि</string>
 
     <!-- Thank You -->
