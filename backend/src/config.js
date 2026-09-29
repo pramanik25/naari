@@ -52,6 +52,7 @@ function loadConfig(env = process.env, log = null) {
       appSecret: env.WHATSAPP_APP_SECRET || null,
       apiVersion: env.WHATSAPP_API_VERSION || 'v20.0',
       businessNumber: env.WHATSAPP_BUSINESS_NUMBER || null, // else looked up from the Graph API
+      communityLink: env.WHATSAPP_COMMUNITY_LINK || null, // public community channel link
       templates: {
         sos: env.WHATSAPP_TEMPLATE_SOS || 'naari_sos_alert',
         sosText: env.WHATSAPP_TEMPLATE_SOS_TEXT || 'naari_sos_alert_text',

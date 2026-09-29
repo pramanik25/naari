@@ -184,6 +184,14 @@
         <item quantity="one">Up to date · %d chat linked</item>
         <item quantity="other">Up to date · %d chats linked</item>
     </plurals>
+    <plurals name="ub_emg_telegram_emergency_selected">
+        <item quantity="one">%d contact selected for emergency alerts</item>
+        <item quantity="other">%d contacts selected for emergency alerts</item>
+    </plurals>
+    <string name="ub_emg_telegram_no_contacts">No Telegram contacts available. Sync first.</string>
+    <string name="ub_emg_telegram_contact">Chat ID %1$s</string>
+    <string name="ub_emg_telegram_select_title">Select for emergency alerts</string>
+    <string name="ub_emg_telegram_saved">Emergency contacts updated</string>
 
     <!-- ===================== Call police ===================== -->
     <string name="ub_police_eyebrow">Emergency</string>

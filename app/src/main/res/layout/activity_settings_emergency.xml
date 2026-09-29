@@ -415,6 +415,15 @@
                             app:icon="@drawable/ub_ic_sync" />
                     </LinearLayout>
 
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/manage_telegram_button"
+                        style="@style/Ns.Button.Text"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/ub_emg_telegram_select_title"
+                        app:icon="@drawable/ub_ic_person_add" />
+
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/syncProgress"
                         android:layout_width="match_parent"

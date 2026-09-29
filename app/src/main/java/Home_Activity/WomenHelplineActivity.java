@@ -123,6 +123,9 @@ public class WomenHelplineActivity extends AppCompatActivity {
         all.add(new Helpline(R.string.ub_help_ncw_name, R.string.ub_help_ncw_desc, "7827170170", "78271 70170",
                 CAT_WOMEN, R.drawable.ub_ic_chat, R.color.ns_gold_container, R.color.ns_gold,
                 ACTION_WHATSAPP, "https://wa.me/917827170170"));
+        all.add(new Helpline(R.string.ub_help_community_name, R.string.ub_help_community_desc, "", "",
+                CAT_WOMEN, R.drawable.ub_ic_chat, R.color.ns_rose_container, R.color.ns_rose,
+                ACTION_WHATSAPP, "https://whatsapp.com/channel/0029VbCO82oGpLHWokmyXD34"));
     }
 
     private void render() {

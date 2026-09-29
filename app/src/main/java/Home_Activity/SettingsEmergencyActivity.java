@@ -113,6 +113,10 @@ public class SettingsEmergencyActivity extends AppCompatActivity {
             FeatureKit.tick(v);
             syncTelegram();
         });
+        b.manageTelegramButton.setOnClickListener(v -> {
+            FeatureKit.tick(v);
+            manageTelegramEmergencyContacts();
+        });
         b.appPasswordLink.setOnClickListener(v -> FeatureKit.openUrl(this, APP_PASSWORDS_URL));
         b.saveButton.setOnClickListener(v -> {
             FeatureKit.tick(v);
@@ -480,7 +484,10 @@ public class SettingsEmergencyActivity extends AppCompatActivity {
 
     private void renderTelegram() {
         boolean configured = TelegramBot.isConfigured();
-        int linked = Prefs.getTelegramChatIds(this).size();
+        List<String> allChatIds = Prefs.getTelegramChatIds(this);
+        List<String> emergencyChatIds = Prefs.getTelegramEmergencyChatIds(this);
+        int linked = allChatIds.size();
+        int selected = emergencyChatIds.size();
         int dotColor;
         if (!configured) {
             b.telegramStatus.setText(R.string.ub_emg_telegram_not_configured);
@@ -488,8 +495,13 @@ public class SettingsEmergencyActivity extends AppCompatActivity {
             dotColor = R.color.ns_warn;
         } else if (linked > 0) {
             b.telegramStatus.setText(getResources().getQuantityString(R.plurals.ub_emg_telegram_linked, linked, linked));
-            b.telegramExplain.setText(R.string.ub_emg_telegram_explain);
-            dotColor = R.color.ns_safe;
+            if (selected > 0) {
+                b.telegramExplain.setText(getResources().getQuantityString(
+                        R.plurals.ub_emg_telegram_emergency_selected, selected, selected));
+            } else {
+                b.telegramExplain.setText(R.string.ub_emg_telegram_explain);
+            }
+            dotColor = selected > 0 ? R.color.ns_safe : R.color.ns_text_faint;
         } else {
             b.telegramStatus.setText(R.string.ub_emg_telegram_not_linked);
             b.telegramExplain.setText(R.string.ub_emg_telegram_explain);
@@ -531,5 +543,42 @@ public class SettingsEmergencyActivity extends AppCompatActivity {
             }
             Snackbar.make(b.getRoot(), msg, Snackbar.LENGTH_LONG).show();
         });
+    }
+
+    private void manageTelegramEmergencyContacts() {
+        List<String> allChatIds = Prefs.getTelegramChatIds(this);
+        List<String> emergencyChatIds = Prefs.getTelegramEmergencyChatIds(this);
+
+        if (allChatIds.isEmpty()) {
+            Snackbar.make(b.getRoot(), R.string.ub_emg_telegram_no_contacts, Snackbar.LENGTH_LONG).show();
+            return;
+        }
+
+        CharSequence[] items = new CharSequence[allChatIds.size()];
+        boolean[] checked = new boolean[allChatIds.size()];
+        for (int i = 0; i < allChatIds.size(); i++) {
+            String chatId = allChatIds.get(i);
+            items[i] = getString(R.string.ub_emg_telegram_contact, chatId);
+            checked[i] = emergencyChatIds.contains(chatId);
+        }
+
+        new MaterialAlertDialogBuilder(this)
+                .setTitle(R.string.ub_emg_telegram_select_title)
+                .setMultiChoiceItems(items, checked, (dialog, which, isChecked) -> {
+                    if (isChecked) {
+                        if (!emergencyChatIds.contains(allChatIds.get(which))) {
+                            emergencyChatIds.add(allChatIds.get(which));
+                        }
+                    } else {
+                        emergencyChatIds.remove(allChatIds.get(which));
+                    }
+                })
+                .setPositiveButton(R.string.ub_save, (dialog, which) -> {
+                    Prefs.setTelegramEmergencyChatIds(this, emergencyChatIds);
+                    renderTelegram();
+                    Snackbar.make(b.getRoot(), R.string.ub_emg_telegram_saved, Snackbar.LENGTH_SHORT).show();
+                })
+                .setNegativeButton(R.string.ub_cancel, null)
+                .show();
     }
 }

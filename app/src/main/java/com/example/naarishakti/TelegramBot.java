@@ -131,6 +131,13 @@ public final class TelegramBot {
         EXECUTOR.execute(() -> sendMessageToAll(app, text));
     }
 
+    /** Sends a text message to emergency contacts only off the main thread. */
+    public static void sendMessageToEmergencyAsync(Context ctx, final String text) {
+        final Context app = ctx.getApplicationContext();
+        if (!isConfigured() || Prefs.getTelegramEmergencyChatIds(app).isEmpty()) return;
+        EXECUTOR.execute(() -> sendMessageToEmergency(app, text));
+    }
+
     /** @return the number of chats the message reached. */
     @WorkerThread
     public static int sendMessageToAll(Context ctx, String text) {
@@ -146,6 +153,26 @@ public final class TelegramBot {
     public static int sendPhotoToAll(Context ctx, File imageFile, @Nullable String caption) {
         int ok = 0;
         for (String chatId : Prefs.getTelegramChatIds(ctx)) {
+            if (sendPhoto(imageFile, chatId, caption)) ok++;
+        }
+        return ok;
+    }
+
+    /** @return the number of chats the message reached for emergency contacts. */
+    @WorkerThread
+    public static int sendMessageToEmergency(Context ctx, String text) {
+        int ok = 0;
+        for (String chatId : Prefs.getTelegramEmergencyChatIds(ctx)) {
+            if (sendMessage(chatId, text)) ok++;
+        }
+        return ok;
+    }
+
+    /** @return the number of chats the photo reached for emergency contacts. */
+    @WorkerThread
+    public static int sendPhotoToEmergency(Context ctx, File imageFile, @Nullable String caption) {
+        int ok = 0;
+        for (String chatId : Prefs.getTelegramEmergencyChatIds(ctx)) {
             if (sendPhoto(imageFile, chatId, caption)) ok++;
         }
         return ok;

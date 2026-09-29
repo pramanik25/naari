@@ -32,6 +32,8 @@ public final class Prefs {
     public static final String SENDER_PASSWORD = "sender_password";
     /** Comma separated Telegram chat ids, filled by TelegramBot.fetchAndStoreChatIds(). */
     public static final String TELEGRAM_CHAT_IDS = "telegram_chat_ids";
+    /** Comma separated Telegram chat ids selected to receive emergency alerts (photos and location). */
+    public static final String TELEGRAM_EMERGENCY_CHAT_IDS = "telegram_emergency_chat_ids";
 
     // ---- Voice trigger ----
     public static final String TRIGGER_PHRASE = "trigger_phrase_text";
@@ -253,5 +255,19 @@ public final class Prefs {
         List<String> merged = getTelegramChatIds(context);
         for (String id : ids) if (!merged.contains(id)) merged.add(id);
         get(context).edit().putString(TELEGRAM_CHAT_IDS, TextUtils.join(",", merged)).apply();
+    }
+
+    public static List<String> getTelegramEmergencyChatIds(Context context) {
+        String raw = get(context).getString(TELEGRAM_EMERGENCY_CHAT_IDS, "");
+        List<String> out = new ArrayList<>();
+        if (TextUtils.isEmpty(raw)) return out;
+        for (String id : raw.split(",")) {
+            if (!id.trim().isEmpty()) out.add(id.trim());
+        }
+        return out;
+    }
+
+    public static void setTelegramEmergencyChatIds(Context context, List<String> ids) {
+        get(context).edit().putString(TELEGRAM_EMERGENCY_CHAT_IDS, TextUtils.join(",", ids)).apply();
     }
 }

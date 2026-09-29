@@ -665,7 +665,7 @@ public class VoiceRecognitionService extends Service {
 
         if (fired && userInitiated && !wasDuress) {
             sendSmsToAll(this, Prefs.getContactNumbers(this), getString(R.string.eng_sms_safe));
-            TelegramBot.sendMessageToAllAsync(this, getString(R.string.eng_telegram_safe));
+            TelegramBot.sendMessageToEmergencyAsync(this, getString(R.string.eng_telegram_safe));
         }
         duress = false;
         hiddenIncident = false;
@@ -725,7 +725,7 @@ public class VoiceRecognitionService extends Service {
                 ? getString(R.string.en_sms_duress, name, link)
                 : getString(R.string.en_sms_duress_no_link, name);
         sendSmsToAll(this, Prefs.getContactNumbers(this), msg);
-        TelegramBot.sendMessageToAllAsync(this, msg);
+        TelegramBot.sendMessageToEmergencyAsync(this, msg);
     }
 
     @Nullable
@@ -1202,7 +1202,7 @@ public class VoiceRecognitionService extends Service {
             status.putBoolean(PanicActivity.EXTRA_SMS_WITH_LOCATION, loc != null);
         }
         publishStatus();
-        TelegramBot.sendMessageToAllAsync(this, getString(R.string.eng_telegram_sos, message));
+        TelegramBot.sendMessageToEmergencyAsync(this, getString(R.string.eng_telegram_sos, message));
     }
 
     private void sendLocationUpdate(Location loc) {
@@ -2237,10 +2237,10 @@ public class VoiceRecognitionService extends Service {
             Context ctx = getApplicationContext();
             ProfileDbHelper db = new ProfileDbHelper(ctx);
             EmailSender email = new EmailSender(ctx);
-            boolean telegram = TelegramBot.isConfigured() && !Prefs.getTelegramChatIds(ctx).isEmpty();
+            boolean telegram = TelegramBot.isConfigured() && !Prefs.getTelegramEmergencyChatIds(ctx).isEmpty();
             boolean mail = email.isConfigured();
             if (!telegram && !mail) {
-                Log.w(TAG, "No Telegram chat or email configured; photos stay on the device");
+                Log.w(TAG, "No Telegram emergency contact or email configured; photos stay on the device");
                 return Result.success();
             }
 
@@ -2257,7 +2257,7 @@ public class VoiceRecognitionService extends Service {
                 String body = ctx.getString(R.string.eng_email_body, camera, when);
 
                 boolean delivered = false;
-                if (telegram && TelegramBot.sendPhotoToAll(ctx, file, body) > 0) delivered = true;
+                if (telegram && TelegramBot.sendPhotoToEmergency(ctx, file, body) > 0) delivered = true;
                 if (mail && email.send(ctx.getString(R.string.eng_email_subject, camera), body, file)) delivered = true;
 
                 if (delivered) {
