@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Donation and support strings - HINDI -->
+<resources>
+    <!-- Donation Activity -->
+    <string name="donation_title">हमारे मिशन को समर्थन दें</string>
+    <string name="donation_overline">हमें चलाते रहने में मदद करें</string>
+    <string name="donation_body">आपका योगदान हमें सुरक्षित सर्वर चलाने में मदद करता है जो आपकी सुरक्षा सुविधाओं को शक्ति देते हैं—क्लाउड बैक अप, स्थान साझाकरण, साक्ष्य भंडारण, और आपातकालीन अलर्ट।</string>
+    <string name="donation_back">पीछे</string>
+
+    <!-- Why Donate -->
+    <string name="donation_why_title">आपका समर्थन क्यों महत्वपूर्ण है</string>
+    <string name="donation_why_servers">सुरक्षित सर्वर: आपके साक्ष्य के लिए एन्क्रिप्टेड क्लाउड भंडारण (फोटो, ऑडियो, वीडियो)</string>
+    <string name="donation_why_location">लाइव स्थान: आपातकालीन संपर्कों के साथ रीयल-टाइम स्थान साझाकरण</string>
+    <string name="donation_why_alerts">तत्काल अलर्ट: आपके संपर्कों को SMS और पुश सूचनाएं</string>
+    <string name="donation_why_maintenance">24/7 समर्थन: ऐप को सुरक्षित और विश्वसनीय रखने के लिए रखरखाव और अपडेट</string>
+
+    <!-- UPI Donation -->
+    <string name="donation_upi_title">UPI के माध्यम से दान करें</string>
+    <string name="donation_upi_subtitle">किसी भी UPI ऐप का उपयोग करके कोई भी राशि (₹10 से आगे) भेजें</string>
+    <string name="donation_upi_id">vikashstart92@okaxis</string>
+    <string name="donation_upi_id_label">UPI ID</string>
+    <string name="donation_upi_copy">UPI ID कॉपी करें</string>
+    <string name="donation_upi_copied">UPI ID क्लिपबोर्ड में कॉपी किया गया</string>
+    <string name="donation_upi_scan">QR कोड स्कैन करें</string>
+    <string name="donation_upi_hint">किसी भी UPI ऐप (Google Pay, PhonePe, Paytm, BHIM) को खोलें और दान करने के लिए इस कोड को स्कैन करें</string>
+
+    <!-- Donation Amounts -->
+    <string name="donation_amount_title">त्वरित दान</string>
+    <string name="donation_amount_₹50">₹50 – एक महीने के सर्वर लागत</string>
+    <string name="donation_amount_₹100">₹100 – दो महीने की सुरक्षा अपडेट</string>
+    <string name="donation_amount_₹500">₹500 – छह महीने का क्लाउड बैक अप</string>
+    <string name="donation_amount_₹1000">₹1000 – एक साल की सुरक्षा</string>
+    <string name="donation_amount_custom">कस्टम राशि</string>
+
+    <!-- Thank You -->
+    <string name="donation_thanks_title">आपके समर्थन के लिए धन्यवाद</string>
+    <string name="donation_thanks_body">हर रुपया हमें अधिक महिलाओं की रक्षा करने में मदद करता है। आपका दान सुरक्षित है और केवल सर्वर रखरखाव और सुरक्षा सुविधाओं के लिए उपयोग किया जाएगा।\n\nकोई राशि बहुत छोटी नहीं है। साथ में, हम सुरक्षा को सभी के लिए सुलभ बनाते हैं।</string>
+
+    <!-- Transparency -->
+    <string name="donation_transparency_title">पारदर्शिता और विश्वास</string>
+    <string name="donation_transparency_body">• सभी दान सीधे सर्वर लागतों में जाते हैं
+• कोई मध्यस्थ या कमीशन नहीं
+• ऐप सुधार पर मासिक अपडेट
+• आपका डेटा कभी बेचा या साझा नहीं किया जाता है
+• खुला स्रोत कोडबेस (GitHub पर उपलब्ध)</string>
+
+    <!-- Contact -->
+    <string name="donation_contact_title">सवाल?</string>
+    <string name="donation_contact_email">ईमेल: vikashstart92@okaxis</string>
+    <string name="donation_contact_body">यदि आपको दान के बारे में कोई प्रश्न है या किसी सुविधा को प्रायोजित करना चाहते हैं, तो कृपया संपर्क करें।</string>
+
+</resources>

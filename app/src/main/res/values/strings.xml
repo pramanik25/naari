@@ -129,6 +129,8 @@
     <string name="settings_section_help">Help</string>
     <string name="settings_manual_title">How to stay safe</string>
     <string name="settings_manual_sub">User guide for all safety features</string>
+    <string name="settings_donation_title">Support our servers</string>
+    <string name="settings_donation_sub">Help us run 24/7 safety features</string>
 
     <!-- ===================== Splash ===================== -->
     <string name="splash_tagline">Your safety, always on</string>

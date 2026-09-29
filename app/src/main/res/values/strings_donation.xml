@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Donation and support strings -->
+<resources>
+    <!-- Donation Activity -->
+    <string name="donation_title">Support Our Mission</string>
+    <string name="donation_overline">Help us keep running</string>
+    <string name="donation_body">Your contribution helps us run the secure servers that power your safety features—cloud backup, location sharing, evidence storage, and emergency alerts.</string>
+    <string name="donation_back">Back</string>
+
+    <!-- Why Donate -->
+    <string name="donation_why_title">Why Your Support Matters</string>
+    <string name="donation_why_servers">Secure Servers: Encrypted cloud storage for your evidence (photos, audio, video)</string>
+    <string name="donation_why_location">Live Location: Real-time location sharing with emergency contacts</string>
+    <string name="donation_why_alerts">Instant Alerts: SMS and push notifications to your contacts</string>
+    <string name="donation_why_maintenance">24/7 Support: Maintenance and updates to keep the app safe and reliable</string>
+
+    <!-- UPI Donation -->
+    <string name="donation_upi_title">Donate via UPI</string>
+    <string name="donation_upi_subtitle">Send any amount (₹10 onwards) using any UPI app</string>
+    <string name="donation_upi_id">vikashstart92@okaxis</string>
+    <string name="donation_upi_id_label">UPI ID</string>
+    <string name="donation_upi_copy">Copy UPI ID</string>
+    <string name="donation_upi_copied">UPI ID copied to clipboard</string>
+    <string name="donation_upi_scan">Scan QR Code</string>
+    <string name="donation_upi_hint">Open any UPI app (Google Pay, PhonePe, Paytm, BHIM) and scan this code to donate</string>
+
+    <!-- Donation Amounts -->
+    <string name="donation_amount_title">Quick Donation</string>
+    <string name="donation_amount_₹50">₹50 – One month of server costs</string>
+    <string name="donation_amount_₹100">₹100 – Two months of security updates</string>
+    <string name="donation_amount_₹500">₹500 – Six months of cloud backup</string>
+    <string name="donation_amount_₹1000">₹1000 – One year of protection</string>
+    <string name="donation_amount_custom">Custom Amount</string>
+
+    <!-- Thank You -->
+    <string name="donation_thanks_title">Thank You for Your Support</string>
+    <string name="donation_thanks_body">Every rupee helps us protect more women. Your donation is secure and will be used only for server maintenance and safety features.\n\nNo amount is too small. Together, we make safety accessible to everyone.</string>
+
+    <!-- Transparency -->
+    <string name="donation_transparency_title">Transparency & Trust</string>
+    <string name="donation_transparency_body">• All donations go directly to server costs
+• No middlemen or commissions
+• Monthly updates on app improvements
+• Your data is never sold or shared
+• Open-source codebase (available on GitHub)</string>
+
+    <!-- Contact -->
+    <string name="donation_contact_title">Questions?</string>
+    <string name="donation_contact_email">Email: vikashstart92@okaxis</string>
+    <string name="donation_contact_body">If you have any questions about donations or want to sponsor a feature, please reach out.</string>
+
+</resources>
