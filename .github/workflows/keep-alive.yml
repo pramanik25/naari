@@ -1,0 +1,39 @@
+# Keeps the Naari Shakti API awake on Render's free plan, which sleeps after 15 minutes without
+# traffic (the first request after that takes 30-60 s — too slow for an SOS).
+#
+# Setup: GitHub repo → Settings → Secrets and variables → Actions → Variables → New variable
+#   BACKEND_URL = https://<your-service>.onrender.com   (no trailing slash)
+#
+# GitHub runs scheduled workflows only from the default branch, and often starts them several
+# minutes late, so the schedule is every 10 minutes to stay safely under Render's 15-minute limit.
+name: Keep backend awake
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch: {}
+
+concurrency:
+  group: keep-alive
+  cancel-in-progress: true
+
+permissions: {}
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Ping /healthz
+        env:
+          BACKEND_URL: ${{ vars.BACKEND_URL }}
+        run: |
+          if [ -z "$BACKEND_URL" ]; then
+            echo "::warning::Set the BACKEND_URL repository variable (Settings → Secrets and variables → Actions → Variables)."
+            exit 0
+          fi
+          # A sleeping instance can take up to ~60 s to answer, so allow time and retry.
+          curl --fail --silent --show-error --max-time 90 \
+               --retry 3 --retry-delay 15 --retry-all-errors \
+               "$BACKEND_URL/healthz"
+          echo

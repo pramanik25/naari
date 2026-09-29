@@ -1,0 +1,44 @@
+# Render Blueprint for the Naari Shakti API (backend/).
+# Render dashboard → New → Blueprint → pick this repo. Values marked `sync: false` are asked for
+# once in the dashboard and never stored in git.
+services:
+  - type: web
+    name: naari-shakti-api
+    runtime: node
+    plan: free
+    region: singapore          # closest Render region to India
+    rootDir: backend
+    buildCommand: npm ci --omit=dev
+    startCommand: npm start
+    healthCheckPath: /healthz
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      - key: DATABASE_URL        # e.g. a Neon Postgres connection string (sslmode=require)
+        sync: false
+      - key: PUBLIC_BASE_URL     # https://<service>.onrender.com, or your custom domain
+        sync: false
+      - key: SIGNING_SECRET      # long random value; must stay the same across deploys
+        generateValue: true
+      - key: TRUST_PROXY         # Render terminates HTTPS in front of the app
+        value: "true"
+      - key: EVIDENCE_DIR
+        value: /tmp/evidence     # free plan has no persistent disk — see backend/README.md
+      - key: LOG_LEVEL
+        value: info
+      # Optional: WhatsApp alerts and server SMS (see backend/README.md)
+      - key: WHATSAPP_TOKEN
+        sync: false
+      - key: WHATSAPP_PHONE_NUMBER_ID
+        sync: false
+      - key: WHATSAPP_VERIFY_TOKEN
+        sync: false
+      - key: WHATSAPP_APP_SECRET
+        sync: false
+      - key: TWILIO_ACCOUNT_SID
+        sync: false
+      - key: TWILIO_AUTH_TOKEN
+        sync: false
+      - key: TWILIO_FROM
+        sync: false

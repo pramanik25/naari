@@ -76,6 +76,28 @@ The server is a single Node process with no build step. It needs three things:
 - Attach a **persistent disk or volume** and point `EVIDENCE_DIR` at it, for example `/data/evidence`. Without one, evidence is lost on every deploy.
 - Their HTTPS edge supports WebSockets out of the box.
 
+#### Render free plan specifically
+
+`render.yaml` in the repo root is a ready-made Blueprint (Render dashboard → New → Blueprint →
+pick this repo). Two things about the free plan to know before using it for real users, not just
+testing:
+
+1. **No persistent disk.** The free plan has nowhere durable to write files, so `render.yaml` sets
+   `EVIDENCE_DIR=/tmp/evidence`, which is wiped on every restart and every deploy — uploaded photos
+   and audio will disappear unpredictably. This is a stopgap so the server runs, not a fix. To keep
+   evidence for real, either upgrade to a paid Render plan with a disk, or change `EVIDENCE_DIR`'s
+   storage in code to an S3-compatible bucket (Cloudflare R2's free tier is large enough for this).
+2. **It sleeps after 15 minutes of no traffic**, and the first request after that takes 30–60 s to
+   answer — too slow for an SOS. `.github/workflows/keep-alive.yml` pings `/healthz` every 10
+   minutes with a GitHub Actions cron job to prevent that. One-time setup: GitHub repo → **Settings
+   → Secrets and variables → Actions → Variables** → add a variable named `BACKEND_URL` set to your
+   Render service's URL (e.g. `https://naari-shakti-api.onrender.com`, no trailing slash). GitHub
+   only runs scheduled workflows on the default branch and can run them a few minutes late, which is
+   why the job runs every 10 minutes against Render's 15-minute sleep timer, not every 13–15. This
+   only works while the repo has recent activity — GitHub disables a workflow's schedule after 60
+   days with no commits to the repo, so it needs a commit at least that often to keep firing.
+   A paid Render plan removes the sleep entirely and makes this workflow unnecessary.
+
 ### VPS with systemd and a reverse proxy
 
 `/etc/systemd/system/naari.service`:
