@@ -50,8 +50,11 @@ export default async function DashboardPage() {
 
   return (
     <>
-      <h1>Dashboard</h1>
-      <p className="subtitle">Live overview of the Naari Shakti platform.</p>
+      <div className="page-heading">
+        <p className="eyebrow">Situation room</p>
+        <h1>Operations overview</h1>
+        <p className="subtitle">Current safety activity across the platform.</p>
+      </div>
 
       <div className="stats">
         <div className="stat">
