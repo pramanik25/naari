@@ -4,7 +4,7 @@ const crypto = require('crypto');
 const fsp = require('fs/promises');
 const path = require('path');
 const express = require('express');
-const { generateDeviceToken, hashToken } = require('../auth');
+const { generateDeviceToken, hashToken, bearerFromHeader } = require('../auth');
 const { ApiError, ah, body, badRequest, notFound } = require('../util');
 const { tx } = require('../db');
 
@@ -70,6 +70,26 @@ function meRouter({ pool, config, hub, log }) {
     const name = optionalName(body(req).name, 'name');
     if (name !== undefined) await pool.query('UPDATE users SET name = $2 WHERE id = $1', [req.userId, name]);
     res.json(await profile(pool, req.userId));
+  }));
+
+  /**
+   * Saves this device's FCM registration token so the server can push alerts while the app is
+   * closed; `{ "token": null }` clears it. Per device (keyed by the bearer token's hash), not per
+   * user: each phone of an account pushes to its own FCM token.
+   */
+  r.put('/push-token', ah(async (req, res) => {
+    const b = body(req);
+    let pushToken = b.token === undefined ? null : b.token;
+    if (pushToken !== null) {
+      if (typeof pushToken !== 'string' || !pushToken.trim() || pushToken.length > 4096) {
+        throw badRequest('invalid_request', 'token must be a non-empty string (max 4096 chars) or null');
+      }
+      pushToken = pushToken.trim();
+    }
+    await pool.query(
+      'UPDATE device_tokens SET push_token = $2, push_updated_at = now() WHERE token_hash = $1',
+      [hashToken(bearerFromHeader(req.headers.authorization)), pushToken]);
+    res.status(204).end();
   }));
 
   r.delete('/me', ah(async (req, res) => {

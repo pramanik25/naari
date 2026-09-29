@@ -20,6 +20,7 @@ client (`app/src/main/java/com/example/naarishakti/cloud/`). Change both togethe
 | `SIGNING_SECRET` | random per boot (warn) | HMAC key for short-lived evidence URLs |
 | `MAX_EVIDENCE_BYTES` | 52428800 | 50 MB per file |
 | `TWILIO_ACCOUNT_SID`, `TWILIO_AUTH_TOKEN`, `TWILIO_FROM` | unset | optional server SMS for overdue check-ins |
+| `FIREBASE_SERVICE_ACCOUNT` (or `..._FILE`) | unset | Firebase service-account JSON (inline or file path); enables FCM push so alerts reach closed apps |
 | `TRUST_PROXY` | false | honour X-Forwarded-For behind a proxy |
 
 ## Devices & profile
@@ -29,6 +30,9 @@ client (`app/src/main/java/com/example/naarishakti/cloud/`). Change both togethe
 - `GET /api/v1/me` → `{ "userId", "name", "guardianCode" }` (guardian code created on first read:
   6 chars from `ABCDEFGHJKLMNPQRSTUVWXYZ23456789`, unique).
 - `PATCH /api/v1/me` `{ "name"?: string }` → same shape as GET.
+- `PUT /api/v1/push-token` `{ "token": "<FCM registration token>" }` → `204`. Stored per device
+  (keyed by the bearer token); `{ "token": null }` clears it. The server pushes every alert to it
+  (see Real-time alerts), so phones get alerts with the app closed.
 - `DELETE /api/v1/me` → deletes the account and all its data (incidents, evidence files, links).
 
 ## Guardians (people who get this user's alerts)
@@ -91,6 +95,12 @@ client (`app/src/main/java/com/example/naarishakti/cloud/`). Change both togethe
   `{ "type": "ping" }` (server answers `{ "type": "pong" }`). Server pings every 25 s.
 - Every alert is also stored; `GET /api/v1/notifications?since=<ms>` returns unacked ones from the last
   24 h (`{ "notifications": [ ... ] }`) so a phone that was offline catches up on reconnect.
+  `POST /api/v1/notifications/{id}/ack` → `204` acks over HTTP (used by the push path).
+- Push: when `FIREBASE_SERVICE_ACCOUNT` is set, every unacked notification is also sent as a
+  high-priority FCM **data** message `{ "n": "<the same JSON string>" }` to each of the recipient's
+  registered push tokens (TTL 15 min for `helper_alert`, 24 h otherwise), so alerts ring on the
+  lock screen with the app closed. Clients de-duplicate socket + push by notification `id` and ack
+  pushed alerts over HTTP. Dead FCM tokens (404/UNREGISTERED) are dropped server-side.
 - Multi-instance safe: fan-out goes through Postgres `LISTEN/NOTIFY` (channel `naari_events`).
 
 | `type` | fields | client behaviour |

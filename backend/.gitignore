@@ -4,3 +4,7 @@ data/
 .env.*
 !.env.example
 *.log
+
+# Firebase service-account key (secret, never commit)
+firebase-service-account.json
+*firebase-adminsdk*.json

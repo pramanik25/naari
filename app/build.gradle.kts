@@ -4,6 +4,15 @@ plugins {
     id("com.android.application")
 }
 
+// Push notifications (FCM) need google-services.json from the Firebase console. The build must
+// still work before that file is added, so the plugin is only applied when it exists; without it
+// the app runs fine and push simply stays off (alerts then arrive only while the app is open).
+if (file("google-services.json").exists()) {
+    apply(plugin = "com.google.gms.google-services")
+} else {
+    logger.warn("app/google-services.json missing: building without push notifications (FCM)")
+}
+
 // Secrets live in local.properties (gitignored), never in source.
 val localProps = Properties().apply {
     val f = rootProject.file("local.properties")
@@ -105,6 +114,10 @@ dependencies {
 
     // Fast memory-mapped key-value storage (replaces SharedPreferences XML, no size penalty)
     implementation("com.tencent:mmkv:2.4.2")
+
+    // Push notifications (FCM): guardian / nearby-helper alerts arrive with the app closed.
+    implementation(platform("com.google.firebase:firebase-bom:33.7.0"))
+    implementation("com.google.firebase:firebase-messaging")
 
     // Networking, mail, misc
     implementation("com.squareup.okhttp3:okhttp:4.10.0")

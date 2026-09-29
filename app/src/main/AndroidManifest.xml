@@ -314,7 +314,16 @@
             </intent-filter>
         </receiver>
 
-        <!-- Cloud: guardians, nearby helpers (alerts arrive over the API WebSocket) -->
+        <!-- Cloud: guardians, nearby helpers. Alerts arrive over the API WebSocket while the app
+             or its protection engine runs, and over FCM push (CloudMessagingService) when the app
+             is closed, so helper/guardian alerts still ring on the lock screen. -->
+        <service
+            android:name=".cloud.CloudMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
         <activity
             android:name=".cloud.CloudSettingsActivity"
             android:exported="false"

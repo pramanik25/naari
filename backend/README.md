@@ -53,6 +53,7 @@ npm test
 | `MAX_EVIDENCE_BYTES` | `52428800` | Upload size limit (50 MB). |
 | `TWILIO_ACCOUNT_SID`, `TWILIO_AUTH_TOKEN`, `TWILIO_FROM` | unset | Optional. When an overdue check-in escalates, its contacts get an SMS with the tracking link. Twilio is called over its REST API, with no SDK. |
 | `WHATSAPP_*` | unset | Optional WhatsApp alerts to her emergency contacts; see [WhatsApp alerts setup](#whatsapp-alerts-setup). |
+| `FIREBASE_SERVICE_ACCOUNT` or `FIREBASE_SERVICE_ACCOUNT_FILE` | unset | Strongly recommended: FCM push so helper/guardian alerts reach phones whose app is closed; see [Push notifications setup](#push-notifications-setup). |
 | `TRUST_PROXY` | `false` | `true` trusts one proxy hop for `X-Forwarded-For`, so per-IP rate limits see real clients. It also accepts a hop count or an express trust-proxy string. |
 | `LOG_LEVEL` | `info` | pino log level. Logs are JSON on stdout. Tracking tokens, signatures and `?token=` values are scrubbed from logged URLs. |
 
@@ -163,6 +164,26 @@ location / {
 - The check-in sweeper uses `FOR UPDATE SKIP LOCKED`, so each overdue check-in escalates exactly once.
 - Rate limits are in-memory, so they apply per instance.
 
+## Push notifications setup
+
+Without push, alerts only arrive while the app is open or its protection engine is running (they
+travel over the API WebSocket). With push, nearby-helper and guardian alerts ring full-screen on
+the lock screen even when the app was never opened that day. One Firebase project serves both
+sides:
+
+1. [console.firebase.google.com](https://console.firebase.google.com) → create a project (say
+   `naari-shakti`). Analytics can stay off.
+2. **Android app**: in the project, *Add app → Android*, package name `com.example.naarishakti`,
+   download `google-services.json` and put it at `app/google-services.json`, then rebuild the app.
+   (The Gradle build works without the file; it just prints a warning and ships without push.)
+3. **Server**: *Project settings → Service accounts → Generate new private key*. Give the server
+   the downloaded JSON, either as a path in `FIREBASE_SERVICE_ACCOUNT_FILE` or pasted on one line
+   into `FIREBASE_SERVICE_ACCOUNT`. Restart; the boot warning about push disappears.
+
+The server sends data-only, high-priority FCM messages (the phone builds the alarm-style
+notification itself), retires dead tokens automatically, and phones de-duplicate socket + push by
+notification id — no double alerts. No Firebase SDK is used server-side, just the FCM HTTP v1 API.
+
 ## WhatsApp alerts setup
 
 When configured, the server sends WhatsApp messages from **your Naari Shakti WhatsApp Business number** to the emergency contacts she lists in the app. No official API can send from her personal WhatsApp.
@@ -269,6 +290,7 @@ src/auth.js          device tokens (SHA-256) + bearer middleware
 src/incidents.js     shared incident logic: helper fan-out, end, track URLs
 src/notify.js        persist notification + NOTIFY naari_events
 src/realtime.js      WebSocket hub
+src/push.js          FCM HTTP v1 push (service-account JWT, no SDK) for closed apps
 src/geo.js           haversine + bounding box
 src/sms.js           Twilio over fetch
 src/whatsapp.js      WhatsApp Business Cloud API (templates, media upload, retries, JOIN/STOP)

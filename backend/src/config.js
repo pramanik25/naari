@@ -1,6 +1,7 @@
 'use strict';
 
 const crypto = require('crypto');
+const fs = require('fs');
 const path = require('path');
 
 function intEnv(env, name, def, min, max) {
@@ -65,6 +66,30 @@ function loadConfig(env = process.env, log = null) {
     }
     : null;
 
+  // Firebase Cloud Messaging (push to phones whose app is closed): dormant unless a service
+  // account is configured, either inline JSON or a path to the key file from the Firebase console
+  // (Project settings -> Service accounts -> Generate new private key).
+  let firebase = null;
+  const rawServiceAccount = env.FIREBASE_SERVICE_ACCOUNT
+    || (env.FIREBASE_SERVICE_ACCOUNT_FILE ? fs.readFileSync(env.FIREBASE_SERVICE_ACCOUNT_FILE, 'utf8') : null);
+  if (rawServiceAccount) {
+    let sa;
+    try {
+      sa = JSON.parse(rawServiceAccount);
+    } catch (_) {
+      throw new Error('FIREBASE_SERVICE_ACCOUNT is not valid JSON');
+    }
+    if (!sa.project_id || !sa.client_email || !sa.private_key) {
+      throw new Error('FIREBASE_SERVICE_ACCOUNT must contain project_id, client_email and private_key');
+    }
+    firebase = {
+      projectId: sa.project_id,
+      clientEmail: sa.client_email,
+      privateKey: sa.private_key,
+      tokenUri: sa.token_uri || 'https://oauth2.googleapis.com/token',
+    };
+  }
+
   const config = {
     databaseUrl,
     port: intEnv(env, 'PORT', 8080, 0, 65535),
@@ -78,6 +103,7 @@ function loadConfig(env = process.env, log = null) {
     evidenceRetentionHours: intEnv(env, 'EVIDENCE_RETENTION_HOURS', 24, 0, 24 * 365),
     twilio,
     whatsapp,
+    firebase,
     trustProxy: parseTrustProxy(env.TRUST_PROXY),
     logLevel: env.LOG_LEVEL || 'info',
     sweepIntervalMs: 30_000,

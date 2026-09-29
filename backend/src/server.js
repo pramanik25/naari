@@ -8,6 +8,7 @@ const { createPool, createListener } = require('./db');
 const { migrate } = require('./migrate');
 const { createApp } = require('./app');
 const { createHub } = require('./realtime');
+const { createPush } = require('./push');
 const { createSms } = require('./sms');
 const { createWhatsApp } = require('./whatsapp');
 const { CHANNEL } = require('./notify');
@@ -32,6 +33,8 @@ async function start(opts = {}) {
   }
 
   const hub = createHub({ pool, log });
+  const push = createPush({ config, pool, log, fetchImpl: opts.pushFetch });
+  if (!push.enabled) log.warn('FIREBASE_SERVICE_ACCOUNT not set: no push when the app is closed (WebSocket-only alerts)');
   const sms = createSms({ config, log, fetchImpl: opts.fetchImpl });
   const whatsapp = createWhatsApp({ config, pool, log, fetchImpl: opts.whatsappFetch || globalThis.fetch });
   const app = createApp({ config, pool, log, hub, whatsapp, limits: opts.limits });
@@ -41,7 +44,7 @@ async function start(opts = {}) {
   server.keepAliveTimeout = 65 * 1000; // longer than typical proxy idle timeouts
   hub.attach(server);
 
-  const listener = createListener(config.databaseUrl, CHANNEL, (id) => { hub.onNotify(id); }, log);
+  const listener = createListener(config.databaseUrl, CHANNEL, (id) => { hub.onNotify(id); push.onNotify(id); }, log);
   const sweeper = createCheckinSweeper({ pool, config, sms, whatsapp, log, intervalMs: config.sweepIntervalMs });
   const evidenceCleaner = createEvidenceCleaner({ pool, config, log });
   if (opts.sweeper !== false) {
@@ -77,7 +80,7 @@ async function start(opts = {}) {
     return closing;
   }
 
-  return { server, port, app, pool, config, hub, sweeper, evidenceCleaner, whatsapp, close, log };
+  return { server, port, app, pool, config, hub, push, sweeper, evidenceCleaner, whatsapp, close, log };
 }
 
 module.exports = { start };

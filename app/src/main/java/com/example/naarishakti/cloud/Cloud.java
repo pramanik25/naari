@@ -83,6 +83,7 @@ public final class Cloud {
                 } catch (Throwable t) {
                     Log.w(TAG, "Startup flush failed", t);
                 }
+                CloudPush.sync(app);
                 CloudAlerts.update(app);
             }
         });
@@ -179,6 +180,7 @@ public final class Cloud {
                 } catch (Throwable t) {
                     Log.w(TAG, "Helper refresh on open failed", t);
                 }
+                CloudPush.sync(app);
             }
         }
 

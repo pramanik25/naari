@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.Network;
+import android.net.Uri;
 import android.text.TextUtils;
 import android.util.Log;
 
@@ -30,6 +31,10 @@ import okhttp3.WebSocketListener;
  * runs (foreground service) or while any app screen is visible. Reconnects with exponential
  * backoff and immediately when the network returns; on every connect it catches up with
  * {@code GET /notifications?since=}. Every message is acked and de-duplicated by id.
+ *
+ * <p>When neither is running (app closed, phone locked), the server pushes the same messages over
+ * FCM into {@link #handlePush} via {@link CloudMessagingService}; the shared seen-id store keeps
+ * the two paths from alerting twice.
  */
 final class CloudAlerts {
 
@@ -233,6 +238,29 @@ final class CloudAlerts {
                 }
             });
         }
+    }
+
+    /**
+     * One notification delivered by FCM ({@link CloudMessagingService}), possibly with no app
+     * process until just now: same presentation and de-duplication as the socket path, but acked
+     * over HTTP since there may be no socket to ack on. {@code KEY_LAST_SEEN} is left alone —
+     * pushes can arrive out of order, and anything missed stays unacked for the HTTP catch-up.
+     */
+    static void handlePush(Context ctx, @NonNull JsonObject msg) {
+        if (ctx == null || !Cloud.isActive(ctx)) return;
+        Context a = ctx.getApplicationContext();
+        if (app == null) app = a;
+        String type = Json.str(msg, "type");
+        String id = Json.str(msg, "id");
+        if (type == null || id == null) return;
+        if (markSeen(a, id)) {
+            try {
+                CloudNotifier.show(a, msg);
+            } catch (Throwable t) {
+                Log.e(TAG, "Showing pushed alert " + type + " failed", t);
+            }
+        }
+        CloudOutbox.add(a, "POST", "/api/v1/notifications/" + Uri.encode(id) + "/ack", null, null);
     }
 
     // ------------------------------------------------------------------ messages
