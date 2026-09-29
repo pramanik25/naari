@@ -176,11 +176,15 @@
             android:textColor="@color/ns_text_muted"
             android:layout_marginBottom="12dp" />
 
-        <!-- QR Code Placeholder (will be set from code) -->
+        <!-- QR Code (set from code); tapping opens the user's UPI app -->
         <com.google.android.material.card.MaterialCardView
+            android:id="@+id/qrCard"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp">
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/donation_tap_to_pay">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -207,11 +211,15 @@
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
-        <!-- UPI ID Copy -->
+        <!-- UPI ID: tap to pay, copy button to copy -->
         <com.google.android.material.card.MaterialCardView
+            android:id="@+id/upiIdCard"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp">
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/donation_tap_to_pay">
 
             <LinearLayout
                 android:layout_width="match_parent"

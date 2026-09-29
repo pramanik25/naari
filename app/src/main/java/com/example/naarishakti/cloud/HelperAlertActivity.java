@@ -32,9 +32,10 @@ import com.google.android.gms.location.Priority;
 import com.google.android.material.button.MaterialButton;
 import com.google.gson.JsonObject;
 
+import Home_Activity.FeatureKit;
+
 import org.osmdroid.config.Configuration;
 import org.osmdroid.config.IConfigurationProvider;
-import org.osmdroid.tileprovider.tilesource.TileSourceFactory;
 import org.osmdroid.util.GeoPoint;
 import org.osmdroid.views.CustomZoomButtonsController;
 import org.osmdroid.views.MapView;
@@ -256,14 +257,14 @@ public class HelperAlertActivity extends AppCompatActivity {
     }
 
     private void styleMap() {
-        map.setTileSource(TileSourceFactory.MAPNIK);
+        // Carto basemaps: tile.openstreetmap.org (MAPNIK) 403-blocks mobile apps.
+        map.setTileSource(isNightMode() ? FeatureKit.CARTO_DARK : FeatureKit.CARTO_LIGHT);
         map.setMultiTouchControls(true);
         map.setTilesScaledToDpi(true);
         map.getZoomController().setVisibility(CustomZoomButtonsController.Visibility.NEVER);
         TilesOverlay tiles = map.getOverlayManager().getTilesOverlay();
         tiles.setLoadingBackgroundColor(ContextCompat.getColor(this, R.color.ns_surface));
         tiles.setLoadingLineColor(ContextCompat.getColor(this, R.color.ns_surface_high));
-        if (isNightMode()) tiles.setColorFilter(TilesOverlay.INVERT_COLORS);
         map.getController().setZoom(15.0);
     }
 

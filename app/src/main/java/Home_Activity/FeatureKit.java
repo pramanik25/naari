@@ -7,8 +7,6 @@ import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.graphics.ColorMatrix;
-import android.graphics.ColorMatrixColorFilter;
 import android.location.Location;
 import android.net.Uri;
 import android.os.Build;
@@ -33,7 +31,8 @@ import com.google.android.gms.tasks.CancellationTokenSource;
 
 import org.osmdroid.config.Configuration;
 import org.osmdroid.config.IConfigurationProvider;
-import org.osmdroid.tileprovider.tilesource.TileSourceFactory;
+import org.osmdroid.tileprovider.tilesource.OnlineTileSourceBase;
+import org.osmdroid.tileprovider.tilesource.XYTileSource;
 import org.osmdroid.views.CustomZoomButtonsController;
 import org.osmdroid.views.MapView;
 import org.osmdroid.views.overlay.TilesOverlay;
@@ -220,6 +219,27 @@ public final class FeatureKit {
 
     // ------------------------------------------------------------------ maps
 
+    // tile.openstreetmap.org 403-blocks mobile apps, so tiles come from Carto's
+    // OSM-based basemaps instead (free with the attribution below).
+    public static final OnlineTileSourceBase CARTO_LIGHT = cartoTileSource("CartoVoyager", "rastertiles/voyager");
+    public static final OnlineTileSourceBase CARTO_DARK = cartoTileSource("CartoDarkMatter", "dark_all");
+
+    private static OnlineTileSourceBase cartoTileSource(String name, String style) {
+        return new XYTileSource(name, 0, 20, 256, ".png",
+                new String[]{
+                        "https://a.basemaps.cartocdn.com/" + style + "/",
+                        "https://b.basemaps.cartocdn.com/" + style + "/",
+                        "https://c.basemaps.cartocdn.com/" + style + "/",
+                        "https://d.basemaps.cartocdn.com/" + style + "/"},
+                "© OpenStreetMap contributors © CARTO");
+    }
+
+    public static boolean isNightMode(Context ctx) {
+        int uiMode = ctx.getResources().getConfiguration().uiMode
+                & android.content.res.Configuration.UI_MODE_NIGHT_MASK;
+        return uiMode == android.content.res.Configuration.UI_MODE_NIGHT_YES;
+    }
+
     /** Must run before inflating a layout that contains a MapView. */
     public static void initOsmdroid(Context ctx) {
         Context app = ctx.getApplicationContext();
@@ -231,11 +251,11 @@ public final class FeatureKit {
         cfg.setOsmdroidTileCache(new File(base, "tiles"));
     }
 
-    /** MAPNIK tiles, multitouch, no zoom buttons, "midnight" tiles in dark theme, plays nice in scroll views. */
+    /** Carto tiles (dark basemap in dark theme), multitouch, no zoom buttons, plays nice in scroll views. */
     @SuppressLint("ClickableViewAccessibility")
     public static void styleMap(MapView map) {
         Context ctx = map.getContext();
-        map.setTileSource(TileSourceFactory.MAPNIK);
+        map.setTileSource(isNightMode(ctx) ? CARTO_DARK : CARTO_LIGHT);
         map.setMultiTouchControls(true);
         map.setTilesScaledToDpi(true);
         map.setMinZoomLevel(4.0);
@@ -244,11 +264,8 @@ public final class FeatureKit {
         TilesOverlay tiles = map.getOverlayManager().getTilesOverlay();
         tiles.setLoadingBackgroundColor(ContextCompat.getColor(ctx, R.color.ns_surface));
         tiles.setLoadingLineColor(ContextCompat.getColor(ctx, R.color.ns_surface_high));
-        // Dim the tiles only in the dark theme; the light theme uses the regular map colours.
-        int uiMode = ctx.getResources().getConfiguration().uiMode
-                & android.content.res.Configuration.UI_MODE_NIGHT_MASK;
-        tiles.setColorFilter(uiMode == android.content.res.Configuration.UI_MODE_NIGHT_YES
-                ? darkTileFilter() : null);
+        // The dark theme uses Carto's native dark basemap, so no colour filter is needed.
+        tiles.setColorFilter(null);
         // Let the map pan inside a NestedScrollView instead of scrolling the page.
         map.setOnTouchListener((v, e) -> {
             ViewParent parent = v.getParent();
@@ -264,25 +281,4 @@ public final class FeatureKit {
         });
     }
 
-    /** Invert + 180° hue rotation keeps hues (water stays blue) but makes light tiles dark, then mutes. */
-    public static ColorMatrixColorFilter darkTileFilter() {
-        ColorMatrix m = new ColorMatrix(new float[]{
-                -1, 0, 0, 0, 255,
-                0, -1, 0, 0, 255,
-                0, 0, -1, 0, 255,
-                0, 0, 0, 1, 0});
-        ColorMatrix hue180 = new ColorMatrix(new float[]{
-                -0.574f, 1.430f, 0.144f, 0, 0,
-                0.426f, 0.430f, 0.144f, 0, 0,
-                0.426f, 1.430f, -0.856f, 0, 0,
-                0, 0, 0, 1, 0});
-        ColorMatrix sat = new ColorMatrix();
-        sat.setSaturation(0.6f);
-        ColorMatrix dim = new ColorMatrix();
-        dim.setScale(0.86f, 0.86f, 0.98f, 1f);
-        m.postConcat(hue180);
-        m.postConcat(sat);
-        m.postConcat(dim);
-        return new ColorMatrixColorFilter(m);
-    }
 }

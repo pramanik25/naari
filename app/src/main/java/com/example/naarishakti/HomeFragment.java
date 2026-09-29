@@ -733,6 +733,11 @@ public class HomeFragment extends Fragment {
         bindRow(binding.rowVault, R.drawable.ua_ic_photo_library, R.color.ns_violet, R.color.ns_violet_container,
                 getString(R.string.row_vault_title), getString(R.string.row_vault_empty));
         binding.rowVault.getRoot().setOnClickListener(v -> launch(DatabaseViewActivity.class));
+
+        binding.donateBanner.setOnClickListener(v -> {
+            v.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY);
+            launch(DonationActivity.class);
+        });
     }
 
     private void bindTile(UaItemQuickActionBinding tile, @DrawableRes int icon, @ColorRes int solid,

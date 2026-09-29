@@ -22,7 +22,14 @@
     <string name="donation_upi_copy">UPI ID कॉपी करें</string>
     <string name="donation_upi_copied">UPI ID क्लिपबोर्ड में कॉपी किया गया</string>
     <string name="donation_upi_scan">QR कोड स्कैन करें</string>
-    <string name="donation_upi_hint">किसी भी UPI ऐप (Google Pay, PhonePe, Paytm, BHIM) को खोलें और दान करने के लिए इस कोड को स्कैन करें</string>
+    <string name="donation_upi_hint">अपना UPI ऐप (Google Pay, PhonePe, Paytm, BHIM) खोलने के लिए कोड पर टैप करें, या दूसरे फोन से स्कैन करें</string>
+    <string name="donation_tap_to_pay">अपने UPI ऐप से भुगतान करें</string>
+    <string name="donation_pay_chooser">इससे भुगतान करें</string>
+    <string name="donation_no_upi_app">कोई UPI ऐप नहीं मिला। दान करने के लिए Google Pay, PhonePe, Paytm या BHIM इंस्टॉल करें।</string>
+
+    <!-- Home banner -->
+    <string name="home_donate_title">हमारे सर्वर के लिए दान करें</string>
+    <string name="home_donate_sub">SOS अलर्ट, लाइव ट्रैकिंग और बैकअप चालू रखें</string>
 
     <!-- Donation Amounts -->
     <string name="donation_amount_title">त्वरित दान</string>

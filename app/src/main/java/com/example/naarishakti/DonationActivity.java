@@ -3,8 +3,10 @@ package com.example.naarishakti;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -13,11 +15,13 @@ import com.google.android.material.button.MaterialButton;
 
 /**
  * Donation Activity: Allow users to support server costs via UPI donation.
- * Displays QR code for easy scanning and copy-paste UPI ID.
+ * Displays QR code for easy scanning; tapping the QR or the UPI ID opens
+ * the user's own UPI payment app (Google Pay, PhonePe, Paytm, BHIM…).
  */
 public class DonationActivity extends AppCompatActivity {
 
     private static final String UPI_ID = "vikashstart92@okaxis";
+    private static final String PAYEE_NAME = "Naari Shakti";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,9 +35,34 @@ public class DonationActivity extends AppCompatActivity {
         MaterialButton copyButton = findViewById(R.id.copyUpiButton);
         copyButton.setOnClickListener(v -> copyUpiIdToClipboard());
 
-        // QR Code (generate from UPI ID)
+        // QR Code: encodes the full upi://pay link so any UPI app can scan it,
+        // and tapping it (or the UPI ID card) opens the user's payment app directly.
         ImageView qrCodeImage = findViewById(R.id.qrCodeImage);
-        qrCodeImage.setImageBitmap(generateQRCode(UPI_ID));
+        qrCodeImage.setImageBitmap(generateQRCode(upiUri().toString()));
+        findViewById(R.id.qrCard).setOnClickListener(v -> openUpiApp());
+        findViewById(R.id.upiIdCard).setOnClickListener(v -> openUpiApp());
+    }
+
+    /** The UPI deep link: payee address + name, amount left for the payer to choose. */
+    private Uri upiUri() {
+        return new Uri.Builder()
+                .scheme("upi")
+                .authority("pay")
+                .appendQueryParameter("pa", UPI_ID)
+                .appendQueryParameter("pn", PAYEE_NAME)
+                .appendQueryParameter("tn", "Server donation")
+                .appendQueryParameter("cu", "INR")
+                .build();
+    }
+
+    /** Hands the upi://pay link to whichever payment app(s) the user has installed. */
+    private void openUpiApp() {
+        Intent intent = new Intent(Intent.ACTION_VIEW, upiUri());
+        if (intent.resolveActivity(getPackageManager()) == null) {
+            Toast.makeText(this, R.string.donation_no_upi_app, Toast.LENGTH_LONG).show();
+            return;
+        }
+        startActivity(Intent.createChooser(intent, getString(R.string.donation_pay_chooser)));
     }
 
     /**
@@ -47,8 +76,7 @@ public class DonationActivity extends AppCompatActivity {
     }
 
     /**
-     * Generate QR code bitmap from UPI ID using ZXing library.
-     * Note: Requires com.google.zxing:core and com.google.zxing:android-core dependencies
+     * Generate QR code bitmap from the UPI payment link using ZXing.
      */
     private Bitmap generateQRCode(String text) {
         try {

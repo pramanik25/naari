@@ -538,5 +538,66 @@
                     layout="@layout/ua_item_row" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
+
+        <!-- ============ Donate banner ============ -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/donateBanner"
+            style="@style/Ns.Card.Tile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/ns_card_padding"
+                android:paddingTop="14dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="14dp">
+
+                <ImageView
+                    style="@style/Ns.IconBadge"
+                    android:backgroundTint="@color/ns_rose_container"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ns_ic_heart"
+                    app:tint="@color/ns_rose" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="@string/home_donate_title"
+                        android:textAppearance="@style/Ns.Text.Subtitle" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:maxLines="2"
+                        android:text="@string/home_donate_sub"
+                        android:textAppearance="@style/Ns.Text.Caption"
+                        android:textColor="@color/ns_text_muted" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="8dp"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ua_ic_chevron_right"
+                    app:tint="@color/ns_text_faint" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>
