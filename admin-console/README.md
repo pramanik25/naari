@@ -31,6 +31,9 @@ Configuration lives in `.env.local` (see `.env.example`):
 - `/users` — searchable user list (name, guardian code or id)
 - `/users/<id>` — profile, devices & push status, guardians/wards, WhatsApp contacts,
   incidents, check-ins, alerts received
+- `/devices` — installs per day (device registrations), recent registrations, and per-user
+  last-seen with a dormant flag (the closest signal to an uninstall; the app never reports
+  uninstalls — use Play Console / Firebase Analytics for exact numbers)
 - `/incidents` — filterable by status/duress, searchable
 - `/incidents/<id>` — full incident: map of last location, location trail, evidence,
   helpers alerted/responding, alert fan-out, WhatsApp delivery
