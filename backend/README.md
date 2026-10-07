@@ -17,7 +17,7 @@ copy .env.example .env      # then edit DATABASE_URL / SIGNING_SECRET
 npm start                   # runs migrations, then listens on PORT (default 8080)
 ```
 
-- **Health check:** `http://127.0.0.1:8080/healthz` returns `{"ok":true,"db":true}`.
+- **Health check:** `http://127.0.0.1:8080/healthz` returns `{"ok":true,"db":true,"push":true}`. `push` is `false` when no Firebase service account is configured — alerts then reach only phones with the app open.
 - **Android emulator:** reaches the server at `http://10.0.2.2:8080`.
 - **Physical phone on the same Wi-Fi:** use the PC's LAN IP, and set `PUBLIC_BASE_URL` to that address so the tracking links work from the phone.
 
@@ -46,6 +46,7 @@ npm test
 | var | default | purpose |
 |---|---|---|
 | `DATABASE_URL` | required | Postgres connection string. Add `?sslmode=require` for managed providers that need it. |
+| `DATABASE_LISTEN_URL` | derived | Direct (non-pooled) connection for `LISTEN`. A transaction-mode pooler (PgBouncer, Neon's `-pooler` host) silently drops notifications. For a Neon pooled `DATABASE_URL` the direct host is derived automatically; set this for other poolers. |
 | `PORT` | `8080` | HTTP and WebSocket port. |
 | `PUBLIC_BASE_URL` | `http://127.0.0.1:8080` | Public origin used in tracking links (`${PUBLIC_BASE_URL}/t/<token>`), which are sent in SMS and in alerts. In production this **must** be your HTTPS URL. When it starts with `https://`, HSTS and `upgrade-insecure-requests` are also enabled. |
 | `EVIDENCE_DIR` | `./data/evidence` | Evidence storage: `<userId>/<incidentId>/<evidenceId>.<jpg\|m4a\|mp4>`. Uploads land in `.tmp/` first. |

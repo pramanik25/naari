@@ -17,19 +17,44 @@ function createPool(databaseUrl, log) {
   return pool;
 }
 
-/** Runs fn(client) inside BEGIN/COMMIT, rolling back on any throw. */
+/**
+ * Runs fn(client) inside BEGIN/COMMIT, rolling back on any throw. Callbacks pushed onto
+ * `client.afterCommit` during fn run once the COMMIT succeeded (never after a rollback).
+ */
 async function tx(pool, fn) {
   const client = await pool.connect();
+  const after = [];
   try {
     await client.query('BEGIN');
+    client.afterCommit = after;
     const result = await fn(client);
     await client.query('COMMIT');
+    for (const cb of after) {
+      try { cb(); } catch (_) { /* a hook must never fail a committed transaction */ }
+    }
     return result;
   } catch (err) {
     try { await client.query('ROLLBACK'); } catch (_) { /* connection already broken */ }
     throw err;
   } finally {
+    client.afterCommit = null;
     client.release();
+  }
+}
+
+/**
+ * LISTEN needs a session-level connection: through a transaction-mode pooler (Neon's "-pooler"
+ * host, PgBouncer) the LISTEN succeeds but no notification is ever delivered. Returns the direct
+ * form of a Neon pooled URL; any other URL is returned unchanged.
+ */
+function directUrl(databaseUrl) {
+  try {
+    const u = new URL(databaseUrl);
+    if (!/\.neon\.tech$/i.test(u.hostname) || !/-pooler(?=\.)/.test(u.hostname)) return databaseUrl;
+    u.hostname = u.hostname.replace(/-pooler(?=\.)/, '');
+    return u.toString();
+  } catch (_) {
+    return databaseUrl;
   }
 }
 
@@ -97,4 +122,4 @@ function createListener(databaseUrl, channel, onMessage, log) {
   };
 }
 
-module.exports = { createPool, tx, createListener };
+module.exports = { createPool, tx, createListener, directUrl };

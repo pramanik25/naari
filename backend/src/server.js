@@ -11,7 +11,7 @@ const { createHub } = require('./realtime');
 const { createPush } = require('./push');
 const { createSms } = require('./sms');
 const { createWhatsApp } = require('./whatsapp');
-const { CHANNEL } = require('./notify');
+const { CHANNEL, onLocalNotify } = require('./notify');
 const { createCheckinSweeper } = require('./jobs/checkinSweeper');
 const { createEvidenceCleaner } = require('./jobs/evidenceCleaner');
 
@@ -37,14 +37,30 @@ async function start(opts = {}) {
   if (!push.enabled) log.warn('FIREBASE_SERVICE_ACCOUNT not set: no push when the app is closed (WebSocket-only alerts)');
   const sms = createSms({ config, log, fetchImpl: opts.fetchImpl });
   const whatsapp = createWhatsApp({ config, pool, log, fetchImpl: opts.whatsappFetch || globalThis.fetch });
-  const app = createApp({ config, pool, log, hub, whatsapp, limits: opts.limits });
+  const app = createApp({ config, pool, log, hub, push, whatsapp, limits: opts.limits });
   const server = http.createServer(app);
   server.requestTimeout = 30 * 60 * 1000; // 50 MB evidence over a slow mobile link
   server.headersTimeout = 60 * 1000;
   server.keepAliveTimeout = 65 * 1000; // longer than typical proxy idle timeouts
   hub.attach(server);
 
-  const listener = createListener(config.databaseUrl, CHANNEL, (id) => { hub.onNotify(id); push.onNotify(id); }, log);
+  // Every notification id reaches dispatch() twice on the instance that created it: straight
+  // after its transaction commits (onLocalNotify) and again through LISTEN. The first one wins.
+  const dispatched = new Map(); // id -> ms
+  const dispatch = (id) => {
+    if (dispatched.has(id)) return;
+    const now = Date.now();
+    dispatched.set(id, now);
+    if (dispatched.size > 2000) {
+      for (const [k, at] of dispatched) if (now - at > 60_000) dispatched.delete(k);
+    }
+    hub.onNotify(id);
+    push.onNotify(id);
+  };
+  const stopLocal = onLocalNotify(dispatch);
+  const listenUrl = config.listenUrl;
+  if (listenUrl !== config.databaseUrl) log.info('DATABASE_URL is a pooled connection: LISTEN uses the direct host');
+  const listener = createListener(listenUrl, CHANNEL, dispatch, log);
   const sweeper = createCheckinSweeper({ pool, config, sms, whatsapp, log, intervalMs: config.sweepIntervalMs });
   const evidenceCleaner = createEvidenceCleaner({ pool, config, log });
   if (opts.sweeper !== false) {
@@ -74,6 +90,7 @@ async function start(opts = {}) {
         server.closeIdleConnections();
       });
       await listener.close();
+      stopLocal();
       for (const l of app.locals.limiters) l.stop();
       await pool.end();
     })();

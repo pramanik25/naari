@@ -128,7 +128,7 @@ client (`app/src/main/java/com/example/naarishakti/cloud/`). Change both togethe
   - 404 unknown token; 429 after 60 requests/min/IP; `Cache-Control: no-store`.
 
 ## Operations
-- `GET /healthz` → `{ "ok": true, "db": true }`.
+- `GET /healthz` → `{ "ok": true, "db": true, "push": true }` (`push`: FCM configured).
 - Schema migrations run automatically on start (`backend/migrations/*.sql`, tracked in a
   `schema_migrations` table).
 

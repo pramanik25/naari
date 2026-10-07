@@ -3,6 +3,7 @@
 const crypto = require('crypto');
 const fs = require('fs');
 const path = require('path');
+const { directUrl } = require('./db');
 
 function intEnv(env, name, def, min, max) {
   const raw = env[name];
@@ -92,6 +93,8 @@ function loadConfig(env = process.env, log = null) {
 
   const config = {
     databaseUrl,
+    // LISTEN/NOTIFY needs a direct (non-pooled) connection; see directUrl() in db.js.
+    listenUrl: env.DATABASE_LISTEN_URL || directUrl(databaseUrl),
     port: intEnv(env, 'PORT', 8080, 0, 65535),
     publicBaseUrl,
     evidenceDir: path.resolve(env.EVIDENCE_DIR || './data/evidence'),

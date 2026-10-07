@@ -3,10 +3,10 @@
 const { test, before, after } = require('node:test');
 const assert = require('node:assert/strict');
 const crypto = require('crypto');
-const { makeCtx, register, testConfig, silent } = require('./helpers');
+const { makeCtx, register, testConfig, silent, TEST_DB } = require('./helpers');
 const { createPush } = require('../src/push');
-const { notifyAll } = require('../src/notify');
-const { tx } = require('../src/db');
+const { notifyAll, onLocalNotify } = require('../src/notify');
+const { tx, directUrl } = require('../src/db');
 
 let ctx;
 before(() => { ctx = makeCtx(); });
@@ -101,6 +101,31 @@ test('fan-out sends one high-priority data message per device and forgets dead t
   const [quietId] = await tx(ctx.pool, (c) => notifyAll(c, 'ended', null, [user.userId], {}));
   await push.onNotify(quietId);
   assert.equal(calls.length, before);
+});
+
+test('committed notifications are dispatched in-process, rolled-back ones are not', async () => {
+  const got = [];
+  const stop = onLocalNotify((id) => got.push(id));
+  try {
+    const user = await register(ctx.app, 'Local');
+    const [id] = await tx(ctx.pool, (c) => notifyAll(c, 'sos', null, [user.userId], {}));
+    assert.deepEqual(got, [id]);
+    await assert.rejects(tx(ctx.pool, async (c) => {
+      await notifyAll(c, 'sos', null, [user.userId], {});
+      throw new Error('boom');
+    }), /boom/);
+    assert.deepEqual(got, [id]);
+  } finally {
+    stop();
+  }
+});
+
+test('LISTEN uses the direct host of a pooled Neon URL', () => {
+  const pooled = 'postgresql://u:p@ep-x-123-pooler.c-3.ap-southeast-1.aws.neon.tech/neondb?sslmode=require';
+  assert.equal(directUrl(pooled), 'postgresql://u:p@ep-x-123.c-3.ap-southeast-1.aws.neon.tech/neondb?sslmode=require');
+  assert.equal(directUrl(TEST_DB), TEST_DB);
+  assert.equal(testConfig({ DATABASE_URL: pooled }).listenUrl, directUrl(pooled));
+  assert.equal(testConfig({ DATABASE_URL: pooled, DATABASE_LISTEN_URL: TEST_DB }).listenUrl, TEST_DB);
 });
 
 test('acked notifications are not pushed', async () => {

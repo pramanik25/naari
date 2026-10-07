@@ -37,7 +37,7 @@ function scrubUrl(url) {
  * Builds the express app. deps: { config, pool, log, hub?, whatsapp?, limits? }.
  * Kept free of listen()/timers-with-refs so tests can import it directly.
  */
-function createApp({ config, pool, log, hub = null, whatsapp = null, limits = {} }) {
+function createApp({ config, pool, log, hub = null, push = null, whatsapp = null, limits = {} }) {
   const lim = { ...DEFAULT_LIMITS, ...limits };
   const app = express();
   app.disable('x-powered-by');
@@ -103,7 +103,8 @@ function createApp({ config, pool, log, hub = null, whatsapp = null, limits = {}
     res.set('Cache-Control', 'no-store');
     try {
       await pool.query('SELECT 1');
-      res.json({ ok: true, db: true });
+      // `push` (server only): whether FCM is configured, i.e. alerts reach closed apps.
+      res.json(push ? { ok: true, db: true, push: push.enabled } : { ok: true, db: true });
     } catch (err) {
       log.error({ err }, 'health check failed');
       res.status(503).json({ ok: false, db: false });

@@ -4,10 +4,23 @@ const { ms } = require('./util');
 
 const CHANNEL = 'naari_events';
 
+const localHandlers = new Set();
+
+/**
+ * Subscribe to notification ids committed by this process. This is the delivery path that does
+ * not depend on LISTEN/NOTIFY (which drops events while the listener connection is down or when
+ * DATABASE_URL points at a pooler). Returns an unsubscribe function.
+ */
+function onLocalNotify(fn) {
+  localHandlers.add(fn);
+  return () => localHandlers.delete(fn);
+}
+
 /**
  * Persists one notification per item and NOTIFYs `naari_events` with each notification id.
  * Call with a transaction client: Postgres delivers the NOTIFY only when that transaction commits,
- * so listeners never see an id whose row is not yet visible.
+ * so listeners never see an id whose row is not yet visible. Inside db.tx() the ids are also
+ * handed to onLocalNotify subscribers right after the commit.
  *
  * items: [{ recipientId, payload }]
  */
@@ -29,7 +42,13 @@ async function notifyEach(client, type, incidentId, items) {
      SELECT id, pg_notify($4, id::text) FROM ins`,
     [JSON.stringify(list), incidentId || null, type, CHANNEL],
   );
-  return rows.map((r) => r.id);
+  const ids = rows.map((r) => r.id);
+  if (Array.isArray(client.afterCommit)) {
+    client.afterCommit.push(() => {
+      for (const fn of localHandlers) for (const id of ids) fn(id);
+    });
+  }
+  return ids;
 }
 
 /** Same payload to many recipients. */
@@ -47,4 +66,4 @@ function toMessage(row) {
   return msg;
 }
 
-module.exports = { CHANNEL, notifyEach, notifyAll, toMessage };
+module.exports = { CHANNEL, notifyEach, notifyAll, toMessage, onLocalNotify };
