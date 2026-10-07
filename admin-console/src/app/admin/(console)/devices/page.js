@@ -148,7 +148,7 @@ export default async function DevicesPage() {
                 </td>
                 <td>{d.device_name || "Unknown device"}</td>
                 <td>
-                  <Link href={`/users/${d.user_id}`}>{d.user_name || "Unnamed"}</Link>
+                  <Link href={`/admin/users/${d.user_id}`}>{d.user_name || "Unnamed"}</Link>
                 </td>
               </tr>
             ))}
@@ -185,7 +185,7 @@ export default async function DevicesPage() {
               return (
                 <tr key={u.id}>
                   <td>
-                    <Link href={`/users/${u.id}`}>{u.name || "Unnamed"}</Link>
+                    <Link href={`/admin/users/${u.id}`}>{u.name || "Unnamed"}</Link>
                   </td>
                   <td>
                     <When value={u.created_at} relative={false} />

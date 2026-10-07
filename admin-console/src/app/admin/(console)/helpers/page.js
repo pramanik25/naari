@@ -50,7 +50,7 @@ export default async function HelpersPage() {
             {helpers.map((h) => (
               <tr key={h.user_id}>
                 <td>
-                  <Link href={`/users/${h.user_id}`}>{h.name || "Unnamed"}</Link>
+                  <Link href={`/admin/users/${h.user_id}`}>{h.name || "Unnamed"}</Link>
                 </td>
                 <td>
                   {h.fresh ? <Badge value="online" kind="completed" /> : <Badge value="stale" kind="neutral" />}

@@ -56,7 +56,7 @@ export default async function CheckinsPage({ searchParams }) {
         </select>
         <button type="submit">Filter</button>
         {status && (
-          <Link className="btn ghost" href="/checkins">
+          <Link className="btn ghost" href="/admin/checkins">
             Clear
           </Link>
         )}
@@ -90,7 +90,7 @@ export default async function CheckinsPage({ searchParams }) {
                   <When value={c.created_at} />
                 </td>
                 <td>
-                  <Link href={`/users/${c.user_id}`}>{c.user_name || "Unnamed"}</Link>
+                  <Link href={`/admin/users/${c.user_id}`}>{c.user_name || "Unnamed"}</Link>
                 </td>
                 <td>
                   <Badge value={c.status} />
@@ -113,7 +113,7 @@ export default async function CheckinsPage({ searchParams }) {
                 </td>
                 <td>
                   {c.incident_id ? (
-                    <Link href={`/incidents/${c.incident_id}`}>incident →</Link>
+                    <Link href={`/admin/incidents/${c.incident_id}`}>incident →</Link>
                   ) : (
                     "—"
                   )}
@@ -124,7 +124,7 @@ export default async function CheckinsPage({ searchParams }) {
         </table>
       </div>
 
-      <Pager page={page} hasMore={hasMore} basePath="/checkins" params={status ? { status } : {}} />
+      <Pager page={page} hasMore={hasMore} basePath="/admin/checkins" params={status ? { status } : {}} />
     </>
   );
 }

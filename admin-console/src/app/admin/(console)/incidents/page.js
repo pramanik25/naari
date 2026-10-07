@@ -69,7 +69,7 @@ export default async function IncidentsPage({ searchParams }) {
         </label>
         <button type="submit">Filter</button>
         {(q || status || duress) && (
-          <Link className="btn ghost" href="/incidents">
+          <Link className="btn ghost" href="/admin/incidents">
             Clear
           </Link>
         )}
@@ -105,12 +105,12 @@ export default async function IncidentsPage({ searchParams }) {
               return (
                 <tr key={i.id}>
                   <td>
-                    <Link href={`/incidents/${i.id}`}>
+                    <Link href={`/admin/incidents/${i.id}`}>
                       <When value={i.started_at} />
                     </Link>
                   </td>
                   <td>
-                    <Link href={`/users/${i.user_id}`}>{i.user_name || "Unnamed"}</Link>
+                    <Link href={`/admin/users/${i.user_id}`}>{i.user_name || "Unnamed"}</Link>
                   </td>
                   <td>
                     {i.source}
@@ -151,7 +151,7 @@ export default async function IncidentsPage({ searchParams }) {
         </table>
       </div>
 
-      <Pager page={page} hasMore={hasMore} basePath="/incidents" params={filterParams} />
+      <Pager page={page} hasMore={hasMore} basePath="/admin/incidents" params={filterParams} />
     </>
   );
 }

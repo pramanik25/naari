@@ -5,3 +5,6 @@ out/
 .env.local
 .env*.local
 npm-debug.log*
+
+# Staged release APK (npm run apk) — too large for git; published as a GitHub release asset
+downloads/

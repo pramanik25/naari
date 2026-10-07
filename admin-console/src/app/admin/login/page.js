@@ -5,7 +5,7 @@ export default async function LoginPage({ searchParams }) {
   const failed = sp?.error === "1";
   return (
     <div className="login-wrap">
-      <form className="login-card" method="POST" action="/api/login">
+      <form className="login-card" method="POST" action="/admin/api/login">
         <h1>
           Naari <span style={{ color: "var(--accent)" }}>Shakti</span> Admin
         </h1>

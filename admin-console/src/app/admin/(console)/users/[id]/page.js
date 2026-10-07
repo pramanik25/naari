@@ -75,7 +75,7 @@ export default async function UserDetailPage({ params }) {
   return (
     <>
       <p className="dim" style={{ margin: "0 0 6px" }}>
-        <Link href="/users">← Users</Link>
+        <Link href="/admin/users">← Users</Link>
       </p>
       <h1>{user.name || "Unnamed user"}</h1>
       <p className="subtitle mono">{user.id}</p>
@@ -134,7 +134,7 @@ export default async function UserDetailPage({ params }) {
           {guardians.length === 0 && <p className="dim">No guardians linked.</p>}
           {guardians.map((g) => (
             <p key={g.id} style={{ margin: "4px 0" }}>
-              <Link href={`/users/${g.id}`}>{g.name || "Unnamed"}</Link>{" "}
+              <Link href={`/admin/users/${g.id}`}>{g.name || "Unnamed"}</Link>{" "}
               <span className="dim">
                 since <When value={g.linked_at} relative={false} />
               </span>
@@ -147,7 +147,7 @@ export default async function UserDetailPage({ params }) {
           {wards.length === 0 && <p className="dim">Not guarding anyone.</p>}
           {wards.map((g) => (
             <p key={g.id} style={{ margin: "4px 0" }}>
-              <Link href={`/users/${g.id}`}>{g.name || "Unnamed"}</Link>{" "}
+              <Link href={`/admin/users/${g.id}`}>{g.name || "Unnamed"}</Link>{" "}
               <span className="dim">
                 since <When value={g.linked_at} relative={false} />
               </span>
@@ -201,7 +201,7 @@ export default async function UserDetailPage({ params }) {
             {incidents.map((i) => (
               <tr key={i.id}>
                 <td>
-                  <Link href={`/incidents/${i.id}`}>
+                  <Link href={`/admin/incidents/${i.id}`}>
                     <When value={i.started_at} />
                   </Link>
                 </td>
@@ -283,7 +283,7 @@ export default async function UserDetailPage({ params }) {
                 </td>
                 <td>
                   {c.incident_id ? (
-                    <Link href={`/incidents/${c.incident_id}`}>incident →</Link>
+                    <Link href={`/admin/incidents/${c.incident_id}`}>incident →</Link>
                   ) : (
                     "—"
                   )}
@@ -323,7 +323,7 @@ export default async function UserDetailPage({ params }) {
                 </td>
                 <td>
                   {ntf.incident_id ? (
-                    <Link href={`/incidents/${ntf.incident_id}`}>view →</Link>
+                    <Link href={`/admin/incidents/${ntf.incident_id}`}>view →</Link>
                   ) : (
                     "—"
                   )}

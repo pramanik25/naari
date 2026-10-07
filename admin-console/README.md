@@ -1,6 +1,11 @@
-# Naari Shakti Admin Console
+# Naari Shakti website and admin console
 
-Next.js web console for support staff: browse every user and their full activity —
+One Next.js app serving two things:
+
+- **Public site** at `/` — what the app does, how it keeps users safe, and the APK download (`/download`).
+- **Admin console** at `/admin` — password-protected, for support staff.
+
+The console lets support staff browse every user and their full activity —
 devices, guardian links, SOS incidents (with location trail, evidence metadata,
 alerted helpers and WhatsApp messages), check-ins, and volunteer helpers.
 
@@ -20,25 +25,49 @@ Configuration lives in `.env.local` (see `.env.example`):
 | var | purpose |
 |---|---|
 | `DATABASE_URL` | same value as `backend/.env` |
-| `ADMIN_PASSWORD` | password for the /login page (required) |
+| `ADMIN_PASSWORD` | password for the /admin/login page (required) |
 | `ADMIN_SESSION_SECRET` | optional cookie-signing secret (defaults to one derived from the password) |
 | `PUBLIC_BASE_URL` | API origin, used to build `…/t/<token>` tracking links |
 | `ADMIN_TZ` | timezone for displayed timestamps (default `Asia/Kolkata`) |
+| `APK_URL` | optional: where `/download` redirects (see *Publishing a new APK*) |
 
 ## Pages
 
-- `/` — dashboard: user/incident/check-in/helper counts and a live activity feed
-- `/users` — searchable user list (name, guardian code or id)
-- `/users/<id>` — profile, devices & push status, guardians/wards, WhatsApp contacts,
+Public:
+
+- `/` — landing page: features, privacy, install steps (copy lives in `src/app/page.js`)
+- `/download` — the APK
+
+Admin (login required):
+
+- `/admin` — dashboard: user/incident/check-in/helper counts and a live activity feed
+- `/admin/users` — searchable user list (name, guardian code or id)
+- `/admin/users/<id>` — profile, devices & push status, guardians/wards, WhatsApp contacts,
   incidents, check-ins, alerts received
-- `/devices` — installs per day (device registrations), recent registrations, and per-user
+- `/admin/devices` — installs per day (device registrations), recent registrations, and per-user
   last-seen with a dormant flag (the closest signal to an uninstall; the app never reports
   uninstalls — use Play Console / Firebase Analytics for exact numbers)
-- `/incidents` — filterable by status/duress, searchable
-- `/incidents/<id>` — full incident: map of last location, location trail, evidence,
+- `/admin/incidents` — filterable by status/duress, searchable
+- `/admin/incidents/<id>` — full incident: map of last location, location trail, evidence,
   helpers alerted/responding, alert fan-out, WhatsApp delivery
-- `/checkins` — all timed check-ins, filter by status
-- `/helpers` — volunteer helpers with freshness and response stats
+- `/admin/checkins` — all timed check-ins, filter by status
+- `/admin/helpers` — volunteer helpers with freshness and response stats
+
+## Publishing a new APK
+
+The APK (about 150 MB) is too large for git, so it is published as a GitHub release asset
+and the site links to it.
+
+1. Build the signed release APK in Android Studio (`app/build/outputs/apk/release/app-release.apk`).
+2. `npm run apk` — copies it to `downloads/naari-shakti.apk` (git-ignored) and writes its
+   version, size and SHA-256 to `src/lib/release.json`.
+3. On GitHub: Releases → Draft a new release → attach `downloads/naari-shakti.apk`
+   (keep the name `naari-shakti.apk`) → Publish.
+4. Commit `src/lib/release.json` and deploy.
+
+`/download` resolves in this order: `APK_URL` if set → `downloads/naari-shakti.apk` if it
+exists on the server (streamed directly, with resume) → the `naari-shakti.apk` asset on the
+latest GitHub release. On Render only the first and last apply, since `downloads/` is not in git.
 
 ## Deploy (Render, same as the backend)
 
@@ -48,7 +77,7 @@ this console can see every user's data.
 
 ## Security notes
 
-- Session is an HttpOnly, HMAC-signed cookie valid 7 days; middleware guards every route.
+- Session is an HttpOnly, HMAC-signed cookie valid 7 days; middleware guards everything under `/admin`; the public site needs no login.
 - The console is read-only by construction (only `SELECT` statements).
 - Evidence *files* are intentionally not proxied here; the metadata table links to the
   public tracking page instead, which already enforces retention/expiry rules.

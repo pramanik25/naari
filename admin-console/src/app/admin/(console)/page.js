@@ -118,11 +118,11 @@ export default async function DashboardPage() {
                   <When value={row.at} />
                 </td>
                 <td>
-                  <Link href={`/users/${row.user_id}`}>{row.name || "Unnamed"}</Link>
+                  <Link href={`/admin/users/${row.user_id}`}>{row.name || "Unnamed"}</Link>
                 </td>
                 <td className="wrap">
                   {row.kind === "incident" ? (
-                    <Link href={`/incidents/${row.ref}`}>{row.detail}</Link>
+                    <Link href={`/admin/incidents/${row.ref}`}>{row.detail}</Link>
                   ) : (
                     row.detail
                   )}

@@ -33,19 +33,20 @@ async function isValidSession(token) {
 
 export async function middleware(request) {
   const { pathname } = request.nextUrl;
-  if (pathname === "/login" || pathname.startsWith("/api/login")) {
+  if (pathname === "/admin/login" || pathname.startsWith("/admin/api/login")) {
     return NextResponse.next();
   }
   const ok = await isValidSession(request.cookies.get(SESSION_COOKIE)?.value);
   if (!ok) {
     const url = request.nextUrl.clone();
-    url.pathname = "/login";
+    url.pathname = "/admin/login";
     url.search = "";
     return NextResponse.redirect(url);
   }
   return NextResponse.next();
 }
 
+// Only the console is guarded; the public site (/, /download) is open to everyone.
 export const config = {
-  matcher: ["/((?!_next/static|_next/image|favicon.ico).*)"],
+  matcher: ["/admin", "/admin/:path*"],
 };

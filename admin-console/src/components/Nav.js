@@ -4,12 +4,12 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const NAV = [
-  { href: "/", label: "Dashboard", icon: "grid" },
-  { href: "/users", label: "Users", icon: "users" },
-  { href: "/devices", label: "Devices & installs", icon: "device" },
-  { href: "/incidents", label: "Incidents", icon: "alert" },
-  { href: "/checkins", label: "Check-ins", icon: "check" },
-  { href: "/helpers", label: "Helpers", icon: "hands" },
+  { href: "/admin", label: "Dashboard", icon: "grid" },
+  { href: "/admin/users", label: "Users", icon: "users" },
+  { href: "/admin/devices", label: "Devices & installs", icon: "device" },
+  { href: "/admin/incidents", label: "Incidents", icon: "alert" },
+  { href: "/admin/checkins", label: "Check-ins", icon: "check" },
+  { href: "/admin/helpers", label: "Helpers", icon: "hands" },
 ];
 
 const PATHS = {
@@ -46,7 +46,7 @@ export default function Nav() {
     <nav className="nav-list" aria-label="Console navigation">
       {NAV.map((item) => {
         const active =
-          item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
+          item.href === "/admin" ? pathname === "/admin" : pathname.startsWith(item.href);
         return (
           <Link
             key={item.href}

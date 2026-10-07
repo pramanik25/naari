@@ -56,7 +56,7 @@ export default async function UsersPage({ searchParams }) {
         />
         <button type="submit">Search</button>
         {q && (
-          <Link className="btn ghost" href="/users">
+          <Link className="btn ghost" href="/admin/users">
             Clear
           </Link>
         )}
@@ -90,7 +90,7 @@ export default async function UsersPage({ searchParams }) {
             {users.map((u) => (
               <tr key={u.id}>
                 <td>
-                  <Link href={`/users/${u.id}`}>{u.name || "Unnamed"}</Link>
+                  <Link href={`/admin/users/${u.id}`}>{u.name || "Unnamed"}</Link>
                   <div className="dim mono">{u.id.slice(0, 8)}…</div>
                 </td>
                 <td className="mono">{u.guardian_code || "—"}</td>
@@ -113,7 +113,7 @@ export default async function UsersPage({ searchParams }) {
         </table>
       </div>
 
-      <Pager page={page} hasMore={hasMore} basePath="/users" params={q ? { q } : {}} />
+      <Pager page={page} hasMore={hasMore} basePath="/admin/users" params={q ? { q } : {}} />
     </>
   );
 }

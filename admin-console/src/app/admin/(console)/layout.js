@@ -18,7 +18,7 @@ export default function ConsoleLayout({ children }) {
             <strong>Read-only access</strong>
             <span>Operational records are viewed securely.</span>
           </div>
-          <form method="POST" action="/api/logout">
+          <form method="POST" action="/admin/api/logout">
             <button type="submit" className="ghost">
               Sign out
             </button>

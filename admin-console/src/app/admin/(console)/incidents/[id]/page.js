@@ -60,10 +60,10 @@ export default async function IncidentDetailPage({ params }) {
   return (
     <>
       <p className="dim" style={{ margin: "0 0 6px" }}>
-        <Link href="/incidents">← Incidents</Link>
+        <Link href="/admin/incidents">← Incidents</Link>
       </p>
       <h1>
-        SOS by <Link href={`/users/${incident.user_id}`}>{incident.user_name || "Unnamed"}</Link>{" "}
+        SOS by <Link href={`/admin/users/${incident.user_id}`}>{incident.user_name || "Unnamed"}</Link>{" "}
         <Badge value={incident.status} /> {incident.duress && <Badge value="duress" />}
       </h1>
       <p className="subtitle mono">{incident.id}</p>
@@ -244,7 +244,7 @@ export default async function IncidentDetailPage({ params }) {
             {helpers.map((h) => (
               <tr key={h.helper_id}>
                 <td>
-                  <Link href={`/users/${h.helper_id}`}>{h.name || "Unnamed"}</Link>
+                  <Link href={`/admin/users/${h.helper_id}`}>{h.name || "Unnamed"}</Link>
                 </td>
                 <td>{h.distance_m} m</td>
                 <td>{h.radius_km} km</td>
@@ -302,7 +302,7 @@ export default async function IncidentDetailPage({ params }) {
                   <Badge value={ntf.type} kind="info" />
                 </td>
                 <td>
-                  <Link href={`/users/${ntf.recipient_id}`}>{ntf.recipient_name || "Unnamed"}</Link>
+                  <Link href={`/admin/users/${ntf.recipient_id}`}>{ntf.recipient_name || "Unnamed"}</Link>
                 </td>
                 <td>
                   {ntf.acked_at ? <When value={ntf.acked_at} relative={false} /> : <Badge value="unacked" kind="warn" />}

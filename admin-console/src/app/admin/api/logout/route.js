@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { SESSION_COOKIE } from "@/lib/auth";
 
 export async function POST(request) {
-  const res = NextResponse.redirect(new URL("/login", request.url), 303);
-  res.cookies.set(SESSION_COOKIE, "", { path: "/", maxAge: 0 });
+  const res = NextResponse.redirect(new URL("/admin/login", request.url), 303);
+  res.cookies.set(SESSION_COOKIE, "", { path: "/admin", maxAge: 0 });
   return res;
 }
