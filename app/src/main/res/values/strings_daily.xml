@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Shared -->
+    <string name="dl_back">Back</string>
+    <string name="dl_save">Save</string>
+    <string name="dl_cancel">Cancel</string>
+    <string name="dl_delete">Delete</string>
+    <string name="dl_channel_daily">Daily reminders</string>
+    <string name="dl_channel_daily_desc">Today\'s quiz and the reminders you switched on</string>
+
+    <!-- Home card and Safety tools tiles -->
+    <string name="dl_section_daily">Every day</string>
+    <string name="dl_home_commute">Commute</string>
+    <string name="dl_home_commute_cap">One-tap trip timer</string>
+    <string name="dl_home_commute_active">Trip running</string>
+    <string name="dl_home_cycle">Cycle</string>
+    <string name="dl_home_cycle_cap">Private tracker</string>
+    <string name="dl_home_quiz">Quiz</string>
+    <string name="dl_home_quiz_cap">3 questions today</string>
+    <plurals name="dl_home_quiz_done">
+        <item quantity="one">Done · %1$d-day streak</item>
+        <item quantity="other">Done · %1$d-day streak</item>
+    </plurals>
+    <plurals name="dl_home_quiz_keep">
+        <item quantity="one">Keep your %1$d-day streak</item>
+        <item quantity="other">Keep your %1$d-day streak</item>
+    </plurals>
+
+    <!-- Commute -->
+    <string name="dl_cm_eyebrow">Every day</string>
+    <string name="dl_cm_title">Daily commute</string>
+    <string name="dl_cm_body">Tap “Leaving” when you set off. If you have not tapped “I\'ve reached” by the usual time, your contacts are alerted automatically.</string>
+    <string name="dl_cm_active_title">Trip running</string>
+    <string name="dl_cm_active_sub">%1$s left to check in</string>
+    <string name="dl_cm_active_overdue">Trip overdue</string>
+    <string name="dl_cm_active_overdue_sub">Tap “I\'ve reached” if you are safe</string>
+    <string name="dl_cm_reached">I\'ve reached</string>
+    <string name="dl_cm_section_routes">Your routes</string>
+    <string name="dl_cm_empty">No routes yet. Add the trips you make most days.</string>
+    <string name="dl_cm_add">Add a route</string>
+    <string name="dl_cm_note">A trip is a check-in timer. You can add time or check in from the timer screen at any point.</string>
+    <string name="dl_cm_leaving">Leaving</string>
+    <string name="dl_cm_minutes">%1$d min</string>
+    <string name="dl_cm_default_to_work">Home to work</string>
+    <string name="dl_cm_default_to_home">Work to home</string>
+    <string name="dl_cm_already_running">A trip is already running. Check in first.</string>
+    <string name="dl_cm_add_title">New route</string>
+    <string name="dl_cm_edit_title">Edit route</string>
+    <string name="dl_cm_name_hint">Route name</string>
+    <string name="dl_cm_name_placeholder">Home to college</string>
+    <string name="dl_cm_name_required">Give the route a name</string>
+    <string name="dl_cm_duration_label">Usual travel time</string>
+
+    <!-- Cycle tracker -->
+    <string name="dl_cy_eyebrow">Private</string>
+    <string name="dl_cy_title">Cycle tracker</string>
+    <string name="dl_cy_body">Log your period, mood and symptoms. Everything is encrypted on this phone and never uploaded.</string>
+    <string name="dl_cy_locked_title">Tracker locked</string>
+    <string name="dl_cy_locked_body">Enter your app PIN to open it.</string>
+    <string name="dl_cy_unlock">Unlock</string>
+    <string name="dl_cy_pin_title">Unlock your tracker</string>
+    <string name="dl_cy_log_today">Log today</string>
+    <string name="dl_cy_prev_month">Previous month</string>
+    <string name="dl_cy_next_month">Next month</string>
+    <string name="dl_cy_legend_period">Period</string>
+    <string name="dl_cy_legend_predicted">Expected</string>
+    <string name="dl_cy_legend_fertile">Fertile</string>
+    <string name="dl_cy_stat_cycle">Average cycle</string>
+    <string name="dl_cy_stat_period">Average period</string>
+    <plurals name="dl_cy_days">
+        <item quantity="one">%1$d day</item>
+        <item quantity="other">%1$d days</item>
+    </plurals>
+    <string name="dl_cy_reminder">Remind me before my period</string>
+    <string name="dl_cy_reminder_sub">A discreet note two days before. It never mentions your period.</string>
+    <string name="dl_cy_disclaimer">Expected and fertile days are estimates from your own averages. They are not medical advice and must not be relied on to prevent or plan a pregnancy.</string>
+    <string name="dl_cy_summary_empty">Log your first period</string>
+    <string name="dl_cy_summary_empty_sub">Tap the day it started on the calendar. Predictions get better with every cycle you log.</string>
+    <string name="dl_cy_summary_period">Period · day %1$d</string>
+    <string name="dl_cy_summary_day">Day %1$d of your cycle</string>
+    <plurals name="dl_cy_next_in">
+        <item quantity="one">Next period in about %1$d day (%2$s)</item>
+        <item quantity="other">Next period in about %1$d days (%2$s)</item>
+    </plurals>
+    <string name="dl_cy_next_today">Your period is expected today</string>
+    <plurals name="dl_cy_next_late">
+        <item quantity="one">Your period is %1$d day late</item>
+        <item quantity="other">Your period is %1$d days late</item>
+    </plurals>
+    <string name="dl_cy_default_cycle_note">Based on a typical 28-day cycle until you have logged two periods.</string>
+    <string name="dl_cy_load_error">Couldn\'t open your log. Nothing was changed.</string>
+    <string name="dl_cy_save_error">Couldn\'t save that. Try again.</string>
+    <string name="dl_cy_sheet_eyebrow">Daily log</string>
+    <string name="dl_cy_sheet_period">Period day</string>
+    <string name="dl_cy_sheet_flow">Flow</string>
+    <string name="dl_cy_flow_light">Light</string>
+    <string name="dl_cy_flow_medium">Medium</string>
+    <string name="dl_cy_flow_heavy">Heavy</string>
+    <string name="dl_cy_sheet_mood">Mood</string>
+    <string name="dl_cy_mood_1">😞 Low</string>
+    <string name="dl_cy_mood_2">😕 Uneasy</string>
+    <string name="dl_cy_mood_3">😐 Okay</string>
+    <string name="dl_cy_mood_4">🙂 Good</string>
+    <string name="dl_cy_mood_5">😄 Great</string>
+    <string name="dl_cy_sheet_symptoms">Symptoms</string>
+    <string name="dl_cy_sym_cramps">Cramps</string>
+    <string name="dl_cy_sym_headache">Headache</string>
+    <string name="dl_cy_sym_backache">Back pain</string>
+    <string name="dl_cy_sym_bloating">Bloating</string>
+    <string name="dl_cy_sym_fatigue">Tired</string>
+    <string name="dl_cy_sym_acne">Acne</string>
+    <string name="dl_cy_sym_tender">Tender breasts</string>
+    <string name="dl_cy_sym_nausea">Nausea</string>
+    <string name="dl_cy_sheet_clear">Clear this day</string>
+
+    <!-- Quiz -->
+    <string name="dl_quiz_eyebrow">Every day</string>
+    <string name="dl_quiz_title">Safety quiz</string>
+    <string name="dl_quiz_stat_streak">Streak</string>
+    <string name="dl_quiz_stat_points">Points</string>
+    <string name="dl_quiz_stat_level">Level</string>
+    <plurals name="dl_quiz_days">
+        <item quantity="one">%1$d day</item>
+        <item quantity="other">%1$d days</item>
+    </plurals>
+    <string name="dl_quiz_progress">Question %1$d of %2$d</string>
+    <string name="dl_quiz_progress_practice">Practice · question %1$d of %2$d</string>
+    <string name="dl_quiz_correct">Correct</string>
+    <string name="dl_quiz_wrong">Not quite</string>
+    <string name="dl_quiz_next">Next question</string>
+    <string name="dl_quiz_finish">See my result</string>
+    <string name="dl_quiz_score">%1$d / %2$d</string>
+    <string name="dl_quiz_result_perfect">Perfect round</string>
+    <string name="dl_quiz_result_good">Good going</string>
+    <string name="dl_quiz_result_low">Now you know</string>
+    <string name="dl_quiz_result_points">+%1$d points. New questions tomorrow.</string>
+    <string name="dl_quiz_result_done">Today\'s quiz is done. New questions tomorrow.</string>
+    <string name="dl_quiz_result_practice">Practice round. Points come from the daily quiz.</string>
+    <string name="dl_quiz_level_next">Level: %1$s · %2$d points to the next level</string>
+    <string name="dl_quiz_level_top">Level: %1$s · the highest level</string>
+    <string name="dl_quiz_level_1">Beginner</string>
+    <string name="dl_quiz_level_2">Aware</string>
+    <string name="dl_quiz_level_3">Alert</string>
+    <string name="dl_quiz_level_4">Guardian</string>
+    <string name="dl_quiz_level_5">Shakti</string>
+    <string name="dl_quiz_share">Share my streak</string>
+    <string name="dl_quiz_share_text">I am on a %1$s safety quiz streak with %2$d points on Naari Shakti. Do you know your rights and helplines?</string>
+    <string name="dl_quiz_practice">Practise more</string>
+    <string name="dl_quiz_reminder">Daily quiz reminder</string>
+    <string name="dl_quiz_reminder_sub">One notification in the evening if you have not played yet</string>
+
+    <!-- Daily reminder notifications -->
+    <string name="dl_nudge_quiz_title">Today\'s safety quiz is ready</string>
+    <string name="dl_nudge_quiz_text">Three quick questions. It takes a minute.</string>
+    <plurals name="dl_nudge_quiz_streak">
+        <item quantity="one">Play now to keep your %1$d-day streak.</item>
+        <item quantity="other">Play now to keep your %1$d-day streak.</item>
+    </plurals>
+    <string name="dl_nudge_cycle_title">A reminder from Naari Shakti</string>
+    <string name="dl_nudge_cycle_text">Open the app to see it.</string>
+
+    <!--
+        Quiz bank. Each item: question|option A|option B|option C|index of the right option (0-2)|explanation.
+        Keep the count a multiple of 3 and never use the | character inside a text.
+        Translations must keep the same order and the same right-option index.
+    -->
+    <string-array name="dl_quiz_items">
+        <item>Which single number reaches police, fire and ambulance anywhere in India?|112|1098|139|0|112 is the all-in-one emergency number. It works from any phone, even without balance.</item>
+        <item>Which number is the Women Helpline?|1930|181|139|1|181 is the Women Helpline in most states. 1091 reaches the women police helpline.</item>
+        <item>Where do you report online harassment, blackmail or cyber fraud?|Helpline 1930 or cybercrime.gov.in|Only at the phone company|It cannot be reported|0|Call 1930 or file a complaint on cybercrime.gov.in. Keep screenshots as evidence.</item>
+        <item>A police station says the incident happened outside its area. What can you ask for?|Nothing, you must travel there|A Zero FIR|A written apology|1|Any police station must register a Zero FIR and transfer it to the right station.</item>
+        <item>Can the police arrest a woman after sunset and before sunrise?|Yes, at any time|Never, under any circumstances|Only in exceptional cases, by a woman officer with a magistrate\'s written permission|2|The law protects women from night arrests except in exceptional cases with a magistrate\'s prior written permission.</item>
+        <item>Before you get into a cab you booked, what should you check?|That the number plate and driver match the app|That the car is clean|That the driver is in a hurry|0|Always match the plate and the driver with the booking. Cab mode in this app can share the plate with your contacts.</item>
+        <item>Your cab takes a route you do not recognise. What is the best first step?|Stay quiet and wait|Share your live location, call someone and ask to stop at a busy place|Switch off your phone|1|Let someone know where you are, say it aloud on a call, and use SOS if you feel threatened.</item>
+        <item>At a workplace with 10 or more employees, who must hear a sexual harassment complaint?|The Internal Committee|Only the police|The security guard|0|The POSH Act requires every such workplace to have an Internal Committee.</item>
+        <item>How long do you have to file a workplace sexual harassment complaint under the POSH Act?|24 hours|One week|Three months from the incident|2|The complaint should be made within three months, and the committee can extend this by another three.</item>
+        <item>Someone keeps following you or messaging you after you clearly said no. Is that a crime?|No, it is only bad manners|Yes, stalking is a crime, online too|Only if they touch you|1|Stalking, in person or online, is a criminal offence. Save the messages and report it.</item>
+        <item>Does the domestic violence law cover only physical violence?|Yes, only physical violence|No, also verbal, emotional, sexual and economic abuse|It covers only married women|1|The Protection of Women from Domestic Violence Act covers all these forms of abuse, and women in live-in relationships too.</item>
+        <item>Who is entitled to free legal aid in India?|Every woman, whatever her income|Only women below the poverty line|Nobody, lawyers always charge|0|Every woman can get free legal aid through the Legal Services Authority in her district.</item>
+        <item>Can the media or anyone else publish the name of a survivor of sexual assault?|Yes, if the news is true|Only on social media|No, revealing her identity is an offence|2|Disclosing the identity of a survivor of sexual assault is a punishable offence.</item>
+        <item>You are walking alone at night and feel that someone is following you. What do you do?|Go straight home by the quietest lane|Move towards a lit, busy place and call someone|Stop and confront them alone|1|Head for people and light, stay on a call, and do not lead the person to your home.</item>
+        <item>You left your drink unattended at a party. What is the safe choice?|Finish it quickly|Ask a stranger to taste it|Leave it and get a fresh one|2|An unattended drink can be tampered with. Always get a new one.</item>
+        <item>What is the fake call tool in this app for?|To give you a believable reason to leave an uncomfortable situation|To prank your friends|To call the police|0|A fake incoming call lets you step away without a confrontation.</item>
+        <item>What happens when you enter your duress PIN in this app?|The app is deleted|The app looks normal but silently sends an SOS|Nothing happens|1|The duress PIN is for when someone forces you to unlock. It opens the app normally and alerts your contacts in secret.</item>
+        <item>When a woman reports a sexual offence, who should record her statement?|Any officer on duty|A woman police officer|A neighbour|1|The law requires her statement to be recorded by a woman police officer.</item>
+        <item>You are meeting someone from the internet for the first time. What is the safest plan?|Meet in a public place, tell a friend and arrange your own travel|Meet at their home|Let them pick you up from your home|0|A public place, a friend who knows your plan and your own way home keep you in control. Meeting mode can set a timer for you.</item>
+        <item>A caller says they are from your bank and asks for the OTP you just received. What do you do?|Share it, they are from the bank|Share only half of it|Never share it and end the call|2|No bank ever asks for an OTP. Sharing it lets someone take money or control of your account.</item>
+        <item>Which number is the helpline for a child in distress?|1098|181|112 only|0|1098 is Childline, a free 24-hour helpline for children.</item>
+        <item>Is giving or taking dowry legal if both families agree?|Yes, if both agree|No, both giving and taking dowry are offences|Only giving is an offence|1|The Dowry Prohibition Act makes giving, taking and demanding dowry punishable.</item>
+        <item>You set a check-in timer in this app and do not tap “I\'m safe” in time. What happens?|Nothing, the timer just ends|The app starts an SOS and alerts your contacts|Your phone restarts|1|A missed check-in starts an SOS, so someone knows even if you cannot reach your phone.</item>
+        <item>Which number do you call for help while travelling on a train?|139|1930|1098|0|139 is the Rail Madad helpline for safety and other help on Indian Railways.</item>
+    </string-array>
+</resources>

@@ -18,6 +18,9 @@ const { alertsRouter } = require('./routes/alerts');
 const { notificationsRouter } = require('./routes/notifications');
 const { trackApiRouter, trackPageRouter, PUBLIC_DIR } = require('./routes/track');
 const { whatsappSettingsRouter, whatsappWebhookRouter } = require('./routes/whatsapp');
+const { circleRouter } = require('./routes/circle');
+const { placesRouter } = require('./routes/places');
+const { communityRouter } = require('./routes/community');
 const { createWhatsApp } = require('./whatsapp');
 
 const DEFAULT_LIMITS = {
@@ -126,7 +129,8 @@ function createApp({ config, pool, log, hub = null, push = null, whatsapp = null
   const authed = express.Router();
   authed.use(requireAuth(pool));
   for (const make of [meRouter, guardiansRouter, helperRouter, incidentsRouter, evidenceRouter,
-    checkinsRouter, alertsRouter, notificationsRouter, whatsappSettingsRouter]) {
+    checkinsRouter, alertsRouter, notificationsRouter, whatsappSettingsRouter,
+    circleRouter, placesRouter, communityRouter]) {
     authed.use(make(deps));
   }
   app.use('/api/v1', authed);

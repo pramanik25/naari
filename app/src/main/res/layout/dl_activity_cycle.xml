@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ns_bg_gradient"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".daily.CycleActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/ns_gutter"
+            android:paddingTop="12dp"
+            android:paddingEnd="@dimen/ns_gutter"
+            android:paddingBottom="40dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/backButton"
+                style="@style/Ns.Button.Icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="@string/dl_back"
+                app:icon="@drawable/ua_ic_arrow_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/dl_cy_eyebrow"
+                android:textAppearance="@style/Ns.Text.Overline" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/dl_cy_title"
+                android:textAppearance="@style/Ns.Text.Headline" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/dl_cy_body"
+                android:textAppearance="@style/Ns.Text.Body" />
+
+            <!-- ============ Locked ============ -->
+            <LinearLayout
+                android:id="@+id/lockedState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingStart="20dp"
+                android:paddingTop="56dp"
+                android:paddingEnd="20dp"
+                android:visibility="gone">
+
+                <ImageView
+                    style="@style/Ns.IconBadge"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:backgroundTint="@color/ns_violet_container"
+                    android:importantForAccessibility="no"
+                    android:padding="20dp"
+                    android:src="@drawable/ua_ic_lock"
+                    app:tint="@color/ns_violet" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="@string/dl_cy_locked_title"
+                    android:textAppearance="@style/Ns.Text.Title" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="@string/dl_cy_locked_body"
+                    android:textAppearance="@style/Ns.Text.Body" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/unlockButton"
+                    style="@style/Ns.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/dl_cy_unlock"
+                    app:icon="@drawable/ua_ic_lock"
+                    app:iconSize="18dp" />
+            </LinearLayout>
+
+            <!-- ============ Unlocked content ============ -->
+            <LinearLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <!-- Summary -->
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/Ns.Card.Elite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/ns_card_padding">
+
+                        <TextView
+                            android:id="@+id/summaryTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/Ns.Text.Headline"
+                            tools:text="Day 12 of your cycle" />
+
+                        <TextView
+                            android:id="@+id/summarySub"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:textAppearance="@style/Ns.Text.Body"
+                            tools:text="Next period in about 16 days (28 Mar)" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/logTodayButton"
+                            style="@style/Ns.Button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="@string/dl_cy_log_today"
+                            app:icon="@drawable/ua_ic_edit" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Calendar -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingStart="12dp"
+                        android:paddingTop="12dp"
+                        android:paddingEnd="12dp"
+                        android:paddingBottom="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/prevButton"
+                                style="@style/Ns.Button.Icon"
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:contentDescription="@string/dl_cy_prev_month"
+                                android:rotation="180"
+                                app:icon="@drawable/ua_ic_chevron_right" />
+
+                            <TextView
+                                android:id="@+id/monthTitle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:accessibilityLiveRegion="polite"
+                                android:gravity="center"
+                                android:textAppearance="@style/Ns.Text.Title"
+                                tools:text="March 2026" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/nextButton"
+                                style="@style/Ns.Button.Icon"
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:contentDescription="@string/dl_cy_next_month"
+                                app:icon="@drawable/ua_ic_chevron_right" />
+                        </LinearLayout>
+
+                        <!-- Weekday names and day rows are added from code. -->
+                        <LinearLayout
+                            android:id="@+id/weekdays"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:orientation="horizontal" />
+
+                        <LinearLayout
+                            android:id="@+id/calendar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" />
+
+                        <!-- Legend -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:background="@drawable/ns_dot"
+                                android:backgroundTint="@color/ns_rose" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="6dp"
+                                android:text="@string/dl_cy_legend_period"
+                                android:textAppearance="@style/Ns.Text.Caption" />
+
+                            <View
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_marginStart="14dp"
+                                android:background="@drawable/ns_dot"
+                                android:backgroundTint="@color/ns_rose_glow_1" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="6dp"
+                                android:text="@string/dl_cy_legend_predicted"
+                                android:textAppearance="@style/Ns.Text.Caption" />
+
+                            <View
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_marginStart="14dp"
+                                android:background="@drawable/ns_dot"
+                                android:backgroundTint="@color/ns_violet" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="6dp"
+                                android:text="@string/dl_cy_legend_fertile"
+                                android:textAppearance="@style/Ns.Text.Caption" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Averages -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/stats"
+                    style="@style/Ns.Card.Raised"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:visibility="gone"
+                    tools:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal"
+                        android:padding="16dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/dl_cy_stat_cycle"
+                                android:textAppearance="@style/Ns.Text.Caption" />
+
+                            <TextView
+                                android:id="@+id/statCycle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:textAppearance="@style/Ns.Text.Subtitle"
+                                tools:text="28 days" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/dl_cy_stat_period"
+                                android:textAppearance="@style/Ns.Text.Caption" />
+
+                            <TextView
+                                android:id="@+id/statPeriod"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:textAppearance="@style/Ns.Text.Subtitle"
+                                tools:text="5 days" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Reminder -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp">
+
+                    <LinearLayout
+                        android:id="@+id/reminderRow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingStart="@dimen/ns_card_padding"
+                        android:paddingTop="12dp"
+                        android:paddingEnd="12dp"
+                        android:paddingBottom="12dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/dl_cy_reminder"
+                                android:textAppearance="@style/Ns.Text.Subtitle" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="@string/dl_cy_reminder_sub"
+                                android:textAppearance="@style/Ns.Text.Caption" />
+                        </LinearLayout>
+
+                        <com.google.android.material.materialswitch.MaterialSwitch
+                            android:id="@+id/reminderSwitch"
+                            style="@style/Ns.Switch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:layout_marginStart="8dp"
+                            android:contentDescription="@string/dl_cy_reminder" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/dl_cy_disclaimer"
+                    android:textAppearance="@style/Ns.Text.Caption" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

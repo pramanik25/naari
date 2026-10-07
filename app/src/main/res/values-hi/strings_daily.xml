@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Shared -->
+    <string name="dl_back">वापस</string>
+    <string name="dl_save">सेव करें</string>
+    <string name="dl_cancel">रद्द करें</string>
+    <string name="dl_delete">हटाएँ</string>
+    <string name="dl_channel_daily">रोज़ के रिमाइंडर</string>
+    <string name="dl_channel_daily_desc">आज का क्विज़ और आपके चालू किए हुए रिमाइंडर</string>
+
+    <!-- Home card and Safety tools tiles -->
+    <string name="dl_section_daily">हर दिन</string>
+    <string name="dl_home_commute">सफ़र</string>
+    <string name="dl_home_commute_cap">एक टैप में ट्रिप टाइमर</string>
+    <string name="dl_home_commute_active">ट्रिप चालू है</string>
+    <string name="dl_home_cycle">साइकिल</string>
+    <string name="dl_home_cycle_cap">निजी ट्रैकर</string>
+    <string name="dl_home_quiz">क्विज़</string>
+    <string name="dl_home_quiz_cap">आज के 3 सवाल</string>
+    <plurals name="dl_home_quiz_done">
+        <item quantity="one">पूरा · %1$d दिन की स्ट्रीक</item>
+        <item quantity="other">पूरा · %1$d दिन की स्ट्रीक</item>
+    </plurals>
+    <plurals name="dl_home_quiz_keep">
+        <item quantity="one">%1$d दिन की स्ट्रीक बनाए रखें</item>
+        <item quantity="other">%1$d दिन की स्ट्रीक बनाए रखें</item>
+    </plurals>
+
+    <!-- Commute -->
+    <string name="dl_cm_eyebrow">हर दिन</string>
+    <string name="dl_cm_title">रोज़ का सफ़र</string>
+    <string name="dl_cm_body">निकलते समय “निकल रही हूँ” दबाएँ। अगर तय समय तक आपने “मैं पहुँच गई” नहीं दबाया, तो आपके कॉन्टैक्ट्स को अपने आप अलर्ट चला जाएगा।</string>
+    <string name="dl_cm_active_title">ट्रिप चालू है</string>
+    <string name="dl_cm_active_sub">चेक-इन के लिए %1$s बाकी</string>
+    <string name="dl_cm_active_overdue">ट्रिप का समय निकल गया</string>
+    <string name="dl_cm_active_overdue_sub">अगर आप सुरक्षित हैं तो “मैं पहुँच गई” दबाएँ</string>
+    <string name="dl_cm_reached">मैं पहुँच गई</string>
+    <string name="dl_cm_section_routes">आपके रास्ते</string>
+    <string name="dl_cm_empty">अभी कोई रास्ता नहीं है। जो सफ़र आप लगभग रोज़ करती हैं, उन्हें जोड़ें।</string>
+    <string name="dl_cm_add">रास्ता जोड़ें</string>
+    <string name="dl_cm_note">ट्रिप एक चेक-इन टाइमर है। टाइमर स्क्रीन से आप कभी भी समय बढ़ा सकती हैं या चेक-इन कर सकती हैं।</string>
+    <string name="dl_cm_leaving">निकल रही हूँ</string>
+    <string name="dl_cm_minutes">%1$d मिनट</string>
+    <string name="dl_cm_default_to_work">घर से ऑफ़िस</string>
+    <string name="dl_cm_default_to_home">ऑफ़िस से घर</string>
+    <string name="dl_cm_already_running">एक ट्रिप पहले से चालू है। पहले चेक-इन करें।</string>
+    <string name="dl_cm_add_title">नया रास्ता</string>
+    <string name="dl_cm_edit_title">रास्ता बदलें</string>
+    <string name="dl_cm_name_hint">रास्ते का नाम</string>
+    <string name="dl_cm_name_placeholder">घर से कॉलेज</string>
+    <string name="dl_cm_name_required">रास्ते को एक नाम दें</string>
+    <string name="dl_cm_duration_label">आम तौर पर लगने वाला समय</string>
+
+    <!-- Cycle tracker -->
+    <string name="dl_cy_eyebrow">निजी</string>
+    <string name="dl_cy_title">साइकिल ट्रैकर</string>
+    <string name="dl_cy_body">अपने पीरियड, मूड और लक्षण दर्ज करें। सब कुछ इसी फ़ोन पर एन्क्रिप्ट रहता है और कभी अपलोड नहीं होता।</string>
+    <string name="dl_cy_locked_title">ट्रैकर लॉक है</string>
+    <string name="dl_cy_locked_body">खोलने के लिए अपना ऐप PIN डालें।</string>
+    <string name="dl_cy_unlock">अनलॉक करें</string>
+    <string name="dl_cy_pin_title">अपना ट्रैकर अनलॉक करें</string>
+    <string name="dl_cy_log_today">आज का दर्ज करें</string>
+    <string name="dl_cy_prev_month">पिछला महीना</string>
+    <string name="dl_cy_next_month">अगला महीना</string>
+    <string name="dl_cy_legend_period">पीरियड</string>
+    <string name="dl_cy_legend_predicted">अनुमानित</string>
+    <string name="dl_cy_legend_fertile">फ़र्टाइल</string>
+    <string name="dl_cy_stat_cycle">औसत साइकिल</string>
+    <string name="dl_cy_stat_period">औसत पीरियड</string>
+    <plurals name="dl_cy_days">
+        <item quantity="one">%1$d दिन</item>
+        <item quantity="other">%1$d दिन</item>
+    </plurals>
+    <string name="dl_cy_reminder">पीरियड से पहले याद दिलाएँ</string>
+    <string name="dl_cy_reminder_sub">दो दिन पहले एक साधारण-सा नोटिफ़िकेशन। उसमें पीरियड का ज़िक्र कभी नहीं होता।</string>
+    <string name="dl_cy_disclaimer">अनुमानित और फ़र्टाइल दिन आपके अपने औसत से निकाले गए अंदाज़े हैं। ये डॉक्टरी सलाह नहीं हैं और गर्भ रोकने या प्लान करने के लिए इन पर भरोसा नहीं करना चाहिए।</string>
+    <string name="dl_cy_summary_empty">अपना पहला पीरियड दर्ज करें</string>
+    <string name="dl_cy_summary_empty_sub">कैलेंडर पर वह दिन दबाएँ जिस दिन पीरियड शुरू हुआ था। हर साइकिल दर्ज करने पर अनुमान बेहतर होते जाते हैं।</string>
+    <string name="dl_cy_summary_period">पीरियड · दिन %1$d</string>
+    <string name="dl_cy_summary_day">आपकी साइकिल का दिन %1$d</string>
+    <plurals name="dl_cy_next_in">
+        <item quantity="one">अगला पीरियड लगभग %1$d दिन में (%2$s)</item>
+        <item quantity="other">अगला पीरियड लगभग %1$d दिन में (%2$s)</item>
+    </plurals>
+    <string name="dl_cy_next_today">आपका पीरियड आज आने का अनुमान है</string>
+    <plurals name="dl_cy_next_late">
+        <item quantity="one">आपका पीरियड %1$d दिन लेट है</item>
+        <item quantity="other">आपका पीरियड %1$d दिन लेट है</item>
+    </plurals>
+    <string name="dl_cy_default_cycle_note">जब तक आप दो पीरियड दर्ज नहीं करतीं, अनुमान सामान्य 28 दिन की साइकिल पर आधारित है।</string>
+    <string name="dl_cy_load_error">आपका रिकॉर्ड नहीं खुल सका। कुछ भी बदला नहीं गया।</string>
+    <string name="dl_cy_save_error">सेव नहीं हो सका। दोबारा कोशिश करें।</string>
+    <string name="dl_cy_sheet_eyebrow">रोज़ का रिकॉर्ड</string>
+    <string name="dl_cy_sheet_period">पीरियड का दिन</string>
+    <string name="dl_cy_sheet_flow">फ़्लो</string>
+    <string name="dl_cy_flow_light">हल्का</string>
+    <string name="dl_cy_flow_medium">मध्यम</string>
+    <string name="dl_cy_flow_heavy">ज़्यादा</string>
+    <string name="dl_cy_sheet_mood">मूड</string>
+    <string name="dl_cy_mood_1">😞 उदास</string>
+    <string name="dl_cy_mood_2">😕 बेचैन</string>
+    <string name="dl_cy_mood_3">😐 ठीक-ठाक</string>
+    <string name="dl_cy_mood_4">🙂 अच्छा</string>
+    <string name="dl_cy_mood_5">😄 बहुत अच्छा</string>
+    <string name="dl_cy_sheet_symptoms">लक्षण</string>
+    <string name="dl_cy_sym_cramps">ऐंठन</string>
+    <string name="dl_cy_sym_headache">सिरदर्द</string>
+    <string name="dl_cy_sym_backache">कमर दर्द</string>
+    <string name="dl_cy_sym_bloating">पेट फूलना</string>
+    <string name="dl_cy_sym_fatigue">थकान</string>
+    <string name="dl_cy_sym_acne">मुँहासे</string>
+    <string name="dl_cy_sym_tender">स्तनों में दर्द</string>
+    <string name="dl_cy_sym_nausea">जी मिचलाना</string>
+    <string name="dl_cy_sheet_clear">इस दिन का रिकॉर्ड हटाएँ</string>
+
+    <!-- Quiz -->
+    <string name="dl_quiz_eyebrow">हर दिन</string>
+    <string name="dl_quiz_title">सुरक्षा क्विज़</string>
+    <string name="dl_quiz_stat_streak">स्ट्रीक</string>
+    <string name="dl_quiz_stat_points">पॉइंट</string>
+    <string name="dl_quiz_stat_level">लेवल</string>
+    <plurals name="dl_quiz_days">
+        <item quantity="one">%1$d दिन</item>
+        <item quantity="other">%1$d दिन</item>
+    </plurals>
+    <string name="dl_quiz_progress">सवाल %1$d / %2$d</string>
+    <string name="dl_quiz_progress_practice">अभ्यास · सवाल %1$d / %2$d</string>
+    <string name="dl_quiz_correct">सही जवाब</string>
+    <string name="dl_quiz_wrong">सही नहीं</string>
+    <string name="dl_quiz_next">अगला सवाल</string>
+    <string name="dl_quiz_finish">मेरा नतीजा देखें</string>
+    <string name="dl_quiz_score">%1$d / %2$d</string>
+    <string name="dl_quiz_result_perfect">सब सही!</string>
+    <string name="dl_quiz_result_good">बहुत बढ़िया</string>
+    <string name="dl_quiz_result_low">अब आप जानती हैं</string>
+    <string name="dl_quiz_result_points">+%1$d पॉइंट। नए सवाल कल मिलेंगे।</string>
+    <string name="dl_quiz_result_done">आज का क्विज़ पूरा हो गया। नए सवाल कल मिलेंगे।</string>
+    <string name="dl_quiz_result_practice">यह अभ्यास था। पॉइंट रोज़ के क्विज़ से मिलते हैं।</string>
+    <string name="dl_quiz_level_next">लेवल: %1$s · अगले लेवल के लिए %2$d पॉइंट</string>
+    <string name="dl_quiz_level_top">लेवल: %1$s · सबसे ऊँचा लेवल</string>
+    <string name="dl_quiz_level_1">शुरुआत</string>
+    <string name="dl_quiz_level_2">जागरूक</string>
+    <string name="dl_quiz_level_3">सतर्क</string>
+    <string name="dl_quiz_level_4">रक्षक</string>
+    <string name="dl_quiz_level_5">शक्ति</string>
+    <string name="dl_quiz_share">अपनी स्ट्रीक शेयर करें</string>
+    <string name="dl_quiz_share_text">Naari Shakti के सुरक्षा क्विज़ में मेरी %1$s की स्ट्रीक और %2$d पॉइंट हैं। क्या आप अपने अधिकार और हेल्पलाइन नंबर जानती हैं?</string>
+    <string name="dl_quiz_practice">और अभ्यास करें</string>
+    <string name="dl_quiz_reminder">रोज़ के क्विज़ का रिमाइंडर</string>
+    <string name="dl_quiz_reminder_sub">अगर आपने क्विज़ नहीं खेला, तो शाम को एक नोटिफ़िकेशन</string>
+
+    <!-- Daily reminder notifications -->
+    <string name="dl_nudge_quiz_title">आज का सुरक्षा क्विज़ तैयार है</string>
+    <string name="dl_nudge_quiz_text">तीन छोटे सवाल। बस एक मिनट लगेगा।</string>
+    <plurals name="dl_nudge_quiz_streak">
+        <item quantity="one">%1$d दिन की स्ट्रीक बनाए रखने के लिए अभी खेलें।</item>
+        <item quantity="other">%1$d दिन की स्ट्रीक बनाए रखने के लिए अभी खेलें।</item>
+    </plurals>
+    <string name="dl_nudge_cycle_title">Naari Shakti की ओर से एक रिमाइंडर</string>
+    <string name="dl_nudge_cycle_text">देखने के लिए ऐप खोलें।</string>
+
+    <!-- Quiz bank: same order and same right-option index as values/strings_daily.xml. -->
+    <string-array name="dl_quiz_items">
+        <item>भारत में कहीं से भी पुलिस, फ़ायर और एम्बुलेंस के लिए कौन-सा एक नंबर है?|112|1098|139|0|112 सभी इमरजेंसी के लिए एक ही नंबर है। यह किसी भी फ़ोन से, बिना बैलेंस के भी लगता है।</item>
+        <item>महिला हेल्पलाइन का नंबर कौन-सा है?|1930|181|139|1|ज़्यादातर राज्यों में 181 महिला हेल्पलाइन है। 1091 महिला पुलिस हेल्पलाइन है।</item>
+        <item>ऑनलाइन उत्पीड़न, ब्लैकमेल या साइबर ठगी की शिकायत कहाँ करें?|हेल्पलाइन 1930 या cybercrime.gov.in|सिर्फ़ मोबाइल कंपनी में|इसकी शिकायत नहीं हो सकती|0|1930 पर कॉल करें या cybercrime.gov.in पर शिकायत दर्ज करें। स्क्रीनशॉट सबूत के तौर पर रखें।</item>
+        <item>थाने वाले कहते हैं कि घटना उनके इलाके की नहीं है। आप क्या माँग सकती हैं?|कुछ नहीं, आपको वहीं जाना होगा|ज़ीरो FIR|लिखित माफ़ी|1|कोई भी थाना ज़ीरो FIR दर्ज करके उसे सही थाने को भेजने के लिए बाध्य है।</item>
+        <item>क्या पुलिस किसी महिला को सूर्यास्त के बाद और सूर्योदय से पहले गिरफ़्तार कर सकती है?|हाँ, कभी भी|कभी नहीं, किसी भी हाल में|सिर्फ़ असाधारण मामलों में, महिला अधिकारी द्वारा और मजिस्ट्रेट की लिखित अनुमति से|2|कानून महिलाओं को रात की गिरफ़्तारी से बचाता है। अपवाद सिर्फ़ असाधारण मामलों में मजिस्ट्रेट की पहले से ली गई लिखित अनुमति पर है।</item>
+        <item>बुक की हुई कैब में बैठने से पहले आपको क्या जाँचना चाहिए?|नंबर प्लेट और ड्राइवर ऐप से मेल खाते हैं|गाड़ी साफ़ है|ड्राइवर जल्दी में है|0|हमेशा नंबर प्लेट और ड्राइवर को बुकिंग से मिलाएँ। इस ऐप का कैब मोड नंबर प्लेट आपके कॉन्टैक्ट्स को भेज सकता है।</item>
+        <item>आपकी कैब किसी अनजान रास्ते पर जा रही है। सबसे अच्छा पहला कदम क्या है?|चुप रहें और इंतज़ार करें|लाइव लोकेशन शेयर करें, किसी को कॉल करें और भीड़ वाली जगह पर रुकने को कहें|अपना फ़ोन बंद कर दें|1|किसी को बताएँ कि आप कहाँ हैं, कॉल पर ज़ोर से बोलें, और ख़तरा लगे तो SOS दबाएँ।</item>
+        <item>10 या ज़्यादा कर्मचारियों वाले दफ़्तर में यौन उत्पीड़न की शिकायत कौन सुनेगा?|आंतरिक समिति (Internal Committee)|सिर्फ़ पुलिस|सिक्योरिटी गार्ड|0|POSH कानून के तहत ऐसे हर दफ़्तर में आंतरिक समिति होना ज़रूरी है।</item>
+        <item>POSH कानून के तहत दफ़्तर में यौन उत्पीड़न की शिकायत कितने समय में करनी होती है?|24 घंटे में|एक हफ़्ते में|घटना के तीन महीने के अंदर|2|शिकायत तीन महीने के अंदर करनी चाहिए, और समिति यह समय तीन महीने और बढ़ा सकती है।</item>
+        <item>आपके साफ़ मना करने के बाद भी कोई बार-बार पीछा करता है या मैसेज भेजता है। क्या यह अपराध है?|नहीं, यह सिर्फ़ बदतमीज़ी है|हाँ, पीछा करना (स्टॉकिंग) अपराध है, ऑनलाइन भी|सिर्फ़ तब, जब वह आपको छुए|1|सामने से हो या ऑनलाइन, स्टॉकिंग एक आपराधिक जुर्म है। मैसेज सँभालकर रखें और शिकायत करें।</item>
+        <item>क्या घरेलू हिंसा कानून सिर्फ़ मारपीट पर लागू होता है?|हाँ, सिर्फ़ मारपीट पर|नहीं, गाली-गलौज, मानसिक, यौन और आर्थिक शोषण पर भी|यह सिर्फ़ शादीशुदा महिलाओं के लिए है|1|घरेलू हिंसा से महिलाओं का संरक्षण अधिनियम इन सभी तरह के शोषण पर लागू होता है, और लिव-इन में रहने वाली महिलाओं पर भी।</item>
+        <item>भारत में मुफ़्त कानूनी सहायता किसे मिल सकती है?|हर महिला को, उसकी आमदनी जो भी हो|सिर्फ़ ग़रीबी रेखा से नीचे की महिलाओं को|किसी को नहीं, वकील हमेशा फ़ीस लेते हैं|0|हर महिला अपने ज़िले के विधिक सेवा प्राधिकरण से मुफ़्त कानूनी सहायता ले सकती है।</item>
+        <item>क्या मीडिया या कोई और यौन हिंसा की पीड़िता का नाम छाप सकता है?|हाँ, अगर ख़बर सच है|सिर्फ़ सोशल मीडिया पर|नहीं, उसकी पहचान उजागर करना अपराध है|2|यौन हिंसा की पीड़िता की पहचान उजागर करना दंडनीय अपराध है।</item>
+        <item>आप रात में अकेली चल रही हैं और लगता है कि कोई पीछा कर रहा है। आप क्या करेंगी?|सबसे सुनसान गली से सीधे घर जाएँगी|रोशनी और भीड़ वाली जगह की ओर जाएँगी और किसी को कॉल करेंगी|रुककर अकेले उसका सामना करेंगी|1|लोगों और रोशनी की ओर जाएँ, कॉल पर बनी रहें, और उस व्यक्ति को अपने घर तक न ले जाएँ।</item>
+        <item>पार्टी में आपका ड्रिंक कुछ देर बिना निगरानी के रह गया। सुरक्षित तरीका क्या है?|जल्दी से पी लें|किसी अजनबी से चखवा लें|उसे छोड़ दें और नया ड्रिंक लें|2|बिना निगरानी के रखे ड्रिंक में कुछ मिलाया जा सकता है। हमेशा नया लें।</item>
+        <item>इस ऐप का फ़ेक कॉल टूल किस काम का है?|असहज स्थिति से निकलने का एक भरोसेमंद बहाना देने के लिए|दोस्तों से मज़ाक करने के लिए|पुलिस को कॉल करने के लिए|0|नकली इनकमिंग कॉल से आप बिना बहस किए वहाँ से हट सकती हैं।</item>
+        <item>इस ऐप में ड्यूरेस PIN डालने पर क्या होता है?|ऐप डिलीट हो जाता है|ऐप सामान्य दिखता है लेकिन चुपचाप SOS भेज देता है|कुछ नहीं होता|1|ड्यूरेस PIN उस समय के लिए है जब कोई आपसे ज़बरदस्ती फ़ोन खुलवाए। ऐप सामान्य तरह से खुलता है और चुपके से आपके कॉन्टैक्ट्स को अलर्ट चला जाता है।</item>
+        <item>जब कोई महिला यौन अपराध की शिकायत करती है, तो उसका बयान किसे दर्ज करना चाहिए?|ड्यूटी पर मौजूद कोई भी अधिकारी|महिला पुलिस अधिकारी|कोई पड़ोसी|1|कानून के अनुसार उसका बयान महिला पुलिस अधिकारी को दर्ज करना चाहिए।</item>
+        <item>आप इंटरनेट पर मिले किसी व्यक्ति से पहली बार मिलने जा रही हैं। सबसे सुरक्षित तरीका क्या है?|सार्वजनिक जगह पर मिलें, किसी दोस्त को बताएँ और आने-जाने का इंतज़ाम ख़ुद करें|उसके घर पर मिलें|उसे अपने घर से लेने आने दें|0|सार्वजनिक जगह, आपकी योजना जानने वाला दोस्त और घर लौटने का अपना इंतज़ाम आपको सुरक्षित रखते हैं। मीटिंग मोड आपके लिए टाइमर लगा सकता है।</item>
+        <item>कोई कॉल करके कहता है कि वह आपके बैंक से है और अभी आया OTP माँगता है। आप क्या करेंगी?|बता देंगी, वह बैंक से है|सिर्फ़ आधा OTP बताएँगी|कभी नहीं बताएँगी और कॉल काट देंगी|2|कोई भी बैंक कभी OTP नहीं माँगता। OTP बताने से कोई आपके पैसे निकाल सकता है या खाते पर कब्ज़ा कर सकता है।</item>
+        <item>मुसीबत में फँसे बच्चे के लिए हेल्पलाइन नंबर कौन-सा है?|1098|181|सिर्फ़ 112|0|1098 चाइल्डलाइन है, बच्चों के लिए 24 घंटे की मुफ़्त हेल्पलाइन।</item>
+        <item>अगर दोनों परिवार राज़ी हों, तो क्या दहेज देना या लेना कानूनी है?|हाँ, अगर दोनों राज़ी हों|नहीं, दहेज देना और लेना दोनों अपराध हैं|सिर्फ़ देना अपराध है|1|दहेज निषेध अधिनियम के तहत दहेज देना, लेना और माँगना तीनों दंडनीय हैं।</item>
+        <item>आपने इस ऐप में चेक-इन टाइमर लगाया और समय पर “मैं सुरक्षित हूँ” नहीं दबाया। क्या होगा?|कुछ नहीं, टाइमर बस ख़त्म हो जाएगा|ऐप SOS शुरू करके आपके कॉन्टैक्ट्स को अलर्ट भेजेगा|आपका फ़ोन रीस्टार्ट हो जाएगा|1|चेक-इन छूटने पर SOS शुरू हो जाता है, ताकि आप फ़ोन तक न पहुँच पाएँ तब भी किसी को पता चल जाए।</item>
+        <item>ट्रेन में सफ़र करते समय मदद के लिए कौन-सा नंबर लगाएँ?|139|1930|1098|0|139 रेल मदद हेल्पलाइन है, भारतीय रेल में सुरक्षा और दूसरी मदद के लिए।</item>
+    </string-array>
+</resources>

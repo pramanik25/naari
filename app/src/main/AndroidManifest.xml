@@ -268,6 +268,35 @@
             android:exported="false"
             android:foregroundServiceType="location" />
 
+        <!-- Daily: commute, private cycle tracker, safety quiz -->
+        <activity
+            android:name=".daily.CommuteActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".daily.CycleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".daily.QuizActivity"
+            android:exported="false" />
+
+        <!-- Together: family circle, community safety map, anonymous community -->
+        <activity
+            android:name=".together.CircleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".together.SafetyMapActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".together.CommunityActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".together.ThreadActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
         <!-- User Manual -->
         <activity
             android:name=".ManualActivity"

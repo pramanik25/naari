@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Community feed row: topic, made-up name and age, the text, reply count. -->
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Ns.Card.Tile"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/ns_card_padding">
+
+        <TextView
+            android:id="@+id/topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Ns.Text.Overline"
+            tools:text="Advice" />
+
+        <TextView
+            android:id="@+id/meta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textAppearance="@style/Ns.Text.Caption"
+            tools:text="Sakhi K7P2 · 2 hr. ago" />
+
+        <TextView
+            android:id="@+id/body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:maxLines="6"
+            android:textAppearance="@style/Ns.Text.Body"
+            android:textColor="@color/ns_text"
+            tools:text="How do I talk to HR about a colleague who keeps commenting on my clothes?" />
+
+        <TextView
+            android:id="@+id/replies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textAppearance="@style/Ns.Text.Label"
+            android:textColor="@color/ns_rose"
+            tools:text="3 replies" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

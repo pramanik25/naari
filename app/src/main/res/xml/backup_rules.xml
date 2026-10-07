@@ -4,6 +4,7 @@
      excluded. Settings, contacts and the profile are backed up. -->
 <full-backup-content>
     <exclude domain="file" path="diary/" />
+    <exclude domain="file" path="cycle/" />
     <exclude domain="file" path="Evidence/" />
     <exclude domain="sharedpref" path="__androidx_security_crypto_encrypted_file_pref__.xml" />
     <exclude domain="sharedpref" path="ns_cloud_secure.xml" />

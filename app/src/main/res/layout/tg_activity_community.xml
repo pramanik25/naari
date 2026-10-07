@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ns_bg_gradient"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".together.CommunityActivity">
+
+    <!-- ============ Header ============ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/ns_gutter"
+        android:paddingTop="12dp"
+        android:paddingEnd="@dimen/ns_gutter">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/backButton"
+                style="@style/Ns.Button.Icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="@string/tg_back"
+                app:icon="@drawable/ua_ic_arrow_back" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/rulesButton"
+                style="@style/Ns.Button.Icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="@string/tg_cm_rules_title"
+                app:icon="@drawable/ua_ic_info" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/tg_eyebrow"
+            android:textAppearance="@style/Ns.Text.Overline" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/tg_cm_title"
+            android:textAppearance="@style/Ns.Text.Headline" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/tg_cm_body"
+            android:textAppearance="@style/Ns.Text.Body" />
+
+        <TextView
+            android:id="@+id/cloudOff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/ub_rounded_16"
+            android:backgroundTint="@color/ns_warn_container"
+            android:padding="16dp"
+            android:text="@string/tg_cloud_off"
+            android:textAppearance="@style/Ns.Text.Body"
+            android:textColor="@color/ns_text"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!-- ============ Feed ============ -->
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:clipToPadding="false"
+            android:paddingStart="@dimen/ns_gutter"
+            android:paddingEnd="@dimen/ns_gutter"
+            android:scrollbars="none">
+
+            <!-- Topic chips are added from code; none checked = every topic. -->
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/topicChips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:singleLine="true"
+                app:singleSelection="true" />
+        </HorizontalScrollView>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingStart="@dimen/ns_gutter"
+                android:paddingTop="8dp"
+                android:paddingEnd="@dimen/ns_gutter"
+                android:paddingBottom="16dp" />
+
+            <LinearLayout
+                android:id="@+id/emptyState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingStart="40dp"
+                android:paddingEnd="40dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/tg_cm_empty_title"
+                    android:textAppearance="@style/Ns.Text.Title" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="@string/tg_cm_empty_body"
+                    android:textAppearance="@style/Ns.Text.Body" />
+            </LinearLayout>
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminate="true"
+                android:visibility="gone"
+                app:indicatorColor="@color/ns_rose"
+                app:trackColor="@android:color/transparent" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/newPostButton"
+        style="@style/Ns.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/ns_gutter"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/ns_gutter"
+        android:layout_marginBottom="16dp"
+        android:text="@string/tg_cm_new_post"
+        app:icon="@drawable/ua_ic_edit" />
+</LinearLayout>

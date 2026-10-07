@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Shared -->
+    <string name="tg_back">Back</string>
+    <string name="tg_eyebrow">Together</string>
+    <string name="tg_cloud_off">This needs the Naari Shakti cloud, which is switched off on this phone.</string>
+    <string name="tg_open_settings">Settings</string>
+    <string name="tg_close">Close</string>
+    <string name="tg_delete">Delete</string>
+    <string name="tg_cancel">Cancel</string>
+    <string name="tg_flagged">Reported. Thank you.</string>
+    <string name="tg_error_daily_limit">You have reached today\'s limit. Try again tomorrow.</string>
+    <string name="tg_error_contact_info">Links and phone numbers are not allowed here.</string>
+    <string name="tg_error_offline">No connection. Check your internet and try again.</string>
+    <string name="tg_error_generic">Something went wrong. Try again.</string>
+
+    <!-- Home card and Safety tools tiles -->
+    <string name="tg_section">Together</string>
+    <string name="tg_home_circle">Circle</string>
+    <string name="tg_home_circle_cap">Family on the map</string>
+    <string name="tg_home_map">Safety map</string>
+    <string name="tg_home_map_cap">Unsafe spots nearby</string>
+    <string name="tg_home_community">Community</string>
+    <string name="tg_home_community_cap">Ask and share</string>
+
+    <!-- Family circle -->
+    <string name="tg_ci_title">Family circle</string>
+    <string name="tg_ci_body">See where your guardians and the people you guard were last seen, if they choose to share it.</string>
+    <string name="tg_ci_share">Share my location</string>
+    <string name="tg_ci_share_off">Off. Nobody in your circle can see where you are.</string>
+    <string name="tg_ci_share_on">On. Your circle sees your last position and battery level, updated when you open the app and about every 30 minutes.</string>
+    <string name="tg_ci_share_on_foreground">On. Your position updates when you open the app. For updates in the background, set location to “Allow all the time” in Settings.</string>
+    <string name="tg_ci_need_location">Location permission is needed to share where you are.</string>
+    <string name="tg_ci_map_cd">Map of your circle</string>
+    <string name="tg_ci_empty_title">Nobody in your circle yet</string>
+    <string name="tg_ci_empty_body">Your circle is the people linked to you with a guardian code.</string>
+    <string name="tg_ci_link">Link a guardian</string>
+    <string name="tg_ci_unnamed">Unnamed</string>
+    <string name="tg_ci_marker">%1$s · %2$s</string>
+    <string name="tg_ci_rel_guardian">Your guardian</string>
+    <string name="tg_ci_rel_ward">You are their guardian</string>
+    <string name="tg_ci_rel_both">You guard each other</string>
+    <string name="tg_ci_not_sharing">Not sharing location</string>
+    <string name="tg_ci_seen_battery">%1$s · battery %2$d%%</string>
+    <string name="tg_ci_seen">%1$s</string>
+    <string name="tg_ci_navigate">Open in maps</string>
+    <plurals name="tg_ci_helper_stats">
+        <item quantity="one">As a nearby helper you responded to %1$d of %2$d alert. Thank you.</item>
+        <item quantity="other">As a nearby helper you responded to %1$d of %2$d alerts. Thank you.</item>
+    </plurals>
+
+    <!-- Safety map -->
+    <string name="tg_sm_title">Safety map</string>
+    <string name="tg_sm_body">Places other women marked as unsafe or safe. Reports are anonymous.</string>
+    <string name="tg_sm_map_cd">Map of safety reports</string>
+    <string name="tg_sm_recenter">Go to my location</string>
+    <string name="tg_sm_report">Mark this spot</string>
+    <string name="tg_sm_search_here">Search here</string>
+    <string name="tg_sm_pin_hint">Move the map so the + is on the place you want to mark or search around.</string>
+    <string name="tg_sm_section_nearby">Reports in this area</string>
+    <string name="tg_sm_empty">No reports within 3 km of the +. That does not mean the area is safe.</string>
+    <string name="tg_sm_no_location">Couldn\'t find your location. Move the map and tap “Search here”.</string>
+    <string name="tg_sm_pan_hint">Without location, move the map to a place and tap “Search here”.</string>
+    <string name="tg_sm_detail">Reported %1$s by a Naari Shakti user. Not verified.</string>
+    <string name="tg_sm_deleted">Your report was deleted.</string>
+    <string name="tg_sm_flag">This is wrong</string>
+    <string name="tg_sm_zoom_in">Zoom in closer so the + is on the exact spot.</string>
+    <string name="tg_sm_pick_category">Choose what describes this spot</string>
+    <string name="tg_sm_added">Marked. Thank you for helping others.</string>
+    <string name="tg_sm_sheet_eyebrow">Safety map</string>
+    <string name="tg_sm_sheet_title">What about this spot?</string>
+    <string name="tg_sm_note_hint">Add a note (optional)</string>
+    <string name="tg_sm_sheet_note">Describe the place, not a person. Do not add names, phone numbers or links. In danger right now? Use SOS instead.</string>
+    <string name="tg_sm_submit">Mark this spot</string>
+    <string name="tg_cat_poorly_lit">Poorly lit</string>
+    <string name="tg_cat_isolated">Isolated</string>
+    <string name="tg_cat_harassment">Harassment here</string>
+    <string name="tg_cat_transport">Unsafe transport stop</string>
+    <string name="tg_cat_safe_spot">Safe spot</string>
+
+    <!-- Community -->
+    <string name="tg_cm_title">Community</string>
+    <string name="tg_cm_body">Ask for advice and share what you know. Nobody sees your name.</string>
+    <string name="tg_cm_rules_title">Before you join in</string>
+    <string name="tg_cm_rules_body">• You are anonymous. Every conversation gives you a different made-up name.\n• Be kind. No abuse, shaming or hate.\n• Do not share names, phone numbers, addresses, links or anything that identifies you or someone else.\n• Nobody here is verified. Never agree to meet or move to a private chat with someone from this space.\n• Report anything that breaks these rules. Posts reported by several people are hidden.\n• This is not an emergency service. If you are in danger, use SOS or call 112.</string>
+    <string name="tg_cm_rules_ok">I understand</string>
+    <string name="tg_cm_new_post">Write a post</string>
+    <string name="tg_cm_empty_title">Nothing here yet</string>
+    <string name="tg_cm_empty_body">Be the first to ask a question or share something.</string>
+    <string name="tg_cm_pick_topic">Choose a topic</string>
+    <string name="tg_cm_body_required">Write something first</string>
+    <string name="tg_cm_posted">Posted</string>
+    <string name="tg_cm_meta">%1$s · %2$s</string>
+    <string name="tg_cm_meta_mine">%1$s (you) · %2$s</string>
+    <string name="tg_cm_meta_author">%1$s (started this) · %2$s</string>
+    <plurals name="tg_cm_replies">
+        <item quantity="one">%1$d reply</item>
+        <item quantity="other">%1$d replies</item>
+    </plurals>
+    <string name="tg_cm_sheet_eyebrow">Community</string>
+    <string name="tg_cm_sheet_title">Write a post</string>
+    <string name="tg_cm_body_hint">What do you want to ask or share?</string>
+    <string name="tg_cm_sheet_note">Posted anonymously. No names, phone numbers or links.</string>
+    <string name="tg_cm_post">Post</string>
+    <string name="tg_cm_more">More options</string>
+    <string name="tg_cm_reply_hint">Write a reply</string>
+    <string name="tg_cm_send">Send reply</string>
+    <string name="tg_cm_flag">Report</string>
+    <string name="tg_cm_block">Block this person</string>
+    <string name="tg_cm_delete_title">Delete this?</string>
+    <string name="tg_cm_delete_body">It is removed for everyone and cannot be brought back.</string>
+    <string name="tg_cm_deleted">Deleted</string>
+    <string name="tg_cm_flag_title">Report this?</string>
+    <string name="tg_cm_flag_body">Use this for abuse, personal details, or someone trying to make contact. It is hidden once several people report it.</string>
+    <string name="tg_cm_block_title">Block this person?</string>
+    <string name="tg_cm_block_body">You will no longer see anything they write. They are not told.</string>
+    <string name="tg_cm_blocked">Blocked</string>
+    <string name="tg_topic_advice">Advice</string>
+    <string name="tg_topic_experience">Experiences</string>
+    <string name="tg_topic_legal">Legal</string>
+    <string name="tg_topic_health">Health</string>
+    <string name="tg_topic_support">Support</string>
+</resources>

@@ -180,6 +180,11 @@ public final class Cloud {
                 } catch (Throwable t) {
                     Log.w(TAG, "Helper refresh on open failed", t);
                 }
+                try {
+                    CircleShare.onAppOpened(app);
+                } catch (Throwable t) {
+                    Log.w(TAG, "Circle refresh on open failed", t);
+                }
                 CloudPush.sync(app);
             }
         }

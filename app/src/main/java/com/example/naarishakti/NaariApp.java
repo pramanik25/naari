@@ -7,6 +7,7 @@ import com.example.naarishakti.core.Appearance;
 import com.example.naarishakti.core.Kv;
 import com.example.naarishakti.cloud.CloudModule;
 import com.example.naarishakti.core.SafetyHooks;
+import com.example.naarishakti.daily.DailyNudge;
 import com.example.naarishakti.evidence.EvidenceModule;
 import com.example.naarishakti.mesh.MeshModule;
 import com.example.naarishakti.triggers.TriggerModule;
@@ -25,5 +26,6 @@ public class NaariApp extends Application {
         SafetyHooks.register(new EvidenceModule());
         SafetyHooks.register(new TriggerModule());
         SafetyHooks.register(new MeshModule());
+        DailyNudge.sync(this);
     }
 }

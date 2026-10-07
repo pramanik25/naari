@@ -21,6 +21,14 @@ function helperRouter({ pool }) {
     return res.status(204).end();
   }));
 
+  /** How often this volunteer was alerted and how often she responded (for her badge). */
+  r.get('/helper/stats', ah(async (req, res) => {
+    const { rows: [s] } = await pool.query(
+      `SELECT count(*)::int AS alerted, count(responded_at)::int AS responded
+         FROM incident_helpers WHERE helper_id = $1`, [req.userId]);
+    res.json({ alerted: s.alerted, responded: s.responded });
+  }));
+
   return r;
 }
 

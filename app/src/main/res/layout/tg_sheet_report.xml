@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Bottom sheet: mark the spot under the map pin. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/ns_gutter"
+    android:paddingTop="8dp"
+    android:paddingEnd="@dimen/ns_gutter"
+    android:paddingBottom="28dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tg_sm_sheet_eyebrow"
+        android:textAppearance="@style/Ns.Text.Overline" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/tg_sm_sheet_title"
+        android:textAppearance="@style/Ns.Text.Title" />
+
+    <!-- Category chips are added from code. -->
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/categoryChips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:singleSelection="true" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Ns.TextInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="@string/tg_sm_note_hint"
+        app:counterEnabled="true"
+        app:counterMaxLength="200">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/noteInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLength="200"
+            android:maxLines="3" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/tg_sm_sheet_note"
+        android:textAppearance="@style/Ns.Text.Caption" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/submitButton"
+        style="@style/Ns.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/tg_sm_submit" />
+</LinearLayout>

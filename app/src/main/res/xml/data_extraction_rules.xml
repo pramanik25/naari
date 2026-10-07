@@ -4,6 +4,7 @@
 <data-extraction-rules>
     <cloud-backup>
         <exclude domain="file" path="diary/" />
+        <exclude domain="file" path="cycle/" />
         <exclude domain="file" path="Evidence/" />
         <exclude domain="sharedpref" path="__androidx_security_crypto_encrypted_file_pref__.xml" />
         <exclude domain="sharedpref" path="ns_cloud_secure.xml" />
@@ -12,6 +13,7 @@
     </cloud-backup>
     <device-transfer>
         <exclude domain="file" path="diary/" />
+        <exclude domain="file" path="cycle/" />
         <exclude domain="sharedpref" path="__androidx_security_crypto_encrypted_file_pref__.xml" />
         <exclude domain="sharedpref" path="ns_cloud_secure.xml" />
         <exclude domain="database" path="ns_cloud_outbox.db" />

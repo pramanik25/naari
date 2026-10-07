@@ -192,3 +192,45 @@ Sending (server, only to opted-in numbers of the incident owner, never for other
 - **Incident ended** (not duress) → safe template.
 - **Duress** → nothing that says "safe"; the tracking link keeps working.
 - Failures are logged and retried up to 3 times with backoff; never blocks the API response.
+
+# v1.2 additions: family circle, safety map, community
+
+## Family circle (location between linked people)
+People linked as guardian/ward see each other's latest position, but only from those who switched
+sharing on. Sharing is per user and off by default.
+- `PUT /api/v1/circle/me` `{ "sharing": true, "lat", "lng", "accuracy"?, "battery"?: 0-100 }` → `204`.
+  `{ "sharing": false }` deletes the stored position.
+- `GET /api/v1/circle` → `{ "sharing": bool, "members": [{ "userId", "name",
+  "relation": "guardian"|"ward"|"both", "location": { "lat", "lng", "accuracy", "battery", "updatedAt" } | null }] }`.
+  `relation` is what the other person is to the caller; `location` is null while she is not sharing.
+
+## Community safety map
+Anonymous reports about places. The author is never returned; coordinates are rounded to 4 decimals.
+- `POST /api/v1/places/reports` `{ "category", "lat", "lng", "note"?: ≤200 }` → `201 { "id", "createdAt" }`.
+  `category`: `poorly_lit` | `isolated` | `harassment` | `unsafe_transport` | `safe_spot`.
+  Errors: `invalid_category`, `invalid_location`, `contact_info`, `daily_limit` (10 / 24 h / user, 429).
+- `GET /api/v1/places/reports?lat&lng&radius=2000` (radius in metres, max 10000) →
+  `{ "reports": [{ "id", "category", "lat", "lng", "note", "createdAt", "mine", "distanceM" }] }`,
+  newest first, at most 200, no older than 180 days, without the ones the caller flagged.
+- `DELETE /api/v1/places/reports/{id}` → `204` (own reports only).
+- `POST /api/v1/places/reports/{id}/flag` → `204`. Hidden for everyone after 3 different users flag it.
+
+## Community (anonymous text posts)
+`alias` is a per-thread name like `Sakhi K7P2`: the same person keeps it inside one thread and gets
+another in every other thread. User ids are never returned. Links and phone numbers (9+ digits) are
+refused with `contact_info`.
+- `GET /api/v1/community/posts?topic=&before=<ms>` → `{ "posts": [Post], "nextBefore": <ms>|null }`, 30 per
+  page, newest first. `Post` = `{ "id", "topic", "body", "alias", "replyCount", "createdAt", "mine" }`.
+  `topic`: `advice` | `experience` | `legal` | `health` | `support`.
+- `POST /api/v1/community/posts` `{ "topic", "body": 1-1000 chars }` → `201 Post`. `daily_limit`: 5 / 24 h.
+- `GET /api/v1/community/posts/{id}` → `{ "post": Post, "replies": [{ "id", "body", "alias", "createdAt",
+  "mine", "byAuthor" }] }` (oldest first, at most 300).
+- `POST /api/v1/community/posts/{id}/replies` `{ "body": 1-500 chars }` → `201` reply. `daily_limit`: 40 / 24 h.
+- `DELETE /api/v1/community/posts/{id}`, `DELETE /api/v1/community/replies/{id}` → `204` (own only).
+- `POST /api/v1/community/posts/{id}/flag`, `POST /api/v1/community/replies/{id}/flag` → `204`. Hidden for
+  everyone but the author after 3 different users flag it. `own_content` on your own.
+- `POST /api/v1/community/posts/{id}/block`, `POST /api/v1/community/replies/{id}/block` → `204`. The caller
+  no longer sees anything written by that author; the author is not told.
+
+## Helper stats
+- `GET /api/v1/helper/stats` → `{ "alerted": n, "responded": n }` for the caller as a volunteer helper.
