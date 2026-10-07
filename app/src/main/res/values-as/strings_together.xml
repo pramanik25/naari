@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Shared -->
+    <string name="tg_back">উভতি যাওক</string>
+    <string name="tg_eyebrow">একেলগে</string>
+    <string name="tg_cloud_off">ইয়াৰ বাবে Naari Shakti ক্লাউড লাগে, যিটো এই ফোনত অফ আছে।</string>
+    <string name="tg_open_settings">ছেটিংছ</string>
+    <string name="tg_close">বন্ধ কৰক</string>
+    <string name="tg_delete">মচক</string>
+    <string name="tg_cancel">বাতিল কৰক</string>
+    <string name="tg_flagged">ৰিপ’ৰ্ট কৰা হ’ল। ধন্যবাদ।</string>
+    <string name="tg_error_daily_limit">আজিৰ সীমা শেষ হ’ল। কাইলৈ পুনৰ চেষ্টা কৰক।</string>
+    <string name="tg_error_contact_info">ইয়াত লিংক আৰু ফোন নম্বৰ দিব নোৱাৰি।</string>
+    <string name="tg_error_offline">সংযোগ নাই। ইণ্টাৰনেট চাই লৈ পুনৰ চেষ্টা কৰক।</string>
+    <string name="tg_error_generic">কিবা এটা ভুল হ’ল। পুনৰ চেষ্টা কৰক।</string>
+
+    <!-- Home card and Safety tools tiles -->
+    <string name="tg_section">একেলগে</string>
+    <string name="tg_home_circle">চাৰ্কল</string>
+    <string name="tg_home_circle_cap">মেপত পৰিয়াল</string>
+    <string name="tg_home_map">সুৰক্ষা মেপ</string>
+    <string name="tg_home_map_cap">ওচৰৰ অসুৰক্ষিত ঠাই</string>
+    <string name="tg_home_community">সমাজ</string>
+    <string name="tg_home_community_cap">সোধক আৰু জনাওক</string>
+
+    <!-- Family circle -->
+    <string name="tg_ci_title">পৰিয়ালৰ চাৰ্কল</string>
+    <string name="tg_ci_body">আপোনাৰ অভিভাৱকসকল আৰু আপুনি যিসকলৰ অভিভাৱক, তেওঁলোকক শেষবাৰ ক’ত দেখা গৈছিল চাওক, যদিহে তেওঁলোকে শ্বেয়াৰ কৰিব বিচাৰে।</string>
+    <string name="tg_ci_share">মোৰ অৱস্থান শ্বেয়াৰ কৰক</string>
+    <string name="tg_ci_share_off">অফ। আপোনাৰ চাৰ্কলৰ কোনেও আপুনি ক’ত আছে দেখা নাপায়।</string>
+    <string name="tg_ci_share_on">অন। আপোনাৰ চাৰ্কলে আপোনাৰ শেষ অৱস্থান আৰু বেটাৰীৰ চাৰ্জ দেখা পায়। এপ খুলিলে আৰু প্ৰায় প্ৰতি 30 মিনিটত এইটো আপডেট হয়।</string>
+    <string name="tg_ci_share_on_foreground">অন। এপ খুলিলে আপোনাৰ অৱস্থান আপডেট হয়। বেকগ্ৰাউণ্ডতো আপডেট পাবলৈ ছেটিংছত অৱস্থান “সদায় অনুমতি দিয়ক” কৰি লওক।</string>
+    <string name="tg_ci_need_location">আপুনি ক’ত আছে শ্বেয়াৰ কৰিবলৈ অৱস্থানৰ অনুমতি লাগে।</string>
+    <string name="tg_ci_map_cd">আপোনাৰ চাৰ্কলৰ মেপ</string>
+    <string name="tg_ci_empty_title">আপোনাৰ চাৰ্কলত এতিয়ালৈকে কোনো নাই</string>
+    <string name="tg_ci_empty_body">অভিভাৱক ক’ডেৰে আপোনাৰ লগত সংযুক্ত মানুহখিনিয়েই আপোনাৰ চাৰ্কল।</string>
+    <string name="tg_ci_link">অভিভাৱক সংযোগ কৰক</string>
+    <string name="tg_ci_unnamed">নাম নাই</string>
+    <string name="tg_ci_marker">%1$s · %2$s</string>
+    <string name="tg_ci_rel_guardian">আপোনাৰ অভিভাৱক</string>
+    <string name="tg_ci_rel_ward">আপুনি তেওঁৰ অভিভাৱক</string>
+    <string name="tg_ci_rel_both">আপোনালোক ইজনে সিজনৰ অভিভাৱক</string>
+    <string name="tg_ci_not_sharing">অৱস্থান শ্বেয়াৰ কৰা নাই</string>
+    <string name="tg_ci_seen_battery">%1$s · বেটাৰী %2$d%%</string>
+    <string name="tg_ci_seen">%1$s</string>
+    <string name="tg_ci_navigate">মেপত খোলক</string>
+    <plurals name="tg_ci_helper_stats">
+        <item quantity="one">ওচৰৰ সহায়কাৰী হিচাপে আপুনি %2$d টা সতৰ্কবাৰ্তাৰ ভিতৰত %1$d টাত সঁহাৰি দিছে। ধন্যবাদ।</item>
+        <item quantity="other">ওচৰৰ সহায়কাৰী হিচাপে আপুনি %2$d টা সতৰ্কবাৰ্তাৰ ভিতৰত %1$d টাত সঁহাৰি দিছে। ধন্যবাদ।</item>
+    </plurals>
+
+    <!-- Safety map -->
+    <string name="tg_sm_title">সুৰক্ষা মেপ</string>
+    <string name="tg_sm_body">আন মহিলাসকলে অসুৰক্ষিত বা সুৰক্ষিত বুলি চিহ্নিত কৰা ঠাইবোৰ। ৰিপ’ৰ্টত কাৰো নাম নাথাকে।</string>
+    <string name="tg_sm_map_cd">সুৰক্ষা ৰিপ’ৰ্টৰ মেপ</string>
+    <string name="tg_sm_recenter">মোৰ অৱস্থানলৈ যাওক</string>
+    <string name="tg_sm_report">এই ঠাই চিহ্নিত কৰক</string>
+    <string name="tg_sm_search_here">ইয়াত বিচাৰক</string>
+    <string name="tg_sm_pin_hint">মেপখন লৰাই + চিনটো সেই ঠাইত আনক, যিটো চিহ্নিত কৰিব বিচাৰে বা যাৰ আশে-পাশে বিচাৰিব খোজে।</string>
+    <string name="tg_sm_section_nearby">এই এলেকাৰ ৰিপ’ৰ্ট</string>
+    <string name="tg_sm_empty">+ চিনৰ 3 কিঃমিঃৰ ভিতৰত কোনো ৰিপ’ৰ্ট নাই। তাৰ মানে এইটো নহয় যে এলেকাটো সুৰক্ষিত।</string>
+    <string name="tg_sm_no_location">আপোনাৰ অৱস্থান পোৱা নগ’ল। মেপখন লৰাই “ইয়াত বিচাৰক”-ত টেপ কৰক।</string>
+    <string name="tg_sm_pan_hint">অৱস্থান অবিহনে, মেপখন কোনো ঠাইলৈ লৰাই “ইয়াত বিচাৰক”-ত টেপ কৰক।</string>
+    <string name="tg_sm_detail">এগৰাকী Naari Shakti ব্যৱহাৰকাৰীয়ে %1$s ৰিপ’ৰ্ট কৰিছে। পৰীক্ষা কৰা হোৱা নাই।</string>
+    <string name="tg_sm_deleted">আপোনাৰ ৰিপ’ৰ্ট মচি দিয়া হ’ল।</string>
+    <string name="tg_sm_flag">এইটো ভুল</string>
+    <string name="tg_sm_zoom_in">আৰু জুম কৰক, যাতে + চিনটো সঠিক ঠাইৰ ওপৰত থাকে।</string>
+    <string name="tg_sm_pick_category">এই ঠাইখন কেনেকুৱা, বাছক</string>
+    <string name="tg_sm_added">চিহ্নিত হ’ল। আনক সহায় কৰাৰ বাবে ধন্যবাদ।</string>
+    <string name="tg_sm_sheet_eyebrow">সুৰক্ষা মেপ</string>
+    <string name="tg_sm_sheet_title">এই ঠাইখন কেনেকুৱা?</string>
+    <string name="tg_sm_note_hint">টোকা লিখক (ঐচ্ছিক)</string>
+    <string name="tg_sm_sheet_note">ঠাইখনৰ কথা লিখক, কোনো মানুহৰ কথা নহয়। নাম, ফোন নম্বৰ বা লিংক নিদিব। এই মুহূৰ্তত বিপদত আছে নেকি? তেন্তে SOS ব্যৱহাৰ কৰক।</string>
+    <string name="tg_sm_submit">এই ঠাই চিহ্নিত কৰক</string>
+    <string name="tg_cat_poorly_lit">পোহৰ কম</string>
+    <string name="tg_cat_isolated">নিৰ্জন</string>
+    <string name="tg_cat_harassment">ইয়াত হাৰাশাস্তি হয়</string>
+    <string name="tg_cat_transport">অসুৰক্ষিত ষ্টপ বা ষ্টেণ্ড</string>
+    <string name="tg_cat_safe_spot">সুৰক্ষিত ঠাই</string>
+
+    <!-- Community -->
+    <string name="tg_cm_title">সমাজ</string>
+    <string name="tg_cm_body">পৰামৰ্শ বিচাৰক আৰু আপুনি যি জানে জনাওক। আপোনাৰ নাম কোনেও দেখা নাপায়।</string>
+    <string name="tg_cm_rules_title">যোগ দিয়াৰ আগতে</string>
+    <string name="tg_cm_rules_body">• আপোনাৰ পৰিচয় গোপন থাকে। প্ৰতিটো কথা-বতৰাত আপুনি বেলেগ এটা সজোৱা নাম পায়।\n• ভাল ব্যৱহাৰ কৰক। গালি-গালাজ, কাৰোবাক লাজ দিয়া বা ঘৃণা বিয়পোৱা নচলিব।\n• নাম, ফোন নম্বৰ, ঠিকনা, লিংক বা এনে একো নিদিব, যাৰ পৰা আপোনাক বা আন কাৰোবাক চিনিব পাৰি।\n• ইয়াত কাৰো পৰিচয় পৰীক্ষা কৰা হোৱা নাই। ইয়াৰ কাৰোবাৰ লগত দেখা কৰিবলৈ বা ব্যক্তিগত চেট কৰিবলৈ কেতিয়াও মান্তি নহ’ব।\n• কোনোবাই এই নিয়ম ভাঙিলে ৰিপ’ৰ্ট কৰক। কেইবাজনেও ৰিপ’ৰ্ট কৰিলে সেই পোষ্ট লুকুৱাই দিয়া হয়।\n• এইটো জৰুৰী সেৱা নহয়। বিপদত পৰিলে SOS ব্যৱহাৰ কৰক বা 112-ত কল কৰক।</string>
+    <string name="tg_cm_rules_ok">বুজিলোঁ</string>
+    <string name="tg_cm_new_post">পোষ্ট লিখক</string>
+    <string name="tg_cm_empty_title">ইয়াত এতিয়ালৈকে একো নাই</string>
+    <string name="tg_cm_empty_body">প্ৰথম প্ৰশ্নটো আপুনিয়েই সোধক বা কিবা জনাওক।</string>
+    <string name="tg_cm_pick_topic">এটা বিষয় বাছক</string>
+    <string name="tg_cm_body_required">প্ৰথমে কিবা লিখক</string>
+    <string name="tg_cm_posted">পোষ্ট হ’ল</string>
+    <string name="tg_cm_meta">%1$s · %2$s</string>
+    <string name="tg_cm_meta_mine">%1$s (আপুনি) · %2$s</string>
+    <string name="tg_cm_meta_author">%1$s (পোষ্টটো এওঁৰ) · %2$s</string>
+    <plurals name="tg_cm_replies">
+        <item quantity="one">%1$d টা উত্তৰ</item>
+        <item quantity="other">%1$d টা উত্তৰ</item>
+    </plurals>
+    <string name="tg_cm_sheet_eyebrow">সমাজ</string>
+    <string name="tg_cm_sheet_title">পোষ্ট লিখক</string>
+    <string name="tg_cm_body_hint">কি সুধিব বা জনাব বিচাৰে?</string>
+    <string name="tg_cm_sheet_note">নাম নোহোৱাকৈ পোষ্ট হ’ব। নাম, ফোন নম্বৰ বা লিংক নিদিব।</string>
+    <string name="tg_cm_post">পোষ্ট কৰক</string>
+    <string name="tg_cm_more">আৰু বিকল্প</string>
+    <string name="tg_cm_reply_hint">উত্তৰ লিখক</string>
+    <string name="tg_cm_send">উত্তৰ পঠিয়াওক</string>
+    <string name="tg_cm_flag">ৰিপ’ৰ্ট কৰক</string>
+    <string name="tg_cm_block">এওঁক ব্লক কৰক</string>
+    <string name="tg_cm_delete_title">এইটো মচিব নেকি?</string>
+    <string name="tg_cm_delete_body">এইটো সকলোৰে বাবে মচ খাব আৰু ঘূৰাই আনিব নোৱাৰি।</string>
+    <string name="tg_cm_deleted">মচি দিয়া হ’ল</string>
+    <string name="tg_cm_flag_title">এইটো ৰিপ’ৰ্ট কৰিব নেকি?</string>
+    <string name="tg_cm_flag_body">গালি-গালাজ, ব্যক্তিগত তথ্য, বা কোনোবাই যোগাযোগ কৰিবলৈ চেষ্টা কৰিলে এইটো ব্যৱহাৰ কৰক। কেইবাজনেও ৰিপ’ৰ্ট কৰিলে ইয়াক লুকুৱাই দিয়া হয়।</string>
+    <string name="tg_cm_block_title">এওঁক ব্লক কৰিব নেকি?</string>
+    <string name="tg_cm_block_body">এওঁ লিখা একো আপুনি আৰু দেখা নাপাব। তেওঁক জনোৱা নহয়।</string>
+    <string name="tg_cm_blocked">ব্লক কৰা হ’ল</string>
+    <string name="tg_topic_advice">পৰামৰ্শ</string>
+    <string name="tg_topic_experience">অভিজ্ঞতা</string>
+    <string name="tg_topic_legal">আইনী</string>
+    <string name="tg_topic_health">স্বাস্থ্য</string>
+    <string name="tg_topic_support">সমৰ্থন</string>
+</resources>

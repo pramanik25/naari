@@ -47,8 +47,23 @@ test('profile: guardian code created on first read, stable, well-formed', async 
   assert.equal(b.body.guardianCode, a.body.guardianCode);
   const p = await ctx.api().patch('/api/v1/me').set(u.auth).send({ name: '  Meera   K ' });
   assert.equal(p.status, 200);
-  assert.deepEqual(p.body, { userId: u.userId, name: 'Meera K', guardianCode: a.body.guardianCode });
+  assert.deepEqual(p.body, { userId: u.userId, name: 'Meera K', phone: null, guardianCode: a.body.guardianCode });
   assert.equal((await ctx.api().patch('/api/v1/me').set(u.auth).send({ name: 42 })).status, 400);
+});
+
+test('profile: phone is normalised to E.164, can be cleared, and rejects junk', async () => {
+  const u = await register(ctx.app, 'Meera');
+  const set = await ctx.api().patch('/api/v1/me').set(u.auth).send({ phone: '98123 45678' });
+  assert.equal(set.status, 200);
+  assert.equal(set.body.phone, '+919812345678');
+  assert.equal(set.body.name, 'Meera', 'name untouched when only phone is sent');
+  // a name-only patch leaves the phone alone
+  assert.equal((await ctx.api().patch('/api/v1/me').set(u.auth).send({ name: 'Meera K' })).body.phone, '+919812345678');
+  const bad = await ctx.api().patch('/api/v1/me').set(u.auth).send({ phone: 'not a number' });
+  assert.equal(bad.status, 400);
+  assert.equal(bad.body.error, 'invalid_phone');
+  assert.equal((await ctx.api().get('/api/v1/me').set(u.auth)).body.phone, '+919812345678');
+  assert.equal((await ctx.api().patch('/api/v1/me').set(u.auth).send({ phone: null })).body.phone, null);
 });
 
 test('guardian codes are unique across users', async () => {

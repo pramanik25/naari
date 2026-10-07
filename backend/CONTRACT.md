@@ -27,9 +27,11 @@ client (`app/src/main/java/com/example/naarishakti/cloud/`). Change both togethe
 - `POST /api/v1/devices/register` `{ "deviceName": "Pixel 7", "name": "Asha" }`
   → `201 { "userId": "<uuid>", "token": "<opaque 43+ chars>" }`. Server stores only a SHA-256 of
   the token. Rate-limited per IP.
-- `GET /api/v1/me` → `{ "userId", "name", "guardianCode" }` (guardian code created on first read:
-  6 chars from `ABCDEFGHJKLMNPQRSTUVWXYZ23456789`, unique).
-- `PATCH /api/v1/me` `{ "name"?: string }` → same shape as GET.
+- `GET /api/v1/me` → `{ "userId", "name", "phone", "guardianCode" }` (guardian code created on first
+  read: 6 chars from `ABCDEFGHJKLMNPQRSTUVWXYZ23456789`, unique; `phone` is E.164 or null).
+- `PATCH /api/v1/me` `{ "name"?: string, "phone"?: string | null }` → same shape as GET. `phone` is
+  her own mobile number from the profile, E.164 normalised (Indian 10-digit numbers get `+91`);
+  `null` or `""` clears it, anything else that isn't a phone number is `400 invalid_phone`.
 - `PUT /api/v1/push-token` `{ "token": "<FCM registration token>" }` → `204`. Stored per device
   (keyed by the bearer token); `{ "token": null }` clears it. The server pushes every alert to it
   (see Real-time alerts), so phones get alerts with the app closed.

@@ -30,9 +30,6 @@ import com.example.naarishakti.cloud.Cloud;
 import com.example.naarishakti.cloud.CloudSettingsActivity;
 import com.example.naarishakti.core.Prefs;
 import com.example.naarishakti.core.ProtectionController;
-import com.example.naarishakti.daily.CommuteActivity;
-import com.example.naarishakti.daily.CycleActivity;
-import com.example.naarishakti.daily.QuizActivity;
 import com.example.naarishakti.databinding.JrActivitySafetyToolsBinding;
 import com.example.naarishakti.databinding.JrItemTileBinding;
 import com.example.naarishakti.databinding.JrSheetFakeCallBinding;
@@ -42,9 +39,6 @@ import com.example.naarishakti.evidence.DiaryActivity;
 import com.example.naarishakti.evidence.IncidentsActivity;
 import com.example.naarishakti.security.PinActivity;
 import com.example.naarishakti.security.PinStore;
-import com.example.naarishakti.together.CircleActivity;
-import com.example.naarishakti.together.CommunityActivity;
-import com.example.naarishakti.together.SafetyMapActivity;
 import com.example.naarishakti.triggers.PanicButtonActivity;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.snackbar.Snackbar;
@@ -127,28 +121,6 @@ public class SafetyToolsActivity extends AppCompatActivity {
     // ------------------------------------------------------------------ sections
 
     private void buildSections() {
-        section(R.string.dl_section_daily);
-        row(tile(R.drawable.ua_ic_near_me, R.color.ns_rose, R.color.ns_rose_container,
-                        R.string.dl_home_commute, R.string.dl_home_commute_cap,
-                        v -> open(new Intent(this, CommuteActivity.class))),
-                tile(R.drawable.ub_ic_lightbulb, R.color.ns_gold, R.color.ns_gold_container,
-                        R.string.dl_home_quiz, R.string.dl_home_quiz_cap,
-                        v -> open(new Intent(this, QuizActivity.class))));
-        row(tile(R.drawable.ua_ic_event, R.color.ns_violet, R.color.ns_violet_container,
-                R.string.dl_home_cycle, R.string.dl_home_cycle_cap,
-                v -> open(new Intent(this, CycleActivity.class))), null);
-
-        section(R.string.tg_section);
-        row(tile(R.drawable.ua_ic_group, R.color.ns_info, R.color.ns_info_container,
-                        R.string.tg_home_circle, R.string.tg_home_circle_cap,
-                        v -> open(new Intent(this, CircleActivity.class))),
-                tile(R.drawable.ub_ic_map, R.color.ns_safe, R.color.ns_safe_container,
-                        R.string.tg_home_map, R.string.tg_home_map_cap,
-                        v -> open(new Intent(this, SafetyMapActivity.class))));
-        row(tile(R.drawable.ub_ic_chat, R.color.ns_rose, R.color.ns_rose_container,
-                R.string.tg_home_community, R.string.tg_home_community_cap,
-                v -> open(new Intent(this, CommunityActivity.class))), null);
-
         section(R.string.jr_section_move);
         checkInTile = tile(R.drawable.ua_ic_timer, R.color.ns_rose, R.color.ns_rose_container,
                 R.string.jr_tile_checkin, R.string.jr_tile_checkin_cap,

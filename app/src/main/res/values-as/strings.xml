@@ -215,7 +215,7 @@
     <!-- ===================== Profile ===================== -->
     <string name="profile_overline">আপোনাৰ প্ৰফাইল</string>
     <string name="profile_title">আপোনাৰ বিষয়ে</string>
-    <string name="profile_body">ইয়াৰ দ্বাৰা আপোনাৰ কণ্টেক্ট আৰু উদ্ধাৰকাৰীয়ে আপোনাক চিনি পাব। কেৱল এই ডিভাইচতে ছেভ হৈ থাকে।</string>
+    <string name="profile_body">ইয়াৰ দ্বাৰা আপোনাৰ কণ্টেক্ট আৰু উদ্ধাৰকাৰীয়ে আপোনাক চিনি পাব। আপোনাৰ নাম আৰু ম’বাইল নম্বৰ আপোনাৰ Naari Shakti একাউণ্টতো ছেভ হয়।</string>
     <string name="profile_add_photo">ফটো যোগ কৰিবলৈ টেপ কৰক</string>
     <string name="profile_change_photo">ফটো সলনি কৰিবলৈ টেপ কৰক</string>
     <string name="cd_profile_photo">প্ৰফাইল ফটো। সলনি কৰিবলৈ দুবাৰ টেপ কৰক।</string>

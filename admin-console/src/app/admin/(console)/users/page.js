@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { query } from "@/lib/db";
+import { hasPhoneColumn, query } from "@/lib/db";
 import When from "@/components/When";
 import Pager from "@/components/Pager";
 
@@ -11,17 +11,27 @@ export default async function UsersPage({ searchParams }) {
   const q = (sp?.q || "").trim();
   const page = Math.max(1, Number(sp?.page) || 1);
 
+  const phoneCol = await hasPhoneColumn();
   const params = [];
   let where = "";
   if (q) {
     params.push(`%${q}%`);
     where = `WHERE u.name ILIKE $1 OR u.guardian_code ILIKE $1 OR u.id::text ILIKE $1`;
+    if (phoneCol) {
+      // Numbers are stored as +91XXXXXXXXXX; match however the admin typed it (spaces, dashes, no +).
+      const digits = q.replace(/[\s().+-]/g, "");
+      if (/^\d{3,}$/.test(digits)) {
+        params.push(`%${digits}%`);
+        where += ` OR u.phone LIKE $2`;
+      }
+    }
   }
   params.push(PAGE_SIZE + 1, (page - 1) * PAGE_SIZE);
 
   const rows = await query(
     `
     SELECT u.id, u.name, u.guardian_code, u.created_at, u.whatsapp_enabled,
+           ${phoneCol ? "u.phone" : "NULL::text AS phone"},
            (SELECT count(*) FROM device_tokens d WHERE d.user_id = u.id)                    AS devices,
            (SELECT count(*) FROM guardian_links g WHERE g.ward_id = u.id)                   AS guardians,
            (SELECT count(*) FROM guardian_links g WHERE g.guardian_id = u.id)               AS wards,
@@ -50,7 +60,7 @@ export default async function UsersPage({ searchParams }) {
         <input
           type="search"
           name="q"
-          placeholder="Search name, guardian code or user id…"
+          placeholder="Search name, mobile number, guardian code or user id…"
           defaultValue={q}
           style={{ width: 320 }}
         />
@@ -67,6 +77,7 @@ export default async function UsersPage({ searchParams }) {
           <thead>
             <tr>
               <th>Name</th>
+              <th>Mobile</th>
               <th>Guardian code</th>
               <th>Joined</th>
               <th>Devices</th>
@@ -82,7 +93,7 @@ export default async function UsersPage({ searchParams }) {
           <tbody>
             {users.length === 0 && (
               <tr>
-                <td colSpan={11} className="empty">
+                <td colSpan={12} className="empty">
                   No users found.
                 </td>
               </tr>
@@ -92,6 +103,9 @@ export default async function UsersPage({ searchParams }) {
                 <td>
                   <Link href={`/admin/users/${u.id}`}>{u.name || "Unnamed"}</Link>
                   <div className="dim mono">{u.id.slice(0, 8)}…</div>
+                </td>
+                <td className="mono">
+                  {u.phone ? <a href={`tel:${u.phone}`}>{u.phone}</a> : <span className="dim">—</span>}
                 </td>
                 <td className="mono">{u.guardian_code || "—"}</td>
                 <td>

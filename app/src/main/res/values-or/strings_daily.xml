@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Shared -->
+    <string name="dl_back">ପଛକୁ</string>
+    <string name="dl_save">ସେଭ କରନ୍ତୁ</string>
+    <string name="dl_cancel">ବାତିଲ</string>
+    <string name="dl_delete">ଡିଲିଟ କରନ୍ତୁ</string>
+    <string name="dl_channel_daily">ଦୈନିକ ସ୍ମାରକ</string>
+    <string name="dl_channel_daily_desc">ଆଜିର କୁଇଜ ଓ ଆପଣ ଚାଲୁ କରିଥିବା ସ୍ମାରକ</string>
+
+    <!-- Home card and Safety tools tiles -->
+    <string name="dl_section_daily">ପ୍ରତିଦିନ</string>
+    <string name="dl_home_commute">ଯାତାୟାତ</string>
+    <string name="dl_home_commute_cap">ଗୋଟିଏ ଟ୍ୟାପରେ ଟ୍ରିପ ଟାଇମର</string>
+    <string name="dl_home_commute_active">ଟ୍ରିପ ଚାଲୁଛି</string>
+    <string name="dl_home_cycle">ଋତୁଚକ୍ର</string>
+    <string name="dl_home_cycle_cap">ବ୍ୟକ୍ତିଗତ ଟ୍ରାକର</string>
+    <string name="dl_home_quiz">କୁଇଜ</string>
+    <string name="dl_home_quiz_cap">ଆଜି 3ଟି ପ୍ରଶ୍ନ</string>
+    <plurals name="dl_home_quiz_done">
+        <item quantity="one">ସରିଲା · %1$d ଦିନର ଷ୍ଟ୍ରିକ</item>
+        <item quantity="other">ସରିଲା · %1$d ଦିନର ଷ୍ଟ୍ରିକ</item>
+    </plurals>
+    <plurals name="dl_home_quiz_keep">
+        <item quantity="one">%1$d ଦିନର ଷ୍ଟ୍ରିକ ବଜାୟ ରଖନ୍ତୁ</item>
+        <item quantity="other">%1$d ଦିନର ଷ୍ଟ୍ରିକ ବଜାୟ ରଖନ୍ତୁ</item>
+    </plurals>
+
+    <!-- Commute -->
+    <string name="dl_cm_eyebrow">ପ୍ରତିଦିନ</string>
+    <string name="dl_cm_title">ଦୈନିକ ଯାତାୟାତ</string>
+    <string name="dl_cm_body">ବାହାରିବା ବେଳେ “ବାହାରୁଛି” ଟ୍ୟାପ କରନ୍ତୁ। ସାଧାରଣ ସମୟ ସୁଦ୍ଧା ଆପଣ “ମୁଁ ପହଞ୍ଚିଗଲି” ଟ୍ୟାପ ନ କଲେ, ଆପଣଙ୍କ କଣ୍ଟାକ୍ଟଙ୍କୁ ନିଜେ ନିଜେ ସତର୍କ କରାଯିବ।</string>
+    <string name="dl_cm_active_title">ଟ୍ରିପ ଚାଲୁଛି</string>
+    <string name="dl_cm_active_sub">ଚେକ-ଇନ ପାଇଁ %1$s ବାକି</string>
+    <string name="dl_cm_active_overdue">ଟ୍ରିପର ସମୟ ପାର</string>
+    <string name="dl_cm_active_overdue_sub">ସୁରକ୍ଷିତ ଥିଲେ “ମୁଁ ପହଞ୍ଚିଗଲି” ଟ୍ୟାପ କରନ୍ତୁ</string>
+    <string name="dl_cm_reached">ମୁଁ ପହଞ୍ଚିଗଲି</string>
+    <string name="dl_cm_section_routes">ଆପଣଙ୍କ ରାସ୍ତା</string>
+    <string name="dl_cm_empty">ଏପର୍ଯ୍ୟନ୍ତ କୌଣସି ରାସ୍ତା ନାହିଁ। ଆପଣ ପ୍ରାୟ ପ୍ରତିଦିନ କରୁଥିବା ଯାତ୍ରା ଯୋଡ଼ନ୍ତୁ।</string>
+    <string name="dl_cm_add">ରାସ୍ତା ଯୋଡ଼ନ୍ତୁ</string>
+    <string name="dl_cm_note">ଟ୍ରିପ ହେଉଛି ଏକ ଚେକ-ଇନ ଟାଇମର। ଟାଇମର ସ୍କ୍ରିନରୁ ଆପଣ ଯେକୌଣସି ସମୟରେ ସମୟ ବଢ଼ାଇପାରିବେ ବା ଚେକ-ଇନ କରିପାରିବେ।</string>
+    <string name="dl_cm_leaving">ବାହାରୁଛି</string>
+    <string name="dl_cm_minutes">%1$d ମିନିଟ</string>
+    <string name="dl_cm_default_to_work">ଘରୁ ଅଫିସ</string>
+    <string name="dl_cm_default_to_home">ଅଫିସରୁ ଘର</string>
+    <string name="dl_cm_already_running">ଗୋଟିଏ ଟ୍ରିପ ପୂର୍ବରୁ ଚାଲୁଛି। ପ୍ରଥମେ ଚେକ-ଇନ କରନ୍ତୁ।</string>
+    <string name="dl_cm_add_title">ନୂଆ ରାସ୍ତା</string>
+    <string name="dl_cm_edit_title">ରାସ୍ତା ବଦଳାନ୍ତୁ</string>
+    <string name="dl_cm_name_hint">ରାସ୍ତାର ନାମ</string>
+    <string name="dl_cm_name_placeholder">ଘରୁ କଲେଜ</string>
+    <string name="dl_cm_name_required">ରାସ୍ତାକୁ ଏକ ନାମ ଦିଅନ୍ତୁ</string>
+    <string name="dl_cm_duration_label">ସାଧାରଣତଃ ଲାଗୁଥିବା ସମୟ</string>
+
+    <!-- Cycle tracker -->
+    <string name="dl_cy_eyebrow">ବ୍ୟକ୍ତିଗତ</string>
+    <string name="dl_cy_title">ଋତୁଚକ୍ର ଟ୍ରାକର</string>
+    <string name="dl_cy_body">ଆପଣଙ୍କ ପିରିୟଡ, ମୁଡ ଓ ଲକ୍ଷଣ ଲେଖି ରଖନ୍ତୁ। ସବୁକିଛି ଏହି ଫୋନରେ ଏନକ୍ରିପ୍ଟ ହୋଇ ରହେ ଏବଂ କେବେ ଅପଲୋଡ ହୁଏ ନାହିଁ।</string>
+    <string name="dl_cy_locked_title">ଟ୍ରାକର ଲକ ଅଛି</string>
+    <string name="dl_cy_locked_body">ଖୋଲିବାକୁ ଆପଣଙ୍କ ଆପ PIN ଦିଅନ୍ତୁ।</string>
+    <string name="dl_cy_unlock">ଅନଲକ କରନ୍ତୁ</string>
+    <string name="dl_cy_pin_title">ଆପଣଙ୍କ ଟ୍ରାକର ଅନଲକ କରନ୍ତୁ</string>
+    <string name="dl_cy_log_today">ଆଜିର ଲେଖନ୍ତୁ</string>
+    <string name="dl_cy_prev_month">ପୂର୍ବ ମାସ</string>
+    <string name="dl_cy_next_month">ପର ମାସ</string>
+    <string name="dl_cy_legend_period">ପିରିୟଡ</string>
+    <string name="dl_cy_legend_predicted">ଅନୁମାନିତ</string>
+    <string name="dl_cy_legend_fertile">ଫର୍ଟାଇଲ</string>
+    <string name="dl_cy_stat_cycle">ହାରାହାରି ଚକ୍ର</string>
+    <string name="dl_cy_stat_period">ହାରାହାରି ପିରିୟଡ</string>
+    <plurals name="dl_cy_days">
+        <item quantity="one">%1$d ଦିନ</item>
+        <item quantity="other">%1$d ଦିନ</item>
+    </plurals>
+    <string name="dl_cy_reminder">ପିରିୟଡ ପୂର୍ବରୁ ମନେ ପକାନ୍ତୁ</string>
+    <string name="dl_cy_reminder_sub">ଦୁଇ ଦିନ ପୂର୍ବରୁ ଏକ ସାଧାରଣ ନୋଟିଫିକେସନ। ଏଥିରେ ପିରିୟଡର ଉଲ୍ଲେଖ କେବେ ନ ଥାଏ।</string>
+    <string name="dl_cy_disclaimer">ଅନୁମାନିତ ଓ ଫର୍ଟାଇଲ ଦିନ ଆପଣଙ୍କ ନିଜ ହାରାହାରିରୁ କରାଯାଇଥିବା ଅନୁମାନ ମାତ୍ର। ଏହା ଡାକ୍ତରୀ ପରାମର୍ଶ ନୁହେଁ ଏବଂ ଗର୍ଭଧାରଣ ରୋକିବା ବା ଯୋଜନା କରିବା ପାଇଁ ଏହା ଉପରେ ଭରସା କରିବା ଉଚିତ ନୁହେଁ।</string>
+    <string name="dl_cy_summary_empty">ଆପଣଙ୍କ ପ୍ରଥମ ପିରିୟଡ ଲେଖନ୍ତୁ</string>
+    <string name="dl_cy_summary_empty_sub">କ୍ୟାଲେଣ୍ଡରରେ ଯେଉଁ ଦିନ ପିରିୟଡ ଆରମ୍ଭ ହୋଇଥିଲା ସେହି ଦିନ ଟ୍ୟାପ କରନ୍ତୁ। ଆପଣ ଯେତେ ଚକ୍ର ଲେଖିବେ, ଅନୁମାନ ସେତେ ଭଲ ହେବ।</string>
+    <string name="dl_cy_summary_period">ପିରିୟଡ · ଦିନ %1$d</string>
+    <string name="dl_cy_summary_day">ଆପଣଙ୍କ ଚକ୍ରର ଦିନ %1$d</string>
+    <plurals name="dl_cy_next_in">
+        <item quantity="one">ପ୍ରାୟ %1$d ଦିନରେ ପର ପିରିୟଡ (%2$s)</item>
+        <item quantity="other">ପ୍ରାୟ %1$d ଦିନରେ ପର ପିରିୟଡ (%2$s)</item>
+    </plurals>
+    <string name="dl_cy_next_today">ଆଜି ଆପଣଙ୍କ ପିରିୟଡ ଆସିବାର ଅନୁମାନ ଅଛି</string>
+    <plurals name="dl_cy_next_late">
+        <item quantity="one">ଆପଣଙ୍କ ପିରିୟଡ %1$d ଦିନ ଡେରି ହୋଇଛି</item>
+        <item quantity="other">ଆପଣଙ୍କ ପିରିୟଡ %1$d ଦିନ ଡେରି ହୋଇଛି</item>
+    </plurals>
+    <string name="dl_cy_default_cycle_note">ଆପଣ ଦୁଇଟି ପିରିୟଡ ଲେଖିବା ପର୍ଯ୍ୟନ୍ତ ଅନୁମାନ ସାଧାରଣ 28 ଦିନର ଚକ୍ର ଉପରେ ଆଧାରିତ।</string>
+    <string name="dl_cy_load_error">ଆପଣଙ୍କ ରେକର୍ଡ ଖୋଲିପାରିଲା ନାହିଁ। କିଛି ବଦଳାଯାଇନାହିଁ।</string>
+    <string name="dl_cy_save_error">ସେଭ ହୋଇପାରିଲା ନାହିଁ। ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।</string>
+    <string name="dl_cy_sheet_eyebrow">ଦୈନିକ ରେକର୍ଡ</string>
+    <string name="dl_cy_sheet_period">ପିରିୟଡର ଦିନ</string>
+    <string name="dl_cy_sheet_flow">ଫ୍ଲୋ</string>
+    <string name="dl_cy_flow_light">ହାଲୁକା</string>
+    <string name="dl_cy_flow_medium">ମଧ୍ୟମ</string>
+    <string name="dl_cy_flow_heavy">ଅଧିକ</string>
+    <string name="dl_cy_sheet_mood">ମୁଡ</string>
+    <string name="dl_cy_mood_1">😞 ମନ ଖରାପ</string>
+    <string name="dl_cy_mood_2">😕 ଅସ୍ଥିର</string>
+    <string name="dl_cy_mood_3">😐 ଠିକଠାକ</string>
+    <string name="dl_cy_mood_4">🙂 ଭଲ</string>
+    <string name="dl_cy_mood_5">😄 ବହୁତ ଭଲ</string>
+    <string name="dl_cy_sheet_symptoms">ଲକ୍ଷଣ</string>
+    <string name="dl_cy_sym_cramps">ପେଟ ମୋଡ଼ା</string>
+    <string name="dl_cy_sym_headache">ମୁଣ୍ଡବିନ୍ଧା</string>
+    <string name="dl_cy_sym_backache">ଅଣ୍ଟା ବିନ୍ଧା</string>
+    <string name="dl_cy_sym_bloating">ପେଟ ଫୁଲିବା</string>
+    <string name="dl_cy_sym_fatigue">କ୍ଳାନ୍ତି</string>
+    <string name="dl_cy_sym_acne">ବ୍ରଣ</string>
+    <string name="dl_cy_sym_tender">ସ୍ତନରେ ଯନ୍ତ୍ରଣା</string>
+    <string name="dl_cy_sym_nausea">ବାନ୍ତି ଲାଗିବା</string>
+    <string name="dl_cy_sheet_clear">ଏହି ଦିନର ରେକର୍ଡ ହଟାନ୍ତୁ</string>
+
+    <!-- Quiz -->
+    <string name="dl_quiz_eyebrow">ପ୍ରତିଦିନ</string>
+    <string name="dl_quiz_title">ସୁରକ୍ଷା କୁଇଜ</string>
+    <string name="dl_quiz_stat_streak">ଷ୍ଟ୍ରିକ</string>
+    <string name="dl_quiz_stat_points">ପଏଣ୍ଟ</string>
+    <string name="dl_quiz_stat_level">ଲେଭଲ</string>
+    <plurals name="dl_quiz_days">
+        <item quantity="one">%1$d ଦିନ</item>
+        <item quantity="other">%1$d ଦିନ</item>
+    </plurals>
+    <string name="dl_quiz_progress">ପ୍ରଶ୍ନ %1$d / %2$d</string>
+    <string name="dl_quiz_progress_practice">ଅଭ୍ୟାସ · ପ୍ରଶ୍ନ %1$d / %2$d</string>
+    <string name="dl_quiz_correct">ଠିକ ଉତ୍ତର</string>
+    <string name="dl_quiz_wrong">ଠିକ ନୁହେଁ</string>
+    <string name="dl_quiz_next">ପର ପ୍ରଶ୍ନ</string>
+    <string name="dl_quiz_finish">ମୋ ଫଳାଫଳ ଦେଖନ୍ତୁ</string>
+    <string name="dl_quiz_score">%1$d / %2$d</string>
+    <string name="dl_quiz_result_perfect">ସବୁ ଠିକ!</string>
+    <string name="dl_quiz_result_good">ବହୁତ ଭଲ</string>
+    <string name="dl_quiz_result_low">ଏବେ ଆପଣ ଜାଣିଲେ</string>
+    <string name="dl_quiz_result_points">+%1$d ପଏଣ୍ଟ। ନୂଆ ପ୍ରଶ୍ନ କାଲି ମିଳିବ।</string>
+    <string name="dl_quiz_result_done">ଆଜିର କୁଇଜ ସରିଲା। ନୂଆ ପ୍ରଶ୍ନ କାଲି ମିଳିବ।</string>
+    <string name="dl_quiz_result_practice">ଏହା ଅଭ୍ୟାସ ଥିଲା। ପଏଣ୍ଟ ଦୈନିକ କୁଇଜରୁ ମିଳେ।</string>
+    <string name="dl_quiz_level_next">ଲେଭଲ: %1$s · ପର ଲେଭଲ ପାଇଁ %2$d ପଏଣ୍ଟ</string>
+    <string name="dl_quiz_level_top">ଲେଭଲ: %1$s · ସବୁଠାରୁ ଉଚ୍ଚ ଲେଭଲ</string>
+    <string name="dl_quiz_level_1">ଆରମ୍ଭ</string>
+    <string name="dl_quiz_level_2">ସଚେତନ</string>
+    <string name="dl_quiz_level_3">ସତର୍କ</string>
+    <string name="dl_quiz_level_4">ରକ୍ଷକ</string>
+    <string name="dl_quiz_level_5">ଶକ୍ତି</string>
+    <string name="dl_quiz_share">ମୋ ଷ୍ଟ୍ରିକ ସେୟାର କରନ୍ତୁ</string>
+    <string name="dl_quiz_share_text">Naari Shakti ର ସୁରକ୍ଷା କୁଇଜରେ ମୋର %1$s ର ଷ୍ଟ୍ରିକ ଓ %2$d ପଏଣ୍ଟ ଅଛି। ଆପଣ ନିଜ ଅଧିକାର ଓ ହେଲ୍ପଲାଇନ ନମ୍ବର ଜାଣନ୍ତି କି?</string>
+    <string name="dl_quiz_practice">ଆହୁରି ଅଭ୍ୟାସ କରନ୍ତୁ</string>
+    <string name="dl_quiz_reminder">ଦୈନିକ କୁଇଜ ସ୍ମାରକ</string>
+    <string name="dl_quiz_reminder_sub">ଆପଣ ଖେଳି ନ ଥିଲେ ସନ୍ଧ୍ୟାରେ ଗୋଟିଏ ନୋଟିଫିକେସନ</string>
+
+    <!-- Daily reminder notifications -->
+    <string name="dl_nudge_quiz_title">ଆଜିର ସୁରକ୍ଷା କୁଇଜ ପ୍ରସ୍ତୁତ</string>
+    <string name="dl_nudge_quiz_text">ତିନୋଟି ଛୋଟ ପ୍ରଶ୍ନ। ମାତ୍ର ଏକ ମିନିଟ ଲାଗିବ।</string>
+    <plurals name="dl_nudge_quiz_streak">
+        <item quantity="one">%1$d ଦିନର ଷ୍ଟ୍ରିକ ବଜାୟ ରଖିବାକୁ ଏବେ ଖେଳନ୍ତୁ।</item>
+        <item quantity="other">%1$d ଦିନର ଷ୍ଟ୍ରିକ ବଜାୟ ରଖିବାକୁ ଏବେ ଖେଳନ୍ତୁ।</item>
+    </plurals>
+    <string name="dl_nudge_cycle_title">Naari Shakti ତରଫରୁ ଏକ ସ୍ମାରକ</string>
+    <string name="dl_nudge_cycle_text">ଦେଖିବାକୁ ଆପ ଖୋଲନ୍ତୁ।</string>
+
+    <!--
+        Quiz bank. Each item: question|option A|option B|option C|index of the right option (0-2)|explanation.
+        Keep the count a multiple of 3 and never use the | character inside a text.
+        Translations must keep the same order and the same right-option index.
+    -->
+    <string-array name="dl_quiz_items">
+        <item>ଭାରତର ଯେକୌଣସି ଜାଗାରୁ ପୋଲିସ, ଅଗ୍ନିଶମ ଓ ଆମ୍ବୁଲାନ୍ସ ପାଇଁ କେଉଁ ଗୋଟିଏ ନମ୍ବର?|112|1098|139|0|112 ହେଉଛି ସବୁ ଜରୁରୀ ସେବା ପାଇଁ ଗୋଟିଏ ନମ୍ବର। ଏହା ଯେକୌଣସି ଫୋନରୁ, ବାଲାନ୍ସ ନ ଥିଲେ ବି ଲାଗେ।</item>
+        <item>ମହିଳା ହେଲ୍ପଲାଇନ ନମ୍ବର କେଉଁଟି?|1930|181|139|1|ଅଧିକାଂଶ ରାଜ୍ୟରେ 181 ହେଉଛି ମହିଳା ହେଲ୍ପଲାଇନ। 1091 ହେଉଛି ମହିଳା ପୋଲିସ ହେଲ୍ପଲାଇନ।</item>
+        <item>ଅନଲାଇନ ହଇରାଣ, ବ୍ଲାକମେଲ ବା ସାଇବର ଠକେଇର ଅଭିଯୋଗ କେଉଁଠି କରିବେ?|ହେଲ୍ପଲାଇନ 1930 ବା cybercrime.gov.in|କେବଳ ମୋବାଇଲ କମ୍ପାନୀରେ|ଏହାର ଅଭିଯୋଗ ହୋଇପାରିବ ନାହିଁ|0|1930 କୁ କଲ କରନ୍ତୁ ବା cybercrime.gov.in ରେ ଅଭିଯୋଗ କରନ୍ତୁ। ସ୍କ୍ରିନସଟ ପ୍ରମାଣ ଭାବେ ରଖନ୍ତୁ।</item>
+        <item>ଥାନା କହୁଛି ଘଟଣା ତାଙ୍କ ଅଞ୍ଚଳ ବାହାରେ ଘଟିଛି। ଆପଣ କ’ଣ ମାଗିପାରିବେ?|କିଛି ନୁହେଁ, ଆପଣଙ୍କୁ ସେଠାକୁ ଯିବାକୁ ପଡ଼ିବ|ଜିରୋ FIR|ଲିଖିତ କ୍ଷମା|1|ଯେକୌଣସି ଥାନା ଜିରୋ FIR ଦର୍ଜ କରି ତାହାକୁ ଠିକ ଥାନାକୁ ପଠାଇବାକୁ ବାଧ୍ୟ।</item>
+        <item>ପୋଲିସ ସୂର୍ଯ୍ୟାସ୍ତ ପରେ ଓ ସୂର୍ଯ୍ୟୋଦୟ ପୂର୍ବରୁ କୌଣସି ମହିଳାଙ୍କୁ ଗିରଫ କରିପାରିବ କି?|ହଁ, ଯେକୌଣସି ସମୟରେ|କେବେ ନୁହେଁ, କୌଣସି ପରିସ୍ଥିତିରେ ନୁହେଁ|କେବଳ ବ୍ୟତିକ୍ରମ କ୍ଷେତ୍ରରେ, ମହିଳା ଅଧିକାରୀଙ୍କ ଦ୍ୱାରା ଓ ମାଜିଷ୍ଟ୍ରେଟଙ୍କ ଲିଖିତ ଅନୁମତି ନେଇ|2|ଆଇନ ମହିଳାଙ୍କୁ ରାତିରେ ଗିରଫ ହେବାରୁ ରକ୍ଷା କରେ। କେବଳ ବ୍ୟତିକ୍ରମ କ୍ଷେତ୍ରରେ ମାଜିଷ୍ଟ୍ରେଟଙ୍କ ପୂର୍ବ ଲିଖିତ ଅନୁମତି ଥିଲେ ଏହା ହୋଇପାରେ।</item>
+        <item>ବୁକ କରିଥିବା କ୍ୟାବରେ ବସିବା ପୂର୍ବରୁ ଆପଣ କ’ଣ ଯାଞ୍ଚ କରିବା ଉଚିତ?|ନମ୍ବର ପ୍ଲେଟ ଓ ଡ୍ରାଇଭର ଆପ ସହ ମେଳ ଖାଉଛି କି|ଗାଡ଼ି ସଫା ଅଛି କି|ଡ୍ରାଇଭର ତରତର ଅଛନ୍ତି କି|0|ସବୁବେଳେ ନମ୍ବର ପ୍ଲେଟ ଓ ଡ୍ରାଇଭରକୁ ବୁକିଂ ସହ ମିଳାନ୍ତୁ। ଏହି ଆପର କ୍ୟାବ ମୋଡ ନମ୍ବର ପ୍ଲେଟ ଆପଣଙ୍କ କଣ୍ଟାକ୍ଟଙ୍କୁ ପଠାଇପାରେ।</item>
+        <item>ଆପଣଙ୍କ କ୍ୟାବ ଏକ ଅଚିହ୍ନା ରାସ୍ତାରେ ଯାଉଛି। ସବୁଠାରୁ ଭଲ ପ୍ରଥମ ପଦକ୍ଷେପ କ’ଣ?|ଚୁପ ରହି ଅପେକ୍ଷା କରନ୍ତୁ|ଲାଇଭ ଲୋକେସନ ସେୟାର କରନ୍ତୁ, କାହାକୁ କଲ କରନ୍ତୁ ଓ ଭିଡ଼ ଥିବା ଜାଗାରେ ରଖିବାକୁ କୁହନ୍ତୁ|ଫୋନ ବନ୍ଦ କରିଦିଅନ୍ତୁ|1|ଆପଣ କେଉଁଠି ଅଛନ୍ତି କାହାକୁ ଜଣାନ୍ତୁ, କଲରେ ଜୋରରେ କୁହନ୍ତୁ, ଏବଂ ବିପଦ ଲାଗିଲେ SOS ବ୍ୟବହାର କରନ୍ତୁ।</item>
+        <item>10 ବା ଅଧିକ କର୍ମଚାରୀ ଥିବା କର୍ମସ୍ଥଳରେ ଯୌନ ହଇରାଣର ଅଭିଯୋଗ କିଏ ଶୁଣିବ?|ଆଭ୍ୟନ୍ତରୀଣ କମିଟି (Internal Committee)|କେବଳ ପୋଲିସ|ସିକ୍ୟୁରିଟି ଗାର୍ଡ|0|POSH ଆଇନ ଅନୁସାରେ ଏପରି ପ୍ରତ୍ୟେକ କର୍ମସ୍ଥଳରେ ଆଭ୍ୟନ୍ତରୀଣ କମିଟି ରହିବା ବାଧ୍ୟତାମୂଳକ।</item>
+        <item>POSH ଆଇନ ଅନୁସାରେ କର୍ମସ୍ଥଳରେ ଯୌନ ହଇରାଣର ଅଭିଯୋଗ କେତେ ସମୟ ଭିତରେ କରିବାକୁ ହୁଏ?|24 ଘଣ୍ଟା|ଏକ ସପ୍ତାହ|ଘଟଣାର ତିନି ମାସ ଭିତରେ|2|ଅଭିଯୋଗ ତିନି ମାସ ଭିତରେ କରିବା ଉଚିତ, ଏବଂ କମିଟି ଏହାକୁ ଆଉ ତିନି ମାସ ବଢ଼ାଇପାରେ।</item>
+        <item>ଆପଣ ସ୍ପଷ୍ଟ ମନା କରିବା ପରେ ବି କେହି ବାରମ୍ବାର ପିଛା କରୁଛି ବା ମେସେଜ ପଠାଉଛି। ଏହା ଅପରାଧ କି?|ନା, ଏହା କେବଳ ଅଭଦ୍ରତା|ହଁ, ପିଛା କରିବା (ଷ୍ଟକିଂ) ଅପରାଧ, ଅନଲାଇନରେ ବି|କେବଳ ସେ ଆପଣଙ୍କୁ ଛୁଇଁଲେ|1|ସାମ୍ନାସାମ୍ନି ହେଉ ବା ଅନଲାଇନ, ଷ୍ଟକିଂ ଏକ ଫୌଜଦାରୀ ଅପରାଧ। ମେସେଜ ସାଇତି ରଖନ୍ତୁ ଓ ଅଭିଯୋଗ କରନ୍ତୁ।</item>
+        <item>ଘରୋଇ ହିଂସା ଆଇନ କେବଳ ଶାରୀରିକ ହିଂସା ପାଇଁ କି?|ହଁ, କେବଳ ଶାରୀରିକ ହିଂସା|ନା, ଗାଳିଗୁଲଜ, ମାନସିକ, ଯୌନ ଓ ଆର୍ଥିକ ନିର୍ଯାତନା ବି|ଏହା କେବଳ ବିବାହିତ ମହିଳାଙ୍କ ପାଇଁ|1|ଘରୋଇ ହିଂସାରୁ ମହିଳା ସୁରକ୍ଷା ଆଇନ ଏହି ସବୁ ପ୍ରକାରର ନିର୍ଯାତନା ଉପରେ ଲାଗୁ ହୁଏ, ଲିଭ-ଇନ ସମ୍ପର୍କରେ ଥିବା ମହିଳାଙ୍କ ପାଇଁ ବି।</item>
+        <item>ଭାରତରେ ମାଗଣା ଆଇନ ସହାୟତା କିଏ ପାଇପାରିବ?|ପ୍ରତ୍ୟେକ ମହିଳା, ତାଙ୍କ ଆୟ ଯାହା ହେଉ|କେବଳ ଦାରିଦ୍ର୍ୟ ସୀମାରେଖା ତଳର ମହିଳା|କେହି ନୁହେଁ, ଓକିଲ ସବୁବେଳେ ଫି ନିଅନ୍ତି|0|ପ୍ରତ୍ୟେକ ମହିଳା ନିଜ ଜିଲ୍ଲାର ଆଇନ ସେବା ପ୍ରାଧିକରଣରୁ ମାଗଣା ଆଇନ ସହାୟତା ପାଇପାରିବେ।</item>
+        <item>ଗଣମାଧ୍ୟମ ବା ଅନ୍ୟ କେହି ଯୌନ ନିର୍ଯାତନାର ପୀଡ଼ିତାଙ୍କ ନାମ ପ୍ରକାଶ କରିପାରିବେ କି?|ହଁ, ଖବର ସତ ହୋଇଥିଲେ|କେବଳ ସୋସିଆଲ ମିଡିଆରେ|ନା, ତାଙ୍କ ପରିଚୟ ପ୍ରକାଶ କରିବା ଅପରାଧ|2|ଯୌନ ନିର୍ଯାତନାର ପୀଡ଼ିତାଙ୍କ ପରିଚୟ ପ୍ରକାଶ କରିବା ଦଣ୍ଡନୀୟ ଅପରାଧ।</item>
+        <item>ଆପଣ ରାତିରେ ଏକା ଚାଲୁଛନ୍ତି ଏବଂ ଲାଗୁଛି କେହି ପିଛା କରୁଛି। ଆପଣ କ’ଣ କରିବେ?|ସବୁଠାରୁ ନିଛାଟିଆ ଗଳି ଦେଇ ସିଧା ଘରକୁ ଯିବେ|ଆଲୁଅ ଓ ଭିଡ଼ ଥିବା ଜାଗା ଆଡ଼କୁ ଯିବେ ଓ କାହାକୁ କଲ କରିବେ|ଅଟକି ଏକା ତା’ର ସାମ୍ନା କରିବେ|1|ଲୋକ ଓ ଆଲୁଅ ଆଡ଼କୁ ଯାଆନ୍ତୁ, କଲରେ ରୁହନ୍ତୁ, ଏବଂ ସେହି ବ୍ୟକ୍ତିକୁ ନିଜ ଘର ପର୍ଯ୍ୟନ୍ତ ଆଣନ୍ତୁ ନାହିଁ।</item>
+        <item>ପାର୍ଟିରେ ଆପଣଙ୍କ ପାନୀୟ କିଛି ସମୟ ନଜର ବାହାରେ ରହିଗଲା। ସୁରକ୍ଷିତ ଉପାୟ କ’ଣ?|ଶୀଘ୍ର ପିଇ ସାରିଦିଅନ୍ତୁ|କୌଣସି ଅଚିହ୍ନା ଲୋକକୁ ଚାଖିବାକୁ କୁହନ୍ତୁ|ତାହା ଛାଡ଼ି ନୂଆ ନିଅନ୍ତୁ|2|ନଜର ବାହାରେ ଥିବା ପାନୀୟରେ କିଛି ମିଶାଯାଇପାରେ। ସବୁବେଳେ ନୂଆ ନିଅନ୍ତୁ।</item>
+        <item>ଏହି ଆପର ନକଲି କଲ ଟୁଲ କେଉଁ କାମର?|ଅସ୍ୱସ୍ତିକର ପରିସ୍ଥିତିରୁ ବାହାରିବାକୁ ଏକ ବିଶ୍ୱାସଯୋଗ୍ୟ କାରଣ ଦେବା ପାଇଁ|ସାଙ୍ଗମାନଙ୍କ ସହ ମଜା କରିବା ପାଇଁ|ପୋଲିସକୁ କଲ କରିବା ପାଇଁ|0|ନକଲି ଇନକମିଂ କଲ ଯୋଗୁଁ ଆପଣ ବିନା ଝଗଡ଼ାରେ ସେଠାରୁ ଚାଲିଯାଇପାରିବେ।</item>
+        <item>ଏହି ଆପରେ ଜବରଦସ୍ତି PIN ଦେଲେ କ’ଣ ହୁଏ?|ଆପ ଡିଲିଟ ହୋଇଯାଏ|ଆପ ସାଧାରଣ ଦେଖାଯାଏ କିନ୍ତୁ ଚୁପଚାପ SOS ପଠାଏ|କିଛି ହୁଏ ନାହିଁ|1|ଜବରଦସ୍ତି PIN ସେହି ସମୟ ପାଇଁ, ଯେତେବେଳେ କେହି ଆପଣଙ୍କୁ ଜୋର କରି ଫୋନ ଖୋଲାଏ। ଆପ ସାଧାରଣ ଭାବେ ଖୋଲେ ଏବଂ ଗୋପନରେ ଆପଣଙ୍କ କଣ୍ଟାକ୍ଟଙ୍କୁ ସତର୍କ କରେ।</item>
+        <item>ଜଣେ ମହିଳା ଯୌନ ଅପରାଧର ଅଭିଯୋଗ କଲେ, ତାଙ୍କ ବୟାନ କିଏ ରେକର୍ଡ କରିବା ଉଚିତ?|ଡ୍ୟୁଟିରେ ଥିବା ଯେକୌଣସି ଅଧିକାରୀ|ଜଣେ ମହିଳା ପୋଲିସ ଅଧିକାରୀ|ଜଣେ ପଡ଼ୋଶୀ|1|ଆଇନ ଅନୁସାରେ ତାଙ୍କ ବୟାନ ଜଣେ ମହିଳା ପୋଲିସ ଅଧିକାରୀ ରେକର୍ଡ କରିବା ଦରକାର।</item>
+        <item>ଇଣ୍ଟରନେଟରେ ପରିଚୟ ହୋଇଥିବା କାହାକୁ ଆପଣ ପ୍ରଥମଥର ଭେଟିବାକୁ ଯାଉଛନ୍ତି। ସବୁଠାରୁ ସୁରକ୍ଷିତ ଯୋଜନା କ’ଣ?|ସାର୍ବଜନୀନ ଜାଗାରେ ଭେଟନ୍ତୁ, ଜଣେ ସାଙ୍ଗକୁ ଜଣାନ୍ତୁ ଓ ଯିବାଆସିବାର ବ୍ୟବସ୍ଥା ନିଜେ କରନ୍ତୁ|ତାଙ୍କ ଘରେ ଭେଟନ୍ତୁ|ତାଙ୍କୁ ଆପଣଙ୍କ ଘରୁ ନେବାକୁ ଆସିବାକୁ ଦିଅନ୍ତୁ|0|ସାର୍ବଜନୀନ ଜାଗା, ଆପଣଙ୍କ ଯୋଜନା ଜାଣିଥିବା ସାଙ୍ଗ ଓ ଘରକୁ ଫେରିବାର ନିଜ ବ୍ୟବସ୍ଥା ଆପଣଙ୍କୁ ସୁରକ୍ଷିତ ରଖେ। ଭେଟ ମୋଡ ଆପଣଙ୍କ ପାଇଁ ଟାଇମର ଲଗାଇପାରେ।</item>
+        <item>କେହି କଲ କରି କହୁଛି ସେ ଆପଣଙ୍କ ବ୍ୟାଙ୍କରୁ, ଆଉ ଏବେ ଆସିଥିବା OTP ମାଗୁଛି। ଆପଣ କ’ଣ କରିବେ?|କହିଦେବେ, ସେ ତ ବ୍ୟାଙ୍କରୁ|କେବଳ ଅଧା କହିବେ|କେବେ କହିବେ ନାହିଁ ଓ କଲ କାଟିଦେବେ|2|କୌଣସି ବ୍ୟାଙ୍କ କେବେ OTP ମାଗେ ନାହିଁ। OTP କହିଲେ କେହି ଆପଣଙ୍କ ଟଙ୍କା ନେଇପାରେ ବା ଆକାଉଣ୍ଟ ନିଜ ହାତକୁ ନେଇପାରେ।</item>
+        <item>ବିପଦରେ ଥିବା ପିଲା ପାଇଁ ହେଲ୍ପଲାଇନ ନମ୍ବର କେଉଁଟି?|1098|181|କେବଳ 112|0|1098 ହେଉଛି ଚାଇଲ୍ଡଲାଇନ, ପିଲାମାନଙ୍କ ପାଇଁ 24 ଘଣ୍ଟିଆ ମାଗଣା ହେଲ୍ପଲାଇନ।</item>
+        <item>ଦୁଇ ପରିବାର ରାଜି ଥିଲେ ଯୌତୁକ ଦେବା ବା ନେବା ଆଇନସମ୍ମତ କି?|ହଁ, ଦୁହେଁ ରାଜି ଥିଲେ|ନା, ଯୌତୁକ ଦେବା ଓ ନେବା ଦୁଇଟିଯାକ ଅପରାଧ|କେବଳ ଦେବା ଅପରାଧ|1|ଯୌତୁକ ନିଷେଧ ଆଇନ ଅନୁସାରେ ଯୌତୁକ ଦେବା, ନେବା ଓ ମାଗିବା ସବୁ ଦଣ୍ଡନୀୟ।</item>
+        <item>ଆପଣ ଏହି ଆପରେ ଚେକ-ଇନ ଟାଇମର ଲଗାଇଲେ ଓ ସମୟରେ “ମୁଁ ସୁରକ୍ଷିତ” ଟ୍ୟାପ କଲେ ନାହିଁ। କ’ଣ ହେବ?|କିଛି ନୁହେଁ, ଟାଇମର କେବଳ ଶେଷ ହେବ|ଆପ SOS ଆରମ୍ଭ କରି ଆପଣଙ୍କ କଣ୍ଟାକ୍ଟଙ୍କୁ ସତର୍କ କରିବ|ଆପଣଙ୍କ ଫୋନ ରିଷ୍ଟାର୍ଟ ହେବ|1|ଚେକ-ଇନ ମିସ ହେଲେ SOS ଆରମ୍ଭ ହୁଏ, ଯାହାଫଳରେ ଆପଣ ଫୋନ ଧରି ନ ପାରିଲେ ବି କେହି ଜାଣିପାରିବେ।</item>
+        <item>ଟ୍ରେନରେ ଯାତ୍ରା ବେଳେ ସାହାଯ୍ୟ ପାଇଁ କେଉଁ ନମ୍ବରକୁ କଲ କରିବେ?|139|1930|1098|0|139 ହେଉଛି ରେଲ ମଦଦ ହେଲ୍ପଲାଇନ, ଭାରତୀୟ ରେଳରେ ସୁରକ୍ଷା ଓ ଅନ୍ୟ ସାହାଯ୍ୟ ପାଇଁ।</item>
+    </string-array>
+</resources>

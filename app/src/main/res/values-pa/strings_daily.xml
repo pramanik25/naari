@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Shared -->
+    <string name="dl_back">ਪਿੱਛੇ</string>
+    <string name="dl_save">ਸੇਵ ਕਰੋ</string>
+    <string name="dl_cancel">ਰੱਦ ਕਰੋ</string>
+    <string name="dl_delete">ਮਿਟਾਓ</string>
+    <string name="dl_channel_daily">ਰੋਜ਼ਾਨਾ ਰਿਮਾਈਂਡਰ</string>
+    <string name="dl_channel_daily_desc">ਅੱਜ ਦਾ ਕੁਇਜ਼ ਅਤੇ ਤੁਹਾਡੇ ਚਾਲੂ ਕੀਤੇ ਰਿਮਾਈਂਡਰ</string>
+
+    <!-- Home card and Safety tools tiles -->
+    <string name="dl_section_daily">ਹਰ ਰੋਜ਼</string>
+    <string name="dl_home_commute">ਆਉਣ-ਜਾਣ</string>
+    <string name="dl_home_commute_cap">ਇੱਕ ਟੈਪ ਵਿੱਚ ਟ੍ਰਿਪ ਟਾਈਮਰ</string>
+    <string name="dl_home_commute_active">ਟ੍ਰਿਪ ਚੱਲ ਰਿਹਾ ਹੈ</string>
+    <string name="dl_home_cycle">ਮਾਹਵਾਰੀ</string>
+    <string name="dl_home_cycle_cap">ਨਿੱਜੀ ਟ੍ਰੈਕਰ</string>
+    <string name="dl_home_quiz">ਕੁਇਜ਼</string>
+    <string name="dl_home_quiz_cap">ਅੱਜ ਦੇ 3 ਸਵਾਲ</string>
+    <plurals name="dl_home_quiz_done">
+        <item quantity="one">ਪੂਰਾ · %1$d ਦਿਨ ਦੀ ਲੜੀ</item>
+        <item quantity="other">ਪੂਰਾ · %1$d ਦਿਨਾਂ ਦੀ ਲੜੀ</item>
+    </plurals>
+    <plurals name="dl_home_quiz_keep">
+        <item quantity="one">%1$d ਦਿਨ ਦੀ ਲੜੀ ਬਣਾਈ ਰੱਖੋ</item>
+        <item quantity="other">%1$d ਦਿਨਾਂ ਦੀ ਲੜੀ ਬਣਾਈ ਰੱਖੋ</item>
+    </plurals>
+
+    <!-- Commute -->
+    <string name="dl_cm_eyebrow">ਹਰ ਰੋਜ਼</string>
+    <string name="dl_cm_title">ਰੋਜ਼ ਦਾ ਆਉਣ-ਜਾਣ</string>
+    <string name="dl_cm_body">ਨਿਕਲਣ ਵੇਲੇ “ਨਿਕਲ ਰਹੀ ਹਾਂ” ’ਤੇ ਟੈਪ ਕਰੋ। ਜੇ ਆਮ ਸਮੇਂ ਤੱਕ ਤੁਸੀਂ “ਮੈਂ ਪਹੁੰਚ ਗਈ” ’ਤੇ ਟੈਪ ਨਾ ਕੀਤਾ, ਤਾਂ ਤੁਹਾਡੇ ਸੰਪਰਕਾਂ ਨੂੰ ਆਪਣੇ-ਆਪ ਅਲਰਟ ਚਲਾ ਜਾਵੇਗਾ।</string>
+    <string name="dl_cm_active_title">ਟ੍ਰਿਪ ਚੱਲ ਰਿਹਾ ਹੈ</string>
+    <string name="dl_cm_active_sub">ਚੈੱਕ-ਇਨ ਲਈ %1$s ਬਾਕੀ</string>
+    <string name="dl_cm_active_overdue">ਟ੍ਰਿਪ ਦਾ ਸਮਾਂ ਲੰਘ ਗਿਆ</string>
+    <string name="dl_cm_active_overdue_sub">ਜੇ ਤੁਸੀਂ ਸੁਰੱਖਿਅਤ ਹੋ ਤਾਂ “ਮੈਂ ਪਹੁੰਚ ਗਈ” ’ਤੇ ਟੈਪ ਕਰੋ</string>
+    <string name="dl_cm_reached">ਮੈਂ ਪਹੁੰਚ ਗਈ</string>
+    <string name="dl_cm_section_routes">ਤੁਹਾਡੇ ਰਸਤੇ</string>
+    <string name="dl_cm_empty">ਅਜੇ ਕੋਈ ਰਸਤਾ ਨਹੀਂ। ਉਹ ਸਫ਼ਰ ਜੋੜੋ ਜੋ ਤੁਸੀਂ ਲਗਭਗ ਰੋਜ਼ ਕਰਦੇ ਹੋ।</string>
+    <string name="dl_cm_add">ਰਸਤਾ ਜੋੜੋ</string>
+    <string name="dl_cm_note">ਟ੍ਰਿਪ ਇੱਕ ਚੈੱਕ-ਇਨ ਟਾਈਮਰ ਹੈ। ਟਾਈਮਰ ਸਕ੍ਰੀਨ ਤੋਂ ਤੁਸੀਂ ਕਦੇ ਵੀ ਸਮਾਂ ਵਧਾ ਸਕਦੇ ਹੋ ਜਾਂ ਚੈੱਕ-ਇਨ ਕਰ ਸਕਦੇ ਹੋ।</string>
+    <string name="dl_cm_leaving">ਨਿਕਲ ਰਹੀ ਹਾਂ</string>
+    <string name="dl_cm_minutes">%1$d ਮਿੰਟ</string>
+    <string name="dl_cm_default_to_work">ਘਰ ਤੋਂ ਦਫ਼ਤਰ</string>
+    <string name="dl_cm_default_to_home">ਦਫ਼ਤਰ ਤੋਂ ਘਰ</string>
+    <string name="dl_cm_already_running">ਇੱਕ ਟ੍ਰਿਪ ਪਹਿਲਾਂ ਹੀ ਚੱਲ ਰਿਹਾ ਹੈ। ਪਹਿਲਾਂ ਚੈੱਕ-ਇਨ ਕਰੋ।</string>
+    <string name="dl_cm_add_title">ਨਵਾਂ ਰਸਤਾ</string>
+    <string name="dl_cm_edit_title">ਰਸਤਾ ਬਦਲੋ</string>
+    <string name="dl_cm_name_hint">ਰਸਤੇ ਦਾ ਨਾਮ</string>
+    <string name="dl_cm_name_placeholder">ਘਰ ਤੋਂ ਕਾਲਜ</string>
+    <string name="dl_cm_name_required">ਰਸਤੇ ਨੂੰ ਕੋਈ ਨਾਮ ਦਿਓ</string>
+    <string name="dl_cm_duration_label">ਆਮ ਤੌਰ ’ਤੇ ਲੱਗਣ ਵਾਲਾ ਸਮਾਂ</string>
+
+    <!-- Cycle tracker -->
+    <string name="dl_cy_eyebrow">ਨਿੱਜੀ</string>
+    <string name="dl_cy_title">ਮਾਹਵਾਰੀ ਟ੍ਰੈਕਰ</string>
+    <string name="dl_cy_body">ਆਪਣੇ ਪੀਰੀਅਡ, ਮੂਡ ਅਤੇ ਲੱਛਣ ਦਰਜ ਕਰੋ। ਸਭ ਕੁਝ ਇਸੇ ਫ਼ੋਨ ਵਿੱਚ ਐਨਕ੍ਰਿਪਟ ਰਹਿੰਦਾ ਹੈ ਅਤੇ ਕਦੇ ਅੱਪਲੋਡ ਨਹੀਂ ਹੁੰਦਾ।</string>
+    <string name="dl_cy_locked_title">ਟ੍ਰੈਕਰ ਲਾਕ ਹੈ</string>
+    <string name="dl_cy_locked_body">ਖੋਲ੍ਹਣ ਲਈ ਆਪਣਾ ਐਪ PIN ਲਿਖੋ।</string>
+    <string name="dl_cy_unlock">ਅਨਲਾਕ ਕਰੋ</string>
+    <string name="dl_cy_pin_title">ਆਪਣਾ ਟ੍ਰੈਕਰ ਅਨਲਾਕ ਕਰੋ</string>
+    <string name="dl_cy_log_today">ਅੱਜ ਦਾ ਦਰਜ ਕਰੋ</string>
+    <string name="dl_cy_prev_month">ਪਿਛਲਾ ਮਹੀਨਾ</string>
+    <string name="dl_cy_next_month">ਅਗਲਾ ਮਹੀਨਾ</string>
+    <string name="dl_cy_legend_period">ਪੀਰੀਅਡ</string>
+    <string name="dl_cy_legend_predicted">ਅੰਦਾਜ਼ਨ</string>
+    <string name="dl_cy_legend_fertile">ਫ਼ਰਟਾਈਲ</string>
+    <string name="dl_cy_stat_cycle">ਔਸਤ ਚੱਕਰ</string>
+    <string name="dl_cy_stat_period">ਔਸਤ ਪੀਰੀਅਡ</string>
+    <plurals name="dl_cy_days">
+        <item quantity="one">%1$d ਦਿਨ</item>
+        <item quantity="other">%1$d ਦਿਨ</item>
+    </plurals>
+    <string name="dl_cy_reminder">ਪੀਰੀਅਡ ਤੋਂ ਪਹਿਲਾਂ ਯਾਦ ਕਰਾਓ</string>
+    <string name="dl_cy_reminder_sub">ਦੋ ਦਿਨ ਪਹਿਲਾਂ ਇੱਕ ਸਧਾਰਨ ਜਿਹਾ ਨੋਟੀਫ਼ਿਕੇਸ਼ਨ। ਇਸ ਵਿੱਚ ਪੀਰੀਅਡ ਦਾ ਜ਼ਿਕਰ ਕਦੇ ਨਹੀਂ ਹੁੰਦਾ।</string>
+    <string name="dl_cy_disclaimer">ਅੰਦਾਜ਼ਨ ਅਤੇ ਫ਼ਰਟਾਈਲ ਦਿਨ ਤੁਹਾਡੀ ਆਪਣੀ ਔਸਤ ਤੋਂ ਲਾਏ ਅੰਦਾਜ਼ੇ ਹਨ। ਇਹ ਡਾਕਟਰੀ ਸਲਾਹ ਨਹੀਂ ਹਨ ਅਤੇ ਗਰਭ ਰੋਕਣ ਜਾਂ ਪਲਾਨ ਕਰਨ ਲਈ ਇਨ੍ਹਾਂ ’ਤੇ ਭਰੋਸਾ ਨਹੀਂ ਕਰਨਾ ਚਾਹੀਦਾ।</string>
+    <string name="dl_cy_summary_empty">ਆਪਣਾ ਪਹਿਲਾ ਪੀਰੀਅਡ ਦਰਜ ਕਰੋ</string>
+    <string name="dl_cy_summary_empty_sub">ਕੈਲੰਡਰ ’ਤੇ ਉਸ ਦਿਨ ’ਤੇ ਟੈਪ ਕਰੋ ਜਿਸ ਦਿਨ ਪੀਰੀਅਡ ਸ਼ੁਰੂ ਹੋਇਆ ਸੀ। ਹਰ ਚੱਕਰ ਦਰਜ ਕਰਨ ਨਾਲ ਅੰਦਾਜ਼ੇ ਬਿਹਤਰ ਹੁੰਦੇ ਜਾਂਦੇ ਹਨ।</string>
+    <string name="dl_cy_summary_period">ਪੀਰੀਅਡ · ਦਿਨ %1$d</string>
+    <string name="dl_cy_summary_day">ਤੁਹਾਡੇ ਚੱਕਰ ਦਾ ਦਿਨ %1$d</string>
+    <plurals name="dl_cy_next_in">
+        <item quantity="one">ਅਗਲਾ ਪੀਰੀਅਡ ਲਗਭਗ %1$d ਦਿਨ ਵਿੱਚ (%2$s)</item>
+        <item quantity="other">ਅਗਲਾ ਪੀਰੀਅਡ ਲਗਭਗ %1$d ਦਿਨਾਂ ਵਿੱਚ (%2$s)</item>
+    </plurals>
+    <string name="dl_cy_next_today">ਤੁਹਾਡਾ ਪੀਰੀਅਡ ਅੱਜ ਆਉਣ ਦਾ ਅੰਦਾਜ਼ਾ ਹੈ</string>
+    <plurals name="dl_cy_next_late">
+        <item quantity="one">ਤੁਹਾਡਾ ਪੀਰੀਅਡ %1$d ਦਿਨ ਲੇਟ ਹੈ</item>
+        <item quantity="other">ਤੁਹਾਡਾ ਪੀਰੀਅਡ %1$d ਦਿਨ ਲੇਟ ਹੈ</item>
+    </plurals>
+    <string name="dl_cy_default_cycle_note">ਜਦੋਂ ਤੱਕ ਤੁਸੀਂ ਦੋ ਪੀਰੀਅਡ ਦਰਜ ਨਹੀਂ ਕਰਦੇ, ਅੰਦਾਜ਼ਾ ਆਮ 28 ਦਿਨਾਂ ਦੇ ਚੱਕਰ ’ਤੇ ਆਧਾਰਿਤ ਹੈ।</string>
+    <string name="dl_cy_load_error">ਤੁਹਾਡਾ ਰਿਕਾਰਡ ਨਹੀਂ ਖੁੱਲ੍ਹ ਸਕਿਆ। ਕੁਝ ਵੀ ਬਦਲਿਆ ਨਹੀਂ ਗਿਆ।</string>
+    <string name="dl_cy_save_error">ਸੇਵ ਨਹੀਂ ਹੋ ਸਕਿਆ। ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।</string>
+    <string name="dl_cy_sheet_eyebrow">ਰੋਜ਼ ਦਾ ਰਿਕਾਰਡ</string>
+    <string name="dl_cy_sheet_period">ਪੀਰੀਅਡ ਦਾ ਦਿਨ</string>
+    <string name="dl_cy_sheet_flow">ਫ਼ਲੋ</string>
+    <string name="dl_cy_flow_light">ਹਲਕਾ</string>
+    <string name="dl_cy_flow_medium">ਦਰਮਿਆਨਾ</string>
+    <string name="dl_cy_flow_heavy">ਜ਼ਿਆਦਾ</string>
+    <string name="dl_cy_sheet_mood">ਮੂਡ</string>
+    <string name="dl_cy_mood_1">😞 ਉਦਾਸ</string>
+    <string name="dl_cy_mood_2">😕 ਬੇਚੈਨ</string>
+    <string name="dl_cy_mood_3">😐 ਠੀਕ-ਠਾਕ</string>
+    <string name="dl_cy_mood_4">🙂 ਚੰਗਾ</string>
+    <string name="dl_cy_mood_5">😄 ਬਹੁਤ ਵਧੀਆ</string>
+    <string name="dl_cy_sheet_symptoms">ਲੱਛਣ</string>
+    <string name="dl_cy_sym_cramps">ਪੇਟ ਵਿੱਚ ਕੜਵੱਲ</string>
+    <string name="dl_cy_sym_headache">ਸਿਰ ਦਰਦ</string>
+    <string name="dl_cy_sym_backache">ਕਮਰ ਦਰਦ</string>
+    <string name="dl_cy_sym_bloating">ਪੇਟ ਫੁੱਲਣਾ</string>
+    <string name="dl_cy_sym_fatigue">ਥਕਾਵਟ</string>
+    <string name="dl_cy_sym_acne">ਮੁਹਾਸੇ</string>
+    <string name="dl_cy_sym_tender">ਛਾਤੀਆਂ ਵਿੱਚ ਦਰਦ</string>
+    <string name="dl_cy_sym_nausea">ਜੀਅ ਕੱਚਾ ਹੋਣਾ</string>
+    <string name="dl_cy_sheet_clear">ਇਸ ਦਿਨ ਦਾ ਰਿਕਾਰਡ ਹਟਾਓ</string>
+
+    <!-- Quiz -->
+    <string name="dl_quiz_eyebrow">ਹਰ ਰੋਜ਼</string>
+    <string name="dl_quiz_title">ਸੁਰੱਖਿਆ ਕੁਇਜ਼</string>
+    <string name="dl_quiz_stat_streak">ਲੜੀ</string>
+    <string name="dl_quiz_stat_points">ਪੁਆਇੰਟ</string>
+    <string name="dl_quiz_stat_level">ਲੈਵਲ</string>
+    <plurals name="dl_quiz_days">
+        <item quantity="one">%1$d ਦਿਨ</item>
+        <item quantity="other">%1$d ਦਿਨ</item>
+    </plurals>
+    <string name="dl_quiz_progress">ਸਵਾਲ %1$d / %2$d</string>
+    <string name="dl_quiz_progress_practice">ਅਭਿਆਸ · ਸਵਾਲ %1$d / %2$d</string>
+    <string name="dl_quiz_correct">ਸਹੀ ਜਵਾਬ</string>
+    <string name="dl_quiz_wrong">ਸਹੀ ਨਹੀਂ</string>
+    <string name="dl_quiz_next">ਅਗਲਾ ਸਵਾਲ</string>
+    <string name="dl_quiz_finish">ਮੇਰਾ ਨਤੀਜਾ ਦੇਖੋ</string>
+    <string name="dl_quiz_score">%1$d / %2$d</string>
+    <string name="dl_quiz_result_perfect">ਸਾਰੇ ਸਹੀ!</string>
+    <string name="dl_quiz_result_good">ਬਹੁਤ ਵਧੀਆ</string>
+    <string name="dl_quiz_result_low">ਹੁਣ ਤੁਹਾਨੂੰ ਪਤਾ ਹੈ</string>
+    <string name="dl_quiz_result_points">+%1$d ਪੁਆਇੰਟ। ਨਵੇਂ ਸਵਾਲ ਕੱਲ੍ਹ ਮਿਲਣਗੇ।</string>
+    <string name="dl_quiz_result_done">ਅੱਜ ਦਾ ਕੁਇਜ਼ ਪੂਰਾ ਹੋ ਗਿਆ। ਨਵੇਂ ਸਵਾਲ ਕੱਲ੍ਹ ਮਿਲਣਗੇ।</string>
+    <string name="dl_quiz_result_practice">ਇਹ ਅਭਿਆਸ ਸੀ। ਪੁਆਇੰਟ ਰੋਜ਼ ਦੇ ਕੁਇਜ਼ ਤੋਂ ਮਿਲਦੇ ਹਨ।</string>
+    <string name="dl_quiz_level_next">ਲੈਵਲ: %1$s · ਅਗਲੇ ਲੈਵਲ ਲਈ %2$d ਪੁਆਇੰਟ</string>
+    <string name="dl_quiz_level_top">ਲੈਵਲ: %1$s · ਸਭ ਤੋਂ ਉੱਚਾ ਲੈਵਲ</string>
+    <string name="dl_quiz_level_1">ਸ਼ੁਰੂਆਤ</string>
+    <string name="dl_quiz_level_2">ਜਾਗਰੂਕ</string>
+    <string name="dl_quiz_level_3">ਚੌਕਸ</string>
+    <string name="dl_quiz_level_4">ਰਾਖੀ</string>
+    <string name="dl_quiz_level_5">ਸ਼ਕਤੀ</string>
+    <string name="dl_quiz_share">ਆਪਣੀ ਲੜੀ ਸਾਂਝੀ ਕਰੋ</string>
+    <string name="dl_quiz_share_text">Naari Shakti ਦੇ ਸੁਰੱਖਿਆ ਕੁਇਜ਼ ਵਿੱਚ ਮੇਰੀ %1$s ਦੀ ਲੜੀ ਅਤੇ %2$d ਪੁਆਇੰਟ ਹਨ। ਕੀ ਤੁਸੀਂ ਆਪਣੇ ਹੱਕ ਅਤੇ ਹੈਲਪਲਾਈਨ ਨੰਬਰ ਜਾਣਦੇ ਹੋ?</string>
+    <string name="dl_quiz_practice">ਹੋਰ ਅਭਿਆਸ ਕਰੋ</string>
+    <string name="dl_quiz_reminder">ਰੋਜ਼ ਦੇ ਕੁਇਜ਼ ਦਾ ਰਿਮਾਈਂਡਰ</string>
+    <string name="dl_quiz_reminder_sub">ਜੇ ਤੁਸੀਂ ਕੁਇਜ਼ ਨਹੀਂ ਖੇਡਿਆ, ਤਾਂ ਸ਼ਾਮ ਨੂੰ ਇੱਕ ਨੋਟੀਫ਼ਿਕੇਸ਼ਨ</string>
+
+    <!-- Daily reminder notifications -->
+    <string name="dl_nudge_quiz_title">ਅੱਜ ਦਾ ਸੁਰੱਖਿਆ ਕੁਇਜ਼ ਤਿਆਰ ਹੈ</string>
+    <string name="dl_nudge_quiz_text">ਤਿੰਨ ਛੋਟੇ ਸਵਾਲ। ਬੱਸ ਇੱਕ ਮਿੰਟ ਲੱਗੇਗਾ।</string>
+    <plurals name="dl_nudge_quiz_streak">
+        <item quantity="one">%1$d ਦਿਨ ਦੀ ਲੜੀ ਬਣਾਈ ਰੱਖਣ ਲਈ ਹੁਣੇ ਖੇਡੋ।</item>
+        <item quantity="other">%1$d ਦਿਨਾਂ ਦੀ ਲੜੀ ਬਣਾਈ ਰੱਖਣ ਲਈ ਹੁਣੇ ਖੇਡੋ।</item>
+    </plurals>
+    <string name="dl_nudge_cycle_title">Naari Shakti ਵੱਲੋਂ ਇੱਕ ਰਿਮਾਈਂਡਰ</string>
+    <string name="dl_nudge_cycle_text">ਦੇਖਣ ਲਈ ਐਪ ਖੋਲ੍ਹੋ।</string>
+
+    <!--
+        Quiz bank. Each item: question|option A|option B|option C|index of the right option (0-2)|explanation.
+        Keep the count a multiple of 3 and never use the | character inside a text.
+        Translations must keep the same order and the same right-option index.
+    -->
+    <string-array name="dl_quiz_items">
+        <item>ਭਾਰਤ ਵਿੱਚ ਕਿਤੋਂ ਵੀ ਪੁਲਿਸ, ਫ਼ਾਇਰ ਬ੍ਰਿਗੇਡ ਅਤੇ ਐਂਬੂਲੈਂਸ ਲਈ ਕਿਹੜਾ ਇੱਕੋ ਨੰਬਰ ਹੈ?|112|1098|139|0|112 ਹਰ ਐਮਰਜੈਂਸੀ ਲਈ ਇੱਕੋ ਨੰਬਰ ਹੈ। ਇਹ ਕਿਸੇ ਵੀ ਫ਼ੋਨ ਤੋਂ, ਬੈਲੇਂਸ ਤੋਂ ਬਿਨਾਂ ਵੀ ਲੱਗਦਾ ਹੈ।</item>
+        <item>ਮਹਿਲਾ ਹੈਲਪਲਾਈਨ ਦਾ ਨੰਬਰ ਕਿਹੜਾ ਹੈ?|1930|181|139|1|ਜ਼ਿਆਦਾਤਰ ਰਾਜਾਂ ਵਿੱਚ 181 ਮਹਿਲਾ ਹੈਲਪਲਾਈਨ ਹੈ। 1091 ਮਹਿਲਾ ਪੁਲਿਸ ਹੈਲਪਲਾਈਨ ਹੈ।</item>
+        <item>ਆਨਲਾਈਨ ਤੰਗ-ਪਰੇਸ਼ਾਨ ਕਰਨ, ਬਲੈਕਮੇਲ ਜਾਂ ਸਾਈਬਰ ਠੱਗੀ ਦੀ ਸ਼ਿਕਾਇਤ ਕਿੱਥੇ ਕਰੀਏ?|ਹੈਲਪਲਾਈਨ 1930 ਜਾਂ cybercrime.gov.in|ਸਿਰਫ਼ ਮੋਬਾਈਲ ਕੰਪਨੀ ਕੋਲ|ਇਸ ਦੀ ਸ਼ਿਕਾਇਤ ਨਹੀਂ ਹੋ ਸਕਦੀ|0|1930 ’ਤੇ ਕਾਲ ਕਰੋ ਜਾਂ cybercrime.gov.in ’ਤੇ ਸ਼ਿਕਾਇਤ ਦਰਜ ਕਰੋ। ਸਕ੍ਰੀਨਸ਼ਾਟ ਸਬੂਤ ਵਜੋਂ ਸੰਭਾਲ ਕੇ ਰੱਖੋ।</item>
+        <item>ਥਾਣੇ ਵਾਲੇ ਕਹਿੰਦੇ ਹਨ ਕਿ ਘਟਨਾ ਉਨ੍ਹਾਂ ਦੇ ਇਲਾਕੇ ਤੋਂ ਬਾਹਰ ਹੋਈ ਹੈ। ਤੁਸੀਂ ਕੀ ਮੰਗ ਸਕਦੇ ਹੋ?|ਕੁਝ ਨਹੀਂ, ਤੁਹਾਨੂੰ ਉੱਥੇ ਹੀ ਜਾਣਾ ਪਵੇਗਾ|ਜ਼ੀਰੋ FIR|ਲਿਖਤੀ ਮਾਫ਼ੀ|1|ਹਰ ਥਾਣੇ ਲਈ ਜ਼ੀਰੋ FIR ਦਰਜ ਕਰਕੇ ਉਸਨੂੰ ਸਹੀ ਥਾਣੇ ਨੂੰ ਭੇਜਣਾ ਲਾਜ਼ਮੀ ਹੈ।</item>
+        <item>ਕੀ ਪੁਲਿਸ ਕਿਸੇ ਔਰਤ ਨੂੰ ਸੂਰਜ ਡੁੱਬਣ ਤੋਂ ਬਾਅਦ ਅਤੇ ਸੂਰਜ ਚੜ੍ਹਨ ਤੋਂ ਪਹਿਲਾਂ ਗ੍ਰਿਫ਼ਤਾਰ ਕਰ ਸਕਦੀ ਹੈ?|ਹਾਂ, ਕਿਸੇ ਵੀ ਵੇਲੇ|ਕਦੇ ਨਹੀਂ, ਕਿਸੇ ਵੀ ਹਾਲਤ ਵਿੱਚ|ਸਿਰਫ਼ ਖ਼ਾਸ ਹਾਲਾਤ ਵਿੱਚ, ਮਹਿਲਾ ਅਫ਼ਸਰ ਵੱਲੋਂ ਅਤੇ ਮੈਜਿਸਟ੍ਰੇਟ ਦੀ ਲਿਖਤੀ ਇਜਾਜ਼ਤ ਨਾਲ|2|ਕਾਨੂੰਨ ਔਰਤਾਂ ਨੂੰ ਰਾਤ ਦੀ ਗ੍ਰਿਫ਼ਤਾਰੀ ਤੋਂ ਬਚਾਉਂਦਾ ਹੈ। ਛੋਟ ਸਿਰਫ਼ ਖ਼ਾਸ ਹਾਲਾਤ ਵਿੱਚ ਮੈਜਿਸਟ੍ਰੇਟ ਦੀ ਪਹਿਲਾਂ ਲਈ ਲਿਖਤੀ ਇਜਾਜ਼ਤ ਨਾਲ ਹੈ।</item>
+        <item>ਬੁੱਕ ਕੀਤੀ ਕੈਬ ਵਿੱਚ ਬੈਠਣ ਤੋਂ ਪਹਿਲਾਂ ਤੁਹਾਨੂੰ ਕੀ ਜਾਂਚਣਾ ਚਾਹੀਦਾ ਹੈ?|ਕਿ ਨੰਬਰ ਪਲੇਟ ਅਤੇ ਡਰਾਈਵਰ ਐਪ ਨਾਲ ਮੇਲ ਖਾਂਦੇ ਹਨ|ਕਿ ਗੱਡੀ ਸਾਫ਼ ਹੈ|ਕਿ ਡਰਾਈਵਰ ਕਾਹਲੀ ਵਿੱਚ ਹੈ|0|ਹਮੇਸ਼ਾ ਨੰਬਰ ਪਲੇਟ ਅਤੇ ਡਰਾਈਵਰ ਨੂੰ ਬੁਕਿੰਗ ਨਾਲ ਮਿਲਾਓ। ਇਸ ਐਪ ਦਾ ਕੈਬ ਮੋਡ ਨੰਬਰ ਪਲੇਟ ਤੁਹਾਡੇ ਸੰਪਰਕਾਂ ਨੂੰ ਭੇਜ ਸਕਦਾ ਹੈ।</item>
+        <item>ਤੁਹਾਡੀ ਕੈਬ ਕਿਸੇ ਅਣਜਾਣ ਰਸਤੇ ’ਤੇ ਜਾ ਰਹੀ ਹੈ। ਸਭ ਤੋਂ ਵਧੀਆ ਪਹਿਲਾ ਕਦਮ ਕੀ ਹੈ?|ਚੁੱਪ ਰਹੋ ਅਤੇ ਉਡੀਕ ਕਰੋ|ਲਾਈਵ ਲੋਕੇਸ਼ਨ ਸਾਂਝੀ ਕਰੋ, ਕਿਸੇ ਨੂੰ ਕਾਲ ਕਰੋ ਅਤੇ ਭੀੜ ਵਾਲੀ ਥਾਂ ’ਤੇ ਰੋਕਣ ਲਈ ਕਹੋ|ਆਪਣਾ ਫ਼ੋਨ ਬੰਦ ਕਰ ਦਿਓ|1|ਕਿਸੇ ਨੂੰ ਦੱਸੋ ਕਿ ਤੁਸੀਂ ਕਿੱਥੇ ਹੋ, ਕਾਲ ’ਤੇ ਉੱਚੀ ਬੋਲ ਕੇ ਦੱਸੋ, ਅਤੇ ਖ਼ਤਰਾ ਲੱਗੇ ਤਾਂ SOS ਵਰਤੋ।</item>
+        <item>10 ਜਾਂ ਵੱਧ ਮੁਲਾਜ਼ਮਾਂ ਵਾਲੇ ਦਫ਼ਤਰ ਵਿੱਚ ਜਿਨਸੀ ਸ਼ੋਸ਼ਣ ਦੀ ਸ਼ਿਕਾਇਤ ਕੌਣ ਸੁਣੇਗਾ?|ਅੰਦਰੂਨੀ ਕਮੇਟੀ (Internal Committee)|ਸਿਰਫ਼ ਪੁਲਿਸ|ਸਕਿਓਰਿਟੀ ਗਾਰਡ|0|POSH ਕਾਨੂੰਨ ਮੁਤਾਬਕ ਅਜਿਹੇ ਹਰ ਦਫ਼ਤਰ ਵਿੱਚ ਅੰਦਰੂਨੀ ਕਮੇਟੀ ਹੋਣੀ ਜ਼ਰੂਰੀ ਹੈ।</item>
+        <item>POSH ਕਾਨੂੰਨ ਮੁਤਾਬਕ ਦਫ਼ਤਰ ਵਿੱਚ ਜਿਨਸੀ ਸ਼ੋਸ਼ਣ ਦੀ ਸ਼ਿਕਾਇਤ ਕਿੰਨੇ ਸਮੇਂ ਵਿੱਚ ਕਰਨੀ ਹੁੰਦੀ ਹੈ?|24 ਘੰਟਿਆਂ ਵਿੱਚ|ਇੱਕ ਹਫ਼ਤੇ ਵਿੱਚ|ਘਟਨਾ ਦੇ ਤਿੰਨ ਮਹੀਨਿਆਂ ਦੇ ਅੰਦਰ|2|ਸ਼ਿਕਾਇਤ ਤਿੰਨ ਮਹੀਨਿਆਂ ਦੇ ਅੰਦਰ ਕਰਨੀ ਚਾਹੀਦੀ ਹੈ, ਅਤੇ ਕਮੇਟੀ ਇਹ ਸਮਾਂ ਤਿੰਨ ਮਹੀਨੇ ਹੋਰ ਵਧਾ ਸਕਦੀ ਹੈ।</item>
+        <item>ਤੁਹਾਡੇ ਸਾਫ਼ ਨਾਂਹ ਕਰਨ ਤੋਂ ਬਾਅਦ ਵੀ ਕੋਈ ਵਾਰ-ਵਾਰ ਪਿੱਛਾ ਕਰਦਾ ਹੈ ਜਾਂ ਮੈਸੇਜ ਭੇਜਦਾ ਹੈ। ਕੀ ਇਹ ਜੁਰਮ ਹੈ?|ਨਹੀਂ, ਇਹ ਸਿਰਫ਼ ਬਦਤਮੀਜ਼ੀ ਹੈ|ਹਾਂ, ਪਿੱਛਾ ਕਰਨਾ (ਸਟਾਕਿੰਗ) ਜੁਰਮ ਹੈ, ਆਨਲਾਈਨ ਵੀ|ਸਿਰਫ਼ ਤਾਂ, ਜੇ ਉਹ ਤੁਹਾਨੂੰ ਹੱਥ ਲਾਵੇ|1|ਸਾਹਮਣੇ ਹੋਵੇ ਜਾਂ ਆਨਲਾਈਨ, ਸਟਾਕਿੰਗ ਫ਼ੌਜਦਾਰੀ ਜੁਰਮ ਹੈ। ਮੈਸੇਜ ਸੰਭਾਲ ਕੇ ਰੱਖੋ ਅਤੇ ਸ਼ਿਕਾਇਤ ਕਰੋ।</item>
+        <item>ਕੀ ਘਰੇਲੂ ਹਿੰਸਾ ਕਾਨੂੰਨ ਸਿਰਫ਼ ਕੁੱਟਮਾਰ ’ਤੇ ਲਾਗੂ ਹੁੰਦਾ ਹੈ?|ਹਾਂ, ਸਿਰਫ਼ ਕੁੱਟਮਾਰ ’ਤੇ|ਨਹੀਂ, ਗਾਲ੍ਹ-ਮੰਦੇ, ਮਾਨਸਿਕ, ਜਿਨਸੀ ਅਤੇ ਆਰਥਿਕ ਸ਼ੋਸ਼ਣ ’ਤੇ ਵੀ|ਇਹ ਸਿਰਫ਼ ਵਿਆਹੀਆਂ ਔਰਤਾਂ ਲਈ ਹੈ|1|ਘਰੇਲੂ ਹਿੰਸਾ ਤੋਂ ਔਰਤਾਂ ਦੀ ਸੁਰੱਖਿਆ ਕਾਨੂੰਨ ਇਨ੍ਹਾਂ ਸਾਰੀ ਤਰ੍ਹਾਂ ਦੇ ਸ਼ੋਸ਼ਣ ’ਤੇ ਲਾਗੂ ਹੁੰਦਾ ਹੈ, ਅਤੇ ਲਿਵ-ਇਨ ਵਿੱਚ ਰਹਿੰਦੀਆਂ ਔਰਤਾਂ ’ਤੇ ਵੀ।</item>
+        <item>ਭਾਰਤ ਵਿੱਚ ਮੁਫ਼ਤ ਕਾਨੂੰਨੀ ਮਦਦ ਕਿਸਨੂੰ ਮਿਲ ਸਕਦੀ ਹੈ?|ਹਰ ਔਰਤ ਨੂੰ, ਉਸਦੀ ਆਮਦਨ ਜੋ ਵੀ ਹੋਵੇ|ਸਿਰਫ਼ ਗਰੀਬੀ ਰੇਖਾ ਤੋਂ ਹੇਠਾਂ ਦੀਆਂ ਔਰਤਾਂ ਨੂੰ|ਕਿਸੇ ਨੂੰ ਨਹੀਂ, ਵਕੀਲ ਹਮੇਸ਼ਾ ਫ਼ੀਸ ਲੈਂਦੇ ਹਨ|0|ਹਰ ਔਰਤ ਆਪਣੇ ਜ਼ਿਲ੍ਹੇ ਦੀ ਕਾਨੂੰਨੀ ਸੇਵਾਵਾਂ ਅਥਾਰਟੀ ਤੋਂ ਮੁਫ਼ਤ ਕਾਨੂੰਨੀ ਮਦਦ ਲੈ ਸਕਦੀ ਹੈ।</item>
+        <item>ਕੀ ਮੀਡੀਆ ਜਾਂ ਕੋਈ ਹੋਰ ਜਿਨਸੀ ਹਿੰਸਾ ਦੀ ਪੀੜਤ ਦਾ ਨਾਮ ਛਾਪ ਸਕਦਾ ਹੈ?|ਹਾਂ, ਜੇ ਖ਼ਬਰ ਸੱਚੀ ਹੈ|ਸਿਰਫ਼ ਸੋਸ਼ਲ ਮੀਡੀਆ ’ਤੇ|ਨਹੀਂ, ਉਸਦੀ ਪਛਾਣ ਜ਼ਾਹਰ ਕਰਨਾ ਜੁਰਮ ਹੈ|2|ਜਿਨਸੀ ਹਿੰਸਾ ਦੀ ਪੀੜਤ ਦੀ ਪਛਾਣ ਜ਼ਾਹਰ ਕਰਨਾ ਸਜ਼ਾਯੋਗ ਜੁਰਮ ਹੈ।</item>
+        <item>ਤੁਸੀਂ ਰਾਤ ਨੂੰ ਇਕੱਲੇ ਤੁਰ ਰਹੇ ਹੋ ਅਤੇ ਲੱਗਦਾ ਹੈ ਕਿ ਕੋਈ ਪਿੱਛਾ ਕਰ ਰਿਹਾ ਹੈ। ਤੁਸੀਂ ਕੀ ਕਰੋਗੇ?|ਸਭ ਤੋਂ ਸੁੰਨਸਾਨ ਗਲੀ ਰਾਹੀਂ ਸਿੱਧੇ ਘਰ ਜਾਓਗੇ|ਰੌਸ਼ਨੀ ਅਤੇ ਭੀੜ ਵਾਲੀ ਥਾਂ ਵੱਲ ਜਾਓਗੇ ਅਤੇ ਕਿਸੇ ਨੂੰ ਕਾਲ ਕਰੋਗੇ|ਰੁਕ ਕੇ ਇਕੱਲੇ ਉਸਦਾ ਸਾਹਮਣਾ ਕਰੋਗੇ|1|ਲੋਕਾਂ ਅਤੇ ਰੌਸ਼ਨੀ ਵੱਲ ਜਾਓ, ਕਾਲ ’ਤੇ ਬਣੇ ਰਹੋ, ਅਤੇ ਉਸ ਬੰਦੇ ਨੂੰ ਆਪਣੇ ਘਰ ਤੱਕ ਨਾ ਲੈ ਕੇ ਜਾਓ।</item>
+        <item>ਪਾਰਟੀ ਵਿੱਚ ਤੁਹਾਡਾ ਡ੍ਰਿੰਕ ਕੁਝ ਦੇਰ ਨਜ਼ਰ ਤੋਂ ਦੂਰ ਰਹਿ ਗਿਆ। ਸੁਰੱਖਿਅਤ ਤਰੀਕਾ ਕੀ ਹੈ?|ਛੇਤੀ ਨਾਲ ਪੀ ਲਓ|ਕਿਸੇ ਅਜਨਬੀ ਨੂੰ ਚੱਖਣ ਲਈ ਕਹੋ|ਉਸਨੂੰ ਛੱਡ ਦਿਓ ਅਤੇ ਨਵਾਂ ਲਓ|2|ਨਜ਼ਰ ਤੋਂ ਦੂਰ ਪਏ ਡ੍ਰਿੰਕ ਵਿੱਚ ਕੁਝ ਮਿਲਾਇਆ ਜਾ ਸਕਦਾ ਹੈ। ਹਮੇਸ਼ਾ ਨਵਾਂ ਲਓ।</item>
+        <item>ਇਸ ਐਪ ਦਾ ਨਕਲੀ ਕਾਲ ਟੂਲ ਕਿਸ ਕੰਮ ਲਈ ਹੈ?|ਔਖੀ ਸਥਿਤੀ ਵਿੱਚੋਂ ਨਿਕਲਣ ਦਾ ਇੱਕ ਯਕੀਨੀ ਬਹਾਨਾ ਦੇਣ ਲਈ|ਸਹੇਲੀਆਂ ਨਾਲ ਮਜ਼ਾਕ ਕਰਨ ਲਈ|ਪੁਲਿਸ ਨੂੰ ਕਾਲ ਕਰਨ ਲਈ|0|ਨਕਲੀ ਇਨਕਮਿੰਗ ਕਾਲ ਨਾਲ ਤੁਸੀਂ ਬਿਨਾਂ ਬਹਿਸ ਕੀਤੇ ਉੱਥੋਂ ਹਟ ਸਕਦੇ ਹੋ।</item>
+        <item>ਇਸ ਐਪ ਵਿੱਚ ਮਜਬੂਰੀ PIN ਲਿਖਣ ’ਤੇ ਕੀ ਹੁੰਦਾ ਹੈ?|ਐਪ ਡਿਲੀਟ ਹੋ ਜਾਂਦੀ ਹੈ|ਐਪ ਆਮ ਵਾਂਗ ਦਿਖਦੀ ਹੈ ਪਰ ਚੁੱਪਚਾਪ SOS ਭੇਜ ਦਿੰਦੀ ਹੈ|ਕੁਝ ਨਹੀਂ ਹੁੰਦਾ|1|ਮਜਬੂਰੀ PIN ਉਸ ਵੇਲੇ ਲਈ ਹੈ ਜਦੋਂ ਕੋਈ ਤੁਹਾਡੇ ਤੋਂ ਜ਼ਬਰਦਸਤੀ ਫ਼ੋਨ ਖੁਲ੍ਹਵਾਏ। ਐਪ ਆਮ ਵਾਂਗ ਖੁੱਲ੍ਹਦੀ ਹੈ ਅਤੇ ਚੁੱਪ-ਚੁਪੀਤੇ ਤੁਹਾਡੇ ਸੰਪਰਕਾਂ ਨੂੰ ਅਲਰਟ ਚਲਾ ਜਾਂਦਾ ਹੈ।</item>
+        <item>ਜਦੋਂ ਕੋਈ ਔਰਤ ਜਿਨਸੀ ਅਪਰਾਧ ਦੀ ਸ਼ਿਕਾਇਤ ਕਰਦੀ ਹੈ, ਤਾਂ ਉਸਦਾ ਬਿਆਨ ਕਿਸਨੂੰ ਦਰਜ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ?|ਡਿਊਟੀ ’ਤੇ ਮੌਜੂਦ ਕੋਈ ਵੀ ਅਫ਼ਸਰ|ਮਹਿਲਾ ਪੁਲਿਸ ਅਫ਼ਸਰ|ਕੋਈ ਗੁਆਂਢੀ|1|ਕਾਨੂੰਨ ਮੁਤਾਬਕ ਉਸਦਾ ਬਿਆਨ ਮਹਿਲਾ ਪੁਲਿਸ ਅਫ਼ਸਰ ਨੂੰ ਦਰਜ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ।</item>
+        <item>ਤੁਸੀਂ ਇੰਟਰਨੈੱਟ ’ਤੇ ਮਿਲੇ ਕਿਸੇ ਬੰਦੇ ਨੂੰ ਪਹਿਲੀ ਵਾਰ ਮਿਲਣ ਜਾ ਰਹੇ ਹੋ। ਸਭ ਤੋਂ ਸੁਰੱਖਿਅਤ ਤਰੀਕਾ ਕੀ ਹੈ?|ਜਨਤਕ ਥਾਂ ’ਤੇ ਮਿਲੋ, ਕਿਸੇ ਸਹੇਲੀ ਨੂੰ ਦੱਸੋ ਅਤੇ ਆਉਣ-ਜਾਣ ਦਾ ਇੰਤਜ਼ਾਮ ਆਪ ਕਰੋ|ਉਸਦੇ ਘਰ ਮਿਲੋ|ਉਸਨੂੰ ਆਪਣੇ ਘਰੋਂ ਲੈਣ ਆਉਣ ਦਿਓ|0|ਜਨਤਕ ਥਾਂ, ਤੁਹਾਡਾ ਪਲਾਨ ਜਾਣਦੀ ਸਹੇਲੀ ਅਤੇ ਘਰ ਮੁੜਨ ਦਾ ਆਪਣਾ ਇੰਤਜ਼ਾਮ ਤੁਹਾਨੂੰ ਸੁਰੱਖਿਅਤ ਰੱਖਦੇ ਹਨ। ਮੁਲਾਕਾਤ ਮੋਡ ਤੁਹਾਡੇ ਲਈ ਟਾਈਮਰ ਲਗਾ ਸਕਦਾ ਹੈ।</item>
+        <item>ਕੋਈ ਕਾਲ ਕਰਕੇ ਕਹਿੰਦਾ ਹੈ ਕਿ ਉਹ ਤੁਹਾਡੇ ਬੈਂਕ ਤੋਂ ਹੈ ਅਤੇ ਹੁਣੇ ਆਇਆ OTP ਮੰਗਦਾ ਹੈ। ਤੁਸੀਂ ਕੀ ਕਰੋਗੇ?|ਦੱਸ ਦਿਓਗੇ, ਉਹ ਬੈਂਕ ਤੋਂ ਹੈ|ਸਿਰਫ਼ ਅੱਧਾ ਦੱਸੋਗੇ|ਕਦੇ ਨਹੀਂ ਦੱਸੋਗੇ ਅਤੇ ਕਾਲ ਕੱਟ ਦਿਓਗੇ|2|ਕੋਈ ਵੀ ਬੈਂਕ ਕਦੇ OTP ਨਹੀਂ ਮੰਗਦਾ। OTP ਦੱਸਣ ਨਾਲ ਕੋਈ ਤੁਹਾਡੇ ਪੈਸੇ ਕਢਵਾ ਸਕਦਾ ਹੈ ਜਾਂ ਖਾਤੇ ’ਤੇ ਕਬਜ਼ਾ ਕਰ ਸਕਦਾ ਹੈ।</item>
+        <item>ਮੁਸੀਬਤ ਵਿੱਚ ਫਸੇ ਬੱਚੇ ਲਈ ਹੈਲਪਲਾਈਨ ਨੰਬਰ ਕਿਹੜਾ ਹੈ?|1098|181|ਸਿਰਫ਼ 112|0|1098 ਚਾਈਲਡਲਾਈਨ ਹੈ, ਬੱਚਿਆਂ ਲਈ 24 ਘੰਟੇ ਦੀ ਮੁਫ਼ਤ ਹੈਲਪਲਾਈਨ।</item>
+        <item>ਜੇ ਦੋਵੇਂ ਪਰਿਵਾਰ ਰਾਜ਼ੀ ਹੋਣ, ਤਾਂ ਕੀ ਦਾਜ ਦੇਣਾ ਜਾਂ ਲੈਣਾ ਕਾਨੂੰਨੀ ਹੈ?|ਹਾਂ, ਜੇ ਦੋਵੇਂ ਰਾਜ਼ੀ ਹੋਣ|ਨਹੀਂ, ਦਾਜ ਦੇਣਾ ਅਤੇ ਲੈਣਾ ਦੋਵੇਂ ਜੁਰਮ ਹਨ|ਸਿਰਫ਼ ਦੇਣਾ ਜੁਰਮ ਹੈ|1|ਦਾਜ ਰੋਕੂ ਕਾਨੂੰਨ ਮੁਤਾਬਕ ਦਾਜ ਦੇਣਾ, ਲੈਣਾ ਅਤੇ ਮੰਗਣਾ ਤਿੰਨੋਂ ਸਜ਼ਾਯੋਗ ਹਨ।</item>
+        <item>ਤੁਸੀਂ ਇਸ ਐਪ ਵਿੱਚ ਚੈੱਕ-ਇਨ ਟਾਈਮਰ ਲਗਾਇਆ ਅਤੇ ਸਮੇਂ ਸਿਰ “ਮੈਂ ਸੁਰੱਖਿਅਤ ਹਾਂ” ’ਤੇ ਟੈਪ ਨਹੀਂ ਕੀਤਾ। ਕੀ ਹੋਵੇਗਾ?|ਕੁਝ ਨਹੀਂ, ਟਾਈਮਰ ਬੱਸ ਖਤਮ ਹੋ ਜਾਵੇਗਾ|ਐਪ SOS ਸ਼ੁਰੂ ਕਰਕੇ ਤੁਹਾਡੇ ਸੰਪਰਕਾਂ ਨੂੰ ਅਲਰਟ ਭੇਜੇਗੀ|ਤੁਹਾਡਾ ਫ਼ੋਨ ਰੀਸਟਾਰਟ ਹੋ ਜਾਵੇਗਾ|1|ਚੈੱਕ-ਇਨ ਖੁੰਝਣ ’ਤੇ SOS ਸ਼ੁਰੂ ਹੋ ਜਾਂਦਾ ਹੈ, ਤਾਂ ਜੋ ਤੁਸੀਂ ਫ਼ੋਨ ਤੱਕ ਨਾ ਪਹੁੰਚ ਸਕੋ ਤਾਂ ਵੀ ਕਿਸੇ ਨੂੰ ਪਤਾ ਲੱਗ ਜਾਵੇ।</item>
+        <item>ਰੇਲਗੱਡੀ ਵਿੱਚ ਸਫ਼ਰ ਕਰਦਿਆਂ ਮਦਦ ਲਈ ਕਿਹੜੇ ਨੰਬਰ ’ਤੇ ਕਾਲ ਕਰੀਏ?|139|1930|1098|0|139 ਰੇਲ ਮਦਦ ਹੈਲਪਲਾਈਨ ਹੈ, ਭਾਰਤੀ ਰੇਲ ਵਿੱਚ ਸੁਰੱਖਿਆ ਅਤੇ ਹੋਰ ਮਦਦ ਲਈ।</item>
+    </string-array>
+</resources>

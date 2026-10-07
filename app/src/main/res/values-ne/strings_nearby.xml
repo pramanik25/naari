@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nb_home_eyebrow">समुदाय</string>
+    <string name="nb_home_title">आफ्नो वरपरका महिलालाई सहयोग गर्नुहुन्छ?</string>
+    <string name="nb_home_body">तपाईंको नजिकै कसैले SOS सुरु गर्दा तपाईंले उहाँको लोकेसनसहित अलर्ट पाउनुहुनेछ, ताकि तपाईं सहयोग गर्न वा 112 मा कल गर्न सक्नुहोस्। तपाईंको लोकेसन तपाईंलाई नजिकका अलर्टसँग मिलाउन मात्र प्रयोग हुन्छ र कसैलाई कहिल्यै देखाइँदैन।</string>
+    <string name="nb_home_yes">हुन्छ, म सहयोग गर्छु</string>
+    <string name="nb_home_not_now">अहिले होइन</string>
+    <string name="nb_home_thanks">धन्यवाद। नजिकै कसैलाई सहयोग चाहिँदा तपाईंले अलर्ट पाउनुहुनेछ।</string>
+    <string name="nb_home_thanks_offline">धन्यवाद। तपाईं अनलाइन हुनेबित्तिकै तपाईंलाई सहयोगीका रूपमा दर्ता गरिनेछ।</string>
+    <string name="nb_home_location_denied">तपाईंको लोकेसनबिना हामी तपाईंलाई नजिकका अलर्टसँग मिलाउन सक्दैनौँ। तपाईं यसलाई पछि क्लाउड र अभिभावकमा गएर चालु गर्न सक्नुहुन्छ।</string>
+
+    <string name="nb_mesh_title">इन्टरनेट नहुँदा पनि सहयोग गर्नुहुन्छ?</string>
+    <string name="nb_mesh_body">इन्टरनेट नभएको बेला Naari Shakti ले नजिकका फोनहरूबीच Bluetooth मार्फत पनि SOS अलर्ट पुर्‍याउन सक्छ। यसका लागि नजिकका डिभाइसको अनुमति चाहिन्छ।</string>
+    <string name="nb_mesh_yes">चालु गर्नुहोस्</string>
+    <string name="nb_mesh_no">पर्दैन, धन्यवाद</string>
+    <string name="nb_mesh_on">अफलाइन Bluetooth अलर्ट चालु छन्।</string>
+    <string name="nb_mesh_denied">अफलाइन Bluetooth अलर्टका लागि नजिकका डिभाइसको अनुमति चाहिन्छ।</string>
+
+    <string name="nb_broadcast_title">SOS को बेला मेरो नजिकका मानिसहरूलाई अलर्ट गर्नुहोस्</string>
+    <string name="nb_broadcast_sub">2 देखि 5 km भित्रका स्वयंसेवकहरूले तपाईंको लोकेसन र फोटो पाउँछन्, ताकि उहाँहरूले सहयोग गर्न सकून्। तपाईंका अभिभावकहरूलाई सधैँ अलर्ट जान्छ।</string>
+
+    <plurals name="nb_evidence_count">
+        <item quantity="one">%d फोटो वा रेकर्डिङ</item>
+        <item quantity="other">%d फोटो र रेकर्डिङ</item>
+    </plurals>
+    <string name="nb_radius_km">%1$d km भित्र</string>
+    <string name="nb_view_live">लाइभ लोकेसन र प्रमाण हेर्नुहोस्</string>
+    <string name="nb_photo_desc">उहाँको SOS को सबैभन्दा नयाँ फोटो</string>
+    <string name="nb_n_evidence_text">अहिलेसम्म %1$s। लाइभ हेर्न ट्याप गर्नुहोस्।</string>
+
+    <string name="nb_wa_section">WhatsApp अलर्ट</string>
+    <string name="nb_wa_title">WhatsApp अलर्ट</string>
+    <string name="nb_wa_caption">आफ्नो SOS, लाइभ लोकेसन र फोटो आफ्ना सम्पर्कहरूलाई WhatsApp मा पठाउनुहोस्।</string>
+    <string name="nb_wa_explain">अलर्टहरू Naari Shakti को WhatsApp नम्बरबाट आउँछन्, तपाईंको आफ्नै WhatsApp बाट होइन। अलर्ट पाउनुअघि हरेक सम्पर्कले तपाईंको निम्तोमा एक पटक ट्याप गरेर जोडिनुपर्छ।</string>
+    <string name="nb_wa_joined">जोडिनुभयो ✓</string>
+    <string name="nb_wa_not_joined">अझै जोडिनुभएको छैन</string>
+    <string name="nb_wa_invite">निम्तो दिनुहोस्</string>
+    <string name="nb_wa_invite_cd">%1$s लाई WhatsApp मा निम्तो दिनुहोस्</string>
+    <string name="nb_wa_invite_text">नमस्ते, मैले तपाईंलाई Naari Shakti मा मेरो आपत्कालीन सम्पर्कका रूपमा थपेको छु। WhatsApp मा मेरा SOS अलर्ट पाउन यो लिङ्क खोलेर सन्देश पठाउनुहोस्: %1$s</string>
+    <string name="nb_wa_invite_chooser">निम्तो पठाउनुहोस्</string>
+    <plurals name="nb_wa_joined_count">
+        <item quantity="one">%2$d मध्ये %1$d सम्पर्क जोडिनुभएको छ</item>
+        <item quantity="other">%2$d मध्ये %1$d सम्पर्क जोडिनुभएको छ</item>
+    </plurals>
+    <string name="nb_wa_empty">WhatsApp अलर्ट पठाउन माथि आपत्कालीन सम्पर्क थप्नुहोस्।</string>
+    <string name="nb_wa_unavailable">WhatsApp अलर्ट अहिले उपलब्ध छैनन्। SMS, कल र Telegram अलर्टले काम गरिरहन्छन्।</string>
+    <string name="nb_wa_cloud_off">WhatsApp अलर्टका लागि क्लाउड सिङ्क चाहिन्छ, जुन यो फोनमा बन्द छ। SMS, कल र Telegram अलर्टले काम गरिरहन्छन्।</string>
+    <string name="nb_wa_error">सर्भरसँग सम्पर्क हुन सकेन। तपाईं अनलाइन हुँदा तपाईंका परिवर्तनहरू सिङ्क हुनेछन्।</string>
+    <string name="nb_wa_retry">फेरि प्रयास गर्नुहोस्</string>
+    <string name="nb_wa_checking">को को जोडिनुभएको छ भनेर हेरिँदै छ…</string>
+    <string name="nb_wa_unnamed">नाम नभएको</string>
+</resources>

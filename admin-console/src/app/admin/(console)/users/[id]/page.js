@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { hasPushColumn, query, queryOne } from "@/lib/db";
+import { hasPhoneColumn, hasPushColumn, query, queryOne } from "@/lib/db";
 import { fmtCoords, mapsUrl, trackUrl } from "@/lib/format";
 import Badge from "@/components/Badge";
 import When from "@/components/When";
@@ -13,8 +13,11 @@ export default async function UserDetailPage({ params }) {
   const { id } = await params;
   if (!UUID_RE.test(id)) notFound();
 
+  const phoneCol = await hasPhoneColumn();
   const user = await queryOne(
-    `SELECT id, name, guardian_code, whatsapp_enabled, created_at FROM users WHERE id = $1`,
+    `SELECT id, name, guardian_code, whatsapp_enabled, created_at,
+            ${phoneCol ? "phone" : "NULL::text AS phone"}
+       FROM users WHERE id = $1`,
     [id]
   );
   if (!user) notFound();
@@ -84,6 +87,8 @@ export default async function UserDetailPage({ params }) {
         <div className="card">
           <h3>Profile</h3>
           <dl className="kv">
+            <dt>Mobile</dt>
+            <dd className="mono">{user.phone ? <a href={`tel:${user.phone}`}>{user.phone}</a> : "—"}</dd>
             <dt>Guardian code</dt>
             <dd className="mono">{user.guardian_code || "—"}</dd>
             <dt>Joined</dt>

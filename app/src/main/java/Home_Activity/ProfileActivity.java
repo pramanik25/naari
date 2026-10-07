@@ -431,10 +431,11 @@ public class ProfileActivity extends AppCompatActivity {
         b.saveButton.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY);
         setResult(RESULT_OK);
         snack(getString(R.string.profile_saved));
+        com.example.naarishakti.cloud.ProfileSync.push(this);
     }
 
     /** Strips spaces/dashes and an optional +91 / 91 / 0 prefix; returns the remaining digits. */
-    static String normalizeMobile(String raw) {
+    public static String normalizeMobile(String raw) {
         if (raw == null) return "";
         String s = raw.replaceAll("[\\s\\-()]", "");
         if (s.startsWith("+91")) s = s.substring(3);

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Shared -->
+    <string name="dl_back">వెనుకకు</string>
+    <string name="dl_save">సేవ్ చేయండి</string>
+    <string name="dl_cancel">రద్దు చేయండి</string>
+    <string name="dl_delete">తొలగించండి</string>
+    <string name="dl_channel_daily">రోజువారీ రిమైండర్‌లు</string>
+    <string name="dl_channel_daily_desc">ఈ రోజు క్విజ్, మీరు ఆన్ చేసిన రిమైండర్‌లు</string>
+
+    <!-- Home card and Safety tools tiles -->
+    <string name="dl_section_daily">ప్రతి రోజు</string>
+    <string name="dl_home_commute">ప్రయాణం</string>
+    <string name="dl_home_commute_cap">ఒక్క నొక్కుతో ట్రిప్ టైమర్</string>
+    <string name="dl_home_commute_active">ట్రిప్ నడుస్తోంది</string>
+    <string name="dl_home_cycle">నెలసరి</string>
+    <string name="dl_home_cycle_cap">గోప్యమైన ట్రాకర్</string>
+    <string name="dl_home_quiz">క్విజ్</string>
+    <string name="dl_home_quiz_cap">ఈ రోజు 3 ప్రశ్నలు</string>
+    <plurals name="dl_home_quiz_done">
+        <item quantity="one">పూర్తయింది · %1$d రోజు స్ట్రీక్</item>
+        <item quantity="other">పూర్తయింది · %1$d రోజుల స్ట్రీక్</item>
+    </plurals>
+    <plurals name="dl_home_quiz_keep">
+        <item quantity="one">మీ %1$d రోజు స్ట్రీక్‌ను కొనసాగించండి</item>
+        <item quantity="other">మీ %1$d రోజుల స్ట్రీక్‌ను కొనసాగించండి</item>
+    </plurals>
+
+    <!-- Commute -->
+    <string name="dl_cm_eyebrow">ప్రతి రోజు</string>
+    <string name="dl_cm_title">రోజువారీ ప్రయాణం</string>
+    <string name="dl_cm_body">బయలుదేరేటప్పుడు “బయలుదేరుతున్నాను” నొక్కండి. మామూలు సమయానికి మీరు “చేరుకున్నాను” నొక్కకపోతే, మీ కాంటాక్ట్‌లకు ఆటోమేటిక్‌గా అలర్ట్ వెళ్తుంది.</string>
+    <string name="dl_cm_active_title">ట్రిప్ నడుస్తోంది</string>
+    <string name="dl_cm_active_sub">చెక్-ఇన్ చేయడానికి ఇంకా %1$s</string>
+    <string name="dl_cm_active_overdue">ట్రిప్ గడువు దాటింది</string>
+    <string name="dl_cm_active_overdue_sub">మీరు సురక్షితంగా ఉంటే “చేరుకున్నాను” నొక్కండి</string>
+    <string name="dl_cm_reached">చేరుకున్నాను</string>
+    <string name="dl_cm_section_routes">మీ రూట్‌లు</string>
+    <string name="dl_cm_empty">ఇంకా రూట్‌లు లేవు. మీరు దాదాపు రోజూ చేసే ప్రయాణాలను జోడించండి.</string>
+    <string name="dl_cm_add">రూట్ జోడించండి</string>
+    <string name="dl_cm_note">ట్రిప్ అంటే ఒక చెక్-ఇన్ టైమర్. టైమర్ స్క్రీన్ నుండి ఎప్పుడైనా సమయం పెంచుకోవచ్చు లేదా చెక్-ఇన్ చేయవచ్చు.</string>
+    <string name="dl_cm_leaving">బయలుదేరుతున్నాను</string>
+    <string name="dl_cm_minutes">%1$d ని</string>
+    <string name="dl_cm_default_to_work">ఇంటి నుండి ఆఫీసుకు</string>
+    <string name="dl_cm_default_to_home">ఆఫీసు నుండి ఇంటికి</string>
+    <string name="dl_cm_already_running">ఇప్పటికే ఒక ట్రిప్ నడుస్తోంది. ముందు చెక్-ఇన్ చేయండి.</string>
+    <string name="dl_cm_add_title">కొత్త రూట్</string>
+    <string name="dl_cm_edit_title">రూట్ మార్చండి</string>
+    <string name="dl_cm_name_hint">రూట్ పేరు</string>
+    <string name="dl_cm_name_placeholder">ఇంటి నుండి కాలేజీకి</string>
+    <string name="dl_cm_name_required">రూట్‌కు ఒక పేరు పెట్టండి</string>
+    <string name="dl_cm_duration_label">మామూలుగా పట్టే సమయం</string>
+
+    <!-- Cycle tracker -->
+    <string name="dl_cy_eyebrow">గోప్యం</string>
+    <string name="dl_cy_title">నెలసరి ట్రాకర్</string>
+    <string name="dl_cy_body">మీ నెలసరి, మూడ్, లక్షణాలను నమోదు చేయండి. అంతా ఈ ఫోన్‌లోనే ఎన్‌క్రిప్ట్ అయి ఉంటుంది, ఎప్పుడూ అప్‌లోడ్ కాదు.</string>
+    <string name="dl_cy_locked_title">ట్రాకర్ లాక్‌లో ఉంది</string>
+    <string name="dl_cy_locked_body">తెరవడానికి మీ యాప్ PIN ఎంటర్ చేయండి.</string>
+    <string name="dl_cy_unlock">అన్‌లాక్ చేయండి</string>
+    <string name="dl_cy_pin_title">మీ ట్రాకర్‌ను అన్‌లాక్ చేయండి</string>
+    <string name="dl_cy_log_today">ఈ రోజు నమోదు</string>
+    <string name="dl_cy_prev_month">గత నెల</string>
+    <string name="dl_cy_next_month">తర్వాతి నెల</string>
+    <string name="dl_cy_legend_period">నెలసరి</string>
+    <string name="dl_cy_legend_predicted">అంచనా</string>
+    <string name="dl_cy_legend_fertile">ఫెర్టైల్ రోజులు</string>
+    <string name="dl_cy_stat_cycle">సగటు సైకిల్</string>
+    <string name="dl_cy_stat_period">సగటు నెలసరి</string>
+    <plurals name="dl_cy_days">
+        <item quantity="one">%1$d రోజు</item>
+        <item quantity="other">%1$d రోజులు</item>
+    </plurals>
+    <string name="dl_cy_reminder">నెలసరికి ముందు గుర్తు చేయండి</string>
+    <string name="dl_cy_reminder_sub">రెండు రోజుల ముందు, ఇతరులకు అర్థం కాని చిన్న నోట్ వస్తుంది. అందులో నెలసరి ప్రస్తావన ఉండదు.</string>
+    <string name="dl_cy_disclaimer">అంచనా రోజులు, ఫెర్టైల్ రోజులు మీ సొంత సగటుల ఆధారంగా వేసిన అంచనాలు మాత్రమే. ఇవి వైద్య సలహా కాదు; గర్భం రాకుండా చూసుకోవడానికి లేదా ప్లాన్ చేసుకోవడానికి వీటిపై ఆధారపడకూడదు.</string>
+    <string name="dl_cy_summary_empty">మీ మొదటి నెలసరిని నమోదు చేయండి</string>
+    <string name="dl_cy_summary_empty_sub">అది మొదలైన రోజును క్యాలెండర్‌లో నొక్కండి. మీరు నమోదు చేసే ప్రతి సైకిల్‌తో అంచనాలు మెరుగవుతాయి.</string>
+    <string name="dl_cy_summary_period">నెలసరి · %1$d వ రోజు</string>
+    <string name="dl_cy_summary_day">మీ సైకిల్‌లో %1$d వ రోజు</string>
+    <plurals name="dl_cy_next_in">
+        <item quantity="one">తర్వాతి నెలసరి సుమారు %1$d రోజులో (%2$s)</item>
+        <item quantity="other">తర్వాతి నెలసరి సుమారు %1$d రోజుల్లో (%2$s)</item>
+    </plurals>
+    <string name="dl_cy_next_today">మీ నెలసరి ఈ రోజు రావచ్చు</string>
+    <plurals name="dl_cy_next_late">
+        <item quantity="one">మీ నెలసరి %1$d రోజు ఆలస్యమైంది</item>
+        <item quantity="other">మీ నెలసరి %1$d రోజులు ఆలస్యమైంది</item>
+    </plurals>
+    <string name="dl_cy_default_cycle_note">మీరు రెండు నెలసరులు నమోదు చేసే వరకు, సాధారణ 28 రోజుల సైకిల్ ఆధారంగా అంచనా వేస్తుంది.</string>
+    <string name="dl_cy_load_error">మీ నమోదులను తెరవలేకపోయాము. ఏదీ మారలేదు.</string>
+    <string name="dl_cy_save_error">అది సేవ్ కాలేదు. మళ్లీ ప్రయత్నించండి.</string>
+    <string name="dl_cy_sheet_eyebrow">రోజువారీ నమోదు</string>
+    <string name="dl_cy_sheet_period">నెలసరి రోజు</string>
+    <string name="dl_cy_sheet_flow">రక్తస్రావం</string>
+    <string name="dl_cy_flow_light">తక్కువ</string>
+    <string name="dl_cy_flow_medium">మధ్యస్థం</string>
+    <string name="dl_cy_flow_heavy">ఎక్కువ</string>
+    <string name="dl_cy_sheet_mood">మూడ్</string>
+    <string name="dl_cy_mood_1">😞 దిగులు</string>
+    <string name="dl_cy_mood_2">😕 అసౌకర్యం</string>
+    <string name="dl_cy_mood_3">😐 పర్వాలేదు</string>
+    <string name="dl_cy_mood_4">🙂 బాగుంది</string>
+    <string name="dl_cy_mood_5">😄 చాలా బాగుంది</string>
+    <string name="dl_cy_sheet_symptoms">లక్షణాలు</string>
+    <string name="dl_cy_sym_cramps">కడుపు నొప్పి</string>
+    <string name="dl_cy_sym_headache">తలనొప్పి</string>
+    <string name="dl_cy_sym_backache">నడుము నొప్పి</string>
+    <string name="dl_cy_sym_bloating">కడుపు ఉబ్బరం</string>
+    <string name="dl_cy_sym_fatigue">అలసట</string>
+    <string name="dl_cy_sym_acne">మొటిమలు</string>
+    <string name="dl_cy_sym_tender">రొమ్ముల నొప్పి</string>
+    <string name="dl_cy_sym_nausea">వికారం</string>
+    <string name="dl_cy_sheet_clear">ఈ రోజు నమోదు తీసివేయండి</string>
+
+    <!-- Quiz -->
+    <string name="dl_quiz_eyebrow">ప్రతి రోజు</string>
+    <string name="dl_quiz_title">భద్రతా క్విజ్</string>
+    <string name="dl_quiz_stat_streak">స్ట్రీక్</string>
+    <string name="dl_quiz_stat_points">పాయింట్‌లు</string>
+    <string name="dl_quiz_stat_level">స్థాయి</string>
+    <plurals name="dl_quiz_days">
+        <item quantity="one">%1$d రోజు</item>
+        <item quantity="other">%1$d రోజులు</item>
+    </plurals>
+    <string name="dl_quiz_progress">ప్రశ్న %1$d / %2$d</string>
+    <string name="dl_quiz_progress_practice">ప్రాక్టీస్ · ప్రశ్న %1$d / %2$d</string>
+    <string name="dl_quiz_correct">సరైన జవాబు</string>
+    <string name="dl_quiz_wrong">సరైనది కాదు</string>
+    <string name="dl_quiz_next">తర్వాతి ప్రశ్న</string>
+    <string name="dl_quiz_finish">నా ఫలితం చూపండి</string>
+    <string name="dl_quiz_score">%1$d / %2$d</string>
+    <string name="dl_quiz_result_perfect">అన్నీ సరైనవే!</string>
+    <string name="dl_quiz_result_good">బాగా చేశారు</string>
+    <string name="dl_quiz_result_low">ఇప్పుడు మీకు తెలిసింది</string>
+    <string name="dl_quiz_result_points">+%1$d పాయింట్‌లు. రేపు కొత్త ప్రశ్నలు.</string>
+    <string name="dl_quiz_result_done">ఈ రోజు క్విజ్ పూర్తయింది. రేపు కొత్త ప్రశ్నలు.</string>
+    <string name="dl_quiz_result_practice">ఇది ప్రాక్టీస్ రౌండ్. పాయింట్‌లు రోజువారీ క్విజ్‌లో మాత్రమే వస్తాయి.</string>
+    <string name="dl_quiz_level_next">స్థాయి: %1$s · తర్వాతి స్థాయికి %2$d పాయింట్‌లు</string>
+    <string name="dl_quiz_level_top">స్థాయి: %1$s · అత్యున్నత స్థాయి</string>
+    <string name="dl_quiz_level_1">ప్రారంభం</string>
+    <string name="dl_quiz_level_2">అవగాహన</string>
+    <string name="dl_quiz_level_3">అప్రమత్తం</string>
+    <string name="dl_quiz_level_4">సంరక్షకురాలు</string>
+    <string name="dl_quiz_level_5">శక్తి</string>
+    <string name="dl_quiz_share">నా స్ట్రీక్ షేర్ చేయండి</string>
+    <string name="dl_quiz_share_text">Naari Shakti లో నేను %1$s వరుసగా భద్రతా క్విజ్ ఆడి %2$d పాయింట్‌లు సాధించాను. మీ హక్కులు, హెల్ప్‌లైన్ నంబర్‌లు మీకు తెలుసా?</string>
+    <string name="dl_quiz_practice">ఇంకా ప్రాక్టీస్ చేయండి</string>
+    <string name="dl_quiz_reminder">రోజువారీ క్విజ్ రిమైండర్</string>
+    <string name="dl_quiz_reminder_sub">మీరు ఇంకా ఆడకపోతే సాయంత్రం ఒకే ఒక నోటిఫికేషన్</string>
+
+    <!-- Daily reminder notifications -->
+    <string name="dl_nudge_quiz_title">ఈ రోజు భద్రతా క్విజ్ సిద్ధంగా ఉంది</string>
+    <string name="dl_nudge_quiz_text">మూడు చిన్న ప్రశ్నలు. ఒక్క నిమిషం చాలు.</string>
+    <plurals name="dl_nudge_quiz_streak">
+        <item quantity="one">మీ %1$d రోజు స్ట్రీక్ కొనసాగాలంటే ఇప్పుడే ఆడండి.</item>
+        <item quantity="other">మీ %1$d రోజుల స్ట్రీక్ కొనసాగాలంటే ఇప్పుడే ఆడండి.</item>
+    </plurals>
+    <string name="dl_nudge_cycle_title">Naari Shakti నుండి ఒక రిమైండర్</string>
+    <string name="dl_nudge_cycle_text">చూడటానికి యాప్ తెరవండి.</string>
+
+    <!--
+        Quiz bank. Each item: question|option A|option B|option C|index of the right option (0-2)|explanation.
+        Keep the count a multiple of 3 and never use the | character inside a text.
+        Translations must keep the same order and the same right-option index.
+    -->
+    <string-array name="dl_quiz_items">
+        <item>భారతదేశంలో ఎక్కడి నుండైనా పోలీసు, అగ్నిమాపక, అంబులెన్స్ సేవలను అందించే ఒకే నంబర్ ఏది?|112|1098|139|0|112 అన్నింటికీ ఒకే అత్యవసర నంబర్. బ్యాలెన్స్ లేకపోయినా ఏ ఫోన్ నుండైనా పనిచేస్తుంది.</item>
+        <item>మహిళా హెల్ప్‌లైన్ నంబర్ ఏది?|1930|181|139|1|చాలా రాష్ట్రాల్లో 181 మహిళా హెల్ప్‌లైన్. 1091 మహిళా పోలీస్ హెల్ప్‌లైన్‌కు వెళ్తుంది.</item>
+        <item>ఆన్‌లైన్ వేధింపులు, బ్లాక్‌మెయిల్ లేదా సైబర్ మోసం గురించి ఎక్కడ ఫిర్యాదు చేయాలి?|హెల్ప్‌లైన్ 1930 లేదా cybercrime.gov.in|ఫోన్ కంపెనీ దగ్గర మాత్రమే|ఫిర్యాదు చేయడం కుదరదు|0|1930 కి కాల్ చేయండి లేదా cybercrime.gov.in లో ఫిర్యాదు నమోదు చేయండి. స్క్రీన్‌షాట్‌లను సాక్ష్యంగా ఉంచుకోండి.</item>
+        <item>సంఘటన తమ పరిధి బయట జరిగిందని పోలీస్ స్టేషన్ చెబుతోంది. మీరు ఏమి అడగవచ్చు?|ఏమీ లేదు, మీరే అక్కడికి వెళ్లాలి|Zero FIR|రాతపూర్వక క్షమాపణ|1|ఏ పోలీస్ స్టేషన్ అయినా Zero FIR నమోదు చేసి, దాన్ని సంబంధిత స్టేషన్‌కు బదిలీ చేయాలి.</item>
+        <item>సూర్యాస్తమయం తర్వాత, సూర్యోదయానికి ముందు పోలీసులు ఒక మహిళను అరెస్ట్ చేయవచ్చా?|అవును, ఎప్పుడైనా|ఎట్టి పరిస్థితుల్లోనూ కూడదు|అసాధారణ సందర్భాల్లో మాత్రమే, మేజిస్ట్రేట్ రాతపూర్వక అనుమతితో మహిళా అధికారి ద్వారా|2|మేజిస్ట్రేట్ ముందస్తు రాతపూర్వక అనుమతి ఉన్న అసాధారణ సందర్భాల్లో తప్ప, రాత్రిపూట అరెస్ట్‌ల నుండి చట్టం మహిళలను కాపాడుతుంది.</item>
+        <item>మీరు బుక్ చేసిన క్యాబ్ ఎక్కే ముందు ఏమి చూసుకోవాలి?|నంబర్ ప్లేట్, డ్రైవర్ యాప్‌లో ఉన్నవాటితో సరిపోతున్నాయా|కారు శుభ్రంగా ఉందా|డ్రైవర్ తొందరలో ఉన్నాడా|0|ఎప్పుడూ ప్లేట్‌ను, డ్రైవర్‌ను బుకింగ్‌తో సరిచూసుకోండి. ఈ యాప్‌లోని క్యాబ్ మోడ్ ప్లేట్ నంబర్‌ను మీ కాంటాక్ట్‌లకు పంపగలదు.</item>
+        <item>మీ క్యాబ్ మీకు తెలియని దారిలో వెళ్తోంది. ముందుగా చేయాల్సిన మంచి పని ఏది?|మౌనంగా ఉండి వేచి చూడటం|లైవ్ లొకేషన్ పంపి, ఎవరికైనా కాల్ చేసి, జనం ఉన్న చోట ఆపమని అడగటం|ఫోన్ స్విచ్ ఆఫ్ చేయడం|1|మీరు ఎక్కడ ఉన్నారో ఎవరికైనా తెలియజేయండి, కాల్‌లో గట్టిగా చెప్పండి, ప్రమాదం అనిపిస్తే SOS వాడండి.</item>
+        <item>10 లేదా అంతకంటే ఎక్కువ మంది ఉద్యోగులున్న కార్యాలయంలో లైంగిక వేధింపుల ఫిర్యాదును ఎవరు విచారించాలి?|అంతర్గత కమిటీ (Internal Committee)|పోలీసులు మాత్రమే|సెక్యూరిటీ గార్డ్|0|POSH చట్టం ప్రకారం అలాంటి ప్రతి కార్యాలయంలో అంతర్గత కమిటీ ఉండాలి.</item>
+        <item>POSH చట్టం కింద కార్యాలయంలో లైంగిక వేధింపుల ఫిర్యాదు చేయడానికి ఎంత సమయం ఉంటుంది?|24 గంటలు|ఒక వారం|సంఘటన జరిగిన మూడు నెలల లోపు|2|ఫిర్యాదు మూడు నెలల లోపు చేయాలి; కమిటీ ఈ గడువును మరో మూడు నెలలు పొడిగించవచ్చు.</item>
+        <item>మీరు స్పష్టంగా వద్దని చెప్పిన తర్వాత కూడా ఎవరైనా మిమ్మల్ని వెంబడిస్తున్నారు లేదా మెసేజ్‌లు పంపుతూనే ఉన్నారు. అది నేరమా?|కాదు, అది కేవలం చెడు ప్రవర్తన|అవును, వెంటపడి వేధించడం నేరం, ఆన్‌లైన్‌లో కూడా|వారు మిమ్మల్ని తాకితేనే|1|నేరుగా అయినా, ఆన్‌లైన్‌లో అయినా వెంటపడి వేధించడం (స్టాకింగ్) క్రిమినల్ నేరం. మెసేజ్‌లను భద్రపరచి ఫిర్యాదు చేయండి.</item>
+        <item>గృహ హింస చట్టం కేవలం శారీరక హింసకే వర్తిస్తుందా?|అవును, శారీరక హింసకు మాత్రమే|కాదు, మాటలతో, మానసికంగా, లైంగికంగా, ఆర్థికంగా చేసే వేధింపులకు కూడా|పెళ్లయిన మహిళలకు మాత్రమే వర్తిస్తుంది|1|గృహ హింస నుండి మహిళల రక్షణ చట్టం ఈ అన్ని రకాల వేధింపులకు వర్తిస్తుంది; సహజీవనంలో ఉన్న మహిళలకు కూడా.</item>
+        <item>భారతదేశంలో ఉచిత న్యాయ సహాయం పొందే హక్కు ఎవరికి ఉంది?|ఆదాయం ఎంతైనా సరే, ప్రతి మహిళకు|పేదరిక రేఖకు దిగువన ఉన్న మహిళలకు మాత్రమే|ఎవరికీ లేదు, లాయర్లు ఎప్పుడూ ఫీజు తీసుకుంటారు|0|ప్రతి మహిళ తన జిల్లాలోని న్యాయ సేవల అధికార సంస్థ ద్వారా ఉచిత న్యాయ సహాయం పొందవచ్చు.</item>
+        <item>లైంగిక దాడి బాధితురాలి పేరును మీడియా గానీ మరెవరైనా గానీ ప్రచురించవచ్చా?|అవును, వార్త నిజమైతే|సోషల్ మీడియాలో మాత్రమే|లేదు, ఆమె గుర్తింపును బయటపెట్టడం నేరం|2|లైంగిక దాడి బాధితురాలి గుర్తింపును వెల్లడించడం శిక్షార్హమైన నేరం.</item>
+        <item>మీరు రాత్రి ఒంటరిగా నడుస్తున్నారు, ఎవరో వెంబడిస్తున్నట్లు అనిపిస్తోంది. ఏమి చేస్తారు?|నిర్మానుష్యమైన సందు గుండా నేరుగా ఇంటికి వెళ్తాను|వెలుతురు, జనం ఉన్న చోటికి వెళ్లి ఎవరికైనా కాల్ చేస్తాను|ఆగి ఒంటరిగా వారిని నిలదీస్తాను|1|జనం, వెలుతురు ఉన్న వైపు వెళ్లండి, కాల్‌లో ఉండండి, ఆ వ్యక్తిని మీ ఇంటి వరకు రానివ్వకండి.</item>
+        <item>పార్టీలో మీ డ్రింక్‌ను ఎవరూ గమనించని చోట వదిలి వెళ్లారు. సురక్షితమైన పని ఏది?|త్వరగా తాగేయడం|తెలియని వ్యక్తిని రుచి చూడమని అడగటం|దాన్ని వదిలేసి కొత్తది తీసుకోవడం|2|గమనించకుండా వదిలేసిన డ్రింక్‌లో ఎవరైనా ఏదైనా కలిపి ఉండవచ్చు. ఎప్పుడూ కొత్తది తీసుకోండి.</item>
+        <item>ఈ యాప్‌లోని ఫేక్ కాల్ సాధనం దేనికి?|ఇబ్బందికర పరిస్థితి నుండి బయటపడటానికి నమ్మదగిన కారణం ఇవ్వడానికి|స్నేహితులను ఆటపట్టించడానికి|పోలీసులకు కాల్ చేయడానికి|0|ఫేక్ ఇన్‌కమింగ్ కాల్ వల్ల గొడవ లేకుండా అక్కడి నుండి పక్కకు వెళ్లవచ్చు.</item>
+        <item>ఈ యాప్‌లో మీ బలవంతపు PIN ఎంటర్ చేస్తే ఏమవుతుంది?|యాప్ డిలీట్ అవుతుంది|యాప్ మామూలుగానే కనిపిస్తుంది కానీ నిశ్శబ్దంగా SOS పంపుతుంది|ఏమీ జరగదు|1|ఎవరైనా మిమ్మల్ని బలవంతంగా అన్‌లాక్ చేయిస్తున్నప్పుడు బలవంతపు PIN ఉపయోగపడుతుంది. అది యాప్‌ను మామూలుగా తెరిచి, రహస్యంగా మీ కాంటాక్ట్‌లకు అలర్ట్ పంపుతుంది.</item>
+        <item>ఒక మహిళ లైంగిక నేరం గురించి ఫిర్యాదు చేసినప్పుడు, ఆమె వాంగ్మూలాన్ని ఎవరు నమోదు చేయాలి?|డ్యూటీలో ఉన్న ఏ అధికారి అయినా|మహిళా పోలీస్ అధికారి|పొరుగువారు|1|ఆమె వాంగ్మూలాన్ని మహిళా పోలీస్ అధికారి నమోదు చేయాలని చట్టం చెబుతోంది.</item>
+        <item>ఇంటర్నెట్‌లో పరిచయమైన వ్యక్తిని మొదటిసారి కలవబోతున్నారు. అన్నిటికంటే సురక్షితమైన ప్లాన్ ఏది?|బహిరంగ ప్రదేశంలో కలవడం, స్నేహితురాలికి చెప్పడం, సొంతంగా ప్రయాణ ఏర్పాటు చేసుకోవడం|వారి ఇంట్లో కలవడం|వారినే మీ ఇంటి నుండి తీసుకెళ్లనివ్వడం|0|బహిరంగ ప్రదేశం, మీ ప్లాన్ తెలిసిన స్నేహితురాలు, ఇంటికి తిరిగి వెళ్లడానికి సొంత ఏర్పాటు ఉంటే పరిస్థితి మీ చేతిలో ఉంటుంది. మీటింగ్ మోడ్ మీ కోసం టైమర్ సెట్ చేయగలదు.</item>
+        <item>మీ బ్యాంక్ నుండి మాట్లాడుతున్నామని చెప్పి, మీకు ఇప్పుడే వచ్చిన OTP అడుగుతున్నారు. ఏమి చేస్తారు?|చెప్పేస్తాను, వారు బ్యాంక్ వారే కదా|సగం మాత్రమే చెబుతాను|ఎప్పటికీ చెప్పను, కాల్ కట్ చేస్తాను|2|ఏ బ్యాంక్ కూడా OTP అడగదు. అది చెబితే ఎవరైనా మీ డబ్బును లేదా మీ ఖాతాను తమ చేతుల్లోకి తీసుకోగలరు.</item>
+        <item>ఆపదలో ఉన్న పిల్లల కోసం హెల్ప్‌లైన్ నంబర్ ఏది?|1098|181|112 మాత్రమే|0|1098 చైల్డ్‌లైన్; పిల్లల కోసం 24 గంటలూ పనిచేసే ఉచిత హెల్ప్‌లైన్.</item>
+        <item>రెండు కుటుంబాలు ఒప్పుకుంటే కట్నం ఇవ్వడం, తీసుకోవడం చట్టబద్ధమేనా?|అవును, ఇద్దరూ ఒప్పుకుంటే|కాదు, కట్నం ఇవ్వడం, తీసుకోవడం రెండూ నేరాలే|ఇవ్వడం మాత్రమే నేరం|1|వరకట్న నిషేధ చట్టం ప్రకారం కట్నం ఇవ్వడం, తీసుకోవడం, అడగడం అన్నీ శిక్షార్హం.</item>
+        <item>ఈ యాప్‌లో చెక్-ఇన్ టైమర్ పెట్టి, సమయానికి “నేను సురక్షితం” నొక్కలేదు. ఏమవుతుంది?|ఏమీ కాదు, టైమర్ ముగుస్తుంది అంతే|యాప్ SOS ప్రారంభించి మీ కాంటాక్ట్‌లకు అలర్ట్ పంపుతుంది|మీ ఫోన్ రీస్టార్ట్ అవుతుంది|1|చెక్-ఇన్ మిస్ అయితే SOS మొదలవుతుంది; మీరు ఫోన్ అందుకోలేని స్థితిలో ఉన్నా ఎవరికైనా తెలుస్తుంది.</item>
+        <item>రైలు ప్రయాణంలో సహాయం కోసం ఏ నంబర్‌కు కాల్ చేయాలి?|139|1930|1098|0|139 రైల్ మదద్ హెల్ప్‌లైన్; భారతీయ రైల్వేలో భద్రత, ఇతర సహాయం కోసం దీనికి కాల్ చేయవచ్చు.</item>
+    </string-array>
+</resources>

@@ -215,7 +215,7 @@
     <!-- ===================== Profile ===================== -->
     <string name="profile_overline">உங்கள் சுயவிவரம்</string>
     <string name="profile_title">உங்களைப் பற்றி</string>
-    <string name="profile_body">உங்கள் தொடர்புகளும் மீட்புப் பணியாளர்களும் உங்களை அடையாளம் காண உதவும். இந்தச் சாதனத்தில் மட்டுமே சேமிக்கப்படும்.</string>
+    <string name="profile_body">உங்கள் தொடர்புகளும் மீட்புப் பணியாளர்களும் உங்களை அடையாளம் காண உதவும். உங்கள் பெயரும் மொபைல் எண்ணும் உங்கள் Naari Shakti கணக்கிலும் சேமிக்கப்படும்.</string>
     <string name="profile_add_photo">புகைப்படம் சேர்க்கத் தட்டவும்</string>
     <string name="profile_change_photo">புகைப்படத்தை மாற்றத் தட்டவும்</string>
     <string name="cd_profile_photo">சுயவிவரப் புகைப்படம். மாற்ற இருமுறை தட்டவும்.</string>

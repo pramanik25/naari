@@ -34,3 +34,16 @@ export async function hasPushColumn() {
   }
   return globalForDb.__nsAdminHasPush;
 }
+
+// Migration 007 adds users.phone; the live DB may not have it yet. Only a "yes" is cached, so the
+// column shows up without a console restart once the backend has migrated.
+export async function hasPhoneColumn() {
+  if (!globalForDb.__nsAdminHasPhone) {
+    const row = await queryOne(
+      `SELECT 1 AS ok FROM information_schema.columns
+        WHERE table_schema = 'public' AND table_name = 'users' AND column_name = 'phone'`
+    );
+    globalForDb.__nsAdminHasPhone = Boolean(row);
+  }
+  return globalForDb.__nsAdminHasPhone;
+}

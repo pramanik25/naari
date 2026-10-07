@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Shared -->
+    <string name="dl_back">واپس</string>
+    <string name="dl_save">محفوظ کریں</string>
+    <string name="dl_cancel">منسوخ</string>
+    <string name="dl_delete">حذف کریں</string>
+    <string name="dl_channel_daily">روزانہ یاد دہانیاں</string>
+    <string name="dl_channel_daily_desc">آج کا کوئز اور وہ یاد دہانیاں جو آپ نے آن کی ہیں</string>
+
+    <!-- Home card and Safety tools tiles -->
+    <string name="dl_section_daily">ہر دن</string>
+    <string name="dl_home_commute">روز کا سفر</string>
+    <string name="dl_home_commute_cap">ایک ٹیپ میں سفر کا ٹائمر</string>
+    <string name="dl_home_commute_active">سفر جاری ہے</string>
+    <string name="dl_home_cycle">ماہواری</string>
+    <string name="dl_home_cycle_cap">نجی ٹریکر</string>
+    <string name="dl_home_quiz">کوئز</string>
+    <string name="dl_home_quiz_cap">آج 3 سوال</string>
+    <plurals name="dl_home_quiz_done">
+        <item quantity="one">مکمل · %1$d دن کا سلسلہ</item>
+        <item quantity="other">مکمل · %1$d دن کا سلسلہ</item>
+    </plurals>
+    <plurals name="dl_home_quiz_keep">
+        <item quantity="one">اپنا %1$d دن کا سلسلہ برقرار رکھیں</item>
+        <item quantity="other">اپنا %1$d دن کا سلسلہ برقرار رکھیں</item>
+    </plurals>
+
+    <!-- Commute -->
+    <string name="dl_cm_eyebrow">ہر دن</string>
+    <string name="dl_cm_title">روز کا سفر</string>
+    <string name="dl_cm_body">نکلتے وقت “نکل رہی ہوں” پر ٹیپ کریں۔ اگر معمول کے وقت تک آپ نے “میں پہنچ گئی” پر ٹیپ نہ کیا تو آپ کے رابطوں کو خود بخود خبر دی جائے گی۔</string>
+    <string name="dl_cm_active_title">سفر جاری ہے</string>
+    <string name="dl_cm_active_sub">چیک اِن کے لیے %1$s باقی</string>
+    <string name="dl_cm_active_overdue">سفر کا وقت گزر گیا</string>
+    <string name="dl_cm_active_overdue_sub">محفوظ ہوں تو “میں پہنچ گئی” پر ٹیپ کریں</string>
+    <string name="dl_cm_reached">میں پہنچ گئی</string>
+    <string name="dl_cm_section_routes">آپ کے راستے</string>
+    <string name="dl_cm_empty">ابھی کوئی راستہ نہیں۔ وہ سفر شامل کریں جو آپ تقریباً روز کرتی ہیں۔</string>
+    <string name="dl_cm_add">راستہ شامل کریں</string>
+    <string name="dl_cm_note">سفر دراصل ایک چیک اِن ٹائمر ہے۔ آپ کسی بھی وقت ٹائمر کی اسکرین سے وقت بڑھا سکتی ہیں یا چیک اِن کر سکتی ہیں۔</string>
+    <string name="dl_cm_leaving">نکل رہی ہوں</string>
+    <string name="dl_cm_minutes">%1$d منٹ</string>
+    <string name="dl_cm_default_to_work">گھر سے دفتر</string>
+    <string name="dl_cm_default_to_home">دفتر سے گھر</string>
+    <string name="dl_cm_already_running">ایک سفر پہلے سے جاری ہے۔ پہلے چیک اِن کریں۔</string>
+    <string name="dl_cm_add_title">نیا راستہ</string>
+    <string name="dl_cm_edit_title">راستہ بدلیں</string>
+    <string name="dl_cm_name_hint">راستے کا نام</string>
+    <string name="dl_cm_name_placeholder">گھر سے کالج</string>
+    <string name="dl_cm_name_required">راستے کو کوئی نام دیں</string>
+    <string name="dl_cm_duration_label">عام طور پر لگنے والا وقت</string>
+
+    <!-- Cycle tracker -->
+    <string name="dl_cy_eyebrow">نجی</string>
+    <string name="dl_cy_title">ماہواری ٹریکر</string>
+    <string name="dl_cy_body">اپنی ماہواری، موڈ اور علامات درج کریں۔ سب کچھ اسی فون پر انکرپٹ رہتا ہے اور کبھی اپ لوڈ نہیں ہوتا۔</string>
+    <string name="dl_cy_locked_title">ٹریکر لاک ہے</string>
+    <string name="dl_cy_locked_body">کھولنے کے لیے اپنا ایپ PIN درج کریں۔</string>
+    <string name="dl_cy_unlock">کھولیں</string>
+    <string name="dl_cy_pin_title">اپنا ٹریکر کھولیں</string>
+    <string name="dl_cy_log_today">آج کا اندراج کریں</string>
+    <string name="dl_cy_prev_month">پچھلا مہینہ</string>
+    <string name="dl_cy_next_month">اگلا مہینہ</string>
+    <string name="dl_cy_legend_period">ماہواری</string>
+    <string name="dl_cy_legend_predicted">متوقع</string>
+    <string name="dl_cy_legend_fertile">زرخیز دن</string>
+    <string name="dl_cy_stat_cycle">اوسط سائیکل</string>
+    <string name="dl_cy_stat_period">اوسط ماہواری</string>
+    <plurals name="dl_cy_days">
+        <item quantity="one">%1$d دن</item>
+        <item quantity="other">%1$d دن</item>
+    </plurals>
+    <string name="dl_cy_reminder">ماہواری سے پہلے یاد دلائیں</string>
+    <string name="dl_cy_reminder_sub">دو دن پہلے ایک محتاط سا نوٹ۔ اس میں ماہواری کا ذکر کبھی نہیں ہوتا۔</string>
+    <string name="dl_cy_disclaimer">متوقع اور زرخیز دن آپ کے اپنے اوسط سے لگائے گئے اندازے ہیں۔ یہ طبی مشورہ نہیں ہیں اور حمل روکنے یا اس کی منصوبہ بندی کے لیے ان پر بھروسا نہیں کرنا چاہیے۔</string>
+    <string name="dl_cy_summary_empty">اپنی پہلی ماہواری درج کریں</string>
+    <string name="dl_cy_summary_empty_sub">کیلنڈر پر اس دن کو ٹیپ کریں جس دن یہ شروع ہوئی۔ ہر درج کیے گئے سائیکل کے ساتھ اندازے بہتر ہوتے جاتے ہیں۔</string>
+    <string name="dl_cy_summary_period">ماہواری · دن %1$d</string>
+    <string name="dl_cy_summary_day">آپ کے سائیکل کا دن %1$d</string>
+    <plurals name="dl_cy_next_in">
+        <item quantity="one">اگلی ماہواری تقریباً %1$d دن میں (%2$s)</item>
+        <item quantity="other">اگلی ماہواری تقریباً %1$d دن میں (%2$s)</item>
+    </plurals>
+    <string name="dl_cy_next_today">آپ کی ماہواری آج متوقع ہے</string>
+    <plurals name="dl_cy_next_late">
+        <item quantity="one">آپ کی ماہواری %1$d دن لیٹ ہے</item>
+        <item quantity="other">آپ کی ماہواری %1$d دن لیٹ ہے</item>
+    </plurals>
+    <string name="dl_cy_default_cycle_note">جب تک آپ دو ماہواریاں درج نہیں کر لیتیں، حساب عام 28 دن کے سائیکل پر ہے۔</string>
+    <string name="dl_cy_load_error">آپ کا ریکارڈ نہیں کھل سکا۔ کچھ بھی نہیں بدلا۔</string>
+    <string name="dl_cy_save_error">یہ محفوظ نہیں ہو سکا۔ دوبارہ کوشش کریں۔</string>
+    <string name="dl_cy_sheet_eyebrow">روزانہ اندراج</string>
+    <string name="dl_cy_sheet_period">ماہواری کا دن</string>
+    <string name="dl_cy_sheet_flow">بہاؤ</string>
+    <string name="dl_cy_flow_light">ہلکا</string>
+    <string name="dl_cy_flow_medium">درمیانہ</string>
+    <string name="dl_cy_flow_heavy">زیادہ</string>
+    <string name="dl_cy_sheet_mood">موڈ</string>
+    <string name="dl_cy_mood_1">😞 اداس</string>
+    <string name="dl_cy_mood_2">😕 بے چین</string>
+    <string name="dl_cy_mood_3">😐 ٹھیک</string>
+    <string name="dl_cy_mood_4">🙂 اچھا</string>
+    <string name="dl_cy_mood_5">😄 بہت اچھا</string>
+    <string name="dl_cy_sheet_symptoms">علامات</string>
+    <string name="dl_cy_sym_cramps">پیٹ میں مروڑ</string>
+    <string name="dl_cy_sym_headache">سر درد</string>
+    <string name="dl_cy_sym_backache">کمر درد</string>
+    <string name="dl_cy_sym_bloating">پیٹ پھولنا</string>
+    <string name="dl_cy_sym_fatigue">تھکن</string>
+    <string name="dl_cy_sym_acne">مہاسے</string>
+    <string name="dl_cy_sym_tender">چھاتی میں درد</string>
+    <string name="dl_cy_sym_nausea">متلی</string>
+    <string name="dl_cy_sheet_clear">اس دن کا اندراج مٹائیں</string>
+
+    <!-- Quiz -->
+    <string name="dl_quiz_eyebrow">ہر دن</string>
+    <string name="dl_quiz_title">حفاظتی کوئز</string>
+    <string name="dl_quiz_stat_streak">سلسلہ</string>
+    <string name="dl_quiz_stat_points">پوائنٹس</string>
+    <string name="dl_quiz_stat_level">لیول</string>
+    <plurals name="dl_quiz_days">
+        <item quantity="one">%1$d دن</item>
+        <item quantity="other">%1$d دن</item>
+    </plurals>
+    <string name="dl_quiz_progress">سوال %1$d از %2$d</string>
+    <string name="dl_quiz_progress_practice">مشق · سوال %1$d از %2$d</string>
+    <string name="dl_quiz_correct">درست</string>
+    <string name="dl_quiz_wrong">یہ درست نہیں</string>
+    <string name="dl_quiz_next">اگلا سوال</string>
+    <string name="dl_quiz_finish">میرا نتیجہ دیکھیں</string>
+    <string name="dl_quiz_score">%1$d / %2$d</string>
+    <string name="dl_quiz_result_perfect">سب جواب درست</string>
+    <string name="dl_quiz_result_good">بہت خوب</string>
+    <string name="dl_quiz_result_low">اب آپ جان گئیں</string>
+    <string name="dl_quiz_result_points">+%1$d پوائنٹس۔ نئے سوال کل ملیں گے۔</string>
+    <string name="dl_quiz_result_done">آج کا کوئز مکمل ہو گیا۔ نئے سوال کل ملیں گے۔</string>
+    <string name="dl_quiz_result_practice">یہ مشق کا راؤنڈ تھا۔ پوائنٹس روزانہ کوئز سے ملتے ہیں۔</string>
+    <string name="dl_quiz_level_next">لیول: %1$s · اگلے لیول تک %2$d پوائنٹس</string>
+    <string name="dl_quiz_level_top">لیول: %1$s · سب سے اونچا لیول</string>
+    <string name="dl_quiz_level_1">نئی شروعات</string>
+    <string name="dl_quiz_level_2">باخبر</string>
+    <string name="dl_quiz_level_3">چوکس</string>
+    <string name="dl_quiz_level_4">محافظ</string>
+    <string name="dl_quiz_level_5">شکتی</string>
+    <string name="dl_quiz_share">اپنا سلسلہ شیئر کریں</string>
+    <string name="dl_quiz_share_text">میں Naari Shakti پر %1$s سے مسلسل حفاظتی کوئز کھیل رہی ہوں اور میرے %2$d پوائنٹس ہیں۔ کیا آپ کو اپنے حقوق اور ہیلپ لائن نمبر معلوم ہیں؟</string>
+    <string name="dl_quiz_practice">مزید مشق کریں</string>
+    <string name="dl_quiz_reminder">روزانہ کوئز کی یاد دہانی</string>
+    <string name="dl_quiz_reminder_sub">اگر آپ نے ابھی تک نہیں کھیلا تو شام کو ایک نوٹیفکیشن</string>
+
+    <!-- Daily reminder notifications -->
+    <string name="dl_nudge_quiz_title">آج کا حفاظتی کوئز تیار ہے</string>
+    <string name="dl_nudge_quiz_text">تین چھوٹے سوال۔ بس ایک منٹ لگے گا۔</string>
+    <plurals name="dl_nudge_quiz_streak">
+        <item quantity="one">اپنا %1$d دن کا سلسلہ برقرار رکھنے کے لیے ابھی کھیلیں۔</item>
+        <item quantity="other">اپنا %1$d دن کا سلسلہ برقرار رکھنے کے لیے ابھی کھیلیں۔</item>
+    </plurals>
+    <string name="dl_nudge_cycle_title">Naari Shakti کی طرف سے ایک یاد دہانی</string>
+    <string name="dl_nudge_cycle_text">دیکھنے کے لیے ایپ کھولیں۔</string>
+
+    <!--
+        Quiz bank. Each item: question|option A|option B|option C|index of the right option (0-2)|explanation.
+        Keep the count a multiple of 3 and never use the | character inside a text.
+        Translations must keep the same order and the same right-option index.
+    -->
+    <string-array name="dl_quiz_items">
+        <item>بھارت میں کہیں سے بھی کس ایک نمبر پر پولیس، فائر بریگیڈ اور ایمبولینس مل جاتی ہے؟|112|1098|139|0|112 ہر ایمرجنسی کا ایک ہی نمبر ہے۔ یہ کسی بھی فون سے لگتا ہے، بیلنس نہ ہو تب بھی۔</item>
+        <item>خواتین ہیلپ لائن کا نمبر کون سا ہے؟|1930|181|139|1|زیادہ تر ریاستوں میں 181 خواتین ہیلپ لائن ہے۔ 1091 پر خواتین پولیس ہیلپ لائن ملتی ہے۔</item>
+        <item>آن لائن ہراسانی، بلیک میل یا سائبر فراڈ کی شکایت کہاں کی جاتی ہے؟|ہیلپ لائن 1930 یا cybercrime.gov.in پر|صرف فون کمپنی کے پاس|اس کی شکایت نہیں ہو سکتی|0|1930 پر کال کریں یا cybercrime.gov.in پر شکایت درج کریں۔ ثبوت کے طور پر اسکرین شاٹ سنبھال کر رکھیں۔</item>
+        <item>تھانے والے کہتے ہیں کہ واقعہ ان کے علاقے سے باہر ہوا ہے۔ آپ کیا مانگ سکتی ہیں؟|کچھ نہیں، آپ کو وہیں جانا ہوگا|زیرو FIR|تحریری معافی|1|ہر تھانے پر لازم ہے کہ زیرو FIR درج کرے اور اسے متعلقہ تھانے کو بھیج دے۔</item>
+        <item>کیا پولیس کسی عورت کو سورج ڈوبنے کے بعد اور سورج نکلنے سے پہلے گرفتار کر سکتی ہے؟|ہاں، کسی بھی وقت|کبھی نہیں، کسی بھی حال میں نہیں|صرف غیر معمولی حالات میں، خاتون افسر کے ذریعے اور مجسٹریٹ کی تحریری اجازت سے|2|قانون عورتوں کو رات کی گرفتاری سے بچاتا ہے، سوائے ان غیر معمولی حالات کے جن میں مجسٹریٹ کی پیشگی تحریری اجازت ہو۔</item>
+        <item>اپنی بک کی ہوئی کیب میں بیٹھنے سے پہلے آپ کو کیا جانچنا چاہیے؟|کہ نمبر پلیٹ اور ڈرائیور ایپ سے میل کھاتے ہیں|کہ گاڑی صاف ہے|کہ ڈرائیور جلدی میں ہے|0|نمبر پلیٹ اور ڈرائیور کو ہمیشہ بکنگ سے ملا کر دیکھیں۔ اس ایپ کا کیب موڈ نمبر پلیٹ آپ کے رابطوں کو بھیج سکتا ہے۔</item>
+        <item>آپ کی کیب ایسے راستے پر چل پڑی ہے جسے آپ نہیں پہچانتیں۔ سب سے اچھا پہلا قدم کیا ہے؟|چپ رہ کر انتظار کریں|اپنی لائیو لوکیشن شیئر کریں، کسی کو کال کریں اور کسی بھیڑ والی جگہ پر رکنے کو کہیں|اپنا فون بند کر دیں|1|کسی کو بتائیں کہ آپ کہاں ہیں، کال پر اونچی آواز میں یہ بات کہیں، اور خطرہ محسوس ہو تو SOS استعمال کریں۔</item>
+        <item>جس دفتر میں 10 یا اس سے زیادہ ملازم ہوں، وہاں جنسی ہراسانی کی شکایت کس کو سننی ہوتی ہے؟|انٹرنل کمیٹی|صرف پولیس|سکیورٹی گارڈ|0|POSH قانون کے مطابق ایسے ہر دفتر میں انٹرنل کمیٹی (اندرونی کمیٹی) ہونا لازمی ہے۔</item>
+        <item>POSH قانون کے تحت دفتر میں جنسی ہراسانی کی شکایت درج کرانے کے لیے آپ کے پاس کتنا وقت ہوتا ہے؟|24 گھنٹے|ایک ہفتہ|واقعے سے تین مہینے|2|شکایت تین مہینے کے اندر کرنی چاہیے، اور کمیٹی یہ مدت مزید تین مہینے بڑھا سکتی ہے۔</item>
+        <item>آپ کے صاف منع کرنے کے بعد بھی کوئی آپ کا پیچھا کرتا رہتا ہے یا میسج بھیجتا رہتا ہے۔ کیا یہ جرم ہے؟|نہیں، یہ بس بدتمیزی ہے|ہاں، پیچھا کرنا جرم ہے، آن لائن بھی|صرف تب جب وہ آپ کو چھوئے|1|پیچھا کرنا (اسٹاکنگ)، چاہے سامنے ہو یا آن لائن، ایک فوجداری جرم ہے۔ میسج سنبھال کر رکھیں اور اس کی شکایت کریں۔</item>
+        <item>کیا گھریلو تشدد کا قانون صرف جسمانی تشدد پر لاگو ہوتا ہے؟|ہاں، صرف جسمانی تشدد پر|نہیں، زبانی، جذباتی، جنسی اور مالی زیادتی پر بھی|یہ صرف شادی شدہ عورتوں کے لیے ہے|1|گھریلو تشدد سے خواتین کے تحفظ کا قانون زیادتی کی ان تمام شکلوں پر لاگو ہوتا ہے، اور لِو اِن رشتے میں رہنے والی عورتوں پر بھی۔</item>
+        <item>بھارت میں مفت قانونی مدد کی حق دار کون ہے؟|ہر عورت، اس کی آمدنی جو بھی ہو|صرف غربت کی لکیر سے نیچے کی عورتیں|کوئی نہیں، وکیل ہمیشہ فیس لیتے ہیں|0|ہر عورت اپنے ضلع کی لیگل سروسز اتھارٹی (قانونی خدمات اتھارٹی) کے ذریعے مفت قانونی مدد لے سکتی ہے۔</item>
+        <item>کیا میڈیا یا کوئی اور شخص جنسی زیادتی سے متاثرہ عورت کا نام شائع کر سکتا ہے؟|ہاں، اگر خبر سچی ہو|صرف سوشل میڈیا پر|نہیں، اس کی شناخت ظاہر کرنا جرم ہے|2|جنسی زیادتی سے متاثرہ عورت کی شناخت ظاہر کرنا قابلِ سزا جرم ہے۔</item>
+        <item>آپ رات کو اکیلی پیدل جا رہی ہیں اور لگتا ہے کہ کوئی آپ کا پیچھا کر رہا ہے۔ آپ کیا کریں گی؟|سب سے سنسان گلی سے سیدھی گھر جائیں|کسی روشن، بھیڑ والی جگہ کی طرف بڑھیں اور کسی کو کال کریں|رک کر اکیلے اس کا سامنا کریں|1|لوگوں اور روشنی کی طرف جائیں، کال پر رہیں، اور اس شخص کو اپنے گھر تک نہ پہنچنے دیں۔</item>
+        <item>پارٹی میں آپ اپنا مشروب کچھ دیر کے لیے چھوڑ کر چلی گئی تھیں۔ محفوظ طریقہ کیا ہے؟|اسے جلدی سے پی لیں|کسی اجنبی سے چکھنے کو کہیں|اسے چھوڑ دیں اور نیا لے لیں|2|جس مشروب پر آپ کی نظر نہ رہی ہو اس میں کچھ ملایا جا سکتا ہے۔ ہمیشہ نیا لیں۔</item>
+        <item>اس ایپ کا فرضی کال والا ٹول کس کام کا ہے؟|کسی ناخوشگوار صورتِ حال سے نکلنے کے لیے آپ کو ایک قابلِ یقین بہانہ دینے کے لیے|دوستوں سے مذاق کرنے کے لیے|پولیس کو کال کرنے کے لیے|0|فرضی آنے والی کال کی مدد سے آپ کسی سے الجھے بغیر وہاں سے ہٹ سکتی ہیں۔</item>
+        <item>اس ایپ میں اپنا زبردستی PIN درج کرنے پر کیا ہوتا ہے؟|ایپ ڈیلیٹ ہو جاتی ہے|ایپ عام سی دکھتی ہے لیکن خاموشی سے SOS بھیج دیتی ہے|کچھ نہیں ہوتا|1|زبردستی PIN اس وقت کے لیے ہے جب کوئی آپ کو ایپ کھولنے پر مجبور کرے۔ یہ ایپ کو معمول کی طرح کھولتا ہے اور چپکے سے آپ کے رابطوں کو خبر دے دیتا ہے۔</item>
+        <item>جب کوئی عورت جنسی جرم کی شکایت کرتی ہے تو اس کا بیان کسے درج کرنا چاہیے؟|ڈیوٹی پر موجود کوئی بھی افسر|خاتون پولیس افسر|کوئی پڑوسی|1|قانون کے مطابق اس کا بیان خاتون پولیس افسر کو ہی درج کرنا ہوتا ہے۔</item>
+        <item>آپ انٹرنیٹ پر ملنے والے کسی شخص سے پہلی بار مل رہی ہیں۔ سب سے محفوظ طریقہ کیا ہے؟|کسی عوامی جگہ پر ملیں، کسی دوست کو بتائیں اور آنے جانے کا انتظام خود کریں|ان کے گھر پر ملیں|انہیں اپنے گھر سے لینے آنے دیں|0|عوامی جگہ، آپ کے منصوبے سے باخبر ایک دوست اور گھر لوٹنے کا اپنا انتظام، ان سے اختیار آپ کے ہاتھ میں رہتا ہے۔ ملاقات موڈ آپ کے لیے ٹائمر لگا سکتا ہے۔</item>
+        <item>کال کرنے والا کہتا ہے کہ وہ آپ کے بینک سے ہے اور ابھی آیا ہوا OTP مانگتا ہے۔ آپ کیا کریں گی؟|بتا دیں، وہ بینک سے ہیں|صرف آدھا بتائیں|کبھی نہ بتائیں اور کال کاٹ دیں|2|کوئی بینک کبھی OTP نہیں مانگتا۔ اسے بتانے سے کوئی آپ کے پیسے نکال سکتا ہے یا آپ کے اکاؤنٹ پر قبضہ کر سکتا ہے۔</item>
+        <item>مشکل میں پھنسے بچے کے لیے ہیلپ لائن نمبر کون سا ہے؟|1098|181|صرف 112|0|1098 چائلڈ لائن ہے، بچوں کے لیے 24 گھنٹے کی مفت ہیلپ لائن۔</item>
+        <item>اگر دونوں خاندان راضی ہوں تو کیا جہیز دینا یا لینا قانونی ہے؟|ہاں، اگر دونوں راضی ہوں|نہیں، جہیز دینا اور لینا دونوں جرم ہیں|صرف دینا جرم ہے|1|جہیز کی ممانعت کے قانون کے تحت جہیز دینا، لینا اور مانگنا تینوں قابلِ سزا ہیں۔</item>
+        <item>آپ نے اس ایپ میں چیک اِن ٹائمر لگایا اور وقت پر “میں محفوظ ہوں” پر ٹیپ نہیں کیا۔ کیا ہوگا؟|کچھ نہیں، ٹائمر بس ختم ہو جاتا ہے|ایپ SOS شروع کر کے آپ کے رابطوں کو خبر دیتی ہے|آپ کا فون ری اسٹارٹ ہو جاتا ہے|1|چیک اِن رہ جائے تو SOS شروع ہو جاتا ہے، تاکہ کسی کو خبر ہو جائے چاہے آپ فون تک نہ پہنچ سکیں۔</item>
+        <item>ٹرین کے سفر میں مدد کے لیے آپ کس نمبر پر کال کریں گی؟|139|1930|1098|0|139 ریل مدد ہیلپ لائن ہے، جو بھارتی ریل میں حفاظت اور دوسری مدد کے لیے ہے۔</item>
+    </string-array>
+</resources>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Shared -->
+    <string name="dl_back">मागे</string>
+    <string name="dl_save">सेव्ह करा</string>
+    <string name="dl_cancel">रद्द करा</string>
+    <string name="dl_delete">हटवा</string>
+    <string name="dl_channel_daily">रोजचे रिमाइंडर</string>
+    <string name="dl_channel_daily_desc">आजची क्विझ आणि तुम्ही चालू केलेले रिमाइंडर</string>
+
+    <!-- Home card and Safety tools tiles -->
+    <string name="dl_section_daily">दररोज</string>
+    <string name="dl_home_commute">प्रवास</string>
+    <string name="dl_home_commute_cap">एका टॅपमध्ये ट्रिप टायमर</string>
+    <string name="dl_home_commute_active">ट्रिप चालू आहे</string>
+    <string name="dl_home_cycle">सायकल</string>
+    <string name="dl_home_cycle_cap">खासगी ट्रॅकर</string>
+    <string name="dl_home_quiz">क्विझ</string>
+    <string name="dl_home_quiz_cap">आजचे 3 प्रश्न</string>
+    <plurals name="dl_home_quiz_done">
+        <item quantity="one">पूर्ण · %1$d दिवसाची स्ट्रीक</item>
+        <item quantity="other">पूर्ण · %1$d दिवसांची स्ट्रीक</item>
+    </plurals>
+    <plurals name="dl_home_quiz_keep">
+        <item quantity="one">%1$d दिवसाची स्ट्रीक टिकवा</item>
+        <item quantity="other">%1$d दिवसांची स्ट्रीक टिकवा</item>
+    </plurals>
+
+    <!-- Commute -->
+    <string name="dl_cm_eyebrow">दररोज</string>
+    <string name="dl_cm_title">रोजचा प्रवास</string>
+    <string name="dl_cm_body">निघताना “निघाले” वर टॅप करा. नेहमीच्या वेळेपर्यंत तुम्ही “मी पोहोचले” वर टॅप केले नाही, तर तुमच्या कॉन्टॅक्टना आपोआप अलर्ट जाईल.</string>
+    <string name="dl_cm_active_title">ट्रिप चालू आहे</string>
+    <string name="dl_cm_active_sub">चेक-इनसाठी %1$s बाकी</string>
+    <string name="dl_cm_active_overdue">ट्रिपची वेळ संपली</string>
+    <string name="dl_cm_active_overdue_sub">तुम्ही सुरक्षित असाल तर “मी पोहोचले” वर टॅप करा</string>
+    <string name="dl_cm_reached">मी पोहोचले</string>
+    <string name="dl_cm_section_routes">तुमचे मार्ग</string>
+    <string name="dl_cm_empty">अजून एकही मार्ग नाही. तुम्ही जवळपास रोज करता ते प्रवास जोडा.</string>
+    <string name="dl_cm_add">मार्ग जोडा</string>
+    <string name="dl_cm_note">ट्रिप म्हणजे चेक-इन टायमर. टायमर स्क्रीनवरून तुम्ही कधीही वेळ वाढवू शकता किंवा चेक-इन करू शकता.</string>
+    <string name="dl_cm_leaving">निघाले</string>
+    <string name="dl_cm_minutes">%1$d मिनिटे</string>
+    <string name="dl_cm_default_to_work">घर ते ऑफिस</string>
+    <string name="dl_cm_default_to_home">ऑफिस ते घर</string>
+    <string name="dl_cm_already_running">एक ट्रिप आधीच चालू आहे. आधी चेक-इन करा.</string>
+    <string name="dl_cm_add_title">नवीन मार्ग</string>
+    <string name="dl_cm_edit_title">मार्ग बदला</string>
+    <string name="dl_cm_name_hint">मार्गाचे नाव</string>
+    <string name="dl_cm_name_placeholder">घर ते कॉलेज</string>
+    <string name="dl_cm_name_required">मार्गाला एक नाव द्या</string>
+    <string name="dl_cm_duration_label">नेहमी लागणारा वेळ</string>
+
+    <!-- Cycle tracker -->
+    <string name="dl_cy_eyebrow">खासगी</string>
+    <string name="dl_cy_title">सायकल ट्रॅकर</string>
+    <string name="dl_cy_body">तुमची पाळी, मूड आणि लक्षणे नोंदवा. सगळे काही याच फोनवर एन्क्रिप्ट होऊन राहते आणि कधीही अपलोड होत नाही.</string>
+    <string name="dl_cy_locked_title">ट्रॅकर लॉक आहे</string>
+    <string name="dl_cy_locked_body">उघडण्यासाठी तुमचा ॲप PIN टाका.</string>
+    <string name="dl_cy_unlock">अनलॉक करा</string>
+    <string name="dl_cy_pin_title">तुमचा ट्रॅकर अनलॉक करा</string>
+    <string name="dl_cy_log_today">आजची नोंद करा</string>
+    <string name="dl_cy_prev_month">मागील महिना</string>
+    <string name="dl_cy_next_month">पुढील महिना</string>
+    <string name="dl_cy_legend_period">पाळी</string>
+    <string name="dl_cy_legend_predicted">अपेक्षित</string>
+    <string name="dl_cy_legend_fertile">फर्टाइल</string>
+    <string name="dl_cy_stat_cycle">सरासरी सायकल</string>
+    <string name="dl_cy_stat_period">सरासरी पाळी</string>
+    <plurals name="dl_cy_days">
+        <item quantity="one">%1$d दिवस</item>
+        <item quantity="other">%1$d दिवस</item>
+    </plurals>
+    <string name="dl_cy_reminder">पाळीपूर्वी आठवण करा</string>
+    <string name="dl_cy_reminder_sub">दोन दिवस आधी एक साधी सूचना. त्यात पाळीचा उल्लेख कधीच नसतो.</string>
+    <string name="dl_cy_disclaimer">अपेक्षित आणि फर्टाइल दिवस हे तुमच्याच सरासरीवरून काढलेले अंदाज आहेत. हा वैद्यकीय सल्ला नाही आणि गर्भधारणा टाळण्यासाठी किंवा तिचे नियोजन करण्यासाठी यावर अवलंबून राहू नये.</string>
+    <string name="dl_cy_summary_empty">तुमची पहिली पाळी नोंदवा</string>
+    <string name="dl_cy_summary_empty_sub">कॅलेंडरवर ज्या दिवशी पाळी सुरू झाली त्या दिवसावर टॅप करा. प्रत्येक सायकल नोंदवल्यावर अंदाज अधिक अचूक होतात.</string>
+    <string name="dl_cy_summary_period">पाळी · दिवस %1$d</string>
+    <string name="dl_cy_summary_day">तुमच्या सायकलचा दिवस %1$d</string>
+    <plurals name="dl_cy_next_in">
+        <item quantity="one">पुढची पाळी साधारण %1$d दिवसात (%2$s)</item>
+        <item quantity="other">पुढची पाळी साधारण %1$d दिवसांत (%2$s)</item>
+    </plurals>
+    <string name="dl_cy_next_today">तुमची पाळी आज येणे अपेक्षित आहे</string>
+    <plurals name="dl_cy_next_late">
+        <item quantity="one">तुमची पाळी %1$d दिवस उशिरा आहे</item>
+        <item quantity="other">तुमची पाळी %1$d दिवस उशिरा आहे</item>
+    </plurals>
+    <string name="dl_cy_default_cycle_note">तुम्ही दोन पाळ्या नोंदवेपर्यंत अंदाज नेहमीच्या 28 दिवसांच्या सायकलवर आधारित आहे.</string>
+    <string name="dl_cy_load_error">तुमची नोंद उघडता आली नाही. काहीही बदललेले नाही.</string>
+    <string name="dl_cy_save_error">सेव्ह करता आले नाही. पुन्हा प्रयत्न करा.</string>
+    <string name="dl_cy_sheet_eyebrow">रोजची नोंद</string>
+    <string name="dl_cy_sheet_period">पाळीचा दिवस</string>
+    <string name="dl_cy_sheet_flow">फ्लो</string>
+    <string name="dl_cy_flow_light">कमी</string>
+    <string name="dl_cy_flow_medium">मध्यम</string>
+    <string name="dl_cy_flow_heavy">जास्त</string>
+    <string name="dl_cy_sheet_mood">मूड</string>
+    <string name="dl_cy_mood_1">😞 उदास</string>
+    <string name="dl_cy_mood_2">😕 अस्वस्थ</string>
+    <string name="dl_cy_mood_3">😐 ठीक</string>
+    <string name="dl_cy_mood_4">🙂 छान</string>
+    <string name="dl_cy_mood_5">😄 खूप छान</string>
+    <string name="dl_cy_sheet_symptoms">लक्षणे</string>
+    <string name="dl_cy_sym_cramps">पोटात कळा</string>
+    <string name="dl_cy_sym_headache">डोकेदुखी</string>
+    <string name="dl_cy_sym_backache">कंबरदुखी</string>
+    <string name="dl_cy_sym_bloating">पोट फुगणे</string>
+    <string name="dl_cy_sym_fatigue">थकवा</string>
+    <string name="dl_cy_sym_acne">मुरुम</string>
+    <string name="dl_cy_sym_tender">स्तन दुखणे</string>
+    <string name="dl_cy_sym_nausea">मळमळ</string>
+    <string name="dl_cy_sheet_clear">या दिवसाची नोंद हटवा</string>
+
+    <!-- Quiz -->
+    <string name="dl_quiz_eyebrow">दररोज</string>
+    <string name="dl_quiz_title">सुरक्षा क्विझ</string>
+    <string name="dl_quiz_stat_streak">स्ट्रीक</string>
+    <string name="dl_quiz_stat_points">पॉइंट</string>
+    <string name="dl_quiz_stat_level">लेव्हल</string>
+    <plurals name="dl_quiz_days">
+        <item quantity="one">%1$d दिवस</item>
+        <item quantity="other">%1$d दिवस</item>
+    </plurals>
+    <string name="dl_quiz_progress">प्रश्न %1$d / %2$d</string>
+    <string name="dl_quiz_progress_practice">सराव · प्रश्न %1$d / %2$d</string>
+    <string name="dl_quiz_correct">बरोबर उत्तर</string>
+    <string name="dl_quiz_wrong">बरोबर नाही</string>
+    <string name="dl_quiz_next">पुढचा प्रश्न</string>
+    <string name="dl_quiz_finish">माझा निकाल पाहा</string>
+    <string name="dl_quiz_score">%1$d / %2$d</string>
+    <string name="dl_quiz_result_perfect">सगळे बरोबर!</string>
+    <string name="dl_quiz_result_good">खूप छान</string>
+    <string name="dl_quiz_result_low">आता तुम्हाला माहीत आहे</string>
+    <string name="dl_quiz_result_points">+%1$d पॉइंट. नवे प्रश्न उद्या.</string>
+    <string name="dl_quiz_result_done">आजची क्विझ पूर्ण झाली. नवे प्रश्न उद्या.</string>
+    <string name="dl_quiz_result_practice">हा सराव होता. पॉइंट रोजच्या क्विझमधून मिळतात.</string>
+    <string name="dl_quiz_level_next">लेव्हल: %1$s · पुढच्या लेव्हलसाठी %2$d पॉइंट</string>
+    <string name="dl_quiz_level_top">लेव्हल: %1$s · सर्वोच्च लेव्हल</string>
+    <string name="dl_quiz_level_1">सुरुवात</string>
+    <string name="dl_quiz_level_2">जागरूक</string>
+    <string name="dl_quiz_level_3">सतर्क</string>
+    <string name="dl_quiz_level_4">रक्षक</string>
+    <string name="dl_quiz_level_5">शक्ती</string>
+    <string name="dl_quiz_share">माझी स्ट्रीक शेअर करा</string>
+    <string name="dl_quiz_share_text">Naari Shakti ची सुरक्षा क्विझ सलग %1$s खेळून मी %2$d पॉइंट मिळवले आहेत. तुम्हाला तुमचे हक्क आणि हेल्पलाइन नंबर माहीत आहेत का?</string>
+    <string name="dl_quiz_practice">आणखी सराव करा</string>
+    <string name="dl_quiz_reminder">रोजच्या क्विझचा रिमाइंडर</string>
+    <string name="dl_quiz_reminder_sub">तुम्ही अजून खेळला नसाल तर संध्याकाळी एक नोटिफिकेशन</string>
+
+    <!-- Daily reminder notifications -->
+    <string name="dl_nudge_quiz_title">आजची सुरक्षा क्विझ तयार आहे</string>
+    <string name="dl_nudge_quiz_text">तीन छोटे प्रश्न. फक्त एक मिनिट लागेल.</string>
+    <plurals name="dl_nudge_quiz_streak">
+        <item quantity="one">%1$d दिवसाची स्ट्रीक टिकवण्यासाठी आत्ताच खेळा.</item>
+        <item quantity="other">%1$d दिवसांची स्ट्रीक टिकवण्यासाठी आत्ताच खेळा.</item>
+    </plurals>
+    <string name="dl_nudge_cycle_title">Naari Shakti कडून एक रिमाइंडर</string>
+    <string name="dl_nudge_cycle_text">पाहण्यासाठी ॲप उघडा.</string>
+
+    <!--
+        Quiz bank. Each item: question|option A|option B|option C|index of the right option (0-2)|explanation.
+        Keep the count a multiple of 3 and never use the | character inside a text.
+        Translations must keep the same order and the same right-option index.
+    -->
+    <string-array name="dl_quiz_items">
+        <item>भारतात कुठूनही पोलीस, अग्निशमन दल आणि ॲम्ब्युलन्ससाठी कोणता एकच नंबर आहे?|112|1098|139|0|112 हा सगळ्या इमर्जन्सीसाठी एकच नंबर आहे. तो कोणत्याही फोनवरून, बॅलन्स नसतानाही लागतो.</item>
+        <item>महिला हेल्पलाइनचा नंबर कोणता?|1930|181|139|1|बहुतेक राज्यांत 181 ही महिला हेल्पलाइन आहे. 1091 ही महिला पोलीस हेल्पलाइन आहे.</item>
+        <item>ऑनलाइन छळ, ब्लॅकमेल किंवा सायबर फसवणुकीची तक्रार कुठे करायची?|हेल्पलाइन 1930 किंवा cybercrime.gov.in|फक्त मोबाइल कंपनीकडे|याची तक्रार करता येत नाही|0|1930 वर कॉल करा किंवा cybercrime.gov.in वर तक्रार नोंदवा. स्क्रीनशॉट पुरावा म्हणून जपून ठेवा.</item>
+        <item>पोलीस ठाणे म्हणते की घटना त्यांच्या हद्दीबाहेर घडली आहे. तुम्ही काय मागू शकता?|काही नाही, तुम्हाला तिथेच जावे लागेल|झिरो FIR|लेखी माफी|1|कोणत्याही पोलीस ठाण्याला झिरो FIR नोंदवून ती योग्य ठाण्याकडे पाठवावीच लागते.</item>
+        <item>पोलीस एखाद्या महिलेला सूर्यास्तानंतर आणि सूर्योदयापूर्वी अटक करू शकतात का?|हो, कधीही|कधीच नाही, कोणत्याही परिस्थितीत|फक्त अपवादात्मक प्रकरणांत, महिला अधिकाऱ्याकडून आणि मॅजिस्ट्रेटच्या लेखी परवानगीने|2|कायदा महिलांना रात्रीच्या अटकेपासून संरक्षण देतो. अपवाद फक्त विशेष प्रकरणांत, मॅजिस्ट्रेटची आधी घेतलेली लेखी परवानगी असेल तरच.</item>
+        <item>बुक केलेल्या कॅबमध्ये बसण्यापूर्वी तुम्ही काय तपासावे?|नंबर प्लेट आणि ड्रायव्हर ॲपशी जुळतात का|गाडी स्वच्छ आहे का|ड्रायव्हर घाईत आहे का|0|नेहमी नंबर प्लेट आणि ड्रायव्हर बुकिंगशी जुळवून पाहा. या ॲपमधील कॅब मोड नंबर प्लेट तुमच्या कॉन्टॅक्टना पाठवू शकतो.</item>
+        <item>तुमची कॅब अनोळखी रस्त्याने जात आहे. सर्वात चांगले पहिले पाऊल कोणते?|गप्प बसा आणि वाट पाहा|लाइव्ह लोकेशन शेअर करा, कोणाला तरी कॉल करा आणि गर्दीच्या ठिकाणी गाडी थांबवायला सांगा|तुमचा फोन बंद करा|1|तुम्ही कुठे आहात ते कोणाला तरी कळवा, कॉलवर मोठ्याने बोला आणि धोका वाटल्यास SOS वापरा.</item>
+        <item>10 किंवा जास्त कर्मचारी असलेल्या कामाच्या ठिकाणी लैंगिक छळाची तक्रार कोणी ऐकली पाहिजे?|अंतर्गत समिती (Internal Committee)|फक्त पोलीस|सिक्युरिटी गार्ड|0|POSH कायद्यानुसार अशा प्रत्येक कामाच्या ठिकाणी अंतर्गत समिती असणे बंधनकारक आहे.</item>
+        <item>POSH कायद्याखाली कामाच्या ठिकाणच्या लैंगिक छळाची तक्रार किती काळात करावी लागते?|24 तासांत|एका आठवड्यात|घटनेपासून तीन महिन्यांच्या आत|2|तक्रार तीन महिन्यांच्या आत करायला हवी, आणि समिती ही मुदत आणखी तीन महिने वाढवू शकते.</item>
+        <item>तुम्ही स्पष्ट नकार दिल्यानंतरही कोणी सतत तुमचा पाठलाग करते किंवा मेसेज पाठवते. हा गुन्हा आहे का?|नाही, ते फक्त वाईट वागणे आहे|हो, पाठलाग करणे (स्टॉकिंग) हा गुन्हा आहे, ऑनलाइनसुद्धा|फक्त त्यांनी तुम्हाला स्पर्श केला तरच|1|प्रत्यक्ष असो किंवा ऑनलाइन, स्टॉकिंग हा फौजदारी गुन्हा आहे. मेसेज जपून ठेवा आणि तक्रार करा.</item>
+        <item>कौटुंबिक हिंसाचार कायदा फक्त शारीरिक हिंसेला लागू होतो का?|हो, फक्त शारीरिक हिंसेला|नाही, शिवीगाळ, मानसिक, लैंगिक आणि आर्थिक छळालाही|तो फक्त विवाहित महिलांसाठी आहे|1|कौटुंबिक हिंसाचारापासून महिलांचे संरक्षण कायदा या सगळ्या प्रकारच्या छळाला लागू होतो, आणि लिव्ह-इनमध्ये राहणाऱ्या महिलांनाही.</item>
+        <item>भारतात मोफत कायदेशीर मदत कोणाला मिळू शकते?|प्रत्येक महिलेला, तिचे उत्पन्न कितीही असो|फक्त दारिद्र्यरेषेखालील महिलांना|कोणालाही नाही, वकील नेहमी फी घेतात|0|प्रत्येक महिला आपल्या जिल्ह्यातील विधी सेवा प्राधिकरणाकडून मोफत कायदेशीर मदत घेऊ शकते.</item>
+        <item>माध्यमे किंवा इतर कोणी लैंगिक अत्याचारातील पीडितेचे नाव प्रसिद्ध करू शकतात का?|हो, बातमी खरी असेल तर|फक्त सोशल मीडियावर|नाही, तिची ओळख उघड करणे हा गुन्हा आहे|2|लैंगिक अत्याचारातील पीडितेची ओळख उघड करणे हा शिक्षापात्र गुन्हा आहे.</item>
+        <item>तुम्ही रात्री एकट्या चालत आहात आणि कोणीतरी पाठलाग करत आहे असे वाटते. तुम्ही काय कराल?|सर्वात सुनसान गल्लीतून सरळ घरी जाल|उजेड आणि गर्दी असलेल्या ठिकाणाकडे जाल आणि कोणाला तरी कॉल कराल|थांबून एकट्याने त्याला जाब विचाराल|1|माणसे आणि उजेड असेल तिकडे जा, कॉल चालू ठेवा आणि त्या व्यक्तीला तुमच्या घरापर्यंत येऊ देऊ नका.</item>
+        <item>पार्टीत तुमचे ड्रिंक काही वेळ नजरेआड राहिले. सुरक्षित पर्याय कोणता?|पटकन पिऊन टाका|एखाद्या अनोळखी व्यक्तीला चव घ्यायला सांगा|ते सोडून द्या आणि नवीन ड्रिंक घ्या|2|नजरेआड राहिलेल्या ड्रिंकमध्ये काहीतरी मिसळले जाऊ शकते. नेहमी नवीन घ्या.</item>
+        <item>या ॲपमधील खोटा कॉल टूल कशासाठी आहे?|अस्वस्थ करणाऱ्या परिस्थितीतून निघण्यासाठी पटणारे कारण देण्यासाठी|मित्रमैत्रिणींची गंमत करण्यासाठी|पोलिसांना कॉल करण्यासाठी|0|खोट्या इनकमिंग कॉलमुळे तुम्ही वाद न घालता तिथून बाजूला होऊ शकता.</item>
+        <item>या ॲपमध्ये ड्युरेस PIN टाकल्यावर काय होते?|ॲप डिलीट होते|ॲप नेहमीसारखे दिसते पण गुपचूप SOS पाठवते|काहीच होत नाही|1|कोणी तुम्हाला जबरदस्तीने फोन उघडायला लावले तर त्यासाठी ड्युरेस PIN आहे. ॲप नेहमीसारखे उघडते आणि गुपचूप तुमच्या कॉन्टॅक्टना अलर्ट जातो.</item>
+        <item>एखादी महिला लैंगिक गुन्ह्याची तक्रार करते तेव्हा तिचा जबाब कोणी नोंदवायला हवा?|ड्युटीवरील कोणताही अधिकारी|महिला पोलीस अधिकारी|एखादा शेजारी|1|कायद्यानुसार तिचा जबाब महिला पोलीस अधिकाऱ्यानेच नोंदवायला हवा.</item>
+        <item>इंटरनेटवर ओळख झालेल्या व्यक्तीला तुम्ही पहिल्यांदा भेटायला जात आहात. सर्वात सुरक्षित मार्ग कोणता?|सार्वजनिक ठिकाणी भेटा, एखाद्या मैत्रिणीला सांगा आणि येण्या-जाण्याची सोय स्वतः करा|त्यांच्या घरी भेटा|त्यांना तुमच्या घरून घ्यायला येऊ द्या|0|सार्वजनिक ठिकाण, तुमचा बेत माहीत असलेली मैत्रीण आणि घरी परतण्याची स्वतःची सोय यामुळे सगळे तुमच्या हातात राहते. मीटिंग मोड तुमच्यासाठी टायमर लावू शकतो.</item>
+        <item>कोणीतरी कॉल करून सांगते की ते तुमच्या बँकेतून बोलत आहेत आणि आत्ताच आलेला OTP मागते. तुम्ही काय कराल?|सांगून टाकाल, ते बँकेतूनच आहेत|फक्त अर्धा OTP सांगाल|कधीच सांगणार नाही आणि कॉल कट कराल|2|कोणतीही बँक कधीच OTP मागत नाही. OTP सांगितल्यास कोणीही तुमचे पैसे काढू शकते किंवा तुमच्या खात्याचा ताबा घेऊ शकते.</item>
+        <item>संकटात असलेल्या मुलासाठी हेल्पलाइन नंबर कोणता?|1098|181|फक्त 112|0|1098 ही चाइल्डलाइन आहे, मुलांसाठी 24 तास चालणारी मोफत हेल्पलाइन.</item>
+        <item>दोन्ही कुटुंबे राजी असतील तर हुंडा देणे किंवा घेणे कायदेशीर आहे का?|हो, दोघे राजी असतील तर|नाही, हुंडा देणे आणि घेणे दोन्ही गुन्हे आहेत|फक्त देणे हा गुन्हा आहे|1|हुंडा प्रतिबंधक कायद्यानुसार हुंडा देणे, घेणे आणि मागणे तिन्ही शिक्षापात्र आहेत.</item>
+        <item>तुम्ही या ॲपमध्ये चेक-इन टायमर लावला आणि वेळेत “मी सुरक्षित आहे” वर टॅप केले नाही. काय होईल?|काही नाही, टायमर फक्त संपेल|ॲप SOS सुरू करून तुमच्या कॉन्टॅक्टना अलर्ट पाठवेल|तुमचा फोन रीस्टार्ट होईल|1|चेक-इन चुकल्यास SOS सुरू होतो, म्हणजे तुम्ही फोनपर्यंत पोहोचू शकला नाहीत तरी कोणाला तरी कळते.</item>
+        <item>ट्रेनने प्रवास करताना मदतीसाठी कोणत्या नंबरवर कॉल करायचा?|139|1930|1098|0|139 ही रेल मदद हेल्पलाइन आहे, भारतीय रेल्वेतील सुरक्षा आणि इतर मदतीसाठी.</item>
+    </string-array>
+</resources>

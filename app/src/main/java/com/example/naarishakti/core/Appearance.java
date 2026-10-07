@@ -37,7 +37,7 @@ public final class Appearance {
         }
     }
 
-    /** English plus the major Indian languages the app is translated into. */
+    /** English plus the major Indian languages and Nepali, which the app is translated into. */
     private static final List<Language> LANGUAGES = Collections.unmodifiableList(Arrays.asList(
             new Language("en", "English", "English"),
             new Language("hi", "हिन्दी", "Hindi"),
@@ -51,7 +51,8 @@ public final class Appearance {
             new Language("pa", "ਪੰਜਾਬੀ", "Punjabi"),
             new Language("or", "ଓଡ଼ିଆ", "Odia"),
             new Language("as", "অসমীয়া", "Assamese"),
-            new Language("ur", "اردو", "Urdu")
+            new Language("ur", "اردو", "Urdu"),
+            new Language("ne", "नेपाली", "Nepali")
     ));
 
     private Appearance() {}

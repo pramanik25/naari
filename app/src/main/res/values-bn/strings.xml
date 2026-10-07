@@ -215,7 +215,7 @@
     <!-- ===================== Profile ===================== -->
     <string name="profile_overline">আপনার প্রোফাইল</string>
     <string name="profile_title">আপনার সম্পর্কে</string>
-    <string name="profile_body">এতে আপনার কন্টাক্ট ও উদ্ধারকারীরা আপনাকে চিনতে পারবেন। শুধু এই ডিভাইসেই সেভ থাকে।</string>
+    <string name="profile_body">এতে আপনার কন্টাক্ট ও উদ্ধারকারীরা আপনাকে চিনতে পারবেন। আপনার নাম ও মোবাইল নম্বর আপনার Naari Shakti অ্যাকাউন্টেও সেভ হয়।</string>
     <string name="profile_add_photo">ছবি যোগ করতে ট্যাপ করুন</string>
     <string name="profile_change_photo">ছবি বদলাতে ট্যাপ করুন</string>
     <string name="cd_profile_photo">প্রোফাইল ছবি। বদলাতে দুবার ট্যাপ করুন।</string>

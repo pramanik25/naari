@@ -85,6 +85,7 @@ public final class Cloud {
                 }
                 CloudPush.sync(app);
                 CloudAlerts.update(app);
+                ProfileSync.run(app);
             }
         });
     }

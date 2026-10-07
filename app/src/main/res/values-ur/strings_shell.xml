@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Bottom tabs -->
+    <string name="sh_nav_daily">روزانہ</string>
+    <string name="sh_nav_together">ساتھ ساتھ</string>
+    <string name="sh_daily_title">ہر دن</string>
+    <string name="sh_daily_body">چھوٹی چھوٹی عادتیں جو ہر دن کو زیادہ محفوظ بناتی ہیں۔</string>
+    <string name="sh_together_title">ساتھ ساتھ</string>
+    <string name="sh_together_body">آپ کے اپنے لوگ اور آپ کی کمیونٹی، ایک ہی جگہ۔</string>
+
+    <!-- Running donation banner at the top of the app -->
+    <string name="sh_donate_banner">♥ Naari Shakti مفت ہے اور آپ کے تعاون سے چلتی ہے۔ عطیہ دینے کے لیے ٹیپ کریں اور خواتین کو محفوظ رکھیں۔</string>
+
+    <!-- "Complete your profile" popup on Home (name and mobile number required) -->
+    <string name="sh_profile_title">اپنا پروفائل مکمل کریں</string>
+    <string name="sh_profile_body">براہ کرم اپنا نام اور موبائل نمبر درج کریں۔ یہ آپ کے Naari Shakti اکاؤنٹ میں محفوظ ہوتے ہیں۔ باقی تفصیلات اختیاری ہیں۔</string>
+    <string name="sh_profile_optional">اختیاری</string>
+
+    <!-- Maker credit -->
+    <string name="sh_made_by">Vikash کی تخلیق</string>
+    <string name="sh_made_by_sub">ہر عورت کی حفاظت کے لیے بھارت میں بنائی گئی</string>
+    <string name="sh_brand_photo_cd">Vikash کی تصویر، جنہوں نے یہ ایپ بنائی ہے</string>
+</resources>

@@ -308,6 +308,24 @@ public class ProfileDbHelper extends SQLiteOpenHelper {
         return null;
     }
 
+    /** Her own mobile number from the saved profile (10 digits), or null when none has been saved. */
+    public String getProfileMobile() {
+        Cursor cursor = null;
+        try {
+            cursor = getReadableDatabase().query(TABLE_NAME, new String[]{COLUMN_MOBILE_NUMBER},
+                    null, null, null, null, COLUMN_ID + " DESC", "1");
+            if (cursor.moveToFirst()) {
+                String mobile = cursor.getString(0);
+                return mobile == null || mobile.trim().isEmpty() ? null : mobile.trim();
+            }
+        } catch (Exception e) {
+            Log.e("DB", "getProfileMobile failed: " + e.getMessage());
+        } finally {
+            if (cursor != null) cursor.close();
+        }
+        return null;
+    }
+
     // New methods to manage Telegram chat IDs
     public void saveTelegramChatId(String phoneNumber, String chatId) {
         SQLiteDatabase db = getWritableDatabase();

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ns_accessibility_description">यसले स्क्रिन बन्द वा लक भएको बेला पनि Naari Shakti लाई भोल्युम बटनको प्याटर्नबाट SOS सुरु गर्न दिन्छ। Naari Shakti ले तपाईंको स्क्रिनमा भएका कुरा पढ्दैन।</string>
+
+    <!-- Appearance & language -->
+    <string name="core_back">पछाडि</string>
+    <string name="core_appearance_eyebrow">आफ्नै अनुसार</string>
+    <string name="core_appearance_title">रूप र भाषा</string>
+    <string name="core_appearance_desc">Naari Shakti कस्तो देखिने र कुन भाषामा बोल्ने भनेर छान्नुहोस्। तपाईंका सम्पर्कहरूलाई पठाइने अलर्ट पनि यही भाषामा हुन्छन्।</string>
+    <string name="core_section_theme">थिम</string>
+    <string name="core_theme_dark">डार्क</string>
+    <string name="core_theme_light">लाइट</string>
+    <string name="core_theme_system">फोनअनुसार</string>
+    <string name="core_section_language">भाषा</string>
+    <string name="core_language_desc">आपत्कालीन नम्बर र SMS लिङ्कहरू हरेक भाषामा उस्तै रहन्छन्।</string>
+    <string name="core_language_system">फोनको भाषा</string>
+    <string name="core_language_system_caption">फोनको सेटिङअनुसार</string>
+    <string name="core_selected">छानिएको</string>
+</resources>

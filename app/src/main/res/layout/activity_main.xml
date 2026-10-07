@@ -11,6 +11,23 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <!-- Running donation banner: the text travels left to right; a tap opens the donation page. -->
+    <FrameLayout
+        android:id="@+id/donateBanner"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@color/ns_rose"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground">
+
+        <com.example.naarishakti.shell.TickerView
+            android:id="@+id/donateTicker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:importantForAccessibility="no" />
+    </FrameLayout>
+
     <FrameLayout
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"

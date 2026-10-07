@@ -15,4 +15,5 @@
     <locale android:name="or" />
     <locale android:name="as" />
     <locale android:name="ur" />
+    <locale android:name="ne" />
 </locale-config>

@@ -308,7 +308,7 @@
     <!-- ===================== Profile ===================== -->
     <string name="profile_overline">Your profile</string>
     <string name="profile_title">About you</string>
-    <string name="profile_body">Helps your contacts and responders recognise you. Stored only on this device.</string>
+    <string name="profile_body">Helps your contacts and responders recognise you. Your name and mobile number are also saved to your Naari Shakti account.</string>
     <string name="profile_add_photo">Tap to add a photo</string>
     <string name="profile_change_photo">Tap to change photo</string>
     <string name="cd_profile_photo">Profile photo. Double tap to change.</string>

@@ -5,6 +5,14 @@
         android:icon="@drawable/ua_ic_home"
         android:title="@string/nav_home" />
     <item
+        android:id="@+id/menu_daily"
+        android:icon="@drawable/ua_ic_event"
+        android:title="@string/sh_nav_daily" />
+    <item
+        android:id="@+id/menu_together"
+        android:icon="@drawable/ua_ic_group"
+        android:title="@string/sh_nav_together" />
+    <item
         android:id="@+id/menu_settings"
         android:icon="@drawable/ua_ic_tune"
         android:title="@string/nav_settings" />

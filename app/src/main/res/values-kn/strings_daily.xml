@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Shared -->
+    <string name="dl_back">ಹಿಂದೆ</string>
+    <string name="dl_save">ಸೇವ್ ಮಾಡಿ</string>
+    <string name="dl_cancel">ರದ್ದುಮಾಡಿ</string>
+    <string name="dl_delete">ಅಳಿಸಿ</string>
+    <string name="dl_channel_daily">ದಿನನಿತ್ಯದ ಜ್ಞಾಪನೆಗಳು</string>
+    <string name="dl_channel_daily_desc">ಇಂದಿನ ಕ್ವಿಜ್ ಮತ್ತು ನೀವು ಆನ್ ಮಾಡಿರುವ ಜ್ಞಾಪನೆಗಳು</string>
+
+    <!-- Home card and Safety tools tiles -->
+    <string name="dl_section_daily">ಪ್ರತಿದಿನ</string>
+    <string name="dl_home_commute">ಪ್ರಯಾಣ</string>
+    <string name="dl_home_commute_cap">ಒಂದೇ ಟ್ಯಾಪ್‌ನಲ್ಲಿ ಟ್ರಿಪ್ ಟೈಮರ್</string>
+    <string name="dl_home_commute_active">ಟ್ರಿಪ್ ನಡೆಯುತ್ತಿದೆ</string>
+    <string name="dl_home_cycle">ಋತುಚಕ್ರ</string>
+    <string name="dl_home_cycle_cap">ಖಾಸಗಿ ಟ್ರ್ಯಾಕರ್</string>
+    <string name="dl_home_quiz">ಕ್ವಿಜ್</string>
+    <string name="dl_home_quiz_cap">ಇಂದು 3 ಪ್ರಶ್ನೆಗಳು</string>
+    <plurals name="dl_home_quiz_done">
+        <item quantity="one">ಮುಗಿದಿದೆ · ಸತತ %1$d ದಿನ</item>
+        <item quantity="other">ಮುಗಿದಿದೆ · ಸತತ %1$d ದಿನ</item>
+    </plurals>
+    <plurals name="dl_home_quiz_keep">
+        <item quantity="one">ಸತತ %1$d ದಿನದ ಸರಣಿ ಮುಂದುವರಿಸಿ</item>
+        <item quantity="other">ಸತತ %1$d ದಿನಗಳ ಸರಣಿ ಮುಂದುವರಿಸಿ</item>
+    </plurals>
+
+    <!-- Commute -->
+    <string name="dl_cm_eyebrow">ಪ್ರತಿದಿನ</string>
+    <string name="dl_cm_title">ದಿನನಿತ್ಯದ ಪ್ರಯಾಣ</string>
+    <string name="dl_cm_body">ಹೊರಡುವಾಗ “ಹೊರಡುತ್ತಿದ್ದೇನೆ” ಟ್ಯಾಪ್ ಮಾಡಿ. ಸಾಮಾನ್ಯವಾಗಿ ತಲುಪುವ ಸಮಯದೊಳಗೆ ನೀವು “ನಾನು ತಲುಪಿದೆ” ಟ್ಯಾಪ್ ಮಾಡದಿದ್ದರೆ, ನಿಮ್ಮ ಸಂಪರ್ಕಗಳಿಗೆ ತಾನಾಗಿಯೇ ಎಚ್ಚರಿಕೆ ಹೋಗುತ್ತದೆ.</string>
+    <string name="dl_cm_active_title">ಟ್ರಿಪ್ ನಡೆಯುತ್ತಿದೆ</string>
+    <string name="dl_cm_active_sub">ಚೆಕ್-ಇನ್ ಮಾಡಲು %1$s ಬಾಕಿ</string>
+    <string name="dl_cm_active_overdue">ಟ್ರಿಪ್ ಸಮಯ ಮೀರಿದೆ</string>
+    <string name="dl_cm_active_overdue_sub">ನೀವು ಸುರಕ್ಷಿತವಾಗಿದ್ದರೆ “ನಾನು ತಲುಪಿದೆ” ಟ್ಯಾಪ್ ಮಾಡಿ</string>
+    <string name="dl_cm_reached">ನಾನು ತಲುಪಿದೆ</string>
+    <string name="dl_cm_section_routes">ನಿಮ್ಮ ಮಾರ್ಗಗಳು</string>
+    <string name="dl_cm_empty">ಇನ್ನೂ ಯಾವ ಮಾರ್ಗವೂ ಇಲ್ಲ. ನೀವು ಹೆಚ್ಚಿನ ದಿನಗಳಲ್ಲಿ ಮಾಡುವ ಪ್ರಯಾಣಗಳನ್ನು ಸೇರಿಸಿ.</string>
+    <string name="dl_cm_add">ಮಾರ್ಗ ಸೇರಿಸಿ</string>
+    <string name="dl_cm_note">ಟ್ರಿಪ್ ಎಂದರೆ ಒಂದು ಚೆಕ್-ಇನ್ ಟೈಮರ್. ಟೈಮರ್ ಸ್ಕ್ರೀನ್‌ನಿಂದ ನೀವು ಯಾವಾಗ ಬೇಕಾದರೂ ಸಮಯ ಹೆಚ್ಚಿಸಬಹುದು ಅಥವಾ ಚೆಕ್-ಇನ್ ಮಾಡಬಹುದು.</string>
+    <string name="dl_cm_leaving">ಹೊರಡುತ್ತಿದ್ದೇನೆ</string>
+    <string name="dl_cm_minutes">%1$d ನಿಮಿಷ</string>
+    <string name="dl_cm_default_to_work">ಮನೆಯಿಂದ ಕೆಲಸಕ್ಕೆ</string>
+    <string name="dl_cm_default_to_home">ಕೆಲಸದಿಂದ ಮನೆಗೆ</string>
+    <string name="dl_cm_already_running">ಒಂದು ಟ್ರಿಪ್ ಈಗಾಗಲೇ ನಡೆಯುತ್ತಿದೆ. ಮೊದಲು ಚೆಕ್-ಇನ್ ಮಾಡಿ.</string>
+    <string name="dl_cm_add_title">ಹೊಸ ಮಾರ್ಗ</string>
+    <string name="dl_cm_edit_title">ಮಾರ್ಗ ಬದಲಿಸಿ</string>
+    <string name="dl_cm_name_hint">ಮಾರ್ಗದ ಹೆಸರು</string>
+    <string name="dl_cm_name_placeholder">ಮನೆಯಿಂದ ಕಾಲೇಜಿಗೆ</string>
+    <string name="dl_cm_name_required">ಮಾರ್ಗಕ್ಕೆ ಒಂದು ಹೆಸರು ಕೊಡಿ</string>
+    <string name="dl_cm_duration_label">ಸಾಮಾನ್ಯವಾಗಿ ಹಿಡಿಯುವ ಸಮಯ</string>
+
+    <!-- Cycle tracker -->
+    <string name="dl_cy_eyebrow">ಖಾಸಗಿ</string>
+    <string name="dl_cy_title">ಋತುಚಕ್ರ ಟ್ರ್ಯಾಕರ್</string>
+    <string name="dl_cy_body">ನಿಮ್ಮ ಮುಟ್ಟು, ಮೂಡ್ ಮತ್ತು ಲಕ್ಷಣಗಳನ್ನು ದಾಖಲಿಸಿ. ಎಲ್ಲವೂ ಈ ಫೋನ್‌ನಲ್ಲೇ ಎನ್‌ಕ್ರಿಪ್ಟ್ ಆಗಿರುತ್ತದೆ, ಎಂದಿಗೂ ಅಪ್‌ಲೋಡ್ ಆಗುವುದಿಲ್ಲ.</string>
+    <string name="dl_cy_locked_title">ಟ್ರ್ಯಾಕರ್ ಲಾಕ್ ಆಗಿದೆ</string>
+    <string name="dl_cy_locked_body">ತೆರೆಯಲು ನಿಮ್ಮ ಆ್ಯಪ್ PIN ನಮೂದಿಸಿ.</string>
+    <string name="dl_cy_unlock">ಅನ್‌ಲಾಕ್ ಮಾಡಿ</string>
+    <string name="dl_cy_pin_title">ನಿಮ್ಮ ಟ್ರ್ಯಾಕರ್ ಅನ್‌ಲಾಕ್ ಮಾಡಿ</string>
+    <string name="dl_cy_log_today">ಇಂದಿನದು ದಾಖಲಿಸಿ</string>
+    <string name="dl_cy_prev_month">ಹಿಂದಿನ ತಿಂಗಳು</string>
+    <string name="dl_cy_next_month">ಮುಂದಿನ ತಿಂಗಳು</string>
+    <string name="dl_cy_legend_period">ಮುಟ್ಟು</string>
+    <string name="dl_cy_legend_predicted">ನಿರೀಕ್ಷಿತ</string>
+    <string name="dl_cy_legend_fertile">ಫಲವತ್ತಾದ ದಿನ</string>
+    <string name="dl_cy_stat_cycle">ಸರಾಸರಿ ಋತುಚಕ್ರ</string>
+    <string name="dl_cy_stat_period">ಸರಾಸರಿ ಮುಟ್ಟು</string>
+    <plurals name="dl_cy_days">
+        <item quantity="one">%1$d ದಿನ</item>
+        <item quantity="other">%1$d ದಿನಗಳು</item>
+    </plurals>
+    <string name="dl_cy_reminder">ಮುಟ್ಟಿಗೆ ಮೊದಲು ನನಗೆ ನೆನಪಿಸಿ</string>
+    <string name="dl_cy_reminder_sub">ಎರಡು ದಿನ ಮೊದಲು ಒಂದು ಗುಟ್ಟಾದ ಸೂಚನೆ. ಅದರಲ್ಲಿ ಮುಟ್ಟಿನ ಪ್ರಸ್ತಾಪವೇ ಇರುವುದಿಲ್ಲ.</string>
+    <string name="dl_cy_disclaimer">ನಿರೀಕ್ಷಿತ ಮತ್ತು ಫಲವತ್ತಾದ ದಿನಗಳು ನಿಮ್ಮದೇ ಸರಾಸರಿಗಳಿಂದ ಮಾಡಿದ ಅಂದಾಜುಗಳು. ಇವು ವೈದ್ಯಕೀಯ ಸಲಹೆಯಲ್ಲ; ಗರ್ಭಧಾರಣೆಯನ್ನು ತಡೆಯಲು ಅಥವಾ ಯೋಜಿಸಲು ಇವುಗಳನ್ನು ನಂಬಬಾರದು.</string>
+    <string name="dl_cy_summary_empty">ನಿಮ್ಮ ಮೊದಲ ಮುಟ್ಟನ್ನು ದಾಖಲಿಸಿ</string>
+    <string name="dl_cy_summary_empty_sub">ಕ್ಯಾಲೆಂಡರ್‌ನಲ್ಲಿ ಅದು ಶುರುವಾದ ದಿನವನ್ನು ಟ್ಯಾಪ್ ಮಾಡಿ. ನೀವು ದಾಖಲಿಸುವ ಪ್ರತಿ ಚಕ್ರದೊಂದಿಗೆ ಅಂದಾಜು ಇನ್ನಷ್ಟು ನಿಖರವಾಗುತ್ತದೆ.</string>
+    <string name="dl_cy_summary_period">ಮುಟ್ಟು · ದಿನ %1$d</string>
+    <string name="dl_cy_summary_day">ನಿಮ್ಮ ಋತುಚಕ್ರದ ದಿನ %1$d</string>
+    <plurals name="dl_cy_next_in">
+        <item quantity="one">ಮುಂದಿನ ಮುಟ್ಟು ಸುಮಾರು %1$d ದಿನದಲ್ಲಿ (%2$s)</item>
+        <item quantity="other">ಮುಂದಿನ ಮುಟ್ಟು ಸುಮಾರು %1$d ದಿನಗಳಲ್ಲಿ (%2$s)</item>
+    </plurals>
+    <string name="dl_cy_next_today">ನಿಮ್ಮ ಮುಟ್ಟು ಇಂದು ಬರುವ ನಿರೀಕ್ಷೆ ಇದೆ</string>
+    <plurals name="dl_cy_next_late">
+        <item quantity="one">ನಿಮ್ಮ ಮುಟ್ಟು %1$d ದಿನ ತಡವಾಗಿದೆ</item>
+        <item quantity="other">ನಿಮ್ಮ ಮುಟ್ಟು %1$d ದಿನ ತಡವಾಗಿದೆ</item>
+    </plurals>
+    <string name="dl_cy_default_cycle_note">ನೀವು ಎರಡು ಮುಟ್ಟುಗಳನ್ನು ದಾಖಲಿಸುವವರೆಗೆ ಸಾಮಾನ್ಯ 28 ದಿನಗಳ ಚಕ್ರವನ್ನು ಆಧರಿಸಲಾಗಿದೆ.</string>
+    <string name="dl_cy_load_error">ನಿಮ್ಮ ದಾಖಲೆ ತೆರೆಯಲಾಗಲಿಲ್ಲ. ಏನೂ ಬದಲಾಗಿಲ್ಲ.</string>
+    <string name="dl_cy_save_error">ಅದನ್ನು ಸೇವ್ ಮಾಡಲಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.</string>
+    <string name="dl_cy_sheet_eyebrow">ದಿನದ ದಾಖಲೆ</string>
+    <string name="dl_cy_sheet_period">ಮುಟ್ಟಿನ ದಿನ</string>
+    <string name="dl_cy_sheet_flow">ಸ್ರಾವ</string>
+    <string name="dl_cy_flow_light">ಕಡಿಮೆ</string>
+    <string name="dl_cy_flow_medium">ಮಧ್ಯಮ</string>
+    <string name="dl_cy_flow_heavy">ಹೆಚ್ಚು</string>
+    <string name="dl_cy_sheet_mood">ಮೂಡ್</string>
+    <string name="dl_cy_mood_1">😞 ಬೇಸರ</string>
+    <string name="dl_cy_mood_2">😕 ಕಸಿವಿಸಿ</string>
+    <string name="dl_cy_mood_3">😐 ಪರವಾಗಿಲ್ಲ</string>
+    <string name="dl_cy_mood_4">🙂 ಚೆನ್ನಾಗಿದೆ</string>
+    <string name="dl_cy_mood_5">😄 ತುಂಬಾ ಖುಷಿ</string>
+    <string name="dl_cy_sheet_symptoms">ಲಕ್ಷಣಗಳು</string>
+    <string name="dl_cy_sym_cramps">ಹೊಟ್ಟೆ ಸೆಳೆತ</string>
+    <string name="dl_cy_sym_headache">ತಲೆನೋವು</string>
+    <string name="dl_cy_sym_backache">ಬೆನ್ನು ನೋವು</string>
+    <string name="dl_cy_sym_bloating">ಹೊಟ್ಟೆ ಉಬ್ಬರ</string>
+    <string name="dl_cy_sym_fatigue">ಸುಸ್ತು</string>
+    <string name="dl_cy_sym_acne">ಮೊಡವೆ</string>
+    <string name="dl_cy_sym_tender">ಸ್ತನಗಳಲ್ಲಿ ನೋವು</string>
+    <string name="dl_cy_sym_nausea">ವಾಕರಿಕೆ</string>
+    <string name="dl_cy_sheet_clear">ಈ ದಿನದ ದಾಖಲೆ ತೆಗೆಯಿರಿ</string>
+
+    <!-- Quiz -->
+    <string name="dl_quiz_eyebrow">ಪ್ರತಿದಿನ</string>
+    <string name="dl_quiz_title">ಸುರಕ್ಷತಾ ಕ್ವಿಜ್</string>
+    <string name="dl_quiz_stat_streak">ಸತತ ಸರಣಿ</string>
+    <string name="dl_quiz_stat_points">ಅಂಕಗಳು</string>
+    <string name="dl_quiz_stat_level">ಹಂತ</string>
+    <plurals name="dl_quiz_days">
+        <item quantity="one">%1$d ದಿನ</item>
+        <item quantity="other">%1$d ದಿನಗಳು</item>
+    </plurals>
+    <string name="dl_quiz_progress">ಪ್ರಶ್ನೆ %1$d / %2$d</string>
+    <string name="dl_quiz_progress_practice">ಅಭ್ಯಾಸ · ಪ್ರಶ್ನೆ %1$d / %2$d</string>
+    <string name="dl_quiz_correct">ಸರಿ</string>
+    <string name="dl_quiz_wrong">ಸರಿಯಲ್ಲ</string>
+    <string name="dl_quiz_next">ಮುಂದಿನ ಪ್ರಶ್ನೆ</string>
+    <string name="dl_quiz_finish">ನನ್ನ ಫಲಿತಾಂಶ ನೋಡಿ</string>
+    <string name="dl_quiz_score">%1$d / %2$d</string>
+    <string name="dl_quiz_result_perfect">ಎಲ್ಲವೂ ಸರಿ!</string>
+    <string name="dl_quiz_result_good">ಚೆನ್ನಾಗಿ ಆಡಿದ್ದೀರಿ</string>
+    <string name="dl_quiz_result_low">ಈಗ ನಿಮಗೆ ಗೊತ್ತಾಯಿತು</string>
+    <string name="dl_quiz_result_points">+%1$d ಅಂಕಗಳು. ನಾಳೆ ಹೊಸ ಪ್ರಶ್ನೆಗಳು.</string>
+    <string name="dl_quiz_result_done">ಇಂದಿನ ಕ್ವಿಜ್ ಮುಗಿದಿದೆ. ನಾಳೆ ಹೊಸ ಪ್ರಶ್ನೆಗಳು.</string>
+    <string name="dl_quiz_result_practice">ಇದು ಅಭ್ಯಾಸದ ಸುತ್ತು. ಅಂಕಗಳು ದಿನದ ಕ್ವಿಜ್‌ನಿಂದ ಮಾತ್ರ ಸಿಗುತ್ತವೆ.</string>
+    <string name="dl_quiz_level_next">ಹಂತ: %1$s · ಮುಂದಿನ ಹಂತಕ್ಕೆ %2$d ಅಂಕಗಳು ಬೇಕು</string>
+    <string name="dl_quiz_level_top">ಹಂತ: %1$s · ಅತ್ಯುನ್ನತ ಹಂತ</string>
+    <string name="dl_quiz_level_1">ಆರಂಭಿಕ</string>
+    <string name="dl_quiz_level_2">ಜಾಗೃತ</string>
+    <string name="dl_quiz_level_3">ಎಚ್ಚರ</string>
+    <string name="dl_quiz_level_4">ರಕ್ಷಕಿ</string>
+    <string name="dl_quiz_level_5">ಶಕ್ತಿ</string>
+    <string name="dl_quiz_share">ನನ್ನ ಸರಣಿ ಹಂಚಿಕೊಳ್ಳಿ</string>
+    <string name="dl_quiz_share_text">Naari Shakti ಯಲ್ಲಿ ನಾನು ಸತತ %1$s ಸುರಕ್ಷತಾ ಕ್ವಿಜ್ ಆಡಿ %2$d ಅಂಕ ಗಳಿಸಿದ್ದೇನೆ. ನಿಮ್ಮ ಹಕ್ಕುಗಳು ಮತ್ತು ಸಹಾಯವಾಣಿಗಳು ನಿಮಗೆ ಗೊತ್ತೇ?</string>
+    <string name="dl_quiz_practice">ಇನ್ನಷ್ಟು ಅಭ್ಯಾಸ ಮಾಡಿ</string>
+    <string name="dl_quiz_reminder">ದಿನದ ಕ್ವಿಜ್ ಜ್ಞಾಪನೆ</string>
+    <string name="dl_quiz_reminder_sub">ನೀವು ಇನ್ನೂ ಆಡಿಲ್ಲದಿದ್ದರೆ ಸಂಜೆ ಒಂದು ನೋಟಿಫಿಕೇಶನ್</string>
+
+    <!-- Daily reminder notifications -->
+    <string name="dl_nudge_quiz_title">ಇಂದಿನ ಸುರಕ್ಷತಾ ಕ್ವಿಜ್ ಸಿದ್ಧವಾಗಿದೆ</string>
+    <string name="dl_nudge_quiz_text">ಮೂರು ಚಿಕ್ಕ ಪ್ರಶ್ನೆಗಳು. ಒಂದೇ ನಿಮಿಷ ಸಾಕು.</string>
+    <plurals name="dl_nudge_quiz_streak">
+        <item quantity="one">ಸತತ %1$d ದಿನದ ಸರಣಿ ಉಳಿಸಿಕೊಳ್ಳಲು ಈಗಲೇ ಆಡಿ.</item>
+        <item quantity="other">ಸತತ %1$d ದಿನಗಳ ಸರಣಿ ಉಳಿಸಿಕೊಳ್ಳಲು ಈಗಲೇ ಆಡಿ.</item>
+    </plurals>
+    <string name="dl_nudge_cycle_title">Naari Shakti ಯಿಂದ ಒಂದು ಜ್ಞಾಪನೆ</string>
+    <string name="dl_nudge_cycle_text">ನೋಡಲು ಆ್ಯಪ್ ತೆರೆಯಿರಿ.</string>
+
+    <!--
+        Quiz bank. Each item: question|option A|option B|option C|index of the right option (0-2)|explanation.
+        Keep the count a multiple of 3 and never use the | character inside a text.
+        Translations must keep the same order and the same right-option index.
+    -->
+    <string-array name="dl_quiz_items">
+        <item>ಭಾರತದ ಎಲ್ಲೆಡೆ ಪೊಲೀಸ್, ಅಗ್ನಿಶಾಮಕ ಮತ್ತು ಆಂಬ್ಯುಲೆನ್ಸ್ ಮೂರಕ್ಕೂ ಸಿಗುವ ಒಂದೇ ಸಂಖ್ಯೆ ಯಾವುದು?|112|1098|139|0|112 ಎಲ್ಲ ತುರ್ತು ಸೇವೆಗಳಿಗೂ ಒಂದೇ ಸಂಖ್ಯೆ. ಯಾವ ಫೋನ್‌ನಿಂದಲೂ, ಬ್ಯಾಲೆನ್ಸ್ ಇಲ್ಲದಿದ್ದರೂ ಕೆಲಸ ಮಾಡುತ್ತದೆ.</item>
+        <item>ಮಹಿಳಾ ಸಹಾಯವಾಣಿ ಸಂಖ್ಯೆ ಯಾವುದು?|1930|181|139|1|ಹೆಚ್ಚಿನ ರಾಜ್ಯಗಳಲ್ಲಿ 181 ಮಹಿಳಾ ಸಹಾಯವಾಣಿ. 1091 ಮಹಿಳಾ ಪೊಲೀಸ್ ಸಹಾಯವಾಣಿಗೆ ಸಂಪರ್ಕಿಸುತ್ತದೆ.</item>
+        <item>ಆನ್‌ಲೈನ್ ಕಿರುಕುಳ, ಬ್ಲ್ಯಾಕ್‌ಮೇಲ್ ಅಥವಾ ಸೈಬರ್ ವಂಚನೆಯ ಬಗ್ಗೆ ಎಲ್ಲಿ ದೂರು ಕೊಡಬೇಕು?|ಸಹಾಯವಾಣಿ 1930 ಅಥವಾ cybercrime.gov.in|ಫೋನ್ ಕಂಪನಿಯಲ್ಲಿ ಮಾತ್ರ|ಇದಕ್ಕೆ ದೂರು ಕೊಡಲು ಆಗುವುದಿಲ್ಲ|0|1930 ಗೆ ಕರೆ ಮಾಡಿ ಅಥವಾ cybercrime.gov.in ನಲ್ಲಿ ದೂರು ದಾಖಲಿಸಿ. ಸ್ಕ್ರೀನ್‌ಶಾಟ್‌ಗಳನ್ನು ಸಾಕ್ಷ್ಯವಾಗಿ ಇಟ್ಟುಕೊಳ್ಳಿ.</item>
+        <item>ಘಟನೆ ತಮ್ಮ ವ್ಯಾಪ್ತಿಯ ಹೊರಗೆ ನಡೆದಿದೆ ಎಂದು ಪೊಲೀಸ್ ಠಾಣೆಯವರು ಹೇಳುತ್ತಾರೆ. ನೀವು ಏನನ್ನು ಕೇಳಬಹುದು?|ಏನೂ ಇಲ್ಲ, ನೀವೇ ಅಲ್ಲಿಗೆ ಹೋಗಬೇಕು|ಝೀರೋ FIR|ಲಿಖಿತ ಕ್ಷಮಾಪಣೆ|1|ಯಾವುದೇ ಪೊಲೀಸ್ ಠಾಣೆ ಝೀರೋ FIR ದಾಖಲಿಸಿ ಅದನ್ನು ಸಂಬಂಧಪಟ್ಟ ಠಾಣೆಗೆ ವರ್ಗಾಯಿಸಲೇಬೇಕು.</item>
+        <item>ಸೂರ್ಯಾಸ್ತದ ನಂತರ ಮತ್ತು ಸೂರ್ಯೋದಯಕ್ಕೆ ಮೊದಲು ಪೊಲೀಸರು ಮಹಿಳೆಯನ್ನು ಬಂಧಿಸಬಹುದೇ?|ಹೌದು, ಯಾವ ಸಮಯದಲ್ಲಾದರೂ|ಯಾವ ಸಂದರ್ಭದಲ್ಲೂ ಇಲ್ಲ|ಅಪರೂಪದ ಸಂದರ್ಭಗಳಲ್ಲಿ ಮಾತ್ರ, ಮ್ಯಾಜಿಸ್ಟ್ರೇಟ್ ಅವರ ಲಿಖಿತ ಅನುಮತಿಯೊಂದಿಗೆ ಮಹಿಳಾ ಅಧಿಕಾರಿಯಿಂದ|2|ಮ್ಯಾಜಿಸ್ಟ್ರೇಟ್ ಅವರ ಪೂರ್ವ ಲಿಖಿತ ಅನುಮತಿ ಇರುವ ಅಪರೂಪದ ಸಂದರ್ಭಗಳನ್ನು ಬಿಟ್ಟರೆ, ರಾತ್ರಿ ಬಂಧನದಿಂದ ಕಾನೂನು ಮಹಿಳೆಯರನ್ನು ರಕ್ಷಿಸುತ್ತದೆ.</item>
+        <item>ನೀವು ಬುಕ್ ಮಾಡಿದ ಕ್ಯಾಬ್ ಹತ್ತುವ ಮೊದಲು ಏನನ್ನು ಪರೀಕ್ಷಿಸಬೇಕು?|ನಂಬರ್ ಪ್ಲೇಟ್ ಮತ್ತು ಚಾಲಕ ಆ್ಯಪ್‌ನಲ್ಲಿರುವಂತೆಯೇ ಇದ್ದಾರೆಯೇ ಎಂದು|ಕಾರು ಸ್ವಚ್ಛವಾಗಿದೆಯೇ ಎಂದು|ಚಾಲಕ ಅವಸರದಲ್ಲಿದ್ದಾರೆಯೇ ಎಂದು|0|ನಂಬರ್ ಪ್ಲೇಟ್ ಮತ್ತು ಚಾಲಕರನ್ನು ಯಾವಾಗಲೂ ಬುಕಿಂಗ್ ಜೊತೆ ಹೋಲಿಸಿ ನೋಡಿ. ಈ ಆ್ಯಪ್‌ನ ಕ್ಯಾಬ್ ಮೋಡ್ ನಂಬರ್ ಪ್ಲೇಟ್ ಅನ್ನು ನಿಮ್ಮ ಸಂಪರ್ಕಗಳಿಗೆ ಕಳುಹಿಸಬಲ್ಲದು.</item>
+        <item>ನಿಮ್ಮ ಕ್ಯಾಬ್ ನಿಮಗೆ ಪರಿಚಯವಿಲ್ಲದ ದಾರಿಯಲ್ಲಿ ಹೋಗುತ್ತಿದೆ. ಮೊದಲು ಏನು ಮಾಡುವುದು ಉತ್ತಮ?|ಸುಮ್ಮನೆ ಕುಳಿತು ಕಾಯುವುದು|ಲೈವ್ ಲೊಕೇಶನ್ ಹಂಚಿಕೊಂಡು, ಯಾರಿಗಾದರೂ ಕರೆ ಮಾಡಿ, ಜನ ಇರುವ ಜಾಗದಲ್ಲಿ ನಿಲ್ಲಿಸಲು ಹೇಳುವುದು|ಫೋನ್ ಸ್ವಿಚ್ ಆಫ್ ಮಾಡುವುದು|1|ನೀವು ಎಲ್ಲಿದ್ದೀರಿ ಎಂದು ಯಾರಿಗಾದರೂ ತಿಳಿಸಿ, ಕರೆಯಲ್ಲಿ ಅದನ್ನು ಗಟ್ಟಿಯಾಗಿ ಹೇಳಿ, ಅಪಾಯ ಅನಿಸಿದರೆ SOS ಬಳಸಿ.</item>
+        <item>10 ಅಥವಾ ಅದಕ್ಕಿಂತ ಹೆಚ್ಚು ಉದ್ಯೋಗಿಗಳಿರುವ ಕೆಲಸದ ಸ್ಥಳದಲ್ಲಿ ಲೈಂಗಿಕ ಕಿರುಕುಳದ ದೂರನ್ನು ಯಾರು ಆಲಿಸಬೇಕು?|ಆಂತರಿಕ ಸಮಿತಿ|ಪೊಲೀಸರು ಮಾತ್ರ|ಸೆಕ್ಯುರಿಟಿ ಗಾರ್ಡ್|0|POSH ಕಾಯ್ದೆಯ ಪ್ರಕಾರ ಅಂತಹ ಪ್ರತಿ ಕೆಲಸದ ಸ್ಥಳದಲ್ಲೂ ಆಂತರಿಕ ಸಮಿತಿ ಇರಲೇಬೇಕು.</item>
+        <item>POSH ಕಾಯ್ದೆಯಡಿ ಕೆಲಸದ ಸ್ಥಳದ ಲೈಂಗಿಕ ಕಿರುಕುಳದ ದೂರು ಕೊಡಲು ಎಷ್ಟು ಸಮಯ ಇರುತ್ತದೆ?|24 ಗಂಟೆ|ಒಂದು ವಾರ|ಘಟನೆ ನಡೆದ ದಿನದಿಂದ ಮೂರು ತಿಂಗಳು|2|ದೂರನ್ನು ಮೂರು ತಿಂಗಳೊಳಗೆ ಕೊಡಬೇಕು; ಸಮಿತಿ ಇದನ್ನು ಇನ್ನೂ ಮೂರು ತಿಂಗಳು ವಿಸ್ತರಿಸಬಹುದು.</item>
+        <item>ನೀವು ಸ್ಪಷ್ಟವಾಗಿ ಬೇಡ ಎಂದ ಮೇಲೂ ಯಾರೋ ನಿಮ್ಮನ್ನು ಹಿಂಬಾಲಿಸುತ್ತಲೇ ಇದ್ದಾರೆ ಅಥವಾ ಮೆಸೇಜ್ ಮಾಡುತ್ತಲೇ ಇದ್ದಾರೆ. ಅದು ಅಪರಾಧವೇ?|ಇಲ್ಲ, ಅದು ಕೆಟ್ಟ ನಡತೆ ಅಷ್ಟೇ|ಹೌದು, ಹಿಂಬಾಲಿಸುವುದು ಅಪರಾಧ, ಆನ್‌ಲೈನ್‌ನಲ್ಲೂ|ಅವರು ನಿಮ್ಮನ್ನು ಮುಟ್ಟಿದರೆ ಮಾತ್ರ|1|ನೇರವಾಗಿ ಆಗಲಿ ಆನ್‌ಲೈನ್‌ನಲ್ಲಾಗಲಿ, ಹಿಂಬಾಲಿಸಿ ಕಾಡುವುದು ಕ್ರಿಮಿನಲ್ ಅಪರಾಧ. ಮೆಸೇಜ್‌ಗಳನ್ನು ಉಳಿಸಿಕೊಂಡು ದೂರು ಕೊಡಿ.</item>
+        <item>ಕೌಟುಂಬಿಕ ಹಿಂಸೆ ಕಾನೂನು ದೈಹಿಕ ಹಿಂಸೆಗೆ ಮಾತ್ರ ಅನ್ವಯಿಸುತ್ತದೆಯೇ?|ಹೌದು, ದೈಹಿಕ ಹಿಂಸೆಗೆ ಮಾತ್ರ|ಇಲ್ಲ, ಬೈಗುಳ, ಮಾನಸಿಕ, ಲೈಂಗಿಕ ಮತ್ತು ಆರ್ಥಿಕ ದೌರ್ಜನ್ಯಕ್ಕೂ ಅನ್ವಯಿಸುತ್ತದೆ|ಅದು ವಿವಾಹಿತ ಮಹಿಳೆಯರಿಗೆ ಮಾತ್ರ ಅನ್ವಯಿಸುತ್ತದೆ|1|ಕೌಟುಂಬಿಕ ಹಿಂಸೆಯಿಂದ ಮಹಿಳೆಯರ ರಕ್ಷಣೆ ಕಾಯ್ದೆ ಈ ಎಲ್ಲ ಬಗೆಯ ದೌರ್ಜನ್ಯಗಳಿಗೂ ಅನ್ವಯಿಸುತ್ತದೆ, ಲಿವ್-ಇನ್ ಸಂಬಂಧದಲ್ಲಿರುವ ಮಹಿಳೆಯರಿಗೂ ಸಹ.</item>
+        <item>ಭಾರತದಲ್ಲಿ ಉಚಿತ ಕಾನೂನು ನೆರವು ಪಡೆಯುವ ಹಕ್ಕು ಯಾರಿಗಿದೆ?|ಆದಾಯ ಎಷ್ಟೇ ಇರಲಿ, ಪ್ರತಿ ಮಹಿಳೆಗೂ|ಬಡತನ ರೇಖೆಗಿಂತ ಕೆಳಗಿರುವ ಮಹಿಳೆಯರಿಗೆ ಮಾತ್ರ|ಯಾರಿಗೂ ಇಲ್ಲ, ವಕೀಲರು ಯಾವಾಗಲೂ ಶುಲ್ಕ ಪಡೆಯುತ್ತಾರೆ|0|ಪ್ರತಿ ಮಹಿಳೆಯೂ ತನ್ನ ಜಿಲ್ಲೆಯ ಕಾನೂನು ಸೇವೆಗಳ ಪ್ರಾಧಿಕಾರದ ಮೂಲಕ ಉಚಿತ ಕಾನೂನು ನೆರವು ಪಡೆಯಬಹುದು.</item>
+        <item>ಲೈಂಗಿಕ ದೌರ್ಜನ್ಯಕ್ಕೆ ಒಳಗಾದವರ ಹೆಸರನ್ನು ಮಾಧ್ಯಮಗಳು ಅಥವಾ ಬೇರೆ ಯಾರಾದರೂ ಪ್ರಕಟಿಸಬಹುದೇ?|ಹೌದು, ಸುದ್ದಿ ನಿಜವಾಗಿದ್ದರೆ|ಸಾಮಾಜಿಕ ಮಾಧ್ಯಮದಲ್ಲಿ ಮಾತ್ರ|ಇಲ್ಲ, ಆಕೆಯ ಗುರುತು ಬಹಿರಂಗಪಡಿಸುವುದು ಅಪರಾಧ|2|ಲೈಂಗಿಕ ದೌರ್ಜನ್ಯಕ್ಕೆ ಒಳಗಾದವರ ಗುರುತನ್ನು ಬಹಿರಂಗಪಡಿಸುವುದು ಶಿಕ್ಷಾರ್ಹ ಅಪರಾಧ.</item>
+        <item>ರಾತ್ರಿ ಒಬ್ಬರೇ ನಡೆದು ಹೋಗುವಾಗ ಯಾರೋ ಹಿಂಬಾಲಿಸುತ್ತಿದ್ದಾರೆ ಅನಿಸುತ್ತದೆ. ಏನು ಮಾಡಬೇಕು?|ಅತಿ ನಿರ್ಜನ ಗಲ್ಲಿಯ ಮೂಲಕ ನೇರವಾಗಿ ಮನೆಗೆ ಹೋಗುವುದು|ಬೆಳಕು ಮತ್ತು ಜನ ಇರುವ ಜಾಗದ ಕಡೆ ಹೋಗಿ ಯಾರಿಗಾದರೂ ಕರೆ ಮಾಡುವುದು|ನಿಂತು ಒಬ್ಬರೇ ಅವರನ್ನು ಎದುರಿಸುವುದು|1|ಜನ ಮತ್ತು ಬೆಳಕು ಇರುವ ಕಡೆ ಹೋಗಿ, ಕರೆಯಲ್ಲೇ ಇರಿ, ಆ ವ್ಯಕ್ತಿಗೆ ನಿಮ್ಮ ಮನೆಯ ದಾರಿ ತೋರಿಸಬೇಡಿ.</item>
+        <item>ಪಾರ್ಟಿಯಲ್ಲಿ ನಿಮ್ಮ ಪಾನೀಯವನ್ನು ಗಮನಿಸದೆ ಬಿಟ್ಟು ಹೋಗಿದ್ದಿರಿ. ಸುರಕ್ಷಿತ ಆಯ್ಕೆ ಯಾವುದು?|ಬೇಗ ಕುಡಿದು ಮುಗಿಸುವುದು|ಅಪರಿಚಿತರಿಗೆ ರುಚಿ ನೋಡಲು ಹೇಳುವುದು|ಅದನ್ನು ಬಿಟ್ಟು ಹೊಸದನ್ನು ತೆಗೆದುಕೊಳ್ಳುವುದು|2|ಗಮನಿಸದೆ ಬಿಟ್ಟ ಪಾನೀಯದಲ್ಲಿ ಯಾರಾದರೂ ಏನಾದರೂ ಬೆರೆಸಿರಬಹುದು. ಯಾವಾಗಲೂ ಹೊಸದನ್ನೇ ತೆಗೆದುಕೊಳ್ಳಿ.</item>
+        <item>ಈ ಆ್ಯಪ್‌ನಲ್ಲಿರುವ ನಕಲಿ ಕರೆ ಸಾಧನ ಯಾವುದಕ್ಕೆ?|ಮುಜುಗರದ ಪರಿಸ್ಥಿತಿಯಿಂದ ಹೊರಡಲು ನಂಬುವಂತಹ ಕಾರಣ ಕೊಡಲು|ಗೆಳೆಯರಿಗೆ ತಮಾಷೆ ಮಾಡಲು|ಪೊಲೀಸರಿಗೆ ಕರೆ ಮಾಡಲು|0|ನಕಲಿ ಒಳಬರುವ ಕರೆಯಿಂದ ಯಾವ ಜಗಳವೂ ಇಲ್ಲದೆ ನೀವು ಅಲ್ಲಿಂದ ಸರಿದು ಹೋಗಬಹುದು.</item>
+        <item>ಈ ಆ್ಯಪ್‌ನಲ್ಲಿ ನಿಮ್ಮ ಒತ್ತಾಯದ PIN ನಮೂದಿಸಿದರೆ ಏನಾಗುತ್ತದೆ?|ಆ್ಯಪ್ ಅಳಿಸಿಹೋಗುತ್ತದೆ|ಆ್ಯಪ್ ಸಾಮಾನ್ಯವಾಗಿಯೇ ಕಾಣುತ್ತದೆ, ಆದರೆ ಗುಟ್ಟಾಗಿ SOS ಕಳುಹಿಸುತ್ತದೆ|ಏನೂ ಆಗುವುದಿಲ್ಲ|1|ಯಾರಾದರೂ ಬಲವಂತವಾಗಿ ಅನ್‌ಲಾಕ್ ಮಾಡಿಸಿದಾಗ ಬಳಸಲು ಒತ್ತಾಯದ PIN ಇದೆ. ಅದು ಆ್ಯಪ್ ಅನ್ನು ಸಾಮಾನ್ಯವಾಗಿ ತೆರೆಯುತ್ತದೆ ಮತ್ತು ಗುಟ್ಟಾಗಿ ನಿಮ್ಮ ಸಂಪರ್ಕಗಳಿಗೆ ಎಚ್ಚರಿಕೆ ಕಳುಹಿಸುತ್ತದೆ.</item>
+        <item>ಮಹಿಳೆಯೊಬ್ಬರು ಲೈಂಗಿಕ ಅಪರಾಧದ ಬಗ್ಗೆ ದೂರು ಕೊಟ್ಟಾಗ ಆಕೆಯ ಹೇಳಿಕೆಯನ್ನು ಯಾರು ದಾಖಲಿಸಬೇಕು?|ಕರ್ತವ್ಯದಲ್ಲಿರುವ ಯಾವುದೇ ಅಧಿಕಾರಿ|ಮಹಿಳಾ ಪೊಲೀಸ್ ಅಧಿಕಾರಿ|ನೆರೆಮನೆಯವರು|1|ಕಾನೂನಿನ ಪ್ರಕಾರ ಆಕೆಯ ಹೇಳಿಕೆಯನ್ನು ಮಹಿಳಾ ಪೊಲೀಸ್ ಅಧಿಕಾರಿಯೇ ದಾಖಲಿಸಬೇಕು.</item>
+        <item>ಇಂಟರ್ನೆಟ್‌ನಲ್ಲಿ ಪರಿಚಯವಾದವರನ್ನು ಮೊದಲ ಬಾರಿ ಭೇಟಿಯಾಗುತ್ತಿದ್ದೀರಿ. ಅತ್ಯಂತ ಸುರಕ್ಷಿತ ಯೋಜನೆ ಯಾವುದು?|ಸಾರ್ವಜನಿಕ ಸ್ಥಳದಲ್ಲಿ ಭೇಟಿಯಾಗಿ, ಗೆಳತಿಗೆ ತಿಳಿಸಿ, ಹೋಗಿಬರಲು ನಿಮ್ಮದೇ ವ್ಯವಸ್ಥೆ ಮಾಡಿಕೊಳ್ಳುವುದು|ಅವರ ಮನೆಯಲ್ಲಿ ಭೇಟಿಯಾಗುವುದು|ಅವರೇ ನಿಮ್ಮ ಮನೆಗೆ ಬಂದು ಕರೆದುಕೊಂಡು ಹೋಗಲು ಬಿಡುವುದು|0|ಸಾರ್ವಜನಿಕ ಸ್ಥಳ, ನಿಮ್ಮ ಯೋಜನೆ ಗೊತ್ತಿರುವ ಗೆಳತಿ ಮತ್ತು ಮನೆಗೆ ಮರಳಲು ನಿಮ್ಮದೇ ವ್ಯವಸ್ಥೆ ಇದ್ದರೆ ನಿಯಂತ್ರಣ ನಿಮ್ಮ ಕೈಯಲ್ಲಿರುತ್ತದೆ. ಭೇಟಿ ಮೋಡ್ ನಿಮಗಾಗಿ ಟೈಮರ್ ಇಡಬಲ್ಲದು.</item>
+        <item>ಕರೆ ಮಾಡಿದವರು ತಾವು ನಿಮ್ಮ ಬ್ಯಾಂಕ್‌ನವರು ಎಂದು ಹೇಳಿ, ಈಗಷ್ಟೇ ಬಂದ OTP ಕೇಳುತ್ತಾರೆ. ಏನು ಮಾಡಬೇಕು?|ಕೊಡಿ, ಅವರು ಬ್ಯಾಂಕ್‌ನವರಲ್ಲವೇ|ಅರ್ಧ ಮಾತ್ರ ಹೇಳಿ|ಎಂದಿಗೂ ಹೇಳಬೇಡಿ, ಕರೆ ಕಟ್ ಮಾಡಿ|2|ಯಾವ ಬ್ಯಾಂಕೂ OTP ಕೇಳುವುದಿಲ್ಲ. ಅದನ್ನು ಹೇಳಿದರೆ ಬೇರೆಯವರು ನಿಮ್ಮ ಹಣವನ್ನು ಅಥವಾ ಖಾತೆಯ ನಿಯಂತ್ರಣವನ್ನು ಪಡೆಯಬಹುದು.</item>
+        <item>ಸಂಕಷ್ಟದಲ್ಲಿರುವ ಮಗುವಿಗಾಗಿ ಇರುವ ಸಹಾಯವಾಣಿ ಸಂಖ್ಯೆ ಯಾವುದು?|1098|181|112 ಮಾತ್ರ|0|1098 ಚೈಲ್ಡ್‌ಲೈನ್, ಮಕ್ಕಳಿಗಾಗಿ ಇರುವ 24 ಗಂಟೆಗಳ ಉಚಿತ ಸಹಾಯವಾಣಿ.</item>
+        <item>ಎರಡೂ ಕುಟುಂಬಗಳು ಒಪ್ಪಿದರೆ ವರದಕ್ಷಿಣೆ ಕೊಡುವುದು ಅಥವಾ ತೆಗೆದುಕೊಳ್ಳುವುದು ಕಾನೂನುಬದ್ಧವೇ?|ಹೌದು, ಇಬ್ಬರೂ ಒಪ್ಪಿದರೆ|ಇಲ್ಲ, ವರದಕ್ಷಿಣೆ ಕೊಡುವುದು ಮತ್ತು ತೆಗೆದುಕೊಳ್ಳುವುದು ಎರಡೂ ಅಪರಾಧ|ಕೊಡುವುದು ಮಾತ್ರ ಅಪರಾಧ|1|ವರದಕ್ಷಿಣೆ ನಿಷೇಧ ಕಾಯ್ದೆಯಡಿ ವರದಕ್ಷಿಣೆ ಕೊಡುವುದು, ತೆಗೆದುಕೊಳ್ಳುವುದು ಮತ್ತು ಕೇಳುವುದು ಮೂರೂ ಶಿಕ್ಷಾರ್ಹ.</item>
+        <item>ನೀವು ಈ ಆ್ಯಪ್‌ನಲ್ಲಿ ಚೆಕ್-ಇನ್ ಟೈಮರ್ ಇಟ್ಟು, ಸಮಯಕ್ಕೆ “ನಾನು ಸುರಕ್ಷಿತವಾಗಿದ್ದೇನೆ” ಟ್ಯಾಪ್ ಮಾಡಲಿಲ್ಲ. ಏನಾಗುತ್ತದೆ?|ಏನೂ ಇಲ್ಲ, ಟೈಮರ್ ಮುಗಿಯುತ್ತದೆ ಅಷ್ಟೇ|ಆ್ಯಪ್ SOS ಆರಂಭಿಸಿ ನಿಮ್ಮ ಸಂಪರ್ಕಗಳಿಗೆ ಎಚ್ಚರಿಕೆ ಕಳುಹಿಸುತ್ತದೆ|ನಿಮ್ಮ ಫೋನ್ ರೀಸ್ಟಾರ್ಟ್ ಆಗುತ್ತದೆ|1|ಚೆಕ್-ಇನ್ ತಪ್ಪಿದರೆ SOS ಆರಂಭವಾಗುತ್ತದೆ; ಹೀಗಾಗಿ ನೀವು ಫೋನ್ ಮುಟ್ಟಲು ಆಗದಿದ್ದರೂ ಯಾರಿಗಾದರೂ ವಿಷಯ ತಿಳಿಯುತ್ತದೆ.</item>
+        <item>ರೈಲಿನಲ್ಲಿ ಪ್ರಯಾಣಿಸುವಾಗ ಸಹಾಯಕ್ಕಾಗಿ ಯಾವ ಸಂಖ್ಯೆಗೆ ಕರೆ ಮಾಡಬೇಕು?|139|1930|1098|0|139 ರೈಲ್ ಮದದ್ ಸಹಾಯವಾಣಿ; ಭಾರತೀಯ ರೈಲ್ವೆಯಲ್ಲಿ ಸುರಕ್ಷತೆ ಮತ್ತು ಇತರ ನೆರವಿಗಾಗಿ ಇದೆ.</item>
+    </string-array>
+</resources>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Shared -->
+    <string name="tg_back">ফিরে যান</string>
+    <string name="tg_eyebrow">একসাথে</string>
+    <string name="tg_cloud_off">এর জন্য Naari Shakti ক্লাউড দরকার, যা এই ফোনে বন্ধ আছে।</string>
+    <string name="tg_open_settings">সেটিংস</string>
+    <string name="tg_close">বন্ধ করুন</string>
+    <string name="tg_delete">মুছুন</string>
+    <string name="tg_cancel">বাতিল করুন</string>
+    <string name="tg_flagged">রিপোর্ট করা হয়েছে। ধন্যবাদ।</string>
+    <string name="tg_error_daily_limit">আজকের সীমা শেষ হয়ে গেছে। কাল আবার চেষ্টা করুন।</string>
+    <string name="tg_error_contact_info">এখানে লিঙ্ক আর ফোন নম্বর দেওয়া যায় না।</string>
+    <string name="tg_error_offline">সংযোগ নেই। ইন্টারনেট দেখে নিয়ে আবার চেষ্টা করুন।</string>
+    <string name="tg_error_generic">কিছু একটা ভুল হয়েছে। আবার চেষ্টা করুন।</string>
+
+    <!-- Home card and Safety tools tiles -->
+    <string name="tg_section">একসাথে</string>
+    <string name="tg_home_circle">সার্কেল</string>
+    <string name="tg_home_circle_cap">ম্যাপে পরিবার</string>
+    <string name="tg_home_map">সুরক্ষা ম্যাপ</string>
+    <string name="tg_home_map_cap">কাছের অনিরাপদ জায়গা</string>
+    <string name="tg_home_community">কমিউনিটি</string>
+    <string name="tg_home_community_cap">জিজ্ঞেস করুন, জানান</string>
+
+    <!-- Family circle -->
+    <string name="tg_ci_title">পরিবারের সার্কেল</string>
+    <string name="tg_ci_body">আপনার অভিভাবকরা আর আপনি যাঁদের অভিভাবক, তাঁদের শেষ কোথায় দেখা গেছে তা দেখুন, যদি তাঁরা শেয়ার করতে চান।</string>
+    <string name="tg_ci_share">আমার লোকেশন শেয়ার করুন</string>
+    <string name="tg_ci_share_off">বন্ধ। আপনার সার্কেলের কেউ দেখতে পাচ্ছেন না আপনি কোথায় আছেন।</string>
+    <string name="tg_ci_share_on">চালু। আপনার সার্কেল আপনার শেষ লোকেশন আর ব্যাটারির চার্জ দেখতে পায়। অ্যাপ খুললে আর প্রায় প্রতি 30 মিনিটে তা আপডেট হয়।</string>
+    <string name="tg_ci_share_on_foreground">চালু। অ্যাপ খুললে আপনার লোকেশন আপডেট হয়। ব্যাকগ্রাউন্ডেও আপডেট পেতে সেটিংসে লোকেশন “সবসময় অনুমতি দিন” করে দিন।</string>
+    <string name="tg_ci_need_location">আপনি কোথায় আছেন তা শেয়ার করতে লোকেশনের অনুমতি দরকার।</string>
+    <string name="tg_ci_map_cd">আপনার সার্কেলের ম্যাপ</string>
+    <string name="tg_ci_empty_title">আপনার সার্কেলে এখনও কেউ নেই</string>
+    <string name="tg_ci_empty_body">অভিভাবক কোড দিয়ে যাঁরা আপনার সঙ্গে যুক্ত, তাঁরাই আপনার সার্কেল।</string>
+    <string name="tg_ci_link">অভিভাবক যুক্ত করুন</string>
+    <string name="tg_ci_unnamed">নাম নেই</string>
+    <string name="tg_ci_marker">%1$s · %2$s</string>
+    <string name="tg_ci_rel_guardian">আপনার অভিভাবক</string>
+    <string name="tg_ci_rel_ward">আপনি তাঁর অভিভাবক</string>
+    <string name="tg_ci_rel_both">আপনারা একে অপরের অভিভাবক</string>
+    <string name="tg_ci_not_sharing">লোকেশন শেয়ার করছেন না</string>
+    <string name="tg_ci_seen_battery">%1$s · ব্যাটারি %2$d%%</string>
+    <string name="tg_ci_seen">%1$s</string>
+    <string name="tg_ci_navigate">ম্যাপে খুলুন</string>
+    <plurals name="tg_ci_helper_stats">
+        <item quantity="one">কাছাকাছি সাহায্যকারী হিসেবে আপনি %2$d টি অ্যালার্টের মধ্যে %1$d টিতে সাড়া দিয়েছেন। ধন্যবাদ।</item>
+        <item quantity="other">কাছাকাছি সাহায্যকারী হিসেবে আপনি %2$d টি অ্যালার্টের মধ্যে %1$d টিতে সাড়া দিয়েছেন। ধন্যবাদ।</item>
+    </plurals>
+
+    <!-- Safety map -->
+    <string name="tg_sm_title">সুরক্ষা ম্যাপ</string>
+    <string name="tg_sm_body">অন্য মহিলারা যে জায়গাগুলোকে অনিরাপদ বা নিরাপদ বলে চিহ্নিত করেছেন। রিপোর্টে কারও নাম থাকে না।</string>
+    <string name="tg_sm_map_cd">সুরক্ষা রিপোর্টের ম্যাপ</string>
+    <string name="tg_sm_recenter">আমার লোকেশনে যান</string>
+    <string name="tg_sm_report">এই জায়গা চিহ্নিত করুন</string>
+    <string name="tg_sm_search_here">এখানে খুঁজুন</string>
+    <string name="tg_sm_pin_hint">ম্যাপ সরিয়ে + চিহ্নটি সেই জায়গায় আনুন, যেটি চিহ্নিত করতে চান বা যার আশেপাশে খুঁজতে চান।</string>
+    <string name="tg_sm_section_nearby">এই এলাকার রিপোর্ট</string>
+    <string name="tg_sm_empty">+ চিহ্নের 3 কিমির মধ্যে কোনো রিপোর্ট নেই। তার মানে এই নয় যে এলাকাটি নিরাপদ।</string>
+    <string name="tg_sm_no_location">আপনার লোকেশন পাওয়া গেল না। ম্যাপ সরিয়ে “এখানে খুঁজুন”-এ ট্যাপ করুন।</string>
+    <string name="tg_sm_pan_hint">লোকেশন ছাড়া, ম্যাপ সরিয়ে কোনো জায়গায় নিয়ে গিয়ে “এখানে খুঁজুন”-এ ট্যাপ করুন।</string>
+    <string name="tg_sm_detail">একজন Naari Shakti ব্যবহারকারী %1$s রিপোর্ট করেছেন। যাচাই করা হয়নি।</string>
+    <string name="tg_sm_deleted">আপনার রিপোর্ট মুছে দেওয়া হয়েছে।</string>
+    <string name="tg_sm_flag">এটা ভুল</string>
+    <string name="tg_sm_zoom_in">আরও জুম করুন, যাতে + চিহ্নটি ঠিক জায়গার উপরে থাকে।</string>
+    <string name="tg_sm_pick_category">এই জায়গাটি কেমন, বেছে নিন</string>
+    <string name="tg_sm_added">চিহ্নিত হয়েছে। অন্যদের সাহায্য করার জন্য ধন্যবাদ।</string>
+    <string name="tg_sm_sheet_eyebrow">সুরক্ষা ম্যাপ</string>
+    <string name="tg_sm_sheet_title">এই জায়গাটি কেমন?</string>
+    <string name="tg_sm_note_hint">নোট লিখুন (ঐচ্ছিক)</string>
+    <string name="tg_sm_sheet_note">জায়গার কথা লিখুন, কোনো মানুষের কথা নয়। নাম, ফোন নম্বর বা লিঙ্ক দেবেন না। এই মুহূর্তে বিপদে আছেন? তাহলে SOS ব্যবহার করুন।</string>
+    <string name="tg_sm_submit">এই জায়গা চিহ্নিত করুন</string>
+    <string name="tg_cat_poorly_lit">আলো কম</string>
+    <string name="tg_cat_isolated">নির্জন</string>
+    <string name="tg_cat_harassment">এখানে হয়রানি হয়</string>
+    <string name="tg_cat_transport">অনিরাপদ স্টপ বা স্ট্যান্ড</string>
+    <string name="tg_cat_safe_spot">নিরাপদ জায়গা</string>
+
+    <!-- Community -->
+    <string name="tg_cm_title">কমিউনিটি</string>
+    <string name="tg_cm_body">পরামর্শ চান আর যা জানেন তা জানান। আপনার নাম কেউ দেখতে পায় না।</string>
+    <string name="tg_cm_rules_title">যোগ দেওয়ার আগে</string>
+    <string name="tg_cm_rules_body">• আপনার পরিচয় গোপন থাকে। প্রতিটি কথোপকথনে আপনি আলাদা একটি বানানো নাম পান।\n• ভালো ব্যবহার করুন। গালিগালাজ, কাউকে ছোট করা বা ঘৃণা ছড়ানো চলবে না।\n• নাম, ফোন নম্বর, ঠিকানা, লিঙ্ক বা এমন কিছু দেবেন না, যা থেকে আপনাকে বা অন্য কাউকে চেনা যায়।\n• এখানে কারও পরিচয় যাচাই করা নয়। এখানকার কারও সঙ্গে দেখা করতে বা আলাদা করে চ্যাট করতে কখনও রাজি হবেন না।\n• কেউ এই নিয়ম ভাঙলে রিপোর্ট করুন। কয়েকজন রিপোর্ট করলে সেই পোস্ট লুকিয়ে দেওয়া হয়।\n• এটি জরুরি পরিষেবা নয়। বিপদে পড়লে SOS ব্যবহার করুন বা 112-এ কল করুন।</string>
+    <string name="tg_cm_rules_ok">বুঝেছি</string>
+    <string name="tg_cm_new_post">পোস্ট লিখুন</string>
+    <string name="tg_cm_empty_title">এখানে এখনও কিছু নেই</string>
+    <string name="tg_cm_empty_body">প্রথম প্রশ্নটা আপনিই করুন বা কিছু জানান।</string>
+    <string name="tg_cm_pick_topic">একটি বিষয় বেছে নিন</string>
+    <string name="tg_cm_body_required">আগে কিছু লিখুন</string>
+    <string name="tg_cm_posted">পোস্ট হয়েছে</string>
+    <string name="tg_cm_meta">%1$s · %2$s</string>
+    <string name="tg_cm_meta_mine">%1$s (আপনি) · %2$s</string>
+    <string name="tg_cm_meta_author">%1$s (পোস্টটি এঁর) · %2$s</string>
+    <plurals name="tg_cm_replies">
+        <item quantity="one">%1$d টি উত্তর</item>
+        <item quantity="other">%1$d টি উত্তর</item>
+    </plurals>
+    <string name="tg_cm_sheet_eyebrow">কমিউনিটি</string>
+    <string name="tg_cm_sheet_title">পোস্ট লিখুন</string>
+    <string name="tg_cm_body_hint">কী জিজ্ঞেস করতে বা জানাতে চান?</string>
+    <string name="tg_cm_sheet_note">নাম ছাড়াই পোস্ট হবে। নাম, ফোন নম্বর বা লিঙ্ক দেবেন না।</string>
+    <string name="tg_cm_post">পোস্ট করুন</string>
+    <string name="tg_cm_more">আরও বিকল্প</string>
+    <string name="tg_cm_reply_hint">উত্তর লিখুন</string>
+    <string name="tg_cm_send">উত্তর পাঠান</string>
+    <string name="tg_cm_flag">রিপোর্ট করুন</string>
+    <string name="tg_cm_block">এঁকে ব্লক করুন</string>
+    <string name="tg_cm_delete_title">এটা মুছবেন?</string>
+    <string name="tg_cm_delete_body">এটা সবার জন্য মুছে যাবে, আর ফিরিয়ে আনা যাবে না।</string>
+    <string name="tg_cm_deleted">মুছে দেওয়া হয়েছে</string>
+    <string name="tg_cm_flag_title">এটা রিপোর্ট করবেন?</string>
+    <string name="tg_cm_flag_body">গালিগালাজ, ব্যক্তিগত তথ্য, বা কেউ যোগাযোগ করার চেষ্টা করলে এটি ব্যবহার করুন। কয়েকজন রিপোর্ট করলে এটি লুকিয়ে দেওয়া হয়।</string>
+    <string name="tg_cm_block_title">এঁকে ব্লক করবেন?</string>
+    <string name="tg_cm_block_body">এঁর লেখা আর কিছুই আপনি দেখতে পাবেন না। তাঁকে জানানো হয় না।</string>
+    <string name="tg_cm_blocked">ব্লক করা হয়েছে</string>
+    <string name="tg_topic_advice">পরামর্শ</string>
+    <string name="tg_topic_experience">অভিজ্ঞতা</string>
+    <string name="tg_topic_legal">আইনি</string>
+    <string name="tg_topic_health">স্বাস্থ্য</string>
+    <string name="tg_topic_support">পাশে থাকা</string>
+</resources>

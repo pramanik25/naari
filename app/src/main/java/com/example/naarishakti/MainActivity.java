@@ -29,9 +29,12 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.example.naarishakti.core.Prefs;
 import com.example.naarishakti.core.ProtectionController;
+import com.example.naarishakti.daily.DailyFragment;
 import com.example.naarishakti.databinding.ActivityMainBinding;
 import com.example.naarishakti.databinding.UaItemRowBinding;
 import com.example.naarishakti.databinding.UaSheetOnboardingBinding;
+import com.example.naarishakti.shell.ProfilePromptDialog;
+import com.example.naarishakti.together.TogetherFragment;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.snackbar.Snackbar;
@@ -42,7 +45,8 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * App shell: hosts Home and Settings (hide/show, restored correctly after rotation) and runs the
+ * App shell: hosts the Home, Daily, Together and Settings tabs (hide/show, restored correctly after
+ * rotation) under the running donation banner, and runs the
  * one-time permission onboarding. Protection is controlled from HomeFragment via
  * {@link ProtectionController}; this activity no longer touches services or receivers.
  */
@@ -52,6 +56,8 @@ public class MainActivity extends AppCompatActivity {
     public static final String EXTRA_OPEN_HOME = "loadHomeFragment";
 
     private static final String TAG_HOME = "tab_home";
+    private static final String TAG_DAILY = "tab_daily";
+    private static final String TAG_TOGETHER = "tab_together";
     private static final String TAG_SETTINGS = "tab_settings";
 
     private ActivityMainBinding binding;
@@ -108,6 +114,11 @@ public class MainActivity extends AppCompatActivity {
         onboardingLauncher = registerForActivityResult(
                 new ActivityResultContracts.RequestMultiplePermissions(), this::onOnboardingResult);
 
+        binding.donateTicker.setText(getString(R.string.sh_donate_banner));
+        binding.donateTicker.setTextColor(ContextCompat.getColor(this, R.color.ns_on_rose));
+        binding.donateBanner.setContentDescription(getString(R.string.sh_donate_banner));
+        binding.donateBanner.setOnClickListener(v -> startActivity(new Intent(this, DonationActivity.class)));
+
         binding.bottomNavigation.setOnItemSelectedListener(item -> {
             showTab(item.getItemId());
             return true;
@@ -121,7 +132,8 @@ public class MainActivity extends AppCompatActivity {
             showTab(R.id.menu_home);
         }
 
-        maybeShowOnboarding();
+        // The profile popup waits for the permission sheet (and its system dialogs) to finish.
+        if (!maybeShowOnboarding() && savedInstanceState == null) ProfilePromptDialog.maybeShow(this);
     }
 
     @Override
@@ -151,21 +163,25 @@ public class MainActivity extends AppCompatActivity {
         FragmentManager fm = getSupportFragmentManager();
         if (fm.isStateSaved()) return;
 
-        String tag = itemId == R.id.menu_settings ? TAG_SETTINGS : TAG_HOME;
+        String tag = itemId == R.id.menu_settings ? TAG_SETTINGS
+                : itemId == R.id.menu_daily ? TAG_DAILY
+                : itemId == R.id.menu_together ? TAG_TOGETHER : TAG_HOME;
         Fragment target = fm.findFragmentByTag(tag);
 
         FragmentTransaction ft = fm.beginTransaction()
                 .setReorderingAllowed(true)
                 .setCustomAnimations(R.anim.ua_fade_in, R.anim.ua_fade_out);
 
-        for (String other : new String[]{TAG_HOME, TAG_SETTINGS}) {
+        for (String other : new String[]{TAG_HOME, TAG_DAILY, TAG_TOGETHER, TAG_SETTINGS}) {
             if (other.equals(tag)) continue;
             Fragment f = fm.findFragmentByTag(other);
             if (f != null && !f.isHidden()) ft.hide(f);
         }
 
         if (target == null) {
-            target = TAG_SETTINGS.equals(tag) ? new SettingsFragment() : new HomeFragment();
+            target = TAG_SETTINGS.equals(tag) ? new SettingsFragment()
+                    : TAG_DAILY.equals(tag) ? new DailyFragment()
+                    : TAG_TOGETHER.equals(tag) ? new TogetherFragment() : new HomeFragment();
             ft.add(R.id.fragment_container, target, tag);
         } else if (target.isHidden()) {
             ft.show(target);
@@ -175,14 +191,16 @@ public class MainActivity extends AppCompatActivity {
 
     // ------------------------------------------------------------------ onboarding
 
-    private void maybeShowOnboarding() {
+    /** @return true when the onboarding sheet is about to be shown. */
+    private boolean maybeShowOnboarding() {
         SharedPreferences prefs = Prefs.get(this);
-        if (prefs.getBoolean(Prefs.ONBOARDING_DONE, false)) return;
+        if (prefs.getBoolean(Prefs.ONBOARDING_DONE, false)) return false;
         if (missingPermissions(this).isEmpty()) {
             markOnboardingDone();
-            return;
+            return false;
         }
         binding.getRoot().post(this::showOnboardingSheet);
+        return true;
     }
 
     private void markOnboardingDone() {
@@ -223,7 +241,10 @@ public class MainActivity extends AppCompatActivity {
             dialog.getBehavior().setState(BottomSheetBehavior.STATE_EXPANDED);
         });
         // Swiping the sheet away counts as "Not now"; a dismiss caused by rotation does not.
-        dialog.setOnCancelListener(d -> markOnboardingDone());
+        dialog.setOnCancelListener(d -> {
+            markOnboardingDone();
+            ProfilePromptDialog.maybeShow(this);
+        });
 
         sheet.onbAllow.setOnClickListener(v -> {
             v.performHapticFeedback(android.view.HapticFeedbackConstants.VIRTUAL_KEY);
@@ -231,10 +252,12 @@ public class MainActivity extends AppCompatActivity {
             dialog.dismiss();
             List<String> missing = missingPermissions(this);
             if (!missing.isEmpty()) onboardingLauncher.launch(missing.toArray(new String[0]));
+            else ProfilePromptDialog.maybeShow(this);
         });
         sheet.onbLater.setOnClickListener(v -> {
             markOnboardingDone();
             dialog.dismiss();
+            ProfilePromptDialog.maybeShow(this);
         });
 
         onboardingSheet = dialog;
@@ -258,6 +281,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void onOnboardingResult(Map<String, Boolean> result) {
+        ProfilePromptDialog.maybeShow(this);
         List<String> missing = missingPermissions(this);
         Snackbar bar;
         if (missing.isEmpty()) {

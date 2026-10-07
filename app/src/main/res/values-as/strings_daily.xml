@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Shared -->
+    <string name="dl_back">উভতি যাওক</string>
+    <string name="dl_save">ছেভ কৰক</string>
+    <string name="dl_cancel">বাতিল কৰক</string>
+    <string name="dl_delete">মচক</string>
+    <string name="dl_channel_daily">দৈনিক ৰিমাইণ্ডাৰ</string>
+    <string name="dl_channel_daily_desc">আজিৰ কুইজ আৰু আপুনি অন কৰা ৰিমাইণ্ডাৰবোৰ</string>
+
+    <!-- Home card and Safety tools tiles -->
+    <string name="dl_section_daily">প্ৰতিদিন</string>
+    <string name="dl_home_commute">অহা-যোৱা</string>
+    <string name="dl_home_commute_cap">এটা টেপতে যাত্ৰাৰ টাইমাৰ</string>
+    <string name="dl_home_commute_active">যাত্ৰা চলি আছে</string>
+    <string name="dl_home_cycle">ঋতুচক্ৰ</string>
+    <string name="dl_home_cycle_cap">গোপন ট্ৰেকাৰ</string>
+    <string name="dl_home_quiz">কুইজ</string>
+    <string name="dl_home_quiz_cap">আজিৰ 3টা প্ৰশ্ন</string>
+    <plurals name="dl_home_quiz_done">
+        <item quantity="one">সম্পূৰ্ণ · %1$d দিনৰ ষ্ট্ৰীক</item>
+        <item quantity="other">সম্পূৰ্ণ · %1$d দিনৰ ষ্ট্ৰীক</item>
+    </plurals>
+    <plurals name="dl_home_quiz_keep">
+        <item quantity="one">%1$d দিনৰ ষ্ট্ৰীক বজাই ৰাখক</item>
+        <item quantity="other">%1$d দিনৰ ষ্ট্ৰীক বজাই ৰাখক</item>
+    </plurals>
+
+    <!-- Commute -->
+    <string name="dl_cm_eyebrow">প্ৰতিদিন</string>
+    <string name="dl_cm_title">দৈনিক অহা-যোৱা</string>
+    <string name="dl_cm_body">ওলোৱাৰ সময়ত “ওলাইছোঁ”-ত টেপ কৰক। সচৰাচৰ লগা সময়ৰ ভিতৰত “গৈ পালোঁ”-ত টেপ নকৰিলে আপোনাৰ কণ্টেক্টসকলক নিজে নিজে সতৰ্কবাৰ্তা যাব।</string>
+    <string name="dl_cm_active_title">যাত্ৰা চলি আছে</string>
+    <string name="dl_cm_active_sub">চেক-ইনৰ বাবে %1$s বাকী</string>
+    <string name="dl_cm_active_overdue">যাত্ৰাৰ সময় পাৰ হ’ল</string>
+    <string name="dl_cm_active_overdue_sub">সুৰক্ষিত হ’লে “গৈ পালোঁ”-ত টেপ কৰক</string>
+    <string name="dl_cm_reached">গৈ পালোঁ</string>
+    <string name="dl_cm_section_routes">আপোনাৰ পথবোৰ</string>
+    <string name="dl_cm_empty">এতিয়ালৈকে কোনো পথ নাই। প্ৰায় সদায় অহা-যোৱা কৰা পথবোৰ যোগ কৰক।</string>
+    <string name="dl_cm_add">পথ যোগ কৰক</string>
+    <string name="dl_cm_note">যাত্ৰা মানে এটা চেক-ইন টাইমাৰ। টাইমাৰৰ স্ক্ৰীণৰ পৰা যিকোনো সময়ত সময় বঢ়াব বা চেক-ইন কৰিব পাৰে।</string>
+    <string name="dl_cm_leaving">ওলাইছোঁ</string>
+    <string name="dl_cm_minutes">%1$d মিনিট</string>
+    <string name="dl_cm_default_to_work">ঘৰৰ পৰা অফিচ</string>
+    <string name="dl_cm_default_to_home">অফিচৰ পৰা ঘৰ</string>
+    <string name="dl_cm_already_running">এটা যাত্ৰা আগৰে পৰা চলি আছে। প্ৰথমে চেক-ইন কৰক।</string>
+    <string name="dl_cm_add_title">নতুন পথ</string>
+    <string name="dl_cm_edit_title">পথ সলনি কৰক</string>
+    <string name="dl_cm_name_hint">পথৰ নাম</string>
+    <string name="dl_cm_name_placeholder">ঘৰৰ পৰা কলেজ</string>
+    <string name="dl_cm_name_required">পথটোক এটা নাম দিয়ক</string>
+    <string name="dl_cm_duration_label">সচৰাচৰ লগা সময়</string>
+
+    <!-- Cycle tracker -->
+    <string name="dl_cy_eyebrow">গোপন</string>
+    <string name="dl_cy_title">ঋতুচক্ৰ ট্ৰেকাৰ</string>
+    <string name="dl_cy_body">আপোনাৰ মাহেকীয়া, মনৰ অৱস্থা আৰু লক্ষণ লিখি ৰাখক। সকলো এই ফোনতে এনক্ৰিপ্ট হৈ থাকে আৰু কেতিয়াও আপল’ড নহয়।</string>
+    <string name="dl_cy_locked_title">ট্ৰেকাৰ লক আছে</string>
+    <string name="dl_cy_locked_body">খুলিবলৈ আপোনাৰ এপ PIN দিয়ক।</string>
+    <string name="dl_cy_unlock">আনলক কৰক</string>
+    <string name="dl_cy_pin_title">আপোনাৰ ট্ৰেকাৰ আনলক কৰক</string>
+    <string name="dl_cy_log_today">আজিৰ কথা লিখক</string>
+    <string name="dl_cy_prev_month">আগৰ মাহ</string>
+    <string name="dl_cy_next_month">পিছৰ মাহ</string>
+    <string name="dl_cy_legend_period">মাহেকীয়া</string>
+    <string name="dl_cy_legend_predicted">সম্ভাৱ্য</string>
+    <string name="dl_cy_legend_fertile">উৰ্বৰ</string>
+    <string name="dl_cy_stat_cycle">গড় ঋতুচক্ৰ</string>
+    <string name="dl_cy_stat_period">গড় মাহেকীয়া</string>
+    <plurals name="dl_cy_days">
+        <item quantity="one">%1$d দিন</item>
+        <item quantity="other">%1$d দিন</item>
+    </plurals>
+    <string name="dl_cy_reminder">মাহেকীয়াৰ আগতে মনত পেলাই দিয়ক</string>
+    <string name="dl_cy_reminder_sub">দুদিন আগতে এটা সাধাৰণ নোটিফিকেশ্বন। তাত মাহেকীয়াৰ কথা কেতিয়াও লিখা নাথাকে।</string>
+    <string name="dl_cy_disclaimer">সম্ভাৱ্য আৰু উৰ্বৰ দিনবোৰ আপোনাৰ নিজৰ গড়ৰ পৰা কৰা অনুমানহে। এইবোৰ চিকিৎসকৰ পৰামৰ্শ নহয়, আৰু গৰ্ভধাৰণ ৰোধ কৰিবলৈ বা পৰিকল্পনা কৰিবলৈ ইয়াৰ ওপৰত ভৰসা কৰিব নালাগে।</string>
+    <string name="dl_cy_summary_empty">আপোনাৰ প্ৰথম মাহেকীয়া লিখি ৰাখক</string>
+    <string name="dl_cy_summary_empty_sub">যিদিনা আৰম্ভ হৈছিল, কেলেণ্ডাৰত সেই দিনটোত টেপ কৰক। যিমানেই বেছি চক্ৰ লিখি ৰাখিব, অনুমান সিমানেই ভাল হ’ব।</string>
+    <string name="dl_cy_summary_period">মাহেকীয়া · দিন %1$d</string>
+    <string name="dl_cy_summary_day">আপোনাৰ চক্ৰৰ দিন %1$d</string>
+    <plurals name="dl_cy_next_in">
+        <item quantity="one">পিছৰ মাহেকীয়া প্ৰায় %1$d দিনৰ পিছত (%2$s)</item>
+        <item quantity="other">পিছৰ মাহেকীয়া প্ৰায় %1$d দিনৰ পিছত (%2$s)</item>
+    </plurals>
+    <string name="dl_cy_next_today">আজি আপোনাৰ মাহেকীয়া হোৱাৰ কথা</string>
+    <plurals name="dl_cy_next_late">
+        <item quantity="one">আপোনাৰ মাহেকীয়া %1$d দিন পলম হৈছে</item>
+        <item quantity="other">আপোনাৰ মাহেকীয়া %1$d দিন পলম হৈছে</item>
+    </plurals>
+    <string name="dl_cy_default_cycle_note">দুটা মাহেকীয়া লিখি নৰখালৈকে সাধাৰণ 28 দিনৰ চক্ৰ ধৰি হিচাপ কৰা হৈছে।</string>
+    <string name="dl_cy_load_error">আপোনাৰ ৰেকৰ্ড খুলিব পৰা নগ’ল। একো সলনি কৰা হোৱা নাই।</string>
+    <string name="dl_cy_save_error">ছেভ কৰিব পৰা নগ’ল। পুনৰ চেষ্টা কৰক।</string>
+    <string name="dl_cy_sheet_eyebrow">দৈনিক ৰেকৰ্ড</string>
+    <string name="dl_cy_sheet_period">মাহেকীয়াৰ দিন</string>
+    <string name="dl_cy_sheet_flow">স্ৰাৱ</string>
+    <string name="dl_cy_flow_light">কম</string>
+    <string name="dl_cy_flow_medium">মধ্যমীয়া</string>
+    <string name="dl_cy_flow_heavy">বেছি</string>
+    <string name="dl_cy_sheet_mood">মনৰ অৱস্থা</string>
+    <string name="dl_cy_mood_1">😞 মন বেয়া</string>
+    <string name="dl_cy_mood_2">😕 অস্থিৰ</string>
+    <string name="dl_cy_mood_3">😐 ঠিকেই আছে</string>
+    <string name="dl_cy_mood_4">🙂 ভাল</string>
+    <string name="dl_cy_mood_5">😄 খুব ভাল</string>
+    <string name="dl_cy_sheet_symptoms">লক্ষণ</string>
+    <string name="dl_cy_sym_cramps">তলপেটৰ বিষ</string>
+    <string name="dl_cy_sym_headache">মূৰৰ বিষ</string>
+    <string name="dl_cy_sym_backache">কঁকালৰ বিষ</string>
+    <string name="dl_cy_sym_bloating">পেট ফুলা</string>
+    <string name="dl_cy_sym_fatigue">ভাগৰ</string>
+    <string name="dl_cy_sym_acne">ব্ৰণ</string>
+    <string name="dl_cy_sym_tender">স্তনত বিষ</string>
+    <string name="dl_cy_sym_nausea">বমি ভাব</string>
+    <string name="dl_cy_sheet_clear">এই দিনৰ ৰেকৰ্ড মচক</string>
+
+    <!-- Quiz -->
+    <string name="dl_quiz_eyebrow">প্ৰতিদিন</string>
+    <string name="dl_quiz_title">সুৰক্ষা কুইজ</string>
+    <string name="dl_quiz_stat_streak">ষ্ট্ৰীক</string>
+    <string name="dl_quiz_stat_points">পইণ্ট</string>
+    <string name="dl_quiz_stat_level">লেভেল</string>
+    <plurals name="dl_quiz_days">
+        <item quantity="one">%1$d দিন</item>
+        <item quantity="other">%1$d দিন</item>
+    </plurals>
+    <string name="dl_quiz_progress">প্ৰশ্ন %1$d / %2$d</string>
+    <string name="dl_quiz_progress_practice">অনুশীলন · প্ৰশ্ন %1$d / %2$d</string>
+    <string name="dl_quiz_correct">শুদ্ধ উত্তৰ</string>
+    <string name="dl_quiz_wrong">শুদ্ধ নহ’ল</string>
+    <string name="dl_quiz_next">পিছৰ প্ৰশ্ন</string>
+    <string name="dl_quiz_finish">মোৰ ফলাফল চাওক</string>
+    <string name="dl_quiz_score">%1$d / %2$d</string>
+    <string name="dl_quiz_result_perfect">সকলো শুদ্ধ!</string>
+    <string name="dl_quiz_result_good">বৰ ভাল</string>
+    <string name="dl_quiz_result_low">এতিয়া আপুনি জানিলে</string>
+    <string name="dl_quiz_result_points">+%1$d পইণ্ট। নতুন প্ৰশ্ন কাইলৈ আহিব।</string>
+    <string name="dl_quiz_result_done">আজিৰ কুইজ শেষ হ’ল। নতুন প্ৰশ্ন কাইলৈ আহিব।</string>
+    <string name="dl_quiz_result_practice">এইটো অনুশীলন আছিল। পইণ্ট দৈনিক কুইজৰ পৰাহে পোৱা যায়।</string>
+    <string name="dl_quiz_level_next">লেভেল: %1$s · পিছৰ লেভেলৰ বাবে আৰু %2$d পইণ্ট</string>
+    <string name="dl_quiz_level_top">লেভেল: %1$s · আটাইতকৈ ওখ লেভেল</string>
+    <string name="dl_quiz_level_1">নতুন</string>
+    <string name="dl_quiz_level_2">সচেতন</string>
+    <string name="dl_quiz_level_3">সতৰ্ক</string>
+    <string name="dl_quiz_level_4">ৰক্ষক</string>
+    <string name="dl_quiz_level_5">শক্তি</string>
+    <string name="dl_quiz_share">মোৰ ষ্ট্ৰীক শ্বেয়াৰ কৰক</string>
+    <string name="dl_quiz_share_text">Naari Shakti-ৰ সুৰক্ষা কুইজত মোৰ একেৰাহে %1$s-ৰ ষ্ট্ৰীক আৰু %2$d পইণ্ট হৈছে। আপুনি নিজৰ অধিকাৰ আৰু হেল্পলাইন নম্বৰবোৰ জানেনে?</string>
+    <string name="dl_quiz_practice">আৰু অনুশীলন কৰক</string>
+    <string name="dl_quiz_reminder">দৈনিক কুইজৰ ৰিমাইণ্ডাৰ</string>
+    <string name="dl_quiz_reminder_sub">তেতিয়ালৈকে খেলা নাই যদি সন্ধিয়া এটা নোটিফিকেশ্বন</string>
+
+    <!-- Daily reminder notifications -->
+    <string name="dl_nudge_quiz_title">আজিৰ সুৰক্ষা কুইজ সাজু</string>
+    <string name="dl_nudge_quiz_text">তিনিটা চুটি প্ৰশ্ন। মাত্ৰ এক মিনিট লাগিব।</string>
+    <plurals name="dl_nudge_quiz_streak">
+        <item quantity="one">%1$d দিনৰ ষ্ট্ৰীক বজাই ৰাখিবলৈ এতিয়াই খেলক।</item>
+        <item quantity="other">%1$d দিনৰ ষ্ট্ৰীক বজাই ৰাখিবলৈ এতিয়াই খেলক।</item>
+    </plurals>
+    <string name="dl_nudge_cycle_title">Naari Shakti-ৰ পৰা এটা ৰিমাইণ্ডাৰ</string>
+    <string name="dl_nudge_cycle_text">চাবলৈ এপ খোলক।</string>
+
+    <!--
+        Quiz bank. Each item: question|option A|option B|option C|index of the right option (0-2)|explanation.
+        Keep the count a multiple of 3 and never use the | character inside a text.
+        Translations must keep the same order and the same right-option index.
+    -->
+    <string-array name="dl_quiz_items">
+        <item>ভাৰতৰ যিকোনো ঠাইৰ পৰা পুলিচ, অগ্নিনিৰ্বাপক আৰু এম্বুলেন্স মাতিবলৈ একেটা নম্বৰ কোনটো?|112|1098|139|0|112 হৈছে সকলো জৰুৰী সেৱাৰ একেটা নম্বৰ। যিকোনো ফোনৰ পৰা, বেলেঞ্চ নাথাকিলেও কল যায়।</item>
+        <item>মহিলা হেল্পলাইনৰ নম্বৰ কোনটো?|1930|181|139|1|বেছিভাগ ৰাজ্যত 181 হৈছে মহিলা হেল্পলাইন। 1091 নম্বৰত মহিলা পুলিচ হেল্পলাইন পোৱা যায়।</item>
+        <item>অনলাইন হাৰাশাস্তি, ব্লেকমেইল বা চাইবাৰ প্ৰৱঞ্চনাৰ অভিযোগ ক’ত দিব?|হেল্পলাইন 1930 বা cybercrime.gov.in|কেৱল ম’বাইল কোম্পানীত|ইয়াৰ অভিযোগ দিব নোৱাৰি|0|1930-ত কল কৰক বা cybercrime.gov.in-ত অভিযোগ দাখিল কৰক। স্ক্ৰীণশ্বট প্ৰমাণ হিচাপে ৰাখি থওক।</item>
+        <item>থানাই কৈছে যে ঘটনাটো তেওঁলোকৰ এলেকাৰ বাহিৰত ঘটিছে। আপুনি কি বিচাৰিব পাৰে?|একো নহয়, আপুনি তালৈকে যাব লাগিব|জিৰো FIR|লিখিত ক্ষমা|1|যিকোনো থানাই জিৰো FIR ল’বলৈ আৰু সেইখন সঠিক থানালৈ পঠিয়াবলৈ বাধ্য।</item>
+        <item>পুলিচে সূৰ্যাস্তৰ পিছত আৰু সূৰ্যোদয়ৰ আগতে কোনো মহিলাক গ্ৰেপ্তাৰ কৰিব পাৰেনে?|পাৰে, যিকোনো সময়ত|কেতিয়াও নোৱাৰে, কোনো পৰিস্থিতিতে|কেৱল ব্যতিক্ৰমী ক্ষেত্ৰত, মহিলা বিষয়াৰ দ্বাৰা আৰু মেজিষ্ট্ৰেটৰ লিখিত অনুমতি লৈ|2|আইনে মহিলাক ৰাতি গ্ৰেপ্তাৰ হোৱাৰ পৰা সুৰক্ষা দিয়ে। ব্যতিক্ৰম কেৱল বিশেষ ক্ষেত্ৰত, মেজিষ্ট্ৰেটৰ আগতীয়া লিখিত অনুমতি থাকিলেহে।</item>
+        <item>বুক কৰা কেবত উঠাৰ আগতে কি মিলাই চাব?|নম্বৰ প্লেট আৰু চালক এপৰ লগত মিলিছে নে নাই|গাড়ীখন পৰিষ্কাৰ নে নহয়|চালকৰ খৰখেদা আছে নে নাই|0|সদায় নম্বৰ প্লেট আৰু চালকক বুকিঙৰ লগত মিলাই লওক। এই এপৰ কেব ম’ডে নম্বৰ প্লেট আপোনাৰ কণ্টেক্টসকললৈ পঠিয়াব পাৰে।</item>
+        <item>আপোনাৰ কেবখন অচিনাকি বাটেৰে গৈছে। প্ৰথমে কি কৰাটো আটাইতকৈ ভাল?|মনে মনে অপেক্ষা কৰা|লাইভ অৱস্থান শ্বেয়াৰ কৰা, কাৰোবাক কল কৰা আৰু মানুহ থকা ঠাইত ৰখাবলৈ কোৱা|ফোন বন্ধ কৰি দিয়া|1|আপুনি ক’ত আছে কাৰোবাক জনাওক, কলত ডাঙৰকৈ সেই কথা কওক, আৰু বিপদ যেন লাগিলে SOS ব্যৱহাৰ কৰক।</item>
+        <item>10 বা তাতকৈ বেছি কৰ্মচাৰী থকা কৰ্মস্থলীত যৌন হাৰাশাস্তিৰ অভিযোগ কোনে শুনিব?|আভ্যন্তৰীণ সমিতি (Internal Committee)|কেৱল পুলিচ|নিৰাপত্তাৰক্ষী|0|POSH আইন অনুসৰি এনে প্ৰতিটো কৰ্মস্থলীত আভ্যন্তৰীণ সমিতি থকাটো বাধ্যতামূলক।</item>
+        <item>POSH আইনৰ অধীনত কৰ্মস্থলীৰ যৌন হাৰাশাস্তিৰ অভিযোগ কিমান দিনৰ ভিতৰত দিব লাগে?|24 ঘণ্টাৰ ভিতৰত|এক সপ্তাহৰ ভিতৰত|ঘটনাৰ তিনি মাহৰ ভিতৰত|2|অভিযোগ তিনি মাহৰ ভিতৰত দিব লাগে, আৰু সমিতিয়ে এই সময় আৰু তিনি মাহ বঢ়াব পাৰে।</item>
+        <item>আপুনি স্পষ্টকৈ নহয় বুলি কোৱাৰ পিছতো কোনোবাই বাৰে বাৰে পিছ লৈছে বা মেছেজ পঠিয়াইছে। এইটো অপৰাধ নেকি?|নহয়, এইটো কেৱল অভদ্ৰতা|হয়, পিছ লোৱা (ষ্টকিং) অপৰাধ, অনলাইনতো|কেৱল তেওঁ আপোনাক চুলেহে|1|সন্মুখত হওক বা অনলাইনত, ষ্টকিং এটা ফৌজদাৰী অপৰাধ। মেছেজবোৰ ৰাখি থওক আৰু অভিযোগ দিয়ক।</item>
+        <item>ঘৰুৱা হিংসা আইন কেৱল শাৰীৰিক অত্যাচাৰৰ ক্ষেত্ৰতহে প্ৰযোজ্য নেকি?|হয়, কেৱল শাৰীৰিক অত্যাচাৰত|নহয়, গালি-গালাজ, মানসিক, যৌন আৰু আৰ্থিক নিৰ্যাতনতো|এইটো কেৱল বিবাহিত মহিলাৰ বাবে|1|ঘৰুৱা হিংসাৰ পৰা মহিলাৰ সুৰক্ষা আইন এই সকলো ধৰণৰ নিৰ্যাতনৰ ক্ষেত্ৰত প্ৰযোজ্য, লিভ-ইন সম্পৰ্কত থকা মহিলাৰ ক্ষেত্ৰতো।</item>
+        <item>ভাৰতত বিনামূলীয়া আইনী সহায় কোনে পাব পাৰে?|প্ৰতিগৰাকী মহিলাই, তেওঁৰ উপাৰ্জন যিয়েই নহওক|কেৱল দৰিদ্ৰ সীমাৰেখাৰ তলৰ মহিলাই|কোনেও নহয়, উকীলে সদায় মাচুল লয়|0|প্ৰতিগৰাকী মহিলাই নিজৰ জিলাৰ আইনী সেৱা প্ৰাধিকৰণৰ পৰা বিনামূলীয়া আইনী সহায় পাব পাৰে।</item>
+        <item>সংবাদ মাধ্যমে বা আন কোনোবাই যৌন নিৰ্যাতনৰ বলি হোৱা মহিলাৰ নাম প্ৰকাশ কৰিব পাৰেনে?|পাৰে, খবৰটো সঁচা হ’লে|কেৱল ছ’চিয়েল মিডিয়াত|নোৱাৰে, তেওঁৰ পৰিচয় প্ৰকাশ কৰাটো অপৰাধ|2|যৌন নিৰ্যাতনৰ বলি হোৱা মহিলাৰ পৰিচয় প্ৰকাশ কৰাটো শাস্তিযোগ্য অপৰাধ।</item>
+        <item>ৰাতি অকলে খোজকাঢ়ি গৈ আছে আৰু এনে লাগিছে যেন কোনোবাই পিছ লৈছে। কি কৰিব?|আটাইতকৈ নিৰ্জন গলিৰে পোনে পোনে ঘৰলৈ যাব|পোহৰ আৰু মানুহ থকা ঠাইৰ ফালে যাব আৰু কাৰোবাক কল কৰিব|ৰৈ অকলে তেওঁৰ মুখামুখি হ’ব|1|মানুহ আৰু পোহৰৰ ফালে যাওক, কলত থাকক, আৰু সেই মানুহজনক নিজৰ ঘৰলৈকে লৈ নাযাব।</item>
+        <item>পাৰ্টিত আপোনাৰ পানীয় কিছু সময় চকুৰ আঁৰত আছিল। সুৰক্ষিত উপায় কোনটো?|সোনকালে খাই পেলোৱা|অচিনাকি কাৰোবাক চাকি চাবলৈ কোৱা|সেইটো এৰি নতুন এটা লোৱা|2|চকুৰ আঁৰত থকা পানীয়ত কিবা মিহলাই দিব পাৰে। সদায় নতুন এটা লওক।</item>
+        <item>এই এপৰ নকল কল সঁজুলিটো কিহৰ বাবে?|অস্বস্তিকৰ পৰিস্থিতিৰ পৰা ওলাই অহাৰ এটা বিশ্বাসযোগ্য অজুহাত দিবলৈ|বন্ধুৰ লগত ধেমালি কৰিবলৈ|পুলিচক কল কৰিবলৈ|0|নকল কল এটা আহিলে আপুনি কাজিয়া নকৰাকৈ তাৰ পৰা আঁতৰি যাব পাৰে।</item>
+        <item>এই এপত বিপদ PIN দিলে কি হয়?|এপটো মচ খায়|এপটো স্বাভাৱিক যেন দেখায় কিন্তু মনে মনে SOS পঠিয়াই দিয়ে|একো নহয়|1|বিপদ PIN সেই সময়ৰ বাবে, যেতিয়া কোনোবাই আপোনাক জোৰ কৰি এপ খুলিবলৈ দিয়ে। এপটো স্বাভাৱিকভাৱে খোল খায় আৰু গোপনে আপোনাৰ কণ্টেক্টসকলক সতৰ্কবাৰ্তা যায়।</item>
+        <item>কোনো মহিলাই যৌন অপৰাধৰ অভিযোগ দিলে তেওঁৰ জবানবন্দী কোনে লিখিব লাগে?|ডিউটিত থকা যিকোনো বিষয়াই|এগৰাকী মহিলা পুলিচ বিষয়াই|কোনো চুবুৰীয়াই|1|আইন অনুসৰি তেওঁৰ জবানবন্দী এগৰাকী মহিলা পুলিচ বিষয়াইহে লিখিব লাগে।</item>
+        <item>ইণ্টাৰনেটত চিনাকি হোৱা কাৰোবাক প্ৰথমবাৰ লগ কৰিবলৈ গৈছে। আটাইতকৈ সুৰক্ষিত উপায় কোনটো?|মানুহ থকা ৰাজহুৱা ঠাইত লগ কৰা, এজন বন্ধুক জনোৱা আৰু অহা-যোৱাৰ ব্যৱস্থা নিজে কৰা|তেওঁৰ ঘৰত লগ কৰা|তেওঁক আপোনাৰ ঘৰৰ পৰা নিবলৈ দিয়া|0|ৰাজহুৱা ঠাই, আপোনাৰ পৰিকল্পনা জনা এজন বন্ধু আৰু ঘৰলৈ উভতাৰ নিজৰ ব্যৱস্থা থাকিলে নিয়ন্ত্ৰণ আপোনাৰ হাততে থাকে। এই এপৰ সাক্ষাৎ ম’ডে আপোনাৰ বাবে টাইমাৰ ছেট কৰি দিব পাৰে।</item>
+        <item>কোনোবাই কল কৰি কৈছে যে তেওঁ আপোনাৰ বেংকৰ পৰা কৈছে, আৰু এইমাত্ৰ অহা OTP বিচাৰিছে। কি কৰিব?|কৈ দিব, তেওঁ বেংকৰ মানুহ|কেৱল আধা ক’ব|কেতিয়াও নক’ব আৰু কল কাটি দিব|2|কোনো বেংকে কেতিয়াও OTP নিবিচাৰে। OTP কৈ দিলে কোনোবাই আপোনাৰ টকা উলিয়াই নিব বা একাউণ্ট দখল কৰিব পাৰে।</item>
+        <item>বিপদত পৰা শিশুৰ বাবে হেল্পলাইন নম্বৰ কোনটো?|1098|181|কেৱল 112|0|1098 হৈছে চাইল্ডলাইন, শিশুৰ বাবে 24 ঘণ্টাৰ বিনামূলীয়া হেল্পলাইন।</item>
+        <item>দুয়োটা পৰিয়াল মান্তি হ’লে যৌতুক দিয়া বা লোৱাটো আইনসন্মত নেকি?|হয়, দুয়োপক্ষ মান্তি হ’লে|নহয়, যৌতুক দিয়া আৰু লোৱা দুয়োটাই অপৰাধ|কেৱল দিয়াটোহে অপৰাধ|1|যৌতুক নিষেধ আইন অনুসৰি যৌতুক দিয়া, লোৱা আৰু বিচৰা তিনিওটাই শাস্তিযোগ্য।</item>
+        <item>এই এপত চেক-ইন টাইমাৰ ছেট কৰিছে, কিন্তু সময়মতে “মই সুৰক্ষিত”-ত টেপ কৰা নাই। কি হ’ব?|একো নহয়, টাইমাৰটো শেষ হ’ব মাথোঁ|এপে SOS আৰম্ভ কৰি আপোনাৰ কণ্টেক্টসকলক সতৰ্কবাৰ্তা পঠিয়াব|আপোনাৰ ফোন ৰিষ্টাৰ্ট হ’ব|1|চেক-ইন নহ’লে SOS আৰম্ভ হয়, যাতে আপুনি ফোন ধৰিব নোৱাৰিলেও কোনোবাই গম পায়।</item>
+        <item>ৰেলত যাত্ৰা কৰোঁতে সহায়ৰ বাবে কোনটো নম্বৰত কল কৰিব?|139|1930|1098|0|139 হৈছে ৰেল মদদ হেল্পলাইন, ভাৰতীয় ৰেলত সুৰক্ষা আৰু আন সহায়ৰ বাবে।</item>
+    </string-array>
+</resources>

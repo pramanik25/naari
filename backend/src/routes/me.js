@@ -7,6 +7,7 @@ const express = require('express');
 const { generateDeviceToken, hashToken, bearerFromHeader } = require('../auth');
 const { ApiError, ah, body, badRequest, notFound } = require('../util');
 const { tx } = require('../db');
+const { normalizeNumber } = require('../whatsapp');
 
 const CODE_ALPHABET = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
 
@@ -24,13 +25,22 @@ function optionalName(v, field) {
   return s;
 }
 
-/** Returns { userId, name, guardianCode }, creating the guardian code on first read. */
+/** undefined = not sent; null or "" = clear; otherwise the E.164 form, or 400 when it isn't a phone number. */
+function optionalPhone(v) {
+  if (v === undefined) return undefined;
+  if (v === null || v === '') return null;
+  const phone = normalizeNumber(v);
+  if (!phone) throw badRequest('invalid_phone', 'phone must be a valid phone number');
+  return phone;
+}
+
+/** Returns { userId, name, phone, guardianCode }, creating the guardian code on first read. */
 async function profile(pool, userId) {
   for (let attempt = 0; attempt < 20; attempt++) {
-    const { rows } = await pool.query('SELECT id, name, guardian_code FROM users WHERE id = $1', [userId]);
+    const { rows } = await pool.query('SELECT id, name, phone, guardian_code FROM users WHERE id = $1', [userId]);
     if (!rows.length) throw notFound('user');
     const u = rows[0];
-    if (u.guardian_code) return { userId: u.id, name: u.name, guardianCode: u.guardian_code };
+    if (u.guardian_code) return { userId: u.id, name: u.name, phone: u.phone, guardianCode: u.guardian_code };
     try {
       await pool.query('UPDATE users SET guardian_code = $2 WHERE id = $1 AND guardian_code IS NULL', [userId, randomCode()]);
     } catch (err) {
@@ -67,8 +77,11 @@ function meRouter({ pool, config, hub, log }) {
   }));
 
   r.patch('/me', ah(async (req, res) => {
-    const name = optionalName(body(req).name, 'name');
+    const b = body(req);
+    const name = optionalName(b.name, 'name');
+    const phone = optionalPhone(b.phone);
     if (name !== undefined) await pool.query('UPDATE users SET name = $2 WHERE id = $1', [req.userId, name]);
+    if (phone !== undefined) await pool.query('UPDATE users SET phone = $2 WHERE id = $1', [req.userId, phone]);
     res.json(await profile(pool, req.userId));
   }));
 

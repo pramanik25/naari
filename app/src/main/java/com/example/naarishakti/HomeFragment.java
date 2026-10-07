@@ -102,7 +102,6 @@ public class HomeFragment extends Fragment {
     private long startRequestedAt;
     /** Safety tools card + live check-in/cab banner (journey module). */
     @Nullable private com.example.naarishakti.journey.HomeJourneyEntry journeyEntry;
-    @Nullable private com.example.naarishakti.daily.HomeDailyEntry dailyEntry;
     /** One-time "Help women near you?" card (cloud module). */
     private com.example.naarishakti.cloud.NearbyHelperCard nearbyHelperCard;
 
@@ -143,9 +142,11 @@ public class HomeFragment extends Fragment {
         setupQuickActions();
         setupRows();
         journeyEntry = new com.example.naarishakti.journey.HomeJourneyEntry(view);
-        dailyEntry = new com.example.naarishakti.daily.HomeDailyEntry(view);
-        com.example.naarishakti.together.HomeTogetherEntry.attach(view);
         nearbyHelperCard.attach(view);
+        // The profile popup saved a name: show it in the greeting without waiting for onResume.
+        getParentFragmentManager().setFragmentResultListener(
+                com.example.naarishakti.shell.ProfilePromptDialog.RESULT_SAVED, getViewLifecycleOwner(),
+                (key, result) -> loadProfileAndVault());
     }
 
     @Override
@@ -190,7 +191,6 @@ public class HomeFragment extends Fragment {
     public void onDestroyView() {
         if (journeyEntry != null) journeyEntry.pause();
         journeyEntry = null;
-        dailyEntry = null;
         nearbyHelperCard.detach();
         main.removeCallbacksAndMessages(null);
         stopPulse();
@@ -218,7 +218,6 @@ public class HomeFragment extends Fragment {
         loadProfileAndVault();
         nearbyHelperCard.render();
         if (journeyEntry != null && !isHidden()) journeyEntry.resume();
-        if (dailyEntry != null) dailyEntry.render();
     }
 
     // ------------------------------------------------------------------ header

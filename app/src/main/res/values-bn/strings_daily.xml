@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Shared -->
+    <string name="dl_back">ফিরে যান</string>
+    <string name="dl_save">সেভ করুন</string>
+    <string name="dl_cancel">বাতিল করুন</string>
+    <string name="dl_delete">মুছুন</string>
+    <string name="dl_channel_daily">রোজকার রিমাইন্ডার</string>
+    <string name="dl_channel_daily_desc">আজকের কুইজ আর আপনার চালু করা রিমাইন্ডার</string>
+
+    <!-- Home card and Safety tools tiles -->
+    <string name="dl_section_daily">প্রতিদিন</string>
+    <string name="dl_home_commute">যাতায়াত</string>
+    <string name="dl_home_commute_cap">এক ট্যাপে যাত্রার টাইমার</string>
+    <string name="dl_home_commute_active">যাত্রা চলছে</string>
+    <string name="dl_home_cycle">ঋতুচক্র</string>
+    <string name="dl_home_cycle_cap">গোপন ট্র্যাকার</string>
+    <string name="dl_home_quiz">কুইজ</string>
+    <string name="dl_home_quiz_cap">আজকের 3টি প্রশ্ন</string>
+    <plurals name="dl_home_quiz_done">
+        <item quantity="one">হয়ে গেছে · %1$d দিনের স্ট্রিক</item>
+        <item quantity="other">হয়ে গেছে · %1$d দিনের স্ট্রিক</item>
+    </plurals>
+    <plurals name="dl_home_quiz_keep">
+        <item quantity="one">%1$d দিনের স্ট্রিক ধরে রাখুন</item>
+        <item quantity="other">%1$d দিনের স্ট্রিক ধরে রাখুন</item>
+    </plurals>
+
+    <!-- Commute -->
+    <string name="dl_cm_eyebrow">প্রতিদিন</string>
+    <string name="dl_cm_title">রোজকার যাতায়াত</string>
+    <string name="dl_cm_body">বেরোনোর সময় “বেরোচ্ছি”-তে ট্যাপ করুন। রোজকার সময়ের মধ্যে “পৌঁছে গেছি”-তে ট্যাপ না করলে আপনার কন্টাক্টদের নিজে থেকেই অ্যালার্ট চলে যাবে।</string>
+    <string name="dl_cm_active_title">যাত্রা চলছে</string>
+    <string name="dl_cm_active_sub">চেক-ইনের জন্য %1$s বাকি</string>
+    <string name="dl_cm_active_overdue">যাত্রার সময় পেরিয়েছে</string>
+    <string name="dl_cm_active_overdue_sub">নিরাপদ থাকলে “পৌঁছে গেছি”-তে ট্যাপ করুন</string>
+    <string name="dl_cm_reached">পৌঁছে গেছি</string>
+    <string name="dl_cm_section_routes">আপনার রুট</string>
+    <string name="dl_cm_empty">এখনও কোনো রুট নেই। যে পথে প্রায় রোজ যাতায়াত করেন, সেগুলো যোগ করুন।</string>
+    <string name="dl_cm_add">রুট যোগ করুন</string>
+    <string name="dl_cm_note">যাত্রা আসলে একটি চেক-ইন টাইমার। টাইমারের স্ক্রিন থেকে যেকোনো সময় সময় বাড়াতে বা চেক-ইন করতে পারেন।</string>
+    <string name="dl_cm_leaving">বেরোচ্ছি</string>
+    <string name="dl_cm_minutes">%1$d মিনিট</string>
+    <string name="dl_cm_default_to_work">বাড়ি থেকে অফিস</string>
+    <string name="dl_cm_default_to_home">অফিস থেকে বাড়ি</string>
+    <string name="dl_cm_already_running">একটি যাত্রা আগে থেকেই চলছে। আগে চেক-ইন করুন।</string>
+    <string name="dl_cm_add_title">নতুন রুট</string>
+    <string name="dl_cm_edit_title">রুট বদলান</string>
+    <string name="dl_cm_name_hint">রুটের নাম</string>
+    <string name="dl_cm_name_placeholder">বাড়ি থেকে কলেজ</string>
+    <string name="dl_cm_name_required">রুটের একটা নাম দিন</string>
+    <string name="dl_cm_duration_label">সাধারণত যত সময় লাগে</string>
+
+    <!-- Cycle tracker -->
+    <string name="dl_cy_eyebrow">গোপন</string>
+    <string name="dl_cy_title">ঋতুচক্র ট্র্যাকার</string>
+    <string name="dl_cy_body">আপনার পিরিয়ড, মুড আর উপসর্গ লিখে রাখুন। সবকিছু এই ফোনেই এনক্রিপ্ট করা থাকে, কখনও আপলোড হয় না।</string>
+    <string name="dl_cy_locked_title">ট্র্যাকার লক করা আছে</string>
+    <string name="dl_cy_locked_body">খুলতে আপনার অ্যাপ PIN দিন।</string>
+    <string name="dl_cy_unlock">আনলক করুন</string>
+    <string name="dl_cy_pin_title">আপনার ট্র্যাকার আনলক করুন</string>
+    <string name="dl_cy_log_today">আজকের কথা লিখুন</string>
+    <string name="dl_cy_prev_month">আগের মাস</string>
+    <string name="dl_cy_next_month">পরের মাস</string>
+    <string name="dl_cy_legend_period">পিরিয়ড</string>
+    <string name="dl_cy_legend_predicted">সম্ভাব্য</string>
+    <string name="dl_cy_legend_fertile">উর্বর</string>
+    <string name="dl_cy_stat_cycle">গড় ঋতুচক্র</string>
+    <string name="dl_cy_stat_period">গড় পিরিয়ড</string>
+    <plurals name="dl_cy_days">
+        <item quantity="one">%1$d দিন</item>
+        <item quantity="other">%1$d দিন</item>
+    </plurals>
+    <string name="dl_cy_reminder">পিরিয়ডের আগে মনে করিয়ে দিন</string>
+    <string name="dl_cy_reminder_sub">দু\'দিন আগে একটি সাদামাটা নোটিফিকেশন। তাতে পিরিয়ডের কথা কখনও লেখা থাকে না।</string>
+    <string name="dl_cy_disclaimer">সম্ভাব্য আর উর্বর দিনগুলো আপনার নিজের গড় থেকে করা আন্দাজ মাত্র। এগুলো ডাক্তারি পরামর্শ নয়, আর গর্ভধারণ আটকাতে বা পরিকল্পনা করতে এর উপর ভরসা করা উচিত নয়।</string>
+    <string name="dl_cy_summary_empty">আপনার প্রথম পিরিয়ড লিখে রাখুন</string>
+    <string name="dl_cy_summary_empty_sub">যেদিন শুরু হয়েছিল, ক্যালেন্ডারে সেই দিনে ট্যাপ করুন। যত বেশি চক্র লিখে রাখবেন, আন্দাজ তত ঠিক হবে।</string>
+    <string name="dl_cy_summary_period">পিরিয়ড · দিন %1$d</string>
+    <string name="dl_cy_summary_day">আপনার চক্রের দিন %1$d</string>
+    <plurals name="dl_cy_next_in">
+        <item quantity="one">পরের পিরিয়ড প্রায় %1$d দিন পরে (%2$s)</item>
+        <item quantity="other">পরের পিরিয়ড প্রায় %1$d দিন পরে (%2$s)</item>
+    </plurals>
+    <string name="dl_cy_next_today">আজ আপনার পিরিয়ড হওয়ার কথা</string>
+    <plurals name="dl_cy_next_late">
+        <item quantity="one">আপনার পিরিয়ড %1$d দিন পিছিয়েছে</item>
+        <item quantity="other">আপনার পিরিয়ড %1$d দিন পিছিয়েছে</item>
+    </plurals>
+    <string name="dl_cy_default_cycle_note">দুটি পিরিয়ড লিখে না রাখা পর্যন্ত সাধারণ 28 দিনের চক্র ধরে হিসেব করা হচ্ছে।</string>
+    <string name="dl_cy_load_error">আপনার রেকর্ড খোলা গেল না। কিছুই বদলানো হয়নি।</string>
+    <string name="dl_cy_save_error">সেভ করা গেল না। আবার চেষ্টা করুন।</string>
+    <string name="dl_cy_sheet_eyebrow">রোজকার রেকর্ড</string>
+    <string name="dl_cy_sheet_period">পিরিয়ডের দিন</string>
+    <string name="dl_cy_sheet_flow">স্রাব</string>
+    <string name="dl_cy_flow_light">হালকা</string>
+    <string name="dl_cy_flow_medium">মাঝারি</string>
+    <string name="dl_cy_flow_heavy">বেশি</string>
+    <string name="dl_cy_sheet_mood">মুড</string>
+    <string name="dl_cy_mood_1">😞 মন খারাপ</string>
+    <string name="dl_cy_mood_2">😕 অস্থির</string>
+    <string name="dl_cy_mood_3">😐 মোটামুটি</string>
+    <string name="dl_cy_mood_4">🙂 ভালো</string>
+    <string name="dl_cy_mood_5">😄 খুব ভালো</string>
+    <string name="dl_cy_sheet_symptoms">উপসর্গ</string>
+    <string name="dl_cy_sym_cramps">তলপেটে ব্যথা</string>
+    <string name="dl_cy_sym_headache">মাথাব্যথা</string>
+    <string name="dl_cy_sym_backache">কোমর ব্যথা</string>
+    <string name="dl_cy_sym_bloating">পেট ফাঁপা</string>
+    <string name="dl_cy_sym_fatigue">ক্লান্তি</string>
+    <string name="dl_cy_sym_acne">ব্রণ</string>
+    <string name="dl_cy_sym_tender">স্তনে ব্যথা</string>
+    <string name="dl_cy_sym_nausea">বমি ভাব</string>
+    <string name="dl_cy_sheet_clear">এই দিনের রেকর্ড মুছুন</string>
+
+    <!-- Quiz -->
+    <string name="dl_quiz_eyebrow">প্রতিদিন</string>
+    <string name="dl_quiz_title">সুরক্ষা কুইজ</string>
+    <string name="dl_quiz_stat_streak">স্ট্রিক</string>
+    <string name="dl_quiz_stat_points">পয়েন্ট</string>
+    <string name="dl_quiz_stat_level">লেভেল</string>
+    <plurals name="dl_quiz_days">
+        <item quantity="one">%1$d দিন</item>
+        <item quantity="other">%1$d দিন</item>
+    </plurals>
+    <string name="dl_quiz_progress">প্রশ্ন %1$d / %2$d</string>
+    <string name="dl_quiz_progress_practice">অনুশীলন · প্রশ্ন %1$d / %2$d</string>
+    <string name="dl_quiz_correct">ঠিক উত্তর</string>
+    <string name="dl_quiz_wrong">ঠিক হল না</string>
+    <string name="dl_quiz_next">পরের প্রশ্ন</string>
+    <string name="dl_quiz_finish">আমার ফল দেখুন</string>
+    <string name="dl_quiz_score">%1$d / %2$d</string>
+    <string name="dl_quiz_result_perfect">সব ঠিক!</string>
+    <string name="dl_quiz_result_good">বেশ ভালো</string>
+    <string name="dl_quiz_result_low">এবার জেনে গেলেন</string>
+    <string name="dl_quiz_result_points">+%1$d পয়েন্ট। নতুন প্রশ্ন আসবে কাল।</string>
+    <string name="dl_quiz_result_done">আজকের কুইজ হয়ে গেছে। নতুন প্রশ্ন আসবে কাল।</string>
+    <string name="dl_quiz_result_practice">এটা অনুশীলন ছিল। পয়েন্ট মেলে রোজকার কুইজ থেকে।</string>
+    <string name="dl_quiz_level_next">লেভেল: %1$s · পরের লেভেলের জন্য আর %2$d পয়েন্ট</string>
+    <string name="dl_quiz_level_top">লেভেল: %1$s · সবচেয়ে উঁচু লেভেল</string>
+    <string name="dl_quiz_level_1">নবীন</string>
+    <string name="dl_quiz_level_2">সচেতন</string>
+    <string name="dl_quiz_level_3">সতর্ক</string>
+    <string name="dl_quiz_level_4">রক্ষক</string>
+    <string name="dl_quiz_level_5">শক্তি</string>
+    <string name="dl_quiz_share">আমার স্ট্রিক শেয়ার করুন</string>
+    <string name="dl_quiz_share_text">Naari Shakti-র সুরক্ষা কুইজে আমার টানা %1$s-এর স্ট্রিক আর %2$d পয়েন্ট হয়েছে। আপনি কি নিজের অধিকার আর হেল্পলাইন নম্বরগুলো জানেন?</string>
+    <string name="dl_quiz_practice">আরও অনুশীলন করুন</string>
+    <string name="dl_quiz_reminder">রোজকার কুইজের রিমাইন্ডার</string>
+    <string name="dl_quiz_reminder_sub">তখনও না খেলে থাকলে সন্ধ্যায় একটি নোটিফিকেশন</string>
+
+    <!-- Daily reminder notifications -->
+    <string name="dl_nudge_quiz_title">আজকের সুরক্ষা কুইজ তৈরি</string>
+    <string name="dl_nudge_quiz_text">তিনটি ছোট প্রশ্ন। এক মিনিটেই হয়ে যাবে।</string>
+    <plurals name="dl_nudge_quiz_streak">
+        <item quantity="one">%1$d দিনের স্ট্রিক ধরে রাখতে এখনই খেলুন।</item>
+        <item quantity="other">%1$d দিনের স্ট্রিক ধরে রাখতে এখনই খেলুন।</item>
+    </plurals>
+    <string name="dl_nudge_cycle_title">Naari Shakti থেকে একটি রিমাইন্ডার</string>
+    <string name="dl_nudge_cycle_text">দেখতে অ্যাপ খুলুন।</string>
+
+    <!--
+        Quiz bank. Each item: question|option A|option B|option C|index of the right option (0-2)|explanation.
+        Keep the count a multiple of 3 and never use the | character inside a text.
+        Translations must keep the same order and the same right-option index.
+    -->
+    <string-array name="dl_quiz_items">
+        <item>ভারতের যেকোনো জায়গা থেকে পুলিশ, দমকল আর অ্যাম্বুল্যান্স ডাকার একটাই নম্বর কোনটি?|112|1098|139|0|112 হল সব জরুরি পরিষেবার একটাই নম্বর। যেকোনো ফোন থেকে, ব্যালান্স না থাকলেও কল যায়।</item>
+        <item>মহিলা হেল্পলাইনের নম্বর কোনটি?|1930|181|139|1|বেশিরভাগ রাজ্যে 181 হল মহিলা হেল্পলাইন। 1091 নম্বরে মহিলা পুলিশ হেল্পলাইন পাওয়া যায়।</item>
+        <item>অনলাইনে হয়রানি, ব্ল্যাকমেল বা সাইবার প্রতারণার অভিযোগ কোথায় করবেন?|হেল্পলাইন 1930 বা cybercrime.gov.in|শুধু মোবাইল কোম্পানির কাছে|এর অভিযোগ করা যায় না|0|1930 নম্বরে কল করুন বা cybercrime.gov.in-এ অভিযোগ জানান। স্ক্রিনশট প্রমাণ হিসেবে রেখে দিন।</item>
+        <item>থানা বলছে ঘটনাটা তাদের এলাকার বাইরে ঘটেছে। আপনি কী চাইতে পারেন?|কিছুই না, আপনাকে সেখানেই যেতে হবে|জিরো FIR|লিখিত ক্ষমা|1|যেকোনো থানা জিরো FIR নিতে এবং সেটি ঠিক থানায় পাঠিয়ে দিতে বাধ্য।</item>
+        <item>পুলিশ কি সূর্যাস্তের পরে আর সূর্যোদয়ের আগে কোনো মহিলাকে গ্রেপ্তার করতে পারে?|হ্যাঁ, যেকোনো সময়|কখনওই না, কোনো অবস্থাতেই না|শুধু ব্যতিক্রমী ক্ষেত্রে, মহিলা অফিসারের মাধ্যমে এবং ম্যাজিস্ট্রেটের লিখিত অনুমতি নিয়ে|2|আইন মহিলাদের রাতে গ্রেপ্তার হওয়া থেকে রক্ষা করে। ব্যতিক্রম শুধু বিশেষ ক্ষেত্রে, ম্যাজিস্ট্রেটের আগে থেকে নেওয়া লিখিত অনুমতি থাকলে।</item>
+        <item>বুক করা ক্যাবে ওঠার আগে কী মিলিয়ে দেখবেন?|নম্বর প্লেট আর ড্রাইভার অ্যাপের সঙ্গে মিলছে কি না|গাড়ি পরিষ্কার কি না|ড্রাইভারের তাড়া আছে কি না|0|সবসময় নম্বর প্লেট আর ড্রাইভারকে বুকিংয়ের সঙ্গে মিলিয়ে নিন। এই অ্যাপের ক্যাব মোড নম্বর প্লেট আপনার কন্টাক্টদের পাঠিয়ে দিতে পারে।</item>
+        <item>আপনার ক্যাব অচেনা রাস্তা ধরেছে। প্রথমে কী করা সবচেয়ে ভালো?|চুপ করে অপেক্ষা করা|লাইভ লোকেশন শেয়ার করা, কাউকে কল করা আর ভিড়ের জায়গায় থামাতে বলা|ফোন বন্ধ করে দেওয়া|1|কাউকে জানান আপনি কোথায় আছেন, কলে জোরে জোরে সে কথা বলুন, আর বিপদ মনে হলে SOS ব্যবহার করুন।</item>
+        <item>10 বা তার বেশি কর্মী আছেন এমন কর্মক্ষেত্রে যৌন হয়রানির অভিযোগ কে শুনবে?|অভ্যন্তরীণ কমিটি (Internal Committee)|শুধু পুলিশ|সিকিউরিটি গার্ড|0|POSH আইন অনুযায়ী এমন প্রতিটি কর্মক্ষেত্রে অভ্যন্তরীণ কমিটি থাকা বাধ্যতামূলক।</item>
+        <item>POSH আইনে কর্মক্ষেত্রে যৌন হয়রানির অভিযোগ কত দিনের মধ্যে করতে হয়?|24 ঘণ্টার মধ্যে|এক সপ্তাহের মধ্যে|ঘটনার তিন মাসের মধ্যে|2|অভিযোগ তিন মাসের মধ্যে করা উচিত, আর কমিটি এই সময় আরও তিন মাস বাড়াতে পারে।</item>
+        <item>আপনি স্পষ্ট না বলার পরেও কেউ বারবার পিছু নিচ্ছে বা মেসেজ পাঠাচ্ছে। এটা কি অপরাধ?|না, এটা শুধু অভদ্রতা|হ্যাঁ, পিছু নেওয়া (স্টকিং) অপরাধ, অনলাইনেও|শুধু সে আপনাকে ছুঁলে তবেই|1|সামনাসামনি হোক বা অনলাইনে, স্টকিং একটি ফৌজদারি অপরাধ। মেসেজগুলো রেখে দিন আর অভিযোগ করুন।</item>
+        <item>গার্হস্থ্য হিংসা আইন কি শুধু মারধরের ক্ষেত্রেই খাটে?|হ্যাঁ, শুধু মারধরের ক্ষেত্রে|না, গালিগালাজ, মানসিক, যৌন আর আর্থিক নির্যাতনের ক্ষেত্রেও|এটা শুধু বিবাহিত মহিলাদের জন্য|1|গার্হস্থ্য হিংসা থেকে নারী সুরক্ষা আইন এই সব ধরনের নির্যাতনের ক্ষেত্রেই খাটে, লিভ-ইন সম্পর্কে থাকা মহিলাদের ক্ষেত্রেও।</item>
+        <item>ভারতে বিনামূল্যে আইনি সহায়তা কে পেতে পারেন?|প্রত্যেক মহিলা, তাঁর আয় যাই হোক|শুধু দারিদ্র্যসীমার নিচের মহিলারা|কেউ না, উকিলরা সবসময় ফি নেন|0|প্রত্যেক মহিলা নিজের জেলার আইনি পরিষেবা কর্তৃপক্ষের কাছ থেকে বিনামূল্যে আইনি সহায়তা পেতে পারেন।</item>
+        <item>সংবাদমাধ্যম বা অন্য কেউ কি যৌন নির্যাতনের শিকার মহিলার নাম প্রকাশ করতে পারে?|হ্যাঁ, খবর সত্যি হলে|শুধু সোশ্যাল মিডিয়ায়|না, তাঁর পরিচয় প্রকাশ করা অপরাধ|2|যৌন নির্যাতনের শিকার মহিলার পরিচয় প্রকাশ করা শাস্তিযোগ্য অপরাধ।</item>
+        <item>রাতে একা হাঁটছেন আর মনে হচ্ছে কেউ পিছু নিয়েছে। কী করবেন?|সবচেয়ে নির্জন গলি দিয়ে সোজা বাড়ি যাবেন|আলো আর ভিড় আছে এমন জায়গার দিকে যাবেন আর কাউকে কল করবেন|থেমে একাই তার মুখোমুখি হবেন|1|লোকজন আর আলোর দিকে যান, কলে থাকুন, আর ওই লোকটিকে নিজের বাড়ি পর্যন্ত নিয়ে যাবেন না।</item>
+        <item>পার্টিতে আপনার পানীয় কিছুক্ষণ চোখের আড়ালে পড়ে ছিল। নিরাপদ উপায় কোনটি?|তাড়াতাড়ি খেয়ে ফেলা|অচেনা কাউকে চেখে দেখতে বলা|ওটা রেখে দিয়ে নতুন একটা নেওয়া|2|চোখের আড়ালে থাকা পানীয়তে কিছু মিশিয়ে দেওয়া হতে পারে। সবসময় নতুন একটা নিন।</item>
+        <item>এই অ্যাপের নকল কল টুলটি কী কাজে লাগে?|অস্বস্তিকর পরিস্থিতি থেকে বেরিয়ে আসার একটা বিশ্বাসযোগ্য অজুহাত দিতে|বন্ধুদের সঙ্গে মজা করতে|পুলিশকে কল করতে|0|নকল ইনকামিং কল এলে আপনি তর্কে না গিয়ে সেখান থেকে সরে যেতে পারেন।</item>
+        <item>এই অ্যাপে বিপদ PIN দিলে কী হয়?|অ্যাপ মুছে যায়|অ্যাপ স্বাভাবিক দেখায় কিন্তু চুপচাপ SOS পাঠিয়ে দেয়|কিছুই হয় না|1|বিপদ PIN সেই সময়ের জন্য, যখন কেউ জোর করে আপনাকে দিয়ে অ্যাপ খোলায়। অ্যাপ স্বাভাবিকভাবেই খোলে আর গোপনে আপনার কন্টাক্টদের অ্যালার্ট চলে যায়।</item>
+        <item>কোনো মহিলা যৌন অপরাধের অভিযোগ জানালে তাঁর বয়ান কে লিখবেন?|ডিউটিতে থাকা যেকোনো অফিসার|একজন মহিলা পুলিশ অফিসার|কোনো প্রতিবেশী|1|আইন অনুযায়ী তাঁর বয়ান একজন মহিলা পুলিশ অফিসারকেই লিখতে হবে।</item>
+        <item>ইন্টারনেটে আলাপ হওয়া কারও সঙ্গে প্রথমবার দেখা করতে যাচ্ছেন। সবচেয়ে নিরাপদ উপায় কোনটি?|লোকজন আছে এমন জায়গায় দেখা করা, কোনো বন্ধুকে জানানো আর যাতায়াতের ব্যবস্থা নিজে করা|তার বাড়িতে দেখা করা|তাকে আপনার বাড়ি থেকে নিয়ে যেতে দেওয়া|0|লোকজন আছে এমন জায়গা, আপনার পরিকল্পনা জানেন এমন বন্ধু আর বাড়ি ফেরার নিজের ব্যবস্থা থাকলে নিয়ন্ত্রণ আপনার হাতেই থাকে। এই অ্যাপের কারও সঙ্গে দেখা মোড আপনার জন্য টাইমার সেট করে দিতে পারে।</item>
+        <item>কেউ কল করে বলছে সে আপনার ব্যাঙ্ক থেকে বলছে, আর এইমাত্র আসা OTP চাইছে। কী করবেন?|বলে দেবেন, সে তো ব্যাঙ্কের লোক|শুধু অর্ধেকটা বলবেন|কখনও বলবেন না, কল কেটে দেবেন|2|কোনো ব্যাঙ্ক কখনও OTP চায় না। OTP বলে দিলে কেউ আপনার টাকা তুলে নিতে বা অ্যাকাউন্টের দখল নিতে পারে।</item>
+        <item>বিপদে পড়া শিশুর জন্য হেল্পলাইন নম্বর কোনটি?|1098|181|শুধু 112|0|1098 হল চাইল্ডলাইন, শিশুদের জন্য 24 ঘণ্টার বিনামূল্যের হেল্পলাইন।</item>
+        <item>দুই পরিবার রাজি থাকলে পণ দেওয়া বা নেওয়া কি আইনসম্মত?|হ্যাঁ, দু\'পক্ষ রাজি থাকলে|না, পণ দেওয়া আর নেওয়া দুটোই অপরাধ|শুধু দেওয়াটা অপরাধ|1|পণ নিষেধ আইন অনুযায়ী পণ দেওয়া, নেওয়া আর চাওয়া তিনটিই শাস্তিযোগ্য।</item>
+        <item>এই অ্যাপে চেক-ইন টাইমার সেট করেছেন, কিন্তু সময়মতো “আমি নিরাপদ”-এ ট্যাপ করেননি। কী হবে?|কিছুই না, টাইমার শুধু শেষ হয়ে যাবে|অ্যাপ SOS শুরু করে আপনার কন্টাক্টদের অ্যালার্ট পাঠাবে|আপনার ফোন রিস্টার্ট হবে|1|চেক-ইন না হলে SOS শুরু হয়ে যায়, যাতে আপনি ফোন ধরতে না পারলেও কেউ খবর পান।</item>
+        <item>ট্রেনে যাওয়ার সময় সাহায্যের জন্য কোন নম্বরে কল করবেন?|139|1930|1098|0|139 হল রেল মদদ হেল্পলাইন, ভারতীয় রেলে সুরক্ষা আর অন্য সাহায্যের জন্য।</item>
+    </string-array>
+</resources>

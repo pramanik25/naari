@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Extra SOS triggers and device guard (package .triggers). Nepali. -->
+
+    <!-- Common -->
+    <string name="tr_back">पछाडि</string>
+    <string name="tr_not_now">अहिले होइन</string>
+    <string name="tr_cancel">रद्द गर्नुहोस्</string>
+    <string name="tr_open_settings">सेटिङ</string>
+
+    <!-- ===================== SMS alerts to emergency contacts ===================== -->
+    <string name="tr_default_owner_name">तपाईंको आफन्त</string>
+    <string name="tr_sms_shutdown">Naari Shakti: %1$s को फोन बन्द हुँदै छ। पछिल्लो लोकेसन: %2$s</string>
+    <string name="tr_sms_low_battery">Naari Shakti: %1$s को फोनको ब्याट्री %2$d%% छ। पछिल्लो लोकेसन: %3$s</string>
+    <string name="tr_sms_sim_changed">Naari Shakti: %1$s को फोनको SIM कार्ड फेरिएको छ। यो सन्देश नयाँ SIM बाट आएको हो। लोकेसन: %2$s</string>
+    <string name="tr_sms_location_fmt">%1$s (%2$s)</string>
+    <string name="tr_sms_location_unknown">उपलब्ध छैन</string>
+
+    <!-- ===================== Volume-key SOS (accessibility) ===================== -->
+    <string name="tr_a11y_dialog_title">भोल्युम बटनबाट SOS चालु गर्नुहोस्</string>
+    <string name="tr_a11y_dialog_body">स्क्रिन बन्द हुँदा पनि भोल्युम-डाउन 5 पटक थिचेर SOS सुरु गर्न, Accessibility (पहुँचयोग्यता) सेटिङमा %1$s चालु गर्नुहोस्।\n\nअर्को स्क्रिनमा \"इन्स्टल गरिएका एप\" (\"Installed apps\" वा \"Downloaded apps\") खोल्नुहोस्, %1$s छान्नुहोस् र त्यसलाई चालु गर्नुहोस्। यसले भोल्युम बटन मात्र हेर्छ र तपाईंको स्क्रिन कहिल्यै पढ्दैन।</string>
+    <string name="tr_a11y_dialog_open">सेटिङ खोल्नुहोस्</string>
+
+    <!-- ===================== Panic button screen ===================== -->
+    <string name="tr_pb_eyebrow">थप ट्रिगरहरू</string>
+    <string name="tr_pb_title">प्यानिक बटन</string>
+    <string name="tr_pb_desc">एउटा सानो Bluetooth बटन जोड्नुहोस् र फोन ननिकाली SOS सुरु गर्न त्यसलाई दुई पटक थिच्नुहोस्।</string>
+
+    <string name="tr_pb_status_label">तपाईंको बटन</string>
+    <string name="tr_pb_no_button">कुनै बटन जोडिएको छैन</string>
+    <string name="tr_pb_unnamed">नाम नभएको बटन</string>
+    <string name="tr_pb_status_not_set">सेटअप गरिएको छैन</string>
+    <string name="tr_pb_status_connected">जोडिएको छ</string>
+    <string name="tr_pb_status_connecting">बटन खोजिँदै छ… यसलाई नजिकै राख्नुहोस्</string>
+    <string name="tr_pb_status_unsupported">यो डिभाइस सपोर्ट हुने बटन होइन</string>
+    <string name="tr_pb_status_bt_off">Bluetooth बन्द छ</string>
+    <string name="tr_pb_status_permission">Bluetooth को अनुमति चाहिन्छ</string>
+    <string name="tr_pb_status_unavailable">उपलब्ध छैन</string>
+    <string name="tr_pb_status_off">जोडिएको छैन</string>
+    <string name="tr_pb_protection_hint">बटनले SOS सुरु गर्न सकोस् भनेर सुरक्षा चालु गर्नुहोस्।</string>
+
+    <string name="tr_pb_forget">बटन हटाउनुहोस्</string>
+    <string name="tr_pb_forget_title">यो बटन हटाउने?</string>
+    <string name="tr_pb_forget_body">%1$s ले अब SOS सुरु गर्ने छैन।</string>
+    <string name="tr_pb_forget_confirm">हटाउनुहोस्</string>
+    <string name="tr_pb_forgotten">बटन हटाइयो</string>
+
+    <string name="tr_pb_section_test">परीक्षण</string>
+    <string name="tr_pb_test_title">परीक्षण गर्न बटन दुई पटक थिच्नुहोस्</string>
+    <string name="tr_pb_test_waiting">बटन जोडिने प्रतीक्षा हुँदै छ…</string>
+    <string name="tr_pb_test_hint">एक सेकेन्डभित्र छिटो दुई पटक थिच्नुहोस्। एक पटक थिच्दा केही हुँदैन, त्यसैले यो गल्तीले चल्दैन।</string>
+    <string name="tr_pb_test_one">एक पटक थिचियो। अब छिट्टै फेरि थिच्नुहोस्</string>
+    <string name="tr_pb_test_success">यसले काम गर्छ!</string>
+    <string name="tr_pb_test_success_body">सुरक्षा चालु हुँदा दुई पटक थिचेपछि SOS काउन्टडाउन सुरु हुन्छ। काउन्टडाउन चलिरहेको बेला यसलाई रद्द गर्न पनि सकिन्छ। यहाँ परीक्षण गर्दा कहिल्यै SOS जाँदैन।</string>
+    <string name="tr_pb_test_again">फेरि परीक्षण गर्नुहोस्</string>
+
+    <string name="tr_pb_section_find">आफ्नो बटन खोज्नुहोस्</string>
+    <string name="tr_pb_nearby">नजिकका बटनहरू</string>
+    <string name="tr_pb_scan_hint">बटन खोल्नुहोस् (बिप नबजेसम्म थिचिराख्नुहोस्) र त्यसलाई फोनको छेउमै राख्नुहोस्।</string>
+    <string name="tr_pb_scan">बटन स्क्यान गर्नुहोस्</string>
+    <string name="tr_pb_stop_scan">स्क्यान रोक्नुहोस्</string>
+    <string name="tr_pb_scanning">स्क्यान हुँदै छ…</string>
+    <string name="tr_pb_empty">कुनै बटन भेटिएन। त्यो खुला र नजिकै छ भनी पक्का गर्नुहोस्, अनि फेरि स्क्यान गर्नुहोस्।</string>
+    <string name="tr_pb_empty_location">कुनै बटन भेटिएन। Bluetooth डिभाइस स्क्यान गर्न Android मा लोकेसन चालु हुनुपर्छ। त्यसलाई चालु गरेर फेरि स्क्यान गर्नुहोस्।</string>
+    <string name="tr_pb_scan_failed">स्क्यान हुन सकेन (त्रुटि %1$d)। Bluetooth बन्द गरेर फेरि चालु गर्नुहोस्, अनि फेरि प्रयास गर्नुहोस्।</string>
+    <string name="tr_pb_no_bluetooth">यो फोनले Bluetooth Low Energy सपोर्ट गर्दैन।</string>
+    <string name="tr_pb_bt_needed">आफ्नो बटन खोज्न Bluetooth चालु गर्नुहोस्।</string>
+    <string name="tr_pb_perm_denied">तपाईंको बटन खोज्न Naari Shakti लाई नजिकका डिभाइस र लोकेसनको अनुमति चाहिन्छ।</string>
+    <string name="tr_pb_paired_snack">%1$s सेभ भयो। अब परीक्षण गर्न यसलाई दुई पटक थिच्नुहोस्।</string>
+    <string name="tr_pb_rssi">%1$d dBm</string>
+    <string name="tr_pb_tag_compatible">सपोर्ट हुने</string>
+    <string name="tr_pb_tag_paired">जोडिएको</string>
+    <string name="tr_pb_device_cd">%1$s, सिग्नल 4 मध्ये %2$d। यो बटन प्रयोग गर्न दुई पटक ट्याप गर्नुहोस्।</string>
+
+    <string name="tr_pb_section_supported">सपोर्ट हुने बटनहरू</string>
+    <string name="tr_pb_sup1_title">iTag किफाइन्डर बटन</string>
+    <string name="tr_pb_sup1_body">\"iTag\" वा \"anti-lost tracker\" नाममा बिक्ने साना Bluetooth किफाइन्डर बटनले सबैभन्दा राम्रो काम गर्छन्। अनलाइनमा यिनको मूल्य करिब ₹200 पर्छ।</string>
+    <string name="tr_pb_sup2_title">सिक्का आकारको ब्याट्रीमा चल्छ</string>
+    <string name="tr_pb_sup2_body">एउटा CR2032 ब्याट्री महिनौँ टिक्छ। बटनलाई आफ्नो साँचो, झोलाको फित्ता वा लुगामा अड्काउनुहोस्।</string>
+    <string name="tr_pb_sup3_title">ब्याकग्राउन्डमा काम गर्छ</string>
+    <string name="tr_pb_sup3_body">सुरक्षा चालु हुँदा फोन बटनसँग जोडिइरहन्छ, र बटन फेरि नजिक आउँदा आफैँ पुनः जोडिन्छ।</string>
+</resources>

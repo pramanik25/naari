@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Bottom tabs -->
+    <string name="sh_nav_daily">দৈনিক</string>
+    <string name="sh_nav_together">একেলগে</string>
+    <string name="sh_daily_title">প্ৰতিদিন</string>
+    <string name="sh_daily_body">সৰু সৰু অভ্যাস, যিয়ে প্ৰতিটো দিন আৰু সুৰক্ষিত কৰে।</string>
+    <string name="sh_together_title">একেলগে</string>
+    <string name="sh_together_body">আপোনাৰ আপোন মানুহ আৰু আপোনাৰ সমাজ, একে ঠাইতে।</string>
+
+    <!-- Running donation banner at the top of the app -->
+    <string name="sh_donate_banner">♥ Naari Shakti বিনামূলীয়া আৰু আপোনালোকৰ সহযোগত চলে। টেপ কৰি দান কৰক আৰু মহিলাসকলক সুৰক্ষিত ৰাখক।</string>
+
+    <!-- "Complete your profile" popup on Home (name and mobile number required) -->
+    <string name="sh_profile_title">আপোনাৰ প্ৰ’ফাইল সম্পূৰ্ণ কৰক</string>
+    <string name="sh_profile_body">অনুগ্ৰহ কৰি আপোনাৰ নাম আৰু ম’বাইল নম্বৰ দিয়ক। এইবোৰ আপোনাৰ Naari Shakti একাউণ্টত ছেভ হয়। বাকী তথ্য ঐচ্ছিক।</string>
+    <string name="sh_profile_optional">ঐচ্ছিক</string>
+
+    <!-- Maker credit -->
+    <string name="sh_made_by">Vikash-এ বনোৱা</string>
+    <string name="sh_made_by_sub">প্ৰতিগৰাকী মহিলাৰ সুৰক্ষাৰ বাবে ভাৰতত নিৰ্মিত</string>
+    <string name="sh_brand_photo_cd">এই এপটো বনোৱা Vikash-ৰ ফটো</string>
+</resources>
