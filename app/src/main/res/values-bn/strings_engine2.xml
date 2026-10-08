@@ -2,9 +2,9 @@
 <resources>
 
     <!-- Silent SOS: low-key notification and covert screen -->
-    <string name="en_covert_title">Naari Shakti · লোকেশন শেয়ার হচ্ছে</string>
+    <string name="en_covert_title">Naari Kavach · লোকেশন শেয়ার হচ্ছে</string>
     <string name="en_covert_text">পরিচালনা করতে ট্যাপ করুন</string>
-    <string name="en_covert_overline">Naari Shakti</string>
+    <string name="en_covert_overline">Naari Kavach</string>
     <string name="en_covert_heading">আপনার লোকেশন শেয়ার হচ্ছে</string>
     <string name="en_covert_body">আপনার ভরসার কন্টাক্টরা আপনার লাইভ লোকেশন পাচ্ছেন।</string>
     <string name="en_covert_hold">শেয়ার থামাতে চেপে ধরুন</string>
@@ -13,8 +13,8 @@
 
     <!-- SMS -->
     <string name="en_sms_tracking_line">লাইভ লোকেশন ও প্রমাণ: %1$s</string>
-    <string name="en_sms_duress">Naari Shakti: হয়তো %1$s-কে জোর করে অ্যালার্ট বাতিল করানো হয়েছে। বিপদ এখনও আছে ধরে নিন। লাইভ লোকেশন: %2$s</string>
-    <string name="en_sms_duress_no_link">Naari Shakti: হয়তো %1$s-কে জোর করে অ্যালার্ট বাতিল করানো হয়েছে। বিপদ এখনও আছে ধরে নিন। লোকেশন পরে আসছে।</string>
+    <string name="en_sms_duress">Naari Kavach: হয়তো %1$s-কে জোর করে অ্যালার্ট বাতিল করানো হয়েছে। বিপদ এখনও আছে ধরে নিন। লাইভ লোকেশন: %2$s</string>
+    <string name="en_sms_duress_no_link">Naari Kavach: হয়তো %1$s-কে জোর করে অ্যালার্ট বাতিল করানো হয়েছে। বিপদ এখনও আছে ধরে নিন। লোকেশন পরে আসছে।</string>
     <string name="en_duress_name_fallback">আপনার কন্টাক্ট</string>
 
     <!-- Spoken alert (text to speech, loud) -->
@@ -66,7 +66,7 @@
     <string name="en_cancel">বাতিল করুন</string>
     <string name="en_pin_lockout">অনেকবার চেষ্টা হয়েছে। %1$d সেকেন্ড পরে আবার চেষ্টা করুন।</string>
     <string name="en_pin_verify_title">আপনার PIN দিন</string>
-    <string name="en_pin_verify_subtitle">এগোতে আপনার Naari Shakti PIN দিন।</string>
+    <string name="en_pin_verify_subtitle">এগোতে আপনার Naari Kavach PIN দিন।</string>
     <string name="en_pin_current_title">বর্তমান PIN দিন</string>
     <string name="en_pin_current_subtitle">PIN বদলানোর আগে নিশ্চিত করুন যে এটা আপনিই।</string>
     <string name="en_pin_manage_title">অ্যাপ PIN</string>

@@ -142,7 +142,7 @@
     <string name="jr_ss_accessibility_on">அணுகல்தன்மைச் சேவை இயக்கத்தில் உள்ளது</string>
     <string name="jr_ss_accessibility_off">அணுகல்தன்மைச் சேவை முடக்கத்தில் உள்ளது</string>
     <string name="jr_ss_accessibility_title">அணுகல்தன்மைச் சேவையை இயக்கவும்</string>
-    <string name="jr_ss_accessibility_body">திரை அணைந்திருக்கும்போது ஒலியளவுப் பொத்தான் அழுத்தங்களை ஆப்ஸ் அறிய, Android அணுகல்தன்மைச் சேவை மூலம் மட்டுமே அனுமதிக்கிறது. Naari Shakti இதைப் பொத்தான் அழுத்தங்களுக்கு மட்டுமே பயன்படுத்தும், உங்கள் திரையை ஒருபோதும் படிக்காது. பட்டியலில் Naari Shakti-ஐக் கண்டறிந்து இயக்கவும்.</string>
+    <string name="jr_ss_accessibility_body">திரை அணைந்திருக்கும்போது ஒலியளவுப் பொத்தான் அழுத்தங்களை ஆப்ஸ் அறிய, Android அணுகல்தன்மைச் சேவை மூலம் மட்டுமே அனுமதிக்கிறது. Naari Kavach இதைப் பொத்தான் அழுத்தங்களுக்கு மட்டுமே பயன்படுத்தும், உங்கள் திரையை ஒருபோதும் படிக்காது. பட்டியலில் Naari Kavach-ஐக் கண்டறிந்து இயக்கவும்.</string>
     <string name="jr_ss_denied_accessibility">அணுகல்தன்மைச் சேவை இல்லாமல், திரை அணைந்திருக்கும்போது ஒலியளவுப் பொத்தான்களால் SOS தொடங்க முடியாது; எனவே இது முடக்கப்பட்டது.</string>
     <string name="jr_ss_panic">பேனிக் பொத்தான்</string>
     <string name="jr_ss_panic_none">இணைக்கவில்லை · சிறிய Bluetooth பொத்தானை இணைக்கவும்</string>
@@ -158,7 +158,7 @@
 
     <string name="jr_ss_section_community">சமூகம்</string>
     <string name="jr_ss_mesh">ஆஃப்லைன் மெஷ் SOS</string>
-    <string name="jr_ss_mesh_sub">சிக்னல் இல்லாதபோது, அருகிலுள்ள Naari Shakti ஃபோன்களுக்கு Bluetooth, Wi-Fi வழியாக உங்கள் SOS-ஐக் கடத்தும்.</string>
+    <string name="jr_ss_mesh_sub">சிக்னல் இல்லாதபோது, அருகிலுள்ள Naari Kavach ஃபோன்களுக்கு Bluetooth, Wi-Fi வழியாக உங்கள் SOS-ஐக் கடத்தும்.</string>
     <string name="jr_ss_helper">அருகிலுள்ள உதவியாளர்</string>
     <string name="jr_ss_helper_on">ஆன் · அருகிலுள்ளவர்களுக்கு உதவக் கேட்கப்படலாம்</string>
     <string name="jr_ss_helper_off">ஆஃப் · அருகிலுள்ளவர்களுக்கு உதவ முன்வாருங்கள்</string>
@@ -310,14 +310,14 @@
 
     <!-- ============ SMS bodies ============ -->
     <string name="jr_sms_default_name">உங்கள் தோழி</string>
-    <string name="jr_sms_cab_start">Naari Shakti: %1$s, %2$s%3$s கேபில் பயணிக்கிறார்.</string>
+    <string name="jr_sms_cab_start">Naari Kavach: %1$s, %2$s%3$s கேபில் பயணிக்கிறார்.</string>
     <string name="jr_sms_cab_details_app_driver">" (%1$s, ஓட்டுநர் %2$s)"</string>
     <string name="jr_sms_cab_details_app">" (%1$s)"</string>
     <string name="jr_sms_cab_details_driver">" (ஓட்டுநர் %1$s)"</string>
     <string name="jr_sms_cab_going">செல்லும் இடம்: %1$s.</string>
     <string name="jr_sms_live">நேரலை: %1$s</string>
-    <string name="jr_sms_cab_arrived">Naari Shakti: %1$s, %2$s-க்குப் பாதுகாப்பாகச் சென்றடைந்தார்.</string>
-    <string name="jr_sms_meet_intro">Naari Shakti: %1$s, %2$s-ஐச் சந்திக்கிறார்.</string>
+    <string name="jr_sms_cab_arrived">Naari Kavach: %1$s, %2$s-க்குப் பாதுகாப்பாகச் சென்றடைந்தார்.</string>
+    <string name="jr_sms_meet_intro">Naari Kavach: %1$s, %2$s-ஐச் சந்திக்கிறார்.</string>
     <string name="jr_sms_meet_contact">அவரைத் தொடர்புகொள்ள: %1$s.</string>
     <string name="jr_sms_meet_place">இடம்: %1$s %2$s</string>
     <string name="jr_sms_meet_place_nolink">இடம்: %1$s.</string>

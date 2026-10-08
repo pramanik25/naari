@@ -5,9 +5,9 @@
 <resources>
 
     <!-- Silent SOS: low-key notification and covert screen -->
-    <string name="en_covert_title">Naari Shakti · sharing location</string>
+    <string name="en_covert_title">Naari Kavach · sharing location</string>
     <string name="en_covert_text">Tap to manage</string>
-    <string name="en_covert_overline">Naari Shakti</string>
+    <string name="en_covert_overline">Naari Kavach</string>
     <string name="en_covert_heading">Sharing your location</string>
     <string name="en_covert_body">Your trusted contacts are receiving your live location.</string>
     <string name="en_covert_hold">Hold to stop sharing</string>
@@ -16,8 +16,8 @@
 
     <!-- SMS (plain characters only) -->
     <string name="en_sms_tracking_line">Live location &amp; evidence: %1$s</string>
-    <string name="en_sms_duress">Naari Shakti: %1$s may have been forced to cancel the alert. Treat this as still active. Live location: %2$s</string>
-    <string name="en_sms_duress_no_link">Naari Shakti: %1$s may have been forced to cancel the alert. Treat this as still active. Location will follow.</string>
+    <string name="en_sms_duress">Naari Kavach: %1$s may have been forced to cancel the alert. Treat this as still active. Live location: %2$s</string>
+    <string name="en_sms_duress_no_link">Naari Kavach: %1$s may have been forced to cancel the alert. Treat this as still active. Location will follow.</string>
     <string name="en_duress_name_fallback">Your contact</string>
 
     <!-- Spoken alert (text to speech, loud) -->
@@ -69,7 +69,7 @@
     <string name="en_cancel">Cancel</string>
     <string name="en_pin_lockout">Too many attempts. Try again in %1$d s.</string>
     <string name="en_pin_verify_title">Enter your PIN</string>
-    <string name="en_pin_verify_subtitle">Enter your Naari Shakti PIN to continue.</string>
+    <string name="en_pin_verify_subtitle">Enter your Naari Kavach PIN to continue.</string>
     <string name="en_pin_current_title">Enter current PIN</string>
     <string name="en_pin_current_subtitle">Confirm it’s you before changing your PIN.</string>
     <string name="en_pin_manage_title">App PIN</string>

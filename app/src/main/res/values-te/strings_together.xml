@@ -3,7 +3,7 @@
     <!-- Shared -->
     <string name="tg_back">వెనుకకు</string>
     <string name="tg_eyebrow">కలిసి</string>
-    <string name="tg_cloud_off">దీనికి Naari Shakti క్లౌడ్ అవసరం, అది ఈ ఫోన్‌లో ఆఫ్‌లో ఉంది.</string>
+    <string name="tg_cloud_off">దీనికి Naari Kavach క్లౌడ్ అవసరం, అది ఈ ఫోన్‌లో ఆఫ్‌లో ఉంది.</string>
     <string name="tg_open_settings">సెట్టింగ్‌లు</string>
     <string name="tg_close">మూసివేయండి</string>
     <string name="tg_delete">తొలగించండి</string>
@@ -61,7 +61,7 @@
     <string name="tg_sm_empty">+ గుర్తు నుండి 3 కి.మీ. లోపల రిపోర్ట్‌లు లేవు. అంతమాత్రాన ఈ ప్రాంతం సురక్షితమని కాదు.</string>
     <string name="tg_sm_no_location">మీ లొకేషన్ దొరకలేదు. మ్యాప్‌ను జరిపి “ఇక్కడ వెతకండి” నొక్కండి.</string>
     <string name="tg_sm_pan_hint">లొకేషన్ లేనప్పుడు, మ్యాప్‌ను ఒక చోటుకు జరిపి “ఇక్కడ వెతకండి” నొక్కండి.</string>
-    <string name="tg_sm_detail">%1$s ఒక Naari Shakti యూజర్ రిపోర్ట్ చేశారు. ధృవీకరించబడలేదు.</string>
+    <string name="tg_sm_detail">%1$s ఒక Naari Kavach యూజర్ రిపోర్ట్ చేశారు. ధృవీకరించబడలేదు.</string>
     <string name="tg_sm_deleted">మీ రిపోర్ట్ తొలగించబడింది.</string>
     <string name="tg_sm_flag">ఇది తప్పు</string>
     <string name="tg_sm_zoom_in">+ సరిగ్గా ఆ చోటుపై వచ్చేలా ఇంకా జూమ్ ఇన్ చేయండి.</string>

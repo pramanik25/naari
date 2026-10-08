@@ -142,7 +142,7 @@
     <string name="jr_ss_accessibility_on">এক্সেছিবিলিটি সেৱা অন আছে</string>
     <string name="jr_ss_accessibility_off">এক্সেছিবিলিটি সেৱা অফ আছে</string>
     <string name="jr_ss_accessibility_title">এক্সেছিবিলিটি সেৱা অন কৰক</string>
-    <string name="jr_ss_accessibility_body">স্ক্ৰীণ অফ থাকোঁতে ভলিউম বুটাম টিপা ধৰিবলৈ Android-এ কেৱল এক্সেছিবিলিটি সেৱাৰ জৰিয়তেহে অনুমতি দিয়ে। Naari Shakti-এ ইয়াক কেৱল বুটাম টিপাৰ বাবে ব্যৱহাৰ কৰে, কেতিয়াও আপোনাৰ স্ক্ৰীণ নপঢ়ে। তালিকাত Naari Shakti বিচাৰি অন কৰক।</string>
+    <string name="jr_ss_accessibility_body">স্ক্ৰীণ অফ থাকোঁতে ভলিউম বুটাম টিপা ধৰিবলৈ Android-এ কেৱল এক্সেছিবিলিটি সেৱাৰ জৰিয়তেহে অনুমতি দিয়ে। Naari Kavach-এ ইয়াক কেৱল বুটাম টিপাৰ বাবে ব্যৱহাৰ কৰে, কেতিয়াও আপোনাৰ স্ক্ৰীণ নপঢ়ে। তালিকাত Naari Kavach বিচাৰি অন কৰক।</string>
     <string name="jr_ss_denied_accessibility">এক্সেছিবিলিটি সেৱা অবিহনে স্ক্ৰীণ অফ থাকোঁতে ভলিউম বুটামেৰে SOS আৰম্ভ কৰিব নোৱাৰি, সেয়েহে ইয়াক অফ কৰা হ’ল।</string>
     <string name="jr_ss_panic">পেনিক বুটাম</string>
     <string name="jr_ss_panic_none">সংযোগ নাই · এটা সৰু Bluetooth বুটাম সংযোগ কৰক</string>
@@ -158,7 +158,7 @@
 
     <string name="jr_ss_section_community">সমাজ</string>
     <string name="jr_ss_mesh">অফলাইন মেশ্ব SOS</string>
-    <string name="jr_ss_mesh_sub">নেটৱৰ্ক নাথাকিলে Bluetooth আৰু Wi-Fi-ৰে ওচৰৰ Naari Shakti ফোনলৈ আপোনাৰ SOS পঠিয়াই দিয়ে।</string>
+    <string name="jr_ss_mesh_sub">নেটৱৰ্ক নাথাকিলে Bluetooth আৰু Wi-Fi-ৰে ওচৰৰ Naari Kavach ফোনলৈ আপোনাৰ SOS পঠিয়াই দিয়ে।</string>
     <string name="jr_ss_helper">ওচৰৰ সহায়কাৰী</string>
     <string name="jr_ss_helper_on">অন · ওচৰৰ কাৰোবাক সহায় কৰিবলৈ কোৱা হ’ব পাৰে</string>
     <string name="jr_ss_helper_off">অফ · ওচৰৰ মানুহক সহায় কৰিবলৈ যোগ দিয়ক</string>
@@ -310,14 +310,14 @@
 
     <!-- ============ SMS bodies ============ -->
     <string name="jr_sms_default_name">আপোনাৰ বন্ধু</string>
-    <string name="jr_sms_cab_start">Naari Shakti: %1$s কেব %2$s-ত আছে%3$s।</string>
+    <string name="jr_sms_cab_start">Naari Kavach: %1$s কেব %2$s-ত আছে%3$s।</string>
     <string name="jr_sms_cab_details_app_driver">" (%1$s, চালক %2$s)"</string>
     <string name="jr_sms_cab_details_app">" (%1$s)"</string>
     <string name="jr_sms_cab_details_driver">" (চালক %1$s)"</string>
     <string name="jr_sms_cab_going">%1$s-লৈ গৈ আছে।</string>
     <string name="jr_sms_live">লাইভ: %1$s</string>
-    <string name="jr_sms_cab_arrived">Naari Shakti: %1$s সুৰক্ষিতভাৱে %2$s-ত গৈ পালে।</string>
-    <string name="jr_sms_meet_intro">Naari Shakti: %1$s-এ %2$s-ৰ লগত সাক্ষাৎ কৰিছে।</string>
+    <string name="jr_sms_cab_arrived">Naari Kavach: %1$s সুৰক্ষিতভাৱে %2$s-ত গৈ পালে।</string>
+    <string name="jr_sms_meet_intro">Naari Kavach: %1$s-এ %2$s-ৰ লগত সাক্ষাৎ কৰিছে।</string>
     <string name="jr_sms_meet_contact">তেওঁৰ যোগাযোগ: %1$s।</string>
     <string name="jr_sms_meet_place">ঠাই: %1$s %2$s</string>
     <string name="jr_sms_meet_place_nolink">ঠাই: %1$s।</string>

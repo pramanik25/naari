@@ -27,13 +27,29 @@
             android:paddingBottom="24dp">
 
             <!-- ============ Header ============ -->
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/backButton"
-                style="@style/Ns.Button.Icon"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:contentDescription="@string/cd_back"
-                app:icon="@drawable/ua_ic_arrow_back" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/backButton"
+                    style="@style/Ns.Button.Icon"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:contentDescription="@string/cd_back"
+                    app:icon="@drawable/ua_ic_arrow_back" />
+
+                <!-- Info (i): why filling in the profile helps -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/infoButton"
+                    style="@style/Ns.Button.Icon"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="end"
+                    android:contentDescription="@string/sh_profile_info_title"
+                    app:icon="@drawable/ua_ic_info"
+                    app:iconTint="@color/ns_rose" />
+            </FrameLayout>
 
             <TextView
                 android:layout_width="wrap_content"

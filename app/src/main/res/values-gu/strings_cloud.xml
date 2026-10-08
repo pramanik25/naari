@@ -39,7 +39,7 @@
     <!-- ===================== Helper alert screen ===================== -->
     <string name="cl_helper_eyebrow">નજીકમાં SOS</string>
     <string name="cl_helper_title">નજીકમાં કોઈને મદદની જરૂર છે</string>
-    <string name="cl_helper_subtitle">તમારી નજીકની એક Naari Shakti યુઝરે SOS શરૂ કર્યો છે.</string>
+    <string name="cl_helper_subtitle">તમારી નજીકની એક Naari Kavach યુઝરે SOS શરૂ કર્યો છે.</string>
     <string name="cl_helper_distance_unknown">તમારી નજીક</string>
     <string name="cl_helper_safety">પોતાને જોખમમાં ન નાખો. પહેલાં 112 પર કૉલ કરો.</string>
     <string name="cl_helper_safety_detail">લોકોની નજર સામે રહો, ફોન સાથે રાખો અને પોલીસને આગળ રહેવા દો.</string>
@@ -63,7 +63,7 @@
     <string name="cl_settings_desc">SMS ન પહોંચે ત્યારે પણ ગાર્ડિયનને તમારો SOS તરત મળે છે, તમારા લાઇવ લોકેશન અને પુરાવા સાથે.</string>
 
     <string name="cl_error_offline">તમે ઑફલાઇન છો. આ ફોનમાં સેવ થયેલું બતાવી રહ્યાં છીએ.</string>
-    <string name="cl_error_server">Naari Shakti સર્વર સુધી પહોંચી શકાયું નહીં.</string>
+    <string name="cl_error_server">Naari Kavach સર્વર સુધી પહોંચી શકાયું નહીં.</string>
     <string name="cl_error_generic">કંઈક ખોટું થયું (ભૂલ %1$d). કૃપા કરીને ફરી પ્રયાસ કરો.</string>
     <string name="cl_retry">ફરી પ્રયાસ કરો</string>
 
@@ -88,11 +88,11 @@
     </plurals>
 
     <string name="cl_section_code">તમારો ગાર્ડિયન કોડ</string>
-    <string name="cl_code_caption">આ કોડ તમારા વિશ્વાસુ લોકો સાથે શેર કરો. તમારા SOS એલર્ટ મેળવવા તેઓ તેને પોતાની Naari Shakti ઍપમાં લખે.</string>
+    <string name="cl_code_caption">આ કોડ તમારા વિશ્વાસુ લોકો સાથે શેર કરો. તમારા SOS એલર્ટ મેળવવા તેઓ તેને પોતાની Naari Kavach ઍપમાં લખે.</string>
     <string name="cl_copy">કૉપિ કરો</string>
     <string name="cl_share">શેર કરો</string>
     <string name="cl_copied">કોડ કૉપિ થયો</string>
-    <string name="cl_share_text">Naari Shakti ઇન્સ્ટૉલ કરો અને મારા SOS એલર્ટ મેળવવા મારો કોડ %1$s લખો</string>
+    <string name="cl_share_text">Naari Kavach ઇન્સ્ટૉલ કરો અને મારા SOS એલર્ટ મેળવવા મારો કોડ %1$s લખો</string>
     <string name="cl_share_chooser">તમારો ગાર્ડિયન કોડ શેર કરો</string>
 
     <string name="cl_section_link">કોઈના ગાર્ડિયન બનો</string>

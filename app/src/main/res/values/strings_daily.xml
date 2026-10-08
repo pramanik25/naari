@@ -144,7 +144,7 @@
     <string name="dl_quiz_level_4">Guardian</string>
     <string name="dl_quiz_level_5">Shakti</string>
     <string name="dl_quiz_share">Share my streak</string>
-    <string name="dl_quiz_share_text">I am on a %1$s safety quiz streak with %2$d points on Naari Shakti. Do you know your rights and helplines?</string>
+    <string name="dl_quiz_share_text">I am on a %1$s safety quiz streak with %2$d points on Naari Kavach. Do you know your rights and helplines?</string>
     <string name="dl_quiz_practice">Practise more</string>
     <string name="dl_quiz_reminder">Daily quiz reminder</string>
     <string name="dl_quiz_reminder_sub">One notification in the evening if you have not played yet</string>
@@ -156,7 +156,7 @@
         <item quantity="one">Play now to keep your %1$d-day streak.</item>
         <item quantity="other">Play now to keep your %1$d-day streak.</item>
     </plurals>
-    <string name="dl_nudge_cycle_title">A reminder from Naari Shakti</string>
+    <string name="dl_nudge_cycle_title">A reminder from Naari Kavach</string>
     <string name="dl_nudge_cycle_text">Open the app to see it.</string>
 
     <!--

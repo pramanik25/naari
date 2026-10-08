@@ -55,7 +55,7 @@
     <!-- ===================== Trigger phrase ===================== -->
     <string name="ub_trigger_eyebrow">आवाज ट्रिगर</string>
     <string name="ub_trigger_title">ट्रिगर शब्द</string>
-    <string name="ub_trigger_desc">संरक्षण चालू असताना हा ट्रिगर शब्द बोला आणि Naari Shakti तुमचा SOS पाठवेल.</string>
+    <string name="ub_trigger_desc">संरक्षण चालू असताना हा ट्रिगर शब्द बोला आणि Naari Kavach तुमचा SOS पाठवेल.</string>
     <string name="ub_trigger_current_label">तुमचा ट्रिगर शब्द</string>
     <string name="ub_trigger_status_active">आत्ता ऐकत आहोत · इंटरनेटशिवाय चालते</string>
     <string name="ub_trigger_status_inactive">फक्त संरक्षण चालू असतानाच ऐकला जातो</string>
@@ -87,7 +87,7 @@
     <string name="ub_trigger_err_generic">रेकॉर्डिंग झाले नाही. पुन्हा प्रयत्न करा किंवा खाली तुमचा ट्रिगर शब्द टाइप करा.</string>
     <string name="ub_trigger_mic_denied">रेकॉर्ड करण्यासाठी मायक्रोफोनची परवानगी लागते. तुम्ही ट्रिगर शब्द टाइपही करू शकता.</string>
     <string name="ub_trigger_mic_rationale_title">मायक्रोफोनला परवानगी द्या</string>
-    <string name="ub_trigger_mic_rationale_body">Naari Shakti मायक्रोफोनचा वापर फक्त एकदा तुमचा ट्रिगर शब्द ऐकून लिहून घेण्यासाठी करते. कोणताही ऑडिओ सेव्ह होत नाही.</string>
+    <string name="ub_trigger_mic_rationale_body">Naari Kavach मायक्रोफोनचा वापर फक्त एकदा तुमचा ट्रिगर शब्द ऐकून लिहून घेण्यासाठी करते. कोणताही ऑडिओ सेव्ह होत नाही.</string>
     <string name="ub_trigger_unavailable_title">आवाज रेकॉर्डिंग उपलब्ध नाही</string>
     <string name="ub_trigger_unavailable_body">या फोनमध्ये आवाज ओळखण्याची सेवा नाही. त्याऐवजी खाली तुमचा ट्रिगर शब्द टाइप करा.</string>
     <string name="ub_trigger_warn_title">कमी वापरातला शब्द निवडायचा?</string>
@@ -265,7 +265,7 @@
     <string name="ub_live_map_cd">तुमचे आत्ताचे लोकेशन दाखवणारा मॅप</string>
     <string name="ub_live_status_idle">तुमचे लोकेशन</string>
     <string name="ub_live_status_live">लाइव्ह · शेअर होत आहे</string>
-    <string name="ub_live_perm_title">Naari Shakti साठी लोकेशन बंद आहे</string>
+    <string name="ub_live_perm_title">Naari Kavach साठी लोकेशन बंद आहे</string>
     <string name="ub_live_perm_body">तुम्ही कुठे आहात ते पाहण्यासाठी आणि शेअर करण्यासाठी लोकेशनला परवानगी द्या.</string>
     <string name="ub_live_you_are_here">तुम्ही इथे आहात</string>
     <string name="ub_live_finding">तुमचे लोकेशन शोधत आहोत…</string>
@@ -329,11 +329,11 @@
     <string name="ub_zone_perm_title">अचूक लोकेशन हवे आहे</string>
     <string name="ub_zone_perm_body">पिन लावण्यासाठी आणि सेफ झोनवर लक्ष ठेवण्यासाठी अचूक लोकेशनला परवानगी द्या.</string>
     <string name="ub_zone_bg_title">अलर्ट फक्त “नेहमी परवानगी द्या” निवडल्यावरच चालतात</string>
-    <string name="ub_zone_bg_body">Naari Shakti बंद असतानाही सेफ झोनवर लक्ष ठेवण्यासाठी Android ला बॅकग्राउंड लोकेशन लागते.</string>
+    <string name="ub_zone_bg_body">Naari Kavach बंद असतानाही सेफ झोनवर लक्ष ठेवण्यासाठी Android ला बॅकग्राउंड लोकेशन लागते.</string>
     <string name="ub_zone_bg_fix">परवानगी द्या</string>
     <string name="ub_zone_bg_dialog_title">लोकेशनला नेहमी परवानगी द्या</string>
-    <string name="ub_zone_bg_dialog_body">“नेहमी परवानगी द्या” निवडा, म्हणजे Naari Shakti बंद असतानाही सेफ झोन अलर्ट चालतील. तुमचे लोकेशन फक्त याच फोनवर तपासले जाते.</string>
-    <string name="ub_zone_bg_dialog_body_settings">पुढच्या स्क्रीनवर “नेहमी परवानगी द्या” निवडा, म्हणजे Naari Shakti बंद असतानाही सेफ झोन अलर्ट चालतील. तुमचे लोकेशन फक्त याच फोनवर तपासले जाते.</string>
+    <string name="ub_zone_bg_dialog_body">“नेहमी परवानगी द्या” निवडा, म्हणजे Naari Kavach बंद असतानाही सेफ झोन अलर्ट चालतील. तुमचे लोकेशन फक्त याच फोनवर तपासले जाते.</string>
+    <string name="ub_zone_bg_dialog_body_settings">पुढच्या स्क्रीनवर “नेहमी परवानगी द्या” निवडा, म्हणजे Naari Kavach बंद असतानाही सेफ झोन अलर्ट चालतील. तुमचे लोकेशन फक्त याच फोनवर तपासले जाते.</string>
     <string name="ub_zone_bg_granted">आता सेफ झोन बॅकग्राउंडमध्येही अलर्ट देतील</string>
     <string name="ub_zone_bg_denied">बॅकग्राउंड लोकेशन बंद आहे. सेटिंग्ज → परवानग्या → लोकेशन मध्ये “नेहमी परवानगी द्या” निवडा.</string>
 

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="ns_accessibility_description">স্ক্ৰীণ অফ বা লক থাকিলেও ভলিউম বুটামৰ পেটাৰ্ণেৰে Naari Shakti-ক SOS আৰম্ভ কৰিবলৈ দিয়ে। Naari Shakti-এ আপোনাৰ স্ক্ৰীণত কি আছে নপঢ়ে।</string>
+    <string name="ns_accessibility_description">স্ক্ৰীণ অফ বা লক থাকিলেও ভলিউম বুটামৰ পেটাৰ্ণেৰে Naari Kavach-ক SOS আৰম্ভ কৰিবলৈ দিয়ে। Naari Kavach-এ আপোনাৰ স্ক্ৰীণত কি আছে নপঢ়ে।</string>
 
     <!-- Appearance & language -->
     <string name="core_back">উভতি যাওক</string>
     <string name="core_appearance_eyebrow">নিজৰ মতে সজাওক</string>
     <string name="core_appearance_title">ৰূপ আৰু ভাষা</string>
-    <string name="core_appearance_desc">Naari Shakti দেখাত কেনে হ’ব আৰু কোন ভাষাত কথা ক’ব, বাছি লওক। আপোনাৰ কণ্টেক্টলৈ পঠিওৱা সতৰ্কবাৰ্তাও এই ভাষাতে যাব।</string>
+    <string name="core_appearance_desc">Naari Kavach দেখাত কেনে হ’ব আৰু কোন ভাষাত কথা ক’ব, বাছি লওক। আপোনাৰ কণ্টেক্টলৈ পঠিওৱা সতৰ্কবাৰ্তাও এই ভাষাতে যাব।</string>
     <string name="core_section_theme">থীম</string>
     <string name="core_theme_dark">ডাৰ্ক</string>
     <string name="core_theme_light">লাইট</string>

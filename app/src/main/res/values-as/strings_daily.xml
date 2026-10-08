@@ -144,7 +144,7 @@
     <string name="dl_quiz_level_4">ৰক্ষক</string>
     <string name="dl_quiz_level_5">শক্তি</string>
     <string name="dl_quiz_share">মোৰ ষ্ট্ৰীক শ্বেয়াৰ কৰক</string>
-    <string name="dl_quiz_share_text">Naari Shakti-ৰ সুৰক্ষা কুইজত মোৰ একেৰাহে %1$s-ৰ ষ্ট্ৰীক আৰু %2$d পইণ্ট হৈছে। আপুনি নিজৰ অধিকাৰ আৰু হেল্পলাইন নম্বৰবোৰ জানেনে?</string>
+    <string name="dl_quiz_share_text">Naari Kavach-ৰ সুৰক্ষা কুইজত মোৰ একেৰাহে %1$s-ৰ ষ্ট্ৰীক আৰু %2$d পইণ্ট হৈছে। আপুনি নিজৰ অধিকাৰ আৰু হেল্পলাইন নম্বৰবোৰ জানেনে?</string>
     <string name="dl_quiz_practice">আৰু অনুশীলন কৰক</string>
     <string name="dl_quiz_reminder">দৈনিক কুইজৰ ৰিমাইণ্ডাৰ</string>
     <string name="dl_quiz_reminder_sub">তেতিয়ালৈকে খেলা নাই যদি সন্ধিয়া এটা নোটিফিকেশ্বন</string>
@@ -156,7 +156,7 @@
         <item quantity="one">%1$d দিনৰ ষ্ট্ৰীক বজাই ৰাখিবলৈ এতিয়াই খেলক।</item>
         <item quantity="other">%1$d দিনৰ ষ্ট্ৰীক বজাই ৰাখিবলৈ এতিয়াই খেলক।</item>
     </plurals>
-    <string name="dl_nudge_cycle_title">Naari Shakti-ৰ পৰা এটা ৰিমাইণ্ডাৰ</string>
+    <string name="dl_nudge_cycle_title">Naari Kavach-ৰ পৰা এটা ৰিমাইণ্ডাৰ</string>
     <string name="dl_nudge_cycle_text">চাবলৈ এপ খোলক।</string>
 
     <!--

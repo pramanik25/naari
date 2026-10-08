@@ -10,7 +10,7 @@
     <string name="nb_home_location_denied">ଆପଣଙ୍କ ଲୋକେସନ ବିନା ଆମେ ଆପଣଙ୍କୁ ପାଖ ଆଲର୍ଟ ସହିତ ମେଳାଇ ପାରିବୁ ନାହିଁ। ଆପଣ ପରେ କ୍ଲାଉଡ &amp; ଅଭିଭାବକ ରେ ଏହା ଚାଲୁ କରିପାରିବେ।</string>
 
     <string name="nb_mesh_title">ଇଣ୍ଟରନେଟ ବିନା ମଧ୍ୟ ସାହାଯ୍ୟ କରିବେ କି?</string>
-    <string name="nb_mesh_body">ଇଣ୍ଟରନେଟ ନଥିଲେ Naari Shakti ପାଖ ଫୋନଗୁଡ଼ିକ ମଧ୍ୟରେ Bluetooth ଦ୍ୱାରା SOS ଆଲର୍ଟ ପହଞ୍ଚାଇପାରେ। ଏଥିପାଇଁ ପାଖ ଡିଭାଇସର ଅନୁମତି ଦରକାର।</string>
+    <string name="nb_mesh_body">ଇଣ୍ଟରନେଟ ନଥିଲେ Naari Kavach ପାଖ ଫୋନଗୁଡ଼ିକ ମଧ୍ୟରେ Bluetooth ଦ୍ୱାରା SOS ଆଲର୍ଟ ପହଞ୍ଚାଇପାରେ। ଏଥିପାଇଁ ପାଖ ଡିଭାଇସର ଅନୁମତି ଦରକାର।</string>
     <string name="nb_mesh_yes">ଚାଲୁ କରନ୍ତୁ</string>
     <string name="nb_mesh_no">ନା, ଧନ୍ୟବାଦ</string>
     <string name="nb_mesh_on">ଅଫଲାଇନ Bluetooth ଆଲର୍ଟ ଚାଲୁ ଅଛି।</string>
@@ -31,12 +31,12 @@
     <string name="nb_wa_section">WhatsApp ଆଲର୍ଟ</string>
     <string name="nb_wa_title">WhatsApp ଆଲର୍ଟ</string>
     <string name="nb_wa_caption">ଆପଣଙ୍କ SOS, ଲାଇଭ ଲୋକେସନ ଓ ଫଟୋ ଆପଣଙ୍କ ସମ୍ପର୍କମାନଙ୍କୁ WhatsApp ରେ ପଠାନ୍ତୁ।</string>
-    <string name="nb_wa_explain">ଆଲର୍ଟଗୁଡ଼ିକ Naari Shakti ର WhatsApp ନମ୍ବରରୁ ଆସେ, ଆପଣଙ୍କ ନିଜ WhatsApp ରୁ ନୁହେଁ। ଆଲର୍ଟ ପାଇବା ପୂର୍ବରୁ ପ୍ରତ୍ୟେକ ସମ୍ପର୍କ ଆପଣଙ୍କ ନିମନ୍ତ୍ରଣରେ ଥରେ ଟ୍ୟାପ କରି ଯୋଗ ଦେବା ଦରକାର।</string>
+    <string name="nb_wa_explain">ଆଲର୍ଟଗୁଡ଼ିକ Naari Kavach ର WhatsApp ନମ୍ବରରୁ ଆସେ, ଆପଣଙ୍କ ନିଜ WhatsApp ରୁ ନୁହେଁ। ଆଲର୍ଟ ପାଇବା ପୂର୍ବରୁ ପ୍ରତ୍ୟେକ ସମ୍ପର୍କ ଆପଣଙ୍କ ନିମନ୍ତ୍ରଣରେ ଥରେ ଟ୍ୟାପ କରି ଯୋଗ ଦେବା ଦରକାର।</string>
     <string name="nb_wa_joined">ଯୋଗ ଦେଇଛନ୍ତି ✓</string>
     <string name="nb_wa_not_joined">ଏଯାଏଁ ଯୋଗ ଦେଇନାହାନ୍ତି</string>
     <string name="nb_wa_invite">ନିମନ୍ତ୍ରଣ</string>
     <string name="nb_wa_invite_cd">%1$s ଙ୍କୁ WhatsApp ରେ ନିମନ୍ତ୍ରଣ କରନ୍ତୁ</string>
-    <string name="nb_wa_invite_text">ନମସ୍କାର, ମୁଁ ଆପଣଙ୍କୁ Naari Shakti ରେ ମୋର ଜରୁରୀକାଳୀନ ସମ୍ପର୍କ ଭାବେ ଯୋଡ଼ିଛି। WhatsApp ରେ ମୋର SOS ଆଲର୍ଟ ପାଇବା ପାଇଁ ଏହି ଲିଙ୍କ ଖୋଲି ମେସେଜ ପଠାନ୍ତୁ: %1$s</string>
+    <string name="nb_wa_invite_text">ନମସ୍କାର, ମୁଁ ଆପଣଙ୍କୁ Naari Kavach ରେ ମୋର ଜରୁରୀକାଳୀନ ସମ୍ପର୍କ ଭାବେ ଯୋଡ଼ିଛି। WhatsApp ରେ ମୋର SOS ଆଲର୍ଟ ପାଇବା ପାଇଁ ଏହି ଲିଙ୍କ ଖୋଲି ମେସେଜ ପଠାନ୍ତୁ: %1$s</string>
     <string name="nb_wa_invite_chooser">ନିମନ୍ତ୍ରଣ ପଠାନ୍ତୁ</string>
     <plurals name="nb_wa_joined_count">
         <item quantity="one">%2$d ଜଣଙ୍କ ମଧ୍ୟରୁ %1$d ଜଣ ଯୋଗ ଦେଇଛନ୍ତି</item>

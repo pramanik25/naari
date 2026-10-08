@@ -2,9 +2,9 @@
 <resources>
 
     <!-- Silent SOS: low-key notification and covert screen -->
-    <string name="en_covert_title">Naari Shakti · இருப்பிடம் பகிரப்படுகிறது</string>
+    <string name="en_covert_title">Naari Kavach · இருப்பிடம் பகிரப்படுகிறது</string>
     <string name="en_covert_text">நிர்வகிக்கத் தட்டவும்</string>
-    <string name="en_covert_overline">Naari Shakti</string>
+    <string name="en_covert_overline">Naari Kavach</string>
     <string name="en_covert_heading">உங்கள் இருப்பிடம் பகிரப்படுகிறது</string>
     <string name="en_covert_body">நீங்கள் நம்பும் தொடர்புகளுக்கு உங்கள் நேரலை இருப்பிடம் சென்றுகொண்டிருக்கிறது.</string>
     <string name="en_covert_hold">பகிர்வை நிறுத்தப் பிடிக்கவும்</string>
@@ -13,8 +13,8 @@
 
     <!-- SMS -->
     <string name="en_sms_tracking_line">நேரலை இருப்பிடம் &amp; ஆதாரம்: %1$s</string>
-    <string name="en_sms_duress">Naari Shakti: %1$s எச்சரிக்கையை ரத்துசெய்ய வற்புறுத்தப்பட்டிருக்கலாம். இது இன்னும் செயலில் உள்ளதாகக் கருதுங்கள். நேரலை இருப்பிடம்: %2$s</string>
-    <string name="en_sms_duress_no_link">Naari Shakti: %1$s எச்சரிக்கையை ரத்துசெய்ய வற்புறுத்தப்பட்டிருக்கலாம். இது இன்னும் செயலில் உள்ளதாகக் கருதுங்கள். இருப்பிடம் பின்னர் வரும்.</string>
+    <string name="en_sms_duress">Naari Kavach: %1$s எச்சரிக்கையை ரத்துசெய்ய வற்புறுத்தப்பட்டிருக்கலாம். இது இன்னும் செயலில் உள்ளதாகக் கருதுங்கள். நேரலை இருப்பிடம்: %2$s</string>
+    <string name="en_sms_duress_no_link">Naari Kavach: %1$s எச்சரிக்கையை ரத்துசெய்ய வற்புறுத்தப்பட்டிருக்கலாம். இது இன்னும் செயலில் உள்ளதாகக் கருதுங்கள். இருப்பிடம் பின்னர் வரும்.</string>
     <string name="en_duress_name_fallback">உங்கள் தொடர்பு</string>
 
     <!-- Spoken alert (text to speech, loud) -->
@@ -66,7 +66,7 @@
     <string name="en_cancel">ரத்துசெய்</string>
     <string name="en_pin_lockout">பல முயற்சிகள். %1$d வி கழித்து முயலவும்.</string>
     <string name="en_pin_verify_title">உங்கள் PIN-ஐ உள்ளிடவும்</string>
-    <string name="en_pin_verify_subtitle">தொடர உங்கள் Naari Shakti PIN-ஐ உள்ளிடவும்.</string>
+    <string name="en_pin_verify_subtitle">தொடர உங்கள் Naari Kavach PIN-ஐ உள்ளிடவும்.</string>
     <string name="en_pin_current_title">தற்போதைய PIN-ஐ உள்ளிடவும்</string>
     <string name="en_pin_current_subtitle">PIN-ஐ மாற்றும் முன் இது நீங்கள்தான் என உறுதிசெய்யவும்.</string>
     <string name="en_pin_manage_title">ஆப்ஸ் PIN</string>

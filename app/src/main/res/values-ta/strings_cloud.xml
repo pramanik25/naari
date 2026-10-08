@@ -39,7 +39,7 @@
     <!-- ===================== Helper alert screen ===================== -->
     <string name="cl_helper_eyebrow">அருகில் SOS</string>
     <string name="cl_helper_title">அருகில் ஒருவருக்கு உதவி தேவை</string>
-    <string name="cl_helper_subtitle">உங்களுக்கு அருகிலுள்ள ஒரு Naari Shakti பயனர் SOS அனுப்பியுள்ளார்.</string>
+    <string name="cl_helper_subtitle">உங்களுக்கு அருகிலுள்ள ஒரு Naari Kavach பயனர் SOS அனுப்பியுள்ளார்.</string>
     <string name="cl_helper_distance_unknown">உங்களுக்கு அருகில்</string>
     <string name="cl_helper_safety">உங்களை ஆபத்தில் சிக்கவைக்காதீர்கள். முதலில் 112-ஐ அழைக்கவும்.</string>
     <string name="cl_helper_safety_detail">பொதுமக்கள் பார்வையில் இருங்கள், ஃபோனை உடன் வைத்திருங்கள், காவல்துறை வழிநடத்தட்டும்.</string>
@@ -63,7 +63,7 @@
     <string name="cl_settings_desc">SMS சென்றடையாவிட்டாலும், உங்கள் SOS நேரலை இருப்பிடம் மற்றும் ஆதாரங்களுடன் பாதுகாவலர்களுக்கு உடனே சேரும்.</string>
 
     <string name="cl_error_offline">நீங்கள் ஆஃப்லைனில் உள்ளீர்கள். இந்த ஃபோனில் சேமித்தவை காட்டப்படுகின்றன.</string>
-    <string name="cl_error_server">Naari Shakti சர்வரை அணுக முடியவில்லை.</string>
+    <string name="cl_error_server">Naari Kavach சர்வரை அணுக முடியவில்லை.</string>
     <string name="cl_error_generic">ஏதோ தவறு நடந்தது (பிழை %1$d). மீண்டும் முயலவும்.</string>
     <string name="cl_retry">மீண்டும் முயல்</string>
 
@@ -88,11 +88,11 @@
     </plurals>
 
     <string name="cl_section_code">உங்கள் பாதுகாவலர் குறியீடு</string>
-    <string name="cl_code_caption">நீங்கள் நம்பும் நபர்களுடன் இந்தக் குறியீட்டைப் பகிரவும். உங்கள் SOS எச்சரிக்கைகளைப் பெற, அவர்கள் இதைத் தங்கள் Naari Shakti ஆப்ஸில் உள்ளிட வேண்டும்.</string>
+    <string name="cl_code_caption">நீங்கள் நம்பும் நபர்களுடன் இந்தக் குறியீட்டைப் பகிரவும். உங்கள் SOS எச்சரிக்கைகளைப் பெற, அவர்கள் இதைத் தங்கள் Naari Kavach ஆப்ஸில் உள்ளிட வேண்டும்.</string>
     <string name="cl_copy">நகலெடு</string>
     <string name="cl_share">பகிர்</string>
     <string name="cl_copied">குறியீடு நகலெடுக்கப்பட்டது</string>
-    <string name="cl_share_text">Naari Shakti-ஐ நிறுவி, என் SOS எச்சரிக்கைகளைப் பெற என் குறியீடு %1$s-ஐ உள்ளிடவும்</string>
+    <string name="cl_share_text">Naari Kavach-ஐ நிறுவி, என் SOS எச்சரிக்கைகளைப் பெற என் குறியீடு %1$s-ஐ உள்ளிடவும்</string>
     <string name="cl_share_chooser">உங்கள் பாதுகாவலர் குறியீட்டைப் பகிரவும்</string>
 
     <string name="cl_section_link">ஒருவரின் பாதுகாவலர் ஆகுங்கள்</string>

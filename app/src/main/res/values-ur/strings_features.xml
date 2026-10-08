@@ -53,7 +53,7 @@
     <!-- ===================== Trigger phrase ===================== -->
     <string name="ub_trigger_eyebrow">آواز کا ٹرگر</string>
     <string name="ub_trigger_title">ٹرگر لفظ</string>
-    <string name="ub_trigger_desc">تحفظ آن ہو تو یہ لفظ بولیں، Naari Shakti آپ کا SOS بھیج دے گی۔</string>
+    <string name="ub_trigger_desc">تحفظ آن ہو تو یہ لفظ بولیں، Naari Kavach آپ کا SOS بھیج دے گی۔</string>
     <string name="ub_trigger_current_label">آپ کا ٹرگر لفظ</string>
     <string name="ub_trigger_status_active">ابھی سن رہی ہے · آف لائن کام کرتا ہے</string>
     <string name="ub_trigger_status_inactive">صرف تحفظ آن ہونے پر سنا جاتا ہے</string>
@@ -85,7 +85,7 @@
     <string name="ub_trigger_err_generic">ریکارڈنگ نہیں ہو سکی۔ دوبارہ کوشش کریں یا نیچے اپنا لفظ ٹائپ کریں۔</string>
     <string name="ub_trigger_mic_denied">ریکارڈ کرنے کے لیے مائیکروفون کی اجازت ضروری ہے۔ آپ لفظ ٹائپ بھی کر سکتی ہیں۔</string>
     <string name="ub_trigger_mic_rationale_title">مائیکروفون کی اجازت دیں</string>
-    <string name="ub_trigger_mic_rationale_body">Naari Shakti مائیکروفون صرف آپ کا لفظ ایک بار سن کر لکھنے کے لیے استعمال کرتی ہے۔ کوئی آڈیو محفوظ نہیں ہوتی۔</string>
+    <string name="ub_trigger_mic_rationale_body">Naari Kavach مائیکروفون صرف آپ کا لفظ ایک بار سن کر لکھنے کے لیے استعمال کرتی ہے۔ کوئی آڈیو محفوظ نہیں ہوتی۔</string>
     <string name="ub_trigger_unavailable_title">آواز کی ریکارڈنگ دستیاب نہیں</string>
     <string name="ub_trigger_unavailable_body">اس فون میں آواز کی پہچان کی سروس نہیں ہے۔ اس کی جگہ نیچے اپنا لفظ ٹائپ کریں۔</string>
     <string name="ub_trigger_warn_title">کم عام لفظ چنیں؟</string>
@@ -263,7 +263,7 @@
     <string name="ub_live_map_cd">آپ کی موجودہ لوکیشن دکھانے والا نقشہ</string>
     <string name="ub_live_status_idle">آپ کی لوکیشن</string>
     <string name="ub_live_status_live">لائیو · شیئر ہو رہی ہے</string>
-    <string name="ub_live_perm_title">Naari Shakti کے لیے لوکیشن بند ہے</string>
+    <string name="ub_live_perm_title">Naari Kavach کے لیے لوکیشن بند ہے</string>
     <string name="ub_live_perm_body">آپ کہاں ہیں یہ دیکھنے اور شیئر کرنے کے لیے لوکیشن کی اجازت دیں۔</string>
     <string name="ub_live_you_are_here">آپ یہاں ہیں</string>
     <string name="ub_live_finding">آپ کی لوکیشن تلاش ہو رہی ہے…</string>
@@ -327,11 +327,11 @@
     <string name="ub_zone_perm_title">درست لوکیشن ضروری ہے</string>
     <string name="ub_zone_perm_body">پن لگانے اور محفوظ زونز پر نظر رکھنے کے لیے درست لوکیشن کی اجازت دیں۔</string>
     <string name="ub_zone_bg_title">الرٹ صرف “ہمیشہ اجازت دیں” کے ساتھ کام کرتے ہیں</string>
-    <string name="ub_zone_bg_body">Naari Shakti بند ہونے پر محفوظ زونز پر نظر رکھنے کے لیے Android کو بیک گراؤنڈ لوکیشن چاہیے۔</string>
+    <string name="ub_zone_bg_body">Naari Kavach بند ہونے پر محفوظ زونز پر نظر رکھنے کے لیے Android کو بیک گراؤنڈ لوکیشن چاہیے۔</string>
     <string name="ub_zone_bg_fix">اجازت دیں</string>
     <string name="ub_zone_bg_dialog_title">لوکیشن کی ہمیشہ اجازت دیں</string>
-    <string name="ub_zone_bg_dialog_body">“ہمیشہ اجازت دیں” چنیں تاکہ Naari Shakti بند ہونے پر بھی محفوظ زون الرٹ کام کریں۔ آپ کی لوکیشن صرف اسی فون پر جانچی جاتی ہے۔</string>
-    <string name="ub_zone_bg_dialog_body_settings">اگلی اسکرین پر “ہمیشہ اجازت دیں” چنیں تاکہ Naari Shakti بند ہونے پر بھی محفوظ زون الرٹ کام کریں۔ آپ کی لوکیشن صرف اسی فون پر جانچی جاتی ہے۔</string>
+    <string name="ub_zone_bg_dialog_body">“ہمیشہ اجازت دیں” چنیں تاکہ Naari Kavach بند ہونے پر بھی محفوظ زون الرٹ کام کریں۔ آپ کی لوکیشن صرف اسی فون پر جانچی جاتی ہے۔</string>
+    <string name="ub_zone_bg_dialog_body_settings">اگلی اسکرین پر “ہمیشہ اجازت دیں” چنیں تاکہ Naari Kavach بند ہونے پر بھی محفوظ زون الرٹ کام کریں۔ آپ کی لوکیشن صرف اسی فون پر جانچی جاتی ہے۔</string>
     <string name="ub_zone_bg_granted">محفوظ زون اب بیک گراؤنڈ میں الرٹ دیں گے</string>
     <string name="ub_zone_bg_denied">بیک گراؤنڈ لوکیشن بند ہے۔ سیٹنگز ← اجازتیں ← لوکیشن میں “ہمیشہ اجازت دیں” آن کریں۔</string>
 

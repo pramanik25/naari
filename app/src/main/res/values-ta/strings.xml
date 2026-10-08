@@ -46,7 +46,7 @@
     <!-- ===================== Onboarding ===================== -->
     <string name="onb_overline">தொடங்கும் முன்</string>
     <string name="onb_title">உங்கள் பாதுகாப்பு வலையை அமைப்போம்</string>
-    <string name="onb_body">உங்களைப் பாதுகாக்க Naari Shakti-க்குச் சில அனுமதிகள் தேவை. கட்டுப்பாடு உங்களிடமே இருக்கும்; அமைப்புகளில் எப்போது வேண்டுமானாலும் மாற்றலாம்.</string>
+    <string name="onb_body">உங்களைப் பாதுகாக்க Naari Kavach-க்குச் சில அனுமதிகள் தேவை. கட்டுப்பாடு உங்களிடமே இருக்கும்; அமைப்புகளில் எப்போது வேண்டுமானாலும் மாற்றலாம்.</string>
     <string name="onb_allow">அனுமதி வழங்கு</string>
     <string name="onb_done">எல்லாம் தயார். நீங்கள் தயாரானதும் பாதுகாப்பை இயக்கவும்.</string>
     <string name="onb_partial">சில அனுமதிகள் தவிர்க்கப்பட்டன. அவற்றை அமைப்புகளில் வழங்கலாம்.</string>
@@ -215,7 +215,7 @@
     <!-- ===================== Profile ===================== -->
     <string name="profile_overline">உங்கள் சுயவிவரம்</string>
     <string name="profile_title">உங்களைப் பற்றி</string>
-    <string name="profile_body">உங்கள் தொடர்புகளும் மீட்புப் பணியாளர்களும் உங்களை அடையாளம் காண உதவும். உங்கள் பெயரும் மொபைல் எண்ணும் உங்கள் Naari Shakti கணக்கிலும் சேமிக்கப்படும்.</string>
+    <string name="profile_body">உங்கள் தொடர்புகளும் மீட்புப் பணியாளர்களும் உங்களை அடையாளம் காண உதவும். உங்கள் பெயரும் மொபைல் எண்ணும் உங்கள் Naari Kavach கணக்கிலும் சேமிக்கப்படும்.</string>
     <string name="profile_add_photo">புகைப்படம் சேர்க்கத் தட்டவும்</string>
     <string name="profile_change_photo">புகைப்படத்தை மாற்றத் தட்டவும்</string>
     <string name="cd_profile_photo">சுயவிவரப் புகைப்படம். மாற்ற இருமுறை தட்டவும்.</string>
@@ -244,7 +244,7 @@
     <string name="vault_title">ஆதாரப் பெட்டகம்</string>
     <string name="vault_body">SOS-இன்போது தானாக எடுத்த புகைப்படங்கள், புதியவை முதலில்.</string>
     <string name="vault_empty_title">இன்னும் ஆதாரம் எதுவும் இல்லை</string>
-    <string name="vault_empty_body">SOS தொடங்கும்போது, Naari Shakti முன் மற்றும் பின் கேமராக்களில் அமைதியாகப் புகைப்படங்கள் எடுக்கும். அவை இங்கே தோன்றும்.</string>
+    <string name="vault_empty_body">SOS தொடங்கும்போது, Naari Kavach முன் மற்றும் பின் கேமராக்களில் அமைதியாகப் புகைப்படங்கள் எடுக்கும். அவை இங்கே தோன்றும்.</string>
     <string name="vault_front">முன் கேமரா</string>
     <string name="vault_back">பின் கேமரா</string>
     <string name="vault_photo">புகைப்படம்</string>

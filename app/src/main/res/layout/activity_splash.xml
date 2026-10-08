@@ -84,12 +84,9 @@
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
-        <include layout="@layout/sh_made_by" />
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
             android:text="@string/splash_footer"
             android:textAppearance="@style/Ns.Text.Caption" />
     </LinearLayout>

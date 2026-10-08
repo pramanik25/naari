@@ -144,7 +144,7 @@
     <string name="dl_quiz_level_4">பாதுகாவலர்</string>
     <string name="dl_quiz_level_5">சக்தி</string>
     <string name="dl_quiz_share">என் தொடர்ச்சியைப் பகிர்</string>
-    <string name="dl_quiz_share_text">Naari Shakti-இல் பாதுகாப்பு வினாடி வினாவை %1$s தொடர்ந்து விளையாடி %2$d புள்ளிகள் பெற்றுள்ளேன். உங்கள் உரிமைகளும் உதவி எண்களும் உங்களுக்குத் தெரியுமா?</string>
+    <string name="dl_quiz_share_text">Naari Kavach-இல் பாதுகாப்பு வினாடி வினாவை %1$s தொடர்ந்து விளையாடி %2$d புள்ளிகள் பெற்றுள்ளேன். உங்கள் உரிமைகளும் உதவி எண்களும் உங்களுக்குத் தெரியுமா?</string>
     <string name="dl_quiz_practice">மேலும் பயிற்சி செய்</string>
     <string name="dl_quiz_reminder">தினசரி வினாடி வினா நினைவூட்டல்</string>
     <string name="dl_quiz_reminder_sub">நீங்கள் இன்னும் விளையாடவில்லை என்றால் மாலையில் ஒரே ஒரு அறிவிப்பு</string>
@@ -156,7 +156,7 @@
         <item quantity="one">உங்கள் %1$d நாள் தொடர்ச்சியைத் தக்கவைக்க இப்போதே விளையாடுங்கள்.</item>
         <item quantity="other">உங்கள் %1$d நாள் தொடர்ச்சியைத் தக்கவைக்க இப்போதே விளையாடுங்கள்.</item>
     </plurals>
-    <string name="dl_nudge_cycle_title">Naari Shakti-இலிருந்து ஒரு நினைவூட்டல்</string>
+    <string name="dl_nudge_cycle_title">Naari Kavach-இலிருந்து ஒரு நினைவூட்டல்</string>
     <string name="dl_nudge_cycle_text">பார்க்க ஆப்ஸைத் திறக்கவும்.</string>
 
     <!--

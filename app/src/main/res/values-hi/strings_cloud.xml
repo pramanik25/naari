@@ -40,7 +40,7 @@
     <!-- ===================== Helper alert screen ===================== -->
     <string name="cl_helper_eyebrow">आस-पास SOS</string>
     <string name="cl_helper_title">आस-पास किसी को मदद चाहिए</string>
-    <string name="cl_helper_subtitle">आपके पास की एक Naari Shakti यूज़र ने SOS चालू किया है।</string>
+    <string name="cl_helper_subtitle">आपके पास की एक Naari Kavach यूज़र ने SOS चालू किया है।</string>
     <string name="cl_helper_distance_unknown">आपके पास</string>
     <string name="cl_helper_safety">खुद को खतरे में न डालें। पहले 112 पर कॉल करें।</string>
     <string name="cl_helper_safety_detail">लोगों के बीच रहें, फ़ोन साथ रखें और पुलिस को आगे रहने दें।</string>
@@ -64,7 +64,7 @@
     <string name="cl_settings_desc">SMS न पहुँचे तब भी, गार्डियन को आपका SOS आपकी लाइव लोकेशन और सबूत के साथ तुरंत मिलता है।</string>
 
     <string name="cl_error_offline">आप ऑफ़लाइन हैं। इस फ़ोन पर सेव जानकारी दिखा रहे हैं।</string>
-    <string name="cl_error_server">Naari Shakti सर्वर से संपर्क नहीं हो पाया।</string>
+    <string name="cl_error_server">Naari Kavach सर्वर से संपर्क नहीं हो पाया।</string>
     <string name="cl_error_generic">कुछ गड़बड़ हो गई (एरर %1$d)। कृपया फिर से कोशिश करें।</string>
     <string name="cl_retry">फिर कोशिश करें</string>
 
@@ -89,11 +89,11 @@
     </plurals>
 
     <string name="cl_section_code">आपका गार्डियन कोड</string>
-    <string name="cl_code_caption">यह कोड उन लोगों के साथ शेयर करें जिन पर आपको भरोसा है। वे अपने Naari Shakti ऐप में इसे डालकर आपके SOS अलर्ट पाएँगे।</string>
+    <string name="cl_code_caption">यह कोड उन लोगों के साथ शेयर करें जिन पर आपको भरोसा है। वे अपने Naari Kavach ऐप में इसे डालकर आपके SOS अलर्ट पाएँगे।</string>
     <string name="cl_copy">कॉपी करें</string>
     <string name="cl_share">शेयर करें</string>
     <string name="cl_copied">कोड कॉपी हो गया</string>
-    <string name="cl_share_text">Naari Shakti इंस्टॉल करें और मेरे SOS अलर्ट पाने के लिए मेरा कोड %1$s डालें</string>
+    <string name="cl_share_text">Naari Kavach इंस्टॉल करें और मेरे SOS अलर्ट पाने के लिए मेरा कोड %1$s डालें</string>
     <string name="cl_share_chooser">अपना गार्डियन कोड शेयर करें</string>
 
     <string name="cl_section_link">किसी के गार्डियन बनें</string>

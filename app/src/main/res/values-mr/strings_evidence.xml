@@ -75,7 +75,7 @@
     <string name="ev_export_failed">पुरावा पॅकेज तयार करता आले नाही.</string>
     <string name="ev_export_empty">या घटनेत एक्सपोर्ट करण्यासाठी एकही फाइल नाही.</string>
     <string name="ev_export_chooser">पुरावा पॅकेज शेअर करा</string>
-    <string name="ev_export_subject">Naari Shakti पुरावा पॅकेज</string>
+    <string name="ev_export_subject">Naari Kavach पुरावा पॅकेज</string>
     <string name="ev_kind_photo">फोटो</string>
     <string name="ev_kind_audio">ऑडिओ क्लिप</string>
     <string name="ev_kind_video">व्हिडिओ</string>

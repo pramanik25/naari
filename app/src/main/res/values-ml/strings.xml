@@ -46,7 +46,7 @@
     <!-- ===================== Onboarding ===================== -->
     <string name="onb_overline">തുടങ്ങും മുമ്പ്</string>
     <string name="onb_title">നിങ്ങളുടെ സുരക്ഷാ വലയം ഒരുക്കാം</string>
-    <string name="onb_body">നിങ്ങളെ സംരക്ഷിക്കാൻ Naari Shakti-ക്ക് ചില അനുമതികൾ വേണം. നിയന്ത്രണം നിങ്ങൾക്കു തന്നെ; ക്രമീകരണത്തിൽ എപ്പോൾ വേണമെങ്കിലും മാറ്റാം.</string>
+    <string name="onb_body">നിങ്ങളെ സംരക്ഷിക്കാൻ Naari Kavach-ക്ക് ചില അനുമതികൾ വേണം. നിയന്ത്രണം നിങ്ങൾക്കു തന്നെ; ക്രമീകരണത്തിൽ എപ്പോൾ വേണമെങ്കിലും മാറ്റാം.</string>
     <string name="onb_allow">ആക്സസ് അനുവദിക്കുക</string>
     <string name="onb_done">എല്ലാം തയ്യാർ. നിങ്ങൾ തയ്യാറാകുമ്പോൾ സംരക്ഷണം ഓണാക്കുക.</string>
     <string name="onb_partial">ചില അനുമതികൾ ഒഴിവാക്കി. അവ ക്രമീകരണത്തിൽ നൽകാം.</string>
@@ -215,7 +215,7 @@
     <!-- ===================== Profile ===================== -->
     <string name="profile_overline">നിങ്ങളുടെ പ്രൊഫൈൽ</string>
     <string name="profile_title">നിങ്ങളെക്കുറിച്ച്</string>
-    <string name="profile_body">നിങ്ങളുടെ കോൺടാക്റ്റുകൾക്കും രക്ഷാപ്രവർത്തകർക്കും നിങ്ങളെ തിരിച്ചറിയാൻ സഹായിക്കും. നിങ്ങളുടെ പേരും മൊബൈൽ നമ്പറും നിങ്ങളുടെ Naari Shakti അക്കൗണ്ടിലും സൂക്ഷിക്കും.</string>
+    <string name="profile_body">നിങ്ങളുടെ കോൺടാക്റ്റുകൾക്കും രക്ഷാപ്രവർത്തകർക്കും നിങ്ങളെ തിരിച്ചറിയാൻ സഹായിക്കും. നിങ്ങളുടെ പേരും മൊബൈൽ നമ്പറും നിങ്ങളുടെ Naari Kavach അക്കൗണ്ടിലും സൂക്ഷിക്കും.</string>
     <string name="profile_add_photo">ഫോട്ടോ ചേർക്കാൻ ടാപ്പ് ചെയ്യുക</string>
     <string name="profile_change_photo">ഫോട്ടോ മാറ്റാൻ ടാപ്പ് ചെയ്യുക</string>
     <string name="cd_profile_photo">പ്രൊഫൈൽ ഫോട്ടോ. മാറ്റാൻ രണ്ടുതവണ ടാപ്പ് ചെയ്യുക.</string>
@@ -244,7 +244,7 @@
     <string name="vault_title">തെളിവ് ശേഖരം</string>
     <string name="vault_body">SOS സമയത്ത് സ്വയം എടുത്ത ഫോട്ടോകൾ, പുതിയവ ആദ്യം.</string>
     <string name="vault_empty_title">ഇതുവരെ തെളിവുകളൊന്നുമില്ല</string>
-    <string name="vault_empty_body">SOS തുടങ്ങുമ്പോൾ Naari Shakti മുന്നിലെയും പിന്നിലെയും ക്യാമറകളിൽ നിശ്ശബ്ദമായി ഫോട്ടോ എടുക്കും. അവ ഇവിടെ കാണാം.</string>
+    <string name="vault_empty_body">SOS തുടങ്ങുമ്പോൾ Naari Kavach മുന്നിലെയും പിന്നിലെയും ക്യാമറകളിൽ നിശ്ശബ്ദമായി ഫോട്ടോ എടുക്കും. അവ ഇവിടെ കാണാം.</string>
     <string name="vault_front">മുൻ ക്യാമറ</string>
     <string name="vault_back">പിൻ ക്യാമറ</string>
     <string name="vault_photo">ഫോട്ടോ</string>

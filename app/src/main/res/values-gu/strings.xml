@@ -46,7 +46,7 @@
     <!-- ===================== Onboarding ===================== -->
     <string name="onb_overline">શરૂ કરતાં પહેલાં</string>
     <string name="onb_title">ચાલો, તમારી સુરક્ષા તૈયાર કરીએ</string>
-    <string name="onb_body">તમારી સુરક્ષા માટે Naari Shakti ને થોડી પરવાનગીઓ જોઈએ છે. નિયંત્રણ તમારા હાથમાં જ રહેશે, અને તમે સેટિંગ્સમાં ગમે ત્યારે તેને બદલી શકો છો.</string>
+    <string name="onb_body">તમારી સુરક્ષા માટે Naari Kavach ને થોડી પરવાનગીઓ જોઈએ છે. નિયંત્રણ તમારા હાથમાં જ રહેશે, અને તમે સેટિંગ્સમાં ગમે ત્યારે તેને બદલી શકો છો.</string>
     <string name="onb_allow">ઍક્સેસ આપો</string>
     <string name="onb_done">બધું તૈયાર છે. જ્યારે તૈયાર હો ત્યારે સુરક્ષા ચાલુ કરો.</string>
     <string name="onb_partial">અમુક પરવાનગીઓ બાકી રહી ગઈ. તમે તેને સેટિંગ્સમાં આપી શકો છો.</string>
@@ -215,7 +215,7 @@
     <!-- ===================== Profile ===================== -->
     <string name="profile_overline">તમારી પ્રોફાઇલ</string>
     <string name="profile_title">તમારા વિશે</string>
-    <string name="profile_body">તમારા સંપર્કો અને મદદ કરનારાઓને તમને ઓળખવામાં મદદ કરે છે. તમારું નામ અને મોબાઇલ નંબર તમારા Naari Shakti એકાઉન્ટમાં પણ સેવ થાય છે.</string>
+    <string name="profile_body">તમારા સંપર્કો અને મદદ કરનારાઓને તમને ઓળખવામાં મદદ કરે છે. તમારું નામ અને મોબાઇલ નંબર તમારા Naari Kavach એકાઉન્ટમાં પણ સેવ થાય છે.</string>
     <string name="profile_add_photo">ફોટો ઉમેરવા ટૅપ કરો</string>
     <string name="profile_change_photo">ફોટો બદલવા ટૅપ કરો</string>
     <string name="cd_profile_photo">પ્રોફાઇલ ફોટો. બદલવા બે વાર ટૅપ કરો.</string>
@@ -244,7 +244,7 @@
     <string name="vault_title">પુરાવા સંગ્રહ</string>
     <string name="vault_body">SOS વખતે આપમેળે લીધેલા ફોટા, નવા પહેલાં.</string>
     <string name="vault_empty_title">હજી કોઈ પુરાવા નથી</string>
-    <string name="vault_empty_body">SOS શરૂ થાય ત્યારે Naari Shakti આગળ અને પાછળના કૅમેરાથી ચુપચાપ ફોટા લે છે. તે અહીં દેખાશે.</string>
+    <string name="vault_empty_body">SOS શરૂ થાય ત્યારે Naari Kavach આગળ અને પાછળના કૅમેરાથી ચુપચાપ ફોટા લે છે. તે અહીં દેખાશે.</string>
     <string name="vault_front">આગળનો કૅમેરા</string>
     <string name="vault_back">પાછળનો કૅમેરા</string>
     <string name="vault_photo">ફોટો</string>

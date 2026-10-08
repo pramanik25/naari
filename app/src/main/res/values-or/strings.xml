@@ -46,7 +46,7 @@
     <!-- ===================== Onboarding ===================== -->
     <string name="onb_overline">ଆରମ୍ଭ କରିବା ପୂର୍ବରୁ</string>
     <string name="onb_title">ଆସନ୍ତୁ, ଆପଣଙ୍କ ସୁରକ୍ଷା କବଚ ପ୍ରସ୍ତୁତ କରିବା</string>
-    <string name="onb_body">ଆପଣଙ୍କୁ ସୁରକ୍ଷା ଦେବା ପାଇଁ Naari Shakti କୁ କିଛି ଅନୁମତି ଦରକାର। ନିୟନ୍ତ୍ରଣ ଆପଣଙ୍କ ହାତରେ ରହିବ, ଏବଂ ଆପଣ ଯେକୌଣସି ସମୟରେ ସେଟିଂସରେ ଏହାକୁ ବଦଳାଇପାରିବେ।</string>
+    <string name="onb_body">ଆପଣଙ୍କୁ ସୁରକ୍ଷା ଦେବା ପାଇଁ Naari Kavach କୁ କିଛି ଅନୁମତି ଦରକାର। ନିୟନ୍ତ୍ରଣ ଆପଣଙ୍କ ହାତରେ ରହିବ, ଏବଂ ଆପଣ ଯେକୌଣସି ସମୟରେ ସେଟିଂସରେ ଏହାକୁ ବଦଳାଇପାରିବେ।</string>
     <string name="onb_allow">ଅନୁମତି ଦିଅନ୍ତୁ</string>
     <string name="onb_done">ସବୁ ପ୍ରସ୍ତୁତ। ଆପଣ ଯେତେବେଳେ ଚାହିଁବେ ସୁରକ୍ଷା ଚାଲୁ କରନ୍ତୁ।</string>
     <string name="onb_partial">କିଛି ଅନୁମତି ଛାଡ଼ି ଦିଆଗଲା। ଆପଣ ସେଗୁଡ଼ିକ ସେଟିଂସରେ ଦେଇପାରିବେ।</string>
@@ -215,7 +215,7 @@
     <!-- ===================== Profile ===================== -->
     <string name="profile_overline">ଆପଣଙ୍କ ପ୍ରୋଫାଇଲ</string>
     <string name="profile_title">ଆପଣଙ୍କ ବିଷୟରେ</string>
-    <string name="profile_body">ଆପଣଙ୍କ କଣ୍ଟାକ୍ଟ ଓ ଉଦ୍ଧାରକାରୀମାନଙ୍କୁ ଆପଣଙ୍କୁ ଚିହ୍ନିବାରେ ସାହାଯ୍ୟ କରେ। ଆପଣଙ୍କ ନାମ ଓ ମୋବାଇଲ ନମ୍ବର ଆପଣଙ୍କ Naari Shakti ଆକାଉଣ୍ଟରେ ମଧ୍ୟ ସେଭ ହୁଏ।</string>
+    <string name="profile_body">ଆପଣଙ୍କ କଣ୍ଟାକ୍ଟ ଓ ଉଦ୍ଧାରକାରୀମାନଙ୍କୁ ଆପଣଙ୍କୁ ଚିହ୍ନିବାରେ ସାହାଯ୍ୟ କରେ। ଆପଣଙ୍କ ନାମ ଓ ମୋବାଇଲ ନମ୍ବର ଆପଣଙ୍କ Naari Kavach ଆକାଉଣ୍ଟରେ ମଧ୍ୟ ସେଭ ହୁଏ।</string>
     <string name="profile_add_photo">ଫଟୋ ଯୋଡ଼ିବାକୁ ଟ୍ୟାପ କରନ୍ତୁ</string>
     <string name="profile_change_photo">ଫଟୋ ବଦଳାଇବାକୁ ଟ୍ୟାପ କରନ୍ତୁ</string>
     <string name="cd_profile_photo">ପ୍ରୋଫାଇଲ ଫଟୋ। ବଦଳାଇବାକୁ ଦୁଇଥର ଟ୍ୟାପ କରନ୍ତୁ।</string>
@@ -244,7 +244,7 @@
     <string name="vault_title">ପ୍ରମାଣ ଭଣ୍ଡାର</string>
     <string name="vault_body">SOS ସମୟରେ ନିଜେ ନିଆଯାଇଥିବା ଫଟୋ, ନୂଆଟି ପ୍ରଥମେ।</string>
     <string name="vault_empty_title">ଏପର୍ଯ୍ୟନ୍ତ କୌଣସି ପ୍ରମାଣ ନାହିଁ</string>
-    <string name="vault_empty_body">SOS ଆରମ୍ଭ ହେଲେ, Naari Shakti ଆଗ ଓ ପଛ କ୍ୟାମେରାରେ ଚୁପଚାପ ଫଟୋ ନିଏ। ସେଗୁଡ଼ିକ ଏଠାରେ ଦେଖାଯିବ।</string>
+    <string name="vault_empty_body">SOS ଆରମ୍ଭ ହେଲେ, Naari Kavach ଆଗ ଓ ପଛ କ୍ୟାମେରାରେ ଚୁପଚାପ ଫଟୋ ନିଏ। ସେଗୁଡ଼ିକ ଏଠାରେ ଦେଖାଯିବ।</string>
     <string name="vault_front">ଆଗ କ୍ୟାମେରା</string>
     <string name="vault_back">ପଛ କ୍ୟାମେରା</string>
     <string name="vault_photo">ଫଟୋ</string>

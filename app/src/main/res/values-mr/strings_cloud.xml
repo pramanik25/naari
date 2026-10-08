@@ -40,7 +40,7 @@
     <!-- ===================== Helper alert screen ===================== -->
     <string name="cl_helper_eyebrow">जवळ SOS</string>
     <string name="cl_helper_title">जवळ कोणाला तरी मदत हवी आहे</string>
-    <string name="cl_helper_subtitle">तुमच्या जवळच्या एका Naari Shakti युजरने SOS सुरू केला आहे.</string>
+    <string name="cl_helper_subtitle">तुमच्या जवळच्या एका Naari Kavach युजरने SOS सुरू केला आहे.</string>
     <string name="cl_helper_distance_unknown">तुमच्या जवळ</string>
     <string name="cl_helper_safety">स्वतःला धोक्यात घालू नका. आधी 112 वर कॉल करा.</string>
     <string name="cl_helper_safety_detail">लोकांच्या नजरेसमोर राहा, फोन सोबत ठेवा आणि पोलिसांना पुढाकार घेऊ द्या.</string>
@@ -64,7 +64,7 @@
     <string name="cl_settings_desc">SMS पोहोचला नाही तरीही, गार्डियनना तुमचा SOS तुमच्या लाइव्ह लोकेशन आणि पुराव्यांसह लगेच मिळतो.</string>
 
     <string name="cl_error_offline">तुम्ही ऑफलाइन आहात. या फोनवर सेव्ह असलेली माहिती दाखवत आहोत.</string>
-    <string name="cl_error_server">Naari Shakti सर्व्हरशी संपर्क झाला नाही.</string>
+    <string name="cl_error_server">Naari Kavach सर्व्हरशी संपर्क झाला नाही.</string>
     <string name="cl_error_generic">काहीतरी चुकले (एरर %1$d). कृपया पुन्हा प्रयत्न करा.</string>
     <string name="cl_retry">पुन्हा प्रयत्न करा</string>
 
@@ -89,11 +89,11 @@
     </plurals>
 
     <string name="cl_section_code">तुमचा गार्डियन कोड</string>
-    <string name="cl_code_caption">हा कोड तुमच्या विश्वासातील लोकांसोबत शेअर करा. ते त्यांच्या Naari Shakti ॲपमध्ये हा कोड टाकून तुमचे SOS अलर्ट मिळवतील.</string>
+    <string name="cl_code_caption">हा कोड तुमच्या विश्वासातील लोकांसोबत शेअर करा. ते त्यांच्या Naari Kavach ॲपमध्ये हा कोड टाकून तुमचे SOS अलर्ट मिळवतील.</string>
     <string name="cl_copy">कॉपी करा</string>
     <string name="cl_share">शेअर करा</string>
     <string name="cl_copied">कोड कॉपी झाला</string>
-    <string name="cl_share_text">Naari Shakti इन्स्टॉल करा आणि माझे SOS अलर्ट मिळवण्यासाठी माझा कोड %1$s टाका</string>
+    <string name="cl_share_text">Naari Kavach इन्स्टॉल करा आणि माझे SOS अलर्ट मिळवण्यासाठी माझा कोड %1$s टाका</string>
     <string name="cl_share_chooser">तुमचा गार्डियन कोड शेअर करा</string>
 
     <string name="cl_section_link">कोणाचे तरी गार्डियन व्हा</string>

@@ -4,9 +4,9 @@
 <resources>
 
     <!-- Silent SOS: low-key notification and covert screen -->
-    <string name="en_covert_title">Naari Shakti · लोकेशन शेअर होत आहे</string>
+    <string name="en_covert_title">Naari Kavach · लोकेशन शेअर होत आहे</string>
     <string name="en_covert_text">व्यवस्थापित करण्यासाठी टॅप करा</string>
-    <string name="en_covert_overline">Naari Shakti</string>
+    <string name="en_covert_overline">Naari Kavach</string>
     <string name="en_covert_heading">तुमचे लोकेशन शेअर होत आहे</string>
     <string name="en_covert_body">तुमच्या विश्वासातील कॉन्टॅक्टना तुमचे लाइव्ह लोकेशन मिळत आहे.</string>
     <string name="en_covert_hold">शेअरिंग थांबवण्यासाठी दाबून ठेवा</string>
@@ -15,8 +15,8 @@
 
     <!-- SMS -->
     <string name="en_sms_tracking_line">लाइव्ह लोकेशन आणि पुरावे: %1$s</string>
-    <string name="en_sms_duress">Naari Shakti: %1$s कदाचित दबावाखाली आहे; अलर्ट जबरदस्तीने रद्द करायला लावला असावा. अलर्ट अजून चालू आहे असे समजा. लाइव्ह लोकेशन: %2$s</string>
-    <string name="en_sms_duress_no_link">Naari Shakti: %1$s कदाचित दबावाखाली आहे; अलर्ट जबरदस्तीने रद्द करायला लावला असावा. अलर्ट अजून चालू आहे असे समजा. लोकेशन नंतर येईल.</string>
+    <string name="en_sms_duress">Naari Kavach: %1$s कदाचित दबावाखाली आहे; अलर्ट जबरदस्तीने रद्द करायला लावला असावा. अलर्ट अजून चालू आहे असे समजा. लाइव्ह लोकेशन: %2$s</string>
+    <string name="en_sms_duress_no_link">Naari Kavach: %1$s कदाचित दबावाखाली आहे; अलर्ट जबरदस्तीने रद्द करायला लावला असावा. अलर्ट अजून चालू आहे असे समजा. लोकेशन नंतर येईल.</string>
     <string name="en_duress_name_fallback">तुमची जवळची व्यक्ती</string>
 
     <!-- Spoken alert (text to speech, loud) -->
@@ -68,7 +68,7 @@
     <string name="en_cancel">रद्द करा</string>
     <string name="en_pin_lockout">खूप जास्त प्रयत्न. %1$d सेकंदांनी पुन्हा प्रयत्न करा.</string>
     <string name="en_pin_verify_title">तुमचा PIN टाका</string>
-    <string name="en_pin_verify_subtitle">पुढे जाण्यासाठी तुमचा Naari Shakti PIN टाका.</string>
+    <string name="en_pin_verify_subtitle">पुढे जाण्यासाठी तुमचा Naari Kavach PIN टाका.</string>
     <string name="en_pin_current_title">सध्याचा PIN टाका</string>
     <string name="en_pin_current_subtitle">PIN बदलण्यापूर्वी हे तुम्हीच आहात याची खात्री करा.</string>
     <string name="en_pin_manage_title">ॲप PIN</string>

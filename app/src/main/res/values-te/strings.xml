@@ -46,7 +46,7 @@
     <!-- ===================== Onboarding ===================== -->
     <string name="onb_overline">మొదలుపెట్టే ముందు</string>
     <string name="onb_title">మీ భద్రతా వలయాన్ని సిద్ధం చేద్దాం</string>
-    <string name="onb_body">మిమ్మల్ని రక్షించడానికి Naari Shakti కి కొన్ని అనుమతులు కావాలి. నియంత్రణ మీ చేతిలోనే ఉంటుంది, సెట్టింగ్‌లలో ఎప్పుడైనా మార్చుకోవచ్చు.</string>
+    <string name="onb_body">మిమ్మల్ని రక్షించడానికి Naari Kavach కి కొన్ని అనుమతులు కావాలి. నియంత్రణ మీ చేతిలోనే ఉంటుంది, సెట్టింగ్‌లలో ఎప్పుడైనా మార్చుకోవచ్చు.</string>
     <string name="onb_allow">యాక్సెస్ ఇవ్వండి</string>
     <string name="onb_done">అంతా సిద్ధం. మీకు వీలైనప్పుడు రక్షణను ఆన్ చేయండి.</string>
     <string name="onb_partial">కొన్ని అనుమతులు దాటవేయబడ్డాయి. వాటిని సెట్టింగ్‌లలో ఇవ్వవచ్చు.</string>
@@ -215,7 +215,7 @@
     <!-- ===================== Profile ===================== -->
     <string name="profile_overline">మీ ప్రొఫైల్</string>
     <string name="profile_title">మీ గురించి</string>
-    <string name="profile_body">మీ కాంటాక్ట్‌లు, సహాయం చేసేవారు మిమ్మల్ని గుర్తించడానికి ఉపయోగపడుతుంది. మీ పేరు, మొబైల్ నంబర్ మీ Naari Shakti ఖాతాలో కూడా సేవ్ అవుతాయి.</string>
+    <string name="profile_body">మీ కాంటాక్ట్‌లు, సహాయం చేసేవారు మిమ్మల్ని గుర్తించడానికి ఉపయోగపడుతుంది. మీ పేరు, మొబైల్ నంబర్ మీ Naari Kavach ఖాతాలో కూడా సేవ్ అవుతాయి.</string>
     <string name="profile_add_photo">ఫోటో జోడించడానికి నొక్కండి</string>
     <string name="profile_change_photo">ఫోటో మార్చడానికి నొక్కండి</string>
     <string name="cd_profile_photo">ప్రొఫైల్ ఫోటో. మార్చడానికి రెండుసార్లు నొక్కండి.</string>
@@ -244,7 +244,7 @@
     <string name="vault_title">సాక్ష్యాల వాల్ట్</string>
     <string name="vault_body">SOS సమయంలో ఆటోమేటిక్‌గా తీసిన ఫోటోలు, కొత్తవి ముందు.</string>
     <string name="vault_empty_title">ఇంకా సాక్ష్యం ఏదీ లేదు</string>
-    <string name="vault_empty_body">SOS మొదలైనప్పుడు, Naari Shakti ముందు, వెనుక కెమెరాలతో నిశ్శబ్దంగా ఫోటోలు తీస్తుంది. అవి ఇక్కడ కనిపిస్తాయి.</string>
+    <string name="vault_empty_body">SOS మొదలైనప్పుడు, Naari Kavach ముందు, వెనుక కెమెరాలతో నిశ్శబ్దంగా ఫోటోలు తీస్తుంది. అవి ఇక్కడ కనిపిస్తాయి.</string>
     <string name="vault_front">ముందు కెమెరా</string>
     <string name="vault_back">వెనుక కెమెరా</string>
     <string name="vault_photo">ఫోటో</string>

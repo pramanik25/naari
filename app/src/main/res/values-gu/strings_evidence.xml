@@ -73,7 +73,7 @@
     <string name="ev_export_failed">પુરાવાનું પૅકેજ બનાવી શકાયું નહીં.</string>
     <string name="ev_export_empty">આ ઘટનામાં એક્સપોર્ટ કરવા કોઈ ફાઇલ નથી.</string>
     <string name="ev_export_chooser">પુરાવાનું પૅકેજ શેર કરો</string>
-    <string name="ev_export_subject">Naari Shakti પુરાવાનું પૅકેજ</string>
+    <string name="ev_export_subject">Naari Kavach પુરાવાનું પૅકેજ</string>
     <string name="ev_kind_photo">ફોટો</string>
     <string name="ev_kind_audio">ઑડિયો ક્લિપ</string>
     <string name="ev_kind_video">વીડિયો</string>

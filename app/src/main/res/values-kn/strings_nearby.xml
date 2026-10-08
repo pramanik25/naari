@@ -10,7 +10,7 @@
     <string name="nb_home_location_denied">ನಿಮ್ಮ ಸ್ಥಳವಿಲ್ಲದೆ ನಿಮ್ಮನ್ನು ಹತ್ತಿರದ ಅಲರ್ಟ್‌ಗಳೊಂದಿಗೆ ಹೊಂದಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ. ನಂತರ ಕ್ಲೌಡ್ &amp; ಪೋಷಕರು ನಲ್ಲಿ ಇದನ್ನು ಆನ್ ಮಾಡಬಹುದು.</string>
 
     <string name="nb_mesh_title">ಇಂಟರ್ನೆಟ್ ಇಲ್ಲದೆಯೂ ಸಹಾಯ ಮಾಡುತ್ತೀರಾ?</string>
-    <string name="nb_mesh_body">ಇಂಟರ್ನೆಟ್ ಇಲ್ಲದಿದ್ದಾಗ Naari Shakti ಹತ್ತಿರದ ಫೋನ್‌ಗಳ ನಡುವೆ Bluetooth ಮೂಲಕ SOS ಅಲರ್ಟ್‌ಗಳನ್ನು ತಲುಪಿಸಬಹುದು. ಇದಕ್ಕೆ ಹತ್ತಿರದ ಸಾಧನಗಳ ಅನುಮತಿ ಬೇಕು.</string>
+    <string name="nb_mesh_body">ಇಂಟರ್ನೆಟ್ ಇಲ್ಲದಿದ್ದಾಗ Naari Kavach ಹತ್ತಿರದ ಫೋನ್‌ಗಳ ನಡುವೆ Bluetooth ಮೂಲಕ SOS ಅಲರ್ಟ್‌ಗಳನ್ನು ತಲುಪಿಸಬಹುದು. ಇದಕ್ಕೆ ಹತ್ತಿರದ ಸಾಧನಗಳ ಅನುಮತಿ ಬೇಕು.</string>
     <string name="nb_mesh_yes">ಆನ್ ಮಾಡಿ</string>
     <string name="nb_mesh_no">ಬೇಡ, ಧನ್ಯವಾದಗಳು</string>
     <string name="nb_mesh_on">ಆಫ್‌ಲೈನ್ Bluetooth ಅಲರ್ಟ್‌ಗಳು ಆನ್ ಆಗಿವೆ.</string>
@@ -31,12 +31,12 @@
     <string name="nb_wa_section">WhatsApp ಅಲರ್ಟ್‌ಗಳು</string>
     <string name="nb_wa_title">WhatsApp ಅಲರ್ಟ್‌ಗಳು</string>
     <string name="nb_wa_caption">ನಿಮ್ಮ SOS, ಲೈವ್ ಸ್ಥಳ ಮತ್ತು ಫೋಟೋಗಳನ್ನು ನಿಮ್ಮ ಸಂಪರ್ಕಗಳಿಗೆ WhatsApp ನಲ್ಲಿ ಕಳುಹಿಸಿ.</string>
-    <string name="nb_wa_explain">ಅಲರ್ಟ್‌ಗಳು Naari Shakti WhatsApp ಸಂಖ್ಯೆಯಿಂದ ಬರುತ್ತವೆ, ನಿಮ್ಮ ಸ್ವಂತ WhatsApp ನಿಂದಲ್ಲ. ಅಲರ್ಟ್‌ಗಳನ್ನು ಪಡೆಯುವ ಮೊದಲು ಪ್ರತಿ ಸಂಪರ್ಕವೂ ನಿಮ್ಮ ಆಹ್ವಾನವನ್ನು ಒಮ್ಮೆ ಟ್ಯಾಪ್ ಮಾಡಿ ಸೇರಬೇಕು.</string>
+    <string name="nb_wa_explain">ಅಲರ್ಟ್‌ಗಳು Naari Kavach WhatsApp ಸಂಖ್ಯೆಯಿಂದ ಬರುತ್ತವೆ, ನಿಮ್ಮ ಸ್ವಂತ WhatsApp ನಿಂದಲ್ಲ. ಅಲರ್ಟ್‌ಗಳನ್ನು ಪಡೆಯುವ ಮೊದಲು ಪ್ರತಿ ಸಂಪರ್ಕವೂ ನಿಮ್ಮ ಆಹ್ವಾನವನ್ನು ಒಮ್ಮೆ ಟ್ಯಾಪ್ ಮಾಡಿ ಸೇರಬೇಕು.</string>
     <string name="nb_wa_joined">ಸೇರಿದ್ದಾರೆ ✓</string>
     <string name="nb_wa_not_joined">ಇನ್ನೂ ಸೇರಿಲ್ಲ</string>
     <string name="nb_wa_invite">ಆಹ್ವಾನಿಸಿ</string>
     <string name="nb_wa_invite_cd">%1$s ಅವರನ್ನು WhatsApp ನಲ್ಲಿ ಆಹ್ವಾನಿಸಿ</string>
-    <string name="nb_wa_invite_text">ನಮಸ್ಕಾರ, ನಾನು ನಿಮ್ಮನ್ನು Naari Shakti ನಲ್ಲಿ ನನ್ನ ತುರ್ತು ಸಂಪರ್ಕವಾಗಿ ಸೇರಿಸಿದ್ದೇನೆ. WhatsApp ನಲ್ಲಿ ನನ್ನ SOS ಅಲರ್ಟ್‌ಗಳನ್ನು ಪಡೆಯಲು ಈ ಲಿಂಕ್ ತೆರೆದು ಸಂದೇಶ ಕಳುಹಿಸಿ: %1$s</string>
+    <string name="nb_wa_invite_text">ನಮಸ್ಕಾರ, ನಾನು ನಿಮ್ಮನ್ನು Naari Kavach ನಲ್ಲಿ ನನ್ನ ತುರ್ತು ಸಂಪರ್ಕವಾಗಿ ಸೇರಿಸಿದ್ದೇನೆ. WhatsApp ನಲ್ಲಿ ನನ್ನ SOS ಅಲರ್ಟ್‌ಗಳನ್ನು ಪಡೆಯಲು ಈ ಲಿಂಕ್ ತೆರೆದು ಸಂದೇಶ ಕಳುಹಿಸಿ: %1$s</string>
     <string name="nb_wa_invite_chooser">ಆಹ್ವಾನ ಕಳುಹಿಸಿ</string>
     <plurals name="nb_wa_joined_count">
         <item quantity="one">%2$d ರಲ್ಲಿ %1$d ಸಂಪರ್ಕ ಸೇರಿದೆ</item>

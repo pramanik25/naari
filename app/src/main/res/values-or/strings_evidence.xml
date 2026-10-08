@@ -73,7 +73,7 @@
     <string name="ev_export_failed">ପ୍ରମାଣ ପ୍ୟାକେଜ ତିଆରି ହୋଇପାରିଲା ନାହିଁ।</string>
     <string name="ev_export_empty">ଏହି ଘଟଣାରେ ଏକ୍ସପୋର୍ଟ କରିବାକୁ କୌଣସି ଫାଇଲ ନାହିଁ।</string>
     <string name="ev_export_chooser">ପ୍ରମାଣ ପ୍ୟାକେଜ ସେୟାର କରନ୍ତୁ</string>
-    <string name="ev_export_subject">Naari Shakti ପ୍ରମାଣ ପ୍ୟାକେଜ</string>
+    <string name="ev_export_subject">Naari Kavach ପ୍ରମାଣ ପ୍ୟାକେଜ</string>
     <string name="ev_kind_photo">ଫଟୋ</string>
     <string name="ev_kind_audio">ଅଡିଓ କ୍ଲିପ</string>
     <string name="ev_kind_video">ଭିଡିଓ</string>

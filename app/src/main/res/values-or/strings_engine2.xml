@@ -2,9 +2,9 @@
 <resources>
 
     <!-- Silent SOS: low-key notification and covert screen -->
-    <string name="en_covert_title">Naari Shakti · ଲୋକେସନ ସେୟାର ହେଉଛି</string>
+    <string name="en_covert_title">Naari Kavach · ଲୋକେସନ ସେୟାର ହେଉଛି</string>
     <string name="en_covert_text">ପରିଚାଳନା ପାଇଁ ଟ୍ୟାପ କରନ୍ତୁ</string>
-    <string name="en_covert_overline">Naari Shakti</string>
+    <string name="en_covert_overline">Naari Kavach</string>
     <string name="en_covert_heading">ଆପଣଙ୍କ ଲୋକେସନ ସେୟାର ହେଉଛି</string>
     <string name="en_covert_body">ଆପଣଙ୍କ ବିଶ୍ୱସ୍ତ କଣ୍ଟାକ୍ଟମାନେ ଆପଣଙ୍କ ଲାଇଭ ଲୋକେସନ ପାଉଛନ୍ତି।</string>
     <string name="en_covert_hold">ସେୟାରିଂ ବନ୍ଦ କରିବାକୁ ଦବାଇ ରଖନ୍ତୁ</string>
@@ -13,8 +13,8 @@
 
     <!-- SMS -->
     <string name="en_sms_tracking_line">ଲାଇଭ ଲୋକେସନ &amp; ପ୍ରମାଣ: %1$s</string>
-    <string name="en_sms_duress">Naari Shakti: %1$s ଙ୍କୁ ହୁଏତ ଜବରଦସ୍ତି ଆଲର୍ଟ ବାତିଲ କରାଯାଇଛି। ଏହାକୁ ଏବେ ବି ସକ୍ରିୟ ବୋଲି ଧରନ୍ତୁ। ଲାଇଭ ଲୋକେସନ: %2$s</string>
-    <string name="en_sms_duress_no_link">Naari Shakti: %1$s ଙ୍କୁ ହୁଏତ ଜବରଦସ୍ତି ଆଲର୍ଟ ବାତିଲ କରାଯାଇଛି। ଏହାକୁ ଏବେ ବି ସକ୍ରିୟ ବୋଲି ଧରନ୍ତୁ। ଲୋକେସନ ପରେ ଆସିବ।</string>
+    <string name="en_sms_duress">Naari Kavach: %1$s ଙ୍କୁ ହୁଏତ ଜବରଦସ୍ତି ଆଲର୍ଟ ବାତିଲ କରାଯାଇଛି। ଏହାକୁ ଏବେ ବି ସକ୍ରିୟ ବୋଲି ଧରନ୍ତୁ। ଲାଇଭ ଲୋକେସନ: %2$s</string>
+    <string name="en_sms_duress_no_link">Naari Kavach: %1$s ଙ୍କୁ ହୁଏତ ଜବରଦସ୍ତି ଆଲର୍ଟ ବାତିଲ କରାଯାଇଛି। ଏହାକୁ ଏବେ ବି ସକ୍ରିୟ ବୋଲି ଧରନ୍ତୁ। ଲୋକେସନ ପରେ ଆସିବ।</string>
     <string name="en_duress_name_fallback">ଆପଣଙ୍କ କଣ୍ଟାକ୍ଟ</string>
 
     <!-- Spoken alert (text to speech, loud) -->
@@ -66,7 +66,7 @@
     <string name="en_cancel">ବାତିଲ</string>
     <string name="en_pin_lockout">ବହୁତ ଥର ଚେଷ୍ଟା ହେଲା। %1$d ସେକେଣ୍ଡ ପରେ ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।</string>
     <string name="en_pin_verify_title">ଆପଣଙ୍କ PIN ଦିଅନ୍ତୁ</string>
-    <string name="en_pin_verify_subtitle">ଆଗକୁ ବଢ଼ିବାକୁ ଆପଣଙ୍କ Naari Shakti PIN ଦିଅନ୍ତୁ।</string>
+    <string name="en_pin_verify_subtitle">ଆଗକୁ ବଢ଼ିବାକୁ ଆପଣଙ୍କ Naari Kavach PIN ଦିଅନ୍ତୁ।</string>
     <string name="en_pin_current_title">ବର୍ତ୍ତମାନର PIN ଦିଅନ୍ତୁ</string>
     <string name="en_pin_current_subtitle">PIN ବଦଳାଇବା ପୂର୍ବରୁ ଏହା ଆପଣ ବୋଲି ନିଶ୍ଚିତ କରନ୍ତୁ।</string>
     <string name="en_pin_manage_title">ଆପ PIN</string>

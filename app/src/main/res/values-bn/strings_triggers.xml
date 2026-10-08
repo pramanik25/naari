@@ -8,10 +8,10 @@
 
     <!-- ===================== SMS alerts to emergency contacts ===================== -->
     <string name="tr_default_owner_name">আপনার কন্টাক্ট</string>
-    <string name="tr_sms_shutdown">Naari Shakti: %1$s-এর ফোন বন্ধ হয়ে যাচ্ছে। শেষ জানা লোকেশন: %2$s</string>
+    <string name="tr_sms_shutdown">Naari Kavach: %1$s-এর ফোন বন্ধ হয়ে যাচ্ছে। শেষ জানা লোকেশন: %2$s</string>
     <!-- %2$d is the battery percentage. -->
-    <string name="tr_sms_low_battery">Naari Shakti: %1$s-এর ফোনে ব্যাটারি %2$d%%। শেষ জানা লোকেশন: %3$s</string>
-    <string name="tr_sms_sim_changed">Naari Shakti: %1$s-এর ফোনের SIM কার্ড বদলানো হয়েছে। এই বার্তা নতুন SIM থেকে এসেছে। লোকেশন: %2$s</string>
+    <string name="tr_sms_low_battery">Naari Kavach: %1$s-এর ফোনে ব্যাটারি %2$d%%। শেষ জানা লোকেশন: %3$s</string>
+    <string name="tr_sms_sim_changed">Naari Kavach: %1$s-এর ফোনের SIM কার্ড বদলানো হয়েছে। এই বার্তা নতুন SIM থেকে এসেছে। লোকেশন: %2$s</string>
     <!-- %1$s is a Google Maps link, %2$s the time the location was recorded. -->
     <string name="tr_sms_location_fmt">%1$s (%2$s)</string>
     <string name="tr_sms_location_unknown">পাওয়া যায়নি</string>
@@ -67,7 +67,7 @@
     <string name="tr_pb_scan_failed">খোঁজা যায়নি (ত্রুটি %1$d)। Bluetooth বন্ধ করে আবার চালু করুন, তারপর চেষ্টা করুন।</string>
     <string name="tr_pb_no_bluetooth">এই ফোনে Bluetooth Low Energy নেই।</string>
     <string name="tr_pb_bt_needed">আপনার বোতাম খুঁজতে Bluetooth চালু করুন।</string>
-    <string name="tr_pb_perm_denied">আপনার বোতাম খুঁজতে Naari Shakti-র কাছাকাছি ডিভাইস ও লোকেশনের অনুমতি দরকার।</string>
+    <string name="tr_pb_perm_denied">আপনার বোতাম খুঁজতে Naari Kavach-র কাছাকাছি ডিভাইস ও লোকেশনের অনুমতি দরকার।</string>
     <!-- %1$s is the button's name. -->
     <string name="tr_pb_paired_snack">%1$s সেভ হয়েছে। এবার পরীক্ষা করতে দুবার চাপুন।</string>
     <!-- Signal strength, %1$d is negative, e.g. -62 dBm. -->

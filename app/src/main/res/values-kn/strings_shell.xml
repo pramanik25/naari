@@ -9,15 +9,9 @@
     <string name="sh_together_body">ನಿಮ್ಮವರು ಮತ್ತು ನಿಮ್ಮ ಸಮುದಾಯ, ಒಂದೇ ಕಡೆ.</string>
 
     <!-- Running donation banner at the top of the app -->
-    <string name="sh_donate_banner">♥ Naari Shakti ಉಚಿತ, ನಿಮ್ಮ ಬೆಂಬಲದಿಂದಲೇ ನಡೆಯುತ್ತದೆ. ದೇಣಿಗೆ ನೀಡಲು ಟ್ಯಾಪ್ ಮಾಡಿ, ಮಹಿಳೆಯರನ್ನು ಸುರಕ್ಷಿತವಾಗಿಡಲು ನೆರವಾಗಿ.</string>
+    <string name="sh_donate_banner">♥ Naari Kavach ಉಚಿತ, ನಿಮ್ಮ ಬೆಂಬಲದಿಂದಲೇ ನಡೆಯುತ್ತದೆ. ದೇಣಿಗೆ ನೀಡಲು ಟ್ಯಾಪ್ ಮಾಡಿ, ಮಹಿಳೆಯರನ್ನು ಸುರಕ್ಷಿತವಾಗಿಡಲು ನೆರವಾಗಿ.</string>
 
-    <!-- "Complete your profile" popup on Home (name and mobile number required) -->
-    <string name="sh_profile_title">ನಿಮ್ಮ ಪ್ರೊಫೈಲ್ ಪೂರ್ಣಗೊಳಿಸಿ</string>
-    <string name="sh_profile_body">ದಯವಿಟ್ಟು ನಿಮ್ಮ ಹೆಸರು ಮತ್ತು ಮೊಬೈಲ್ ಸಂಖ್ಯೆಯನ್ನು ನಮೂದಿಸಿ. ಅವು ನಿಮ್ಮ Naari Shakti ಖಾತೆಯಲ್ಲಿ ಸಂಗ್ರಹವಾಗುತ್ತವೆ. ಉಳಿದ ವಿವರಗಳು ಐಚ್ಛಿಕ.</string>
-    <string name="sh_profile_optional">ಐಚ್ಛಿಕ</string>
-
-    <!-- Maker credit -->
-    <string name="sh_made_by">ರೂಪಿಸಿದವರು: Vikash</string>
-    <string name="sh_made_by_sub">ಪ್ರತಿ ಮಹಿಳೆಯ ಸುರಕ್ಷತೆಗಾಗಿ ಭಾರತದಲ್ಲಿ ನಿರ್ಮಿಸಲಾಗಿದೆ</string>
-    <string name="sh_brand_photo_cd">ಈ ಆ್ಯಪ್ ರೂಪಿಸಿದ Vikash ಅವರ ಫೋಟೋ</string>
+    <!-- Info (i) button on the profile: why filling it in helps -->
+    <string name="sh_profile_info_title">ಪ್ರೊಫೈಲ್ ಏಕೆ ಭರ್ತಿ ಮಾಡಬೇಕು?</string>
+    <string name="sh_profile_info_body">ನಿಮ್ಮ ವಿವರಗಳು ನಿಮ್ಮನ್ನು ಸುರಕ್ಷಿತವಾಗಿಡಲು ಸಹಾಯ ಮಾಡುತ್ತವೆ. ತುರ್ತು ಸಂದರ್ಭದಲ್ಲಿ ನಿಮ್ಮ ಹೆಸರು, ಫೋಟೋ ಮತ್ತು ಸಂಪರ್ಕ ಸಂಖ್ಯೆಗಳು ನಿಮ್ಮ ನಂಬಿಕಸ್ಥರು ಮತ್ತು ಸಹಾಯಕ್ಕೆ ಬರುವವರಿಗೆ ನಿಮ್ಮನ್ನು ಗುರುತಿಸಲು ಮತ್ತು ನಿಮ್ಮ ಕುಟುಂಬವನ್ನು ಬೇಗ ತಲುಪಲು ಸಹಾಯ ಮಾಡುತ್ತವೆ. ಹೆಸರು ಮತ್ತು ಮೊಬೈಲ್ ಸಂಖ್ಯೆ ಮಾತ್ರ ಕಡ್ಡಾಯ.</string>
 </resources>

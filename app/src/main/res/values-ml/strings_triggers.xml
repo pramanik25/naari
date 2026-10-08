@@ -8,9 +8,9 @@
 
     <!-- ===================== SMS alerts to emergency contacts ===================== -->
     <string name="tr_default_owner_name">നിങ്ങളുടെ കോൺടാക്റ്റ്</string>
-    <string name="tr_sms_shutdown">Naari Shakti: %1$s-ന്റെ ഫോൺ ഓഫാകുന്നു. അവസാന ലൊക്കേഷൻ: %2$s</string>
-    <string name="tr_sms_low_battery">Naari Shakti: %1$s-ന്റെ ഫോണിൽ ബാറ്ററി %2$d%% മാത്രം. അവസാന ലൊക്കേഷൻ: %3$s</string>
-    <string name="tr_sms_sim_changed">Naari Shakti: %1$s-ന്റെ ഫോണിലെ SIM കാർഡ് മാറ്റി. ഈ സന്ദേശം പുതിയ SIM-ൽ നിന്നാണ്. ലൊക്കേഷൻ: %2$s</string>
+    <string name="tr_sms_shutdown">Naari Kavach: %1$s-ന്റെ ഫോൺ ഓഫാകുന്നു. അവസാന ലൊക്കേഷൻ: %2$s</string>
+    <string name="tr_sms_low_battery">Naari Kavach: %1$s-ന്റെ ഫോണിൽ ബാറ്ററി %2$d%% മാത്രം. അവസാന ലൊക്കേഷൻ: %3$s</string>
+    <string name="tr_sms_sim_changed">Naari Kavach: %1$s-ന്റെ ഫോണിലെ SIM കാർഡ് മാറ്റി. ഈ സന്ദേശം പുതിയ SIM-ൽ നിന്നാണ്. ലൊക്കേഷൻ: %2$s</string>
     <string name="tr_sms_location_fmt">%1$s (%2$s)</string>
     <string name="tr_sms_location_unknown">ലഭ്യമല്ല</string>
 
@@ -63,7 +63,7 @@
     <string name="tr_pb_scan_failed">തിരയൽ പരാജയപ്പെട്ടു (പിശക് %1$d). Bluetooth ഓഫാക്കി ഓണാക്കിയ ശേഷം വീണ്ടും ശ്രമിക്കുക.</string>
     <string name="tr_pb_no_bluetooth">ഈ ഫോൺ Bluetooth Low Energy പിന്തുണയ്ക്കുന്നില്ല.</string>
     <string name="tr_pb_bt_needed">ബട്ടൺ കണ്ടെത്താൻ Bluetooth ഓണാക്കുക.</string>
-    <string name="tr_pb_perm_denied">ബട്ടൺ കണ്ടെത്താൻ Naari Shakti-ക്ക് സമീപ ഉപകരണങ്ങൾ, ലൊക്കേഷൻ എന്നീ അനുമതികൾ വേണം.</string>
+    <string name="tr_pb_perm_denied">ബട്ടൺ കണ്ടെത്താൻ Naari Kavach-ക്ക് സമീപ ഉപകരണങ്ങൾ, ലൊക്കേഷൻ എന്നീ അനുമതികൾ വേണം.</string>
     <string name="tr_pb_paired_snack">%1$s സേവ് ചെയ്തു. ഇനി പരിശോധിക്കാൻ രണ്ടുതവണ അമർത്തുക.</string>
     <string name="tr_pb_rssi">%1$d dBm</string>
     <string name="tr_pb_tag_compatible">അനുയോജ്യം</string>

@@ -142,7 +142,7 @@
     <string name="jr_ss_accessibility_on">ಪ್ರವೇಶಿಸುವಿಕೆ ಸೇವೆ ಆನ್ ಆಗಿದೆ</string>
     <string name="jr_ss_accessibility_off">ಪ್ರವೇಶಿಸುವಿಕೆ ಸೇವೆ ಆಫ್ ಆಗಿದೆ</string>
     <string name="jr_ss_accessibility_title">ಪ್ರವೇಶಿಸುವಿಕೆ ಸೇವೆ ಆನ್ ಮಾಡಿ</string>
-    <string name="jr_ss_accessibility_body">ಸ್ಕ್ರೀನ್ ಆಫ್ ಇರುವಾಗ ವಾಲ್ಯೂಮ್ ಬಟನ್ ಒತ್ತುವಿಕೆಯನ್ನು ಆ್ಯಪ್‌ಗಳು ನೋಡಲು Android ಪ್ರವೇಶಿಸುವಿಕೆ ಸೇವೆಯ ಮೂಲಕ ಮಾತ್ರ ಅನುಮತಿಸುತ್ತದೆ. Naari Shakti ಇದನ್ನು ಬಟನ್ ಒತ್ತುವಿಕೆಗೆ ಮಾತ್ರ ಬಳಸುತ್ತದೆ, ನಿಮ್ಮ ಸ್ಕ್ರೀನ್ ಅನ್ನು ಎಂದಿಗೂ ಓದುವುದಿಲ್ಲ. ಪಟ್ಟಿಯಲ್ಲಿ Naari Shakti ಹುಡುಕಿ ಆನ್ ಮಾಡಿ.</string>
+    <string name="jr_ss_accessibility_body">ಸ್ಕ್ರೀನ್ ಆಫ್ ಇರುವಾಗ ವಾಲ್ಯೂಮ್ ಬಟನ್ ಒತ್ತುವಿಕೆಯನ್ನು ಆ್ಯಪ್‌ಗಳು ನೋಡಲು Android ಪ್ರವೇಶಿಸುವಿಕೆ ಸೇವೆಯ ಮೂಲಕ ಮಾತ್ರ ಅನುಮತಿಸುತ್ತದೆ. Naari Kavach ಇದನ್ನು ಬಟನ್ ಒತ್ತುವಿಕೆಗೆ ಮಾತ್ರ ಬಳಸುತ್ತದೆ, ನಿಮ್ಮ ಸ್ಕ್ರೀನ್ ಅನ್ನು ಎಂದಿಗೂ ಓದುವುದಿಲ್ಲ. ಪಟ್ಟಿಯಲ್ಲಿ Naari Kavach ಹುಡುಕಿ ಆನ್ ಮಾಡಿ.</string>
     <string name="jr_ss_denied_accessibility">ಪ್ರವೇಶಿಸುವಿಕೆ ಸೇವೆ ಇಲ್ಲದೆ ಸ್ಕ್ರೀನ್ ಆಫ್ ಇರುವಾಗ ವಾಲ್ಯೂಮ್ ಬಟನ್‌ಗಳು SOS ಆರಂಭಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ, ಹಾಗಾಗಿ ಇದನ್ನು ಆಫ್ ಮಾಡಲಾಗಿದೆ.</string>
     <string name="jr_ss_panic">ಪ್ಯಾನಿಕ್ ಬಟನ್</string>
     <string name="jr_ss_panic_none">ಜೋಡಿಸಿಲ್ಲ · ಚಿಕ್ಕ Bluetooth ಬಟನ್ ಜೋಡಿಸಿ</string>
@@ -158,7 +158,7 @@
 
     <string name="jr_ss_section_community">ಸಮುದಾಯ</string>
     <string name="jr_ss_mesh">ಆಫ್‌ಲೈನ್ ಮೆಶ್ SOS</string>
-    <string name="jr_ss_mesh_sub">ಸಿಗ್ನಲ್ ಇಲ್ಲದಿದ್ದಾಗ Bluetooth ಮತ್ತು Wi-Fi ಮೂಲಕ ಹತ್ತಿರದ Naari Shakti ಫೋನ್‌ಗಳಿಗೆ ನಿಮ್ಮ SOS ತಲುಪಿಸುತ್ತದೆ.</string>
+    <string name="jr_ss_mesh_sub">ಸಿಗ್ನಲ್ ಇಲ್ಲದಿದ್ದಾಗ Bluetooth ಮತ್ತು Wi-Fi ಮೂಲಕ ಹತ್ತಿರದ Naari Kavach ಫೋನ್‌ಗಳಿಗೆ ನಿಮ್ಮ SOS ತಲುಪಿಸುತ್ತದೆ.</string>
     <string name="jr_ss_helper">ಹತ್ತಿರದ ಸಹಾಯಕರು</string>
     <string name="jr_ss_helper_on">ಆನ್ · ಹತ್ತಿರದವರಿಗೆ ಸಹಾಯ ಮಾಡಲು ನಿಮ್ಮನ್ನು ಕೇಳಬಹುದು</string>
     <string name="jr_ss_helper_off">ಆಫ್ · ನಿಮ್ಮ ಹತ್ತಿರದವರಿಗೆ ಸಹಾಯ ಮಾಡಲು ಸ್ವಯಂಸೇವೆ ಮಾಡಿ</string>
@@ -311,14 +311,14 @@
     <!-- ============ SMS bodies ============ -->
     <string name="jr_sms_default_name">ನಿಮ್ಮ ಸ್ನೇಹಿತೆ</string>
     <!-- %1$s name, %2$s plate, %3$s optional details from jr_sms_cab_details_* (starts with a space). -->
-    <string name="jr_sms_cab_start">Naari Shakti: %1$s ಕ್ಯಾಬ್ %2$s%3$s ನಲ್ಲಿದ್ದಾರೆ.</string>
+    <string name="jr_sms_cab_start">Naari Kavach: %1$s ಕ್ಯಾಬ್ %2$s%3$s ನಲ್ಲಿದ್ದಾರೆ.</string>
     <string name="jr_sms_cab_details_app_driver">" (%1$s, ಚಾಲಕ %2$s)"</string>
     <string name="jr_sms_cab_details_app">" (%1$s)"</string>
     <string name="jr_sms_cab_details_driver">" (ಚಾಲಕ %1$s)"</string>
     <string name="jr_sms_cab_going">%1$s ಗೆ ಹೋಗುತ್ತಿದ್ದಾರೆ.</string>
     <string name="jr_sms_live">ಲೈವ್: %1$s</string>
-    <string name="jr_sms_cab_arrived">Naari Shakti: %1$s ಸುರಕ್ಷಿತವಾಗಿ %2$s ತಲುಪಿದ್ದಾರೆ.</string>
-    <string name="jr_sms_meet_intro">Naari Shakti: %1$s, %2$s ಅವರನ್ನು ಭೇಟಿಯಾಗುತ್ತಿದ್ದಾರೆ.</string>
+    <string name="jr_sms_cab_arrived">Naari Kavach: %1$s ಸುರಕ್ಷಿತವಾಗಿ %2$s ತಲುಪಿದ್ದಾರೆ.</string>
+    <string name="jr_sms_meet_intro">Naari Kavach: %1$s, %2$s ಅವರನ್ನು ಭೇಟಿಯಾಗುತ್ತಿದ್ದಾರೆ.</string>
     <string name="jr_sms_meet_contact">ಅವರ ಸಂಪರ್ಕ: %1$s.</string>
     <string name="jr_sms_meet_place">ಸ್ಥಳ: %1$s %2$s</string>
     <string name="jr_sms_meet_place_nolink">ಸ್ಥಳ: %1$s.</string>

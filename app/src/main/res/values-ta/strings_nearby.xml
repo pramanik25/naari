@@ -10,7 +10,7 @@
     <string name="nb_home_location_denied">உங்கள் இருப்பிடம் இல்லாமல் உங்களை அருகிலுள்ள எச்சரிக்கைகளுடன் பொருத்த முடியாது. பிறகு கிளவுட் &amp; பாதுகாவலர்கள் இல் இதை இயக்கலாம்.</string>
 
     <string name="nb_mesh_title">இணையம் இல்லாமலும் உதவுவீர்களா?</string>
-    <string name="nb_mesh_body">இணையம் இல்லாதபோது Naari Shakti அருகிலுள்ள ஃபோன்களுக்கு இடையே Bluetooth மூலம் SOS எச்சரிக்கைகளைக் கொண்டு சேர்க்க முடியும். இதற்கு அருகிலுள்ள சாதனங்களின் அனுமதி தேவை.</string>
+    <string name="nb_mesh_body">இணையம் இல்லாதபோது Naari Kavach அருகிலுள்ள ஃபோன்களுக்கு இடையே Bluetooth மூலம் SOS எச்சரிக்கைகளைக் கொண்டு சேர்க்க முடியும். இதற்கு அருகிலுள்ள சாதனங்களின் அனுமதி தேவை.</string>
     <string name="nb_mesh_yes">இயக்கு</string>
     <string name="nb_mesh_no">வேண்டாம், நன்றி</string>
     <string name="nb_mesh_on">ஆஃப்லைன் Bluetooth எச்சரிக்கைகள் இயக்கத்தில் உள்ளன.</string>
@@ -31,12 +31,12 @@
     <string name="nb_wa_section">WhatsApp எச்சரிக்கைகள்</string>
     <string name="nb_wa_title">WhatsApp எச்சரிக்கைகள்</string>
     <string name="nb_wa_caption">உங்கள் SOS, நேரடி இருப்பிடம் மற்றும் புகைப்படங்களை உங்கள் தொடர்புகளுக்கு WhatsApp இல் அனுப்புங்கள்.</string>
-    <string name="nb_wa_explain">எச்சரிக்கைகள் Naari Shakti WhatsApp எண்ணிலிருந்து வரும், உங்கள் சொந்த WhatsApp இலிருந்து அல்ல. எச்சரிக்கைகள் பெறுவதற்கு முன் ஒவ்வொரு தொடர்பும் உங்கள் அழைப்பை ஒருமுறை தட்டிச் சேர வேண்டும்.</string>
+    <string name="nb_wa_explain">எச்சரிக்கைகள் Naari Kavach WhatsApp எண்ணிலிருந்து வரும், உங்கள் சொந்த WhatsApp இலிருந்து அல்ல. எச்சரிக்கைகள் பெறுவதற்கு முன் ஒவ்வொரு தொடர்பும் உங்கள் அழைப்பை ஒருமுறை தட்டிச் சேர வேண்டும்.</string>
     <string name="nb_wa_joined">சேர்ந்துவிட்டார் ✓</string>
     <string name="nb_wa_not_joined">இன்னும் சேரவில்லை</string>
     <string name="nb_wa_invite">அழை</string>
     <string name="nb_wa_invite_cd">%1$s ஐ WhatsApp இல் அழைக்கவும்</string>
-    <string name="nb_wa_invite_text">வணக்கம், Naari Shakti இல் உங்களை என் அவசரத் தொடர்பாகச் சேர்த்துள்ளேன். WhatsApp இல் என் SOS எச்சரிக்கைகளைப் பெற இந்த இணைப்பைத் திறந்து செய்தியை அனுப்புங்கள்: %1$s</string>
+    <string name="nb_wa_invite_text">வணக்கம், Naari Kavach இல் உங்களை என் அவசரத் தொடர்பாகச் சேர்த்துள்ளேன். WhatsApp இல் என் SOS எச்சரிக்கைகளைப் பெற இந்த இணைப்பைத் திறந்து செய்தியை அனுப்புங்கள்: %1$s</string>
     <string name="nb_wa_invite_chooser">அழைப்பை அனுப்பு</string>
     <plurals name="nb_wa_joined_count">
         <item quantity="one">%2$d இல் %1$d தொடர்பு சேர்ந்துள்ளார்</item>

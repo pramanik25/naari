@@ -3,7 +3,7 @@
     <!-- Shared -->
     <string name="tg_back">पछाडि</string>
     <string name="tg_eyebrow">सँगसँगै</string>
-    <string name="tg_cloud_off">यसका लागि Naari Shakti क्लाउड चाहिन्छ, जुन यो फोनमा बन्द छ।</string>
+    <string name="tg_cloud_off">यसका लागि Naari Kavach क्लाउड चाहिन्छ, जुन यो फोनमा बन्द छ।</string>
     <string name="tg_open_settings">सेटिङ</string>
     <string name="tg_close">बन्द गर्नुहोस्</string>
     <string name="tg_delete">मेट्नुहोस्</string>
@@ -61,7 +61,7 @@
     <string name="tg_sm_empty">+ को 3 किमी भित्र कुनै रिपोर्ट छैन। यसको अर्थ यो क्षेत्र सुरक्षित छ भन्ने होइन।</string>
     <string name="tg_sm_no_location">तपाईंको लोकेसन भेटिएन। नक्सा सार्नुहोस् र “यहाँ खोज्नुहोस्” मा ट्याप गर्नुहोस्।</string>
     <string name="tg_sm_pan_hint">लोकेसन बिना, नक्सालाई कुनै ठाउँमा सार्नुहोस् र “यहाँ खोज्नुहोस्” मा ट्याप गर्नुहोस्।</string>
-    <string name="tg_sm_detail">Naari Shakti की एक प्रयोगकर्ताले %1$s रिपोर्ट गर्नुभएको। प्रमाणित गरिएको छैन।</string>
+    <string name="tg_sm_detail">Naari Kavach की एक प्रयोगकर्ताले %1$s रिपोर्ट गर्नुभएको। प्रमाणित गरिएको छैन।</string>
     <string name="tg_sm_deleted">तपाईंको रिपोर्ट मेटियो।</string>
     <string name="tg_sm_flag">यो गलत छ</string>
     <string name="tg_sm_zoom_in">+ ठ्याक्कै त्यही ठाउँमा पर्ने गरी अझ नजिक जुम गर्नुहोस्।</string>

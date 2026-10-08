@@ -39,7 +39,7 @@
     <!-- ===================== Helper alert screen ===================== -->
     <string name="cl_helper_eyebrow">قریب SOS</string>
     <string name="cl_helper_title">قریب کسی کو مدد چاہیے</string>
-    <string name="cl_helper_subtitle">آپ کے قریب Naari Shakti کی ایک صارف نے SOS شروع کیا ہے۔</string>
+    <string name="cl_helper_subtitle">آپ کے قریب Naari Kavach کی ایک صارف نے SOS شروع کیا ہے۔</string>
     <string name="cl_helper_distance_unknown">آپ کے قریب</string>
     <string name="cl_helper_safety">خود کو خطرے میں نہ ڈالیں۔ پہلے 112 پر کال کریں۔</string>
     <string name="cl_helper_safety_detail">لوگوں کی نظر میں رہیں، فون اپنے پاس رکھیں اور پولیس کو آگے رہنے دیں۔</string>
@@ -63,7 +63,7 @@
     <string name="cl_settings_desc">SMS نہ پہنچے تب بھی، سرپرستوں کو آپ کا SOS لائیو لوکیشن اور ثبوت کے ساتھ فوراً ملتا ہے۔</string>
 
     <string name="cl_error_offline">آپ آف لائن ہیں۔ اس فون پر محفوظ معلومات دکھائی جا رہی ہیں۔</string>
-    <string name="cl_error_server">Naari Shakti سرور سے رابطہ نہیں ہو سکا۔</string>
+    <string name="cl_error_server">Naari Kavach سرور سے رابطہ نہیں ہو سکا۔</string>
     <string name="cl_error_generic">کچھ غلط ہو گیا (خرابی %1$d)۔ براہ کرم دوبارہ کوشش کریں۔</string>
     <string name="cl_retry">دوبارہ کوشش کریں</string>
 
@@ -88,11 +88,11 @@
     </plurals>
 
     <string name="cl_section_code">آپ کا سرپرست کوڈ</string>
-    <string name="cl_code_caption">یہ کوڈ اُن لوگوں سے شیئر کریں جن پر آپ کو بھروسا ہے۔ آپ کے SOS الرٹ پانے کے لیے وہ اسے اپنی Naari Shakti ایپ میں درج کریں۔</string>
+    <string name="cl_code_caption">یہ کوڈ اُن لوگوں سے شیئر کریں جن پر آپ کو بھروسا ہے۔ آپ کے SOS الرٹ پانے کے لیے وہ اسے اپنی Naari Kavach ایپ میں درج کریں۔</string>
     <string name="cl_copy">کاپی</string>
     <string name="cl_share">شیئر</string>
     <string name="cl_copied">کوڈ کاپی ہو گیا</string>
-    <string name="cl_share_text">Naari Shakti انسٹال کریں اور میرے SOS الرٹ پانے کے لیے میرا کوڈ %1$s درج کریں</string>
+    <string name="cl_share_text">Naari Kavach انسٹال کریں اور میرے SOS الرٹ پانے کے لیے میرا کوڈ %1$s درج کریں</string>
     <string name="cl_share_chooser">اپنا سرپرست کوڈ شیئر کریں</string>
 
     <string name="cl_section_link">کسی کی سرپرست بنیں</string>

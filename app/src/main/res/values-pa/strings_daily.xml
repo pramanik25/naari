@@ -144,7 +144,7 @@
     <string name="dl_quiz_level_4">ਰਾਖੀ</string>
     <string name="dl_quiz_level_5">ਸ਼ਕਤੀ</string>
     <string name="dl_quiz_share">ਆਪਣੀ ਲੜੀ ਸਾਂਝੀ ਕਰੋ</string>
-    <string name="dl_quiz_share_text">Naari Shakti ਦੇ ਸੁਰੱਖਿਆ ਕੁਇਜ਼ ਵਿੱਚ ਮੇਰੀ %1$s ਦੀ ਲੜੀ ਅਤੇ %2$d ਪੁਆਇੰਟ ਹਨ। ਕੀ ਤੁਸੀਂ ਆਪਣੇ ਹੱਕ ਅਤੇ ਹੈਲਪਲਾਈਨ ਨੰਬਰ ਜਾਣਦੇ ਹੋ?</string>
+    <string name="dl_quiz_share_text">Naari Kavach ਦੇ ਸੁਰੱਖਿਆ ਕੁਇਜ਼ ਵਿੱਚ ਮੇਰੀ %1$s ਦੀ ਲੜੀ ਅਤੇ %2$d ਪੁਆਇੰਟ ਹਨ। ਕੀ ਤੁਸੀਂ ਆਪਣੇ ਹੱਕ ਅਤੇ ਹੈਲਪਲਾਈਨ ਨੰਬਰ ਜਾਣਦੇ ਹੋ?</string>
     <string name="dl_quiz_practice">ਹੋਰ ਅਭਿਆਸ ਕਰੋ</string>
     <string name="dl_quiz_reminder">ਰੋਜ਼ ਦੇ ਕੁਇਜ਼ ਦਾ ਰਿਮਾਈਂਡਰ</string>
     <string name="dl_quiz_reminder_sub">ਜੇ ਤੁਸੀਂ ਕੁਇਜ਼ ਨਹੀਂ ਖੇਡਿਆ, ਤਾਂ ਸ਼ਾਮ ਨੂੰ ਇੱਕ ਨੋਟੀਫ਼ਿਕੇਸ਼ਨ</string>
@@ -156,7 +156,7 @@
         <item quantity="one">%1$d ਦਿਨ ਦੀ ਲੜੀ ਬਣਾਈ ਰੱਖਣ ਲਈ ਹੁਣੇ ਖੇਡੋ।</item>
         <item quantity="other">%1$d ਦਿਨਾਂ ਦੀ ਲੜੀ ਬਣਾਈ ਰੱਖਣ ਲਈ ਹੁਣੇ ਖੇਡੋ।</item>
     </plurals>
-    <string name="dl_nudge_cycle_title">Naari Shakti ਵੱਲੋਂ ਇੱਕ ਰਿਮਾਈਂਡਰ</string>
+    <string name="dl_nudge_cycle_title">Naari Kavach ਵੱਲੋਂ ਇੱਕ ਰਿਮਾਈਂਡਰ</string>
     <string name="dl_nudge_cycle_text">ਦੇਖਣ ਲਈ ਐਪ ਖੋਲ੍ਹੋ।</string>
 
     <!--

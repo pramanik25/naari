@@ -8,9 +8,9 @@
 
     <!-- SMS alerts to emergency contacts -->
     <string name="tr_default_owner_name">ଆପଣଙ୍କ କଣ୍ଟାକ୍ଟ</string>
-    <string name="tr_sms_shutdown">Naari Shakti: %1$s ଙ୍କ ଫୋନ ବନ୍ଦ ହେଉଛି। ଶେଷ ଜଣା ଲୋକେସନ: %2$s</string>
-    <string name="tr_sms_low_battery">Naari Shakti: %1$s ଙ୍କ ଫୋନ ବ୍ୟାଟେରୀ %2$d%% ରେ ଅଛି। ଶେଷ ଜଣା ଲୋକେସନ: %3$s</string>
-    <string name="tr_sms_sim_changed">Naari Shakti: %1$s ଙ୍କ ଫୋନର SIM କାର୍ଡ ବଦଳାଯାଇଛି। ଏହି ମେସେଜ ନୂଆ SIM ରୁ ଆସିଛି। ଲୋକେସନ: %2$s</string>
+    <string name="tr_sms_shutdown">Naari Kavach: %1$s ଙ୍କ ଫୋନ ବନ୍ଦ ହେଉଛି। ଶେଷ ଜଣା ଲୋକେସନ: %2$s</string>
+    <string name="tr_sms_low_battery">Naari Kavach: %1$s ଙ୍କ ଫୋନ ବ୍ୟାଟେରୀ %2$d%% ରେ ଅଛି। ଶେଷ ଜଣା ଲୋକେସନ: %3$s</string>
+    <string name="tr_sms_sim_changed">Naari Kavach: %1$s ଙ୍କ ଫୋନର SIM କାର୍ଡ ବଦଳାଯାଇଛି। ଏହି ମେସେଜ ନୂଆ SIM ରୁ ଆସିଛି। ଲୋକେସନ: %2$s</string>
     <string name="tr_sms_location_fmt">%1$s (%2$s)</string>
     <string name="tr_sms_location_unknown">ଉପଲବ୍ଧ ନାହିଁ</string>
 
@@ -63,7 +63,7 @@
     <string name="tr_pb_scan_failed">ସ୍କାନିଂ ବିଫଳ (ତ୍ରୁଟି %1$d)। Bluetooth ବନ୍ଦ କରି ପୁଣି ଚାଲୁ କରନ୍ତୁ, ତାପରେ ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।</string>
     <string name="tr_pb_no_bluetooth">ଏହି ଫୋନ Bluetooth Low Energy ସମର୍ଥନ କରେ ନାହିଁ।</string>
     <string name="tr_pb_bt_needed">ଆପଣଙ୍କ ବଟନ ଖୋଜିବାକୁ Bluetooth ଚାଲୁ କରନ୍ତୁ।</string>
-    <string name="tr_pb_perm_denied">ଆପଣଙ୍କ ବଟନ ଖୋଜିବା ପାଇଁ Naari Shakti କୁ ନିକଟସ୍ଥ ଡିଭାଇସ ଓ ଲୋକେସନ ଅନୁମତି ଦରକାର।</string>
+    <string name="tr_pb_perm_denied">ଆପଣଙ୍କ ବଟନ ଖୋଜିବା ପାଇଁ Naari Kavach କୁ ନିକଟସ୍ଥ ଡିଭାଇସ ଓ ଲୋକେସନ ଅନୁମତି ଦରକାର।</string>
     <string name="tr_pb_paired_snack">%1$s ସେଭ ହେଲା। ଏବେ ପରୀକ୍ଷା ପାଇଁ ଏହାକୁ ଦୁଇଥର ଦବାନ୍ତୁ।</string>
     <string name="tr_pb_rssi">%1$d dBm</string>
     <string name="tr_pb_tag_compatible">ସମର୍ଥିତ</string>

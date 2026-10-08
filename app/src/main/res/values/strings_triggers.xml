@@ -15,10 +15,10 @@
          tr_default_owner_name), the location argument is tr_sms_location_fmt or
          tr_sms_location_unknown. -->
     <string name="tr_default_owner_name">Your contact</string>
-    <string name="tr_sms_shutdown">Naari Shakti: %1$s\'s phone is switching off. Last known location: %2$s</string>
+    <string name="tr_sms_shutdown">Naari Kavach: %1$s\'s phone is switching off. Last known location: %2$s</string>
     <!-- %2$d is the battery percentage. -->
-    <string name="tr_sms_low_battery">Naari Shakti: %1$s\'s phone battery is at %2$d%%. Last known location: %3$s</string>
-    <string name="tr_sms_sim_changed">Naari Shakti: The SIM card in %1$s\'s phone was changed. This message is from the new SIM. Location: %2$s</string>
+    <string name="tr_sms_low_battery">Naari Kavach: %1$s\'s phone battery is at %2$d%%. Last known location: %3$s</string>
+    <string name="tr_sms_sim_changed">Naari Kavach: The SIM card in %1$s\'s phone was changed. This message is from the new SIM. Location: %2$s</string>
     <!-- %1$s is a Google Maps link, %2$s the time the location was recorded. -->
     <string name="tr_sms_location_fmt">%1$s (%2$s)</string>
     <string name="tr_sms_location_unknown">not available</string>
@@ -75,7 +75,7 @@
     <string name="tr_pb_scan_failed">Scanning failed (error %1$d). Turn Bluetooth off and on, then try again.</string>
     <string name="tr_pb_no_bluetooth">This phone doesn\'t support Bluetooth Low Energy.</string>
     <string name="tr_pb_bt_needed">Turn on Bluetooth to find your button.</string>
-    <string name="tr_pb_perm_denied">Naari Shakti needs the Nearby devices and Location permissions to find your button.</string>
+    <string name="tr_pb_perm_denied">Naari Kavach needs the Nearby devices and Location permissions to find your button.</string>
     <!-- %1$s is the button's name. -->
     <string name="tr_pb_paired_snack">%1$s saved. Now press it twice to test.</string>
     <!-- Signal strength, %1$d is negative, e.g. -62 dBm. -->

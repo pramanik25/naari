@@ -46,7 +46,7 @@
     <!-- ===================== Onboarding ===================== -->
     <string name="onb_overline">শুরু করার আগে</string>
     <string name="onb_title">চলুন, আপনার সুরক্ষা-বলয় তৈরি করি</string>
-    <string name="onb_body">আপনাকে সুরক্ষিত রাখতে Naari Shakti-র কয়েকটি অনুমতি দরকার। নিয়ন্ত্রণ আপনার হাতেই থাকবে, যেকোনো সময় সেটিংস থেকে এগুলো বদলাতে পারবেন।</string>
+    <string name="onb_body">আপনাকে সুরক্ষিত রাখতে Naari Kavach-র কয়েকটি অনুমতি দরকার। নিয়ন্ত্রণ আপনার হাতেই থাকবে, যেকোনো সময় সেটিংস থেকে এগুলো বদলাতে পারবেন।</string>
     <string name="onb_allow">অনুমতি দিন</string>
     <string name="onb_done">সব তৈরি। যখন চাইবেন, সুরক্ষা চালু করুন।</string>
     <string name="onb_partial">কিছু অনুমতি বাদ পড়েছে। সেটিংস থেকে সেগুলো দিতে পারবেন।</string>
@@ -215,7 +215,7 @@
     <!-- ===================== Profile ===================== -->
     <string name="profile_overline">আপনার প্রোফাইল</string>
     <string name="profile_title">আপনার সম্পর্কে</string>
-    <string name="profile_body">এতে আপনার কন্টাক্ট ও উদ্ধারকারীরা আপনাকে চিনতে পারবেন। আপনার নাম ও মোবাইল নম্বর আপনার Naari Shakti অ্যাকাউন্টেও সেভ হয়।</string>
+    <string name="profile_body">এতে আপনার কন্টাক্ট ও উদ্ধারকারীরা আপনাকে চিনতে পারবেন। আপনার নাম ও মোবাইল নম্বর আপনার Naari Kavach অ্যাকাউন্টেও সেভ হয়।</string>
     <string name="profile_add_photo">ছবি যোগ করতে ট্যাপ করুন</string>
     <string name="profile_change_photo">ছবি বদলাতে ট্যাপ করুন</string>
     <string name="cd_profile_photo">প্রোফাইল ছবি। বদলাতে দুবার ট্যাপ করুন।</string>
@@ -244,7 +244,7 @@
     <string name="vault_title">প্রমাণ ভল্ট</string>
     <string name="vault_body">SOS-এর সময় নিজে থেকে তোলা ছবি, নতুনগুলো আগে।</string>
     <string name="vault_empty_title">এখনও কোনো প্রমাণ নেই</string>
-    <string name="vault_empty_body">SOS চালু হলে Naari Shakti চুপচাপ সামনের ও পেছনের ক্যামেরায় ছবি তোলে। সেগুলো এখানে দেখা যাবে।</string>
+    <string name="vault_empty_body">SOS চালু হলে Naari Kavach চুপচাপ সামনের ও পেছনের ক্যামেরায় ছবি তোলে। সেগুলো এখানে দেখা যাবে।</string>
     <string name="vault_front">সামনের ক্যামেরা</string>
     <string name="vault_back">পেছনের ক্যামেরা</string>
     <string name="vault_photo">ছবি</string>

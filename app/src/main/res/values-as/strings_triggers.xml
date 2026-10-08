@@ -8,10 +8,10 @@
 
     <!-- ===================== SMS alerts to emergency contacts ===================== -->
     <string name="tr_default_owner_name">আপোনাৰ কণ্টেক্ট</string>
-    <string name="tr_sms_shutdown">Naari Shakti: %1$s-ৰ ফোন বন্ধ হৈ আছে। শেষ জনা অৱস্থান: %2$s</string>
+    <string name="tr_sms_shutdown">Naari Kavach: %1$s-ৰ ফোন বন্ধ হৈ আছে। শেষ জনা অৱস্থান: %2$s</string>
     <!-- %2$d is the battery percentage. -->
-    <string name="tr_sms_low_battery">Naari Shakti: %1$s-ৰ ফোনৰ বেটাৰী %2$d%%। শেষ জনা অৱস্থান: %3$s</string>
-    <string name="tr_sms_sim_changed">Naari Shakti: %1$s-ৰ ফোনৰ SIM কাৰ্ড সলনি কৰা হৈছে। এই বাৰ্তা নতুন SIM-ৰ পৰা আহিছে। অৱস্থান: %2$s</string>
+    <string name="tr_sms_low_battery">Naari Kavach: %1$s-ৰ ফোনৰ বেটাৰী %2$d%%। শেষ জনা অৱস্থান: %3$s</string>
+    <string name="tr_sms_sim_changed">Naari Kavach: %1$s-ৰ ফোনৰ SIM কাৰ্ড সলনি কৰা হৈছে। এই বাৰ্তা নতুন SIM-ৰ পৰা আহিছে। অৱস্থান: %2$s</string>
     <!-- %1$s is a Google Maps link, %2$s the time the location was recorded. -->
     <string name="tr_sms_location_fmt">%1$s (%2$s)</string>
     <string name="tr_sms_location_unknown">উপলব্ধ নহয়</string>
@@ -67,7 +67,7 @@
     <string name="tr_pb_scan_failed">বিচাৰিব পৰা নগ’ল (ত্ৰুটি %1$d)। Bluetooth অফ কৰি পুনৰ অন কৰক, তাৰ পিছত চেষ্টা কৰক।</string>
     <string name="tr_pb_no_bluetooth">এই ফোনত Bluetooth Low Energy নাই।</string>
     <string name="tr_pb_bt_needed">আপোনাৰ বুটাম বিচাৰিবলৈ Bluetooth অন কৰক।</string>
-    <string name="tr_pb_perm_denied">আপোনাৰ বুটাম বিচাৰিবলৈ Naari Shakti-ক ওচৰৰ ডিভাইচ আৰু অৱস্থানৰ অনুমতি লাগে।</string>
+    <string name="tr_pb_perm_denied">আপোনাৰ বুটাম বিচাৰিবলৈ Naari Kavach-ক ওচৰৰ ডিভাইচ আৰু অৱস্থানৰ অনুমতি লাগে।</string>
     <!-- %1$s is the button's name. -->
     <string name="tr_pb_paired_snack">%1$s ছেভ হ’ল। এতিয়া পৰীক্ষা কৰিবলৈ দুবাৰ টিপক।</string>
     <!-- Signal strength, %1$d is negative, e.g. -62 dBm. -->

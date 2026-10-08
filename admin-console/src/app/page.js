@@ -55,7 +55,7 @@ function Tick() {
 
 function Logo() {
   return (
-    <svg className="s-logo" viewBox="0 0 108 108" role="img" aria-label="Naari Shakti">
+    <svg className="s-logo" viewBox="0 0 108 108" role="img" aria-label="Naari Kavach">
       <defs>
         <linearGradient id="ns-logo" x1="0" y1="0" x2="1" y2="1">
           <stop offset="0" stopColor="#FF4D7E" />
@@ -167,7 +167,7 @@ export default function HomePage() {
         <div className="s-wrap">
           <a className="s-brand" href="#top">
             <Logo />
-            Naari Shakti
+            Naari Kavach
           </a>
           <nav className="s-nav" aria-label="Sections">
             <a href="#how">How it protects you</a>
@@ -189,7 +189,7 @@ export default function HomePage() {
                 Help is on its way, <em>even when you can’t reach your phone.</em>
               </h1>
               <p className="s-lede">
-                Naari Shakti alerts the people you trust with your live location, calls them, and records
+                Naari Kavach alerts the people you trust with your live location, calls them, and records
                 evidence — started by a button press, a shake, a word, or a scream.
               </p>
               <div className="s-cta">
@@ -362,7 +362,7 @@ export default function HomePage() {
         <section className="s-section" id="download">
           <div className="s-wrap">
             <p className="s-eyebrow">Download</p>
-            <h2>Install Naari Shakti on your phone</h2>
+            <h2>Install Naari Kavach on your phone</h2>
             <p className="s-section-lede">
               The app is downloaded directly from this site as an APK file. Open this page on your Android phone
               and follow the steps.
@@ -370,7 +370,7 @@ export default function HomePage() {
 
             <div className="s-download">
               <div className="s-panel">
-                <h3>Naari Shakti for Android</h3>
+                <h3>Naari Kavach for Android</h3>
                 <p style={{ color: "var(--s-muted)" }}>Free. No ads. No sign-up.</p>
                 <a className="s-btn" href="/download">
                   Download APK ({release.sizeMb} MB)
@@ -432,11 +432,11 @@ export default function HomePage() {
       <footer className="s-footer">
         <div className="s-wrap">
           <p>
-            <strong>In immediate danger, call 112.</strong> Naari Shakti is an aid, not a replacement for
+            <strong>In immediate danger, call 112.</strong> Naari Kavach is an aid, not a replacement for
             emergency services. SMS and calls need mobile signal; live tracking and guardian alerts need
             internet.
           </p>
-          <p>© {new Date().getFullYear()} Naari Shakti</p>
+          <p>© {new Date().getFullYear()} Naari Kavach</p>
         </div>
       </footer>
     </div>

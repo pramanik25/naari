@@ -8,9 +8,9 @@
 
     <!-- SMS alerts to emergency contacts -->
     <string name="tr_default_owner_name">آپ کا رابطہ</string>
-    <string name="tr_sms_shutdown">Naari Shakti: %1$s کا فون بند ہو رہا ہے۔ آخری معلوم لوکیشن: %2$s</string>
-    <string name="tr_sms_low_battery">Naari Shakti: %1$s کے فون کی بیٹری %2$d%% ہے۔ آخری معلوم لوکیشن: %3$s</string>
-    <string name="tr_sms_sim_changed">Naari Shakti: %1$s کے فون کا SIM کارڈ بدل دیا گیا ہے۔ یہ پیغام نئے SIM سے ہے۔ لوکیشن: %2$s</string>
+    <string name="tr_sms_shutdown">Naari Kavach: %1$s کا فون بند ہو رہا ہے۔ آخری معلوم لوکیشن: %2$s</string>
+    <string name="tr_sms_low_battery">Naari Kavach: %1$s کے فون کی بیٹری %2$d%% ہے۔ آخری معلوم لوکیشن: %3$s</string>
+    <string name="tr_sms_sim_changed">Naari Kavach: %1$s کے فون کا SIM کارڈ بدل دیا گیا ہے۔ یہ پیغام نئے SIM سے ہے۔ لوکیشن: %2$s</string>
     <string name="tr_sms_location_fmt">%1$s (%2$s)</string>
     <string name="tr_sms_location_unknown">دستیاب نہیں</string>
 
@@ -63,7 +63,7 @@
     <string name="tr_pb_scan_failed">اسکین ناکام (خرابی %1$d)۔ Bluetooth بند کر کے دوبارہ آن کریں، پھر کوشش کریں۔</string>
     <string name="tr_pb_no_bluetooth">یہ فون Bluetooth Low Energy کو سپورٹ نہیں کرتا۔</string>
     <string name="tr_pb_bt_needed">اپنا بٹن ڈھونڈنے کے لیے Bluetooth آن کریں۔</string>
-    <string name="tr_pb_perm_denied">آپ کا بٹن ڈھونڈنے کے لیے Naari Shakti کو قریبی ڈیوائسز اور لوکیشن کی اجازت چاہیے۔</string>
+    <string name="tr_pb_perm_denied">آپ کا بٹن ڈھونڈنے کے لیے Naari Kavach کو قریبی ڈیوائسز اور لوکیشن کی اجازت چاہیے۔</string>
     <string name="tr_pb_paired_snack">%1$s محفوظ ہو گیا۔ اب ٹیسٹ کے لیے اسے دو بار دبائیں۔</string>
     <string name="tr_pb_rssi">%1$d dBm</string>
     <string name="tr_pb_tag_compatible">معاون</string>

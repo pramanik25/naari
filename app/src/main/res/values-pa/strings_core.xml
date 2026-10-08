@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="ns_accessibility_description">ਸਕ੍ਰੀਨ ਬੰਦ ਜਾਂ ਲਾਕ ਹੋਣ ’ਤੇ ਵੌਲਿਊਮ ਬਟਨ ਦੇ ਪੈਟਰਨ ਨਾਲ Naari Shakti ਨੂੰ SOS ਸ਼ੁਰੂ ਕਰਨ ਦਿੰਦਾ ਹੈ। Naari Shakti ਤੁਹਾਡੀ ਸਕ੍ਰੀਨ ’ਤੇ ਜੋ ਹੈ ਉਹ ਨਹੀਂ ਪੜ੍ਹਦੀ।</string>
+    <string name="ns_accessibility_description">ਸਕ੍ਰੀਨ ਬੰਦ ਜਾਂ ਲਾਕ ਹੋਣ ’ਤੇ ਵੌਲਿਊਮ ਬਟਨ ਦੇ ਪੈਟਰਨ ਨਾਲ Naari Kavach ਨੂੰ SOS ਸ਼ੁਰੂ ਕਰਨ ਦਿੰਦਾ ਹੈ। Naari Kavach ਤੁਹਾਡੀ ਸਕ੍ਰੀਨ ’ਤੇ ਜੋ ਹੈ ਉਹ ਨਹੀਂ ਪੜ੍ਹਦੀ।</string>
 
     <!-- Appearance & language -->
     <string name="core_back">ਪਿੱਛੇ</string>
     <string name="core_appearance_eyebrow">ਆਪਣੇ ਮੁਤਾਬਕ</string>
     <string name="core_appearance_title">ਦਿੱਖ ਅਤੇ ਭਾਸ਼ਾ</string>
-    <string name="core_appearance_desc">ਚੁਣੋ ਕਿ Naari Shakti ਕਿਵੇਂ ਦਿਖੇ ਅਤੇ ਕਿਹੜੀ ਭਾਸ਼ਾ ਬੋਲੇ। ਤੁਹਾਡੇ ਸੰਪਰਕਾਂ ਨੂੰ ਭੇਜੇ ਅਲਰਟ ਵੀ ਇਸੇ ਭਾਸ਼ਾ ਵਿੱਚ ਜਾਣਗੇ।</string>
+    <string name="core_appearance_desc">ਚੁਣੋ ਕਿ Naari Kavach ਕਿਵੇਂ ਦਿਖੇ ਅਤੇ ਕਿਹੜੀ ਭਾਸ਼ਾ ਬੋਲੇ। ਤੁਹਾਡੇ ਸੰਪਰਕਾਂ ਨੂੰ ਭੇਜੇ ਅਲਰਟ ਵੀ ਇਸੇ ਭਾਸ਼ਾ ਵਿੱਚ ਜਾਣਗੇ।</string>
     <string name="core_section_theme">ਥੀਮ</string>
     <string name="core_theme_dark">ਡਾਰਕ</string>
     <string name="core_theme_light">ਲਾਈਟ</string>

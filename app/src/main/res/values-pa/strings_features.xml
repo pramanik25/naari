@@ -53,7 +53,7 @@
     <!-- ===================== Trigger phrase ===================== -->
     <string name="ub_trigger_eyebrow">ਆਵਾਜ਼ ਨਾਲ ਟ੍ਰਿਗਰ</string>
     <string name="ub_trigger_title">ਟ੍ਰਿਗਰ ਸ਼ਬਦ</string>
-    <string name="ub_trigger_desc">ਸੁਰੱਖਿਆ ਚਾਲੂ ਹੋਣ ’ਤੇ ਇਹ ਸ਼ਬਦ ਬੋਲੋ, ਅਤੇ Naari Shakti ਤੁਹਾਡਾ SOS ਭੇਜ ਦੇਵੇਗੀ।</string>
+    <string name="ub_trigger_desc">ਸੁਰੱਖਿਆ ਚਾਲੂ ਹੋਣ ’ਤੇ ਇਹ ਸ਼ਬਦ ਬੋਲੋ, ਅਤੇ Naari Kavach ਤੁਹਾਡਾ SOS ਭੇਜ ਦੇਵੇਗੀ।</string>
     <string name="ub_trigger_current_label">ਤੁਹਾਡਾ ਟ੍ਰਿਗਰ ਸ਼ਬਦ</string>
     <string name="ub_trigger_status_active">ਹੁਣ ਸੁਣ ਰਹੀ ਹੈ · ਆਫ਼ਲਾਈਨ ਕੰਮ ਕਰਦੀ ਹੈ</string>
     <string name="ub_trigger_status_inactive">ਸਿਰਫ਼ ਸੁਰੱਖਿਆ ਚਾਲੂ ਹੋਣ ’ਤੇ ਹੀ ਸੁਣਿਆ ਜਾਂਦਾ ਹੈ</string>
@@ -85,7 +85,7 @@
     <string name="ub_trigger_err_generic">ਰਿਕਾਰਡਿੰਗ ਨਹੀਂ ਹੋਈ। ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ ਜਾਂ ਹੇਠਾਂ ਆਪਣਾ ਸ਼ਬਦ ਲਿਖੋ।</string>
     <string name="ub_trigger_mic_denied">ਰਿਕਾਰਡ ਕਰਨ ਲਈ ਮਾਈਕ੍ਰੋਫ਼ੋਨ ਦੀ ਪਹੁੰਚ ਚਾਹੀਦੀ ਹੈ। ਇਸਦੀ ਬਜਾਏ ਤੁਸੀਂ ਆਪਣਾ ਸ਼ਬਦ ਲਿਖ ਸਕਦੇ ਹੋ।</string>
     <string name="ub_trigger_mic_rationale_title">ਮਾਈਕ੍ਰੋਫ਼ੋਨ ਦੀ ਇਜਾਜ਼ਤ ਦਿਓ</string>
-    <string name="ub_trigger_mic_rationale_body">Naari Shakti ਮਾਈਕ੍ਰੋਫ਼ੋਨ ਸਿਰਫ਼ ਤੁਹਾਡਾ ਸ਼ਬਦ ਇੱਕ ਵਾਰ ਸੁਣ ਕੇ ਲਿਖਣ ਲਈ ਵਰਤਦੀ ਹੈ। ਕੋਈ ਆਡੀਓ ਸੇਵ ਨਹੀਂ ਹੁੰਦਾ।</string>
+    <string name="ub_trigger_mic_rationale_body">Naari Kavach ਮਾਈਕ੍ਰੋਫ਼ੋਨ ਸਿਰਫ਼ ਤੁਹਾਡਾ ਸ਼ਬਦ ਇੱਕ ਵਾਰ ਸੁਣ ਕੇ ਲਿਖਣ ਲਈ ਵਰਤਦੀ ਹੈ। ਕੋਈ ਆਡੀਓ ਸੇਵ ਨਹੀਂ ਹੁੰਦਾ।</string>
     <string name="ub_trigger_unavailable_title">ਆਵਾਜ਼ ਰਿਕਾਰਡਿੰਗ ਉਪਲਬਧ ਨਹੀਂ</string>
     <string name="ub_trigger_unavailable_body">ਇਸ ਫ਼ੋਨ ਵਿੱਚ ਆਵਾਜ਼ ਪਛਾਣਨ ਦੀ ਸੇਵਾ ਨਹੀਂ ਹੈ। ਇਸਦੀ ਬਜਾਏ ਹੇਠਾਂ ਆਪਣਾ ਸ਼ਬਦ ਲਿਖੋ।</string>
     <string name="ub_trigger_warn_title">ਘੱਟ ਵਰਤਿਆ ਜਾਣ ਵਾਲਾ ਸ਼ਬਦ ਚੁਣੋਗੇ?</string>
@@ -263,7 +263,7 @@
     <string name="ub_live_map_cd">ਤੁਹਾਡੀ ਹੁਣ ਦੀ ਲੋਕੇਸ਼ਨ ਦਿਖਾਉਂਦਾ ਨਕਸ਼ਾ</string>
     <string name="ub_live_status_idle">ਤੁਹਾਡੀ ਲੋਕੇਸ਼ਨ</string>
     <string name="ub_live_status_live">ਲਾਈਵ · ਸਾਂਝੀ ਹੋ ਰਹੀ</string>
-    <string name="ub_live_perm_title">Naari Shakti ਲਈ ਲੋਕੇਸ਼ਨ ਬੰਦ ਹੈ</string>
+    <string name="ub_live_perm_title">Naari Kavach ਲਈ ਲੋਕੇਸ਼ਨ ਬੰਦ ਹੈ</string>
     <string name="ub_live_perm_body">ਤੁਸੀਂ ਕਿੱਥੇ ਹੋ, ਇਹ ਦੇਖਣ ਅਤੇ ਸਾਂਝਾ ਕਰਨ ਲਈ ਲੋਕੇਸ਼ਨ ਦੀ ਇਜਾਜ਼ਤ ਦਿਓ।</string>
     <string name="ub_live_you_are_here">ਤੁਸੀਂ ਇੱਥੇ ਹੋ</string>
     <string name="ub_live_finding">ਤੁਹਾਡੀ ਲੋਕੇਸ਼ਨ ਲੱਭ ਰਹੇ ਹਾਂ…</string>
@@ -327,11 +327,11 @@
     <string name="ub_zone_perm_title">ਸਟੀਕ ਲੋਕੇਸ਼ਨ ਚਾਹੀਦੀ ਹੈ</string>
     <string name="ub_zone_perm_body">ਪਿੰਨ ਲਾਉਣ ਅਤੇ ਸੇਫ਼ ਜ਼ੋਨਾਂ ’ਤੇ ਨਜ਼ਰ ਰੱਖਣ ਲਈ ਸਟੀਕ ਲੋਕੇਸ਼ਨ ਦੀ ਇਜਾਜ਼ਤ ਦਿਓ।</string>
     <string name="ub_zone_bg_title">ਅਲਰਟ ਸਿਰਫ਼ “ਹਰ ਵੇਲੇ ਇਜਾਜ਼ਤ ਦਿਓ” ਨਾਲ ਹੀ ਕੰਮ ਕਰਦੇ ਹਨ</string>
-    <string name="ub_zone_bg_body">Naari Shakti ਬੰਦ ਹੋਣ ’ਤੇ ਸੇਫ਼ ਜ਼ੋਨਾਂ ’ਤੇ ਨਜ਼ਰ ਰੱਖਣ ਲਈ Android ਨੂੰ ਬੈਕਗ੍ਰਾਊਂਡ ਲੋਕੇਸ਼ਨ ਚਾਹੀਦੀ ਹੈ।</string>
+    <string name="ub_zone_bg_body">Naari Kavach ਬੰਦ ਹੋਣ ’ਤੇ ਸੇਫ਼ ਜ਼ੋਨਾਂ ’ਤੇ ਨਜ਼ਰ ਰੱਖਣ ਲਈ Android ਨੂੰ ਬੈਕਗ੍ਰਾਊਂਡ ਲੋਕੇਸ਼ਨ ਚਾਹੀਦੀ ਹੈ।</string>
     <string name="ub_zone_bg_fix">ਇਜਾਜ਼ਤ ਦਿਓ</string>
     <string name="ub_zone_bg_dialog_title">ਲੋਕੇਸ਼ਨ ਨੂੰ ਹਰ ਵੇਲੇ ਦੀ ਇਜਾਜ਼ਤ ਦਿਓ</string>
-    <string name="ub_zone_bg_dialog_body">“ਹਰ ਵੇਲੇ ਇਜਾਜ਼ਤ ਦਿਓ” ਚੁਣੋ ਤਾਂ ਜੋ Naari Shakti ਬੰਦ ਹੋਣ ’ਤੇ ਵੀ ਸੇਫ਼ ਜ਼ੋਨ ਅਲਰਟ ਕੰਮ ਕਰਨ। ਤੁਹਾਡੀ ਲੋਕੇਸ਼ਨ ਸਿਰਫ਼ ਇਸੇ ਫ਼ੋਨ ਵਿੱਚ ਜਾਂਚੀ ਜਾਂਦੀ ਹੈ।</string>
-    <string name="ub_zone_bg_dialog_body_settings">ਅਗਲੀ ਸਕ੍ਰੀਨ ’ਤੇ “ਹਰ ਵੇਲੇ ਇਜਾਜ਼ਤ ਦਿਓ” ਚੁਣੋ ਤਾਂ ਜੋ Naari Shakti ਬੰਦ ਹੋਣ ’ਤੇ ਵੀ ਸੇਫ਼ ਜ਼ੋਨ ਅਲਰਟ ਕੰਮ ਕਰਨ। ਤੁਹਾਡੀ ਲੋਕੇਸ਼ਨ ਸਿਰਫ਼ ਇਸੇ ਫ਼ੋਨ ਵਿੱਚ ਜਾਂਚੀ ਜਾਂਦੀ ਹੈ।</string>
+    <string name="ub_zone_bg_dialog_body">“ਹਰ ਵੇਲੇ ਇਜਾਜ਼ਤ ਦਿਓ” ਚੁਣੋ ਤਾਂ ਜੋ Naari Kavach ਬੰਦ ਹੋਣ ’ਤੇ ਵੀ ਸੇਫ਼ ਜ਼ੋਨ ਅਲਰਟ ਕੰਮ ਕਰਨ। ਤੁਹਾਡੀ ਲੋਕੇਸ਼ਨ ਸਿਰਫ਼ ਇਸੇ ਫ਼ੋਨ ਵਿੱਚ ਜਾਂਚੀ ਜਾਂਦੀ ਹੈ।</string>
+    <string name="ub_zone_bg_dialog_body_settings">ਅਗਲੀ ਸਕ੍ਰੀਨ ’ਤੇ “ਹਰ ਵੇਲੇ ਇਜਾਜ਼ਤ ਦਿਓ” ਚੁਣੋ ਤਾਂ ਜੋ Naari Kavach ਬੰਦ ਹੋਣ ’ਤੇ ਵੀ ਸੇਫ਼ ਜ਼ੋਨ ਅਲਰਟ ਕੰਮ ਕਰਨ। ਤੁਹਾਡੀ ਲੋਕੇਸ਼ਨ ਸਿਰਫ਼ ਇਸੇ ਫ਼ੋਨ ਵਿੱਚ ਜਾਂਚੀ ਜਾਂਦੀ ਹੈ।</string>
     <string name="ub_zone_bg_granted">ਹੁਣ ਸੇਫ਼ ਜ਼ੋਨ ਬੈਕਗ੍ਰਾਊਂਡ ਵਿੱਚ ਵੀ ਤੁਹਾਨੂੰ ਅਲਰਟ ਦੇਣਗੇ</string>
     <string name="ub_zone_bg_denied">ਬੈਕਗ੍ਰਾਊਂਡ ਲੋਕੇਸ਼ਨ ਬੰਦ ਹੈ। ਸੈਟਿੰਗਾਂ → ਇਜਾਜ਼ਤਾਂ → ਲੋਕੇਸ਼ਨ ਵਿੱਚ “ਹਰ ਵੇਲੇ ਇਜਾਜ਼ਤ ਦਿਓ” ਚਾਲੂ ਕਰੋ।</string>
 

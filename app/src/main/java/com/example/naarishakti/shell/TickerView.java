@@ -17,20 +17,25 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 /**
- * One line of text that travels across the view from the left edge to the right edge and starts
- * again. It only animates while it is on screen, and stands still (start-aligned, ellipsized) when
- * the phone has animations switched off.
+ * One line of text that travels across the view from right to left in an endless loop (left to
+ * right for right-to-left scripts, so the sentence still enters start first), fading out at both
+ * edges. It only animates while it is on screen, and stands still (start-aligned, ellipsized)
+ * when the phone has animations switched off.
  */
 public class TickerView extends View {
 
     private static final float SPEED_DP_PER_SECOND = 55f;
     private static final float TEXT_SP = 13f;
+    /** Space between one copy of the text and the next. */
+    private static final float GAP_DP = 56f;
+    private static final float FADE_DP = 20f;
 
     private final TextPaint paint = new TextPaint(Paint.ANTI_ALIAS_FLAG);
     private final float speedPxPerMs;
+    private final float gapPx;
     private String text = "";
     private float textWidth;
-    /** How far the text's leading (right) edge has travelled from the view's left edge, in px. */
+    /** How far the loop has scrolled, in px; always less than one text width plus one gap. */
     private float travelled;
     private long lastFrameMs;
 
@@ -42,6 +47,9 @@ public class TickerView extends View {
         super(context, attrs);
         float density = getResources().getDisplayMetrics().density;
         speedPxPerMs = SPEED_DP_PER_SECOND * density / 1000f;
+        gapPx = GAP_DP * density;
+        setHorizontalFadingEdgeEnabled(true);
+        setFadingEdgeLength(Math.round(FADE_DP * density));
         paint.setTextSize(TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, TEXT_SP,
                 getResources().getDisplayMetrics()));
         paint.setFakeBoldText(true);
@@ -68,6 +76,17 @@ public class TickerView extends View {
                 resolveSize(wanted, heightMeasureSpec));
     }
 
+    // A plain View never scrolls, so it reports no fade; the text runs off both edges here.
+    @Override
+    protected float getLeftFadingEdgeStrength() {
+        return animationsEnabled() ? 1f : 0f;
+    }
+
+    @Override
+    protected float getRightFadingEdgeStrength() {
+        return animationsEnabled() ? 1f : 0f;
+    }
+
     @Override
     protected void onVisibilityChanged(@NonNull View changedView, int visibility) {
         super.onVisibilityChanged(changedView, visibility);
@@ -91,9 +110,14 @@ public class TickerView extends View {
         long now = SystemClock.uptimeMillis();
         if (lastFrameMs != 0L) travelled += (now - lastFrameMs) * speedPxPerMs;
         lastFrameMs = now;
-        // One lap: the text enters from beyond the left edge and leaves past the right edge.
-        if (travelled > getWidth() + textWidth) travelled = 0f;
-        canvas.drawText(text, travelled - textWidth, baseline, paint);
+        float period = textWidth + gapPx;
+        travelled %= period;
+        // Copies sit one period apart; shifting them all by the distance travelled makes the loop.
+        boolean rtl = getLayoutDirection() == LAYOUT_DIRECTION_RTL;
+        float first = rtl ? travelled - period : -travelled;
+        for (float x = first; x < getWidth(); x += period) {
+            canvas.drawText(text, x, baseline, paint);
+        }
         if (isShown()) postInvalidateOnAnimation();
     }
 

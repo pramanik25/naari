@@ -39,7 +39,7 @@
     <!-- ===================== Helper alert screen ===================== -->
     <string name="cl_helper_eyebrow">ওচৰত SOS</string>
     <string name="cl_helper_title">ওচৰৰ কোনোবাক সহায় লাগে</string>
-    <string name="cl_helper_subtitle">আপোনাৰ ওচৰৰ এগৰাকী Naari Shakti ব্যৱহাৰকাৰীয়ে SOS আৰম্ভ কৰিছে।</string>
+    <string name="cl_helper_subtitle">আপোনাৰ ওচৰৰ এগৰাকী Naari Kavach ব্যৱহাৰকাৰীয়ে SOS আৰম্ভ কৰিছে।</string>
     <string name="cl_helper_distance_unknown">আপোনাৰ ওচৰতে</string>
     <string name="cl_helper_safety">নিজকে বিপদত নেপেলাব। প্ৰথমে 112-ত কল কৰক।</string>
     <string name="cl_helper_safety_detail">মানুহৰ চকুৰ সন্মুখত থাকক, ফোনটো লগত ৰাখক আৰু পুলিচক আগবাঢ়িবলৈ দিয়ক।</string>
@@ -63,7 +63,7 @@
     <string name="cl_settings_desc">SMS নগ’লেও অভিভাৱকসকলে তৎক্ষণাত আপোনাৰ SOS পায়, লগতে লাইভ অৱস্থান আৰু প্ৰমাণ।</string>
 
     <string name="cl_error_offline">আপুনি অফলাইন আছে। এই ফোনত ছেভ কৰি ৰখা তথ্য দেখুওৱা হৈছে।</string>
-    <string name="cl_error_server">Naari Shakti ছাৰ্ভাৰৰ লগত সংযোগ হ’ব নোৱাৰিলে।</string>
+    <string name="cl_error_server">Naari Kavach ছাৰ্ভাৰৰ লগত সংযোগ হ’ব নোৱাৰিলে।</string>
     <string name="cl_error_generic">কিবা সমস্যা হ’ল (ত্ৰুটি %1$d)। পুনৰ চেষ্টা কৰক।</string>
     <string name="cl_retry">পুনৰ চেষ্টা কৰক</string>
 
@@ -88,11 +88,11 @@
     </plurals>
 
     <string name="cl_section_code">আপোনাৰ অভিভাৱক ক’ড</string>
-    <string name="cl_code_caption">যিসকলক বিশ্বাস কৰে, তেওঁলোকৰ লগত এই ক’ড শ্বেয়াৰ কৰক। তেওঁলোকে নিজৰ Naari Shakti এপত ইয়াক দিলে আপোনাৰ SOS সতৰ্কবাৰ্তা পাব।</string>
+    <string name="cl_code_caption">যিসকলক বিশ্বাস কৰে, তেওঁলোকৰ লগত এই ক’ড শ্বেয়াৰ কৰক। তেওঁলোকে নিজৰ Naari Kavach এপত ইয়াক দিলে আপোনাৰ SOS সতৰ্কবাৰ্তা পাব।</string>
     <string name="cl_copy">কপি কৰক</string>
     <string name="cl_share">শ্বেয়াৰ কৰক</string>
     <string name="cl_copied">ক’ড কপি হ’ল</string>
-    <string name="cl_share_text">Naari Shakti ইনষ্টল কৰি মোৰ ক’ড %1$s দিয়ক, তেতিয়া মোৰ SOS সতৰ্কবাৰ্তা পাব</string>
+    <string name="cl_share_text">Naari Kavach ইনষ্টল কৰি মোৰ ক’ড %1$s দিয়ক, তেতিয়া মোৰ SOS সতৰ্কবাৰ্তা পাব</string>
     <string name="cl_share_chooser">আপোনাৰ অভিভাৱক ক’ড শ্বেয়াৰ কৰক</string>
 
     <string name="cl_section_link">কাৰোবাৰ অভিভাৱক হওক</string>

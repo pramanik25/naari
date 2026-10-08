@@ -147,10 +147,10 @@ public final class Prefs {
     public static final String HELPER_ASKED = "helper_asked";
     /** When her SOS fires, also alert everyone nearby who agreed to help. Default true. */
     public static final String NEARBY_BROADCAST = "nearby_broadcast";
-    /** Also alert her emergency contacts on WhatsApp (via the Naari Shakti WhatsApp number). Default false. */
+    /** Also alert her emergency contacts on WhatsApp (via the Naari Kavach WhatsApp number). Default false. */
     public static final String WHATSAPP_ALERTS = "whatsapp_alerts";
 
-    // ---- Cloud (Naari Shakti API server) ----
+    // ---- Cloud (Naari Kavach API server) ----
     /** Account id assigned by the API on device registration, empty until registered. */
     public static final String CLOUD_USER_ID = "cloud_user_id";
     /** 6-character code others enter to become this user's guardian (cached from the API). */

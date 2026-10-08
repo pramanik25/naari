@@ -53,7 +53,7 @@
     <!-- ===================== Trigger phrase ===================== -->
     <string name="ub_trigger_eyebrow">અવાજથી ટ્રિગર</string>
     <string name="ub_trigger_title">ટ્રિગર શબ્દ</string>
-    <string name="ub_trigger_desc">સુરક્ષા ચાલુ હોય ત્યારે આ શબ્દ બોલો, અને Naari Shakti તમારો SOS મોકલી દેશે.</string>
+    <string name="ub_trigger_desc">સુરક્ષા ચાલુ હોય ત્યારે આ શબ્દ બોલો, અને Naari Kavach તમારો SOS મોકલી દેશે.</string>
     <string name="ub_trigger_current_label">તમારો ટ્રિગર શબ્દ</string>
     <string name="ub_trigger_status_active">હમણાં સાંભળી રહી છે · ઑફલાઇન કામ કરે છે</string>
     <string name="ub_trigger_status_inactive">ફક્ત સુરક્ષા ચાલુ હોય ત્યારે જ સંભળાય છે</string>
@@ -85,7 +85,7 @@
     <string name="ub_trigger_err_generic">રેકોર્ડિંગ ન થયું. ફરી પ્રયાસ કરો અથવા નીચે તમારો શબ્દ લખો.</string>
     <string name="ub_trigger_mic_denied">રેકોર્ડ કરવા માઇક્રોફોન ઍક્સેસ જરૂરી છે. તેના બદલે તમે તમારો શબ્દ લખી શકો છો.</string>
     <string name="ub_trigger_mic_rationale_title">માઇક્રોફોનની મંજૂરી આપો</string>
-    <string name="ub_trigger_mic_rationale_body">Naari Shakti માઇક્રોફોનનો ઉપયોગ ફક્ત તમારો શબ્દ એક વાર સાંભળીને લખવા માટે કરે છે. કોઈ ઑડિયો સેવ થતો નથી.</string>
+    <string name="ub_trigger_mic_rationale_body">Naari Kavach માઇક્રોફોનનો ઉપયોગ ફક્ત તમારો શબ્દ એક વાર સાંભળીને લખવા માટે કરે છે. કોઈ ઑડિયો સેવ થતો નથી.</string>
     <string name="ub_trigger_unavailable_title">અવાજ રેકોર્ડિંગ ઉપલબ્ધ નથી</string>
     <string name="ub_trigger_unavailable_body">આ ફોનમાં અવાજ ઓળખવાની સેવા નથી. તેના બદલે નીચે તમારો શબ્દ લખો.</string>
     <string name="ub_trigger_warn_title">ઓછો વપરાતો શબ્દ પસંદ કરશો?</string>
@@ -263,7 +263,7 @@
     <string name="ub_live_map_cd">તમારું હાલનું લોકેશન બતાવતો નકશો</string>
     <string name="ub_live_status_idle">તમારું લોકેશન</string>
     <string name="ub_live_status_live">લાઇવ · શેર થાય છે</string>
-    <string name="ub_live_perm_title">Naari Shakti માટે લોકેશન બંધ છે</string>
+    <string name="ub_live_perm_title">Naari Kavach માટે લોકેશન બંધ છે</string>
     <string name="ub_live_perm_body">તમે ક્યાં છો તે જોવા અને શેર કરવા લોકેશનની મંજૂરી આપો.</string>
     <string name="ub_live_you_are_here">તમે અહીં છો</string>
     <string name="ub_live_finding">તમારું લોકેશન શોધી રહ્યાં છીએ…</string>
@@ -327,11 +327,11 @@
     <string name="ub_zone_perm_title">ચોક્કસ લોકેશન જરૂરી છે</string>
     <string name="ub_zone_perm_body">પિન મૂકવા અને સેફ ઝોન પર નજર રાખવા ચોક્કસ લોકેશનની મંજૂરી આપો.</string>
     <string name="ub_zone_bg_title">એલર્ટ ફક્ત “હંમેશાં મંજૂરી આપો” સાથે જ કામ કરે છે</string>
-    <string name="ub_zone_bg_body">Naari Shakti બંધ હોય ત્યારે સેફ ઝોન પર નજર રાખવા Android ને બૅકગ્રાઉન્ડ લોકેશન જોઈએ છે.</string>
+    <string name="ub_zone_bg_body">Naari Kavach બંધ હોય ત્યારે સેફ ઝોન પર નજર રાખવા Android ને બૅકગ્રાઉન્ડ લોકેશન જોઈએ છે.</string>
     <string name="ub_zone_bg_fix">મંજૂરી આપો</string>
     <string name="ub_zone_bg_dialog_title">લોકેશનને હંમેશાં મંજૂરી આપો</string>
-    <string name="ub_zone_bg_dialog_body">“હંમેશાં મંજૂરી આપો” પસંદ કરો, જેથી Naari Shakti બંધ હોય ત્યારે પણ સેફ ઝોન એલર્ટ કામ કરે. તમારું લોકેશન ફક્ત આ ફોનમાં જ તપાસાય છે.</string>
-    <string name="ub_zone_bg_dialog_body_settings">આગલી સ્ક્રીન પર “હંમેશાં મંજૂરી આપો” પસંદ કરો, જેથી Naari Shakti બંધ હોય ત્યારે પણ સેફ ઝોન એલર્ટ કામ કરે. તમારું લોકેશન ફક્ત આ ફોનમાં જ તપાસાય છે.</string>
+    <string name="ub_zone_bg_dialog_body">“હંમેશાં મંજૂરી આપો” પસંદ કરો, જેથી Naari Kavach બંધ હોય ત્યારે પણ સેફ ઝોન એલર્ટ કામ કરે. તમારું લોકેશન ફક્ત આ ફોનમાં જ તપાસાય છે.</string>
+    <string name="ub_zone_bg_dialog_body_settings">આગલી સ્ક્રીન પર “હંમેશાં મંજૂરી આપો” પસંદ કરો, જેથી Naari Kavach બંધ હોય ત્યારે પણ સેફ ઝોન એલર્ટ કામ કરે. તમારું લોકેશન ફક્ત આ ફોનમાં જ તપાસાય છે.</string>
     <string name="ub_zone_bg_granted">હવે સેફ ઝોન બૅકગ્રાઉન્ડમાં પણ તમને એલર્ટ આપશે</string>
     <string name="ub_zone_bg_denied">બૅકગ્રાઉન્ડ લોકેશન બંધ છે. સેટિંગ્સ → પરવાનગીઓ → લોકેશનમાં “હંમેશાં મંજૂરી આપો” ચાલુ કરો.</string>
 

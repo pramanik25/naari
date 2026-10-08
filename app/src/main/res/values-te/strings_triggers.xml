@@ -8,10 +8,10 @@
 
     <!-- SMS alerts to emergency contacts (keep short) -->
     <string name="tr_default_owner_name">మీ కాంటాక్ట్</string>
-    <string name="tr_sms_shutdown">Naari Shakti: %1$s ఫోన్ ఆఫ్ అవుతోంది. చివరి లొకేషన్: %2$s</string>
+    <string name="tr_sms_shutdown">Naari Kavach: %1$s ఫోన్ ఆఫ్ అవుతోంది. చివరి లొకేషన్: %2$s</string>
     <!-- %2$d is the battery percentage. -->
-    <string name="tr_sms_low_battery">Naari Shakti: %1$s ఫోన్ బ్యాటరీ %2$d%% ఉంది. చివరి లొకేషన్: %3$s</string>
-    <string name="tr_sms_sim_changed">Naari Shakti: %1$s ఫోన్‌లో SIM కార్డ్ మారింది. ఈ మెసేజ్ కొత్త SIM నుండి వచ్చింది. లొకేషన్: %2$s</string>
+    <string name="tr_sms_low_battery">Naari Kavach: %1$s ఫోన్ బ్యాటరీ %2$d%% ఉంది. చివరి లొకేషన్: %3$s</string>
+    <string name="tr_sms_sim_changed">Naari Kavach: %1$s ఫోన్‌లో SIM కార్డ్ మారింది. ఈ మెసేజ్ కొత్త SIM నుండి వచ్చింది. లొకేషన్: %2$s</string>
     <string name="tr_sms_location_fmt">%1$s (%2$s)</string>
     <string name="tr_sms_location_unknown">అందుబాటులో లేదు</string>
 
@@ -66,7 +66,7 @@
     <string name="tr_pb_scan_failed">స్కాన్ విఫలమైంది (ఎర్రర్ %1$d). Bluetooth ఆఫ్ చేసి మళ్లీ ఆన్ చేసి, ప్రయత్నించండి.</string>
     <string name="tr_pb_no_bluetooth">ఈ ఫోన్ Bluetooth Low Energy కి సపోర్ట్ చేయదు.</string>
     <string name="tr_pb_bt_needed">మీ బటన్‌ను కనుగొనడానికి Bluetooth ఆన్ చేయండి.</string>
-    <string name="tr_pb_perm_denied">మీ బటన్‌ను కనుగొనడానికి Naari Shakti కి సమీపంలోని పరికరాలు, లొకేషన్ అనుమతులు కావాలి.</string>
+    <string name="tr_pb_perm_denied">మీ బటన్‌ను కనుగొనడానికి Naari Kavach కి సమీపంలోని పరికరాలు, లొకేషన్ అనుమతులు కావాలి.</string>
     <!-- %1$s is the button's name. -->
     <string name="tr_pb_paired_snack">%1$s సేవ్ అయింది. ఇప్పుడు పరీక్షించడానికి రెండుసార్లు నొక్కండి.</string>
     <!-- Signal strength, %1$d is negative, e.g. -62 dBm. -->

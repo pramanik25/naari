@@ -10,7 +10,7 @@
     <string name="nb_home_location_denied">আপোনাৰ অৱস্থান অবিহনে আমি আপোনাক ওচৰৰ এলাৰ্টৰ সৈতে মিলাব নোৱাৰো। আপুনি পিছত ক্লাউড আৰু অভিভাৱক ত এইটো অন কৰিব পাৰে।</string>
 
     <string name="nb_mesh_title">ইণ্টাৰনেট নোহোৱাকৈও সহায় কৰিব নেকি?</string>
-    <string name="nb_mesh_body">ইণ্টাৰনেট নাথাকিলে Naari Shakti এ ওচৰৰ ফোনবোৰৰ মাজত Bluetooth ৰে SOS এলাৰ্ট পঠিয়াব পাৰে। ইয়াৰ বাবে ওচৰৰ ডিভাইচৰ অনুমতি লাগিব।</string>
+    <string name="nb_mesh_body">ইণ্টাৰনেট নাথাকিলে Naari Kavach এ ওচৰৰ ফোনবোৰৰ মাজত Bluetooth ৰে SOS এলাৰ্ট পঠিয়াব পাৰে। ইয়াৰ বাবে ওচৰৰ ডিভাইচৰ অনুমতি লাগিব।</string>
     <string name="nb_mesh_yes">অন কৰক</string>
     <string name="nb_mesh_no">নালাগে, ধন্যবাদ</string>
     <string name="nb_mesh_on">অফলাইন Bluetooth এলাৰ্ট অন আছে।</string>
@@ -31,12 +31,12 @@
     <string name="nb_wa_section">WhatsApp এলাৰ্ট</string>
     <string name="nb_wa_title">WhatsApp এলাৰ্ট</string>
     <string name="nb_wa_caption">আপোনাৰ SOS, লাইভ অৱস্থান আৰু ফটো আপোনাৰ সম্পৰ্কসকলক WhatsApp ত পঠিয়াওক।</string>
-    <string name="nb_wa_explain">এলাৰ্টবোৰ Naari Shakti ৰ WhatsApp নম্বৰৰ পৰা আহে, আপোনাৰ নিজৰ WhatsApp ৰ পৰা নহয়। এলাৰ্ট পোৱাৰ আগতে প্ৰতিজন সম্পৰ্কই আপোনাৰ আমন্ত্ৰণত এবাৰ টেপ কৰি যোগদান কৰিব লাগিব।</string>
+    <string name="nb_wa_explain">এলাৰ্টবোৰ Naari Kavach ৰ WhatsApp নম্বৰৰ পৰা আহে, আপোনাৰ নিজৰ WhatsApp ৰ পৰা নহয়। এলাৰ্ট পোৱাৰ আগতে প্ৰতিজন সম্পৰ্কই আপোনাৰ আমন্ত্ৰণত এবাৰ টেপ কৰি যোগদান কৰিব লাগিব।</string>
     <string name="nb_wa_joined">যোগদান কৰিছে ✓</string>
     <string name="nb_wa_not_joined">এতিয়াও যোগদান কৰা নাই</string>
     <string name="nb_wa_invite">আমন্ত্ৰণ</string>
     <string name="nb_wa_invite_cd">%1$s ক WhatsApp ত আমন্ত্ৰণ জনাওক</string>
-    <string name="nb_wa_invite_text">নমস্কাৰ, মই আপোনাক Naari Shakti ত মোৰ জৰুৰীকালীন সম্পৰ্ক হিচাপে যোগ কৰিছোঁ। WhatsApp ত মোৰ SOS এলাৰ্ট পাবলৈ এই লিংকটো খুলি বাৰ্তাটো পঠিয়াওক: %1$s</string>
+    <string name="nb_wa_invite_text">নমস্কাৰ, মই আপোনাক Naari Kavach ত মোৰ জৰুৰীকালীন সম্পৰ্ক হিচাপে যোগ কৰিছোঁ। WhatsApp ত মোৰ SOS এলাৰ্ট পাবলৈ এই লিংকটো খুলি বাৰ্তাটো পঠিয়াওক: %1$s</string>
     <string name="nb_wa_invite_chooser">আমন্ত্ৰণ পঠিয়াওক</string>
     <plurals name="nb_wa_joined_count">
         <item quantity="one">%2$d জনৰ ভিতৰত %1$d জনে যোগদান কৰিছে</item>

@@ -53,7 +53,7 @@
     <!-- ===================== Trigger phrase ===================== -->
     <string name="ub_trigger_eyebrow">குரல் மூலம் SOS</string>
     <string name="ub_trigger_title">அவசரச் சொல்</string>
-    <string name="ub_trigger_desc">பாதுகாப்பு இயக்கத்தில் இருக்கும்போது இந்தச் சொல்லைச் சொன்னால், Naari Shakti உங்கள் SOS-ஐ அனுப்பும்.</string>
+    <string name="ub_trigger_desc">பாதுகாப்பு இயக்கத்தில் இருக்கும்போது இந்தச் சொல்லைச் சொன்னால், Naari Kavach உங்கள் SOS-ஐ அனுப்பும்.</string>
     <string name="ub_trigger_current_label">உங்கள் அவசரச் சொல்</string>
     <string name="ub_trigger_status_active">இப்போது கேட்கிறது · ஆஃப்லைனிலும் வேலை செய்யும்</string>
     <string name="ub_trigger_status_inactive">பாதுகாப்பு இயக்கத்தில் இருக்கும்போது மட்டும் கேட்கும்</string>
@@ -85,7 +85,7 @@
     <string name="ub_trigger_err_generic">பதிவு வேலை செய்யவில்லை. மீண்டும் முயலவும் அல்லது கீழே சொல்லைத் தட்டச்சு செய்யவும்.</string>
     <string name="ub_trigger_mic_denied">பதிவுசெய்ய மைக்ரோஃபோன் அணுகல் தேவை. அதற்குப் பதிலாகச் சொல்லைத் தட்டச்சு செய்யலாம்.</string>
     <string name="ub_trigger_mic_rationale_title">மைக்ரோஃபோனை அனுமதிக்கவும்</string>
-    <string name="ub_trigger_mic_rationale_body">உங்கள் சொல்லை ஒருமுறை கேட்டு எழுத்தாக்க மட்டுமே Naari Shakti மைக்ரோஃபோனைப் பயன்படுத்தும். ஆடியோ எதுவும் சேமிக்கப்படாது.</string>
+    <string name="ub_trigger_mic_rationale_body">உங்கள் சொல்லை ஒருமுறை கேட்டு எழுத்தாக்க மட்டுமே Naari Kavach மைக்ரோஃபோனைப் பயன்படுத்தும். ஆடியோ எதுவும் சேமிக்கப்படாது.</string>
     <string name="ub_trigger_unavailable_title">குரல் பதிவு கிடைக்கவில்லை</string>
     <string name="ub_trigger_unavailable_body">இந்த ஃபோனில் பேச்சு அறிதல் சேவை இல்லை. கீழே சொல்லைத் தட்டச்சு செய்யவும்.</string>
     <string name="ub_trigger_warn_title">அரிதான சொல்லைப் பயன்படுத்தவா?</string>
@@ -263,7 +263,7 @@
     <string name="ub_live_map_cd">உங்கள் தற்போதைய இருப்பிடத்தைக் காட்டும் வரைபடம்</string>
     <string name="ub_live_status_idle">உங்கள் இருப்பிடம்</string>
     <string name="ub_live_status_live">நேரலை · பகிர்கிறது</string>
-    <string name="ub_live_perm_title">Naari Shakti-க்கு இருப்பிடம் முடக்கப்பட்டுள்ளது</string>
+    <string name="ub_live_perm_title">Naari Kavach-க்கு இருப்பிடம் முடக்கப்பட்டுள்ளது</string>
     <string name="ub_live_perm_body">நீங்கள் இருக்கும் இடத்தைப் பார்த்துப் பகிர இருப்பிடத்தை அனுமதிக்கவும்.</string>
     <string name="ub_live_you_are_here">நீங்கள் இங்கே இருக்கிறீர்கள்</string>
     <string name="ub_live_finding">உங்கள் இருப்பிடத்தைக் கண்டறிகிறது…</string>
@@ -327,11 +327,11 @@
     <string name="ub_zone_perm_title">துல்லியமான இருப்பிடம் தேவை</string>
     <string name="ub_zone_perm_body">பின் வைக்கவும் பாதுகாப்பு மண்டலங்களைக் கண்காணிக்கவும் துல்லியமான இருப்பிடத்தை அனுமதிக்கவும்.</string>
     <string name="ub_zone_bg_title">“எப்போதும் அனுமதி” இருந்தால் மட்டுமே எச்சரிக்கைகள் வேலை செய்யும்</string>
-    <string name="ub_zone_bg_body">Naari Shakti மூடியிருக்கும்போது பாதுகாப்பு மண்டலங்களைக் கண்காணிக்க Android-க்குப் பின்னணி இருப்பிடம் தேவை.</string>
+    <string name="ub_zone_bg_body">Naari Kavach மூடியிருக்கும்போது பாதுகாப்பு மண்டலங்களைக் கண்காணிக்க Android-க்குப் பின்னணி இருப்பிடம் தேவை.</string>
     <string name="ub_zone_bg_fix">அனுமதி</string>
     <string name="ub_zone_bg_dialog_title">இருப்பிடத்தை எப்போதும் அனுமதிக்கவும்</string>
-    <string name="ub_zone_bg_dialog_body">Naari Shakti மூடியிருக்கும்போதும் பாதுகாப்பு மண்டல எச்சரிக்கைகள் வேலை செய்ய “எப்போதும் அனுமதி” என்பதைத் தேர்வுசெய்யவும். உங்கள் இருப்பிடம் இந்த ஃபோனில் மட்டுமே சரிபார்க்கப்படும்.</string>
-    <string name="ub_zone_bg_dialog_body_settings">அடுத்த திரையில், Naari Shakti மூடியிருக்கும்போதும் பாதுகாப்பு மண்டல எச்சரிக்கைகள் வேலை செய்ய “எப்போதும் அனுமதி” என்பதைத் தேர்வுசெய்யவும். உங்கள் இருப்பிடம் இந்த ஃபோனில் மட்டுமே சரிபார்க்கப்படும்.</string>
+    <string name="ub_zone_bg_dialog_body">Naari Kavach மூடியிருக்கும்போதும் பாதுகாப்பு மண்டல எச்சரிக்கைகள் வேலை செய்ய “எப்போதும் அனுமதி” என்பதைத் தேர்வுசெய்யவும். உங்கள் இருப்பிடம் இந்த ஃபோனில் மட்டுமே சரிபார்க்கப்படும்.</string>
+    <string name="ub_zone_bg_dialog_body_settings">அடுத்த திரையில், Naari Kavach மூடியிருக்கும்போதும் பாதுகாப்பு மண்டல எச்சரிக்கைகள் வேலை செய்ய “எப்போதும் அனுமதி” என்பதைத் தேர்வுசெய்யவும். உங்கள் இருப்பிடம் இந்த ஃபோனில் மட்டுமே சரிபார்க்கப்படும்.</string>
     <string name="ub_zone_bg_granted">இனி பாதுகாப்பு மண்டலங்கள் பின்னணியில் உங்களை எச்சரிக்கும்</string>
     <string name="ub_zone_bg_denied">பின்னணி இருப்பிடம் முடக்கத்தில் உள்ளது. அமைப்புகள் → அனுமதிகள் → இருப்பிடம் என்பதில் “எப்போதும் அனுமதி” என்பதை இயக்கவும்.</string>
 

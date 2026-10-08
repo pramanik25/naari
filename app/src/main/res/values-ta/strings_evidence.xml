@@ -73,7 +73,7 @@
     <string name="ev_export_failed">ஆதாரத் தொகுப்பை உருவாக்க முடியவில்லை.</string>
     <string name="ev_export_empty">இந்தச் சம்பவத்தில் ஏற்றுமதி செய்யக் கோப்புகள் இல்லை.</string>
     <string name="ev_export_chooser">ஆதாரத் தொகுப்பைப் பகிர்</string>
-    <string name="ev_export_subject">Naari Shakti ஆதாரத் தொகுப்பு</string>
+    <string name="ev_export_subject">Naari Kavach ஆதாரத் தொகுப்பு</string>
     <string name="ev_kind_photo">புகைப்படம்</string>
     <string name="ev_kind_audio">ஆடியோ</string>
     <string name="ev_kind_video">வீடியோ</string>

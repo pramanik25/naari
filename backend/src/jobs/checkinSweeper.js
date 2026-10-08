@@ -12,7 +12,7 @@ const MAX_PER_RUN = 200;
 function smsText(ownerName, note, url) {
   const who = ownerName || 'Your contact';
   const what = note ? ` (${note.slice(0, 80)})` : '';
-  return `Naari Shakti: ${who} missed a safety check-in${what}. Live location: ${url} . If you cannot reach her, call 112.`;
+  return `Naari Kavach: ${who} missed a safety check-in${what}. Live location: ${url} . If you cannot reach her, call 112.`;
 }
 
 /**

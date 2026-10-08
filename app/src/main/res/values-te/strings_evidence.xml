@@ -74,7 +74,7 @@
     <string name="ev_export_failed">సాక్ష్యం ప్యాకేజీ సృష్టించలేకపోయాము.</string>
     <string name="ev_export_empty">ఈ సంఘటనలో ఎక్స్‌పోర్ట్ చేయడానికి ఫైల్‌లు లేవు.</string>
     <string name="ev_export_chooser">సాక్ష్యం ప్యాకేజీ షేర్ చేయండి</string>
-    <string name="ev_export_subject">Naari Shakti సాక్ష్యం ప్యాకేజీ</string>
+    <string name="ev_export_subject">Naari Kavach సాక్ష్యం ప్యాకేజీ</string>
     <string name="ev_kind_photo">ఫోటో</string>
     <string name="ev_kind_audio">ఆడియో క్లిప్</string>
     <string name="ev_kind_video">వీడియో</string>

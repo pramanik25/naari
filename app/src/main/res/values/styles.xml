@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- ============================================================
-         Naari Shakti design system — components & typography.
+         Naari Kavach design system — components & typography.
          All screens use the Ns.* styles; do not hardcode colours in
          layouts, reference @color/ns_* tokens instead.
          ============================================================ -->

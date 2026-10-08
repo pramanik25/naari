@@ -3,7 +3,7 @@
     <!-- Shared -->
     <string name="tg_back">பின்செல்</string>
     <string name="tg_eyebrow">ஒன்றாக</string>
-    <string name="tg_cloud_off">இதற்கு Naari Shakti கிளவுட் தேவை; அது இந்த ஃபோனில் முடக்கத்தில் உள்ளது.</string>
+    <string name="tg_cloud_off">இதற்கு Naari Kavach கிளவுட் தேவை; அது இந்த ஃபோனில் முடக்கத்தில் உள்ளது.</string>
     <string name="tg_open_settings">அமைப்புகள்</string>
     <string name="tg_close">மூடு</string>
     <string name="tg_delete">நீக்கு</string>
@@ -61,7 +61,7 @@
     <string name="tg_sm_empty">+ குறியிலிருந்து 3 கி.மீ.க்குள் பதிவுகள் இல்லை. அதனால் இந்தப் பகுதி பாதுகாப்பானது என்று அர்த்தமல்ல.</string>
     <string name="tg_sm_no_location">உங்கள் இருப்பிடத்தைக் கண்டறிய முடியவில்லை. வரைபடத்தை நகர்த்தி “இங்கே தேடு” என்பதைத் தட்டவும்.</string>
     <string name="tg_sm_pan_hint">இருப்பிடம் இல்லாதபோது, வரைபடத்தை ஓர் இடத்துக்கு நகர்த்தி “இங்கே தேடு” என்பதைத் தட்டவும்.</string>
-    <string name="tg_sm_detail">%1$s ஒரு Naari Shakti பயனர் பதிவுசெய்தது. சரிபார்க்கப்படவில்லை.</string>
+    <string name="tg_sm_detail">%1$s ஒரு Naari Kavach பயனர் பதிவுசெய்தது. சரிபார்க்கப்படவில்லை.</string>
     <string name="tg_sm_deleted">உங்கள் பதிவு நீக்கப்பட்டது.</string>
     <string name="tg_sm_flag">இது தவறு</string>
     <string name="tg_sm_zoom_in">+ சரியான இடத்தின் மீது வரும்படி இன்னும் பெரிதாக்கவும்.</string>

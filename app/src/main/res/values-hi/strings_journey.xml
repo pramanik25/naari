@@ -143,7 +143,7 @@
     <string name="jr_ss_accessibility_on">Accessibility सेवा चालू है</string>
     <string name="jr_ss_accessibility_off">Accessibility सेवा बंद है</string>
     <string name="jr_ss_accessibility_title">Accessibility सेवा चालू करें</string>
-    <string name="jr_ss_accessibility_body">स्क्रीन बंद होने पर वॉल्यूम बटन दबाना Android सिर्फ़ Accessibility (सुलभता) सेवा के ज़रिए ऐप को देखने देता है। Naari Shakti इसका इस्तेमाल सिर्फ़ बटन दबाने के लिए करता है और आपकी स्क्रीन कभी नहीं पढ़ता। लिस्ट में Naari Shakti ढूँढें और उसे चालू करें।</string>
+    <string name="jr_ss_accessibility_body">स्क्रीन बंद होने पर वॉल्यूम बटन दबाना Android सिर्फ़ Accessibility (सुलभता) सेवा के ज़रिए ऐप को देखने देता है। Naari Kavach इसका इस्तेमाल सिर्फ़ बटन दबाने के लिए करता है और आपकी स्क्रीन कभी नहीं पढ़ता। लिस्ट में Naari Kavach ढूँढें और उसे चालू करें।</string>
     <string name="jr_ss_denied_accessibility">Accessibility सेवा के बिना स्क्रीन बंद होने पर वॉल्यूम बटन SOS शुरू नहीं कर सकते, इसलिए इसे बंद कर दिया गया है।</string>
     <string name="jr_ss_panic">पैनिक बटन</string>
     <string name="jr_ss_panic_none">जुड़ा नहीं · एक छोटा Bluetooth बटन जोड़ें</string>
@@ -159,7 +159,7 @@
 
     <string name="jr_ss_section_community">कम्युनिटी</string>
     <string name="jr_ss_mesh">ऑफ़लाइन मेश SOS</string>
-    <string name="jr_ss_mesh_sub">सिग्नल न होने पर Bluetooth और Wi-Fi से आस-पास के Naari Shakti फ़ोन तक अपना SOS पहुँचाएँ।</string>
+    <string name="jr_ss_mesh_sub">सिग्नल न होने पर Bluetooth और Wi-Fi से आस-पास के Naari Kavach फ़ोन तक अपना SOS पहुँचाएँ।</string>
     <string name="jr_ss_helper">आस-पास के मददगार</string>
     <string name="jr_ss_helper_on">चालू · आपसे आस-पास के लोगों की मदद के लिए कहा जा सकता है</string>
     <string name="jr_ss_helper_off">बंद · आस-पास के लोगों की मदद के लिए आगे आएँ</string>
@@ -311,14 +311,14 @@
 
     <!-- ============ SMS bodies ============ -->
     <string name="jr_sms_default_name">आपकी दोस्त</string>
-    <string name="jr_sms_cab_start">Naari Shakti: %1$s कैब %2$s%3$s में है।</string>
+    <string name="jr_sms_cab_start">Naari Kavach: %1$s कैब %2$s%3$s में है।</string>
     <string name="jr_sms_cab_details_app_driver">" (%1$s, ड्राइवर %2$s)"</string>
     <string name="jr_sms_cab_details_app">" (%1$s)"</string>
     <string name="jr_sms_cab_details_driver">" (ड्राइवर %1$s)"</string>
     <string name="jr_sms_cab_going">%1$s की ओर जा रही है।</string>
     <string name="jr_sms_live">लाइव: %1$s</string>
-    <string name="jr_sms_cab_arrived">Naari Shakti: %1$s %2$s सुरक्षित पहुँच गई।</string>
-    <string name="jr_sms_meet_intro">Naari Shakti: %1$s, %2$s से मिल रही है।</string>
+    <string name="jr_sms_cab_arrived">Naari Kavach: %1$s %2$s सुरक्षित पहुँच गई।</string>
+    <string name="jr_sms_meet_intro">Naari Kavach: %1$s, %2$s से मिल रही है।</string>
     <string name="jr_sms_meet_contact">उनका नंबर/प्रोफ़ाइल: %1$s।</string>
     <string name="jr_sms_meet_place">जगह: %1$s %2$s</string>
     <string name="jr_sms_meet_place_nolink">जगह: %1$s।</string>

@@ -144,7 +144,7 @@
     <string name="dl_quiz_level_4">रक्षक</string>
     <string name="dl_quiz_level_5">शक्ति</string>
     <string name="dl_quiz_share">अपनी स्ट्रीक शेयर करें</string>
-    <string name="dl_quiz_share_text">Naari Shakti के सुरक्षा क्विज़ में मेरी %1$s की स्ट्रीक और %2$d पॉइंट हैं। क्या आप अपने अधिकार और हेल्पलाइन नंबर जानती हैं?</string>
+    <string name="dl_quiz_share_text">Naari Kavach के सुरक्षा क्विज़ में मेरी %1$s की स्ट्रीक और %2$d पॉइंट हैं। क्या आप अपने अधिकार और हेल्पलाइन नंबर जानती हैं?</string>
     <string name="dl_quiz_practice">और अभ्यास करें</string>
     <string name="dl_quiz_reminder">रोज़ के क्विज़ का रिमाइंडर</string>
     <string name="dl_quiz_reminder_sub">अगर आपने क्विज़ नहीं खेला, तो शाम को एक नोटिफ़िकेशन</string>
@@ -156,7 +156,7 @@
         <item quantity="one">%1$d दिन की स्ट्रीक बनाए रखने के लिए अभी खेलें।</item>
         <item quantity="other">%1$d दिन की स्ट्रीक बनाए रखने के लिए अभी खेलें।</item>
     </plurals>
-    <string name="dl_nudge_cycle_title">Naari Shakti की ओर से एक रिमाइंडर</string>
+    <string name="dl_nudge_cycle_title">Naari Kavach की ओर से एक रिमाइंडर</string>
     <string name="dl_nudge_cycle_text">देखने के लिए ऐप खोलें।</string>
 
     <!-- Quiz bank: same order and same right-option index as values/strings_daily.xml. -->

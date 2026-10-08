@@ -144,7 +144,7 @@
     <string name="dl_quiz_level_4">محافظ</string>
     <string name="dl_quiz_level_5">شکتی</string>
     <string name="dl_quiz_share">اپنا سلسلہ شیئر کریں</string>
-    <string name="dl_quiz_share_text">میں Naari Shakti پر %1$s سے مسلسل حفاظتی کوئز کھیل رہی ہوں اور میرے %2$d پوائنٹس ہیں۔ کیا آپ کو اپنے حقوق اور ہیلپ لائن نمبر معلوم ہیں؟</string>
+    <string name="dl_quiz_share_text">میں Naari Kavach پر %1$s سے مسلسل حفاظتی کوئز کھیل رہی ہوں اور میرے %2$d پوائنٹس ہیں۔ کیا آپ کو اپنے حقوق اور ہیلپ لائن نمبر معلوم ہیں؟</string>
     <string name="dl_quiz_practice">مزید مشق کریں</string>
     <string name="dl_quiz_reminder">روزانہ کوئز کی یاد دہانی</string>
     <string name="dl_quiz_reminder_sub">اگر آپ نے ابھی تک نہیں کھیلا تو شام کو ایک نوٹیفکیشن</string>
@@ -156,7 +156,7 @@
         <item quantity="one">اپنا %1$d دن کا سلسلہ برقرار رکھنے کے لیے ابھی کھیلیں۔</item>
         <item quantity="other">اپنا %1$d دن کا سلسلہ برقرار رکھنے کے لیے ابھی کھیلیں۔</item>
     </plurals>
-    <string name="dl_nudge_cycle_title">Naari Shakti کی طرف سے ایک یاد دہانی</string>
+    <string name="dl_nudge_cycle_title">Naari Kavach کی طرف سے ایک یاد دہانی</string>
     <string name="dl_nudge_cycle_text">دیکھنے کے لیے ایپ کھولیں۔</string>
 
     <!--

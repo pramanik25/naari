@@ -29,7 +29,7 @@ import java.util.List;
 
 /**
  * "WhatsApp alerts" section of the emergency settings (CONTRACT v1.1). Alerts come from the
- * Naari Shakti WhatsApp Business number; every contact joins once via the shared {@code joinUrl}.
+ * Naari Kavach WhatsApp Business number; every contact joins once via the shared {@code joinUrl}.
  * The switch writes {@link Prefs#WHATSAPP_ALERTS} and syncs her emergency contacts to
  * {@code PUT /me/whatsapp}; each contact shows whether it has joined ({@code GET /me/whatsapp}).
  *

@@ -7,7 +7,7 @@ export default function ConsoleLayout({ children }) {
         <div className="brand">
           <span className="brand-mark">NS</span>
           <div className="brand-copy">
-            <strong>Naari Shakti</strong>
+            <strong>Naari Kavach</strong>
             <small>SAFETY OPERATIONS</small>
           </div>
         </div>
@@ -28,7 +28,7 @@ export default function ConsoleLayout({ children }) {
       <div className="workspace">
         <header className="topbar">
           <div className="crumbs">
-            <span>Naari Shakti</span>
+            <span>Naari Kavach</span>
             <span aria-hidden="true">/</span>
             <strong>Operations</strong>
           </div>

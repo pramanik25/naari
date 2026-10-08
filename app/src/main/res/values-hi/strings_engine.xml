@@ -4,7 +4,7 @@
 
     <!-- Notification channels -->
     <string name="eng_channel_protection">सुरक्षा की स्थिति</string>
-    <string name="eng_channel_protection_desc">जब Naari Shakti आपका ट्रिगर शब्द, फ़ोन हिलाना और पावर बटन दबाना सुन रहा हो, तब दिखता है।</string>
+    <string name="eng_channel_protection_desc">जब Naari Kavach आपका ट्रिगर शब्द, फ़ोन हिलाना और पावर बटन दबाना सुन रहा हो, तब दिखता है।</string>
     <string name="eng_channel_sos">SOS अलर्ट</string>
     <string name="eng_channel_sos_desc">SOS का काउंटडाउन चलने या SOS चालू होने पर फ़ुल-स्क्रीन अलर्ट।</string>
     <string name="eng_channel_alerts">सुरक्षा अलर्ट</string>
@@ -15,7 +15,7 @@
     <string name="eng_channel_geofence_desc">सेव की गई जगह पर पहुँचने या वहाँ से निकलने पर अलर्ट।</string>
 
     <!-- Protection notification -->
-    <string name="eng_protect_title">Naari Shakti आपकी सुरक्षा कर रहा है</string>
+    <string name="eng_protect_title">Naari Kavach आपकी सुरक्षा कर रहा है</string>
     <string name="eng_protect_text">“%1$s” सुन रहे हैं · SOS के लिए पावर ×%2$d दबाएँ</string>
     <string name="eng_protect_text_no_voice">SOS के लिए फ़ोन हिलाएँ या पावर ×%1$d दबाएँ</string>
     <string name="eng_action_sos_now">अभी SOS</string>
@@ -23,7 +23,7 @@
 
     <!-- Resume notification -->
     <string name="eng_resume_title">सुरक्षा फिर से चालू करने के लिए टैप करें</string>
-    <string name="eng_resume_text">रीस्टार्ट के बाद Android ने Naari Shakti को रोक दिया। सुरक्षा फिर से चालू करने के लिए ऐप खोलें।</string>
+    <string name="eng_resume_text">रीस्टार्ट के बाद Android ने Naari Kavach को रोक दिया। सुरक्षा फिर से चालू करने के लिए ऐप खोलें।</string>
 
     <!-- SOS notification -->
     <string name="eng_sos_countdown_title">SOS भेजा जा रहा है…</string>
@@ -39,7 +39,7 @@
     <string name="eng_sms_location_pending">अभी लोकेशन नहीं मिली, थोड़ी देर में भेजूँगी।</string>
     <string name="eng_sms_location_followup">मेरी अभी की लोकेशन: %1$s</string>
     <string name="eng_sms_location_update">लाइव लोकेशन अपडेट (%1$s): %2$s</string>
-    <string name="eng_sms_safe">मैं अब सुरक्षित हूँ। कृपया मेरा पिछला SOS अलर्ट अनदेखा करें। - Naari Shakti से भेजा गया</string>
+    <string name="eng_sms_safe">मैं अब सुरक्षित हूँ। कृपया मेरा पिछला SOS अलर्ट अनदेखा करें। - Naari Kavach से भेजा गया</string>
     <string name="eng_sms_live_start_named">%1$s अपनी लाइव लोकेशन आपके साथ %2$d मिनट के लिए शेयर कर रही है: %3$s</string>
     <string name="eng_sms_live_start">मैं अपनी लाइव लोकेशन आपके साथ %1$d मिनट के लिए शेयर कर रही हूँ: %2$s</string>
     <string name="eng_sms_live_start_no_fix">मैं अपनी लाइव लोकेशन आपके साथ %1$d मिनट के लिए शेयर कर रही हूँ। पहली लोकेशन जल्द भेजूँगी।</string>
@@ -48,10 +48,10 @@
     <string name="eng_sms_live_ended">लाइव लोकेशन शेयरिंग खत्म हुई।</string>
 
     <!-- Telegram / email -->
-    <string name="eng_telegram_sos">Naari Shakti से SOS\n%1$s</string>
+    <string name="eng_telegram_sos">Naari Kavach से SOS\n%1$s</string>
     <string name="eng_telegram_safe">अपडेट: मैं अब सुरक्षित हूँ।</string>
     <string name="eng_email_subject">इमरजेंसी सबूत फ़ोटो (%1$s कैमरा)</string>
-    <string name="eng_email_body">Naari Shakti में SOS चालू हुआ। यह फ़ोटो %2$s बजे %1$s कैमरे से अपने-आप ली गई।</string>
+    <string name="eng_email_body">Naari Kavach में SOS चालू हुआ। यह फ़ोटो %2$s बजे %1$s कैमरे से अपने-आप ली गई।</string>
     <string name="eng_camera_front">फ़्रंट</string>
     <string name="eng_camera_back">बैक</string>
 
@@ -64,7 +64,7 @@
     <string name="eng_geofence_entered">%1$s पहुँच गईं</string>
     <string name="eng_geofence_left">%1$s से निकल गईं</string>
     <string name="eng_geofence_default_place">सेव की गई जगह</string>
-    <string name="eng_geofence_text">Naari Shakti से सेव की गई जगह का अलर्ट</string>
+    <string name="eng_geofence_text">Naari Kavach से सेव की गई जगह का अलर्ट</string>
 
     <!-- PanicActivity: countdown -->
     <string name="eng_panic_overline">इमरजेंसी SOS</string>

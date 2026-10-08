@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- User manual and help documentation for Naari Shakti -->
+<!-- User manual and help documentation for Naari Kavach -->
 <resources>
     <!-- Manual Activity title and navigation -->
     <string name="manual_title">How to stay safe</string>
     <string name="manual_overline">User guide</string>
-    <string name="manual_body">Learn how to use every safety feature in Naari Shakti. Swipe left to see more.</string>
+    <string name="manual_body">Learn how to use every safety feature in Naari Kavach. Swipe left to see more.</string>
     <string name="manual_back">Back</string>
 
     <!-- TAB 1: SOS Button -->
@@ -164,7 +164,7 @@ This is useful if you’re in danger and can’t alert anyone nearby without mak
     <string name="manual_privacy_complaint_how">Use it: Settings tab › Safety tools › "Complaint draft" › write your statement › press Export as PDF › save or share the file</string>
 
     <string name="manual_privacy_title_pin">App PIN &amp; Duress PIN</string>
-    <string name="manual_privacy_pin_desc">Lock the Naari Shakti app with a PIN so only you can open it. There’s also a "Duress PIN" that opens a fake shutdown screen if someone forces you to unlock the app.</string>
+    <string name="manual_privacy_pin_desc">Lock the Naari Kavach app with a PIN so only you can open it. There’s also a "Duress PIN" that opens a fake shutdown screen if someone forces you to unlock the app.</string>
     <string name="manual_privacy_pin_how">Set it up: Settings tab › Safety tools › "App PIN" › create a PIN › optionally set a Duress PIN
 If you enter the Duress PIN instead of the real one, the app shows a fake "Closing…" screen while secretly recording an SOS in the background.</string>
 
@@ -200,7 +200,7 @@ Only enable this if you’re sure your phone number is registered with authoriti
     <string name="manual_cloud_heading">Backup your proof online and find helpers nearby</string>
     <string name="manual_cloud_subtitle">Upload evidence and alert nearby guardians</string>
 
-    <string name="manual_cloud_desc">Naari Shakti can upload evidence to a secure server so your proof is safe even if your phone is stolen, lost or turned off. You can also connect with "Guardians"—trusted people nearby who can help in an emergency.</string>
+    <string name="manual_cloud_desc">Naari Kavach can upload evidence to a secure server so your proof is safe even if your phone is stolen, lost or turned off. You can also connect with "Guardians"—trusted people nearby who can help in an emergency.</string>
 
     <string name="manual_cloud_title_upload">Cloud Upload (Evidence Backup)</string>
     <string name="manual_cloud_upload_desc">Evidence (photos, audio, video) is uploaded to a secure cloud server during an SOS. This ensures that proof is safe in multiple places—on your phone and in the cloud.</string>
@@ -209,7 +209,7 @@ Evidence will upload automatically during every SOS if you have internet.</strin
     <string name="manual_cloud_upload_tip">Without cloud upload, evidence stays only on your phone until you manually export it.</string>
 
     <string name="manual_cloud_title_nearby">Nearby Helpers</string>
-    <string name="manual_cloud_nearby_desc">Other Naari Shakti users near you can be notified if you trigger an SOS (with your permission). They can come help or contact police on your behalf. Useful in crowded areas.</string>
+    <string name="manual_cloud_nearby_desc">Other Naari Kavach users near you can be notified if you trigger an SOS (with your permission). They can come help or contact police on your behalf. Useful in crowded areas.</string>
     <string name="manual_cloud_nearby_how">Set it up: Settings tab › Cloud settings › "Nearby helpers" › toggle on
 Your location (approximate) and situation are shared only during an active SOS.</string>
 
@@ -239,7 +239,7 @@ Disable: Toggle off or delete the schedule to go back to manual on/off.</string>
     <string name="manual_perms_heading">What permissions the app needs and why</string>
     <string name="manual_perms_subtitle">Allow access to keep you safe</string>
 
-    <string name="manual_perms_what">Naari Shakti asks for several permissions. You stay in control—you can grant or deny each one, and change them anytime.</string>
+    <string name="manual_perms_what">Naari Kavach asks for several permissions. You stay in control—you can grant or deny each one, and change them anytime.</string>
 
     <string name="manual_perms_mic">Microphone – Hear your trigger word and record audio during an SOS</string>
     <string name="manual_perms_sms">SMS – Text your location to emergency contacts</string>
@@ -257,7 +257,7 @@ Disable: Toggle off or delete the schedule to go back to manual on/off.</string>
 You don’t need all permissions for the app to work—grant only what you’re comfortable with.</string>
 
     <string name="manual_perms_change">Change any time: Settings tab › "Permissions" section, or:
-Android Settings › Apps › Naari Shakti › Permissions › toggle each one</string>
+Android Settings › Apps › Naari Kavach › Permissions › toggle each one</string>
 
     <!-- TAB 11: Appearance & Language -->
     <string name="manual_tab_appearance">Appearance &amp; Language</string>
@@ -269,7 +269,7 @@ Android Settings › Apps › Naari Shakti › Permissions › toggle each one</
     <string name="manual_appearance_theme_how">Change it: Settings tab › Appearance › choose Dark, Light or System › changes apply instantly</string>
 
     <string name="manual_appearance_language">In-App Language</string>
-    <string name="manual_appearance_language_desc">Naari Shakti is available in 13 languages including Hindi, Bengali, Tamil, Telugu, Kannada, Malayalam, Marathi, Gujarati, Punjabi, Odia, Assamese and Urdu. The app language is separate from your phone language.</string>
+    <string name="manual_appearance_language_desc">Naari Kavach is available in 13 languages including Hindi, Bengali, Tamil, Telugu, Kannada, Malayalam, Marathi, Gujarati, Punjabi, Odia, Assamese and Urdu. The app language is separate from your phone language.</string>
     <string name="manual_appearance_language_how">Change it: Settings tab › Appearance › select your language › changes apply instantly</string>
 
     <!-- TAB 12: Troubleshooting -->
@@ -280,7 +280,7 @@ Android Settings › Apps › Naari Shakti › Permissions › toggle each one</
     <string name="manual_help_q1">Q: What if I don’t have emergency contacts?</string>
     <string name="manual_help_a1">A: Some SOS features (like calls and SMS alerts) need at least one emergency contact. Add a trusted friend, family member or local women’s helpline. You can add contacts anytime from Settings › Profile › Emergency Contacts.</string>
 
-    <string name="manual_help_q2">Q: Can I use Naari Shakti without turning on all permissions?</string>
+    <string name="manual_help_q2">Q: Can I use Naari Kavach without turning on all permissions?</string>
     <string name="manual_help_a2">A: Yes! Each feature needs certain permissions. For example:
 • Voice trigger needs Microphone
 • Sending SMS needs SMS permission
@@ -318,8 +318,8 @@ You can only deactivate BEFORE the SOS fully fires (after the countdown ends).</
     <string name="manual_help_tip1">Tip: Keep your trigger word short and uncommon so you don’t accidentally say it in everyday conversation.</string>
     <string name="manual_help_tip2">Tip: Test each trigger (shake, power button, voice) at home first so you know exactly how to use them in an emergency.</string>
     <string name="manual_help_tip3">Tip: Charge your phone to at least 50% before leaving home if you’re going somewhere you feel unsafe. An SOS uses battery quickly.</string>
-    <string name="manual_help_tip4">Tip: Tell your emergency contacts that they might receive alerts from Naari Shakti and explain what each alert means so they know how to help.</string>
-    <string name="manual_help_tip5">Tip: In India, call 112 for any emergency (police, fire, medical). Naari Shakti can do this automatically if you turn it on in Safety settings.</string>
+    <string name="manual_help_tip4">Tip: Tell your emergency contacts that they might receive alerts from Naari Kavach and explain what each alert means so they know how to help.</string>
+    <string name="manual_help_tip5">Tip: In India, call 112 for any emergency (police, fire, medical). Naari Kavach can do this automatically if you turn it on in Safety settings.</string>
 
     <!-- Footer & closing -->
     <string name="manual_footer">Need more help? Check the app’s notification or contact your local women’s safety helpline.</string>

@@ -9,15 +9,9 @@
     <string name="sh_together_body">Your people and your community, in one place.</string>
 
     <!-- Running donation banner at the top of the app -->
-    <string name="sh_donate_banner">♥ Naari Shakti is free and runs on your support. Tap to donate and keep women safe.</string>
+    <string name="sh_donate_banner">♥ Naari Kavach is free and runs on your support. Tap to donate and keep women safe.</string>
 
-    <!-- "Complete your profile" popup on Home (name and mobile number required) -->
-    <string name="sh_profile_title">Complete your profile</string>
-    <string name="sh_profile_body">Please add your name and mobile number. They are saved to your Naari Shakti account. The other details are optional.</string>
-    <string name="sh_profile_optional">Optional</string>
-
-    <!-- Maker credit -->
-    <string name="sh_made_by">Made by Vikash</string>
-    <string name="sh_made_by_sub">Built in India for the safety of every woman</string>
-    <string name="sh_brand_photo_cd">Photo of Vikash, who made this app</string>
+    <!-- Info (i) button on the profile: why filling it in helps -->
+    <string name="sh_profile_info_title">Why fill in your profile?</string>
+    <string name="sh_profile_info_body">Your details help keep you safe. In an emergency, your name, photo and contact numbers help your trusted contacts and responders recognise you and reach your family quickly. Only your name and mobile number are required.</string>
 </resources>

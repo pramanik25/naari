@@ -53,7 +53,7 @@
     <!-- ===================== Trigger phrase ===================== -->
     <string name="ub_trigger_eyebrow">ಧ್ವನಿ ಟ್ರಿಗರ್</string>
     <string name="ub_trigger_title">ಟ್ರಿಗರ್ ಪದ</string>
-    <string name="ub_trigger_desc">ರಕ್ಷಣೆ ಆನ್ ಇರುವಾಗ ಈ ಪದ ಹೇಳಿದರೆ Naari Shakti ನಿಮ್ಮ SOS ಕಳುಹಿಸುತ್ತದೆ.</string>
+    <string name="ub_trigger_desc">ರಕ್ಷಣೆ ಆನ್ ಇರುವಾಗ ಈ ಪದ ಹೇಳಿದರೆ Naari Kavach ನಿಮ್ಮ SOS ಕಳುಹಿಸುತ್ತದೆ.</string>
     <string name="ub_trigger_current_label">ನಿಮ್ಮ ಟ್ರಿಗರ್ ಪದ</string>
     <string name="ub_trigger_status_active">ಈಗ ಕೇಳುತ್ತಿದೆ · ಆಫ್‌ಲೈನ್‌ನಲ್ಲೂ ಕೆಲಸ ಮಾಡುತ್ತದೆ</string>
     <string name="ub_trigger_status_inactive">ರಕ್ಷಣೆ ಆನ್ ಇರುವಾಗ ಮಾತ್ರ ಕೇಳುತ್ತದೆ</string>
@@ -85,7 +85,7 @@
     <string name="ub_trigger_err_generic">ರೆಕಾರ್ಡಿಂಗ್ ಆಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ ಅಥವಾ ಕೆಳಗೆ ನಿಮ್ಮ ಪದ ಟೈಪ್ ಮಾಡಿ.</string>
     <string name="ub_trigger_mic_denied">ರೆಕಾರ್ಡ್ ಮಾಡಲು ಮೈಕ್ರೊಫೋನ್ ಪ್ರವೇಶ ಬೇಕು. ಬದಲಿಗೆ ನಿಮ್ಮ ಪದ ಟೈಪ್ ಮಾಡಬಹುದು.</string>
     <string name="ub_trigger_mic_rationale_title">ಮೈಕ್ರೊಫೋನ್ ಅನುಮತಿಸಿ</string>
-    <string name="ub_trigger_mic_rationale_body">ನಿಮ್ಮ ಪದವನ್ನು ಒಮ್ಮೆ ಕೇಳಿ ಬರೆದುಕೊಳ್ಳಲು ಮಾತ್ರ Naari Shakti ಮೈಕ್ರೊಫೋನ್ ಬಳಸುತ್ತದೆ. ಯಾವುದೇ ಆಡಿಯೊ ಸೇವ್ ಆಗುವುದಿಲ್ಲ.</string>
+    <string name="ub_trigger_mic_rationale_body">ನಿಮ್ಮ ಪದವನ್ನು ಒಮ್ಮೆ ಕೇಳಿ ಬರೆದುಕೊಳ್ಳಲು ಮಾತ್ರ Naari Kavach ಮೈಕ್ರೊಫೋನ್ ಬಳಸುತ್ತದೆ. ಯಾವುದೇ ಆಡಿಯೊ ಸೇವ್ ಆಗುವುದಿಲ್ಲ.</string>
     <string name="ub_trigger_unavailable_title">ಧ್ವನಿ ರೆಕಾರ್ಡಿಂಗ್ ಲಭ್ಯವಿಲ್ಲ</string>
     <string name="ub_trigger_unavailable_body">ಈ ಫೋನ್‌ನಲ್ಲಿ ಧ್ವನಿ ಗುರುತಿಸುವಿಕೆ ಸೇವೆ ಇಲ್ಲ. ಬದಲಿಗೆ ಕೆಳಗೆ ನಿಮ್ಮ ಪದ ಟೈಪ್ ಮಾಡಿ.</string>
     <string name="ub_trigger_warn_title">ಕಡಿಮೆ ಬಳಕೆಯ ಪದ ಆಯ್ಕೆಮಾಡಬೇಕೆ?</string>
@@ -263,7 +263,7 @@
     <string name="ub_live_map_cd">ನಿಮ್ಮ ಈಗಿನ ಲೊಕೇಶನ್ ತೋರಿಸುವ ನಕ್ಷೆ</string>
     <string name="ub_live_status_idle">ನಿಮ್ಮ ಲೊಕೇಶನ್</string>
     <string name="ub_live_status_live">ಲೈವ್ · ಹಂಚಿಕೆಯಲ್ಲಿದೆ</string>
-    <string name="ub_live_perm_title">Naari Shakti ಗೆ ಲೊಕೇಶನ್ ಆಫ್ ಆಗಿದೆ</string>
+    <string name="ub_live_perm_title">Naari Kavach ಗೆ ಲೊಕೇಶನ್ ಆಫ್ ಆಗಿದೆ</string>
     <string name="ub_live_perm_body">ನೀವು ಎಲ್ಲಿದ್ದೀರಿ ಎಂದು ನೋಡಲು ಮತ್ತು ಹಂಚಿಕೊಳ್ಳಲು ಲೊಕೇಶನ್ ಅನುಮತಿಸಿ.</string>
     <string name="ub_live_you_are_here">ನೀವು ಇಲ್ಲಿದ್ದೀರಿ</string>
     <string name="ub_live_finding">ನಿಮ್ಮ ಲೊಕೇಶನ್ ಹುಡುಕಲಾಗುತ್ತಿದೆ…</string>
@@ -327,11 +327,11 @@
     <string name="ub_zone_perm_title">ನಿಖರ ಲೊಕೇಶನ್ ಬೇಕು</string>
     <string name="ub_zone_perm_body">ಪಿನ್ ಇರಿಸಲು ಮತ್ತು ನಿಮ್ಮ ಸುರಕ್ಷಿತ ವಲಯಗಳನ್ನು ಗಮನಿಸಲು ನಿಖರ ಲೊಕೇಶನ್ ಅನುಮತಿಸಿ.</string>
     <string name="ub_zone_bg_title">“ಎಲ್ಲ ಸಮಯದಲ್ಲೂ ಅನುಮತಿಸಿ” ಇದ್ದಾಗ ಮಾತ್ರ ಎಚ್ಚರಿಕೆಗಳು ಕೆಲಸ ಮಾಡುತ್ತವೆ</string>
-    <string name="ub_zone_bg_body">Naari Shakti ಮುಚ್ಚಿರುವಾಗ ನಿಮ್ಮ ಸುರಕ್ಷಿತ ವಲಯಗಳನ್ನು ಗಮನಿಸಲು Android ಗೆ ಹಿನ್ನೆಲೆ ಲೊಕೇಶನ್ ಬೇಕು.</string>
+    <string name="ub_zone_bg_body">Naari Kavach ಮುಚ್ಚಿರುವಾಗ ನಿಮ್ಮ ಸುರಕ್ಷಿತ ವಲಯಗಳನ್ನು ಗಮನಿಸಲು Android ಗೆ ಹಿನ್ನೆಲೆ ಲೊಕೇಶನ್ ಬೇಕು.</string>
     <string name="ub_zone_bg_fix">ಅನುಮತಿಸಿ</string>
     <string name="ub_zone_bg_dialog_title">ಲೊಕೇಶನ್ ಅನ್ನು ಎಲ್ಲ ಸಮಯದಲ್ಲೂ ಅನುಮತಿಸಿ</string>
-    <string name="ub_zone_bg_dialog_body">Naari Shakti ಮುಚ್ಚಿರುವಾಗಲೂ ಸುರಕ್ಷಿತ ವಲಯದ ಎಚ್ಚರಿಕೆಗಳು ಕೆಲಸ ಮಾಡಲು “ಎಲ್ಲ ಸಮಯದಲ್ಲೂ ಅನುಮತಿಸಿ” ಆಯ್ಕೆಮಾಡಿ. ನಿಮ್ಮ ಲೊಕೇಶನ್ ಅನ್ನು ಈ ಫೋನ್‌ನಲ್ಲಿ ಮಾತ್ರ ಪರಿಶೀಲಿಸಲಾಗುತ್ತದೆ.</string>
-    <string name="ub_zone_bg_dialog_body_settings">ಮುಂದಿನ ಸ್ಕ್ರೀನ್‌ನಲ್ಲಿ, Naari Shakti ಮುಚ್ಚಿರುವಾಗಲೂ ಸುರಕ್ಷಿತ ವಲಯದ ಎಚ್ಚರಿಕೆಗಳು ಕೆಲಸ ಮಾಡಲು “ಎಲ್ಲ ಸಮಯದಲ್ಲೂ ಅನುಮತಿಸಿ” ಆಯ್ಕೆಮಾಡಿ. ನಿಮ್ಮ ಲೊಕೇಶನ್ ಅನ್ನು ಈ ಫೋನ್‌ನಲ್ಲಿ ಮಾತ್ರ ಪರಿಶೀಲಿಸಲಾಗುತ್ತದೆ.</string>
+    <string name="ub_zone_bg_dialog_body">Naari Kavach ಮುಚ್ಚಿರುವಾಗಲೂ ಸುರಕ್ಷಿತ ವಲಯದ ಎಚ್ಚರಿಕೆಗಳು ಕೆಲಸ ಮಾಡಲು “ಎಲ್ಲ ಸಮಯದಲ್ಲೂ ಅನುಮತಿಸಿ” ಆಯ್ಕೆಮಾಡಿ. ನಿಮ್ಮ ಲೊಕೇಶನ್ ಅನ್ನು ಈ ಫೋನ್‌ನಲ್ಲಿ ಮಾತ್ರ ಪರಿಶೀಲಿಸಲಾಗುತ್ತದೆ.</string>
+    <string name="ub_zone_bg_dialog_body_settings">ಮುಂದಿನ ಸ್ಕ್ರೀನ್‌ನಲ್ಲಿ, Naari Kavach ಮುಚ್ಚಿರುವಾಗಲೂ ಸುರಕ್ಷಿತ ವಲಯದ ಎಚ್ಚರಿಕೆಗಳು ಕೆಲಸ ಮಾಡಲು “ಎಲ್ಲ ಸಮಯದಲ್ಲೂ ಅನುಮತಿಸಿ” ಆಯ್ಕೆಮಾಡಿ. ನಿಮ್ಮ ಲೊಕೇಶನ್ ಅನ್ನು ಈ ಫೋನ್‌ನಲ್ಲಿ ಮಾತ್ರ ಪರಿಶೀಲಿಸಲಾಗುತ್ತದೆ.</string>
     <string name="ub_zone_bg_granted">ಈಗ ಸುರಕ್ಷಿತ ವಲಯಗಳು ಹಿನ್ನೆಲೆಯಲ್ಲಿ ನಿಮಗೆ ಎಚ್ಚರಿಸುತ್ತವೆ</string>
     <string name="ub_zone_bg_denied">ಹಿನ್ನೆಲೆ ಲೊಕೇಶನ್ ಆಫ್ ಆಗಿದೆ. ಸೆಟ್ಟಿಂಗ್‌ಗಳು → ಅನುಮತಿಗಳು → ಸ್ಥಳ ದಲ್ಲಿ “ಎಲ್ಲ ಸಮಯದಲ್ಲೂ ಅನುಮತಿಸಿ” ಆನ್ ಮಾಡಿ.</string>
 

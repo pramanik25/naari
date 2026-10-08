@@ -75,7 +75,7 @@
     <string name="ev_export_failed">প্ৰমাণৰ পেকেজ বনাব পৰা নগ’ল।</string>
     <string name="ev_export_empty">এই ঘটনাত এক্সপ’ৰ্ট কৰিবলৈ কোনো ফাইল নাই।</string>
     <string name="ev_export_chooser">প্ৰমাণৰ পেকেজ শ্বেয়াৰ কৰক</string>
-    <string name="ev_export_subject">Naari Shakti প্ৰমাণৰ পেকেজ</string>
+    <string name="ev_export_subject">Naari Kavach প্ৰমাণৰ পেকেজ</string>
     <string name="ev_kind_photo">ফটো</string>
     <string name="ev_kind_audio">অডিঅ’ ক্লিপ</string>
     <string name="ev_kind_video">ভিডিঅ’</string>

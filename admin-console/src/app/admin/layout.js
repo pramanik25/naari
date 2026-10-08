@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Naari Shakti Admin",
-  description: "Admin console for the Naari Shakti safety app",
+  title: "Naari Kavach Admin",
+  description: "Admin console for the Naari Kavach safety app",
   robots: { index: false, follow: false },
 };
 

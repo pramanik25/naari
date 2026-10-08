@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translatable="false">Naari Shakti</string>
+    <string name="app_name" translatable="false">Naari Kavach</string>
     <string name="trigger_word_description" translatable="false">Opens the trigger word settings.</string>
     <string name="emergency_settings_description" translatable="false">Opens emergency contact settings.</string>
     <string name="call_police_description" translatable="false">Initiates a call to the police.</string>
@@ -38,7 +38,7 @@
     <string name="_23_59" translatable="false">23:59</string>
     <string name="set_end_time" translatable="false">Set End Time</string>
     <string name="save_time_settings" translatable="false">Save Time Settings</string>
-    <string name="naari_shakti" translatable="false">Naari Shakti</string>
+    <string name="naari_shakti" translatable="false">Naari Kavach</string>
     <string name="your_safety_is_our_priority" translatable="false">Your Safety is Our Priority</string>
     <string name="emergency_message" translatable="false">Emergency Message</string>
     <string name="enter_emergency_message" translatable="false">Enter emergency message</string>
@@ -139,7 +139,7 @@
     <!-- ===================== Onboarding ===================== -->
     <string name="onb_overline">Before we begin</string>
     <string name="onb_title">Let\'s set up your safety net</string>
-    <string name="onb_body">Naari Shakti needs a few permissions to protect you. You stay in control and can change them anytime in Settings.</string>
+    <string name="onb_body">Naari Kavach needs a few permissions to protect you. You stay in control and can change them anytime in Settings.</string>
     <string name="onb_allow">Allow access</string>
     <string name="onb_done">You\'re all set. Turn on protection whenever you\'re ready.</string>
     <string name="onb_partial">Some permissions were skipped. You can grant them in Settings.</string>
@@ -308,7 +308,7 @@
     <!-- ===================== Profile ===================== -->
     <string name="profile_overline">Your profile</string>
     <string name="profile_title">About you</string>
-    <string name="profile_body">Helps your contacts and responders recognise you. Your name and mobile number are also saved to your Naari Shakti account.</string>
+    <string name="profile_body">Helps your contacts and responders recognise you. Your name and mobile number are also saved to your Naari Kavach account.</string>
     <string name="profile_add_photo">Tap to add a photo</string>
     <string name="profile_change_photo">Tap to change photo</string>
     <string name="cd_profile_photo">Profile photo. Double tap to change.</string>
@@ -337,7 +337,7 @@
     <string name="vault_title">Evidence vault</string>
     <string name="vault_body">Photos captured automatically during an SOS, newest first.</string>
     <string name="vault_empty_title">No evidence captured yet</string>
-    <string name="vault_empty_body">When an SOS is triggered, Naari Shakti quietly takes photos with the front and back cameras. They\'ll appear here.</string>
+    <string name="vault_empty_body">When an SOS is triggered, Naari Kavach quietly takes photos with the front and back cameras. They\'ll appear here.</string>
     <string name="vault_front">Front camera</string>
     <string name="vault_back">Back camera</string>
     <string name="vault_photo">Photo</string>

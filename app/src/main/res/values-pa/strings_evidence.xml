@@ -73,7 +73,7 @@
     <string name="ev_export_failed">ਸਬੂਤਾਂ ਦਾ ਪੈਕੇਜ ਨਹੀਂ ਬਣ ਸਕਿਆ।</string>
     <string name="ev_export_empty">ਇਸ ਘਟਨਾ ਵਿੱਚ ਐਕਸਪੋਰਟ ਕਰਨ ਲਈ ਕੋਈ ਫ਼ਾਈਲ ਨਹੀਂ ਹੈ।</string>
     <string name="ev_export_chooser">ਸਬੂਤਾਂ ਦਾ ਪੈਕੇਜ ਸਾਂਝਾ ਕਰੋ</string>
-    <string name="ev_export_subject">Naari Shakti ਸਬੂਤ ਪੈਕੇਜ</string>
+    <string name="ev_export_subject">Naari Kavach ਸਬੂਤ ਪੈਕੇਜ</string>
     <string name="ev_kind_photo">ਫ਼ੋਟੋ</string>
     <string name="ev_kind_audio">ਆਡੀਓ ਕਲਿੱਪ</string>
     <string name="ev_kind_video">ਵੀਡੀਓ</string>

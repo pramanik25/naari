@@ -39,7 +39,7 @@
     <!-- ===================== Helper alert screen ===================== -->
     <string name="cl_helper_eyebrow">কাছাকাছি SOS</string>
     <string name="cl_helper_title">কাছাকাছি কারও সাহায্য দরকার</string>
-    <string name="cl_helper_subtitle">আপনার কাছাকাছি একজন Naari Shakti ব্যবহারকারী SOS চালু করেছেন।</string>
+    <string name="cl_helper_subtitle">আপনার কাছাকাছি একজন Naari Kavach ব্যবহারকারী SOS চালু করেছেন।</string>
     <string name="cl_helper_distance_unknown">আপনার কাছেই</string>
     <string name="cl_helper_safety">নিজেকে বিপদে ফেলবেন না। আগে 112-এ কল করুন।</string>
     <string name="cl_helper_safety_detail">লোকজনের চোখের সামনে থাকুন, ফোন সঙ্গে রাখুন এবং পুলিশকে এগিয়ে যেতে দিন।</string>
@@ -63,7 +63,7 @@
     <string name="cl_settings_desc">SMS না পৌঁছালেও অভিভাবকেরা সঙ্গে সঙ্গে আপনার SOS পান, সঙ্গে লাইভ লোকেশন ও প্রমাণ।</string>
 
     <string name="cl_error_offline">আপনি অফলাইনে আছেন। এই ফোনে সেভ করা তথ্য দেখানো হচ্ছে।</string>
-    <string name="cl_error_server">Naari Shakti সার্ভারে পৌঁছানো যায়নি।</string>
+    <string name="cl_error_server">Naari Kavach সার্ভারে পৌঁছানো যায়নি।</string>
     <string name="cl_error_generic">কিছু একটা সমস্যা হয়েছে (ত্রুটি %1$d)। আবার চেষ্টা করুন।</string>
     <string name="cl_retry">আবার চেষ্টা করুন</string>
 
@@ -88,11 +88,11 @@
     </plurals>
 
     <string name="cl_section_code">আপনার অভিভাবক কোড</string>
-    <string name="cl_code_caption">যাঁদের ভরসা করেন তাঁদের সঙ্গে এই কোড শেয়ার করুন। তাঁরা নিজেদের Naari Shakti অ্যাপে এটি দিলে আপনার SOS অ্যালার্ট পাবেন।</string>
+    <string name="cl_code_caption">যাঁদের ভরসা করেন তাঁদের সঙ্গে এই কোড শেয়ার করুন। তাঁরা নিজেদের Naari Kavach অ্যাপে এটি দিলে আপনার SOS অ্যালার্ট পাবেন।</string>
     <string name="cl_copy">কপি করুন</string>
     <string name="cl_share">শেয়ার করুন</string>
     <string name="cl_copied">কোড কপি হয়েছে</string>
-    <string name="cl_share_text">Naari Shakti ইনস্টল করে আমার কোড %1$s দিন, তাহলে আমার SOS অ্যালার্ট পাবেন</string>
+    <string name="cl_share_text">Naari Kavach ইনস্টল করে আমার কোড %1$s দিন, তাহলে আমার SOS অ্যালার্ট পাবেন</string>
     <string name="cl_share_chooser">আপনার অভিভাবক কোড শেয়ার করুন</string>
 
     <string name="cl_section_link">কারও অভিভাবক হন</string>

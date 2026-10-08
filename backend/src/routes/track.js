@@ -144,8 +144,8 @@ function trackPageRouter({ pool, pageLimiter }) {
     if (!inc) {
       res.status(404).type('html').send('<!doctype html><html lang="en"><meta charset="utf-8">'
         + '<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">'
-        + '<title>Link not found · Naari Shakti</title><link rel="stylesheet" href="/static/track.css">'
-        + '<body class="notfound"><main class="card"><p class="eyebrow">Naari Shakti</p>'
+        + '<title>Link not found · Naari Kavach</title><link rel="stylesheet" href="/static/track.css">'
+        + '<body class="notfound"><main class="card"><p class="eyebrow">Naari Kavach</p>'
         + '<h1>This tracking link is not valid</h1><p class="muted">Check the link in the message you received.'
         + ' If someone is in danger, call <a href="tel:112">112</a>.</p></main></body></html>');
       return;

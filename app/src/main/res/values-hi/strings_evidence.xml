@@ -75,7 +75,7 @@
     <string name="ev_export_failed">सबूत पैकेज नहीं बन पाया।</string>
     <string name="ev_export_empty">इस घटना में एक्सपोर्ट करने के लिए कोई फ़ाइल नहीं है।</string>
     <string name="ev_export_chooser">सबूत पैकेज शेयर करें</string>
-    <string name="ev_export_subject">Naari Shakti सबूत पैकेज</string>
+    <string name="ev_export_subject">Naari Kavach सबूत पैकेज</string>
     <string name="ev_kind_photo">फ़ोटो</string>
     <string name="ev_kind_audio">ऑडियो क्लिप</string>
     <string name="ev_kind_video">वीडियो</string>

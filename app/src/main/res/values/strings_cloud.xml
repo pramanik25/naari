@@ -43,7 +43,7 @@
     <string name="cl_helper_eyebrow">Nearby SOS</string>
     <string name="cl_helper_title">Someone nearby needs help</string>
     <string name="cl_helper_title_named">%1$s needs help</string>
-    <string name="cl_helper_subtitle">A Naari Shakti user close to you has triggered an SOS.</string>
+    <string name="cl_helper_subtitle">A Naari Kavach user close to you has triggered an SOS.</string>
     <string name="cl_helper_message">“%1$s”</string>
     <string name="cl_helper_distance_unknown">Close to you</string>
     <string name="cl_helper_safety">Don\'t put yourself in danger. Call 112 first.</string>
@@ -68,7 +68,7 @@
     <string name="cl_settings_desc">Guardians get your SOS instantly, with your live location and evidence, even when SMS doesn\'t get through.</string>
 
     <string name="cl_error_offline">You\'re offline. Showing what\'s saved on this phone.</string>
-    <string name="cl_error_server">Couldn\'t reach the Naari Shakti server.</string>
+    <string name="cl_error_server">Couldn\'t reach the Naari Kavach server.</string>
     <string name="cl_error_generic">Something went wrong (error %1$d). Please try again.</string>
     <string name="cl_retry">Retry</string>
 
@@ -93,12 +93,12 @@
     </plurals>
 
     <string name="cl_section_code">Your guardian code</string>
-    <string name="cl_code_caption">Share this code with people you trust. They enter it in their Naari Shakti app to get your SOS alerts.</string>
+    <string name="cl_code_caption">Share this code with people you trust. They enter it in their Naari Kavach app to get your SOS alerts.</string>
     <string name="cl_code_placeholder" translatable="false">······</string>
     <string name="cl_copy">Copy</string>
     <string name="cl_share">Share</string>
     <string name="cl_copied">Code copied</string>
-    <string name="cl_share_text">Install Naari Shakti and enter my code %1$s to get my SOS alerts</string>
+    <string name="cl_share_text">Install Naari Kavach and enter my code %1$s to get my SOS alerts</string>
     <string name="cl_share_chooser">Share your guardian code</string>
 
     <string name="cl_section_link">Become someone\'s guardian</string>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Donation banner: rose-to-violet sweep with a soft top sheen and a gold hairline underneath. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="0"
+                android:centerColor="@color/ns_rose"
+                android:endColor="@color/ns_violet"
+                android:startColor="@color/ns_rose_deep" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="270"
+                android:endColor="#00FFFFFF"
+                android:startColor="#2EFFFFFF" />
+        </shape>
+    </item>
+    <item
+        android:height="1dp"
+        android:gravity="bottom">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/ns_gold_bright" />
+        </shape>
+    </item>
+</layer-list>

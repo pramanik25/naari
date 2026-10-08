@@ -73,7 +73,7 @@
     <string name="ev_export_failed">തെളിവ് പാക്കേജ് സൃഷ്ടിക്കാനായില്ല.</string>
     <string name="ev_export_empty">ഈ സംഭവത്തിൽ എക്സ്പോർട്ട് ചെയ്യാൻ ഫയലുകളില്ല.</string>
     <string name="ev_export_chooser">തെളിവ് പാക്കേജ് പങ്കിടുക</string>
-    <string name="ev_export_subject">Naari Shakti തെളിവ് പാക്കേജ്</string>
+    <string name="ev_export_subject">Naari Kavach തെളിവ് പാക്കേജ്</string>
     <string name="ev_kind_photo">ഫോട്ടോ</string>
     <string name="ev_kind_audio">ഓഡിയോ</string>
     <string name="ev_kind_video">വീഡിയോ</string>

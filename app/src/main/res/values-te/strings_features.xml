@@ -53,7 +53,7 @@
     <!-- ===================== Trigger phrase ===================== -->
     <string name="ub_trigger_eyebrow">వాయిస్ ట్రిగ్గర్</string>
     <string name="ub_trigger_title">ట్రిగ్గర్ పదం</string>
-    <string name="ub_trigger_desc">రక్షణ ఆన్‌లో ఉన్నప్పుడు ఈ పదం చెబితే Naari Shakti మీ SOS పంపుతుంది.</string>
+    <string name="ub_trigger_desc">రక్షణ ఆన్‌లో ఉన్నప్పుడు ఈ పదం చెబితే Naari Kavach మీ SOS పంపుతుంది.</string>
     <string name="ub_trigger_current_label">మీ ట్రిగ్గర్ పదం</string>
     <string name="ub_trigger_status_active">ఇప్పుడు వింటోంది · ఆఫ్‌లైన్‌లో పనిచేస్తుంది</string>
     <string name="ub_trigger_status_inactive">రక్షణ ఆన్‌లో ఉన్నప్పుడే వింటుంది</string>
@@ -85,7 +85,7 @@
     <string name="ub_trigger_err_generic">రికార్డింగ్ పనిచేయలేదు. మళ్లీ ప్రయత్నించండి లేదా కింద మీ పదం టైప్ చేయండి.</string>
     <string name="ub_trigger_mic_denied">రికార్డ్ చేయడానికి మైక్రోఫోన్ యాక్సెస్ అవసరం. బదులుగా మీ పదం టైప్ చేయవచ్చు.</string>
     <string name="ub_trigger_mic_rationale_title">మైక్రోఫోన్‌ను అనుమతించండి</string>
-    <string name="ub_trigger_mic_rationale_body">మీ పదాన్ని ఒకసారి విని రాసుకోవడానికి మాత్రమే Naari Shakti మైక్రోఫోన్ ఉపయోగిస్తుంది. ఆడియో ఏదీ సేవ్ చేయబడదు.</string>
+    <string name="ub_trigger_mic_rationale_body">మీ పదాన్ని ఒకసారి విని రాసుకోవడానికి మాత్రమే Naari Kavach మైక్రోఫోన్ ఉపయోగిస్తుంది. ఆడియో ఏదీ సేవ్ చేయబడదు.</string>
     <string name="ub_trigger_unavailable_title">వాయిస్ రికార్డింగ్ అందుబాటులో లేదు</string>
     <string name="ub_trigger_unavailable_body">ఈ ఫోన్‌లో వాయిస్ గుర్తింపు సేవ లేదు. బదులుగా కింద మీ పదం టైప్ చేయండి.</string>
     <string name="ub_trigger_warn_title">తక్కువగా వాడే పదం ఎంచుకోవాలా?</string>
@@ -263,7 +263,7 @@
     <string name="ub_live_map_cd">మీ ప్రస్తుత లొకేషన్ చూపే మ్యాప్</string>
     <string name="ub_live_status_idle">మీ లొకేషన్</string>
     <string name="ub_live_status_live">లైవ్ · షేర్ అవుతోంది</string>
-    <string name="ub_live_perm_title">Naari Shakti కి లొకేషన్ ఆఫ్‌లో ఉంది</string>
+    <string name="ub_live_perm_title">Naari Kavach కి లొకేషన్ ఆఫ్‌లో ఉంది</string>
     <string name="ub_live_perm_body">మీరు ఎక్కడ ఉన్నారో చూసి షేర్ చేయడానికి లొకేషన్ అనుమతించండి.</string>
     <string name="ub_live_you_are_here">మీరు ఇక్కడ ఉన్నారు</string>
     <string name="ub_live_finding">మీ లొకేషన్ కనుగొంటోంది…</string>
@@ -327,11 +327,11 @@
     <string name="ub_zone_perm_title">ఖచ్చితమైన లొకేషన్ అవసరం</string>
     <string name="ub_zone_perm_body">పిన్‌లు ఉంచడానికి, మీ సురక్షిత ప్రాంతాలను గమనించడానికి ఖచ్చితమైన లొకేషన్ అనుమతించండి.</string>
     <string name="ub_zone_bg_title">“అన్ని సమయాలలో అనుమతించండి” తో మాత్రమే అలర్ట్‌లు పనిచేస్తాయి</string>
-    <string name="ub_zone_bg_body">Naari Shakti మూసి ఉన్నప్పుడు మీ సురక్షిత ప్రాంతాలను గమనించడానికి Android కి బ్యాక్‌గ్రౌండ్ లొకేషన్ అవసరం.</string>
+    <string name="ub_zone_bg_body">Naari Kavach మూసి ఉన్నప్పుడు మీ సురక్షిత ప్రాంతాలను గమనించడానికి Android కి బ్యాక్‌గ్రౌండ్ లొకేషన్ అవసరం.</string>
     <string name="ub_zone_bg_fix">అనుమతించండి</string>
     <string name="ub_zone_bg_dialog_title">లొకేషన్‌ను అన్ని సమయాలలో అనుమతించండి</string>
-    <string name="ub_zone_bg_dialog_body">Naari Shakti మూసి ఉన్నప్పుడు కూడా సురక్షిత ప్రాంతం అలర్ట్‌లు పనిచేయాలంటే “అన్ని సమయాలలో అనుమతించండి” ఎంచుకోండి. మీ లొకేషన్ ఈ ఫోన్‌లో మాత్రమే తనిఖీ చేయబడుతుంది.</string>
-    <string name="ub_zone_bg_dialog_body_settings">తర్వాతి స్క్రీన్‌లో, Naari Shakti మూసి ఉన్నప్పుడు కూడా సురక్షిత ప్రాంతం అలర్ట్‌లు పనిచేయాలంటే “అన్ని సమయాలలో అనుమతించండి” ఎంచుకోండి. మీ లొకేషన్ ఈ ఫోన్‌లో మాత్రమే తనిఖీ చేయబడుతుంది.</string>
+    <string name="ub_zone_bg_dialog_body">Naari Kavach మూసి ఉన్నప్పుడు కూడా సురక్షిత ప్రాంతం అలర్ట్‌లు పనిచేయాలంటే “అన్ని సమయాలలో అనుమతించండి” ఎంచుకోండి. మీ లొకేషన్ ఈ ఫోన్‌లో మాత్రమే తనిఖీ చేయబడుతుంది.</string>
+    <string name="ub_zone_bg_dialog_body_settings">తర్వాతి స్క్రీన్‌లో, Naari Kavach మూసి ఉన్నప్పుడు కూడా సురక్షిత ప్రాంతం అలర్ట్‌లు పనిచేయాలంటే “అన్ని సమయాలలో అనుమతించండి” ఎంచుకోండి. మీ లొకేషన్ ఈ ఫోన్‌లో మాత్రమే తనిఖీ చేయబడుతుంది.</string>
     <string name="ub_zone_bg_granted">ఇప్పుడు సురక్షిత ప్రాంతాలు బ్యాక్‌గ్రౌండ్‌లో మీకు అలర్ట్ ఇస్తాయి</string>
     <string name="ub_zone_bg_denied">బ్యాక్‌గ్రౌండ్ లొకేషన్ ఆఫ్‌లో ఉంది. సెట్టింగ్‌లు → అనుమతులు → లొకేషన్ లో “అన్ని సమయాలలో అనుమతించండి” ఆన్ చేయండి.</string>
 

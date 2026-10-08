@@ -278,7 +278,7 @@ function createWhatsApp({ config, pool, log, fetchImpl = globalThis.fetch }) {
     if (/\bSTOP\b/i.test(text)) {
       await pool.query(
         `UPDATE whatsapp_contacts SET opted_in = false, opted_out_at = now() WHERE number = $1`, [number]);
-      await send({ to: number, kind: 'reply', payload: textPayload('Naari Shakti: you will no longer receive SOS alerts. Send JOIN to opt in again.') });
+      await send({ to: number, kind: 'reply', payload: textPayload('Naari Kavach: you will no longer receive SOS alerts. Send JOIN to opt in again.') });
     } else if (/\bJOIN\b/i.test(text)) {
       const { rows } = await pool.query(
         `UPDATE whatsapp_contacts c SET opted_in = true, opted_in_at = now(), opted_out_at = NULL
@@ -286,8 +286,8 @@ function createWhatsApp({ config, pool, log, fetchImpl = globalThis.fetch }) {
          RETURNING u.name`, [number]);
       const names = rows.map((r) => r.name).filter(Boolean);
       const body = rows.length
-        ? `Naari Shakti: you're now an emergency contact${names.length ? ` for ${names.join(', ')}` : ''}. If she sends an SOS you'll get her live location here. In danger? Call 112 first. Reply STOP to opt out.`
-        : 'Naari Shakti: this number is not listed as an emergency contact yet. Ask her to add you in the app, then send JOIN again.';
+        ? `Naari Kavach: you're now an emergency contact${names.length ? ` for ${names.join(', ')}` : ''}. If she sends an SOS you'll get her live location here. In danger? Call 112 first. Reply STOP to opt out.`
+        : 'Naari Kavach: this number is not listed as an emergency contact yet. Ask her to add you in the app, then send JOIN again.';
       await send({ to: number, kind: 'reply', payload: textPayload(body) });
     }
   }

@@ -518,7 +518,7 @@ public class CabModeActivity extends AppCompatActivity {
         }));
     }
 
-    /** "Naari Shakti: <name> is in cab <PLATE> (<app>, driver <x>). Going to <dest>. Live: <link>" */
+    /** "Naari Kavach: <name> is in cab <PLATE> (<app>, driver <x>). Going to <dest>. Live: <link>" */
     static String buildStartSms(Context ctx, String name, String plate, String app, String driver,
                                 String dest, @Nullable Location loc) {
         String details;

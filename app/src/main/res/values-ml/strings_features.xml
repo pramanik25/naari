@@ -53,7 +53,7 @@
     <!-- ===================== Trigger phrase ===================== -->
     <string name="ub_trigger_eyebrow">ശബ്ദ ട്രിഗർ</string>
     <string name="ub_trigger_title">അടിയന്തര വാക്ക്</string>
-    <string name="ub_trigger_desc">സംരക്ഷണം ഓണായിരിക്കുമ്പോൾ ഈ വാക്ക് പറഞ്ഞാൽ Naari Shakti നിങ്ങളുടെ SOS അയയ്ക്കും.</string>
+    <string name="ub_trigger_desc">സംരക്ഷണം ഓണായിരിക്കുമ്പോൾ ഈ വാക്ക് പറഞ്ഞാൽ Naari Kavach നിങ്ങളുടെ SOS അയയ്ക്കും.</string>
     <string name="ub_trigger_current_label">നിങ്ങളുടെ അടിയന്തര വാക്ക്</string>
     <string name="ub_trigger_status_active">ഇപ്പോൾ കാതോർക്കുന്നു · ഓഫ്‌ലൈനിലും പ്രവർത്തിക്കും</string>
     <string name="ub_trigger_status_inactive">സംരക്ഷണം ഓണായിരിക്കുമ്പോൾ മാത്രം കേൾക്കും</string>
@@ -85,7 +85,7 @@
     <string name="ub_trigger_err_generic">റെക്കോർഡിംഗ് നടന്നില്ല. വീണ്ടും ശ്രമിക്കുക അല്ലെങ്കിൽ താഴെ വാക്ക് ടൈപ്പ് ചെയ്യുക.</string>
     <string name="ub_trigger_mic_denied">റെക്കോർഡ് ചെയ്യാൻ മൈക്രോഫോൺ ആക്സസ് വേണം. പകരം വാക്ക് ടൈപ്പ് ചെയ്യാം.</string>
     <string name="ub_trigger_mic_rationale_title">മൈക്രോഫോൺ അനുവദിക്കുക</string>
-    <string name="ub_trigger_mic_rationale_body">നിങ്ങളുടെ വാക്ക് ഒരിക്കൽ കേട്ട് എഴുതിയെടുക്കാൻ മാത്രമാണ് Naari Shakti മൈക്രോഫോൺ ഉപയോഗിക്കുന്നത്. ഓഡിയോ ഒന്നും സേവ് ചെയ്യില്ല.</string>
+    <string name="ub_trigger_mic_rationale_body">നിങ്ങളുടെ വാക്ക് ഒരിക്കൽ കേട്ട് എഴുതിയെടുക്കാൻ മാത്രമാണ് Naari Kavach മൈക്രോഫോൺ ഉപയോഗിക്കുന്നത്. ഓഡിയോ ഒന്നും സേവ് ചെയ്യില്ല.</string>
     <string name="ub_trigger_unavailable_title">ശബ്ദ റെക്കോർഡിംഗ് ലഭ്യമല്ല</string>
     <string name="ub_trigger_unavailable_body">ഈ ഫോണിൽ സംഭാഷണം തിരിച്ചറിയൽ സേവനമില്ല. പകരം താഴെ വാക്ക് ടൈപ്പ് ചെയ്യുക.</string>
     <string name="ub_trigger_warn_title">അധികം ഉപയോഗിക്കാത്ത വാക്ക് വേണോ?</string>
@@ -263,7 +263,7 @@
     <string name="ub_live_map_cd">നിങ്ങളുടെ ഇപ്പോഴത്തെ ലൊക്കേഷൻ കാണിക്കുന്ന മാപ്പ്</string>
     <string name="ub_live_status_idle">നിങ്ങളുടെ ലൊക്കേഷൻ</string>
     <string name="ub_live_status_live">ലൈവ് · പങ്കിടുന്നു</string>
-    <string name="ub_live_perm_title">Naari Shakti-ക്ക് ലൊക്കേഷൻ ഓഫാണ്</string>
+    <string name="ub_live_perm_title">Naari Kavach-ക്ക് ലൊക്കേഷൻ ഓഫാണ്</string>
     <string name="ub_live_perm_body">നിങ്ങൾ എവിടെയാണെന്ന് കാണാനും പങ്കിടാനും ലൊക്കേഷൻ അനുവദിക്കുക.</string>
     <string name="ub_live_you_are_here">നിങ്ങൾ ഇവിടെയാണ്</string>
     <string name="ub_live_finding">നിങ്ങളുടെ ലൊക്കേഷൻ കണ്ടെത്തുന്നു…</string>
@@ -327,11 +327,11 @@
     <string name="ub_zone_perm_title">കൃത്യമായ ലൊക്കേഷൻ വേണം</string>
     <string name="ub_zone_perm_body">പിൻ ഇടാനും സുരക്ഷിത മേഖലകൾ നിരീക്ഷിക്കാനും കൃത്യമായ ലൊക്കേഷൻ അനുവദിക്കുക.</string>
     <string name="ub_zone_bg_title">“എല്ലായ്‌പ്പോഴും അനുവദിക്കുക” ഉണ്ടെങ്കിലേ അലേർട്ടുകൾ പ്രവർത്തിക്കൂ</string>
-    <string name="ub_zone_bg_body">Naari Shakti അടച്ചിരിക്കുമ്പോൾ സുരക്ഷിത മേഖലകൾ നിരീക്ഷിക്കാൻ Android-ന് പശ്ചാത്തല ലൊക്കേഷൻ വേണം.</string>
+    <string name="ub_zone_bg_body">Naari Kavach അടച്ചിരിക്കുമ്പോൾ സുരക്ഷിത മേഖലകൾ നിരീക്ഷിക്കാൻ Android-ന് പശ്ചാത്തല ലൊക്കേഷൻ വേണം.</string>
     <string name="ub_zone_bg_fix">അനുവദിക്കുക</string>
     <string name="ub_zone_bg_dialog_title">ലൊക്കേഷൻ എല്ലായ്‌പ്പോഴും അനുവദിക്കുക</string>
-    <string name="ub_zone_bg_dialog_body">Naari Shakti അടച്ചിരിക്കുമ്പോഴും സുരക്ഷിത മേഖല അലേർട്ടുകൾ പ്രവർത്തിക്കാൻ “എല്ലായ്‌പ്പോഴും അനുവദിക്കുക” തിരഞ്ഞെടുക്കുക. നിങ്ങളുടെ ലൊക്കേഷൻ ഈ ഫോണിൽ മാത്രമേ പരിശോധിക്കൂ.</string>
-    <string name="ub_zone_bg_dialog_body_settings">അടുത്ത സ്ക്രീനിൽ, Naari Shakti അടച്ചിരിക്കുമ്പോഴും സുരക്ഷിത മേഖല അലേർട്ടുകൾ പ്രവർത്തിക്കാൻ “എല്ലായ്‌പ്പോഴും അനുവദിക്കുക” തിരഞ്ഞെടുക്കുക. നിങ്ങളുടെ ലൊക്കേഷൻ ഈ ഫോണിൽ മാത്രമേ പരിശോധിക്കൂ.</string>
+    <string name="ub_zone_bg_dialog_body">Naari Kavach അടച്ചിരിക്കുമ്പോഴും സുരക്ഷിത മേഖല അലേർട്ടുകൾ പ്രവർത്തിക്കാൻ “എല്ലായ്‌പ്പോഴും അനുവദിക്കുക” തിരഞ്ഞെടുക്കുക. നിങ്ങളുടെ ലൊക്കേഷൻ ഈ ഫോണിൽ മാത്രമേ പരിശോധിക്കൂ.</string>
+    <string name="ub_zone_bg_dialog_body_settings">അടുത്ത സ്ക്രീനിൽ, Naari Kavach അടച്ചിരിക്കുമ്പോഴും സുരക്ഷിത മേഖല അലേർട്ടുകൾ പ്രവർത്തിക്കാൻ “എല്ലായ്‌പ്പോഴും അനുവദിക്കുക” തിരഞ്ഞെടുക്കുക. നിങ്ങളുടെ ലൊക്കേഷൻ ഈ ഫോണിൽ മാത്രമേ പരിശോധിക്കൂ.</string>
     <string name="ub_zone_bg_granted">സുരക്ഷിത മേഖലകൾ ഇനി പശ്ചാത്തലത്തിൽ നിങ്ങളെ അറിയിക്കും</string>
     <string name="ub_zone_bg_denied">പശ്ചാത്തല ലൊക്കേഷൻ ഓഫാണ്. ക്രമീകരണം → അനുമതികൾ → ലൊക്കേഷൻ എന്നതിൽ “എല്ലായ്‌പ്പോഴും അനുവദിക്കുക” ഓണാക്കുക.</string>
 

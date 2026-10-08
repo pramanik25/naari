@@ -29,6 +29,7 @@ import androidx.core.widget.ImageViewCompat;
 
 import com.example.naarishakti.R;
 import com.example.naarishakti.databinding.ActivityProfileBinding;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.textfield.TextInputLayout;
 
@@ -79,6 +80,12 @@ public class ProfileActivity extends AppCompatActivity {
         pickImage = registerForActivityResult(new ActivityResultContracts.GetContent(), this::onImagePicked);
 
         b.backButton.setOnClickListener(v -> finish());
+        b.infoButton.setOnClickListener(v -> new MaterialAlertDialogBuilder(this)
+                .setIcon(R.drawable.ua_ic_info)
+                .setTitle(R.string.sh_profile_info_title)
+                .setMessage(R.string.sh_profile_info_body)
+                .setPositiveButton(android.R.string.ok, null)
+                .show());
         b.avatarButton.setOnClickListener(v -> {
             v.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY);
             pickImage.launch("image/*");

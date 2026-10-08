@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="ns_accessibility_description">സ്ക്രീൻ ഓഫായിരിക്കുമ്പോഴോ ലോക്ക് ആയിരിക്കുമ്പോഴോ വോളിയം കീ പാറ്റേൺ വഴി SOS തുടങ്ങാൻ Naari Shakti-യെ അനുവദിക്കുന്നു. Naari Shakti നിങ്ങളുടെ സ്ക്രീനിലുള്ളത് വായിക്കില്ല.</string>
+    <string name="ns_accessibility_description">സ്ക്രീൻ ഓഫായിരിക്കുമ്പോഴോ ലോക്ക് ആയിരിക്കുമ്പോഴോ വോളിയം കീ പാറ്റേൺ വഴി SOS തുടങ്ങാൻ Naari Kavach-യെ അനുവദിക്കുന്നു. Naari Kavach നിങ്ങളുടെ സ്ക്രീനിലുള്ളത് വായിക്കില്ല.</string>
 
     <!-- Appearance & language -->
     <string name="core_back">മടങ്ങുക</string>
     <string name="core_appearance_eyebrow">വ്യക്തിഗതമാക്കുക</string>
     <string name="core_appearance_title">രൂപം &amp; ഭാഷ</string>
-    <string name="core_appearance_desc">Naari Shakti എങ്ങനെ കാണണമെന്നും ഏത് ഭാഷ സംസാരിക്കണമെന്നും തിരഞ്ഞെടുക്കുക. കോൺടാക്റ്റുകൾക്ക് അയയ്ക്കുന്ന അലേർട്ടുകളും ഇതേ ഭാഷയിലായിരിക്കും.</string>
+    <string name="core_appearance_desc">Naari Kavach എങ്ങനെ കാണണമെന്നും ഏത് ഭാഷ സംസാരിക്കണമെന്നും തിരഞ്ഞെടുക്കുക. കോൺടാക്റ്റുകൾക്ക് അയയ്ക്കുന്ന അലേർട്ടുകളും ഇതേ ഭാഷയിലായിരിക്കും.</string>
     <string name="core_section_theme">തീം</string>
     <string name="core_theme_dark">ഡാർക്ക്</string>
     <string name="core_theme_light">ലൈറ്റ്</string>

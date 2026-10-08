@@ -3,7 +3,7 @@
     <!-- Shared -->
     <string name="tg_back">മടങ്ങുക</string>
     <string name="tg_eyebrow">ഒരുമിച്ച്</string>
-    <string name="tg_cloud_off">ഇതിന് Naari Shakti ക്ലൗഡ് വേണം, ഈ ഫോണിൽ അത് ഓഫാണ്.</string>
+    <string name="tg_cloud_off">ഇതിന് Naari Kavach ക്ലൗഡ് വേണം, ഈ ഫോണിൽ അത് ഓഫാണ്.</string>
     <string name="tg_open_settings">ക്രമീകരണം</string>
     <string name="tg_close">അടയ്ക്കുക</string>
     <string name="tg_delete">ഇല്ലാതാക്കുക</string>
@@ -61,7 +61,7 @@
     <string name="tg_sm_empty">+ ചിഹ്നത്തിന്റെ 3 കി.മീ ചുറ്റളവിൽ റിപ്പോർട്ടുകളില്ല. അതുകൊണ്ട് ആ പ്രദേശം സുരക്ഷിതമാണെന്ന് അർത്ഥമില്ല.</string>
     <string name="tg_sm_no_location">നിങ്ങളുടെ ലൊക്കേഷൻ കണ്ടെത്താനായില്ല. മാപ്പ് നീക്കി “ഇവിടെ തിരയുക” ടാപ്പ് ചെയ്യുക.</string>
     <string name="tg_sm_pan_hint">ലൊക്കേഷൻ ഇല്ലെങ്കിൽ, മാപ്പ് വേണ്ട സ്ഥലത്തേക്ക് നീക്കി “ഇവിടെ തിരയുക” ടാപ്പ് ചെയ്യുക.</string>
-    <string name="tg_sm_detail">ഒരു Naari Shakti ഉപയോക്താവ് %1$s റിപ്പോർട്ട് ചെയ്തത്. സ്ഥിരീകരിച്ചിട്ടില്ല.</string>
+    <string name="tg_sm_detail">ഒരു Naari Kavach ഉപയോക്താവ് %1$s റിപ്പോർട്ട് ചെയ്തത്. സ്ഥിരീകരിച്ചിട്ടില്ല.</string>
     <string name="tg_sm_deleted">നിങ്ങളുടെ റിപ്പോർട്ട് ഇല്ലാതാക്കി.</string>
     <string name="tg_sm_flag">ഇത് തെറ്റാണ്</string>
     <string name="tg_sm_zoom_in">+ കൃത്യമായ സ്ഥലത്തിന് മുകളിൽ വരാൻ കൂടുതൽ സൂം ചെയ്യുക.</string>

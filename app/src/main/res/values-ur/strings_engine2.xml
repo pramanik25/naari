@@ -2,9 +2,9 @@
 <resources>
 
     <!-- Silent SOS: low-key notification and covert screen -->
-    <string name="en_covert_title">Naari Shakti · لوکیشن شیئر ہو رہی ہے</string>
+    <string name="en_covert_title">Naari Kavach · لوکیشن شیئر ہو رہی ہے</string>
     <string name="en_covert_text">سنبھالنے کے لیے ٹیپ کریں</string>
-    <string name="en_covert_overline">Naari Shakti</string>
+    <string name="en_covert_overline">Naari Kavach</string>
     <string name="en_covert_heading">آپ کی لوکیشن شیئر ہو رہی ہے</string>
     <string name="en_covert_body">آپ کے بھروسے مند رابطوں کو آپ کی لائیو لوکیشن مل رہی ہے۔</string>
     <string name="en_covert_hold">شیئرنگ روکنے کے لیے دبائے رکھیں</string>
@@ -13,8 +13,8 @@
 
     <!-- SMS -->
     <string name="en_sms_tracking_line">لائیو لوکیشن &amp; ثبوت: %1$s</string>
-    <string name="en_sms_duress">Naari Shakti: ہو سکتا ہے %1$s سے زبردستی الرٹ منسوخ کروایا گیا ہو۔ اسے ابھی بھی فعال سمجھیں۔ لائیو لوکیشن: %2$s</string>
-    <string name="en_sms_duress_no_link">Naari Shakti: ہو سکتا ہے %1$s سے زبردستی الرٹ منسوخ کروایا گیا ہو۔ اسے ابھی بھی فعال سمجھیں۔ لوکیشن بعد میں آئے گی۔</string>
+    <string name="en_sms_duress">Naari Kavach: ہو سکتا ہے %1$s سے زبردستی الرٹ منسوخ کروایا گیا ہو۔ اسے ابھی بھی فعال سمجھیں۔ لائیو لوکیشن: %2$s</string>
+    <string name="en_sms_duress_no_link">Naari Kavach: ہو سکتا ہے %1$s سے زبردستی الرٹ منسوخ کروایا گیا ہو۔ اسے ابھی بھی فعال سمجھیں۔ لوکیشن بعد میں آئے گی۔</string>
     <string name="en_duress_name_fallback">آپ کا رابطہ</string>
 
     <!-- Spoken alert (text to speech, loud) -->
@@ -66,7 +66,7 @@
     <string name="en_cancel">منسوخ</string>
     <string name="en_pin_lockout">بہت زیادہ کوششیں۔ %1$d سیکنڈ بعد دوبارہ کوشش کریں۔</string>
     <string name="en_pin_verify_title">اپنا PIN درج کریں</string>
-    <string name="en_pin_verify_subtitle">آگے بڑھنے کے لیے اپنا Naari Shakti PIN درج کریں۔</string>
+    <string name="en_pin_verify_subtitle">آگے بڑھنے کے لیے اپنا Naari Kavach PIN درج کریں۔</string>
     <string name="en_pin_current_title">موجودہ PIN درج کریں</string>
     <string name="en_pin_current_subtitle">PIN بدلنے سے پہلے تصدیق کریں کہ یہ آپ ہی ہیں۔</string>
     <string name="en_pin_manage_title">ایپ PIN</string>

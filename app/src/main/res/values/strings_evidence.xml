@@ -77,7 +77,7 @@
     <string name="ev_export_failed">Couldn\'t create the evidence package.</string>
     <string name="ev_export_empty">This incident has no files to export.</string>
     <string name="ev_export_chooser">Share evidence package</string>
-    <string name="ev_export_subject">Naari Shakti evidence package</string>
+    <string name="ev_export_subject">Naari Kavach evidence package</string>
     <string name="ev_kind_photo">Photo</string>
     <string name="ev_kind_audio">Audio clip</string>
     <string name="ev_kind_video">Video</string>
@@ -204,7 +204,7 @@
     <string name="ev_tpl_en_ev_intro" translatable="false">My phone recorded the files below during the incident. The SHA-256 fingerprint of each file is given so that its integrity can be checked. I will provide the original files on request.</string>
     <string name="ev_tpl_en_ev_none" translatable="false">[List any evidence you have: photos, recordings, messages, medical reports, witnesses.]</string>
     <string name="ev_tpl_en_ev_item" translatable="false">%1$d. %2$s, recorded %3$s, %4$s\n   SHA-256: %5$s</string>
-    <string name="ev_tpl_en_ev_verified" translatable="false">\n   A copy was received and verified by the Naari Shakti server.</string>
+    <string name="ev_tpl_en_ev_verified" translatable="false">\n   A copy was received and verified by the Naari Kavach server.</string>
     <string name="ev_tpl_en_kind_photo" translatable="false">Photo</string>
     <string name="ev_tpl_en_kind_audio" translatable="false">Audio recording</string>
     <string name="ev_tpl_en_kind_video" translatable="false">Video recording</string>
@@ -243,7 +243,7 @@
     <string name="ev_tpl_hi_ev_intro" translatable="false">घटना के दौरान मेरे फ़ोन ने नीचे दी गई फ़ाइलें रिकॉर्ड कीं। प्रत्येक फ़ाइल का SHA-256 फ़िंगरप्रिंट दिया गया है, जिससे उसकी प्रामाणिकता जाँची जा सकती है। माँगे जाने पर मैं मूल फ़ाइलें उपलब्ध कराऊँगी।</string>
     <string name="ev_tpl_hi_ev_none" translatable="false">[आपके पास जो भी साक्ष्य हों, उन्हें लिखें: फ़ोटो, रिकॉर्डिंग, संदेश, मेडिकल रिपोर्ट, गवाह।]</string>
     <string name="ev_tpl_hi_ev_item" translatable="false">%1$d. %2$s, रिकॉर्ड समय %3$s, %4$s\n   SHA-256: %5$s</string>
-    <string name="ev_tpl_hi_ev_verified" translatable="false">\n   इसकी एक प्रति Naari Shakti सर्वर द्वारा प्राप्त एवं सत्यापित की गई।</string>
+    <string name="ev_tpl_hi_ev_verified" translatable="false">\n   इसकी एक प्रति Naari Kavach सर्वर द्वारा प्राप्त एवं सत्यापित की गई।</string>
     <string name="ev_tpl_hi_kind_photo" translatable="false">फ़ोटो</string>
     <string name="ev_tpl_hi_kind_audio" translatable="false">ऑडियो रिकॉर्डिंग</string>
     <string name="ev_tpl_hi_kind_video" translatable="false">वीडियो रिकॉर्डिंग</string>

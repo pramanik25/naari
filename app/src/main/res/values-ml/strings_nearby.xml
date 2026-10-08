@@ -10,7 +10,7 @@
     <string name="nb_home_location_denied">നിങ്ങളുടെ ലൊക്കേഷൻ ഇല്ലാതെ സമീപത്തെ അലേർട്ടുകളുമായി നിങ്ങളെ പൊരുത്തപ്പെടുത്താനാകില്ല. പിന്നീട് ക്ലൗഡ് &amp; ഗാർഡിയൻമാർ ൽ ഇത് ഓണാക്കാം.</string>
 
     <string name="nb_mesh_title">ഇന്റർനെറ്റ് ഇല്ലാതെയും സഹായിക്കാമോ?</string>
-    <string name="nb_mesh_body">ഇന്റർനെറ്റ് ഇല്ലാത്തപ്പോൾ Naari Shakti സമീപത്തെ ഫോണുകൾക്കിടയിൽ Bluetooth വഴി SOS അലേർട്ടുകൾ എത്തിക്കും. ഇതിന് സമീപ ഉപകരണങ്ങളുടെ അനുമതി വേണം.</string>
+    <string name="nb_mesh_body">ഇന്റർനെറ്റ് ഇല്ലാത്തപ്പോൾ Naari Kavach സമീപത്തെ ഫോണുകൾക്കിടയിൽ Bluetooth വഴി SOS അലേർട്ടുകൾ എത്തിക്കും. ഇതിന് സമീപ ഉപകരണങ്ങളുടെ അനുമതി വേണം.</string>
     <string name="nb_mesh_yes">ഓണാക്കുക</string>
     <string name="nb_mesh_no">വേണ്ട, നന്ദി</string>
     <string name="nb_mesh_on">ഓഫ്‌ലൈൻ Bluetooth അലേർട്ടുകൾ ഓണാണ്.</string>
@@ -31,12 +31,12 @@
     <string name="nb_wa_section">WhatsApp അലേർട്ടുകൾ</string>
     <string name="nb_wa_title">WhatsApp അലേർട്ടുകൾ</string>
     <string name="nb_wa_caption">നിങ്ങളുടെ SOS, ലൈവ് ലൊക്കേഷൻ, ഫോട്ടോകൾ എന്നിവ നിങ്ങളുടെ കോൺടാക്റ്റുകൾക്ക് WhatsApp ൽ അയയ്ക്കുക.</string>
-    <string name="nb_wa_explain">അലേർട്ടുകൾ Naari Shakti WhatsApp നമ്പറിൽ നിന്നാണ് വരുന്നത്, നിങ്ങളുടെ സ്വന്തം WhatsApp ൽ നിന്നല്ല. അലേർട്ടുകൾ ലഭിക്കുന്നതിന് മുമ്പ് ഓരോ കോൺടാക്റ്റും നിങ്ങളുടെ ക്ഷണത്തിൽ ഒരിക്കൽ ടാപ്പ് ചെയ്ത് ചേരണം.</string>
+    <string name="nb_wa_explain">അലേർട്ടുകൾ Naari Kavach WhatsApp നമ്പറിൽ നിന്നാണ് വരുന്നത്, നിങ്ങളുടെ സ്വന്തം WhatsApp ൽ നിന്നല്ല. അലേർട്ടുകൾ ലഭിക്കുന്നതിന് മുമ്പ് ഓരോ കോൺടാക്റ്റും നിങ്ങളുടെ ക്ഷണത്തിൽ ഒരിക്കൽ ടാപ്പ് ചെയ്ത് ചേരണം.</string>
     <string name="nb_wa_joined">ചേർന്നു ✓</string>
     <string name="nb_wa_not_joined">ഇതുവരെ ചേർന്നിട്ടില്ല</string>
     <string name="nb_wa_invite">ക്ഷണിക്കുക</string>
     <string name="nb_wa_invite_cd">%1$s നെ WhatsApp ൽ ക്ഷണിക്കുക</string>
-    <string name="nb_wa_invite_text">നമസ്കാരം, Naari Shakti ൽ ഞാൻ നിങ്ങളെ എന്റെ അടിയന്തര കോൺടാക്റ്റായി ചേർത്തിട്ടുണ്ട്. WhatsApp ൽ എന്റെ SOS അലേർട്ടുകൾ ലഭിക്കാൻ ഈ ലിങ്ക് തുറന്ന് സന്ദേശം അയയ്ക്കുക: %1$s</string>
+    <string name="nb_wa_invite_text">നമസ്കാരം, Naari Kavach ൽ ഞാൻ നിങ്ങളെ എന്റെ അടിയന്തര കോൺടാക്റ്റായി ചേർത്തിട്ടുണ്ട്. WhatsApp ൽ എന്റെ SOS അലേർട്ടുകൾ ലഭിക്കാൻ ഈ ലിങ്ക് തുറന്ന് സന്ദേശം അയയ്ക്കുക: %1$s</string>
     <string name="nb_wa_invite_chooser">ക്ഷണം അയയ്ക്കുക</string>
     <plurals name="nb_wa_joined_count">
         <item quantity="one">%2$d ൽ %1$d കോൺടാക്റ്റ് ചേർന്നു</item>

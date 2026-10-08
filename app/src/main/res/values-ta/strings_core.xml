@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="ns_accessibility_description">திரை அணைந்திருந்தாலும் பூட்டப்பட்டிருந்தாலும், ஒலியளவுப் பொத்தான் பேட்டர்ன் மூலம் SOS தொடங்க Naari Shakti-ஐ அனுமதிக்கிறது. Naari Shakti உங்கள் திரையில் உள்ளதைப் படிக்காது.</string>
+    <string name="ns_accessibility_description">திரை அணைந்திருந்தாலும் பூட்டப்பட்டிருந்தாலும், ஒலியளவுப் பொத்தான் பேட்டர்ன் மூலம் SOS தொடங்க Naari Kavach-ஐ அனுமதிக்கிறது. Naari Kavach உங்கள் திரையில் உள்ளதைப் படிக்காது.</string>
 
     <!-- Appearance & language -->
     <string name="core_back">பின்செல்</string>
     <string name="core_appearance_eyebrow">தனிப்பயனாக்கு</string>
     <string name="core_appearance_title">தோற்றம் &amp; மொழி</string>
-    <string name="core_appearance_desc">Naari Shakti எப்படித் தோன்ற வேண்டும், எந்த மொழியில் பேச வேண்டும் என்பதைத் தேர்வுசெய்யவும். உங்கள் தொடர்புகளுக்கு அனுப்பப்படும் எச்சரிக்கைகளும் இதே மொழியில் இருக்கும்.</string>
+    <string name="core_appearance_desc">Naari Kavach எப்படித் தோன்ற வேண்டும், எந்த மொழியில் பேச வேண்டும் என்பதைத் தேர்வுசெய்யவும். உங்கள் தொடர்புகளுக்கு அனுப்பப்படும் எச்சரிக்கைகளும் இதே மொழியில் இருக்கும்.</string>
     <string name="core_section_theme">தீம்</string>
     <string name="core_theme_dark">டார்க்</string>
     <string name="core_theme_light">லைட்</string>

@@ -75,7 +75,7 @@
     <string name="ev_export_failed">প্রমাণের প্যাকেজ তৈরি করা যায়নি।</string>
     <string name="ev_export_empty">এই ঘটনায় এক্সপোর্ট করার মতো কোনো ফাইল নেই।</string>
     <string name="ev_export_chooser">প্রমাণের প্যাকেজ শেয়ার করুন</string>
-    <string name="ev_export_subject">Naari Shakti প্রমাণের প্যাকেজ</string>
+    <string name="ev_export_subject">Naari Kavach প্রমাণের প্যাকেজ</string>
     <string name="ev_kind_photo">ছবি</string>
     <string name="ev_kind_audio">অডিও ক্লিপ</string>
     <string name="ev_kind_video">ভিডিও</string>

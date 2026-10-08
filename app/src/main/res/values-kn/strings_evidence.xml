@@ -74,7 +74,7 @@
     <string name="ev_export_failed">ಸಾಕ್ಷ್ಯ ಪ್ಯಾಕೇಜ್ ರಚಿಸಲು ಆಗಲಿಲ್ಲ.</string>
     <string name="ev_export_empty">ಈ ಘಟನೆಯಲ್ಲಿ ರಫ್ತು ಮಾಡಲು ಫೈಲ್‌ಗಳಿಲ್ಲ.</string>
     <string name="ev_export_chooser">ಸಾಕ್ಷ್ಯ ಪ್ಯಾಕೇಜ್ ಹಂಚಿಕೊಳ್ಳಿ</string>
-    <string name="ev_export_subject">Naari Shakti ಸಾಕ್ಷ್ಯ ಪ್ಯಾಕೇಜ್</string>
+    <string name="ev_export_subject">Naari Kavach ಸಾಕ್ಷ್ಯ ಪ್ಯಾಕೇಜ್</string>
     <string name="ev_kind_photo">ಫೋಟೋ</string>
     <string name="ev_kind_audio">ಆಡಿಯೊ ಕ್ಲಿಪ್</string>
     <string name="ev_kind_video">ವೀಡಿಯೊ</string>

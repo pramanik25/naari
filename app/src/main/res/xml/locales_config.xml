@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Languages offered in Android 13+ system Settings > Apps > Naari Shakti > Language.
+<!-- Languages offered in Android 13+ system Settings > Apps > Naari Kavach > Language.
      Keep in sync with core/Appearance.LANGUAGES and the values-xx/ folders. -->
 <locale-config xmlns:android="http://schemas.android.com/apk/res/android">
     <locale android:name="en" />

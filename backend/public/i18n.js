@@ -1,12 +1,12 @@
-/* Naari Shakti tracking page strings. Add a language by adding a dictionary with the same keys;
+/* Naari Kavach tracking page strings. Add a language by adding a dictionary with the same keys;
    missing keys fall back to English. The language comes from navigator.languages (or ?lang=xx). */
 (function (w) {
   'use strict';
 
   var dict = {
     en: {
-      doc_title: 'Naari Shakti · Live safety link',
-      brand: 'Naari Shakti',
+      doc_title: 'Naari Kavach · Live safety link',
+      brand: 'Naari Kavach',
       eyebrow_live: 'Live safety link',
       loading: 'Loading live location…',
       someone: 'Someone',

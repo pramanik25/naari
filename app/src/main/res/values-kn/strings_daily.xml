@@ -144,7 +144,7 @@
     <string name="dl_quiz_level_4">ರಕ್ಷಕಿ</string>
     <string name="dl_quiz_level_5">ಶಕ್ತಿ</string>
     <string name="dl_quiz_share">ನನ್ನ ಸರಣಿ ಹಂಚಿಕೊಳ್ಳಿ</string>
-    <string name="dl_quiz_share_text">Naari Shakti ಯಲ್ಲಿ ನಾನು ಸತತ %1$s ಸುರಕ್ಷತಾ ಕ್ವಿಜ್ ಆಡಿ %2$d ಅಂಕ ಗಳಿಸಿದ್ದೇನೆ. ನಿಮ್ಮ ಹಕ್ಕುಗಳು ಮತ್ತು ಸಹಾಯವಾಣಿಗಳು ನಿಮಗೆ ಗೊತ್ತೇ?</string>
+    <string name="dl_quiz_share_text">Naari Kavach ಯಲ್ಲಿ ನಾನು ಸತತ %1$s ಸುರಕ್ಷತಾ ಕ್ವಿಜ್ ಆಡಿ %2$d ಅಂಕ ಗಳಿಸಿದ್ದೇನೆ. ನಿಮ್ಮ ಹಕ್ಕುಗಳು ಮತ್ತು ಸಹಾಯವಾಣಿಗಳು ನಿಮಗೆ ಗೊತ್ತೇ?</string>
     <string name="dl_quiz_practice">ಇನ್ನಷ್ಟು ಅಭ್ಯಾಸ ಮಾಡಿ</string>
     <string name="dl_quiz_reminder">ದಿನದ ಕ್ವಿಜ್ ಜ್ಞಾಪನೆ</string>
     <string name="dl_quiz_reminder_sub">ನೀವು ಇನ್ನೂ ಆಡಿಲ್ಲದಿದ್ದರೆ ಸಂಜೆ ಒಂದು ನೋಟಿಫಿಕೇಶನ್</string>
@@ -156,7 +156,7 @@
         <item quantity="one">ಸತತ %1$d ದಿನದ ಸರಣಿ ಉಳಿಸಿಕೊಳ್ಳಲು ಈಗಲೇ ಆಡಿ.</item>
         <item quantity="other">ಸತತ %1$d ದಿನಗಳ ಸರಣಿ ಉಳಿಸಿಕೊಳ್ಳಲು ಈಗಲೇ ಆಡಿ.</item>
     </plurals>
-    <string name="dl_nudge_cycle_title">Naari Shakti ಯಿಂದ ಒಂದು ಜ್ಞಾಪನೆ</string>
+    <string name="dl_nudge_cycle_title">Naari Kavach ಯಿಂದ ಒಂದು ಜ್ಞಾಪನೆ</string>
     <string name="dl_nudge_cycle_text">ನೋಡಲು ಆ್ಯಪ್ ತೆರೆಯಿರಿ.</string>
 
     <!--

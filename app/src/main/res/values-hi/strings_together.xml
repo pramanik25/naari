@@ -3,7 +3,7 @@
     <!-- Shared -->
     <string name="tg_back">वापस</string>
     <string name="tg_eyebrow">साथ-साथ</string>
-    <string name="tg_cloud_off">इसके लिए Naari Shakti क्लाउड चाहिए, जो इस फ़ोन पर बंद है।</string>
+    <string name="tg_cloud_off">इसके लिए Naari Kavach क्लाउड चाहिए, जो इस फ़ोन पर बंद है।</string>
     <string name="tg_open_settings">सेटिंग्स</string>
     <string name="tg_close">बंद करें</string>
     <string name="tg_delete">हटाएँ</string>
@@ -61,7 +61,7 @@
     <string name="tg_sm_empty">+ के 3 किमी के अंदर कोई रिपोर्ट नहीं है। इसका मतलब यह नहीं कि इलाका सुरक्षित है।</string>
     <string name="tg_sm_no_location">आपकी लोकेशन नहीं मिली। मैप खिसकाएँ और “यहाँ खोजें” दबाएँ।</string>
     <string name="tg_sm_pan_hint">लोकेशन के बिना, मैप को किसी जगह पर ले जाएँ और “यहाँ खोजें” दबाएँ।</string>
-    <string name="tg_sm_detail">Naari Shakti की एक यूज़र ने %1$s रिपोर्ट किया। जाँचा नहीं गया है।</string>
+    <string name="tg_sm_detail">Naari Kavach की एक यूज़र ने %1$s रिपोर्ट किया। जाँचा नहीं गया है।</string>
     <string name="tg_sm_deleted">आपकी रिपोर्ट हटा दी गई।</string>
     <string name="tg_sm_flag">यह ग़लत है</string>
     <string name="tg_sm_zoom_in">ज़ूम करके पास जाएँ ताकि + ठीक उसी जगह पर हो।</string>

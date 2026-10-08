@@ -8,9 +8,9 @@
 
     <!-- ===================== SMS alerts to emergency contacts ===================== -->
     <string name="tr_default_owner_name">ਤੁਹਾਡਾ ਸੰਪਰਕ</string>
-    <string name="tr_sms_shutdown">Naari Shakti: %1$s ਦਾ ਫ਼ੋਨ ਬੰਦ ਹੋ ਰਿਹਾ ਹੈ। ਆਖਰੀ ਲੋਕੇਸ਼ਨ: %2$s</string>
-    <string name="tr_sms_low_battery">Naari Shakti: %1$s ਦੇ ਫ਼ੋਨ ਦੀ ਬੈਟਰੀ %2$d%% ਹੈ। ਆਖਰੀ ਲੋਕੇਸ਼ਨ: %3$s</string>
-    <string name="tr_sms_sim_changed">Naari Shakti: %1$s ਦੇ ਫ਼ੋਨ ਦਾ SIM ਕਾਰਡ ਬਦਲਿਆ ਗਿਆ ਹੈ। ਇਹ ਸੁਨੇਹਾ ਨਵੇਂ SIM ਤੋਂ ਹੈ। ਲੋਕੇਸ਼ਨ: %2$s</string>
+    <string name="tr_sms_shutdown">Naari Kavach: %1$s ਦਾ ਫ਼ੋਨ ਬੰਦ ਹੋ ਰਿਹਾ ਹੈ। ਆਖਰੀ ਲੋਕੇਸ਼ਨ: %2$s</string>
+    <string name="tr_sms_low_battery">Naari Kavach: %1$s ਦੇ ਫ਼ੋਨ ਦੀ ਬੈਟਰੀ %2$d%% ਹੈ। ਆਖਰੀ ਲੋਕੇਸ਼ਨ: %3$s</string>
+    <string name="tr_sms_sim_changed">Naari Kavach: %1$s ਦੇ ਫ਼ੋਨ ਦਾ SIM ਕਾਰਡ ਬਦਲਿਆ ਗਿਆ ਹੈ। ਇਹ ਸੁਨੇਹਾ ਨਵੇਂ SIM ਤੋਂ ਹੈ। ਲੋਕੇਸ਼ਨ: %2$s</string>
     <string name="tr_sms_location_fmt">%1$s (%2$s)</string>
     <string name="tr_sms_location_unknown">ਉਪਲਬਧ ਨਹੀਂ</string>
 
@@ -63,7 +63,7 @@
     <string name="tr_pb_scan_failed">ਲੱਭਣਾ ਨਾਕਾਮ ਰਿਹਾ (ਗਲਤੀ %1$d)। Bluetooth ਬੰਦ ਕਰਕੇ ਮੁੜ ਚਾਲੂ ਕਰੋ, ਫਿਰ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।</string>
     <string name="tr_pb_no_bluetooth">ਇਹ ਫ਼ੋਨ Bluetooth Low Energy ਦਾ ਸਮਰਥਨ ਨਹੀਂ ਕਰਦਾ।</string>
     <string name="tr_pb_bt_needed">ਆਪਣਾ ਬਟਨ ਲੱਭਣ ਲਈ Bluetooth ਚਾਲੂ ਕਰੋ।</string>
-    <string name="tr_pb_perm_denied">ਤੁਹਾਡਾ ਬਟਨ ਲੱਭਣ ਲਈ Naari Shakti ਨੂੰ ਨਜ਼ਦੀਕੀ ਡੀਵਾਈਸਾਂ ਅਤੇ ਲੋਕੇਸ਼ਨ ਦੀਆਂ ਇਜਾਜ਼ਤਾਂ ਚਾਹੀਦੀਆਂ ਹਨ।</string>
+    <string name="tr_pb_perm_denied">ਤੁਹਾਡਾ ਬਟਨ ਲੱਭਣ ਲਈ Naari Kavach ਨੂੰ ਨਜ਼ਦੀਕੀ ਡੀਵਾਈਸਾਂ ਅਤੇ ਲੋਕੇਸ਼ਨ ਦੀਆਂ ਇਜਾਜ਼ਤਾਂ ਚਾਹੀਦੀਆਂ ਹਨ।</string>
     <string name="tr_pb_paired_snack">%1$s ਸੇਵ ਹੋ ਗਿਆ। ਹੁਣ ਟੈਸਟ ਕਰਨ ਲਈ ਇਸਨੂੰ ਦੋ ਵਾਰ ਦਬਾਓ।</string>
     <string name="tr_pb_rssi">%1$d dBm</string>
     <string name="tr_pb_tag_compatible">ਅਨੁਕੂਲ</string>

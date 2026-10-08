@@ -55,7 +55,7 @@
     <!-- ===================== Trigger phrase ===================== -->
     <string name="ub_trigger_eyebrow">आवाज़ ट्रिगर</string>
     <string name="ub_trigger_title">ट्रिगर शब्द</string>
-    <string name="ub_trigger_desc">सुरक्षा चालू होने पर यह ट्रिगर शब्द बोलें और Naari Shakti आपका SOS भेज देगा।</string>
+    <string name="ub_trigger_desc">सुरक्षा चालू होने पर यह ट्रिगर शब्द बोलें और Naari Kavach आपका SOS भेज देगा।</string>
     <string name="ub_trigger_current_label">आपका ट्रिगर शब्द</string>
     <string name="ub_trigger_status_active">अभी सुन रहे हैं · बिना इंटरनेट काम करता है</string>
     <string name="ub_trigger_status_inactive">सिर्फ़ सुरक्षा चालू होने पर सुना जाता है</string>
@@ -87,7 +87,7 @@
     <string name="ub_trigger_err_generic">रिकॉर्डिंग नहीं हो पाई। फिर कोशिश करें या नीचे अपना ट्रिगर शब्द टाइप करें।</string>
     <string name="ub_trigger_mic_denied">रिकॉर्ड करने के लिए माइक्रोफ़ोन की अनुमति चाहिए। आप ट्रिगर शब्द टाइप भी कर सकती हैं।</string>
     <string name="ub_trigger_mic_rationale_title">माइक्रोफ़ोन की अनुमति दें</string>
-    <string name="ub_trigger_mic_rationale_body">Naari Shakti माइक्रोफ़ोन का इस्तेमाल सिर्फ़ एक बार आपका ट्रिगर शब्द सुनकर लिखने के लिए करता है। कोई ऑडियो सेव नहीं होता।</string>
+    <string name="ub_trigger_mic_rationale_body">Naari Kavach माइक्रोफ़ोन का इस्तेमाल सिर्फ़ एक बार आपका ट्रिगर शब्द सुनकर लिखने के लिए करता है। कोई ऑडियो सेव नहीं होता।</string>
     <string name="ub_trigger_unavailable_title">आवाज़ रिकॉर्डिंग उपलब्ध नहीं है</string>
     <string name="ub_trigger_unavailable_body">इस फ़ोन में आवाज़ पहचानने की सुविधा नहीं है। इसकी जगह नीचे अपना ट्रिगर शब्द टाइप करें।</string>
     <string name="ub_trigger_warn_title">कोई कम आम शब्द चुनें?</string>
@@ -265,7 +265,7 @@
     <string name="ub_live_map_cd">आपकी अभी की लोकेशन दिखाता मैप</string>
     <string name="ub_live_status_idle">आपकी लोकेशन</string>
     <string name="ub_live_status_live">लाइव · शेयर हो रही है</string>
-    <string name="ub_live_perm_title">Naari Shakti के लिए लोकेशन बंद है</string>
+    <string name="ub_live_perm_title">Naari Kavach के लिए लोकेशन बंद है</string>
     <string name="ub_live_perm_body">अपनी जगह देखने और शेयर करने के लिए लोकेशन की अनुमति दें।</string>
     <string name="ub_live_you_are_here">आप यहाँ हैं</string>
     <string name="ub_live_finding">आपकी लोकेशन ढूँढ रहे हैं…</string>
@@ -329,11 +329,11 @@
     <string name="ub_zone_perm_title">सटीक लोकेशन चाहिए</string>
     <string name="ub_zone_perm_body">पिन लगाने और सेफ़ ज़ोन पर नज़र रखने के लिए सटीक लोकेशन की अनुमति दें।</string>
     <string name="ub_zone_bg_title">अलर्ट सिर्फ़ “हर समय अनुमति दें” से काम करते हैं</string>
-    <string name="ub_zone_bg_body">Naari Shakti बंद होने पर भी सेफ़ ज़ोन पर नज़र रखने के लिए Android को बैकग्राउंड लोकेशन चाहिए।</string>
+    <string name="ub_zone_bg_body">Naari Kavach बंद होने पर भी सेफ़ ज़ोन पर नज़र रखने के लिए Android को बैकग्राउंड लोकेशन चाहिए।</string>
     <string name="ub_zone_bg_fix">अनुमति दें</string>
     <string name="ub_zone_bg_dialog_title">लोकेशन की अनुमति हर समय दें</string>
-    <string name="ub_zone_bg_dialog_body">“हर समय अनुमति दें” चुनें, ताकि Naari Shakti बंद होने पर भी सेफ़ ज़ोन अलर्ट काम करें। आपकी लोकेशन सिर्फ़ इसी फ़ोन पर जाँची जाती है।</string>
-    <string name="ub_zone_bg_dialog_body_settings">अगली स्क्रीन पर “हर समय अनुमति दें” चुनें, ताकि Naari Shakti बंद होने पर भी सेफ़ ज़ोन अलर्ट काम करें। आपकी लोकेशन सिर्फ़ इसी फ़ोन पर जाँची जाती है।</string>
+    <string name="ub_zone_bg_dialog_body">“हर समय अनुमति दें” चुनें, ताकि Naari Kavach बंद होने पर भी सेफ़ ज़ोन अलर्ट काम करें। आपकी लोकेशन सिर्फ़ इसी फ़ोन पर जाँची जाती है।</string>
+    <string name="ub_zone_bg_dialog_body_settings">अगली स्क्रीन पर “हर समय अनुमति दें” चुनें, ताकि Naari Kavach बंद होने पर भी सेफ़ ज़ोन अलर्ट काम करें। आपकी लोकेशन सिर्फ़ इसी फ़ोन पर जाँची जाती है।</string>
     <string name="ub_zone_bg_granted">अब सेफ़ ज़ोन बैकग्राउंड में भी अलर्ट देंगे</string>
     <string name="ub_zone_bg_denied">बैकग्राउंड लोकेशन बंद है। सेटिंग्स → अनुमतियाँ → लोकेशन में “हर समय अनुमति दें” चुनें।</string>
 

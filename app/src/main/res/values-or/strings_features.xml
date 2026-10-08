@@ -53,7 +53,7 @@
     <!-- ===================== Trigger phrase ===================== -->
     <string name="ub_trigger_eyebrow">ଭଏସ ଟ୍ରିଗର</string>
     <string name="ub_trigger_title">ଟ୍ରିଗର ଶବ୍ଦ</string>
-    <string name="ub_trigger_desc">ସୁରକ୍ଷା ଚାଲୁ ଥିବା ବେଳେ ଏହି ଶବ୍ଦ କହନ୍ତୁ, Naari Shakti ଆପଣଙ୍କ SOS ପଠାଇବ।</string>
+    <string name="ub_trigger_desc">ସୁରକ୍ଷା ଚାଲୁ ଥିବା ବେଳେ ଏହି ଶବ୍ଦ କହନ୍ତୁ, Naari Kavach ଆପଣଙ୍କ SOS ପଠାଇବ।</string>
     <string name="ub_trigger_current_label">ଆପଣଙ୍କ ଟ୍ରିଗର ଶବ୍ଦ</string>
     <string name="ub_trigger_status_active">ଏବେ ଶୁଣୁଛି · ଅଫଲାଇନରେ କାମ କରେ</string>
     <string name="ub_trigger_status_inactive">କେବଳ ସୁରକ୍ଷା ଚାଲୁ ଥିଲେ ଶୁଣାଯାଏ</string>
@@ -85,7 +85,7 @@
     <string name="ub_trigger_err_generic">ରେକର୍ଡିଂ କାମ କଲା ନାହିଁ। ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ କିମ୍ବା ତଳେ ଆପଣଙ୍କ ଶବ୍ଦ ଟାଇପ କରନ୍ତୁ।</string>
     <string name="ub_trigger_mic_denied">ରେକର୍ଡ କରିବା ପାଇଁ ମାଇକ୍ରୋଫୋନ ଅନୁମତି ଦରକାର। ଆପଣ ବଦଳରେ ଶବ୍ଦ ଟାଇପ କରିପାରିବେ।</string>
     <string name="ub_trigger_mic_rationale_title">ମାଇକ୍ରୋଫୋନ ଅନୁମତି ଦିଅନ୍ତୁ</string>
-    <string name="ub_trigger_mic_rationale_body">Naari Shakti କେବଳ ଆପଣଙ୍କ ଶବ୍ଦ ଥରେ ଶୁଣି ଲେଖିବା ପାଇଁ ମାଇକ୍ରୋଫୋନ ବ୍ୟବହାର କରେ। କୌଣସି ଅଡିଓ ସେଭ ହୁଏ ନାହିଁ।</string>
+    <string name="ub_trigger_mic_rationale_body">Naari Kavach କେବଳ ଆପଣଙ୍କ ଶବ୍ଦ ଥରେ ଶୁଣି ଲେଖିବା ପାଇଁ ମାଇକ୍ରୋଫୋନ ବ୍ୟବହାର କରେ। କୌଣସି ଅଡିଓ ସେଭ ହୁଏ ନାହିଁ।</string>
     <string name="ub_trigger_unavailable_title">ଭଏସ ରେକର୍ଡିଂ ଉପଲବ୍ଧ ନାହିଁ</string>
     <string name="ub_trigger_unavailable_body">ଏହି ଫୋନରେ ସ୍ପିଚ ଚିହ୍ନଟ ସେବା ନାହିଁ। ବଦଳରେ ତଳେ ଆପଣଙ୍କ ଶବ୍ଦ ଟାଇପ କରନ୍ତୁ।</string>
     <string name="ub_trigger_warn_title">କମ ବ୍ୟବହୃତ ଶବ୍ଦ ବାଛିବେ?</string>
@@ -263,7 +263,7 @@
     <string name="ub_live_map_cd">ଆପଣଙ୍କ ବର୍ତ୍ତମାନର ଲୋକେସନ ଦେଖାଉଥିବା ମ୍ୟାପ</string>
     <string name="ub_live_status_idle">ଆପଣଙ୍କ ଲୋକେସନ</string>
     <string name="ub_live_status_live">ଲାଇଭ · ସେୟାର ହେଉଛି</string>
-    <string name="ub_live_perm_title">Naari Shakti ପାଇଁ ଲୋକେସନ ବନ୍ଦ ଅଛି</string>
+    <string name="ub_live_perm_title">Naari Kavach ପାଇଁ ଲୋକେସନ ବନ୍ଦ ଅଛି</string>
     <string name="ub_live_perm_body">ଆପଣ କେଉଁଠି ଅଛନ୍ତି ଦେଖିବା ଓ ସେୟାର କରିବା ପାଇଁ ଲୋକେସନ ଅନୁମତି ଦିଅନ୍ତୁ।</string>
     <string name="ub_live_you_are_here">ଆପଣ ଏଠାରେ ଅଛନ୍ତି</string>
     <string name="ub_live_finding">ଆପଣଙ୍କ ଲୋକେସନ ଖୋଜାଯାଉଛି…</string>
@@ -327,11 +327,11 @@
     <string name="ub_zone_perm_title">ସଠିକ ଲୋକେସନ ଦରକାର</string>
     <string name="ub_zone_perm_body">ପିନ ରଖିବା ଓ ସୁରକ୍ଷିତ ଜୋନ ଉପରେ ନଜର ରଖିବା ପାଇଁ ସଠିକ ଲୋକେସନ ଅନୁମତି ଦିଅନ୍ତୁ।</string>
     <string name="ub_zone_bg_title">ଆଲର୍ଟ କେବଳ “ସବୁବେଳେ ଅନୁମତି ଦିଅନ୍ତୁ” ସହ କାମ କରେ</string>
-    <string name="ub_zone_bg_body">Naari Shakti ବନ୍ଦ ଥିବା ବେଳେ ସୁରକ୍ଷିତ ଜୋନ ଉପରେ ନଜର ରଖିବା ପାଇଁ Android କୁ ବ୍ୟାକଗ୍ରାଉଣ୍ଡ ଲୋକେସନ ଦରକାର।</string>
+    <string name="ub_zone_bg_body">Naari Kavach ବନ୍ଦ ଥିବା ବେଳେ ସୁରକ୍ଷିତ ଜୋନ ଉପରେ ନଜର ରଖିବା ପାଇଁ Android କୁ ବ୍ୟାକଗ୍ରାଉଣ୍ଡ ଲୋକେସନ ଦରକାର।</string>
     <string name="ub_zone_bg_fix">ଅନୁମତି ଦିଅନ୍ତୁ</string>
     <string name="ub_zone_bg_dialog_title">ସବୁବେଳେ ଲୋକେସନ ଅନୁମତି ଦିଅନ୍ତୁ</string>
-    <string name="ub_zone_bg_dialog_body">“ସବୁବେଳେ ଅନୁମତି ଦିଅନ୍ତୁ” ବାଛନ୍ତୁ, ଯାହାଦ୍ୱାରା Naari Shakti ବନ୍ଦ ଥିଲେ ବି ସୁରକ୍ଷିତ ଜୋନ ଆଲର୍ଟ କାମ କରିବ। ଆପଣଙ୍କ ଲୋକେସନ କେବଳ ଏହି ଫୋନରେ ଯାଞ୍ଚ ହୁଏ।</string>
-    <string name="ub_zone_bg_dialog_body_settings">ପରବର୍ତ୍ତୀ ସ୍କ୍ରିନରେ “ସବୁବେଳେ ଅନୁମତି ଦିଅନ୍ତୁ” ବାଛନ୍ତୁ, ଯାହାଦ୍ୱାରା Naari Shakti ବନ୍ଦ ଥିଲେ ବି ସୁରକ୍ଷିତ ଜୋନ ଆଲର୍ଟ କାମ କରିବ। ଆପଣଙ୍କ ଲୋକେସନ କେବଳ ଏହି ଫୋନରେ ଯାଞ୍ଚ ହୁଏ।</string>
+    <string name="ub_zone_bg_dialog_body">“ସବୁବେଳେ ଅନୁମତି ଦିଅନ୍ତୁ” ବାଛନ୍ତୁ, ଯାହାଦ୍ୱାରା Naari Kavach ବନ୍ଦ ଥିଲେ ବି ସୁରକ୍ଷିତ ଜୋନ ଆଲର୍ଟ କାମ କରିବ। ଆପଣଙ୍କ ଲୋକେସନ କେବଳ ଏହି ଫୋନରେ ଯାଞ୍ଚ ହୁଏ।</string>
+    <string name="ub_zone_bg_dialog_body_settings">ପରବର୍ତ୍ତୀ ସ୍କ୍ରିନରେ “ସବୁବେଳେ ଅନୁମତି ଦିଅନ୍ତୁ” ବାଛନ୍ତୁ, ଯାହାଦ୍ୱାରା Naari Kavach ବନ୍ଦ ଥିଲେ ବି ସୁରକ୍ଷିତ ଜୋନ ଆଲର୍ଟ କାମ କରିବ। ଆପଣଙ୍କ ଲୋକେସନ କେବଳ ଏହି ଫୋନରେ ଯାଞ୍ଚ ହୁଏ।</string>
     <string name="ub_zone_bg_granted">ସୁରକ୍ଷିତ ଜୋନ ଏବେ ବ୍ୟାକଗ୍ରାଉଣ୍ଡରେ ଆଲର୍ଟ ଦେବ</string>
     <string name="ub_zone_bg_denied">ବ୍ୟାକଗ୍ରାଉଣ୍ଡ ଲୋକେସନ ବନ୍ଦ ଅଛି। ସେଟିଂସ → ଅନୁମତି → ଲୋକେସନରେ “ସବୁବେଳେ ଅନୁମତି ଦିଅନ୍ତୁ” ଚାଲୁ କରନ୍ତୁ।</string>
 

@@ -50,11 +50,24 @@
                     tools:text="Priya" />
             </LinearLayout>
 
+            <!-- Info (i): why filling in the profile helps -->
+            <ImageView
+                android:id="@+id/profileInfoButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:contentDescription="@string/sh_profile_info_title"
+                android:focusable="true"
+                android:padding="12dp"
+                android:src="@drawable/ua_ic_info"
+                app:tint="@color/ns_rose" />
+
             <FrameLayout
                 android:id="@+id/avatarButton"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:layout_marginStart="12dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:clickable="true"
                 android:contentDescription="@string/cd_open_profile"

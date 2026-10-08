@@ -10,7 +10,7 @@
     <string name="nb_home_location_denied">আপনার লোকেশন ছাড়া আমরা আপনাকে কাছাকাছি অ্যালার্টের সঙ্গে মেলাতে পারব না। পরে ক্লাউড ও অভিভাবক থেকে এটি চালু করতে পারেন।</string>
 
     <string name="nb_mesh_title">ইন্টারনেট ছাড়াও সাহায্য করবেন?</string>
-    <string name="nb_mesh_body">ইন্টারনেট না থাকলে Naari Shakti কাছাকাছি ফোনগুলির মধ্যে Bluetooth দিয়ে SOS অ্যালার্ট পৌঁছে দিতে পারে। এর জন্য কাছাকাছি ডিভাইসের অনুমতি লাগবে।</string>
+    <string name="nb_mesh_body">ইন্টারনেট না থাকলে Naari Kavach কাছাকাছি ফোনগুলির মধ্যে Bluetooth দিয়ে SOS অ্যালার্ট পৌঁছে দিতে পারে। এর জন্য কাছাকাছি ডিভাইসের অনুমতি লাগবে।</string>
     <string name="nb_mesh_yes">চালু করুন</string>
     <string name="nb_mesh_no">না, ধন্যবাদ</string>
     <string name="nb_mesh_on">অফলাইন Bluetooth অ্যালার্ট চালু আছে।</string>
@@ -31,12 +31,12 @@
     <string name="nb_wa_section">WhatsApp অ্যালার্ট</string>
     <string name="nb_wa_title">WhatsApp অ্যালার্ট</string>
     <string name="nb_wa_caption">আপনার SOS, লাইভ লোকেশন ও ছবি আপনার পরিচিতদের WhatsApp-এ পাঠান।</string>
-    <string name="nb_wa_explain">অ্যালার্ট আসে Naari Shakti-র WhatsApp নম্বর থেকে, আপনার নিজের WhatsApp থেকে নয়। অ্যালার্ট পাওয়ার আগে প্রত্যেক পরিচিতকে আপনার আমন্ত্রণে একবার ট্যাপ করে যোগ দিতে হবে।</string>
+    <string name="nb_wa_explain">অ্যালার্ট আসে Naari Kavach-র WhatsApp নম্বর থেকে, আপনার নিজের WhatsApp থেকে নয়। অ্যালার্ট পাওয়ার আগে প্রত্যেক পরিচিতকে আপনার আমন্ত্রণে একবার ট্যাপ করে যোগ দিতে হবে।</string>
     <string name="nb_wa_joined">যোগ দিয়েছেন ✓</string>
     <string name="nb_wa_not_joined">এখনও যোগ দেননি</string>
     <string name="nb_wa_invite">আমন্ত্রণ</string>
     <string name="nb_wa_invite_cd">%1$s-কে WhatsApp-এ আমন্ত্রণ জানান</string>
-    <string name="nb_wa_invite_text">নমস্কার, আমি Naari Shakti-তে আপনাকে আমার জরুরি পরিচিতি হিসেবে যোগ করেছি। WhatsApp-এ আমার SOS অ্যালার্ট পেতে এই লিঙ্কটি খুলে মেসেজটি পাঠান: %1$s</string>
+    <string name="nb_wa_invite_text">নমস্কার, আমি Naari Kavach-তে আপনাকে আমার জরুরি পরিচিতি হিসেবে যোগ করেছি। WhatsApp-এ আমার SOS অ্যালার্ট পেতে এই লিঙ্কটি খুলে মেসেজটি পাঠান: %1$s</string>
     <string name="nb_wa_invite_chooser">আমন্ত্রণ পাঠান</string>
     <plurals name="nb_wa_joined_count">
         <item quantity="one">%2$d জনের মধ্যে %1$d জন যোগ দিয়েছেন</item>

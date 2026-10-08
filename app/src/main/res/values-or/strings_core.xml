@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="ns_accessibility_description">ସ୍କ୍ରିନ ବନ୍ଦ କିମ୍ବା ଲକ ଥିଲେ ବି ଭଲ୍ୟୁମ ବଟନ ପ୍ୟାଟର୍ନରୁ Naari Shakti କୁ SOS ଆରମ୍ଭ କରିବାକୁ ଦିଏ। Naari Shakti ଆପଣଙ୍କ ସ୍କ୍ରିନରେ ଥିବା କିଛି ପଢ଼େ ନାହିଁ।</string>
+    <string name="ns_accessibility_description">ସ୍କ୍ରିନ ବନ୍ଦ କିମ୍ବା ଲକ ଥିଲେ ବି ଭଲ୍ୟୁମ ବଟନ ପ୍ୟାଟର୍ନରୁ Naari Kavach କୁ SOS ଆରମ୍ଭ କରିବାକୁ ଦିଏ। Naari Kavach ଆପଣଙ୍କ ସ୍କ୍ରିନରେ ଥିବା କିଛି ପଢ଼େ ନାହିଁ।</string>
 
     <!-- Appearance & language -->
     <string name="core_back">ପଛକୁ</string>
     <string name="core_appearance_eyebrow">ନିଜ ପସନ୍ଦ</string>
     <string name="core_appearance_title">ଦେଖାଣ &amp; ଭାଷା</string>
-    <string name="core_appearance_desc">Naari Shakti କିପରି ଦେଖାଯିବ ଏବଂ କେଉଁ ଭାଷାରେ କଥା ହେବ ବାଛନ୍ତୁ। ଆପଣଙ୍କ କଣ୍ଟାକ୍ଟଙ୍କୁ ପଠାଯାଉଥିବା ଆଲର୍ଟ ମଧ୍ୟ ଏହି ଭାଷାରେ ଯିବ।</string>
+    <string name="core_appearance_desc">Naari Kavach କିପରି ଦେଖାଯିବ ଏବଂ କେଉଁ ଭାଷାରେ କଥା ହେବ ବାଛନ୍ତୁ। ଆପଣଙ୍କ କଣ୍ଟାକ୍ଟଙ୍କୁ ପଠାଯାଉଥିବା ଆଲର୍ଟ ମଧ୍ୟ ଏହି ଭାଷାରେ ଯିବ।</string>
     <string name="core_section_theme">ଥିମ</string>
     <string name="core_theme_dark">ଗାଢ଼</string>
     <string name="core_theme_light">ହାଲୁକା</string>

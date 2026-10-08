@@ -3,7 +3,7 @@
     <!-- Shared -->
     <string name="tg_back">উভতি যাওক</string>
     <string name="tg_eyebrow">একেলগে</string>
-    <string name="tg_cloud_off">ইয়াৰ বাবে Naari Shakti ক্লাউড লাগে, যিটো এই ফোনত অফ আছে।</string>
+    <string name="tg_cloud_off">ইয়াৰ বাবে Naari Kavach ক্লাউড লাগে, যিটো এই ফোনত অফ আছে।</string>
     <string name="tg_open_settings">ছেটিংছ</string>
     <string name="tg_close">বন্ধ কৰক</string>
     <string name="tg_delete">মচক</string>
@@ -61,7 +61,7 @@
     <string name="tg_sm_empty">+ চিনৰ 3 কিঃমিঃৰ ভিতৰত কোনো ৰিপ’ৰ্ট নাই। তাৰ মানে এইটো নহয় যে এলেকাটো সুৰক্ষিত।</string>
     <string name="tg_sm_no_location">আপোনাৰ অৱস্থান পোৱা নগ’ল। মেপখন লৰাই “ইয়াত বিচাৰক”-ত টেপ কৰক।</string>
     <string name="tg_sm_pan_hint">অৱস্থান অবিহনে, মেপখন কোনো ঠাইলৈ লৰাই “ইয়াত বিচাৰক”-ত টেপ কৰক।</string>
-    <string name="tg_sm_detail">এগৰাকী Naari Shakti ব্যৱহাৰকাৰীয়ে %1$s ৰিপ’ৰ্ট কৰিছে। পৰীক্ষা কৰা হোৱা নাই।</string>
+    <string name="tg_sm_detail">এগৰাকী Naari Kavach ব্যৱহাৰকাৰীয়ে %1$s ৰিপ’ৰ্ট কৰিছে। পৰীক্ষা কৰা হোৱা নাই।</string>
     <string name="tg_sm_deleted">আপোনাৰ ৰিপ’ৰ্ট মচি দিয়া হ’ল।</string>
     <string name="tg_sm_flag">এইটো ভুল</string>
     <string name="tg_sm_zoom_in">আৰু জুম কৰক, যাতে + চিনটো সঠিক ঠাইৰ ওপৰত থাকে।</string>

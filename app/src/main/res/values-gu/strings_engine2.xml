@@ -2,9 +2,9 @@
 <resources>
 
     <!-- Silent SOS: low-key notification and covert screen -->
-    <string name="en_covert_title">Naari Shakti · લોકેશન શેર થઈ રહ્યું છે</string>
+    <string name="en_covert_title">Naari Kavach · લોકેશન શેર થઈ રહ્યું છે</string>
     <string name="en_covert_text">મેનેજ કરવા ટૅપ કરો</string>
-    <string name="en_covert_overline">Naari Shakti</string>
+    <string name="en_covert_overline">Naari Kavach</string>
     <string name="en_covert_heading">તમારું લોકેશન શેર થઈ રહ્યું છે</string>
     <string name="en_covert_body">તમારા વિશ્વાસુ સંપર્કોને તમારું લાઇવ લોકેશન મળી રહ્યું છે.</string>
     <string name="en_covert_hold">શેરિંગ બંધ કરવા દબાવી રાખો</string>
@@ -13,8 +13,8 @@
 
     <!-- SMS -->
     <string name="en_sms_tracking_line">લાઇવ લોકેશન અને પુરાવા: %1$s</string>
-    <string name="en_sms_duress">Naari Shakti: કદાચ %1$s ને એલર્ટ રદ કરવા મજબૂર કરાઈ છે. એલર્ટ હજી ચાલુ છે એમ માનો. લાઇવ લોકેશન: %2$s</string>
-    <string name="en_sms_duress_no_link">Naari Shakti: કદાચ %1$s ને એલર્ટ રદ કરવા મજબૂર કરાઈ છે. એલર્ટ હજી ચાલુ છે એમ માનો. લોકેશન પછી આવશે.</string>
+    <string name="en_sms_duress">Naari Kavach: કદાચ %1$s ને એલર્ટ રદ કરવા મજબૂર કરાઈ છે. એલર્ટ હજી ચાલુ છે એમ માનો. લાઇવ લોકેશન: %2$s</string>
+    <string name="en_sms_duress_no_link">Naari Kavach: કદાચ %1$s ને એલર્ટ રદ કરવા મજબૂર કરાઈ છે. એલર્ટ હજી ચાલુ છે એમ માનો. લોકેશન પછી આવશે.</string>
     <string name="en_duress_name_fallback">તમારો સંપર્ક</string>
 
     <!-- Spoken alert (text to speech, loud) -->
@@ -66,7 +66,7 @@
     <string name="en_cancel">રદ કરો</string>
     <string name="en_pin_lockout">ઘણા પ્રયાસ થઈ ગયા. %1$d સેકન્ડ પછી ફરી પ્રયાસ કરો.</string>
     <string name="en_pin_verify_title">તમારો PIN લખો</string>
-    <string name="en_pin_verify_subtitle">આગળ વધવા તમારો Naari Shakti PIN લખો.</string>
+    <string name="en_pin_verify_subtitle">આગળ વધવા તમારો Naari Kavach PIN લખો.</string>
     <string name="en_pin_current_title">હાલનો PIN લખો</string>
     <string name="en_pin_current_subtitle">PIN બદલતાં પહેલાં ખાતરી કરો કે આ તમે જ છો.</string>
     <string name="en_pin_manage_title">ઍપ PIN</string>

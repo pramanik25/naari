@@ -21,7 +21,7 @@ import com.google.android.material.button.MaterialButton;
 public class DonationActivity extends AppCompatActivity {
 
     private static final String UPI_ID = "vikashstart92@okaxis";
-    private static final String PAYEE_NAME = "Naari Shakti";
+    private static final String PAYEE_NAME = "Naari Kavach";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

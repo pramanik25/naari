@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="ns_accessibility_description">স্ক্রিন বন্ধ বা লক থাকলেও ভলিউম বোতামের প্যাটার্ন দিয়ে Naari Shakti-কে SOS শুরু করতে দেয়। Naari Shakti আপনার স্ক্রিনে কী আছে তা পড়ে না।</string>
+    <string name="ns_accessibility_description">স্ক্রিন বন্ধ বা লক থাকলেও ভলিউম বোতামের প্যাটার্ন দিয়ে Naari Kavach-কে SOS শুরু করতে দেয়। Naari Kavach আপনার স্ক্রিনে কী আছে তা পড়ে না।</string>
 
     <!-- Appearance & language -->
     <string name="core_back">ফিরে যান</string>
     <string name="core_appearance_eyebrow">নিজের মতো সাজান</string>
     <string name="core_appearance_title">চেহারা ও ভাষা</string>
-    <string name="core_appearance_desc">Naari Shakti দেখতে কেমন হবে আর কোন ভাষায় কথা বলবে, তা বেছে নিন। আপনার কন্টাক্টদের পাঠানো অ্যালার্টও এই ভাষায় যাবে।</string>
+    <string name="core_appearance_desc">Naari Kavach দেখতে কেমন হবে আর কোন ভাষায় কথা বলবে, তা বেছে নিন। আপনার কন্টাক্টদের পাঠানো অ্যালার্টও এই ভাষায় যাবে।</string>
     <string name="core_section_theme">থিম</string>
     <string name="core_theme_dark">ডার্ক</string>
     <string name="core_theme_light">লাইট</string>

@@ -53,7 +53,7 @@
     <!-- ===================== Trigger phrase ===================== -->
     <string name="ub_trigger_eyebrow">মাতৰ ট্ৰিগাৰ</string>
     <string name="ub_trigger_title">ট্ৰিগাৰ শব্দ</string>
-    <string name="ub_trigger_desc">সুৰক্ষা অন থাকোঁতে এই শব্দটো ক’লে Naari Shakti-এ আপোনাৰ SOS পঠিয়াই দিব।</string>
+    <string name="ub_trigger_desc">সুৰক্ষা অন থাকোঁতে এই শব্দটো ক’লে Naari Kavach-এ আপোনাৰ SOS পঠিয়াই দিব।</string>
     <string name="ub_trigger_current_label">আপোনাৰ ট্ৰিগাৰ শব্দ</string>
     <string name="ub_trigger_status_active">এতিয়া শুনি আছে · ইণ্টাৰনেট নোহোৱাকৈ কাম কৰে</string>
     <string name="ub_trigger_status_inactive">কেৱল সুৰক্ষা অন থাকিলেহে শুনে</string>
@@ -85,7 +85,7 @@
     <string name="ub_trigger_err_generic">ৰেকৰ্ডিং নহ’ল। পুনৰ চেষ্টা কৰক বা তলত আপোনাৰ শব্দ টাইপ কৰক।</string>
     <string name="ub_trigger_mic_denied">ৰেকৰ্ড কৰিবলৈ মাইক্ৰ’ফোনৰ অনুমতি প্ৰয়োজন। বিচাৰিলে শব্দটো টাইপো কৰিব পাৰে।</string>
     <string name="ub_trigger_mic_rationale_title">মাইক্ৰ’ফোনৰ অনুমতি দিয়ক</string>
-    <string name="ub_trigger_mic_rationale_body">Naari Shakti-এ মাইক্ৰ’ফোন কেৱল এবাৰ আপোনাৰ শব্দটো শুনি লিখি ল’বলৈ ব্যৱহাৰ কৰে। কোনো অডিঅ’ ছেভ কৰা নহয়।</string>
+    <string name="ub_trigger_mic_rationale_body">Naari Kavach-এ মাইক্ৰ’ফোন কেৱল এবাৰ আপোনাৰ শব্দটো শুনি লিখি ল’বলৈ ব্যৱহাৰ কৰে। কোনো অডিঅ’ ছেভ কৰা নহয়।</string>
     <string name="ub_trigger_unavailable_title">মাত ৰেকৰ্ডিং উপলব্ধ নহয়</string>
     <string name="ub_trigger_unavailable_body">এই ফোনত মাত চিনিব পৰা কোনো সেৱা নাই। তাৰ সলনি তলত আপোনাৰ শব্দ টাইপ কৰক।</string>
     <string name="ub_trigger_warn_title">কম প্ৰচলিত শব্দ ল’ব নেকি?</string>
@@ -263,7 +263,7 @@
     <string name="ub_live_map_cd">আপোনাৰ বৰ্তমানৰ অৱস্থান দেখুওৱা মেপ</string>
     <string name="ub_live_status_idle">আপোনাৰ অৱস্থান</string>
     <string name="ub_live_status_live">লাইভ · শ্বেয়াৰ হৈছে</string>
-    <string name="ub_live_perm_title">Naari Shakti-ৰ বাবে অৱস্থান অফ আছে</string>
+    <string name="ub_live_perm_title">Naari Kavach-ৰ বাবে অৱস্থান অফ আছে</string>
     <string name="ub_live_perm_body">আপুনি ক’ত আছে চাবলৈ আৰু শ্বেয়াৰ কৰিবলৈ অৱস্থানৰ অনুমতি দিয়ক।</string>
     <string name="ub_live_you_are_here">আপুনি ইয়াত আছে</string>
     <string name="ub_live_finding">আপোনাৰ অৱস্থান বিচৰা হৈছে…</string>
@@ -327,11 +327,11 @@
     <string name="ub_zone_perm_title">সঠিক অৱস্থান প্ৰয়োজন</string>
     <string name="ub_zone_perm_body">পিন বহুৱাবলৈ আৰু সুৰক্ষিত অঞ্চলত নজৰ ৰাখিবলৈ সঠিক অৱস্থানৰ অনুমতি দিয়ক।</string>
     <string name="ub_zone_bg_title">সতৰ্কবাৰ্তা কেৱল “সদায় অনুমতি দিয়ক” বাছিলেহে কাম কৰে</string>
-    <string name="ub_zone_bg_body">Naari Shakti বন্ধ থাকোঁতে সুৰক্ষিত অঞ্চলত নজৰ ৰাখিবলৈ Android-ক বেকগ্ৰাউণ্ড অৱস্থান লাগে।</string>
+    <string name="ub_zone_bg_body">Naari Kavach বন্ধ থাকোঁতে সুৰক্ষিত অঞ্চলত নজৰ ৰাখিবলৈ Android-ক বেকগ্ৰাউণ্ড অৱস্থান লাগে।</string>
     <string name="ub_zone_bg_fix">অনুমতি দিয়ক</string>
     <string name="ub_zone_bg_dialog_title">সদায় অৱস্থানৰ অনুমতি দিয়ক</string>
-    <string name="ub_zone_bg_dialog_body">“সদায় অনুমতি দিয়ক” বাছক, যাতে Naari Shakti বন্ধ থাকিলেও সুৰক্ষিত অঞ্চলৰ সতৰ্কবাৰ্তা কাম কৰে। আপোনাৰ অৱস্থান কেৱল এই ফোনতে পৰীক্ষা কৰা হয়।</string>
-    <string name="ub_zone_bg_dialog_body_settings">পৰৱৰ্তী স্ক্ৰীণত “সদায় অনুমতি দিয়ক” বাছক, যাতে Naari Shakti বন্ধ থাকিলেও সুৰক্ষিত অঞ্চলৰ সতৰ্কবাৰ্তা কাম কৰে। আপোনাৰ অৱস্থান কেৱল এই ফোনতে পৰীক্ষা কৰা হয়।</string>
+    <string name="ub_zone_bg_dialog_body">“সদায় অনুমতি দিয়ক” বাছক, যাতে Naari Kavach বন্ধ থাকিলেও সুৰক্ষিত অঞ্চলৰ সতৰ্কবাৰ্তা কাম কৰে। আপোনাৰ অৱস্থান কেৱল এই ফোনতে পৰীক্ষা কৰা হয়।</string>
+    <string name="ub_zone_bg_dialog_body_settings">পৰৱৰ্তী স্ক্ৰীণত “সদায় অনুমতি দিয়ক” বাছক, যাতে Naari Kavach বন্ধ থাকিলেও সুৰক্ষিত অঞ্চলৰ সতৰ্কবাৰ্তা কাম কৰে। আপোনাৰ অৱস্থান কেৱল এই ফোনতে পৰীক্ষা কৰা হয়।</string>
     <string name="ub_zone_bg_granted">সুৰক্ষিত অঞ্চলে এতিয়া বেকগ্ৰাউণ্ডতো আপোনাক সতৰ্ক কৰিব</string>
     <string name="ub_zone_bg_denied">বেকগ্ৰাউণ্ড অৱস্থান অফ আছে। ছেটিংছ → অনুমতি → অৱস্থান-ত গৈ “সদায় অনুমতি দিয়ক” অন কৰক।</string>
 

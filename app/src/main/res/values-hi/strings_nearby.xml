@@ -10,7 +10,7 @@
     <string name="nb_home_location_denied">आपकी लोकेशन के बिना हम आपको आस-पास के अलर्ट से नहीं मिला सकते। आप इसे बाद में क्लाउड और गार्डियन में चालू कर सकती हैं।</string>
 
     <string name="nb_mesh_title">इंटरनेट के बिना भी मदद करेंगी?</string>
-    <string name="nb_mesh_body">इंटरनेट न होने पर Naari Shakti आस-पास के फ़ोन के बीच Bluetooth से SOS अलर्ट पहुँचा सकता है। इसके लिए आस-पास के डिवाइस की अनुमति चाहिए।</string>
+    <string name="nb_mesh_body">इंटरनेट न होने पर Naari Kavach आस-पास के फ़ोन के बीच Bluetooth से SOS अलर्ट पहुँचा सकता है। इसके लिए आस-पास के डिवाइस की अनुमति चाहिए।</string>
     <string name="nb_mesh_yes">चालू करें</string>
     <string name="nb_mesh_no">नहीं, धन्यवाद</string>
     <string name="nb_mesh_on">ऑफ़लाइन Bluetooth अलर्ट चालू हैं।</string>
@@ -31,12 +31,12 @@
     <string name="nb_wa_section">WhatsApp अलर्ट</string>
     <string name="nb_wa_title">WhatsApp अलर्ट</string>
     <string name="nb_wa_caption">अपना SOS, लाइव लोकेशन और फ़ोटो अपने संपर्कों को WhatsApp पर भेजें।</string>
-    <string name="nb_wa_explain">अलर्ट Naari Shakti के WhatsApp नंबर से आते हैं, आपके अपने WhatsApp से नहीं। अलर्ट पाने से पहले हर संपर्क को आपके आमंत्रण पर एक बार टैप करके जुड़ना होगा।</string>
+    <string name="nb_wa_explain">अलर्ट Naari Kavach के WhatsApp नंबर से आते हैं, आपके अपने WhatsApp से नहीं। अलर्ट पाने से पहले हर संपर्क को आपके आमंत्रण पर एक बार टैप करके जुड़ना होगा।</string>
     <string name="nb_wa_joined">जुड़ गए ✓</string>
     <string name="nb_wa_not_joined">अभी नहीं जुड़े</string>
     <string name="nb_wa_invite">आमंत्रित करें</string>
     <string name="nb_wa_invite_cd">%1$s को WhatsApp पर आमंत्रित करें</string>
-    <string name="nb_wa_invite_text">नमस्ते, मैंने आपको Naari Shakti में अपने आपातकालीन संपर्क के रूप में जोड़ा है। WhatsApp पर मेरे SOS अलर्ट पाने के लिए यह लिंक खोलें और संदेश भेजें: %1$s</string>
+    <string name="nb_wa_invite_text">नमस्ते, मैंने आपको Naari Kavach में अपने आपातकालीन संपर्क के रूप में जोड़ा है। WhatsApp पर मेरे SOS अलर्ट पाने के लिए यह लिंक खोलें और संदेश भेजें: %1$s</string>
     <string name="nb_wa_invite_chooser">आमंत्रण भेजें</string>
     <plurals name="nb_wa_joined_count">
         <item quantity="one">%2$d में से %1$d संपर्क जुड़ा है</item>

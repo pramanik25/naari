@@ -46,7 +46,7 @@
     <!-- ===================== Onboarding ===================== -->
     <string name="onb_overline">ਸ਼ੁਰੂ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ</string>
     <string name="onb_title">ਆਓ, ਤੁਹਾਡੀ ਸੁਰੱਖਿਆ ਤਿਆਰ ਕਰੀਏ</string>
-    <string name="onb_body">ਤੁਹਾਡੀ ਸੁਰੱਖਿਆ ਲਈ Naari Shakti ਨੂੰ ਕੁਝ ਇਜਾਜ਼ਤਾਂ ਚਾਹੀਦੀਆਂ ਹਨ। ਕੰਟਰੋਲ ਤੁਹਾਡੇ ਹੱਥ ਵਿੱਚ ਰਹੇਗਾ, ਅਤੇ ਤੁਸੀਂ ਸੈਟਿੰਗਾਂ ਵਿੱਚ ਕਦੇ ਵੀ ਇਨ੍ਹਾਂ ਨੂੰ ਬਦਲ ਸਕਦੇ ਹੋ।</string>
+    <string name="onb_body">ਤੁਹਾਡੀ ਸੁਰੱਖਿਆ ਲਈ Naari Kavach ਨੂੰ ਕੁਝ ਇਜਾਜ਼ਤਾਂ ਚਾਹੀਦੀਆਂ ਹਨ। ਕੰਟਰੋਲ ਤੁਹਾਡੇ ਹੱਥ ਵਿੱਚ ਰਹੇਗਾ, ਅਤੇ ਤੁਸੀਂ ਸੈਟਿੰਗਾਂ ਵਿੱਚ ਕਦੇ ਵੀ ਇਨ੍ਹਾਂ ਨੂੰ ਬਦਲ ਸਕਦੇ ਹੋ।</string>
     <string name="onb_allow">ਪਹੁੰਚ ਦਿਓ</string>
     <string name="onb_done">ਸਭ ਤਿਆਰ ਹੈ। ਜਦੋਂ ਤੁਸੀਂ ਤਿਆਰ ਹੋਵੋ, ਸੁਰੱਖਿਆ ਚਾਲੂ ਕਰੋ।</string>
     <string name="onb_partial">ਕੁਝ ਇਜਾਜ਼ਤਾਂ ਰਹਿ ਗਈਆਂ। ਤੁਸੀਂ ਇਹ ਸੈਟਿੰਗਾਂ ਵਿੱਚ ਦੇ ਸਕਦੇ ਹੋ।</string>
@@ -215,7 +215,7 @@
     <!-- ===================== Profile ===================== -->
     <string name="profile_overline">ਤੁਹਾਡੀ ਪ੍ਰੋਫ਼ਾਈਲ</string>
     <string name="profile_title">ਤੁਹਾਡੇ ਬਾਰੇ</string>
-    <string name="profile_body">ਤੁਹਾਡੇ ਸੰਪਰਕਾਂ ਅਤੇ ਮਦਦ ਲਈ ਪਹੁੰਚਣ ਵਾਲਿਆਂ ਨੂੰ ਤੁਹਾਨੂੰ ਪਛਾਣਨ ਵਿੱਚ ਮਦਦ ਕਰਦੀ ਹੈ। ਤੁਹਾਡਾ ਨਾਮ ਅਤੇ ਮੋਬਾਈਲ ਨੰਬਰ ਤੁਹਾਡੇ Naari Shakti ਖਾਤੇ ਵਿੱਚ ਵੀ ਸੇਵ ਹੁੰਦੇ ਹਨ।</string>
+    <string name="profile_body">ਤੁਹਾਡੇ ਸੰਪਰਕਾਂ ਅਤੇ ਮਦਦ ਲਈ ਪਹੁੰਚਣ ਵਾਲਿਆਂ ਨੂੰ ਤੁਹਾਨੂੰ ਪਛਾਣਨ ਵਿੱਚ ਮਦਦ ਕਰਦੀ ਹੈ। ਤੁਹਾਡਾ ਨਾਮ ਅਤੇ ਮੋਬਾਈਲ ਨੰਬਰ ਤੁਹਾਡੇ Naari Kavach ਖਾਤੇ ਵਿੱਚ ਵੀ ਸੇਵ ਹੁੰਦੇ ਹਨ।</string>
     <string name="profile_add_photo">ਫ਼ੋਟੋ ਜੋੜਨ ਲਈ ਟੈਪ ਕਰੋ</string>
     <string name="profile_change_photo">ਫ਼ੋਟੋ ਬਦਲਣ ਲਈ ਟੈਪ ਕਰੋ</string>
     <string name="cd_profile_photo">ਪ੍ਰੋਫ਼ਾਈਲ ਫ਼ੋਟੋ। ਬਦਲਣ ਲਈ ਦੋ ਵਾਰ ਟੈਪ ਕਰੋ।</string>
@@ -244,7 +244,7 @@
     <string name="vault_title">ਸਬੂਤ ਭੰਡਾਰ</string>
     <string name="vault_body">SOS ਦੌਰਾਨ ਆਪਣੇ-ਆਪ ਖਿੱਚੀਆਂ ਫ਼ੋਟੋਆਂ, ਨਵੀਆਂ ਪਹਿਲਾਂ।</string>
     <string name="vault_empty_title">ਅਜੇ ਕੋਈ ਸਬੂਤ ਨਹੀਂ</string>
-    <string name="vault_empty_body">SOS ਸ਼ੁਰੂ ਹੋਣ ’ਤੇ Naari Shakti ਅਗਲੇ ਅਤੇ ਪਿਛਲੇ ਕੈਮਰੇ ਨਾਲ ਚੁੱਪਚਾਪ ਫ਼ੋਟੋਆਂ ਖਿੱਚਦੀ ਹੈ। ਉਹ ਇੱਥੇ ਦਿਖਣਗੀਆਂ।</string>
+    <string name="vault_empty_body">SOS ਸ਼ੁਰੂ ਹੋਣ ’ਤੇ Naari Kavach ਅਗਲੇ ਅਤੇ ਪਿਛਲੇ ਕੈਮਰੇ ਨਾਲ ਚੁੱਪਚਾਪ ਫ਼ੋਟੋਆਂ ਖਿੱਚਦੀ ਹੈ। ਉਹ ਇੱਥੇ ਦਿਖਣਗੀਆਂ।</string>
     <string name="vault_front">ਅਗਲਾ ਕੈਮਰਾ</string>
     <string name="vault_back">ਪਿਛਲਾ ਕੈਮਰਾ</string>
     <string name="vault_photo">ਫ਼ੋਟੋ</string>

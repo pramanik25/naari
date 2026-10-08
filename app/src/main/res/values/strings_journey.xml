@@ -144,7 +144,7 @@
     <string name="jr_ss_accessibility_on">Accessibility service is on</string>
     <string name="jr_ss_accessibility_off">Accessibility service is off</string>
     <string name="jr_ss_accessibility_title">Turn on the accessibility service</string>
-    <string name="jr_ss_accessibility_body">Android only lets apps see volume-key presses with the screen off through an accessibility service. Naari Shakti uses it for key presses only and never reads your screen. Find Naari Shakti in the list and switch it on.</string>
+    <string name="jr_ss_accessibility_body">Android only lets apps see volume-key presses with the screen off through an accessibility service. Naari Kavach uses it for key presses only and never reads your screen. Find Naari Kavach in the list and switch it on.</string>
     <string name="jr_ss_denied_accessibility">Without the accessibility service the volume keys can\'t start an SOS while the screen is off, so this has been turned off.</string>
     <string name="jr_ss_panic">Panic button</string>
     <string name="jr_ss_panic_none">Not paired · pair a small Bluetooth button</string>
@@ -160,7 +160,7 @@
 
     <string name="jr_ss_section_community">Community</string>
     <string name="jr_ss_mesh">Offline mesh SOS</string>
-    <string name="jr_ss_mesh_sub">Pass your SOS to nearby Naari Shakti phones over Bluetooth and Wi-Fi when there is no signal.</string>
+    <string name="jr_ss_mesh_sub">Pass your SOS to nearby Naari Kavach phones over Bluetooth and Wi-Fi when there is no signal.</string>
     <string name="jr_ss_helper">Nearby helper</string>
     <string name="jr_ss_helper_on">On · you may be asked to help people nearby</string>
     <string name="jr_ss_helper_off">Off · volunteer to help people near you</string>
@@ -313,14 +313,14 @@
     <!-- ============ SMS bodies ============ -->
     <string name="jr_sms_default_name">Your friend</string>
     <!-- %1$s name, %2$s plate, %3$s optional details from jr_sms_cab_details_* (starts with a space). -->
-    <string name="jr_sms_cab_start">Naari Shakti: %1$s is in cab %2$s%3$s.</string>
+    <string name="jr_sms_cab_start">Naari Kavach: %1$s is in cab %2$s%3$s.</string>
     <string name="jr_sms_cab_details_app_driver">" (%1$s, driver %2$s)"</string>
     <string name="jr_sms_cab_details_app">" (%1$s)"</string>
     <string name="jr_sms_cab_details_driver">" (driver %1$s)"</string>
     <string name="jr_sms_cab_going">Going to %1$s.</string>
     <string name="jr_sms_live">Live: %1$s</string>
-    <string name="jr_sms_cab_arrived">Naari Shakti: %1$s arrived safely at %2$s.</string>
-    <string name="jr_sms_meet_intro">Naari Shakti: %1$s is meeting %2$s.</string>
+    <string name="jr_sms_cab_arrived">Naari Kavach: %1$s arrived safely at %2$s.</string>
+    <string name="jr_sms_meet_intro">Naari Kavach: %1$s is meeting %2$s.</string>
     <string name="jr_sms_meet_contact">Their contact: %1$s.</string>
     <string name="jr_sms_meet_place">Place: %1$s %2$s</string>
     <string name="jr_sms_meet_place_nolink">Place: %1$s.</string>

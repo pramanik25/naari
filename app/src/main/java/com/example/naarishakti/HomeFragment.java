@@ -143,10 +143,6 @@ public class HomeFragment extends Fragment {
         setupRows();
         journeyEntry = new com.example.naarishakti.journey.HomeJourneyEntry(view);
         nearbyHelperCard.attach(view);
-        // The profile popup saved a name: show it in the greeting without waiting for onResume.
-        getParentFragmentManager().setFragmentResultListener(
-                com.example.naarishakti.shell.ProfilePromptDialog.RESULT_SAVED, getViewLifecycleOwner(),
-                (key, result) -> loadProfileAndVault());
     }
 
     @Override
@@ -227,6 +223,14 @@ public class HomeFragment extends Fragment {
             v.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY);
             launch(ProfileActivity.class);
         });
+        // Why the profile matters, with a shortcut to fill it in. Replaces the old popup on open.
+        binding.profileInfoButton.setOnClickListener(v -> new MaterialAlertDialogBuilder(requireContext())
+                .setIcon(R.drawable.ua_ic_info)
+                .setTitle(R.string.sh_profile_info_title)
+                .setMessage(R.string.sh_profile_info_body)
+                .setPositiveButton(R.string.cd_open_profile, (d, w) -> launch(ProfileActivity.class))
+                .setNegativeButton(android.R.string.cancel, null)
+                .show());
         binding.userName.setText(R.string.home_default_name);
         applyAvatar(null, null);
     }

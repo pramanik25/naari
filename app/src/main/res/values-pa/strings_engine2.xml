@@ -2,9 +2,9 @@
 <resources>
 
     <!-- Silent SOS: low-key notification and covert screen -->
-    <string name="en_covert_title">Naari Shakti · ਲੋਕੇਸ਼ਨ ਸਾਂਝੀ ਹੋ ਰਹੀ ਹੈ</string>
+    <string name="en_covert_title">Naari Kavach · ਲੋਕੇਸ਼ਨ ਸਾਂਝੀ ਹੋ ਰਹੀ ਹੈ</string>
     <string name="en_covert_text">ਸੰਭਾਲਣ ਲਈ ਟੈਪ ਕਰੋ</string>
-    <string name="en_covert_overline">Naari Shakti</string>
+    <string name="en_covert_overline">Naari Kavach</string>
     <string name="en_covert_heading">ਤੁਹਾਡੀ ਲੋਕੇਸ਼ਨ ਸਾਂਝੀ ਹੋ ਰਹੀ ਹੈ</string>
     <string name="en_covert_body">ਤੁਹਾਡੇ ਭਰੋਸੇਮੰਦ ਸੰਪਰਕਾਂ ਨੂੰ ਤੁਹਾਡੀ ਲਾਈਵ ਲੋਕੇਸ਼ਨ ਮਿਲ ਰਹੀ ਹੈ।</string>
     <string name="en_covert_hold">ਸਾਂਝਾ ਕਰਨਾ ਬੰਦ ਕਰਨ ਲਈ ਦਬਾ ਕੇ ਰੱਖੋ</string>
@@ -13,8 +13,8 @@
 
     <!-- SMS -->
     <string name="en_sms_tracking_line">ਲਾਈਵ ਲੋਕੇਸ਼ਨ ਅਤੇ ਸਬੂਤ: %1$s</string>
-    <string name="en_sms_duress">Naari Shakti: ਹੋ ਸਕਦਾ ਹੈ %1$s ਨੂੰ ਅਲਰਟ ਰੱਦ ਕਰਨ ਲਈ ਮਜਬੂਰ ਕੀਤਾ ਗਿਆ ਹੋਵੇ। ਇਸਨੂੰ ਅਜੇ ਵੀ ਚਾਲੂ ਸਮਝੋ। ਲਾਈਵ ਲੋਕੇਸ਼ਨ: %2$s</string>
-    <string name="en_sms_duress_no_link">Naari Shakti: ਹੋ ਸਕਦਾ ਹੈ %1$s ਨੂੰ ਅਲਰਟ ਰੱਦ ਕਰਨ ਲਈ ਮਜਬੂਰ ਕੀਤਾ ਗਿਆ ਹੋਵੇ। ਇਸਨੂੰ ਅਜੇ ਵੀ ਚਾਲੂ ਸਮਝੋ। ਲੋਕੇਸ਼ਨ ਬਾਅਦ ਵਿੱਚ ਆਵੇਗੀ।</string>
+    <string name="en_sms_duress">Naari Kavach: ਹੋ ਸਕਦਾ ਹੈ %1$s ਨੂੰ ਅਲਰਟ ਰੱਦ ਕਰਨ ਲਈ ਮਜਬੂਰ ਕੀਤਾ ਗਿਆ ਹੋਵੇ। ਇਸਨੂੰ ਅਜੇ ਵੀ ਚਾਲੂ ਸਮਝੋ। ਲਾਈਵ ਲੋਕੇਸ਼ਨ: %2$s</string>
+    <string name="en_sms_duress_no_link">Naari Kavach: ਹੋ ਸਕਦਾ ਹੈ %1$s ਨੂੰ ਅਲਰਟ ਰੱਦ ਕਰਨ ਲਈ ਮਜਬੂਰ ਕੀਤਾ ਗਿਆ ਹੋਵੇ। ਇਸਨੂੰ ਅਜੇ ਵੀ ਚਾਲੂ ਸਮਝੋ। ਲੋਕੇਸ਼ਨ ਬਾਅਦ ਵਿੱਚ ਆਵੇਗੀ।</string>
     <string name="en_duress_name_fallback">ਤੁਹਾਡਾ ਸੰਪਰਕ</string>
 
     <!-- Spoken alert (text to speech, loud) -->
@@ -66,7 +66,7 @@
     <string name="en_cancel">ਰੱਦ ਕਰੋ</string>
     <string name="en_pin_lockout">ਬਹੁਤ ਕੋਸ਼ਿਸ਼ਾਂ ਹੋ ਗਈਆਂ। %1$d ਸਕਿੰਟ ਬਾਅਦ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।</string>
     <string name="en_pin_verify_title">ਆਪਣਾ PIN ਲਿਖੋ</string>
-    <string name="en_pin_verify_subtitle">ਅੱਗੇ ਵਧਣ ਲਈ ਆਪਣਾ Naari Shakti PIN ਲਿਖੋ।</string>
+    <string name="en_pin_verify_subtitle">ਅੱਗੇ ਵਧਣ ਲਈ ਆਪਣਾ Naari Kavach PIN ਲਿਖੋ।</string>
     <string name="en_pin_current_title">ਮੌਜੂਦਾ PIN ਲਿਖੋ</string>
     <string name="en_pin_current_subtitle">PIN ਬਦਲਣ ਤੋਂ ਪਹਿਲਾਂ ਪੁਸ਼ਟੀ ਕਰੋ ਕਿ ਇਹ ਤੁਸੀਂ ਹੀ ਹੋ।</string>
     <string name="en_pin_manage_title">ਐਪ PIN</string>

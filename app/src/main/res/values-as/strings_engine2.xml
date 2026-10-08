@@ -2,9 +2,9 @@
 <resources>
 
     <!-- Silent SOS: low-key notification and covert screen -->
-    <string name="en_covert_title">Naari Shakti · অৱস্থান শ্বেয়াৰ হৈছে</string>
+    <string name="en_covert_title">Naari Kavach · অৱস্থান শ্বেয়াৰ হৈছে</string>
     <string name="en_covert_text">পৰিচালনা কৰিবলৈ টেপ কৰক</string>
-    <string name="en_covert_overline">Naari Shakti</string>
+    <string name="en_covert_overline">Naari Kavach</string>
     <string name="en_covert_heading">আপোনাৰ অৱস্থান শ্বেয়াৰ হৈছে</string>
     <string name="en_covert_body">আপোনাৰ বিশ্বাসী কণ্টেক্টসকলে আপোনাৰ লাইভ অৱস্থান পাই আছে।</string>
     <string name="en_covert_hold">শ্বেয়াৰ ৰখাবলৈ হেঁচি ধৰক</string>
@@ -13,8 +13,8 @@
 
     <!-- SMS -->
     <string name="en_sms_tracking_line">লাইভ অৱস্থান আৰু প্ৰমাণ: %1$s</string>
-    <string name="en_sms_duress">Naari Shakti: হয়তো %1$s-ক জোৰকৈ সতৰ্কবাৰ্তা বাতিল কৰোৱা হৈছে। বিপদ এতিয়াও আছে বুলি ধৰি লওক। লাইভ অৱস্থান: %2$s</string>
-    <string name="en_sms_duress_no_link">Naari Shakti: হয়তো %1$s-ক জোৰকৈ সতৰ্কবাৰ্তা বাতিল কৰোৱা হৈছে। বিপদ এতিয়াও আছে বুলি ধৰি লওক। অৱস্থান পিছত আহিব।</string>
+    <string name="en_sms_duress">Naari Kavach: হয়তো %1$s-ক জোৰকৈ সতৰ্কবাৰ্তা বাতিল কৰোৱা হৈছে। বিপদ এতিয়াও আছে বুলি ধৰি লওক। লাইভ অৱস্থান: %2$s</string>
+    <string name="en_sms_duress_no_link">Naari Kavach: হয়তো %1$s-ক জোৰকৈ সতৰ্কবাৰ্তা বাতিল কৰোৱা হৈছে। বিপদ এতিয়াও আছে বুলি ধৰি লওক। অৱস্থান পিছত আহিব।</string>
     <string name="en_duress_name_fallback">আপোনাৰ কণ্টেক্ট</string>
 
     <!-- Spoken alert (text to speech, loud) -->
@@ -66,7 +66,7 @@
     <string name="en_cancel">বাতিল কৰক</string>
     <string name="en_pin_lockout">বহুবাৰ চেষ্টা কৰা হ’ল। %1$d ছেকেণ্ড পিছত পুনৰ চেষ্টা কৰক।</string>
     <string name="en_pin_verify_title">আপোনাৰ PIN দিয়ক</string>
-    <string name="en_pin_verify_subtitle">আগবাঢ়িবলৈ আপোনাৰ Naari Shakti PIN দিয়ক।</string>
+    <string name="en_pin_verify_subtitle">আগবাঢ়িবলৈ আপোনাৰ Naari Kavach PIN দিয়ক।</string>
     <string name="en_pin_current_title">বৰ্তমানৰ PIN দিয়ক</string>
     <string name="en_pin_current_subtitle">PIN সলনি কৰাৰ আগতে নিশ্চিত কৰক যে এয়া আপুনিয়েই।</string>
     <string name="en_pin_manage_title">এপ PIN</string>

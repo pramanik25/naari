@@ -3,7 +3,7 @@
     <!-- Shared -->
     <string name="tg_back">Back</string>
     <string name="tg_eyebrow">Together</string>
-    <string name="tg_cloud_off">This needs the Naari Shakti cloud, which is switched off on this phone.</string>
+    <string name="tg_cloud_off">This needs the Naari Kavach cloud, which is switched off on this phone.</string>
     <string name="tg_open_settings">Settings</string>
     <string name="tg_close">Close</string>
     <string name="tg_delete">Delete</string>
@@ -61,7 +61,7 @@
     <string name="tg_sm_empty">No reports within 3 km of the +. That does not mean the area is safe.</string>
     <string name="tg_sm_no_location">Couldn\'t find your location. Move the map and tap “Search here”.</string>
     <string name="tg_sm_pan_hint">Without location, move the map to a place and tap “Search here”.</string>
-    <string name="tg_sm_detail">Reported %1$s by a Naari Shakti user. Not verified.</string>
+    <string name="tg_sm_detail">Reported %1$s by a Naari Kavach user. Not verified.</string>
     <string name="tg_sm_deleted">Your report was deleted.</string>
     <string name="tg_sm_flag">This is wrong</string>
     <string name="tg_sm_zoom_in">Zoom in closer so the + is on the exact spot.</string>

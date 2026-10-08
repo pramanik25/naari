@@ -2,9 +2,9 @@
 <resources>
 
     <!-- Silent SOS: low-key notification and covert screen -->
-    <string name="en_covert_title">Naari Shakti · లొకేషన్ షేర్ అవుతోంది</string>
+    <string name="en_covert_title">Naari Kavach · లొకేషన్ షేర్ అవుతోంది</string>
     <string name="en_covert_text">నిర్వహించడానికి నొక్కండి</string>
-    <string name="en_covert_overline">Naari Shakti</string>
+    <string name="en_covert_overline">Naari Kavach</string>
     <string name="en_covert_heading">మీ లొకేషన్ షేర్ అవుతోంది</string>
     <string name="en_covert_body">మీరు నమ్మే కాంటాక్ట్‌లకు మీ లైవ్ లొకేషన్ వెళ్తోంది.</string>
     <string name="en_covert_hold">షేరింగ్ ఆపడానికి పట్టుకోండి</string>
@@ -13,8 +13,8 @@
 
     <!-- SMS -->
     <string name="en_sms_tracking_line">లైవ్ లొకేషన్ &amp; సాక్ష్యం: %1$s</string>
-    <string name="en_sms_duress">Naari Shakti: %1$s ను బలవంతంగా అలర్ట్ రద్దు చేయించి ఉండవచ్చు. ఇది ఇంకా యాక్టివ్ అని భావించండి. లైవ్ లొకేషన్: %2$s</string>
-    <string name="en_sms_duress_no_link">Naari Shakti: %1$s ను బలవంతంగా అలర్ట్ రద్దు చేయించి ఉండవచ్చు. ఇది ఇంకా యాక్టివ్ అని భావించండి. లొకేషన్ త్వరలో వస్తుంది.</string>
+    <string name="en_sms_duress">Naari Kavach: %1$s ను బలవంతంగా అలర్ట్ రద్దు చేయించి ఉండవచ్చు. ఇది ఇంకా యాక్టివ్ అని భావించండి. లైవ్ లొకేషన్: %2$s</string>
+    <string name="en_sms_duress_no_link">Naari Kavach: %1$s ను బలవంతంగా అలర్ట్ రద్దు చేయించి ఉండవచ్చు. ఇది ఇంకా యాక్టివ్ అని భావించండి. లొకేషన్ త్వరలో వస్తుంది.</string>
     <string name="en_duress_name_fallback">మీ కాంటాక్ట్</string>
 
     <!-- Spoken alert (text to speech, loud) -->
@@ -66,7 +66,7 @@
     <string name="en_cancel">రద్దు చేయండి</string>
     <string name="en_pin_lockout">చాలా ప్రయత్నాలు. %1$d సె. తర్వాత మళ్లీ ప్రయత్నించండి.</string>
     <string name="en_pin_verify_title">మీ PIN ఎంటర్ చేయండి</string>
-    <string name="en_pin_verify_subtitle">కొనసాగడానికి మీ Naari Shakti PIN ఎంటర్ చేయండి.</string>
+    <string name="en_pin_verify_subtitle">కొనసాగడానికి మీ Naari Kavach PIN ఎంటర్ చేయండి.</string>
     <string name="en_pin_current_title">ప్రస్తుత PIN ఎంటర్ చేయండి</string>
     <string name="en_pin_current_subtitle">PIN మార్చే ముందు ఇది మీరేనని నిర్ధారించండి.</string>
     <string name="en_pin_manage_title">యాప్ PIN</string>

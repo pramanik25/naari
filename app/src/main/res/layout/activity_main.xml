@@ -11,21 +11,51 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <!-- Running donation banner: the text travels left to right; a tap opens the donation page. -->
+    <!-- Running donation banner: a beating heart, the text travelling right to left, and a
+         chevron; a tap opens the donation page. -->
     <FrameLayout
         android:id="@+id/donateBanner"
         android:layout_width="match_parent"
-        android:layout_height="36dp"
-        android:background="@color/ns_rose"
+        android:layout_height="40dp"
+        android:background="@drawable/sh_donate_banner_bg"
         android:clickable="true"
         android:focusable="true"
         android:foreground="?attr/selectableItemBackground">
 
-        <com.example.naarishakti.shell.TickerView
-            android:id="@+id/donateTicker"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:importantForAccessibility="no" />
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="12dp"
+            android:paddingEnd="6dp">
+
+            <ImageView
+                android:id="@+id/donateHeart"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/sh_donate_heart_bg"
+                android:importantForAccessibility="no"
+                android:padding="5dp"
+                android:src="@drawable/ns_ic_heart"
+                app:tint="@color/ns_rose" />
+
+            <com.example.naarishakti.shell.TickerView
+                android:id="@+id/donateTicker"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:importantForAccessibility="no" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="4dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ua_ic_chevron_right"
+                app:tint="@color/ns_on_rose" />
+        </LinearLayout>
     </FrameLayout>
 
     <FrameLayout

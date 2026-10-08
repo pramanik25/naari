@@ -14,7 +14,7 @@
 
     <!-- Offer after "Yes": offline Bluetooth alerts (mesh) -->
     <string name="nb_mesh_title">Also help without internet?</string>
-    <string name="nb_mesh_body">Naari Shakti can also pass SOS alerts between nearby phones over Bluetooth when there is no internet. This needs the nearby devices permission.</string>
+    <string name="nb_mesh_body">Naari Kavach can also pass SOS alerts between nearby phones over Bluetooth when there is no internet. This needs the nearby devices permission.</string>
     <string name="nb_mesh_yes">Turn on</string>
     <string name="nb_mesh_no">No thanks</string>
     <string name="nb_mesh_on">Offline Bluetooth alerts are on.</string>
@@ -39,12 +39,12 @@
     <string name="nb_wa_section">WhatsApp alerts</string>
     <string name="nb_wa_title">WhatsApp alerts</string>
     <string name="nb_wa_caption">Send your SOS, live location and photos to your contacts on WhatsApp.</string>
-    <string name="nb_wa_explain">Alerts come from the Naari Shakti WhatsApp number, not from your own WhatsApp. Each contact must tap your invite once to join before they can get alerts.</string>
+    <string name="nb_wa_explain">Alerts come from the Naari Kavach WhatsApp number, not from your own WhatsApp. Each contact must tap your invite once to join before they can get alerts.</string>
     <string name="nb_wa_joined">Joined ✓</string>
     <string name="nb_wa_not_joined">Not joined yet</string>
     <string name="nb_wa_invite">Invite</string>
     <string name="nb_wa_invite_cd">Invite %1$s on WhatsApp</string>
-    <string name="nb_wa_invite_text">Hi, I\'ve added you as an emergency contact in Naari Shakti. To get my SOS alerts on WhatsApp, open this link and send the message: %1$s</string>
+    <string name="nb_wa_invite_text">Hi, I\'ve added you as an emergency contact in Naari Kavach. To get my SOS alerts on WhatsApp, open this link and send the message: %1$s</string>
     <string name="nb_wa_invite_chooser">Send invite</string>
     <plurals name="nb_wa_joined_count">
         <item quantity="one">%1$d of %2$d contact has joined</item>

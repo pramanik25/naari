@@ -55,7 +55,7 @@
     <!-- ===================== Trigger phrase ===================== -->
     <string name="ub_trigger_eyebrow">आवाज ट्रिगर</string>
     <string name="ub_trigger_title">ट्रिगर शब्द</string>
-    <string name="ub_trigger_desc">सुरक्षा खुला भएका बेला यो ट्रिगर शब्द बोल्नुहोस् र Naari Shakti ले तपाईंको SOS पठाउनेछ।</string>
+    <string name="ub_trigger_desc">सुरक्षा खुला भएका बेला यो ट्रिगर शब्द बोल्नुहोस् र Naari Kavach ले तपाईंको SOS पठाउनेछ।</string>
     <string name="ub_trigger_current_label">तपाईंको ट्रिगर शब्द</string>
     <string name="ub_trigger_status_active">अहिले सुन्दै छ · इन्टरनेट बिना चल्छ</string>
     <string name="ub_trigger_status_inactive">सुरक्षा खुला भएका बेला मात्र सुनिन्छ</string>
@@ -87,7 +87,7 @@
     <string name="ub_trigger_err_generic">रेकर्डिङ हुन सकेन। फेरि प्रयास गर्नुहोस् वा तल आफ्नो ट्रिगर शब्द टाइप गर्नुहोस्।</string>
     <string name="ub_trigger_mic_denied">रेकर्ड गर्न माइक्रोफोनको अनुमति चाहिन्छ। तपाईं ट्रिगर शब्द टाइप पनि गर्न सक्नुहुन्छ।</string>
     <string name="ub_trigger_mic_rationale_title">माइक्रोफोनको अनुमति दिनुहोस्</string>
-    <string name="ub_trigger_mic_rationale_body">Naari Shakti ले माइक्रोफोनको प्रयोग तपाईंको ट्रिगर शब्द एक पटक सुनेर लेख्नका लागि मात्र गर्छ। कुनै अडियो सेभ हुँदैन।</string>
+    <string name="ub_trigger_mic_rationale_body">Naari Kavach ले माइक्रोफोनको प्रयोग तपाईंको ट्रिगर शब्द एक पटक सुनेर लेख्नका लागि मात्र गर्छ। कुनै अडियो सेभ हुँदैन।</string>
     <string name="ub_trigger_unavailable_title">आवाज रेकर्डिङ उपलब्ध छैन</string>
     <string name="ub_trigger_unavailable_body">यो फोनमा आवाज चिन्ने सुविधा छैन। यसको सट्टा तल आफ्नो ट्रिगर शब्द टाइप गर्नुहोस्।</string>
     <string name="ub_trigger_warn_title">कम प्रचलित शब्द रोज्ने?</string>
@@ -265,7 +265,7 @@
     <string name="ub_live_map_cd">तपाईंको अहिलेको लोकेसन देखाउने नक्सा</string>
     <string name="ub_live_status_idle">तपाईंको लोकेसन</string>
     <string name="ub_live_status_live">लाइभ · सेयर हुँदै छ</string>
-    <string name="ub_live_perm_title">Naari Shakti का लागि लोकेसन बन्द छ</string>
+    <string name="ub_live_perm_title">Naari Kavach का लागि लोकेसन बन्द छ</string>
     <string name="ub_live_perm_body">आफू भएको ठाउँ हेर्न र सेयर गर्न लोकेसनको अनुमति दिनुहोस्।</string>
     <string name="ub_live_you_are_here">तपाईं यहाँ हुनुहुन्छ</string>
     <string name="ub_live_finding">तपाईंको लोकेसन खोज्दै…</string>
@@ -329,11 +329,11 @@
     <string name="ub_zone_perm_title">सटीक लोकेसन चाहिन्छ</string>
     <string name="ub_zone_perm_body">पिन राख्न र सुरक्षित क्षेत्रहरूको निगरानी गर्न सटीक लोकेसनको अनुमति दिनुहोस्।</string>
     <string name="ub_zone_bg_title">अलर्ट “सधैँ अनुमति दिनुहोस्” छान्दा मात्र चल्छन्</string>
-    <string name="ub_zone_bg_body">Naari Shakti बन्द भएका बेला पनि सुरक्षित क्षेत्रहरूको निगरानी गर्न Android लाई ब्याकग्राउन्ड लोकेसन चाहिन्छ।</string>
+    <string name="ub_zone_bg_body">Naari Kavach बन्द भएका बेला पनि सुरक्षित क्षेत्रहरूको निगरानी गर्न Android लाई ब्याकग्राउन्ड लोकेसन चाहिन्छ।</string>
     <string name="ub_zone_bg_fix">अनुमति दिनुहोस्</string>
     <string name="ub_zone_bg_dialog_title">लोकेसनको अनुमति सधैँ दिनुहोस्</string>
-    <string name="ub_zone_bg_dialog_body">Naari Shakti बन्द भएका बेला पनि सुरक्षित क्षेत्रका अलर्ट चलून् भनेर “सधैँ अनुमति दिनुहोस्” छान्नुहोस्। तपाईंको लोकेसन यही फोनमा मात्र जाँचिन्छ।</string>
-    <string name="ub_zone_bg_dialog_body_settings">Naari Shakti बन्द भएका बेला पनि सुरक्षित क्षेत्रका अलर्ट चलून् भनेर अर्को स्क्रिनमा “सधैँ अनुमति दिनुहोस्” छान्नुहोस्। तपाईंको लोकेसन यही फोनमा मात्र जाँचिन्छ।</string>
+    <string name="ub_zone_bg_dialog_body">Naari Kavach बन्द भएका बेला पनि सुरक्षित क्षेत्रका अलर्ट चलून् भनेर “सधैँ अनुमति दिनुहोस्” छान्नुहोस्। तपाईंको लोकेसन यही फोनमा मात्र जाँचिन्छ।</string>
+    <string name="ub_zone_bg_dialog_body_settings">Naari Kavach बन्द भएका बेला पनि सुरक्षित क्षेत्रका अलर्ट चलून् भनेर अर्को स्क्रिनमा “सधैँ अनुमति दिनुहोस्” छान्नुहोस्। तपाईंको लोकेसन यही फोनमा मात्र जाँचिन्छ।</string>
     <string name="ub_zone_bg_granted">अब सुरक्षित क्षेत्रहरूले ब्याकग्राउन्डमा पनि अलर्ट दिनेछन्</string>
     <string name="ub_zone_bg_denied">ब्याकग्राउन्ड लोकेसन बन्द छ। सेटिङ → अनुमतिहरू → लोकेसनमा “सधैँ अनुमति दिनुहोस्” छान्नुहोस्।</string>
 

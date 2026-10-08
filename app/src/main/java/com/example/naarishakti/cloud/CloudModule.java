@@ -21,7 +21,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Mirrors incidents to the Naari Shakti API server. Every write goes through the persisted,
+ * Mirrors incidents to the Naari Kavach API server. Every write goes through the persisted,
  * ordered {@link CloudOutbox}, so an SOS fired offline reaches the server as soon as the network
  * is back. Locations are batched (flushed every 10 s, the first one immediately because it
  * triggers the nearby-helper fan-out); battery is reported every 5 min during an SOS.

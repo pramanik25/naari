@@ -10,7 +10,7 @@
     <string name="nb_home_location_denied">तपाईंको लोकेसनबिना हामी तपाईंलाई नजिकका अलर्टसँग मिलाउन सक्दैनौँ। तपाईं यसलाई पछि क्लाउड र अभिभावकमा गएर चालु गर्न सक्नुहुन्छ।</string>
 
     <string name="nb_mesh_title">इन्टरनेट नहुँदा पनि सहयोग गर्नुहुन्छ?</string>
-    <string name="nb_mesh_body">इन्टरनेट नभएको बेला Naari Shakti ले नजिकका फोनहरूबीच Bluetooth मार्फत पनि SOS अलर्ट पुर्‍याउन सक्छ। यसका लागि नजिकका डिभाइसको अनुमति चाहिन्छ।</string>
+    <string name="nb_mesh_body">इन्टरनेट नभएको बेला Naari Kavach ले नजिकका फोनहरूबीच Bluetooth मार्फत पनि SOS अलर्ट पुर्‍याउन सक्छ। यसका लागि नजिकका डिभाइसको अनुमति चाहिन्छ।</string>
     <string name="nb_mesh_yes">चालु गर्नुहोस्</string>
     <string name="nb_mesh_no">पर्दैन, धन्यवाद</string>
     <string name="nb_mesh_on">अफलाइन Bluetooth अलर्ट चालु छन्।</string>
@@ -31,12 +31,12 @@
     <string name="nb_wa_section">WhatsApp अलर्ट</string>
     <string name="nb_wa_title">WhatsApp अलर्ट</string>
     <string name="nb_wa_caption">आफ्नो SOS, लाइभ लोकेसन र फोटो आफ्ना सम्पर्कहरूलाई WhatsApp मा पठाउनुहोस्।</string>
-    <string name="nb_wa_explain">अलर्टहरू Naari Shakti को WhatsApp नम्बरबाट आउँछन्, तपाईंको आफ्नै WhatsApp बाट होइन। अलर्ट पाउनुअघि हरेक सम्पर्कले तपाईंको निम्तोमा एक पटक ट्याप गरेर जोडिनुपर्छ।</string>
+    <string name="nb_wa_explain">अलर्टहरू Naari Kavach को WhatsApp नम्बरबाट आउँछन्, तपाईंको आफ्नै WhatsApp बाट होइन। अलर्ट पाउनुअघि हरेक सम्पर्कले तपाईंको निम्तोमा एक पटक ट्याप गरेर जोडिनुपर्छ।</string>
     <string name="nb_wa_joined">जोडिनुभयो ✓</string>
     <string name="nb_wa_not_joined">अझै जोडिनुभएको छैन</string>
     <string name="nb_wa_invite">निम्तो दिनुहोस्</string>
     <string name="nb_wa_invite_cd">%1$s लाई WhatsApp मा निम्तो दिनुहोस्</string>
-    <string name="nb_wa_invite_text">नमस्ते, मैले तपाईंलाई Naari Shakti मा मेरो आपत्कालीन सम्पर्कका रूपमा थपेको छु। WhatsApp मा मेरा SOS अलर्ट पाउन यो लिङ्क खोलेर सन्देश पठाउनुहोस्: %1$s</string>
+    <string name="nb_wa_invite_text">नमस्ते, मैले तपाईंलाई Naari Kavach मा मेरो आपत्कालीन सम्पर्कका रूपमा थपेको छु। WhatsApp मा मेरा SOS अलर्ट पाउन यो लिङ्क खोलेर सन्देश पठाउनुहोस्: %1$s</string>
     <string name="nb_wa_invite_chooser">निम्तो पठाउनुहोस्</string>
     <plurals name="nb_wa_joined_count">
         <item quantity="one">%2$d मध्ये %1$d सम्पर्क जोडिनुभएको छ</item>

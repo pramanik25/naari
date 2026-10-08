@@ -55,7 +55,7 @@
     <!-- ===================== Trigger phrase ===================== -->
     <string name="ub_trigger_eyebrow">Voice trigger</string>
     <string name="ub_trigger_title">Trigger phrase</string>
-    <string name="ub_trigger_desc">Say this phrase while protection is on and Naari Shakti sends your SOS.</string>
+    <string name="ub_trigger_desc">Say this phrase while protection is on and Naari Kavach sends your SOS.</string>
     <string name="ub_trigger_current_label">Your trigger phrase</string>
     <string name="ub_trigger_status_active">Listening now · works offline</string>
     <string name="ub_trigger_status_inactive">Heard only while protection is on</string>
@@ -87,7 +87,7 @@
     <string name="ub_trigger_err_generic">Recording didn’t work. Try again or type your phrase below.</string>
     <string name="ub_trigger_mic_denied">Microphone access is needed to record. You can type your phrase instead.</string>
     <string name="ub_trigger_mic_rationale_title">Allow the microphone</string>
-    <string name="ub_trigger_mic_rationale_body">Naari Shakti uses the microphone only to hear your phrase once so it can be written down. No audio is saved.</string>
+    <string name="ub_trigger_mic_rationale_body">Naari Kavach uses the microphone only to hear your phrase once so it can be written down. No audio is saved.</string>
     <string name="ub_trigger_unavailable_title">Voice recording isn’t available</string>
     <string name="ub_trigger_unavailable_body">This phone has no speech recognition service. Type your phrase below instead.</string>
     <string name="ub_trigger_warn_title">Use a less common phrase?</string>
@@ -276,7 +276,7 @@
     <string name="ub_live_map_cd">Map showing your current location</string>
     <string name="ub_live_status_idle">Your location</string>
     <string name="ub_live_status_live">Live · sharing</string>
-    <string name="ub_live_perm_title">Location is off for Naari Shakti</string>
+    <string name="ub_live_perm_title">Location is off for Naari Kavach</string>
     <string name="ub_live_perm_body">Allow location to see where you are and share it.</string>
     <string name="ub_live_you_are_here">You are here</string>
     <string name="ub_live_finding">Finding your location…</string>
@@ -340,11 +340,11 @@
     <string name="ub_zone_perm_title">Precise location needed</string>
     <string name="ub_zone_perm_body">Allow precise location to place pins and watch your safe zones.</string>
     <string name="ub_zone_bg_title">Alerts only work with “Allow all the time”</string>
-    <string name="ub_zone_bg_body">Android needs background location to watch your safe zones while Naari Shakti is closed.</string>
+    <string name="ub_zone_bg_body">Android needs background location to watch your safe zones while Naari Kavach is closed.</string>
     <string name="ub_zone_bg_fix">Allow</string>
     <string name="ub_zone_bg_dialog_title">Allow location all the time</string>
-    <string name="ub_zone_bg_dialog_body">Choose “Allow all the time” so safe-zone alerts work while Naari Shakti is closed. Your location is only checked on this phone.</string>
-    <string name="ub_zone_bg_dialog_body_settings">On the next screen, choose “Allow all the time” so safe-zone alerts work while Naari Shakti is closed. Your location is only checked on this phone.</string>
+    <string name="ub_zone_bg_dialog_body">Choose “Allow all the time” so safe-zone alerts work while Naari Kavach is closed. Your location is only checked on this phone.</string>
+    <string name="ub_zone_bg_dialog_body_settings">On the next screen, choose “Allow all the time” so safe-zone alerts work while Naari Kavach is closed. Your location is only checked on this phone.</string>
     <string name="ub_zone_bg_granted">Safe zones will now alert you in the background</string>
     <string name="ub_zone_bg_denied">Background location is off. Turn on “Allow all the time” in Settings → Permissions → Location.</string>
 

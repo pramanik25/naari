@@ -3,7 +3,7 @@
     <!-- Shared -->
     <string name="tg_back">ପଛକୁ</string>
     <string name="tg_eyebrow">ଏକାଠି</string>
-    <string name="tg_cloud_off">ଏଥିପାଇଁ Naari Shakti କ୍ଲାଉଡ ଦରକାର, ଯାହା ଏହି ଫୋନରେ ବନ୍ଦ ଅଛି।</string>
+    <string name="tg_cloud_off">ଏଥିପାଇଁ Naari Kavach କ୍ଲାଉଡ ଦରକାର, ଯାହା ଏହି ଫୋନରେ ବନ୍ଦ ଅଛି।</string>
     <string name="tg_open_settings">ସେଟିଂସ</string>
     <string name="tg_close">ବନ୍ଦ କରନ୍ତୁ</string>
     <string name="tg_delete">ଡିଲିଟ କରନ୍ତୁ</string>
@@ -61,7 +61,7 @@
     <string name="tg_sm_empty">+ ର 3 କି.ମି. ଭିତରେ କୌଣସି ରିପୋର୍ଟ ନାହିଁ। ଏହାର ଅର୍ଥ ନୁହେଁ ଯେ ଅଞ୍ଚଳଟି ସୁରକ୍ଷିତ।</string>
     <string name="tg_sm_no_location">ଆପଣଙ୍କ ଲୋକେସନ ମିଳିଲା ନାହିଁ। ମ୍ୟାପ ଘୁଞ୍ଚାଇ “ଏଠାରେ ଖୋଜନ୍ତୁ” ଟ୍ୟାପ କରନ୍ତୁ।</string>
     <string name="tg_sm_pan_hint">ଲୋକେସନ ନ ଥିଲେ, ମ୍ୟାପକୁ କୌଣସି ସ୍ଥାନକୁ ଘୁଞ୍ଚାଇ “ଏଠାରେ ଖୋଜନ୍ତୁ” ଟ୍ୟାପ କରନ୍ତୁ।</string>
-    <string name="tg_sm_detail">ଜଣେ Naari Shakti ବ୍ୟବହାରକାରୀ %1$s ରିପୋର୍ଟ କରିଛନ୍ତି। ଯାଞ୍ଚ ହୋଇନାହିଁ।</string>
+    <string name="tg_sm_detail">ଜଣେ Naari Kavach ବ୍ୟବହାରକାରୀ %1$s ରିପୋର୍ଟ କରିଛନ୍ତି। ଯାଞ୍ଚ ହୋଇନାହିଁ।</string>
     <string name="tg_sm_deleted">ଆପଣଙ୍କ ରିପୋର୍ଟ ଡିଲିଟ ହେଲା।</string>
     <string name="tg_sm_flag">ଏହା ଭୁଲ</string>
     <string name="tg_sm_zoom_in">+ ଚିହ୍ନ ଠିକ ସ୍ଥାନ ଉପରେ ରହିବା ପାଇଁ ଆହୁରି ଜୁମ କରନ୍ତୁ।</string>

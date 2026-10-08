@@ -144,7 +144,7 @@
     <string name="dl_quiz_level_4">കാവലാൾ</string>
     <string name="dl_quiz_level_5">ശക്തി</string>
     <string name="dl_quiz_share">എന്റെ തുടർച്ച പങ്കിടുക</string>
-    <string name="dl_quiz_share_text">Naari Shakti-യിൽ ഞാൻ തുടർച്ചയായി %1$s സുരക്ഷാ ക്വിസ് കളിച്ച് %2$d പോയിന്റ് നേടി. നിങ്ങളുടെ അവകാശങ്ങളും ഹെൽപ്‌ലൈനുകളും നിങ്ങൾക്കറിയാമോ?</string>
+    <string name="dl_quiz_share_text">Naari Kavach-യിൽ ഞാൻ തുടർച്ചയായി %1$s സുരക്ഷാ ക്വിസ് കളിച്ച് %2$d പോയിന്റ് നേടി. നിങ്ങളുടെ അവകാശങ്ങളും ഹെൽപ്‌ലൈനുകളും നിങ്ങൾക്കറിയാമോ?</string>
     <string name="dl_quiz_practice">കൂടുതൽ പരിശീലിക്കുക</string>
     <string name="dl_quiz_reminder">ദിവസേനയുള്ള ക്വിസ് ഓർമ്മപ്പെടുത്തൽ</string>
     <string name="dl_quiz_reminder_sub">ഇതുവരെ കളിച്ചിട്ടില്ലെങ്കിൽ വൈകുന്നേരം ഒരു അറിയിപ്പ്</string>
@@ -156,7 +156,7 @@
         <item quantity="one">%1$d ദിവസത്തെ തുടർച്ച നിലനിർത്താൻ ഇപ്പോൾ കളിക്കൂ.</item>
         <item quantity="other">%1$d ദിവസത്തെ തുടർച്ച നിലനിർത്താൻ ഇപ്പോൾ കളിക്കൂ.</item>
     </plurals>
-    <string name="dl_nudge_cycle_title">Naari Shakti-യിൽ നിന്ന് ഒരു ഓർമ്മപ്പെടുത്തൽ</string>
+    <string name="dl_nudge_cycle_title">Naari Kavach-യിൽ നിന്ന് ഒരു ഓർമ്മപ്പെടുത്തൽ</string>
     <string name="dl_nudge_cycle_text">കാണാൻ ആപ്പ് തുറക്കുക.</string>
 
     <!--

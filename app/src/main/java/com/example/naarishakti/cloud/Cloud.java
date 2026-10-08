@@ -21,7 +21,7 @@ import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * Connection to the Naari Shakti API server.
+ * Connection to the Naari Kavach API server.
  *
  * <p>Everything in this package is a harmless no-op when {@link BuildConfig#API_BASE_URL} is empty
  * ({@link #isAvailable()} false) or when the user deleted her cloud data ({@link #isOptedOut}).

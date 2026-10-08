@@ -31,7 +31,7 @@ import okhttp3.Response;
 import okhttp3.ResponseBody;
 
 /**
- * HTTP client for the Naari Shakti API (backend/CONTRACT.md).
+ * HTTP client for the Naari Kavach API (backend/CONTRACT.md).
  *
  * <p>Every call is blocking and must run off the main thread (enforced). The device token is kept
  * in EncryptedSharedPreferences (private prefs if the keystore is broken); the user id in
@@ -367,7 +367,7 @@ public final class ApiClient {
 
     private static void assertBackground() {
         if (Looper.myLooper() == Looper.getMainLooper()) {
-            throw new IllegalStateException("Naari Shakti API calls must not run on the main thread");
+            throw new IllegalStateException("Naari Kavach API calls must not run on the main thread");
         }
     }
 }

@@ -4,9 +4,9 @@
 <resources>
 
     <!-- Silent SOS: low-key notification and covert screen -->
-    <string name="en_covert_title">Naari Shakti · लोकेशन शेयर हो रही है</string>
+    <string name="en_covert_title">Naari Kavach · लोकेशन शेयर हो रही है</string>
     <string name="en_covert_text">मैनेज करने के लिए टैप करें</string>
-    <string name="en_covert_overline">Naari Shakti</string>
+    <string name="en_covert_overline">Naari Kavach</string>
     <string name="en_covert_heading">आपकी लोकेशन शेयर हो रही है</string>
     <string name="en_covert_body">आपके भरोसेमंद कॉन्टैक्ट्स को आपकी लाइव लोकेशन मिल रही है।</string>
     <string name="en_covert_hold">शेयरिंग रोकने के लिए दबाए रखें</string>
@@ -15,8 +15,8 @@
 
     <!-- SMS -->
     <string name="en_sms_tracking_line">लाइव लोकेशन और सबूत: %1$s</string>
-    <string name="en_sms_duress">Naari Shakti: हो सकता है %1$s से ज़बरदस्ती अलर्ट रद्द करवाया गया हो। इसे अभी भी चालू मानें। लाइव लोकेशन: %2$s</string>
-    <string name="en_sms_duress_no_link">Naari Shakti: हो सकता है %1$s से ज़बरदस्ती अलर्ट रद्द करवाया गया हो। इसे अभी भी चालू मानें। लोकेशन बाद में आएगी।</string>
+    <string name="en_sms_duress">Naari Kavach: हो सकता है %1$s से ज़बरदस्ती अलर्ट रद्द करवाया गया हो। इसे अभी भी चालू मानें। लाइव लोकेशन: %2$s</string>
+    <string name="en_sms_duress_no_link">Naari Kavach: हो सकता है %1$s से ज़बरदस्ती अलर्ट रद्द करवाया गया हो। इसे अभी भी चालू मानें। लोकेशन बाद में आएगी।</string>
     <string name="en_duress_name_fallback">आपकी करीबी</string>
 
     <!-- Spoken alert (text to speech, loud) -->
@@ -68,7 +68,7 @@
     <string name="en_cancel">रद्द करें</string>
     <string name="en_pin_lockout">बहुत ज़्यादा कोशिशें। %1$d सेकंड बाद फिर कोशिश करें।</string>
     <string name="en_pin_verify_title">अपना PIN डालें</string>
-    <string name="en_pin_verify_subtitle">आगे बढ़ने के लिए अपना Naari Shakti PIN डालें।</string>
+    <string name="en_pin_verify_subtitle">आगे बढ़ने के लिए अपना Naari Kavach PIN डालें।</string>
     <string name="en_pin_current_title">मौजूदा PIN डालें</string>
     <string name="en_pin_current_subtitle">PIN बदलने से पहले पुष्टि करें कि यह आप ही हैं।</string>
     <string name="en_pin_manage_title">ऐप PIN</string>

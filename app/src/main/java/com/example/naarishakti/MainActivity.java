@@ -1,6 +1,9 @@
 package com.example.naarishakti;
 
 import android.Manifest;
+import android.animation.ObjectAnimator;
+import android.animation.PropertyValuesHolder;
+import android.animation.ValueAnimator;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -33,7 +36,6 @@ import com.example.naarishakti.daily.DailyFragment;
 import com.example.naarishakti.databinding.ActivityMainBinding;
 import com.example.naarishakti.databinding.UaItemRowBinding;
 import com.example.naarishakti.databinding.UaSheetOnboardingBinding;
-import com.example.naarishakti.shell.ProfilePromptDialog;
 import com.example.naarishakti.together.TogetherFragment;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
@@ -63,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
     private BottomSheetDialog onboardingSheet;
     private ActivityResultLauncher<String[]> onboardingLauncher;
+    private ObjectAnimator heartBeat;
 
     // ------------------------------------------------------------------ permissions (shared)
 
@@ -132,8 +135,27 @@ public class MainActivity extends AppCompatActivity {
             showTab(R.id.menu_home);
         }
 
-        // The profile popup waits for the permission sheet (and its system dialogs) to finish.
-        if (!maybeShowOnboarding() && savedInstanceState == null) ProfilePromptDialog.maybeShow(this);
+        maybeShowOnboarding();
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        // The banner's heart beats while the app is on screen.
+        heartBeat = ObjectAnimator.ofPropertyValuesHolder(binding.donateHeart,
+                PropertyValuesHolder.ofFloat(View.SCALE_X, 1f, 1.18f),
+                PropertyValuesHolder.ofFloat(View.SCALE_Y, 1f, 1.18f));
+        heartBeat.setDuration(650);
+        heartBeat.setRepeatMode(ValueAnimator.REVERSE);
+        heartBeat.setRepeatCount(ValueAnimator.INFINITE);
+        heartBeat.start();
+    }
+
+    @Override
+    protected void onStop() {
+        if (heartBeat != null) heartBeat.cancel();
+        heartBeat = null;
+        super.onStop();
     }
 
     @Override
@@ -241,10 +263,7 @@ public class MainActivity extends AppCompatActivity {
             dialog.getBehavior().setState(BottomSheetBehavior.STATE_EXPANDED);
         });
         // Swiping the sheet away counts as "Not now"; a dismiss caused by rotation does not.
-        dialog.setOnCancelListener(d -> {
-            markOnboardingDone();
-            ProfilePromptDialog.maybeShow(this);
-        });
+        dialog.setOnCancelListener(d -> markOnboardingDone());
 
         sheet.onbAllow.setOnClickListener(v -> {
             v.performHapticFeedback(android.view.HapticFeedbackConstants.VIRTUAL_KEY);
@@ -252,12 +271,10 @@ public class MainActivity extends AppCompatActivity {
             dialog.dismiss();
             List<String> missing = missingPermissions(this);
             if (!missing.isEmpty()) onboardingLauncher.launch(missing.toArray(new String[0]));
-            else ProfilePromptDialog.maybeShow(this);
         });
         sheet.onbLater.setOnClickListener(v -> {
             markOnboardingDone();
             dialog.dismiss();
-            ProfilePromptDialog.maybeShow(this);
         });
 
         onboardingSheet = dialog;
@@ -281,7 +298,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void onOnboardingResult(Map<String, Boolean> result) {
-        ProfilePromptDialog.maybeShow(this);
         List<String> missing = missingPermissions(this);
         Snackbar bar;
         if (missing.isEmpty()) {

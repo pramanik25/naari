@@ -73,7 +73,7 @@
     <string name="ev_export_failed">ثبوت کا پیکج نہیں بن سکا۔</string>
     <string name="ev_export_empty">اس واقعے میں ایکسپورٹ کرنے کے لیے کوئی فائل نہیں۔</string>
     <string name="ev_export_chooser">ثبوت کا پیکج شیئر کریں</string>
-    <string name="ev_export_subject">Naari Shakti ثبوت کا پیکج</string>
+    <string name="ev_export_subject">Naari Kavach ثبوت کا پیکج</string>
     <string name="ev_kind_photo">تصویر</string>
     <string name="ev_kind_audio">آڈیو کلپ</string>
     <string name="ev_kind_video">ویڈیو</string>

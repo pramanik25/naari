@@ -1,4 +1,4 @@
-/* Naari Shakti live tracking page. No inline scripts (CSP). Polls /api/v1/track/<token> every 10 s. */
+/* Naari Kavach live tracking page. No inline scripts (CSP). Polls /api/v1/track/<token> every 10 s. */
 (function () {
   'use strict';
 

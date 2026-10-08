@@ -39,7 +39,7 @@
     <!-- ===================== Helper alert screen ===================== -->
     <string name="cl_helper_eyebrow">സമീപത്ത് SOS</string>
     <string name="cl_helper_title">സമീപത്ത് ഒരാൾക്ക് സഹായം വേണം</string>
-    <string name="cl_helper_subtitle">നിങ്ങളുടെ അടുത്തുള്ള ഒരു Naari Shakti ഉപയോക്താവ് SOS അയച്ചിരിക്കുന്നു.</string>
+    <string name="cl_helper_subtitle">നിങ്ങളുടെ അടുത്തുള്ള ഒരു Naari Kavach ഉപയോക്താവ് SOS അയച്ചിരിക്കുന്നു.</string>
     <string name="cl_helper_distance_unknown">നിങ്ങളുടെ അടുത്ത്</string>
     <string name="cl_helper_safety">സ്വയം അപകടത്തിൽ പെടരുത്. ആദ്യം 112 വിളിക്കുക.</string>
     <string name="cl_helper_safety_detail">ആളുകൾ കാണുന്നിടത്ത് നിൽക്കുക, ഫോൺ കൈയിൽ വയ്ക്കുക, പോലീസ് നയിക്കട്ടെ.</string>
@@ -63,7 +63,7 @@
     <string name="cl_settings_desc">SMS എത്തിയില്ലെങ്കിലും നിങ്ങളുടെ SOS ലൈവ് ലൊക്കേഷനും തെളിവുകളും സഹിതം ഗാർഡിയൻമാർക്ക് ഉടൻ ലഭിക്കും.</string>
 
     <string name="cl_error_offline">നിങ്ങൾ ഓഫ്‌ലൈനാണ്. ഈ ഫോണിൽ സേവ് ചെയ്തവ കാണിക്കുന്നു.</string>
-    <string name="cl_error_server">Naari Shakti സെർവറിൽ എത്താനായില്ല.</string>
+    <string name="cl_error_server">Naari Kavach സെർവറിൽ എത്താനായില്ല.</string>
     <string name="cl_error_generic">എന്തോ പിശക് സംഭവിച്ചു (പിശക് %1$d). വീണ്ടും ശ്രമിക്കുക.</string>
     <string name="cl_retry">വീണ്ടും ശ്രമിക്കുക</string>
 
@@ -88,11 +88,11 @@
     </plurals>
 
     <string name="cl_section_code">നിങ്ങളുടെ ഗാർഡിയൻ കോഡ്</string>
-    <string name="cl_code_caption">നിങ്ങൾ വിശ്വസിക്കുന്നവരുമായി ഈ കോഡ് പങ്കിടുക. നിങ്ങളുടെ SOS അലേർട്ടുകൾ ലഭിക്കാൻ അവർ ഇത് അവരുടെ Naari Shakti ആപ്പിൽ നൽകണം.</string>
+    <string name="cl_code_caption">നിങ്ങൾ വിശ്വസിക്കുന്നവരുമായി ഈ കോഡ് പങ്കിടുക. നിങ്ങളുടെ SOS അലേർട്ടുകൾ ലഭിക്കാൻ അവർ ഇത് അവരുടെ Naari Kavach ആപ്പിൽ നൽകണം.</string>
     <string name="cl_copy">പകർത്തുക</string>
     <string name="cl_share">പങ്കിടുക</string>
     <string name="cl_copied">കോഡ് പകർത്തി</string>
-    <string name="cl_share_text">Naari Shakti ഇൻസ്റ്റാൾ ചെയ്ത് എന്റെ SOS അലേർട്ടുകൾ ലഭിക്കാൻ എന്റെ കോഡ് %1$s നൽകുക</string>
+    <string name="cl_share_text">Naari Kavach ഇൻസ്റ്റാൾ ചെയ്ത് എന്റെ SOS അലേർട്ടുകൾ ലഭിക്കാൻ എന്റെ കോഡ് %1$s നൽകുക</string>
     <string name="cl_share_chooser">ഗാർഡിയൻ കോഡ് പങ്കിടുക</string>
 
     <string name="cl_section_link">ഒരാളുടെ ഗാർഡിയനാകുക</string>

@@ -46,7 +46,7 @@
     <!-- ===================== Onboarding ===================== -->
     <string name="onb_overline">شروع کرنے سے پہلے</string>
     <string name="onb_title">آئیے آپ کا حفاظتی حصار تیار کریں</string>
-    <string name="onb_body">آپ کی حفاظت کے لیے Naari Shakti کو چند اجازتیں چاہییں۔ کنٹرول آپ کے ہاتھ میں رہے گا، اور آپ انہیں کسی بھی وقت سیٹنگز میں بدل سکتی ہیں۔</string>
+    <string name="onb_body">آپ کی حفاظت کے لیے Naari Kavach کو چند اجازتیں چاہییں۔ کنٹرول آپ کے ہاتھ میں رہے گا، اور آپ انہیں کسی بھی وقت سیٹنگز میں بدل سکتی ہیں۔</string>
     <string name="onb_allow">اجازت دیں</string>
     <string name="onb_done">سب تیار ہے۔ جب چاہیں تحفظ آن کریں۔</string>
     <string name="onb_partial">کچھ اجازتیں چھوڑ دی گئیں۔ آپ انہیں سیٹنگز میں دے سکتی ہیں۔</string>
@@ -215,7 +215,7 @@
     <!-- ===================== Profile ===================== -->
     <string name="profile_overline">آپ کا پروفائل</string>
     <string name="profile_title">آپ کے بارے میں</string>
-    <string name="profile_body">آپ کے رابطوں اور امدادی عملے کو آپ کو پہچاننے میں مدد دیتا ہے۔ آپ کا نام اور موبائل نمبر آپ کے Naari Shakti اکاؤنٹ میں بھی محفوظ ہوتے ہیں۔</string>
+    <string name="profile_body">آپ کے رابطوں اور امدادی عملے کو آپ کو پہچاننے میں مدد دیتا ہے۔ آپ کا نام اور موبائل نمبر آپ کے Naari Kavach اکاؤنٹ میں بھی محفوظ ہوتے ہیں۔</string>
     <string name="profile_add_photo">تصویر لگانے کے لیے ٹیپ کریں</string>
     <string name="profile_change_photo">تصویر بدلنے کے لیے ٹیپ کریں</string>
     <string name="cd_profile_photo">پروفائل تصویر۔ بدلنے کے لیے دو بار ٹیپ کریں۔</string>
@@ -244,7 +244,7 @@
     <string name="vault_title">ثبوت کا خزانہ</string>
     <string name="vault_body">SOS کے دوران خود بخود لی گئی تصویریں، نئی سب سے پہلے۔</string>
     <string name="vault_empty_title">ابھی کوئی ثبوت نہیں</string>
-    <string name="vault_empty_body">SOS شروع ہونے پر Naari Shakti آگے اور پیچھے کے کیمروں سے خاموشی سے تصویریں لیتی ہے۔ وہ یہاں نظر آئیں گی۔</string>
+    <string name="vault_empty_body">SOS شروع ہونے پر Naari Kavach آگے اور پیچھے کے کیمروں سے خاموشی سے تصویریں لیتی ہے۔ وہ یہاں نظر آئیں گی۔</string>
     <string name="vault_front">آگے کا کیمرا</string>
     <string name="vault_back">پیچھے کا کیمرا</string>
     <string name="vault_photo">تصویر</string>

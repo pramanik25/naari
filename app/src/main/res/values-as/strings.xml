@@ -46,7 +46,7 @@
     <!-- ===================== Onboarding ===================== -->
     <string name="onb_overline">আৰম্ভ কৰাৰ আগতে</string>
     <string name="onb_title">আহক, আপোনাৰ সুৰক্ষা-বলয় সাজু কৰোঁ</string>
-    <string name="onb_body">আপোনাক সুৰক্ষিত ৰাখিবলৈ Naari Shakti-ক কেইটামান অনুমতি লাগে। নিয়ন্ত্ৰণ আপোনাৰ হাততে থাকিব, যিকোনো সময়তে ছেটিংছৰ পৰা এইবোৰ সলনি কৰিব পাৰিব।</string>
+    <string name="onb_body">আপোনাক সুৰক্ষিত ৰাখিবলৈ Naari Kavach-ক কেইটামান অনুমতি লাগে। নিয়ন্ত্ৰণ আপোনাৰ হাততে থাকিব, যিকোনো সময়তে ছেটিংছৰ পৰা এইবোৰ সলনি কৰিব পাৰিব।</string>
     <string name="onb_allow">অনুমতি দিয়ক</string>
     <string name="onb_done">সকলো সাজু। যেতিয়াই বিচাৰে, সুৰক্ষা অন কৰক।</string>
     <string name="onb_partial">কিছুমান অনুমতি এৰি দিয়া হ’ল। ছেটিংছৰ পৰা সেইবোৰ দিব পাৰিব।</string>
@@ -215,7 +215,7 @@
     <!-- ===================== Profile ===================== -->
     <string name="profile_overline">আপোনাৰ প্ৰফাইল</string>
     <string name="profile_title">আপোনাৰ বিষয়ে</string>
-    <string name="profile_body">ইয়াৰ দ্বাৰা আপোনাৰ কণ্টেক্ট আৰু উদ্ধাৰকাৰীয়ে আপোনাক চিনি পাব। আপোনাৰ নাম আৰু ম’বাইল নম্বৰ আপোনাৰ Naari Shakti একাউণ্টতো ছেভ হয়।</string>
+    <string name="profile_body">ইয়াৰ দ্বাৰা আপোনাৰ কণ্টেক্ট আৰু উদ্ধাৰকাৰীয়ে আপোনাক চিনি পাব। আপোনাৰ নাম আৰু ম’বাইল নম্বৰ আপোনাৰ Naari Kavach একাউণ্টতো ছেভ হয়।</string>
     <string name="profile_add_photo">ফটো যোগ কৰিবলৈ টেপ কৰক</string>
     <string name="profile_change_photo">ফটো সলনি কৰিবলৈ টেপ কৰক</string>
     <string name="cd_profile_photo">প্ৰফাইল ফটো। সলনি কৰিবলৈ দুবাৰ টেপ কৰক।</string>
@@ -244,7 +244,7 @@
     <string name="vault_title">প্ৰমাণ ভল্ট</string>
     <string name="vault_body">SOS-ৰ সময়ত নিজে নিজে তোলা ফটো, নতুনবোৰ আগত।</string>
     <string name="vault_empty_title">এতিয়ালৈকে কোনো প্ৰমাণ নাই</string>
-    <string name="vault_empty_body">SOS আৰম্ভ হ’লে Naari Shakti-এ মনে মনে সন্মুখ আৰু পিছফালৰ কেমেৰাৰে ফটো তোলে। সেইবোৰ ইয়াত দেখা যাব।</string>
+    <string name="vault_empty_body">SOS আৰম্ভ হ’লে Naari Kavach-এ মনে মনে সন্মুখ আৰু পিছফালৰ কেমেৰাৰে ফটো তোলে। সেইবোৰ ইয়াত দেখা যাব।</string>
     <string name="vault_front">সন্মুখৰ কেমেৰা</string>
     <string name="vault_back">পিছফালৰ কেমেৰা</string>
     <string name="vault_photo">ফটো</string>
