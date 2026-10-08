@@ -439,6 +439,14 @@ export default function HomePage() {
                   </li>
                   <li>
                     <span>
+                      <strong>Pause Play Protect for the installation.</strong> Open the Play Store, tap your
+                      profile picture › Play Protect › the settings icon, and pause it or switch off “Scan apps
+                      with Play Protect”. It can block apps that don’t come from the Play Store. Switch it back
+                      on as soon as the app is installed.
+                    </span>
+                  </li>
+                  <li>
+                    <span>
                       <strong>Open the downloaded file</strong> from the notification or your Downloads folder.
                     </span>
                   </li>
