@@ -63,7 +63,9 @@ and the site links to it.
    version, size and SHA-256 to `src/lib/release.json`.
 3. On GitHub: Releases → Draft a new release → attach `downloads/naari-shakti.apk`
    (keep the name `naari-shakti.apk`) → Publish.
-4. Commit `src/lib/release.json` and deploy.
+4. Add the new version's "What's new" entries to `RELEASE_NOTES` in `src/lib/release.js`
+   (a version with no entry shows no "What's new" section).
+5. Commit `src/lib/release.json` and `src/lib/release.js`, then deploy.
 
 `/download` resolves in this order: `APK_URL` if set → `downloads/naari-shakti.apk` if it
 exists on the server (streamed directly, with resume) → the `naari-shakti.apk` asset on the

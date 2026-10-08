@@ -119,6 +119,26 @@ const GROUPS = [
     ],
   },
   {
+    title: "Every day",
+    blurb: "Small habits that make every day safer.",
+    tone: "violet",
+    items: [
+      ["clock", "Daily commute", "Save the trips you make most days with their usual travel time. Tap “Leaving” when you set off. If you haven’t tapped “I’ve reached” in time, your contacts are alerted automatically."],
+      ["calendar", "Cycle tracker", "Log your period, flow, mood and symptoms, and see expected days from your own averages. Everything is encrypted on your phone and never uploaded. An optional reminder two days before never mentions your period."],
+      ["book", "Safety quiz", "Three questions a day on helplines, your legal rights and staying safe, each with a short explanation. Build a streak, earn points and move up five levels."],
+    ],
+  },
+  {
+    title: "Together",
+    blurb: "Your people and your community, in one place.",
+    tone: "",
+    items: [
+      ["users", "Family circle", "A map of where your guardians and the people you guard were last seen, with battery level. Sharing your own location is off until you switch it on."],
+      ["pin", "Safety map", "Places other women marked as poorly lit, isolated, unsafe for transport or where harassment happened — and safe spots too. Reports are anonymous and not verified."],
+      ["message", "Community", "Ask for advice and share experiences on legal, health and support topics. You get a different made-up name in every conversation, and posts reported by several people are hidden."],
+    ],
+  },
+  {
     title: "Getting out quietly",
     blurb: "For moments when making noise would make things worse.",
     tone: "violet",
@@ -147,7 +167,7 @@ const GROUPS = [
       ["lock", "PIN to stop an SOS", "Set a 4–6 digit PIN and nobody else can stop your SOS, end a check-in or open your diary."],
       ["battery", "Phone status alerts", "Contacts get an SMS with your last location if your phone is switched off, drops to 5% battery or has its SIM changed."],
       ["radio", "Offline nearby alert", "Optional. With no internet, phones close by that have this turned on are told someone near them needs help, over Bluetooth and Wi-Fi."],
-      ["globe", "13 Indian languages", "English, Hindi, Bengali, Marathi, Telugu, Tamil, Gujarati, Kannada, Malayalam, Punjabi, Odia, Assamese and Urdu, in dark or light theme."],
+      ["globe", "14 languages", "English, Hindi, Bengali, Marathi, Telugu, Tamil, Gujarati, Kannada, Malayalam, Punjabi, Odia, Assamese, Urdu and Nepali, in dark or light theme."],
     ],
   },
 ];
@@ -170,6 +190,7 @@ export default function HomePage() {
             Naari Kavach
           </a>
           <nav className="s-nav" aria-label="Sections">
+            {release.notes.length > 0 && <a href="#new">What’s new</a>}
             <a href="#how">How it protects you</a>
             <a href="#features">Features</a>
             <a href="#privacy">Privacy</a>
@@ -201,7 +222,8 @@ export default function HomePage() {
                 </a>
               </div>
               <p className="s-meta">
-                Version {release.versionName} · {release.sizeMb} MB · Android {MIN_ANDROID} or newer · no sign-up
+                Version {release.versionName} · released {releasedOn} · {release.sizeMb} MB · Android{" "}
+                {MIN_ANDROID} or newer · no sign-up
               </p>
             </div>
 
@@ -246,6 +268,25 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+
+        {release.notes.length > 0 && (
+          <section className="s-section" id="new">
+            <div className="s-wrap">
+              <p className="s-eyebrow">What’s new</p>
+              <h2>New in version {release.versionName}</h2>
+              <p className="s-section-lede">Released on {releasedOn}.</p>
+              <div className="s-grid" style={{ marginTop: 36 }}>
+                {release.notes.map(([icon, title, body]) => (
+                  <article className="s-card" key={title}>
+                    <Icon name={icon} />
+                    <h4>{title}</h4>
+                    <p>{body}</p>
+                  </article>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
 
         <section className="s-section alt" id="how">
           <div className="s-wrap">
