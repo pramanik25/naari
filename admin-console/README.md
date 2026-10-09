@@ -36,6 +36,7 @@ Configuration lives in `.env.local` (see `.env.example`):
 Public:
 
 - `/` — landing page: features, privacy, install steps (copy lives in `src/app/page.js`)
+- `/privacy` — privacy policy, the public URL given to app stores (copy lives in `src/app/privacy/page.js`)
 - `/download` — the APK
 
 Admin (login required):

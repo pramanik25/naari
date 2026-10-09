@@ -46,7 +46,7 @@ export async function middleware(request) {
   return NextResponse.next();
 }
 
-// Only the console is guarded; the public site (/, /download) is open to everyone.
+// Only the console is guarded; the public site (/, /privacy, /download) is open to everyone.
 export const config = {
   matcher: ["/admin", "/admin/:path*"],
 };

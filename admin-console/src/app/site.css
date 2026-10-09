@@ -536,6 +536,39 @@ body:has(.site) {
   font-size: 15px;
 }
 
+/* ------------------------------------------------------- Privacy policy --- */
+.s-legal {
+  max-width: 760px;
+}
+.s-legal h1 {
+  font-size: clamp(32px, 4.6vw, 44px);
+  line-height: 1.1;
+  letter-spacing: -0.9px;
+  font-weight: 800;
+}
+.s-legal h2 {
+  font-size: 24px;
+  letter-spacing: -0.3px;
+  margin-top: 44px;
+}
+.s-legal h3 {
+  font-size: 18px;
+  margin-top: 24px;
+}
+.s-legal p,
+.s-legal ul {
+  margin-top: 12px;
+  color: var(--s-mid);
+}
+.s-legal ul {
+  padding-left: 22px;
+  display: grid;
+  gap: 8px;
+}
+.s-legal strong {
+  color: var(--s-text);
+}
+
 /* --------------------------------------------------------------- Footer --- */
 .s-footer {
   padding: 36px 0 48px;
