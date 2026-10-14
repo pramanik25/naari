@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 
 const NAV = [
   { href: "/admin", label: "Dashboard", icon: "grid" },
+  { href: "/admin/live", label: "Live map", icon: "live" },
   { href: "/admin/users", label: "Users", icon: "users" },
   { href: "/admin/devices", label: "Devices & installs", icon: "device" },
   { href: "/admin/incidents", label: "Incidents", icon: "alert" },
@@ -14,6 +15,7 @@ const NAV = [
 
 const PATHS = {
   grid: "M4 4h6v6H4V4zm10 0h6v6h-6V4zM4 14h6v6H4v-6zm10 0h6v6h-6v-6z",
+  live: "M12 21s-6-5.3-6-10a6 6 0 1 1 12 0c0 4.7-6 10-6 10zM12 9a2 2 0 1 0 0 4 2 2 0 0 0 0-4z",
   users:
     "M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm7 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM2 20c0-3.3 3.1-6 7-6s7 2.7 7 6M17 14c2.8.2 5 2.5 5 6",
   device: "M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm3 16h4",
