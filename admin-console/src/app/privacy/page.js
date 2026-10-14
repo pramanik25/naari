@@ -1,9 +1,9 @@
 import "../site.css";
 import Logo from "@/components/SiteLogo";
 
-// Shown in "Contact us". Leave empty to hide the email line until an address is decided.
-const CONTACT_EMAIL = "";
-const LAST_UPDATED = "9 October 2026";
+// Developer and grievance officer contact, shown in "Contact us". Required by the app store review.
+const CONTACT_EMAIL = "medwaste.contact@gmail.com";
+const LAST_UPDATED = "14 October 2026";
 
 export const metadata = {
   title: "Privacy policy — Naari Kavach",
@@ -246,16 +246,20 @@ export default function PrivacyPage() {
           </p>
 
           <h2>Contact us</h2>
-          {CONTACT_EMAIL ? (
-            <p>
-              For questions, complaints or a deletion request, write to{" "}
-              <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.
-            </p>
-          ) : (
-            <p>
-              To delete your data, use <strong>Delete my cloud data</strong> in the app’s settings.
-            </p>
-          )}
+          <ul>
+            <li>
+              <strong>Developer email:</strong> <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
+            </li>
+            <li>
+              <strong>Grievance officer email:</strong>{" "}
+              <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
+            </li>
+          </ul>
+          <p>
+            For questions, complaints or a request to see, correct or delete your data, write to the address
+            above. You can also delete your data yourself with <strong>Delete my cloud data</strong> in the
+            app’s settings.
+          </p>
         </div>
       </main>
 
