@@ -28,6 +28,7 @@ Configuration lives in `.env.local` (see `.env.example`):
 | `ADMIN_PASSWORD` | password for the /admin/login page (required) |
 | `ADMIN_SESSION_SECRET` | optional cookie-signing secret (defaults to one derived from the password) |
 | `PUBLIC_BASE_URL` | API origin, used to build `…/t/<token>` tracking links |
+| `SIGNING_SECRET` | same value as the API server's; enables viewing SOS photos / playing audio |
 | `ADMIN_TZ` | timezone for displayed timestamps (default `Asia/Kolkata`) |
 | `APK_URL` | optional: where `/download` redirects (see *Publishing a new APK*) |
 
@@ -82,5 +83,7 @@ this console can see every user's data.
 
 - Session is an HttpOnly, HMAC-signed cookie valid 7 days; middleware guards everything under `/admin`; the public site needs no login.
 - The console is read-only by construction (only `SELECT` statements).
-- Evidence *files* are intentionally not proxied here; the metadata table links to the
-  public tracking page instead, which already enforces retention/expiry rules.
+- Evidence files (SOS photos, audio, video) are relayed through `/admin/api/evidence/<id>`,
+  which is behind the admin login. It signs a 15-minute tracking URL server-side (needs
+  `SIGNING_SECRET`) and streams the file from the API server, so the backend's rules still
+  apply: only hash-verified files, and nothing after an incident has been over for 24 h.

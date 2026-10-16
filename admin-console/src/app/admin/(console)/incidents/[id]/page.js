@@ -1,9 +1,11 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { query, queryOne } from "@/lib/db";
-import { fmtBytes, fmtCoords, mapsUrl, trackUrl } from "@/lib/format";
+import { fmtBytes, fmtCoords, fmtDateTime, mapsUrl, trackUrl } from "@/lib/format";
+import { evidenceSigningConfigured, isRedacted } from "@/lib/evidence";
 import Badge from "@/components/Badge";
 import When from "@/components/When";
+import { EvidenceAudioList, EvidenceTile } from "@/components/EvidenceMedia";
 
 export const dynamic = "force-dynamic";
 
@@ -56,6 +58,19 @@ export default async function IncidentDetailPage({ params }) {
   ]);
 
   const track = trackUrl(incident.track_token);
+
+  // Playable media, oldest first so the audio chunks play back in order.
+  const media = evidence
+    .filter((e) => e.verified)
+    .sort((a, b) => new Date(a.captured_at) - new Date(b.captured_at))
+    .map((e) => ({ id: e.id, kind: e.kind, url: `/admin/api/evidence/${e.id}`, label: fmtDateTime(e.captured_at) }));
+  const visual = media.filter((m) => m.kind !== "audio");
+  const audio = media.filter((m) => m.kind === "audio");
+  const mediaNote = !evidenceSigningConfigured()
+    ? "Set SIGNING_SECRET (same value as the API server) and PUBLIC_BASE_URL to view photos and audio here."
+    : isRedacted(incident)
+      ? "Photos and audio are no longer served: this incident ended more than 24 h ago."
+      : null;
 
   return (
     <>
@@ -183,6 +198,29 @@ export default async function IncidentDetailPage({ params }) {
       </div>
 
       <h2>Evidence ({evidence.length})</h2>
+      {media.length > 0 &&
+        (mediaNote ? (
+          <p className="dim">{mediaNote}</p>
+        ) : (
+          <>
+            {visual.length > 0 && (
+              <>
+                <h3 className="evidence-heading">Photos &amp; video ({visual.length})</h3>
+                <div className="evidence-grid">
+                  {visual.map((m) => (
+                    <EvidenceTile key={m.id} url={m.url} kind={m.kind} label={m.label} />
+                  ))}
+                </div>
+              </>
+            )}
+            {audio.length > 0 && (
+              <>
+                <h3 className="evidence-heading">Audio ({audio.length} clips, play on to hear them in order)</h3>
+                <EvidenceAudioList items={audio} />
+              </>
+            )}
+          </>
+        ))}
       <div className="table-wrap">
         <table>
           <thead>
